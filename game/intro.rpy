@@ -326,7 +326,7 @@ label mage_time5:
     c "I will not."
     p "Of course you will, you're pathetic and I can do whatever I lik-"
     c "You {b}will not{/b}."
-    "(Is that lightening?)"
+    "(Is that lightning?)"
     "(Cyril the Chaste has {i}actually{/i} beoome scary.)"
     p "Fine.  Have your wand."
     "(Perhaps he is worth more than a slave after all)."
