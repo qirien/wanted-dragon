@@ -11,18 +11,16 @@ label balrung_time1:
     b "Yes, I imagine you're looking for some gullible fool that you can trick in to using their powers for your benefit? A thrall, a lackey, a minion?"
     p "No, no of course not!"
     "(Is it that obvious?!)"
-    b "Oh really? My apologies, then. What brings you here, then?"
+    b "Oh really? My apologies, then. What {b}does{/b} bring you here?"
     p "I..."
     menu:
         "I'm bored.":
             p "I'm bored. You're the least likely to offend or annoy me."
-            b "Oh, shall I entertain you, then? Am I your court jester?"
-            p "Not at all. Though you have the wit for it."
+            b "Oh, shall I entertain you, then? Like a jester?"
+            p "I have a hard time imagining that!"
             b "But not the humility, alas."
             
         "I need an ally.":
-            p "I'll tell you straight: I need an ally."
+            p "I need an ally. I will rule this kingdom one day, and will need a loyal...partner."
+            b "Oh? And you thought I would suit you?"
             
-            
-            
-        

@@ -4,7 +4,7 @@ label start:
     scene bg castle_exterior with fade
     show princess at midleft with moveinleft
     p "Finally. You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
-    p "But first… I’ll have to deal with the mage in charge."
+    p "But first... I’ll have to deal with the mage in charge."
     show cyril at midright with moveinright
     p "... what. They put a kid in charge?! This is exactly the kind of inefficiency I intend to remedy when I am queen!"
     p "Still… I’ll have to deal with him somehow."
@@ -21,7 +21,7 @@ label start:
         
             
 label sweet:
-    p "Oh hello! You must be in charge here. How lovely to make your acquaintance, Mr…?"
+    p "Oh hello! You must be in charge here. How lovely to make your acquaintance, Mr...?"
     c "Merlonious.  Cyril Merlonious.  At least, the last time somebody called me it.  Which has been a while come to think of it.  "
     c "Erm, wait a moment... it's you.  Princess!  I almost didn't recognize you!  Your majesty!  Did you find someone to relieve me?  Is that why you're here?"
     c "I did so know this day would come."
@@ -348,7 +348,7 @@ label mage_time6:
     p "I should have guessed."
     
 label mage_insane:
-    b "It took only a few short years of solitude to loose your mind."
+    b "It took only a few short years of solitude to lose your mind."
     b "Are you sure she's even real?"
     m "Yes!  Of course I am!"
     n "Sssshe's interested in you.  Ssshe must not be real."

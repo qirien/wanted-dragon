@@ -23,11 +23,11 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"Be My Minion"
+    config.window_title = u"Wanted: Dragon"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
-    config.name = "Be My Minion"
+    config.name = "Wanted: Dragon"
     config.version = "0.0"
 
     #########################################
@@ -262,7 +262,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "Be My Minion-1425162662"
+    config.save_directory = "Wanted: Dragon-1425162662"
 
 init -1 python hide:
     #########################################
