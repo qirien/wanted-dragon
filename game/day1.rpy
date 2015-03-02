@@ -118,6 +118,25 @@ label sharecyril:
     "(Let's see if the bumbling mage can get something right this time.  I suppose I can give him a chance.)"
     
 label explore1:
-    p "I don't need any help!  I will scour this place myself!"
+    p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
-    
+    p "I just wish something would fall out of the sky that would be the answer to all my problems."
+    # rope drops
+    # niir drops down
+    p "Well, what do we have here?"
+    n "The ansssswer to all your problemsss."
+    p "A piece of rope?"
+    n "Look clossser."
+    p "A noose.  How very... "
+    extend "thoughtful of you."
+    n "Thoughtful is not ussssually one of the words used to describe the great dragon Niir."
+    p "You don't say?"
+    p "Well, Niir.  I am very busy with things."
+    p "So if you'd please be on your way, I can get to my explorations."
+    n "Need an esssscort?"
+    n "You mussst.  Pretty young thing like you.  {i}Alone{/i}.  In the casssstle."
+    n "I'd advisssse you to be more careful."
+    p "In case what?  There's some dragon lurking around above me and spying on me?"
+    p "How ever will I cope?"
+    n "Careful.  Or you might make a dragon mad."
+    p "How do you know that wasn't what I intended?"
