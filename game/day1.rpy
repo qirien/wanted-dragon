@@ -3,16 +3,12 @@ label day1:
     menu:
     "see if the dragons have any ideas":
        #they tell you some stuff, then maybe you decide whether to stay with Niir or ask Balrung something, call niir_next_conversation or balrung_next_conversation
+    
     "research powerful artifacts":
             jump library1
-        #(at the library, where Cyril hangs out)
-#            after finding some interesting fact in a book:
-#                share it with Cyril
-#                    talk about it, then call cyril_next_conversation
-#                keep researching on your own
+
     "Explore the castle":
-        #(finds something secret?)
-         #may also lead to some character’s next_conversation?
+        jump explore1
 
 
 label library1:
@@ -67,3 +63,61 @@ label library1:
     p "Begone with you!"
     c "Good day Princess, I will just be seeing myself out."
     p "(I thought he'd never leave.  Now what have we here...)"
+    p "This is quite curious.  This part here."
+    p "There is a scepter with emeralds that has not been located in centuries."
+    p "I think that it says it has ties to this very castle."
+    p "How... curious."
+    p "Although no one is sure what it does, they do presume it has magical powers."
+    p "Well, I may as well find out more about it."
+    p "The Scepter of Lavendorm."
+    p "Hmmm..."
+    
+menu:
+          "share it with Cyril."
+                jump sharecyril
+        "keep researching on your own"
+            jump researchown
+
+label sharecyril:
+    p "Oh Cyrilllll."
+    p "That foolish mage has to be around here somewhere."
+    p "Where {i}are{/i} you foolish mage?"
+    show cyril #with some transition
+    c "You called, your majesty?"
+    p "I am already quite aware that you are a magic weilder."
+    p "Please do not just appear like that in the future."
+    c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
+    p "But a burden?  I see that."
+    p "But I do have something rather curious to share with you, so if you would like to come with me."
+    c "I would come with you anywhere, your majesty."
+    p "..."
+    p "I'd rather you didn't."
+    c "So what is it that you wish to show me?"
+    p "This scepter.  The Scepter of Lavendorm.  Is it real?"
+    c "Quite real.  Once.  No one has seen it in quite some time."
+    p "And this mentor of yours that put you in charge, he must have been centuries old.  Did he ever see it?"
+    c "Well, I don't know about centuries..."
+    c "He might have said there was a powerful but uncontrollable magic that I shouldn't go looking for."
+    c "But I thought he was just joking with me.  Although come to think of it, he wasn't really the joking type."
+    p "So did he say {i}where{/i} not to go looking for it?"
+    c "Not specifically, but he did say it was bound up with special magic somewhere within these walls."
+    p "And you didn't think to mention this earlier?"
+    c "I thought your interest was with the dragons, not with any ancient artefacts that everyone has forgotten about."
+    p "My {i}interest{/i} is in whatever will get me on that throne the quickest."
+    p "Don't you ever forget that."
+    c "I can't make any promises there, but I will try to make your stay here both accomodating and useful."
+    p "Even if it means getting me that scepter?"
+    c "Oh well.  Perhaps it means that too."
+    p "It seems I've underestimated you, Moronious."
+    c "Ah yes.  You wouldn't be the first and you are surely not the last."
+    c "Although my name {i}is{/i} Merlonious, I do quite appreciate the kind words."
+    p "I wasn't being kind.  I was being truthful.  I have no time for {i}kindness{/i} mage."
+    c "Appreciated all the same."
+    p "Now find me that scepter!"
+    c "I will try to recall for you just where it was.  Don't worry, my maj- your majesty."
+    "(Let's see if the bumbling mage can get something right this time.  I suppose I can give him a chance.)"
+    
+label explore1:
+    p "I don't need any help!  I will scour this place myself!"
+    p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
+    
