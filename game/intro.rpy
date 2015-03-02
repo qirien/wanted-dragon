@@ -229,36 +229,7 @@ label joinmage:
     
     
     ## MAGE ROUTE
-    label mage_time3:
-    c "I know this was you Niir!"
-    "{i}He he he, ha ha ha...{/i}"
-    c "And you mark my words!  I will stop you, I will!"
-    c "As soon as I find that proper spellbook!"
-    p "Doing some reading?"
-    c "Yah!"
-    "He dropped the book like it was a hot potato."
-    c "Princess.  Yes, well I..."
-    p "Let me get that."
-    p "{i}15 Erotic Tales by Twilight{/i}."
-    p "You were reading {i}this{/i}?"
-    "(I know he wasn't but sometimes he makes it too easy.)"
-    p "You'll have to read me out the good parts, I'm ever so curious."
-    c "No, no.  Niir.  "
-    extend "He's just having a joke."
-    c "We joke together all the time.  Ha ha ha."
-    c "Hilarious."
-    c "Well, anyway.  I must find my spellbook.  My real spellbook."
-    c "Not.. this."
-    p "I'm not sure, I think {i}15 Erotic Tales by Twilight{/i} could cast a completely different kind of spell."
-    c "..."
-    c "Have you been talking with {i}him{/i} perchance?  Is this all part of the joke?"
-    p "Of course it is.  This life is all one big joke at your expense, Moronious."
-    c "Merlonious.  Cyril Merlonious."
-    p "Anyways, I came by for some advice, but if you are busy reading erotic tales, I will let you be."
-    c "I'm not busy- not at all!"
-    c "Please, do spend time with me.  I mean, ask away!  I will always lend an ear."
-    p "What do you think would make more of a statement?"
-    p "Burning part of the kingdom to the ground or ....?"
+
     
     
     
