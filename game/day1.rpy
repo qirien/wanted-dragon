@@ -42,22 +42,57 @@ label dragons1:
             
     menu:
         "\"Niir, you must act as though you are in love me.\"":
-            $ niir_affection += 1
-            n "Should I drool over you like thissss?"
-            p "No, that just makes you look like a half-wit. You should..."
-            menu:
-                "Write me poetry"
-                "Give me presents"
-                "Sing to me"
+            jump niir_pretend_love
                 
         "\"Actually, I meant you, Balrung.\"":
-            $ balrung_affection += 1
-            p "I thought you would make a better vassal. I have little hope that Niir could appear civilized."
+            p "I think you would make a better vassal, Balrung. I have little hope that Niir could appear civilized."
             b "Princess! I'm flattered. Though I'll admit, I assumed you'd want someone..."
-            p "Younger? Less scarred? More energetic? More athletic?"
+            n "Lessss ssscarred? Lesss ancient? More agile? More sssensual?"
             b "Yes, all of those things. I am not young, Princess."
+            menu:
+                "\"You're right. Niir it is.\"":
+                    jump niir_pretend_love
+                "\"I prefer you.\"":
+                    $ balrung_affection += 1
+                    p "I am the princess!  {b}I{/b} decide who shall be my minion, and I have chosen you! Do not question my decisions."
+                    b "As you wish, princess."
+                    extend "Perhaps you would care to join me in a game of Queens and Pawns?"
+                    jump balrung1
+                "\"Isn't there another way?\"":
+                    p "Couldn't we overpower him? He doesn't seem that formidable..."
+                    b "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you possess some powerful magic...?"
+                    p "I do not. But perhaps there is something in the castle that would allow us to fight him."
+                    n "He iss alwaysss reading. The bookssss might aid you..."
+                    p "Then I will seek out the library."
+                    jump library1
 
+label balrung1:
+    p "Queens and Pawns? Is this a joke?"
+    b "I can hardly think of a game more fit for someone who wishes to retake a kingdom."
+    n "You should play ssstrip Queensss and Pawnssss."
+    b "Niir, perhaps you would like to play against the Princess?"
+    n "I do have a fine opening move... but Queensss and Pawnsss is boring. I shall ssseeek better entertainment."
+    # TODO: FInish this scene
+
+label niir_pretend_love:
+    $ niir_affection += 1
+    n "Should I drool over you like thissss?"
+    p "No, that just makes you look like a half-wit and soils my dress."
+    n "You could alwaysss take off the dresss...."
+    b "Niir, remember, you're trying to act as though you are in love, as though you are a reformed gentleman of a dragon who would never even think of princesses without their dresses on."
+    p "Niir, you should..."
+    # TODO: Let's roleplay this part?
+    menu:
+        "\"Write me poetry\"":
+            p "You should write a poem suitable to discuss the multitude of reasons why I should be Queen."
+        "Give me presents":
+            p "You should bring me a gift suitable for my royal station."
+        "Sing to me":
+            p "You should sing a sonnet fit to describe my beauty, wit, and charm."
+    
+    
 label library1:
+    # TODO: against the dragons? Do you mean, against her sister or to free the dragons?
     p "Going to the library would be the perfect way to find a tidbit of knowledge to use against the dragons."
     c "I know this was you Niir!"
     "{i}He he he, ha ha ha...{/i}"
