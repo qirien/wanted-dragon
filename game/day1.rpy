@@ -1,4 +1,6 @@
 label day1:
+    scene bg bedroom with fade
+    show princess at center with dissolve
     p "Another day and I’m still no closer to regaining my throne… what would be the best approach?"
     menu:
     "see if the dragons have any ideas":
@@ -71,7 +73,9 @@ label balrung1:
     b "I can hardly think of a game more fit for someone who wishes to retake a kingdom."
     n "You should play ssstrip Queensss and Pawnssss."
     b "Niir, perhaps you would like to play against the Princess?"
-    n "I do have a fine opening move... but Queensss and Pawnsss is boring. I shall ssseeek better entertainment."
+    n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
+    hide niir with moveoutright
+    
     # TODO: FInish this scene
 
 label niir_pretend_love:
@@ -81,7 +85,7 @@ label niir_pretend_love:
     n "You could alwaysss take off the dresss...."
     b "Niir, remember, you're trying to act as though you are in love, as though you are a reformed gentleman of a dragon who would never even think of princesses without their dresses on."
     p "Niir, you should..."
-    # TODO: Let's roleplay this part?
+    # TODO: Let's roleplay this part?  Niir is snide and bratty and doesn't want to participate, but Balrung says he'll come around?
     menu:
         "\"Write me poetry\"":
             p "You should write a poem suitable to discuss the multitude of reasons why I should be Queen."
@@ -158,6 +162,7 @@ menu:
                 jump sharecyril
         "keep researching on your own"
             jump researchown
+            # TODO: add an option to go back to the dragons, to make sure the player has a chance to make in informed decision?
 
 label sharecyril:
     p "Oh Cyrilllll."
