@@ -1,6 +1,13 @@
 init -1:
 
     #
+    # VARIABLES
+    #
+    define balrung_affection = 0
+    define niir_affection = 0
+    define cyril_affection = 0
+
+    #
     # CHARACTERS
     #
 

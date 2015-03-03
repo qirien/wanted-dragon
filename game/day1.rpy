@@ -2,14 +2,60 @@ label day1:
     p "Another day and I’m still no closer to regaining my throne… what would be the best approach?"
     menu:
     "see if the dragons have any ideas":
+        jump dragons1
        #they tell you some stuff, then maybe you decide whether to stay with Niir or ask Balrung something, call niir_next_conversation or balrung_next_conversation
     
     "research powerful artifacts":
-            jump library1
+        jump library1
 
     "Explore the castle":
         jump explore1
 
+label dragons1:
+    p "Dragons are powerful. I need more power. The most logical thing to do would be to enlist their aid."
+    scene bg dungeon with fade
+    n "Ssssomething tasssty comes!"
+    show princess at midright with moveinright
+    p "Ahem. Dragons? I wish to speak with you!"
+    show niir at midleft
+    show balrung at left
+    with moveinleft
+    b "Princess [name]. To what do we owe this great honor?"
+    n "Yesss, it's a pleasure..."
+    p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
+    n "Vasssssals?" #TODO: Trying to think of a naughty pun here...
+    b "Princess, our powers are extremely limited whilst we are held captive here."
+    p "I thought all you had to do was kiss a human or something, and the spell would be broken."
+    n "If that were the casssse, I'd have kissssed you firssst and asssked questions later."
+    b "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found love and is reformed."
+    p "Love?"
+    menu:
+        "\"We can fool him.\"":
+            p "We should be able to fool him easily."
+            b "Yes... you may be just what we've been waiting for. "
+            extend "So, how shall we convince him that you and Niir are in love, and he will trouble the other ladies no more?"
+            
+        "\"It won't be hard for you to love me.\"":
+            p "Well, aren't you half-mad with love for me already, Niir?"
+            n "What?! Love!"
+            b "No, I'm afraid Niir always acts this way. But, perhaps he could learn to love you, given time."
+            
+    menu:
+        "\"Niir, you must act as though you are in love me.\"":
+            $ niir_affection += 1
+            n "Should I drool over you like thissss?"
+            p "No, that just makes you look like a half-wit. You should..."
+            menu:
+                "Write me poetry"
+                "Give me presents"
+                "Sing to me"
+                
+        "\"Actually, I meant you, Balrung.\"":
+            $ balrung_affection += 1
+            p "I thought you would make a better vassal. I have little hope that Niir could appear civilized."
+            b "Princess! I'm flattered. Though I'll admit, I assumed you'd want someone..."
+            p "Younger? Less scarred? More energetic? More athletic?"
+            b "Yes, all of those things. I am not young, Princess."
 
 label library1:
     p "Going to the library would be the perfect way to find a tidbit of knowledge to use against the dragons."
@@ -82,9 +128,9 @@ label sharecyril:
     p "Oh Cyrilllll."
     p "That foolish mage has to be around here somewhere."
     p "Where {i}are{/i} you foolish mage?"
-    show cyril #with some transition
+    show cyril #TODO: with some flash-bang transition
     c "You called, your majesty?"
-    p "I am already quite aware that you are a magic weilder."
+    p "I am already quite aware that you are a magic wielder."
     p "Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
     p "But a burden?  I see that."
@@ -111,7 +157,7 @@ label sharecyril:
     p "It seems I've underestimated you, Moronious."
     c "Ah yes.  You wouldn't be the first and you are surely not the last."
     c "Although my name {i}is{/i} Merlonious, I do quite appreciate the kind words."
-    p "I wasn't being kind.  I was being truthful.  I have no time for {i}kindness{/i} mage."
+    p "I wasn't being kind.  I was being truthful.  I have no time for {i}kindness{/i}, mage."
     c "Appreciated all the same."
     p "Now find me that scepter!"
     c "I will try to recall for you just where it was.  Don't worry, my maj- your majesty."

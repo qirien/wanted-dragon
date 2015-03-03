@@ -32,7 +32,7 @@ label sweet:
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
     p "The dragons? What can you tell me about them?"
-    c "Well, many of them have left actually.  Love can do wonders to reform a rouge dragon.  One got placed in the castle due to his insatiable lust for destruction.  I think.  He has been here a long time and my master told me a little of him before he passed.  My master was really wonderful.  He took good care of these dragons. Cared about their heart.  There's another as well, more recent an addition.  He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
+    c "Well, many of them have left actually.  Love can do wonders to reform a rogue dragon.  One got placed in the castle due to his insatiable lust for destruction.  I think.  He has been here a long time and my master told me a little of him before he passed.  My master was really wonderful.  He took good care of these dragons. Cared about their heart.  There's another as well, more recent an addition.  He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
     p "Oh my, that sounds dreadful! And yet also intriguing. Would you introduce me?"
 
 label truth:
@@ -61,11 +61,11 @@ label truth2:
     jump room_intro
 
 label flattering:
-    p "Believe it or not, I was thinking about… you."
-    p "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for… companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
+    p "Believe it or not, I was thinking about... you."
+    p "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
     c "Oh erm... you don't say..."
     c "I guess I... I mean as much as anyone... I mean... Oh.  It's a very thoughtful offer from you, surely."
-    p "I’m certain we could help each other. But for now… is this really the best room you have?"
+    p "I’m certain we could help each other. But for now...is this really the best room you have?"
     jump room_intro
     
 label room_intro:
@@ -87,7 +87,7 @@ label room_intro:
 label ignore:
     p "..."
     c "Oh yes.  Oh of course, there is an apparition in front of me, oh Cyril.  You’ve finally done it.  You’ve gone completely bonkers."
-    "(He thinks I’m a ghost?! What a strange man… still, I can use that to my advantage and slip past him)"
+    "(He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him)"
     c "Well, back to that spell again.  Biggeldy- I'll never get it!  Now where did I keep that spell-book.  It was around here somewhere!  "
     c "I just need to find it.  Perhaps one of those surly old dragons know where it got to."    
     "(Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance…)"  
@@ -97,96 +97,81 @@ label ignore:
     n "Cyril the Cowardly."
     n "And I see you've brought us a tassssty morssssel.  How generous."
     c "Oh don’t mind her.  She’s just my apparition.  Wait.  Why can you see her?"
+    # TODO: Finish this branch or make it join in with the main. Early ending?
 
 label meet_dragons:
     c "Well, it's time to meet the dragons.  I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
     c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat.  Balrung, he is much more courteous but he is rather stubborn.  He will try to make you see it his way and not by the most honest methods."
-    p "Interesting…well, lead on."
-    c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! [or some made up word here]  Now we shall enter."
+    p "Interesting...well, lead on."
+    c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  A royal princess and I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu:
         "Allude to your purpose in veiled terms.":
-            jump allude
+            $ balrung_affection += 1
+            p "I, Princess [name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
+            n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
+            b "There are many injustices I would fight, had I only the freedom to do so."
+            c "Now, now.  Behave, you two."
+            
         "Pretend you are just checking on things.":
-            jump checkingonthings 
-
-label allude:
-    p "I, Princess [name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
-    n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
-    b "There are many injustices I would fight, had I only the freedom to do so. But, alas, it is my lot to be forever punished for the folly of my youth."
-    c "Now, now.  Behave you two."
-    jump talk_which_dragon
+            p "I’m Princess [name]. I just… wanted to see how things were going here. You aren’t being mistreated, are you?"
+            b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
+            c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
+            n "I would call it mistreatment to be kept away from such a beautiful sight daily -to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
     
-label talk_which_dragon:
-    
+    # Whom to talk to?
     menu:
         "Address Niir.":
-            jump addressniir
-        "Address Balrung.":
-            jump addressbalrung 
-        "Address Cyril.":
-            jump addressmage
 
-label addressniir:
-    p "Niir… what an interesting name. Tell me about yourself."
-    n "Intrigue you do I?  I ssssuppose I would.  Unlike my older friend here who has no sense for amusement or play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
-    p "Tell me what it is, and then I shall decide."
-    n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  To be up here in this castle tower you are obviousssly not afraid of heights.  Perhaps you would like to get higher ssstill?"
-    p "What did you have in mind?"
-    n "That, is my little sssecret.  You will have to help me leave to find out."
-    
-    menu:
-        "\"I shall consider your… offer, Niir.\"":
-            jump consideroffer
-        "\"I’m through with you.\"":
-            jump throughwithyou 
+            p "Niir...what an interesting name. Tell me about yourself."
+            n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense for amusement or play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
+            p "Tell me what it is, and then I shall decide."
+            n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  To be up here in this castle tower you are obviousssly not afraid of heights.  Perhaps you would like to get higher ssstill?"
+            p "What did you have in mind?"
+            n "That, is my little sssecret.  You will have to help me leave to find out."
             
-label consideroffer:
-    p "I shall consider your… offer, Niir." #<niir_affection+>
-    n "I’ll be waiting.  Until then, why not come clossser?  Let usss get… acquainted."
+            menu:
+                "\"I shall consider your... offer, Niir.\"":
+                    $ niir_affection += 1
+                    p "I shall consider your... offer, Niir."
+                    n "I’ll be waiting.  Until then, why not come clossser?  Let usss get… acquainted."
+                
+                "\"I’m through with you.\"":                    
+                    p "I’m through with you."
+                    n "Pity.  I could have a lot of ussse for someone like you as my plaything."
+                    b "This Princess is no one’s ‘plaything’, Niir, least of all yours. But, Princess, tell us about yourself. How is the royal family?"
+                    n "You have no ssssense of fun.  But if you would rather spend time with thisss sssourpus, then you can make your choice."
+                    p "My...family? (not sure what to write here)"
 
-label throughwithyou:
-    p "I’m through with you."
-    "Pity.  I could have a lot of ussse for someone like you as my plaything."
-    "This Princess is no one’s ‘plaything’, Niir, least of all yours. But, Princess, tell us about yourself. How is the royal family?"
-    "You have no ssssense of fun.  But if you would rather spend time with thisss sssourpus, then you can make your choice."
-    "My...family? (not sure what to write here)"
+        "Address Balrung.":
+            $ balrung_affection += 1
+            p "Balrung...how long have you been here?"
+            b "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
+            b "Well, I do, at any rate. I’m not sure I can say the same for my heartless young...companion here."
+            # TODO: Have Niir doing something funny, oblivious that he is being talked about?
+        
+        "Address Cyril.":
+            $ cyril_affection += 1
+            p "It’s just these two? Aren’t there any other dragons here?"
+            c "Well, as I said.  Most of the other dragons have moved on.  Actually, come to think of it, I've forgotten when the last one left.  Who was that heroine who came to- Or maybe it was some wilderbeast.  "
+            c "I'm not even sure if I'm remembering it right.  But these two have made this place home for a long time."
+            p "You must have considerable magical powers, if you are guarding them here all on your own."
+            c "Oh, well I wouldn’t say.  I mean people have said.  Well, my mother.  Once.  But yes, I suppose someone has to do the job and that someone is me.  It’s quite a funny story really, I just fell into it.  "
+            c "I was at the council and they were all concerned about the legacy of my master and they were all shouting over one another and didn’t even realize I was in the room.  "
+            c "And I was telling them all that something must be done about those pesky dragons…"
+            c "And then they all left.  And put out the lamps and I was just there.  So I guess the council had made their decision after all, that I was to do something about the dragons.  And here I am."
 
-label addressbalrung:
-    p "Balrung...how long have you been here?" #<balrung_affection+>
-    b "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
-    b "Well, I do, at any rate. I’m not sure I can say the same for my heartless young companion here."
-
-label addressmage:
- #<mage_affection+>
-    p "It’s just these two? Aren’t there any other dragons here?"
-    c "Well, as I said.  Most of the other dragons have moved on.  Actually, come to think of it, I've forgotten when the last one left.  Who was that heroine who came to- Or maybe it was some wilderbeast.  "
-    c "I'm not even sure if I'm remembering it right.  But these two have made this place home for a long time."
-    p "You must have considerable magical powers, if you are guarding them here all on your own."
-    c "Oh, well I wouldn’t say.  I mean people have said.  Well, my mother.  Once.  But yes, I suppose someone has to do the job and that someone is me.  It’s quite a funny story really, I just fell into it.  "
-    c "I was at the council and they were all concerned about the legacy of my master and they were all shouting over one another and didn’t even realize I was in the room.  "
-    c "And I was telling them all that something must be done about those pesky dragons…"
-    c "And then they all left.  And put out the lamps and I was just there.  So I guess the council had made their decision after all, that I was to do something about the dragons.  And here I am."
-
-label checkingonthings:
-    p "I’m Princess [name]. I just… wanted to see how things were going here. You aren’t being mistreated, are you?"
-    b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
-    c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
-    n "I would call it mistreatment to be kept away from such a beautiful sight daily -to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
-    jump talk_which_dragon
-
-
-label endchatwithdragons:
+    # After talked to Niir, Balrung, or Cyril
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
     c "I don't want to dwell on it but there have been some times where I have just felt like giving up!"
     p "You don't say."
-    c "But regardless you are here now your majesty, so it isn't all bad!  Not at all."
+    c "But regardless you are here now, your majesty, so it isn't all bad!  Not at all."
     c "Food is pretty spare in these parts, thanks to how isolated everything is."
-    c "I normally conjure something up however."
-    c "If you'd like you could join me for a supper.  Otherwise I could bring something to your room?"
+    c "I normally conjure something up, however."
+    c "If you'd like, you could join me for a supper.  Otherwise I could bring something to your room?"
 
     menu:
         "\"I'd rather have something brought to me, and brought to me hot!\"":
@@ -195,7 +180,7 @@ label endchatwithdragons:
             jump joinmage 
 
 label joinmage:
-    
+    $ cyril_affection += 1
     c "Ah, yes Princess.  So glad of you to join me."
     c "I mean glad of me."
     c "I mean I'm the one who's glad."
