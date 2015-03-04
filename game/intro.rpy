@@ -10,7 +10,12 @@ label start:
     p "Still… I’ll have to deal with him somehow."
     c "Biggeldy, boggaldy, wap!"
     c "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
-    c "Oh!  Hello!"
+    c "Oh!  Hello! Who are you?"
+    p "My name is..."
+    $ p_name = renpy.input("What is your name?", "Chrysandra", length=30)
+    p "I am Princess [p_name]."
+    c "How can I help you, Princess [p_name]?"
+    
     menu:
         "Play it sweet":
             jump sweet

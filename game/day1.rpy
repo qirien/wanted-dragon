@@ -1,8 +1,8 @@
 label day1:
     scene bg bedroom with fade
     show princess at center with dissolve
-    p "What a terrible start to a day; I'm still not queen."'
-    p "But I'm here to remedy that. How shall I begin?"
+    p "What a terrible start to a day; I'm still not queen."
+    p "But that's why I came here; to remedy that. How shall I begin?"
     menu:
     "Talk to the dragons":
         jump dragons1
@@ -26,7 +26,7 @@ label dragons1:
     b "Princess [name]. To what do we owe this great honor?"
     n "Yesss, it's a pleasure..."
     p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
-    n "Vasssssals?" #TODO: Trying to think of a naughty pun here...
+    n "Vasssssals? We are no sssuch thing." #TODO: Better Niir response?
     b "Princess, our powers are extremely limited whilst we are held captive here."
     p "I thought all you had to do was kiss a human or something, and the spell would be broken."
     n "If that were the casssse, I'd have kissssed you firssst and asssked questions later."
@@ -76,9 +76,42 @@ label balrung1:
     b "Niir, perhaps you would like to play against the Princess?"
     n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
     hide niir with moveoutright
+    b "He never was very good at this game. I thought I could teach him, but..."
+    p "I've played this game many times. Are you very good?"
+    b "It's hard to say; I've had so few people to play against. Merlonious won't play with me anymore."
+    p "Why not?"
+    b "He claims he can't concentrate when Niir's around, so of course whever I challenge him to play, Niir slinks around to try and distract him."
+    p "Well, I will play against you."
+    b "Wonderful! Just a friendly game, of course."
+    p "I don't do friendly games."
+    b "Of course not! I merely meant that we don't need any stakes for winning or losing."
+    p "Very well. You may go first."
+    b "All right. There."
+    p "There's only one thing I don't understand about this game."
+    b "Only one thing?"
+    p "Why are there so many queens? There should only be one queen!"
+    b "Well, at the end there {b}is{/b} only one queen, yes? And whatever pawns she manages to bring with her."
+    p "Still...if there's more than one, they aren't really queens. Just princesses."
+    b "It must be a hard lot to be a princess."
+    p "I know! So close to power, and to have it ripped away..."
+    b "You know, the part I find most interesting is that in this game, there are no wizards, or knights, or sages. Merely those with power, and those used by those in power."
+    p "That part, at least is accurate. Take that!"
+    b "That was a daring move. Reckless, but daring. Your turn."
+    p "Who's in power now?!"
+    b "We shall see."
+    p "Hmph. You only have one queen left."
+    b "But I have all my pawns. Your queens are quite unguarded."
+    p "The pawns are insignificant."
+    b "I disagree."
+    p "I only need one queen!"
+    b "No, I'm afraid it won't be enough. There."
+    p "..."
+    b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
+    p "A warm-up, yes...perhaps. I'm leaving now."
+    b "Until next time, Princess."
+    hide princess with moveoutright
+    return
     
-    # TODO: FInish this scene
-
 label niir_pretend_love:
     $ niir_affection += 1
     n "Should I drool over you like thissss?"

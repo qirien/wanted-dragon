@@ -6,12 +6,13 @@ init -1:
     define balrung_affection = 0
     define niir_affection = 0
     define cyril_affection = 0
+    define p_name = "Princess"
 
     #
     # CHARACTERS
     #
 
-    define p = Character('Princess', image="princess", color="#c8ffc8")
+    define p = DynamicCharacter("p_name", image="princess", color="#c8ffc8")
     define b = Character('Balrug', image="balrung", color="#c8ffc8")
     define c = Character('Cyril Merlonious', image="merlin", color="#c8ffc8")
     define n = Character('Niir', image="niir", color="#c8ffc8")
