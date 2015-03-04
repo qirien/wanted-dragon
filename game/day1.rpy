@@ -1,9 +1,10 @@
 label day1:
     scene bg bedroom with fade
     show princess at center with dissolve
-    p "Another day and I’m still no closer to regaining my throne… what would be the best approach?"
+    p "What a terrible start to a day; I'm still not queen."'
+    p "But I'm here to remedy that. How shall I begin?"
     menu:
-    "see if the dragons have any ideas":
+    "Talk to the dragons":
         jump dragons1
        #they tell you some stuff, then maybe you decide whether to stay with Niir or ask Balrung something, call niir_next_conversation or balrung_next_conversation
     
@@ -14,7 +15,7 @@ label day1:
         jump explore1
 
 label dragons1:
-    p "Dragons are powerful. I need more power. The most logical thing to do would be to enlist their aid."
+    p "Dragons are powerful. I need more power. I should enlist their aid."
     scene bg dungeon with fade
     n "Ssssomething tasssty comes!"
     show princess at midright with moveinright
