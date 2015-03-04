@@ -64,7 +64,7 @@ label day3:
             p "Father knows that I can never return as long as he is planning to crown my sister Magnolia as queen."
             p "Perhaps he will feel he has made a mistake if he thinks I am dead or kidnapped by bandits as a result of his rash decision!"
     
-    # TODO: Finish, 
+    # TODO: Finish, have interactions with all three characters somehow? Ask about scepter depending on who she asked earlier?
     
     
     
