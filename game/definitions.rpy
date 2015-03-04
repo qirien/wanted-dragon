@@ -7,6 +7,7 @@ init -1:
     define niir_affection = 0
     define cyril_affection = 0
     define p_name = "Princess"
+    define k_name = "Novaria"
 
     #
     # CHARACTERS

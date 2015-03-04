@@ -79,7 +79,7 @@ label room_intro:
     p "No, no, this will do. You may leave me for now, but I may need your assistance later."
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean your majesty!  Your majesty.  Because you are most certainly not mine... errr... I will see to that bath."
     "..."
-    #SHOWER
+    #TODO: SHOWER
     
     "(That’s better! One of these days I will need to look into learning more weather magic...awful that I should be drenched at the whim of the mere skies)."
     "(But now to meet with the dragons…)"
@@ -106,23 +106,25 @@ label ignore:
 
 label meet_dragons:
     c "Well, it's time to meet the dragons.  I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
-    c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat.  Balrung, he is much more courteous but he is rather stubborn.  He will try to make you see it his way and not by the most honest methods."
+    c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat."
+    c "Balrung, he is much more courteous but he is rather stubborn.  He will try to make you see it his way and not by the most honest methods."
     p "Interesting...well, lead on."
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
     n "I sssssee that you have brought a friend.  Delic-delightful."
-    c "Oh no you don't.  This is royalty.  A royal princess and I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
+    c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
-            p "I, Princess [name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
+            p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
             n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
             b "There are many injustices I would fight, had I only the freedom to do so."
             c "Now, now.  Behave, you two."
+            c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
-            p "I’m Princess [name]. I just… wanted to see how things were going here. You aren’t being mistreated, are you?"
+            p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
             c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             n "I would call it mistreatment to be kept away from such a beautiful sight daily -to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
@@ -134,7 +136,7 @@ label meet_dragons:
             p "Niir...what an interesting name. Tell me about yourself."
             n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense for amusement or play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
             p "Tell me what it is, and then I shall decide."
-            n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  To be up here in this castle tower you are obviousssly not afraid of heights.  Perhaps you would like to get higher ssstill?"
+            n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  To be up here in this castle tower you are obviousssly not afraid of heights.  Perhaps you would like to get higher ssstill?"  #TODO: I thought they were in the dungeon?
             p "What did you have in mind?"
             n "That, is my little sssecret.  You will have to help me leave to find out."
             
@@ -142,10 +144,10 @@ label meet_dragons:
                 "\"I shall consider your... offer, Niir.\"":
                     $ niir_affection += 1
                     p "I shall consider your... offer, Niir."
-                    n "I’ll be waiting.  Until then, why not come clossser?  Let usss get… acquainted."
+                    n "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
                 
-                "\"I’m through with you.\"":                    
-                    p "I’m through with you."
+                "\"Not interested.\"":
+                    p "Not interested."
                     n "Pity.  I could have a lot of ussse for someone like you as my plaything."
                     b "This Princess is no one’s ‘plaything’, Niir, least of all yours. But, Princess, tell us about yourself. How is the royal family?"
                     n "You have no ssssense of fun.  But if you would rather spend time with thisss sssourpus, then you can make your choice."
@@ -166,7 +168,7 @@ label meet_dragons:
             p "You must have considerable magical powers, if you are guarding them here all on your own."
             c "Oh, well I wouldn’t say.  I mean people have said.  Well, my mother.  Once.  But yes, I suppose someone has to do the job and that someone is me.  It’s quite a funny story really, I just fell into it.  "
             c "I was at the council and they were all concerned about the legacy of my master and they were all shouting over one another and didn’t even realize I was in the room.  "
-            c "And I was telling them all that something must be done about those pesky dragons…"
+            c "And I was telling them all that something must be done about those pesky dragons..."
             c "And then they all left.  And put out the lamps and I was just there.  So I guess the council had made their decision after all, that I was to do something about the dragons.  And here I am."
 
     # After talked to Niir, Balrung, or Cyril
@@ -199,15 +201,14 @@ label joinmage:
     c "I'll just whip something up for us.  But nothing too complicated."
     c "Actually, my repertoire isn't that vast with food spells."
     c "So I'd better just do what I can do."
-    "..."
+    p "..."
     c "I hope it is to your liking."
     c "It's not much but I-"
     p "Silence."
     c "Ah, yes.  I will be entirely, completely-"
     c "Silent."
-    
-    
-    
+    p "...That's better."
+   
     c "Yes, well, I was given the name Merlonious after the great Merlin, you see."
     c "But I guess, to family I've always been Cyril.  Cyril the Competent, they say."
     c "Which actually isn't much of a compliment come to think of it."
@@ -251,7 +252,7 @@ label mage_time4:
     p "{i}Do{/i} you?"
     p "Everyone doing your bidding and acting all sweet and kind to you just because!"
     c "Ah, yes.  That does-that does sound horrible."
-    p "It was monsterous, hidious.  And my sister, she always got complimented first - {i}first!{/i}"
+    p "It was monstrous, hideous.  And my sister, she always got complimented first - {i}first!{/i}"
     p "I mean, it's not as though I'm second rate.  So why her?"
     c "Well, she is the elder out of you... so I'm sure it was just-"
     p "If I want your opinion I'll ask."
@@ -288,7 +289,7 @@ label mage_time5:
     p "Of course you will, you're pathetic and I can do whatever I lik-"
     c "You {b}will not{/b}."
     "(Is that lightning?)"
-    "(Cyril the Chaste has {i}actually{/i} beoome scary.)"
+    "(Cyril the Chaste has {i}actually{/i} become scary.)"
     p "Fine.  Have your wand."
     "(Perhaps he is worth more than a slave after all)."
     
@@ -302,18 +303,18 @@ label mage_time6:
     c "Oh, erm... thank you?"
     p "Yes.  My future kingdom may have a place for you."
     p "I'm sure we could come to some arrangement."
-    "I reached out to touch him on the shoulder."
+    "I reached out to touch him on the shoulder." #TODO: Are we writing in the first-person?
     "And he recoiled quickly, much to my amusement."
     p "You have never been touched by a woman before, have you?"
-    c "Errr, yes.  I mean no.  Not entirely in person, no.  But I have watched the dragons and read some rather riveting books.  But short answer… erm, no."
+    c "Errr, yes.  I mean no.  Not entirely in person, no.  But I have watched the dragons and read some rather riveting books.  But short answer...erm, no."
     p "I should have guessed."
     
 label mage_insane:
     b "It took only a few short years of solitude to lose your mind."
     b "Are you sure she's even real?"
-    m "Yes!  Of course I am!"
+    c "Yes!  Of course I am!"
     n "Sssshe's interested in you.  Ssshe must not be real."
-    m "She is real.  She is the real princess.  Just look at her."
+    c "She is real.  She is the real princess.  Just look at her."
     b "Are you sure about that?"
     n "I can't ssssee a thing."
     p "You blithering fool, Cyril.  They're playing you."
@@ -322,9 +323,9 @@ label mage_insane:
     n "Exacccctly."
     p "Cyril the Clueless.  You astound me.  I came here for a dragon."
     p "But despite your many inadequacies - and there are many - I found myself drawn to you."
-    m "I do find it highly unlikely that an apparition would call me inadequate and clueless."
+    c "I do find it highly unlikely that an apparition would call me inadequate and clueless."
     b "Unless you were making her up to be realistic."
-    m "I am!  I am!  So true!  I just wanted it to be true!"
+    c "I am!  I am!  So true!  I just wanted it to be true!"
     "(Is he for real?)"
     p "Oh for the love of..."
     menu:
@@ -335,29 +336,29 @@ label mage_insane:
             
 label mage_insane_kiss:
     "..."
-    m "Ah, sweet, sweet apparition."
-    m "I'm afraid this is the closest that we're going to get to being together for real."
+    c "Ah, sweet, sweet apparition."
+    c "I'm afraid this is the closest that we're going to get to being together for real."
     p "Cyril the Crazy, I just kissed you."
-    m "And I'm going to spend all my years in this castle imagining you."
+    c "And I'm going to spend all my years in this castle imagining you."
     p "You are completely insane."
-    m "Insane with love, my dear."
+    c "Insane with love, my dear."
     p "No, insane with insanity.  I'm leaving."
-    m "But you can never leave, as you are in my mind."
+    c "But you can never leave, as you are in my mind."
     p "Watch me."
     p "Dragons, sorry it didn't work out."
-    p "Cyril, this has been a complete waste of my time adieu."
+    p "Cyril, this has been a complete waste of my time. Adieu."
     
     #MAGE INSANE END
     
     
 label mage_insane_step:
-    m "Ouch!  You trod on me!"
+    c "Ouch!  You trod on me!"
     p "Would an imaginary person do this?" with hpunch
     p "Or this?" with hpunch
-    m "Ow!  Ow!  Ow!"
-    m "I suppose not.  You must be real after all."
+    c "Ow!  Ow!  Ow!"
+    c "I suppose not.  You must be real after all."
     p "Yes and I was hoping that a certain foolish mage and I might go to the council of mages to get someone else to do this job."
     p "It seems I'm going to need you in the immediate future."
-    m "I'm yours my majesty, I mean {i}your{/i} majesty of course."
+    c "I'm yours my majesty, I mean {i}your{/i} majesty of course."
     p "You had it right the first time."
     

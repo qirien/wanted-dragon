@@ -2,20 +2,8 @@ label day1:
     scene bg bedroom with fade
     show princess at center with dissolve
     p "What a terrible start to a day; I'm still not queen."
-    p "But that's why I came here; to remedy that. How shall I begin?"
-    menu:
-    "Talk to the dragons":
-        jump dragons1
-       #they tell you some stuff, then maybe you decide whether to stay with Niir or ask Balrung something, call niir_next_conversation or balrung_next_conversation
-    
-    "research powerful artifacts":
-        jump library1
-
-    "Explore the castle":
-        jump explore1
-
-label dragons1:
-    p "Dragons are powerful. I need more power. I should enlist their aid."
+    p "But that's why I came here; to remedy that."
+    p "Dragons are powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
     scene bg dungeon with fade
     n "Ssssomething tasssty comes!"
     show princess at midright with moveinright
@@ -31,113 +19,24 @@ label dragons1:
     p "I thought all you had to do was kiss a human or something, and the spell would be broken."
     n "If that were the casssse, I'd have kissssed you firssst and asssked questions later."
     b "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found love and is reformed."
-    p "Love?"
-    menu:
-        "\"We can fool him.\"":
-            p "We should be able to fool him easily."
-            b "Yes... you may be just what we've been waiting for. "
-            extend "So, how shall we convince him that you and Niir are in love, and he will trouble the other ladies no more?"
-            
-        "\"It won't be hard for you to love me.\"":
-            p "Well, aren't you half-mad with love for me already, Niir?"
-            n "What?! Love!"
-            b "No, I'm afraid Niir always acts this way. But, perhaps he could learn to love you, given time."
-            
-    menu:
-        "\"Niir, you must act as though you are in love me.\"":
-            jump niir_pretend_love
-                
-        "\"Actually, I meant you, Balrung.\"":
-            p "I think you would make a better vassal, Balrung. I have little hope that Niir could appear civilized."
-            b "Princess! I'm flattered. Though I'll admit, I assumed you'd want someone..."
-            n "Lessss ssscarred? Lesss ancient? More agile? More sssensual?"
-            b "Yes, all of those things. I am not young, Princess."
-            menu:
-                "\"You're right. Niir it is.\"":
-                    jump niir_pretend_love
-                "\"I prefer you.\"":
-                    $ balrung_affection += 1
-                    p "I am the princess!  {b}I{/b} decide who shall be my minion, and I have chosen you! Do not question my decisions."
-                    b "As you wish, princess."
-                    extend "Perhaps you would care to join me in a game of Queens and Pawns?"
-                    jump balrung1
-                "\"Isn't there another way?\"":
-                    p "Couldn't we overpower him? He doesn't seem that formidable..."
-                    b "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you possess some powerful magic...?"
-                    p "I do not. But perhaps there is something in the castle that would allow us to fight him."
-                    n "He iss alwaysss reading. The bookssss might aid you..."
-                    p "Then I will seek out the library."
-                    jump library1
-
-label balrung1:
-    p "Queens and Pawns? Is this a joke?"
-    b "I can hardly think of a game more fit for someone who wishes to retake a kingdom."
-    n "You should play ssstrip Queensss and Pawnssss."
-    b "Niir, perhaps you would like to play against the Princess?"
-    n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
-    hide niir with moveoutright
-    b "He never was very good at this game. I thought I could teach him, but..."
-    p "I've played this game many times. Are you very good?"
-    b "It's hard to say; I've had so few people to play against. Merlonious won't play with me anymore."
-    p "Why not?"
-    b "He claims he can't concentrate when Niir's around, so of course whever I challenge him to play, Niir slinks around to try and distract him."
-    p "Well, I will play against you."
-    b "Wonderful! Just a friendly game, of course."
-    p "I don't do friendly games."
-    b "Of course not! I merely meant that we don't need any stakes for winning or losing."
-    p "Very well. You may go first."
-    b "All right. There."
-    p "There's only one thing I don't understand about this game."
-    b "Only one thing?"
-    p "Why are there so many queens? There should only be one queen!"
-    b "Well, at the end there {b}is{/b} only one queen, yes? And whatever pawns she manages to bring with her."
-    p "Still...if there's more than one, they aren't really queens. Just princesses."
-    b "It must be a hard lot to be a princess."
-    p "I know! So close to power, and to have it ripped away..."
-    b "You know, the part I find most interesting is that in this game, there are no wizards, or knights, or sages. Merely those with power, and those used by those in power."
-    p "That part, at least is accurate. Take that!"
-    b "That was a daring move. Reckless, but daring. Your turn."
-    p "Who's in power now?!"
-    b "We shall see."
-    p "Hmph. You only have one queen left."
-    b "But I have all my pawns. Your queens are quite unguarded."
-    p "The pawns are insignificant."
-    b "I disagree."
-    p "I only need one queen!"
-    b "No, I'm afraid it won't be enough. There."
-    p "..."
-    b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
-    p "A warm-up, yes...perhaps. I'm leaving now."
-    b "Until next time, Princess."
-    hide princess with moveoutright
-    return
-    
-label niir_pretend_love:
-    $ niir_affection += 1
-    n "Should I drool over you like thissss?"
-    p "No, that just makes you look like a half-wit and soils my dress."
-    n "You could alwaysss take off the dresss...."
-    b "Niir, remember, you're trying to act as though you are in love, as though you are a reformed gentleman of a dragon who would never even think of princesses without their dresses on."
-    p "Niir, you should..."
-    # TODO: Let's roleplay this part?  Niir is snide and bratty and doesn't want to participate, but Balrung says he'll come around?
-    menu:
-        "\"Write me poetry\"":
-            p "You should write a poem suitable to discuss the multitude of reasons why I should be Queen."
-        "Give me presents":
-            p "You should bring me a gift suitable for my royal station."
-        "Sing to me":
-            p "You should sing a sonnet fit to describe my beauty, wit, and charm."
+    p "Couldn't we overpower him? He doesn't seem that formidable..."
+    b "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you are a sorceress...?"
+    p "I am not. But I am interested in powerful magical objects. Do you know of any?"
+    b "There are many arcane tomes in the library that might describe such things. I have not read them, as they would be of no use to dragons."
+    p "Then I will seek out the library."
+    jump library1
     
     
 label library1:
     # TODO: against the dragons? Do you mean, against her sister or to free the dragons?
-    p "Going to the library would be the perfect way to find a tidbit of knowledge to use against the dragons."
+    scene bg library with fade
+    show cyril at midright with dissolve
+    "(It appears the library is already occupied...)"
     c "I know this was you Niir!"
     "{i}He he he, ha ha ha...{/i}"
-    p "If it wasn't already occupied..."
     c "And you mark my words!  I will stop you, I will!"
     c "As soon as I find that proper spellbook!"
-    "(This completely ruins my plans.  But I guess I should make the best of a bad situation?)"
+    "(This completely ruins my plans.  But perhaps I could turn it to my advantage?)"
     p "Doing some reading?"
     c "Yah!"
     "He dropped the book like it was a hot potato."
@@ -183,6 +82,7 @@ label library1:
     c "Good day Princess, I will just be seeing myself out."
     p "(I thought he'd never leave.  Now what have we here...)"
     p "This is quite curious.  This part here."
+    # TODO: write this on a book-screen to look like an old book?
     p "There is a scepter with emeralds that has not been located in centuries."
     p "I think that it says it has ties to this very castle."
     p "How... curious."
@@ -191,29 +91,45 @@ label library1:
     p "The Scepter of Lavendorm."
     p "Hmmm..."
     
-menu:
-          "share it with Cyril."
-                jump sharecyril
-        "keep researching on your own"
-            jump researchown
-            # TODO: add an option to go back to the dragons, to make sure the player has a chance to make in informed decision?
-
+    menu:
+        "Share it with Cyril."
+            jump sharecyril
+        "Share it with Balrung.":
+            jump sharebalrung
+        "Search for it on your own":
+            jump explore1
+       
+label sharebalrung:
+    p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
+    scene bg dungeon with fade
+    show balrung at midleft with dissolve
+    show princess at midright with moveinright
+    b "Back so soon?"
+    p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
+    b "No one has been able to find it. It is presumed lost, and, as its powers are unknown, no one lately has tried very hard."
+    p "Yes, the book said as much. Where is it?"
+    b "Perhaps that's why she chose this place..."  #TODO: This assumes the mage who imprisoned the dragons did choose this place? Or was it the dragon castle originally?
+    p "What? She who?"
+    b "Never mind. I believe it is still here. I've felt latent power within the walls of the castle, but assumed it was just the binding curse."
+    p "Interesting...could you pinpoint a certain location where that feeling is strongest?"
+    b "The feeling is not constant or consistent; but if I detect it again I shall inform you."
+    p "Very good, Balrung."
+       
 label sharecyril:
     p "Oh Cyrilllll."
     p "That foolish mage has to be around here somewhere."
     p "Where {i}are{/i} you foolish mage?"
     show cyril #TODO: with some flash-bang transition
     c "You called, your majesty?"
-    p "I am already quite aware that you are a magic wielder."
-    p "Please do not just appear like that in the future."
+    p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
-    p "But a burden?  I see that."
+    p "But a burden?  I see that." #TODO: This doesn't make sense to me.
     p "But I do have something rather curious to share with you, so if you would like to come with me."
     c "I would come with you anywhere, your majesty."
     p "..."
     p "I'd rather you didn't."
     c "So what is it that you wish to show me?"
-    p "This scepter.  The Scepter of Lavendorm.  Is it real?"
+    p "This illustration of a scepter.  The Scepter of Lavendorm.  Is it real?"
     c "Quite real.  Once.  No one has seen it in quite some time."
     p "And this mentor of yours that put you in charge, he must have been centuries old.  Did he ever see it?"
     c "Well, I don't know about centuries..."
@@ -260,3 +176,4 @@ label explore1:
     p "How ever will I cope?"
     n "Careful.  Or you might make a dragon mad."
     p "How do you know that wasn't what I intended?"
+    # TODO: Finish this; does she ask about the scepter? Does he know anything?
