@@ -93,7 +93,7 @@ label niir3:
     n "That doesn’t ssssound like a very good deal."
     p "It sounds good to me. Do you have a better idea?"
     n "..."
-    p "No? Then perhaps I’ll just go and ask Cyril. He probably knows more than you do about the ‘ssssecrets’, anyway."
+    p "No? Then perhaps I’ll just go and ask Moronious. He probably knows more than you do about the ‘ssssecrets’, anyway."
     n "Don’t waste your time with him.  I am the only one who knowssss."
     p "I don’t believe you."
     n "Follow me and I’ll sssshow you something."

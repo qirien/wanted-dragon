@@ -138,57 +138,47 @@ label niir4:
     p "No, that just makes you look like a half-wit and soils my dress."
     n "You could alwaysss take off the dresss...."
     b "Niir, remember, you're trying to act as though you are in love, as though you are a reformed gentleman of a dragon who would never even think of princesses without their dresses on."
-    p "Niir, you should..."
-    # TODO: Let's roleplay this part?  Niir is snide and bratty and doesn't want to participate, but Balrung says he'll come around?
-    menu:
-        "\"Write me poetry\"":
-            p "You should write a poem suitable to discuss the multitude of reasons why I should be Queen."
-        "Give me presents":
-            p "You should bring me a gift suitable for my royal station."
-        "Sing to me":
-            p "You should sing a sonnet fit to describe my beauty, wit, and charm."
 
-p "Niir, you need to act like you're in love with me. You should bring me flowers, write poetry, things like that."
-n "Flowerssss in here?  We are not well stocked on flowerssss.”
-p " Well, can you cook? Make something for me? We need something concrete to allow that Moronious to discover so he will believe our ruse."
-n “Cook?  Hahahahaha.  I can… roassssst.  Hehe hahaha.”
-p "Heh, heh...I'm serious."
-n “Cooking?  Poetry?  Flowersss?  I’m out.”
-b "Niir, isn't it with trying to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
-n “Affection, well why didn’t you sssssay so?”
-#todo show Niir at center with move
-[I could imagine him getting all up in her face here, however we want to put that in the script]
-p "It doesn't help to do that now, you imbecile, it has to be when Cyril's watching!"
-n “Soooo how much leeway to I get?” 
-b "Remember, you need to appear in love, not in lust... Perhaps you should practice a passionate, yet chaste embrace."
-n “Do you really think I can do that?”
-n “I’m out.”
-b "You must enjoy it here very much. Is it really that much of a sacrifice to embrace a beautiful princess?"
-n “Perhapssss not.  But I do not promise chassste.  That is the mage’s game.”
-#todo show embrace somehow
-p "Yes, that was... That'll do. You may remove your hands now."
-n “I wassss just getting ssstarted.”
-p "Can you sing? Perhaps you could compose a sonnet."
-n “Hahahaha.  You really have to sstop with these foolissssh suggestions!”
-b "Yes... that may work. Not the sonnets; you can amuse each other and laugh together."
-n “Grrr.  No one asssked for your input!”
-b "Well, then perhaps I'll leave you two alone for a bit. Though, princess, should you need me, I will be nearby. Behave yourself, Niir."
-#hide balrung with moveoutleft
+    p "Niir, you need to act like you're in love with me. You should bring me flowers, write poetry, things like that."
+    n "Flowerssss in here?  We are not well stocked on flowerssss."
+    p "Well, can you cook? Make something for me? We need something concrete to allow that Moronious to discover so he will believe our ruse."
+    n "Cook?  Hahahahaha.  I can… roassssst.  Hehe hahaha."
+    p "Heh, heh...I'm serious."
+    n "Cooking?  Poetry?  Flowersss?  I’m out."
+    b "Niir, isn't it with trying to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
+    n "Affection, well why didn’t you sssssay so?"
+    #todo show Niir at center with move
+    p "It doesn't help to do that now, you imbecile, it has to be when Cyril's watching!"
+    n "Soooo how much leeway to I get?" 
+    b "Remember, you need to appear in love, not in lust... Perhaps you should practice a passionate, yet chaste embrace."
+    n "Do you really think I can do that?"
+    n "I’m out."
+    b "You must enjoy it here very much. Is it really that much of a sacrifice to embrace a beautiful princess?"
+    n "Perhapssss not.  But I do not promise chassste.  That is the mage’s game."
+    #todo show embrace somehow
+    p "Yes, that was... That'll do. You may remove your hands now."
+    n "I wassss just getting ssstarted."
+    p "Can you sing? Perhaps you could compose a sonnet."
+    n "Hahahaha.  You really have to sstop with these foolissssh suggestions!"
+    b "Yes... that may work. Not the sonnets; you can amuse each other and laugh together."
+    n "Grrr.  No one asssked for your input!"
+    b "Well, then perhaps I'll leave you two alone for a bit. Though, princess, should you need me, I will be nearby. Behave yourself, Niir."
+    #hide balrung with moveoutleft
 
-n “Don’t lisssten to that crussty old dragon.”
-p "Don't you have any hobbies? I mean, what do you normally do all day? Do you paint? Play sports?"
-n “Playing with the mage isss enough of a hobby for me.”
-p "Well, just think of this façade as another way to trick him... But no wonder you're such a nuisance; we need to find you something else to do! Gardening? Novel reading? Hunting?"
-n “I don’t need a hobby Princessss.  Essspecially not one of those.”
-n “Though if I wasss free I would be hunting again.  Jussst not the kind of prey mossst would approve of.”
-p "I bet you would enjoy a good theatrical performance."
-n “The theatre?  I’m not that bored.”
-p "I suppose you'll just have to spend time with me, then. You can tell me how wonderful I am and perhaps we'll even enjoy another "chaste embrace"."
-n “Are you bribing me Princess?”
-p "Bribery is underrated."
-n “It issss.  What ssssort of thing do you like to be bribed with Princessss?”
-p "Oh, what a charming question! Powerful artifacts are always good, though I also enjoy oaths of fealty and rare poisons."
-n “I think I have ssssomething in mind.”
+    n "Don’t lisssten to that crussty old dragon."
+    p "Don't you have any hobbies? I mean, what do you normally do all day? Do you paint? Play sports?"
+    n "Playing with the mage isss enough of a hobby for me."
+    p "Well, just think of this façade as another way to trick him... But no wonder you're such a nuisance; we need to find you something else to do! Gardening? Novel reading? Hunting?"
+    n "I don’t need a hobby Princessss.  Essspecially not one of those."
+    n "Though if I wasss free I would be hunting again.  Jussst not the kind of prey mossst would approve of."
+    p "I bet you would enjoy a good theatrical performance."
+    n "The theatre?  I’m not that bored."
+    p "I suppose you'll just have to spend time with me, then. You can tell me how wonderful I am and perhaps we'll even enjoy another \"chaste embrace\"."
+    n "Are you bribing me Princess?"
+    p "Bribery is underrated."
+    n "It issss.  What ssssort of thing do {b}you{/b} like to be bribed with Princessss?"
+    p "Oh, what a charming question! Powerful artifacts are always good, though I also enjoy oaths of fealty and rare poisons."
+    n "I think I have ssssomething in mind."
     n "You make it too eassssy."
     p "I make what easy?"
     n "..."
@@ -199,99 +189,6 @@ n “I think I have ssssomething in mind.”
     p "Used, yes.  But not understood."
     p "But still...  "
     extend "I wish I knew what that infernal dragon meant."
+        
+        
     
-    
-    
-    
-    
-###### DAY 5
-if niir_love:
-    p "Could you stop disappearing on me Niir!"
-    p "I wish to confer with you!"
-    n "Confer?  On what?  Your choice of dresssss?"
-    p "No.  Let's get on the same page here."
-    p "The pretence!  The acting like you're in love with me!"
-    p "How are we faring?"
-    p "Why don't you just tell that Moronious already that you want to leave with me."
-    p "And start a happily ever after of such."
-    n "I haven't been convinccccced."
-    p "You say that every time!  I can promise you freedom, destruction and power."
-    p "Isn't that enough?"
-    n "Dragonsss aren't that easssy to trussst, Princesssss."
-    p "Haven't I told you not to stare at me like tha-oh, you can't help it.  Can you?"
-    p "That's the way you always look."
-    p "Regardless Niir.  I can promise you what you want."
-    n "What if I want more?"
-    p "More?"
-    n "Perhapsss."
-    p "What more is there?"
-    n "Isssn't it obvioussss?"
-    p "You mean?  No.  Absolutely not.  "
-    extend "Especially not to you."
-    n "You wound me Princessss."
-    p "And why should I trust you?"
-    n "Assss you ssssee.  Trusssst is not easssy, isss it?"
-    p "How can I get you to trust me?"
-    n "I won't trussst you, until you trusssst me."
-    p "..."
-    p "I see how it is."
-    menu:
-        "Do a trust fall.":
-            jump trustfall
-        "Offer to show him some thigh.":
-            jump somethigh 
-        "Tell him you're just not that committed to getting him on board.":
-            jump {other route?}
-            
-label somethigh:
-    p "Alright.  Fine."
-    p "I'll show you some of mine if you show me some of yours."
-    p "Trust."
-    n "I thought you'd never offer."
-    scene black
-    p "Happy now?"
-    n "Happy wouldn't be the word that I would ussssse."
-    
-    
-    
-label cyril5:
-    
-    c "Ah, Princess!  I had been looking for you."
-    p "Well, you clearly didn't look very hard because I've been here."
-    c "Ah, well, this was one of the first places that I found myself looking."
-    p "What is it mage?"
-    c "Well, I have an update for you.  On the artefact."
-    c "It seems there were some notes that --- left for me and those notes, they specify a location."
-    c "Not pinpoint exactly, but where we should start looking."
-    p "And you're just thinking of this now?"
-    c "I've been here so long that I'd forgotten about those notes."
-    #TO DO: TBC
-    
-    ALSO
-    ###{I thought about a scene between Balrung and Niir that the princess overhears)
-    
-if niir_love:
-    b "You have fallen in love with the tempestuous temptress that has entered our realm."
-    n "Now why would you ssssssay that?"
-    b "I have seen it happen many times before."
-    b "I can tell the signs."
-    n "Love is not ssssomething that I am aquainted with, old dragon."
-    n "Ssstop your posssstulating."
-    b "I'm no more happy about this than you are, Niir.  You are all what little entertainment I have in this dreary place."
-    b "If I could keep you here, I would."
-    n "Your fearssss are ridiculousssss."
-    b "Ah, yes.  I could let her just leave and you be miserable."
-    b "And then I'll will have you here, but no peace."
-    n "I am sssstaying here, old dragon."
-    b "Then you are foolish.  What is for you here?"
-    b "What other princesses are there?"
-    p "(Could Balrung be right?  Could Niir actually be... {i}in love{/i}?)"
-    p "(The thought sickens me to my stomach.)"
-    p "(Though I have to admit, there is some sort of animal magnatism toward Niir.)"
-    p "(Even if it is only animal.)"
-    n "Sssshut up.  I am done conversssssing."
-    b "Think about what I said.  I'd say to follow your heart."
-    b "But we both know that isn't possible."
-    p "(This is what I wanted, wasn't it?)"
-    p "(A dragon at my disposal.  Willing to leave, all for the delusion of love.)"
-    p "(But somehow, I am not content.  What is this?)"

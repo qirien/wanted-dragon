@@ -47,7 +47,7 @@ label truth:
     c "Ah, erm, yes of course your majesty!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p "That is acceptable. You may lead me there now."
     c "So, this is the castle of the banished.  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but we have no shortage of warm water here.  That's for certain."
-    p "Yes, yes. Now, what can you tell me about the other… residents of this place?"
+    p "Yes, yes. Now, what can you tell me about the other... residents of this place?"
     c "It is just me.  Well, and the dragons.  But they are here from their punishment.  Kidnapping ladies is not a very delightful business I do say.  "
     c "Usually I find I must ignore them or they will try to plead their case.  Well, they don't really do that.  They more mock- anyway.  What brings you here again?"
     menu:
