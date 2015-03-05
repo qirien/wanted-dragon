@@ -3,9 +3,8 @@ label day4:
     show princess at center with dissolve
     p "The Sceptre of Lavendorm sounds powerful, if we can find it."
     p "But it could be just a legend, or it could have been moved. I should pursue other avenues as well."
-    p "Cyril has some power, if I could get him to use it the way I wanted."
-    p "Perhaps the dragons would aid me in exchange for their freedom?"
-    
+    p "Cyril has magical powers, if I could get him to use them the way I wanted."
+    p "Or perhaps the dragons would aid me in exchange for their freedom?"
     p "Whose aid should I enlist?"
     menu:
         "Cyril.":
@@ -15,29 +14,9 @@ label day4:
         "I don't need help!":
             jump alone4
         
-        
+# TODO: Something about how Cyril could help her even if he can't find the scepter.        
 label cyril4:
-    p "Ohhhh Cyril!"
-    p "How are you going at getting that scepter for me?"
-    c "Oh!  You disturbed me!  I didn't notice you there for a second."
-    c "About the what now?"
-    p "The Scepter of Lavendorm."
-    p "The one purportedly hidden around these grounds."
-    c "Oh yes, right."
-    c "Well, your majesty. I have drawn up a map of the castle."
-    c "And crossed off all the little places that I know most certainly that it isn't."
-    c "And..."
-    c "Wait just a moment here.  How did I get roped into doing your bidding again?"
-    p "Because you have such a generous spirit."
-    p "Oh, and if you don't I will be sure that your head is on a chopping block somewhere."
-    c "Ah yes.  Very good reasons indeed!  I will return to the task at hand then!"
-    p "Good, I see that we're on the same page then."
-    c "I do wonder what it is that you plan to do with such a scepter however, because I'm sure that it can only be wielded by a powerful mage."
-    p "Then you will become more useful too me than ever."
-    p "Wouldn't you want that?"
-    c "I-I suppose it wouldn't be the worst thing, your majesty."
-    
-    
+    p "Mage! Moronious!"
 
 label dragons4:
     scene bg dungeon with fade
@@ -97,16 +76,12 @@ label balrung4:
     n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
     hide niir with moveoutright
     b "He never was very good at this game. I thought I could teach him, but..."
-    p "I used to play against my father; he wasn't very good, though, I would always win. Are you any good?"
-    b "It's hard to say; I've had so few people to play against. Merlonious won't play with me anymore."
+    p "I used to play against my father; he wasn't very good, though, for I would always win. Are you any good?"
+    b "I've had so few people to play against, lately, and Merlonious won't play with me anymore."
     p "Why not?"
     b "He claims he can't concentrate when Niir's around, so of course whever I challenge him to play, Niir comes to distract him."
-    p "Well, I will play against you."
-    b "Wonderful! Just a friendly game, of course."
-    p "I don't do friendly games."
-    b "Of course not! I merely meant that we don't need any stakes for winning or losing."
-    p "Very well. You may go first."
-    b "All right. There."
+    p "Well, I will play against you. I will go first."
+    b "As you wish."
     p "There's only one thing I don't understand about this game."
     b "Only one thing?"
     p "Why are there so many queens? There should only be one queen!"
@@ -115,16 +90,16 @@ label balrung4:
     b "It must be a hard lot to be a princess."
     p "I know! So close to power, and to have it ripped away..."
     b "You know, the part I find most interesting is that in this game, there are no wizards, or knights, or sages. Merely those with power, and those used by those in power."
-    p "That part, at least is accurate. Take that!"
-    b "But which are you?That was a daring move. Reckless, but daring. Your turn."
-    p "Who's in power now?!"
-    b "We shall see."
+    p "That part, at least is true to life. Take that!"
+    b "But which are you, I wonder?"
+    p "Ha ha ha! Who's in power now?!"
+    b "That was a daring move. Reckless, but daring. Your turn."
     p "Hmph. You only have one queen left."
     b "But I have all my pawns. Your queens are quite unguarded."
     p "The pawns are insignificant."
     b "I disagree."
     p "I only need one queen!"
-    b "No, I'm afraid it won't be enough. There."
+    b "No, I'm afraid it won't be enough. You have no moves left."
     p "..."
     b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
     p "A warm-up, yes...perhaps. I'm leaving now."

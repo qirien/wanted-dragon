@@ -1,6 +1,6 @@
 
 # The game starts here.
-label start:
+label intro:
     scene bg castle_exterior with fade
     show princess at midleft with moveinleft
     p "Finally. You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
@@ -37,8 +37,11 @@ label sweet:
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
     p "The dragons? What can you tell me about them?"
-    c "Well, many of them have left actually.  Love can do wonders to reform a rogue dragon.  One got placed in the castle due to his insatiable lust for destruction.  I think.  He has been here a long time and my master told me a little of him before he passed.  My master was really wonderful.  He took good care of these dragons. Cared about their heart.  There's another as well, more recent an addition.  He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
+    c "Well, many of them have left actually.  Love can do wonders to reform a rogue dragon."
+    c "One got placed in the castle due to his insatiable lust for destruction.  I think.  He has been here a long time and my master told me a little of him before he passed.  My master was really wonderful.  He took good care of these dragons. Cared about their heart."
+    c "There's another as well, more recent an addition.  He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
     p "Oh my, that sounds dreadful! And yet also intriguing. Would you introduce me?"
+    jump meet_dragons
 
 label truth:
     p "I’m here to retake my rightful throne. Assist me, and be rewarded. Hinder me, and feel my wrath."
@@ -114,13 +117,21 @@ label meet_dragons:
     c "Balrung, he is much more courteous but he is rather stubborn.  He will try to make you see it his way and not by the most honest methods."
     p "Interesting...well, lead on."
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
+    scene bg dungeon with fade
+    show cyril at midright
+    show princess at right with moveinright
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
+    show balrung at quarterleft with moveinleft
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
+    show niir at midleft with moveinleft
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
+            show cyril at right
+            show princess at midright
+            with move
             p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
             n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
             b "There are many injustices I would fight, had I only the freedom to do so."
@@ -128,6 +139,9 @@ label meet_dragons:
             c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
+            show cyril at right
+            show princess at midright
+            with move            
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
             c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
@@ -222,7 +236,8 @@ label joinmage:
     p "And in what way did you think that this was worthy of a princess?"
     c "I... I'm not quite sure."
     
-    
+    return
+
     ## MAGE ROUTE
 
     

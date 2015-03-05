@@ -11,7 +11,7 @@ label day1:
     show niir at midleft
     show balrung at left
     with moveinleft
-    b "Princess [name]. To what do we owe this great honor?"
+    b "Princess [p_name]. To what do we owe this great honor?"
     n "Yesss, it's a pleasure..."
     p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
     n "Vasssssals? We are no sssuch thing." #TODO: Better Niir response?
@@ -37,6 +37,7 @@ label library1:
     c "And you mark my words!  I will stop you, I will!"
     c "As soon as I find that proper spellbook!"
     "(This completely ruins my plans.  But perhaps I could turn it to my advantage?)"
+    show princess at midleft with moveinleft
     p "Doing some reading?"
     c "Yah!"
     "He dropped the book like it was a hot potato."
@@ -72,7 +73,7 @@ label library1:
     p "Are you trying to be witty mage?"
     c "Not very hard.  It only just came to me really."
     p "Well don't."
-    c "This is what I was looking for.  {i}Long Hidden Powerful Objects: an abridged edition{/i}."
+    c "This is what I was looking for.  {i}Long-Hidden Powerful Objects: an abridged edition{/i}."
     c "It's really the best I could do at such short notice."
     p "While it is quite pitiful that you don't have more research materials in this castle of yours, I suppose this will have to do."
     c "Great now if I can be of any-"
@@ -80,8 +81,9 @@ label library1:
     c "Alright, I'll just gather up my-"
     p "Begone with you!"
     c "Good day Princess, I will just be seeing myself out."
-    p "(I thought he'd never leave.  Now what have we here...)"
-    p "This is quite curious.  This part here."
+    "(I thought he'd never leave.  Now, what have we here...)"
+    "(A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful, don't need that."
+    "(This one is quite curious.  This part here.)"
     # TODO: write this on a book-screen to look like an old book?
     p "There is a scepter with emeralds that has not been located in centuries."
     p "I think that it says it has ties to this very castle."
@@ -92,9 +94,11 @@ label library1:
     p "Hmmm..."
     
     menu:
-        "Share it with Cyril.":
+        "Share it with Moronious.":
+            $ asked_scepter = "Cyril"
             jump sharecyril
         "Share it with Balrung.":
+            $ asked_scepter = "Balrung"
             jump sharebalrung
         "Search for it on your own":
             jump explore1
@@ -106,6 +110,8 @@ label sharebalrung:
     show princess at midright with moveinright
     b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
+    
+label balrung_scepter:
     b "No one has been able to find it. It is presumed lost, and, as its powers are unknown, no one lately has tried very hard."
     p "Yes, the book said as much. Where is it?"
     b "Perhaps that's why she chose this place..."  #TODO: This assumes the mage who imprisoned the dragons did choose this place? Or was it the dragon castle originally?
@@ -114,6 +120,7 @@ label sharebalrung:
     p "Interesting...could you pinpoint a certain location where that feeling is strongest?"
     b "The feeling is not constant or consistent; but if I detect it again I shall inform you."
     p "Very good, Balrung."
+    return
        
 label sharecyril:
     p "Oh Cyrilllll."
@@ -152,12 +159,13 @@ label sharecyril:
     p "Now find me that scepter!"
     c "I will try to recall for you just where it was.  Don't worry, my maj- your majesty."
     "(Let's see if the bumbling mage can get something right this time.  I suppose I can give him a chance.)"
+    return
     
 label explore1:
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
-    # rope drops
+    # TODO: rope drops
     # niir drops down
     p "Well, what do we have here?"
     n "The ansssswer to all your problemsss."
@@ -191,4 +199,5 @@ label explore1:
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"
     "..."
     p "This castle just has endless steps!"
-    
+    "(Hours of searching... and nothing. Well, except for this delicious salted fish from the kitchens. So I supposed it wasn't a complete waste of time.)"
+    return

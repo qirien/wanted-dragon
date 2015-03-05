@@ -7,24 +7,22 @@ label day3:
     "(It's coming in my room?!)"
     "(Oh. It is simply one of Father's carrier pigeons dropping off a letter.)"
     
-    # TODO: Make an NVL screen for notes?
-    letter "My dearest [p_name],"
-    letter "I wish you hadn't left in such a hurry. You know I don't believe what the courtiers are saying."
-    letter "You and your sister have never been friendly, it's true, but I can't believe that you would--"
-    letter "Anyway, take all the time you need, but please, come back to us."
-    letter "Her coronation won't be the same without you."
-    letter "With love,"
-    letter "Father"
+    k_write "My dearest [p_name],"
+    k_write "I wish you hadn't left in such a hurry. You know I don't believe what the courtiers are saying."
+    k_write "You and your sister have never been friendly, it's true, but I can't believe that you would--"
+    k_write "Anyway, your banishment need only last as long as it takes for you to be ready to support your sister. Take all the time you need, but please, come back to us. "
+    k_write "Magnolia's coronation won't be the same without you."
+    k_write "With love,\nFather"
+    nvl clear
     p "Father..."
     
     "(There's something on the other side...there's hearts everywhere.)"
-    letter "[p_name],"
-    letter "The castle is so lonely, now - it kills me to be so far from you."
-    letter "Even if you can't be Queen, I'm sure there will be plenty of important things for you to help out with."
-    letter "We need you here; please come back!"
-    letter "I promise not to be too mad."
-    letter "Love,"
-    letter "Your sister Magnolia"
+    m_write "[p_name],"
+    m_write "The castle is so lonely, now - it kills me to be so far from you."
+    m_write "Even if you can't be Queen, I'm sure there will be plenty of important things for you to help out with."
+    m_write "We need you here; please come back!  I promise not to be too mad."
+    m_write "Love,\nYour sister Magnolia"
+    nvl clear
     
     p "Magnolia...so devious! Even as she outwardly pretends to want me back, it's clear she knows I was the one who put the poison in her tea."
     p "Look how she tries to put me in my place! \"Important things to help out with,\" ridiculous. But I know she has Father completely fooled."
@@ -34,29 +32,31 @@ label day3:
     p "But for now... how should I reply?"
     menu:
         "Sweetly.":
-            letter "Dear Father Who has Abandoned One Daughter in Favor of the Other,"
+            p_write "Dear Father Who has Abandoned One Daughter in Favor of the Other,"
             "(I will not deign to respond to Magnolia.)"
-            letter "I was delighted to receive your letter and see that you haven't completely forgotten me, [p_name], your other daughter, the one that you should have chosen to be Queen."
-            letter "I'm afraid the only thing that could induce me to return would be an announcement that you have named me as your successor. I simply cannot in good conscience support {strike}that evil bitch{/evil}-"
+            p_write "I was delighted to receive your letter and see that you haven't completely forgotten me, [p_name], your other daughter, the one that you should have chosen to be Queen."
+            p_write "I'm afraid the only thing that could induce me to return would be an announcement that you have named me as your successor. I simply cannot in good conscience support {s}that evil bitch{/s}-"
+            nvl clear
             "(No, that's too obvious. I must be subtle.)"
-            letter "someone who does not have our kingdom's best interests at heart and is also completely inept, not to mention ugly, devious, scheming, and cruel!"
+            p_write "I simply cannot in good conscience support someone who does not have our kingdom's best interests at heart and is also completely inept, not to mention ugly, devious, scheming, and cruel!"
             "(...I may have overdone it a bit.)"
-            letter "So I hope you can at least try to understand me, your poor, maligned, misunderstood, regal, capable, queenly daughter."
-            letter "Love and kisses,"
-            letter "[p_name]"
+            p_write "So I hope you can at least try to understand me, your poor, maligned, misunderstood, regal, capable, queenly daughter."
+            p_write "Love and kisses,"
+            p_write "[p_name]"
+            nvl clear
             "(Now where'd that pigeon go?)"
             p "There, little bird. Fly true."            
             
         "Haughtily.":
-            letter "Dear Father and Daughter that Claim to Rule [k_name],"
-            letter "I cannot allow such ineptitude, scheming, and gross negligence to rule over the Ancient and August Kingdom of [k_name]."
-            letter "To grant the throne to Magnolia would destroy our kingdom's power and glory!"
-            letter "While you, Father, may not be able to see her perfidy and betrayals, I can, which is why I cannot sit by and do nothing."
-            letter "Father, if you have any intelligence or care for the long-term well-being of our kingdom, you will not allow Magnolia's coronation to take place and will crown me instead."
-            letter "If you choose not to, I will do whatever is necessary to obtain the throne, for the good of the kingdom!"
-            letter "Love,"
-            letter "Your better daughter,"
-            letter "[p_name]"
+            p_write "Dear Father and Daughter that Claim to Rule [k_name],"
+            p_write "I cannot allow such ineptitude, scheming, and gross negligence to rule over the Ancient and August Kingdom of [k_name]."
+            p_write "To grant the throne to Magnolia would destroy our kingdom's power and glory!"
+            p_write "While you, Father, may not be able to see her perfidy and betrayals, I can, which is why I cannot sit by and do nothing."
+            p_write "Father, if you have any intelligence or care for the long-term well-being of our kingdom, you will not allow Magnolia's coronation to take place and will crown me instead."
+            p_write "If you choose not to, I will do whatever is necessary to obtain the throne, for the good of the kingdom!"
+            p_write "Love,"
+            p_write "Your better daughter,"
+            p_write "[p_name]"
             "(Now where'd that pigeon go?)"
             p "There, little bird. Fly true."
             
@@ -64,9 +64,59 @@ label day3:
             p "Father knows that I can never return as long as he is planning to crown my sister Magnolia as queen."
             p "Perhaps he will feel he has made a mistake if he thinks I am dead or kidnapped by bandits as a result of his rash decision!"
     
+    jump niir3
+    
+label cyril3:
+    p "Ohhhh Cyril!"
+    p "What progress have you made with obtaining that scepter for me?"
+    c "Oh!  You disturbed me!  I didn't notice you there for a second."
+    c "About the what now?"
+    p "The Scepter of Lavendorm."
+    p "The one purportedly hidden around these grounds."
+    c "Oh yes, right."
+    c "Well, your majesty. I have drawn up a map of the castle."
+    c "And crossed off all the little places that I know most certainly that it isn't."
+    c "And..."
+    c "Wait just a moment here.  How did I get roped into doing your bidding again?"
+    p "Because you have such a generous spirit."
+    p "Oh, and if you don't I will be sure that your head is on a chopping block somewhere."
+    c "Ah yes.  Very good reasons indeed!  I will return to the task at hand then!"
+    p "Good, I see that we're on the same page then."
+    c "I do wonder what it is that you plan to do with such a scepter however, because I'm sure that it can only be wielded by a powerful mage."
+    p "Then you will become more useful too me than ever."
+    p "Wouldn't you want that?"
+    c "I-I suppose it wouldn't be the worst thing, your majesty."
+    return
+     
+label balrung3:
+    scene bg dungeon with fade
+    show balrung at midright with dissolve
+    show princess at midleft with moveinleft
+    b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
+    p "No, I wanted to talk to you."
+    b "Really? I imagine you're looking for some gullible fool that you can trick in to using their powers for your benefit? A thrall, a lackey, a minion?"
+    p "No, no of course not!"
+    "(Is it that obvious?!)"
+    b "Oh really? My apologies, then. What {b}does{/b} bring you here?"
+    if (asked_scepter == "Balrung"):
+        p "Have you found out more about the location of that scepter I asked you about?"
+        b "No, I'm afraid not. Its powers must be dormant at the moment."
+        p "You are beginning to seem useless to me."
+    else:
+        p "Do you know anything about the Scepter of Lavendorm?"
+        call balrung_scepter
+    b "Well, as I cannot offer you a scepter at the moment, can I offer you another game of Queens and Pawns?"
+    menu:
+        "\"I will play.\"":
+            p "Yes, I will play. You may go first this time."
+        "\"No, I must ask Cyril about it.\"" if (asked_scepter != "Cyril") :
+            jump cyril3
+        "\"I will look for it myself.\"" if (asked_scepter != "no one"):
+            p "I will go and look for it myself."
+            # TODO: Add exploration in here.
+    return
+    
     # TODO: Finish, have interactions with all three characters somehow? Ask about scepter depending on who she asked earlier?
-    
-    
     
 label niir3:
     show niir at quarterleft with moveinleft
@@ -77,15 +127,7 @@ label niir3:
     p "I need something powerful. Something that will make it clear that I am the rightful Queen. If you don’t have anything like that, then away with you."
     n "More powerful than a dragon?  My aren’t you ambitioussss?"
     p "It doesn’t take much to be more powerful than you right now."
-    if (niir_route):
-        p "But if we can get that mage to believe love has reformed you, then perhaps I’ll allow you to demonstrate some of your supposedly awesome powers."
-        p "In fact, why don’t you demonstrate your love by finding me something powerful?"
-        n "Pretend to be in love with you?"
-        n "I may be bored sssstuck in this form, but I'm not that bored."
-        p "Fine. I’ll find some other way."
-        n "I didn’t sssay I wouldn’t help.  I just need incccentive."
-    else:
-        p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for… what? Ten, twenty years?"
+    p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for… what? Ten, twenty years?"
 
     n "I know sssssecrets of all kindsss.  And not just about the cassstle."
     n "I could find you ssssomething powerful.  But what would you do for me in return?"
@@ -95,7 +137,14 @@ label niir3:
     n "..."
     p "No? Then perhaps I’ll just go and ask Moronious. He probably knows more than you do about the ‘ssssecrets’, anyway."
     n "Don’t waste your time with him.  I am the only one who knowssss."
-    p "I don’t believe you."
+    menu:
+        "Go with Niir.":
+            p "I don't believe you."
+        "Go ask Moronious":
+            jump cyril3
+        "Go ask Balrung":
+            jump balrung3
+            
     n "Follow me and I’ll sssshow you something."
     p "Very well. Lead on, Niir."
     n "Thissss way."

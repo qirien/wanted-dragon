@@ -140,9 +140,17 @@ screen nvl(dialogue, items=None):
                     spacing 10
 
                 if who is not None:
-                    text who id who_id
+                    if (who == "King"):
+                        text what id what_id font "fonts/danielbd.ttf"
+                    elif (who == "Magnolia"):
+                        text what id what_id font "fonts/Kristi.ttf" size 40
+                    elif (who == "Princess"):
+                        text what id what_id font "fonts/Kristi.ttf" size 40
+                    else:
+                        text who id who_id
 
-                text what id what_id
+                else:
+                    text what id what_id 
 
         # Display a menu, if given.
         if items:

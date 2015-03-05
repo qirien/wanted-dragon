@@ -8,6 +8,7 @@ init -1:
     define cyril_affection = 0
     define p_name = "Princess"
     define k_name = "Novaria"
+    define asked_sceptre = "no one"
 
     #
     # CHARACTERS
@@ -17,7 +18,10 @@ init -1:
     define b = Character('Balrug', image="balrung", color="#c8ffc8")
     define c = Character('Cyril Merlonious', image="merlin", color="#c8ffc8")
     define n = Character('Niir', image="niir", color="#c8ffc8")
-
+    define p_write = Character("Princess", kind=nvl)
+    define k_write = Character("King", kind=nvl)
+    define m_write = Character("Magnolia", kind=nvl)
+    
     #
     # BACKGROUNDS
     #
