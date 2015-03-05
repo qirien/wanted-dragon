@@ -92,7 +92,7 @@ label library1:
     p "Hmmm..."
     
     menu:
-        "Share it with Cyril."
+        "Share it with Cyril.":
             jump sharecyril
         "Share it with Balrung.":
             jump sharebalrung

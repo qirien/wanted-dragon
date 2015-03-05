@@ -104,6 +104,10 @@ label ignore:
     c "Oh don’t mind her.  She’s just my apparition.  Wait.  Why can you see her?"
     # TODO: Finish this branch or make it join in with the main. Early ending?
 
+label explore:
+    "(I'll find out more without that silly mage following me around.)"
+    #TODO: She sneaks down there but Cyril finds her, says it's dangerous, and accompanies her anyway.
+    
 label meet_dragons:
     c "Well, it's time to meet the dragons.  I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
     c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat."

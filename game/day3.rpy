@@ -153,7 +153,7 @@ label niir3:
     n "Who {b}are{/b} you Princessss?  You ssssurely do not act like any princess that I have ssseen."
     p "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom? I know the type."
     n "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss.  Won’t your people be displeasssed with your hearty appetite for destruction?"
-        p "It’s not destruction I crave, but the throne! And if a little poison fails to do the trick, then perhaps I’ll try a little dragon fire."
+    p "It’s not destruction I crave, but the throne! And if a little poison fails to do the trick, then perhaps I’ll try a little dragon fire."
     "(Oops! Did I mention the poison?!)"
     n "Poissson?  I will keep it in mind the next time you put a tasssty morsssel in front of my nossse."
     p "A-a-anyway, is this the place you wanted to show me?"
