@@ -48,23 +48,41 @@ Parchment Scroll derived from <http://www.wpclipart.com/blanks/parchment/parchme
 These images are in the public domain.
 ****
 
-==== CC-BY-SA-4.0
+==== Non-Commercial Use
 
-The following images are licensed CC-BY-SA-4.0.
+The following images are licensed Non-Commercial Use <http://www.aquamary.com/etc/Readme.txt>.
+Backgrounds by aquamary, (c) aquamary images: http://www.aquamary.com
 
-
-.License
-****
-These images are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>.
-****
-
-==== CC-BY-SA-3.0
-
-The following images are licensed CC-BY-SA-3.0.
+kingdom.jpg
+library.jpg
+ruins.jpg
 
 .License
 ****
-These images are licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license <http://creativecommons.org/licenses/by-sa/3.0/>.
+See <http://www.aquamary.com/etc/Readme.txt>
+****
+
+==== Non-Commercial Use
+
+The following images are licensed Non-Commercial Use <http://guttari8.sakura.ne.jp/kiyaku2.html>
+
+Backgrounds by Limp Nyanko, <http://guttari8.sakura.ne.jp/>
+bedroom*.jpg 
+closet.jpg
+dungeon*.jpg
+exterior*.jpg
+passageway*.jpg
+gate*.jpg
+stairs*.jpg
+cave.jpg
+corridor.jpg
+kitchen.jpg
+storage.jpg
+sunset.jpg
+
+.License
+****
+Copyright limp Nyanko is held. Free material. 
 ****
 
 == Audio

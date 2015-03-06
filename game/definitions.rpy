@@ -26,7 +26,7 @@ init -1:
     #
     # BACKGROUNDS
     #
-    image bg castle_exterior = Placeholder("bg")
+    image bg exterior = "bg/exterior_day.jpg"
     image bg hall = Placeholder("bg")
     image bg bedroom = Placeholder("bg")
     image bg dungeon = Placeholder("bg")

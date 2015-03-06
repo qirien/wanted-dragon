@@ -98,8 +98,10 @@ label ignore:
     c "Oh yes.  Oh of course, there is an apparition in front of me, oh Cyril.  You’ve finally done it.  You’ve gone completely bonkers."
     "(He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him)"
     c "Well, back to that spell again.  Biggeldy- I'll never get it!  Now where did I keep that spell-book.  It was around here somewhere!  "
-    c "I just need to find it.  Perhaps one of those surly old dragons know where it got to."    
-    "(Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance…)"  
+    c "I just need to find it.  Perhaps one of those surly dragons knows where it got to."    
+    "(Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance...)"  
+    
+    scene bg dungeon with fade
     
     c "Dragons.  I do need to ask you about my spell book. It seems I've misplaced it."
     c "Again."

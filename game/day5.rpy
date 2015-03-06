@@ -180,14 +180,11 @@ label cyril6:
     c "You do look me in the eye when you're threatening me which is lovely, and gives me tingles all-"
     p "JUST DO THE SPELL ALREADY!"
     c "Ah yes."
-    #TO DO:  magic words?  Andrea?  Got anything?
+    c "MAGIA LUXIS!"
     c "There.  I-"
     p "..."
     c "Do you see that?"
     p "Something is glowing..."
+    c "... but it's gone."
     # should the dragons get the scepter first?  what plot should we do here?
     
-
-    
-    
- 

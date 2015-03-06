@@ -25,6 +25,7 @@ label ending:
         jump niir_end
     
     c "Niir! You must stay! You WILL-- oof!"
+    "Balrung's tail came out of nowhere and knocked Cyril to the ground."
     b "I'll supervise Niir. That's what you mages should have done in the first place; let dragons discipline dragons."
     c "That wouldn't work! Nobody can trust you!"
     if (route == "Balrung"):
@@ -113,7 +114,7 @@ label ending:
                 p "What have you done to me?!"
                 c "Stay! You will stay here, until you learn to be good! I know, somewhere inside of you, there's goodness and love...please, find it quickly, Princess."
                 p "You thought guarding dragons was bad? I {b}will{/b} make your life a hell of mental pain, psychological torture, and physical anguish until you LET. ME. GO!"
-                c "It's for your own good...."
+                c "I'm so sorry! It's for your own good...."
                 # TODO: jump to a common ending where she ends up imprisoned?
                 
                 
