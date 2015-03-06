@@ -109,17 +109,29 @@ label balrung3:
     menu:
         "\"I will play.\"":
             p "Yes, I will play. You may go first this time."
+            $ balrung_affection += 1
         "\"No, I must ask Cyril about it.\"" if (asked_scepter != "Cyril") :
             jump cyril3
         "\"I will look for it myself.\"" if (asked_scepter != "no one"):
             p "I will go and look for it myself."
             # TODO: Add exploration in here.
+            
+    b "I do hope you enjoy the game, and aren't simply playing it to humor me."
+    p "I do not humor people. Or dragons."
+    b "What do you do? When you don't have a kingdom to reclaim, that is."
+    p "I have many pursuits. Reading, hunting, music, dodging nosy questions."
+    b "Ha! The usual royal activities, then."
+    p "And what about you?"
+    b "I sometimes read from the library, though human books are so maudlin and predictable."
+    p "What are dragon books like?"
+    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves."
+    b "Take the poetry of Phanos, for example."
+    p "What about it?"
+    #TODO: awesome dragon poetry?!
     return
     
-    # TODO: Finish, have interactions with all three characters somehow? Ask about scepter depending on who she asked earlier?
-    
 label niir3:
-    show niir at quarterleft with moveinleft
+    show niir at quarterright with moveinright
     n "Ssssen anything interesting today Princessss?"
     p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
     n "I sssupect the question should be to you.  What do {i}you{/i} want?"
@@ -141,10 +153,15 @@ label niir3:
         "Go with Niir.":
             p "I don't believe you."
         "Go ask Moronious":
+            p "I'm going to ask that mage instead. Good-bye, Niir."
+            hide princess with moveoutleft
             jump cyril3
         "Go ask Balrung":
+            p "I'm going to speak with Balrung about it. Good-bye."
+            hide princess with moveoutleft
             jump balrung3
             
+    $ niir_affection += 1
     n "Follow me and I’ll sssshow you something."
     p "Very well. Lead on, Niir."
     n "Thissss way."
@@ -200,7 +217,7 @@ label niir3:
     p "..."
     p "Surely you can think of {b}something{/b}? Flying around a volcano, or devouring a herd of sheep, or decimating an enemy castle? Actually, you’ll need to leave the castle in good enough condition that I can inherit it; just do enough damage to scare everyone out of it."
     n "Who {b}are{/b} you Princessss?  You ssssurely do not act like any princess that I have ssseen."
-    p "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom? I know the type."
+    p "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom?"
     n "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss.  Won’t your people be displeasssed with your hearty appetite for destruction?"
     p "It’s not destruction I crave, but the throne! And if a little poison fails to do the trick, then perhaps I’ll try a little dragon fire."
     "(Oops! Did I mention the poison?!)"
@@ -209,7 +226,13 @@ label niir3:
     n "Not yet!  Princesss!  We are almossst there.  I just got… dissstracted."
     n "Thisss way."
     n "Here."
+    hide niir
+    hide princess
+    with moveoutleft
     scene bg castle_exterior with fade
+    show niir at midright
+    show princess at midleft
+    with moveinright
     p "This...is a tower."
     n "Nicccce up here, isn’t it?"
     n "It’ssss where I come sometimesss. "

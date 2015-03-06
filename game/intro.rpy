@@ -118,12 +118,12 @@ label meet_dragons:
     p "Interesting...well, lead on."
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     scene bg dungeon with fade
-    show cyril at midright
-    show princess at right with moveinright
+    show cyril at midleft
+    show princess at left with moveinleft
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
-    show balrung at quarterleft with moveinleft
+    show balrung at quarterright with moveinright
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
-    show niir at midleft with moveinleft
+    show niir at midright with moveinrigh
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu:

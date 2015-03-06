@@ -6,11 +6,11 @@ label day1:
     p "Dragons are powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
     scene bg dungeon with fade
     n "Ssssomething tasssty comes!"
-    show princess at midright with moveinright
+    show princess at midleft with moveinleft
     p "Ahem. Dragons? I wish to speak with you!"
-    show niir at midleft
-    show balrung at left
-    with moveinleft
+    show niir at midright
+    show balrung at right
+    with moveinright
     b "Princess [p_name]. To what do we owe this great honor?"
     n "Yesss, it's a pleasure..."
     p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
@@ -106,8 +106,8 @@ label library1:
 label sharebalrung:
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
-    show balrung at midleft with dissolve
-    show princess at midright with moveinright
+    show balrung at midright with dissolve
+    show princess at midleft with moveinleft
     b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
     
@@ -162,11 +162,14 @@ label sharecyril:
     return
     
 label explore1:
+    scene bg castle_interior with fade
+    show princess at midleft with moveinleft
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
     # TODO: rope drops
     # niir drops down
+    show niir at midright with moveintop
     p "Well, what do we have here?"
     n "The ansssswer to all your problemsss."
     p "A piece of rope?"

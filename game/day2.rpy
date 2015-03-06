@@ -4,7 +4,6 @@ label day2:
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
     p "Moronious?! This had better be important!"
-    # TODO: Cyril is worried about her? she has a conversation with each person?    
     c "Good.  Good.  I'm glad that you opened up."
     c "I don't want you to think that I'm - well, dissapproving."
     c "But some information has come to my attention."
@@ -33,5 +32,6 @@ label day2:
     c "As long as I'm not seen as {i}aiding and abetting{/i}."
     p "If you are not willing to make sacrifices for your future Queen then what good are you?"
     c "I am, I am.  Forgive me your majesty."
-    p "I forgive you, you foolish mage.  Just don't yourself doubt me again."
+    p "I forgive you, you foolish mage.  Just don't doubt me again."
     
+    #TODO: Have a conversation with Niir and Balrung somehow?!
