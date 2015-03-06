@@ -1,6 +1,64 @@
-   
+# cyril dissuading against niir route
+# DAY 5?!
+label day5:
+    if (route == "Niir"):
+        c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
+        c "I saw you, your majesty."
+        p "Saw me what?"
+        c "Well, you see..."
+        p "Spit it out mage!  I do not have all day."
+        c "With Niir, that {i}dragon{/i}."
+        c "Do not trust him.  There is a reason he is here.  He shall not be freed, milady!"
+        c "Shall not.  Do you have any idea what he would be like out there?"
+        c "You cannot trust him for a second.  Not one second!"
+        menu:
+            "\"You are mistaken about what you saw.\"":
+                p "You are mistaken about what you saw."
+                c "Oh, so then you were just being friendly?"
+                p "Of course, I wouldn't be interested in that creature."
+                p "He's despicable and does not know the meaning of respect."
+                p "You on the other hand..."
+                p "Someone like you would understand when a lady is in need."
+                p "And has demands on her that only power can fulfill."
+                c "P-p-power?"
+                p "You must have some measure of power, or these dragons would have escaped long ago. Use it to help me rid the throne of my scheming sister Magnolia!"
+                p "If you won't, I'll find someone else who will."
+                
+                #TO DO:  ideas on finishing this?
+                # switch to mage route?
+                # can you have both routes going at once? I think we need our endings to decide that.
+            "\"I can make up my own mind - Begone!.\"":
+                c "I understand that, but I don't think you have all the facts."
+                c "He is most surely using you."
+                p "How do you know I'm not using him?"
+                c "I... I hadn't thought of that."
+                c "{b}Are{/b} you using him?"
+                p "Oh no.  We're hopelessly in love.  No one is using anyone."
+                p "Good day Moronious."
+                c "Errr, good day Princess?"
+                p "Begone!"
+                c "{i}I do wish you would quit telling me that.{/i}"
+            "\"Maybe you're right...\"":
+                p "That is not completely false. But whom do you suggest I trust?"
+                c "Well, there's...you could...I mean..."
+                c "Me. Trust me, my highness- your highness."
+                menu:
+                    "\"I do trust you.\"":
+                        p "You are much more trustworthy...very well, if you will promise to aid me"
+                        $ route = "Cyril"        
+                    "\"I do trust you\" (Lie)."
+                    "\"You don't have what I need.\""
+                    
+    elif (route == "Balrung"):
+        #TODO: who would dissuade from this? Niir? Balrung himself?
+        n "What do you ssssee in that old tortoisssse?"
+        
+    elif (route == "Cyril"):
+        #TODO: Balrung/Niir try to convince her that he's wimpy. "but if he's so wimpy, why are you still imprisoned?"   
+        b "Cyril's intentions are certainly pure, but he may not be willing to do what you want."
+
 ###### DAY 5
-if niir_love:
+if (route == "Niir"):
     p "Could you stop disappearing on me Niir!"
     p "I wish to confer with you!"
     n "Confer?  On what?  Your choice of dresssss?"
@@ -132,46 +190,4 @@ label cyril6:
 
     
     
-    # cyril dissuading against niir route
-    # DAY 5?!
-    
-    c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
-    c "I saw you, your majesty."
-    p "Saw me what?"
-    c "Well, you see..."
-    p "Spit it out mage!  I do not have all day."
-    c "With Niir, that {i}dragon{/i}."
-    c "Do not trust him.  There is a reason he is here.  He shall not be freed, milady!"
-    c "Shall not.  Do you have any idea what he would be like out there?"
-    c "You cannot trust him for a second.  Not one second!"
-    menu:
-        "\"You are mistaken about what you saw.\"":
-            jump mistaken
-        "\"I can make up my own mind - Begone!.\"":
-            jump ownmind
-            
-label mistaken:
-    c "Oh, so then you were just being friendly?"
-    p "Of course, I wouldn't be interested in that creature."
-    p "He's despicable and does not know the meaning of respect."
-    p "You on the other hand..."
-    p "Someone like you would understand when a lady is in need."
-    p "And has demands on her that only power can fulfill."
-    #TO DO:  ideas on finishing this?
-    # switch to mage route?
-    
-
-label ownmind:
-    c "I understand that, but I don't think you have all the facts."
-    c "He is most surely using you."
-    p "How do you know I'm not using him?"
-    c "I... I hadn't thought of that."
-    c "{b}Are{/b} you using him?"
-    p "Oh no.  We're hopelessly in love.  No one is using anyone."
-    p "Good day Moronious."
-    c "Errr, good day Princess?"
-    p "Begone!"
-    c "{i}I do wish you would quit telling me that.{/i}"
-    
-    
-    
+ 

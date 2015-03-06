@@ -1,0 +1,146 @@
+= "Wanted: Dragon" Licenses
+
+"Wanted: Dragon" is an aggregate collection of various material using the following licenses:
+
+== Program, Text & Dialogue
+
+"Wanted: Dragon" Program, Text & Dialogue are licensed under CC-BY-NC-SA-4.0
+
+.License
+****
+"Wanted: Dragon" Program, Text & Dialogue © 2014-2015 #TODO: who?
+
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>.
+****
+
+== Fonts
+
+Kristi is licensed under the SIL Open Font License.  See game/fonts/Kristi-License.txt
+
+Daniel is free to use and distribute under its own license, found at game/fonts/Daniel Midgley.txt
+
+== Graphics
+
+=== Character Sprites
+
+"Wanted: Dragon" Character Sprites are licensed under CC-BY-SA-4.0.
+
+.License
+****
+"Wanted: Dragon" Character Sprites © 2014-2015 Анна Алексеева
+
+This artwork is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>.
+****
+
+=== Background Images
+
+"Wanted: Dragon" Background Images are modified versions of images licensed under a variety of licenses.
+All modifications are released under the same license as the original images.
+
+==== Public Domain
+
+The following images are in the public domain.
+
+Parchment Scroll derived from <http://www.wpclipart.com/blanks/parchment/parchment_scroll_background.jpg.html>
+
+.License
+****
+These images are in the public domain.
+****
+
+==== CC-BY-SA-4.0
+
+The following images are licensed CC-BY-SA-4.0.
+
+
+.License
+****
+These images are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>.
+****
+
+==== CC-BY-SA-3.0
+
+The following images are licensed CC-BY-SA-3.0.
+
+.License
+****
+These images are licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license <http://creativecommons.org/licenses/by-sa/3.0/>.
+****
+
+== Audio
+
+=== Music
+
+"Wanted: Dragon" Music consists of the following music using various licenses.
+
+==== Public Domain
+
+"Mephisto Polka", <MephistoPolka.mp3>, by Franz Liszt, performed by Sofja Gülbadamova, <https://musopen.org/music/2262/franz-liszt/mephisto-polka-s-217/>
+
+.License
+****
+This music is in the public domain.
+****
+
+==== CC-BY-NC-SA 3.0.
+
+The following songs are licensed CC-BY-NC-SA 3.0.
+
+"La valse du oni", <OniValse.mp3> from Démo musique de film by BLS, <https://www.jamendo.com/en/track/693668/la-valse-du-oni>
+"Tema de los Malos", <Malos.mp3> from  3 Obras de Teatro by clbustos, <https://www.jamendo.com/en/list/a8447/3-obras-de-teatro>
+
+.License
+****
+This music is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 license <http://creativecommons.org/licenses/by-nc-sa/3.0/>.
+****
+
+=== Sound Effects
+
+"Wanted: Dragon" Sound Effects are modified and unmodified versions of sound files licensed under a variety of licenses.
+All modifications are released under the same license as the original sound files.
+
+
+== Game Engine
+
+The Ren'Py game engine is composed of software of various licenses.
+
+.License
+****
+License
+
+Most of Ren'Py is covered by the terms of the following (MIT) license:
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Portions of Ren'Py are derived from code that is licensed under the GNU Lesser General Public License, so Ren'Py games must be distributed in a manner that satisfies the LGPL.
+
+Please see each individual source file for a list of copyright holders. The artwork in the demo is released by various copyright holders, under the same terms.
+
+Ren'Py binaries include code from the following projects:
+
+    Python (Python License)
+    Pygame (LGPL)
+    SDL (LGPL)
+    SDL_image (LGPL)
+    SDL_ttf (LGPL)
+    Freetype (LGPL)
+    Fribidi (LGPL)
+    libav (LGPL)
+    libjpeg-turbo (LGPL)
+    libpng (PNG license)
+    zlib (Zlib License)
+    bzip2 (Bzip2 License)
+    pyobjc (MIT License)
+    py2exe (MIT License)
+    GLEW (Modified BSD, MIT)
+    zsync (Artistic License)
+
+For the purpose of LGPL compliance, the source code to all LGPL software we depend on is either in the Ren'Py package (available from http://www.renpy.org/), or in the renpy-deps package (http://www.renpy.org/dl/lgpl/). We believe compliance can be achieved by including a copy of this license with every copy of Ren'Py you distribute, and referring to it in your project's README file.
+
+Ren'Py may be distributed alongside the jEdit or Editra text editors. Editra is licensed under the wxWindows license, while jEdit is under the GNU General Public License.
+****
+

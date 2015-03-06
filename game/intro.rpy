@@ -3,6 +3,7 @@
 label intro:
     scene bg castle_exterior with fade
     show princess at midleft with moveinleft
+    play music princess_theme
     p "Finally. You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p "But first... I’ll have to deal with the mage in charge."
     show cyril at midright with moveinright
@@ -120,10 +121,11 @@ label meet_dragons:
     scene bg dungeon with fade
     show cyril at midleft
     show princess at left with moveinleft
+    play music balrung_theme
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     show balrung at quarterright with moveinright
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
-    show niir at midright with moveinrigh
+    show niir at midright with moveinright
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu:

@@ -9,6 +9,7 @@ init -1:
     define p_name = "Princess"
     define k_name = "Novaria"
     define asked_sceptre = "no one"
+    define route = None
 
     #
     # CHARACTERS
@@ -53,3 +54,10 @@ init -1:
     define sitting = Position(ypos=0.45, yanchor=0)
     define squatting = Position(ypos=0.25, yanchor=0)
     define standing = Position(ypos= 1.0, yanchor = 1.0)
+    
+    #
+    # MUSIC
+    # 
+    define balrung_theme = "music/MephistoPolka.mp3"
+    define niir_theme = "music/OniValse.mp3"
+    define princess_theme = "music/Malos.mp3"
