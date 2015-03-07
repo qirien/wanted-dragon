@@ -1,9 +1,11 @@
 label day2:
-    scene bedroom with fade
+    scene bg bedroom with fade
+    show princess at midright with dissolve
     "(Is that knocking?! Who could be brazen enough to wake me up so early?!)"
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
     p "Moronious?! This had better be important!"
+    show cyril at midleft with moveinleft
     c "Good.  Good.  I'm glad that you opened up."
     c "I don't want you to think that I'm - well, dissapproving."
     c "But some information has come to my attention."

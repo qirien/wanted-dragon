@@ -81,8 +81,9 @@ label library1:
     c "Alright, I'll just gather up my-"
     p "Begone with you!"
     c "Good day Princess, I will just be seeing myself out."
+    hide cyril with moveoutleft
     "(I thought he'd never leave.  Now, what have we here...)"
-    "(A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful, don't need that."
+    "(A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful, don't need that.)"
     "(This one is quite curious.  This part here.)"
     # TODO: write this on a book-screen to look like an old book?
     p "There is a scepter with emeralds that has not been located in centuries."
@@ -124,9 +125,11 @@ label balrung_scepter:
        
 label sharecyril:
     p "Oh Cyrilllll."
+    show her at midright with move
     p "That foolish mage has to be around here somewhere."
+    show her at midleft with move
     p "Where {i}are{/i} you foolish mage?"
-    show cyril #TODO: with some flash-bang transition
+    show cyril at midright #TODO: with some flash-bang transition
     c "You called, your majesty?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
@@ -162,7 +165,7 @@ label sharecyril:
     return
     
 label explore1:
-    scene bg castle_interior with fade
+    scene bg corridor with fade
     show princess at midleft with moveinleft
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
@@ -197,10 +200,13 @@ label explore1:
     p "But it's a good thing I can stand you, because I'm the only shot you have to getting out of here."
     n "You need to get your facts sssstraight nexxxt time."
     n "Prrrrrincessssss."
+    hide niir with moveoutright
     p "I have got my- Niir!  Where did you get to?"
     p "You sneaky dragon GET BACK HERE!"
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"
     "..."
+    scene bg stairs with fade
+    show princess at center with dissolve
     p "This castle just has endless steps!"
     "(Hours of searching... and nothing. Well, except for this delicious salted fish from the kitchens. So I supposed it wasn't a complete waste of time.)"
     return

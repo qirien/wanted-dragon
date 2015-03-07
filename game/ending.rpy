@@ -1,6 +1,12 @@
-# I said "ending", but maybe this is just the Balrung route ending?
-
 label ending:
+    if (route == "Balrung"):
+        jump balrung_ending
+
+
+
+
+# Balrung route ending
+label balrung_ending:
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
     c "Resonantia Concretus!"
     p "I can see wisps of something in the air. What did you do, mage?"
@@ -79,7 +85,7 @@ label ending:
                         "As I moved closer, I stood in front of Cyril, handing him back his wand behind my back."
                         b "A pity. Well, if you change your mind, I'll be-"
                         jump cyril_attack
-            "Try to help Cyril."
+            "Try to help Cyril.":
                 p "Balrung, it was rather foolish of you to trust me so easily."
                 "As I talked, I scanned the room. Where was the scepter? Balrung had used it earlier to break the spell, but I didn't see it in his hands- er, talons."
                 b "Oh, Princess, Princess. I let you win a few games of Queens and Pawns, and you imagine yourself some kind of master strategist. I don't need {b}you{/b} in order to claim your kingdom. It would have smoothed things over with the nobles, that's true, but your presence is certainly not necessary to my plans."

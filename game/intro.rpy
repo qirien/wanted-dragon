@@ -1,7 +1,7 @@
 
 # The game starts here.
 label intro:
-    scene bg castle_exterior with fade
+    scene bg gate with fade
     show princess at midleft with moveinleft
     play music princess_theme
     p "Finally. You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
@@ -11,11 +11,10 @@ label intro:
     p "Still… I’ll have to deal with him somehow."
     c "Biggeldy, boggaldy, wap!"
     c "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
-    c "Oh!  Hello! Who are you?"
-    p "My name is..."
-    $ p_name = renpy.input("What is your name?", "Chrysandra", length=30)
-    p "I am Princess [p_name]."
-    c "How can I help you, Princess [p_name]?"
+#    p "My name is..."
+#    $ p_name = renpy.input("What is your name?", "Chrysandra", length=30)
+#    p "I am Princess [p_name]."
+#    c "How can I help you, Princess [p_name]?"
     
     menu:
         "Play it sweet":
@@ -29,7 +28,7 @@ label intro:
 label sweet:
     p "Oh hello! You must be in charge here. How lovely to make your acquaintance, Mr...?"
     c "Merlonious.  Cyril Merlonious.  At least, the last time somebody called me it.  Which has been a while come to think of it.  "
-    c "Erm, wait a moment... it's you.  Princess!  I almost didn't recognize you!  Your majesty!  Did you find someone to relieve me?  Is that why you're here?"
+    c "Erm, wait a moment... it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  Did you find someone to relieve me?  Is that why you're here?"
     c "I did so know this day would come."
     p "Yes, Moronious. Yes, I am here to relieve you. It’s quite a demotion for me, but well, one must perform one’s royal duties. So if you’ll just show me around, then you can be on your way and leave these… dragons in my care."
     c "I can't tell you how happy I am to hear that!  I didn't think this day will come.  I must send word- oh!  I just need the royal seal from you.  Have you spoken with the council of mages?  Is everything in order?"
@@ -37,53 +36,68 @@ label sweet:
     c "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
-    p "The dragons? What can you tell me about them?"
-    c "Well, many of them have left actually.  Love can do wonders to reform a rogue dragon."
-    c "One got placed in the castle due to his insatiable lust for destruction.  I think.  He has been here a long time and my master told me a little of him before he passed.  My master was really wonderful.  He took good care of these dragons. Cared about their heart."
-    c "There's another as well, more recent an addition.  He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
-    p "Oh my, that sounds dreadful! And yet also intriguing. Would you introduce me?"
-    jump meet_dragons
+    hide princess
+    hide cyril
+    with moveoutleft
+    scene bg hall with fade
+    show cyril at midright
+    show princess at midleft
+    with moveinright
+    p "It is cold in here...would you mind showing me to my room?"
+    c "Your...room? Yes. Um. Well, you can have mine, that's probably the nicest. I mean, the only room that's not covered in dust, really."
+    jump room_intro
 
 label truth:
     p "I’m here to retake my rightful throne. Assist me, and be rewarded. Hinder me, and feel my wrath."
-    c "Oh, it's you.  Princess!  I almost didn't recognize you!  Your majesty!  I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble servant of Dyconis could help you." #TODO: Is Dyconis the name we want to use here? Make sure this is consistent.
+    c "Oh, it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble servant of Dyconis could help you." #TODO: Is Dyconis the name we want to use here? Make sure this is consistent.
     p "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
     c "Ah, erm, yes of course your majesty!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p "That is acceptable. You may lead me there now."
+    hide princess
+    hide cyril
+    with moveoutleft
+    scene bg hall with fade
+    show cyril at midright
+    show princess at midleft
+    with moveinright
     c "So, this is the castle of the banished.  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but we have no shortage of warm water here.  That's for certain."
     p "Yes, yes. Now, what can you tell me about the other... residents of this place?"
     c "It is just me.  Well, and the dragons.  But they are here from their punishment.  Kidnapping ladies is not a very delightful business I do say.  "
     c "Usually I find I must ignore them or they will try to plead their case.  Well, they don't really do that.  They more mock- anyway.  What brings you here again?"
     menu:
         "Make up something flattering.":
-            jump flattering
+            p "Believe it or not, I was thinking about... you."
+            p "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
+            c "Oh erm... you don't say..."
+            c "I guess I... I mean as much as anyone... I mean... Oh.  It's a very thoughtful offer from you, surely."
+            p "I’m certain we could help each other. But for now..."
+            jump room_intro
         "Tell the truth.":
-            jump truth2 
-            
-label truth2:
-    p "Unfortunately, I find myself in the unenviable position of needing assistance from others to claim the crown that has been wrenched from my rightful hands."
-    c "Oh, that is rather disappointing.  But as I believe, you were never in line for the throne?  Is that right?  It was that other girl?  That sister of yours?  "
-    c "I do hope I got my facts right.  I'm incredibly mixed up these days.  Don't know my right from my left and my left from my right."
-    p "Clearly. You’d best leave the facts to me and concentrate on doing my bidding."
-    c "I am sorry to have offended you Princess, I must leave it to you.  Is this to your liking?"
-    p "Is this really the best room here?"
-    jump room_intro
-
-label flattering:
-    p "Believe it or not, I was thinking about... you."
-    p "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
-    c "Oh erm... you don't say..."
-    c "I guess I... I mean as much as anyone... I mean... Oh.  It's a very thoughtful offer from you, surely."
-    p "I’m certain we could help each other. But for now...is this really the best room you have?"
-    jump room_intro
+            p "Unfortunately, I find myself in the unenviable position of needing assistance from others to claim the crown that has been wrenched from my rightful hands."
+            c "Oh, that is rather disappointing.  But as I believe, you were never in line for the throne?  Is that right?  It was that other girl?  That sister of yours?  "
+            c "I do hope I got my facts right.  I'm incredibly mixed up these days.  Don't know my right from my left and my left from my right."
+            p "Clearly. You’d best leave the facts to me and concentrate on doing my bidding."
+            c "I am sorry to have offended you Princess, I must leave it to you.  Is this to your liking?"
+            jump room_intro
     
 label room_intro:
+    hide princess
+    hide cyril
+    with moveoutleft
+    scene bg bedroom with fade
+    show cyril at midright
+    show princess at midleft
+    with moveinright
+    p "{b}This{/b} is the best room in the castle?"    
     c "It is.  Well, I’ve tried to make it as comfortable as possible.  I have a few keepsakes from home in it and my frilly rug which does keep it warm in the middle of the cold snap.  "
     c "And it is close to the dragons so I can regularly keep watch over them, as I am supposed to.  Would you like to be somewhere further away?  This is a large castle."
     p "No, no, this will do. You may leave me for now, but I may need your assistance later."
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean your majesty!  Your majesty.  Because you are most certainly not mine... errr... I will see to that bath."
     "..."
     #TODO: SHOWER
+    scene black with fade
+    scene bg bedroom with fade
+    show princess at center with dissolve
     
     "(That’s better! One of these days I will need to look into learning more weather magic...awful that I should be drenched at the whim of the mere skies)."
     "(But now to meet with the dragons…)"
@@ -115,10 +129,13 @@ label explore:
     #TODO: She sneaks down there but Cyril finds her, says it's dangerous, and accompanies her anyway.
     
 label meet_dragons:
-    c "Well, it's time to meet the dragons.  I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
+    p "What can you tell me about the dragons?"
+    c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
     c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat."
+    c "He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
     c "Balrung, he is much more courteous but he is rather stubborn.  He will try to make you see it his way and not by the most honest methods."
-    p "Interesting...well, lead on."
+    p "Oh my, that sounds dreadful!"
+    "(And yet also intriguing.)"
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     scene bg dungeon with fade
     show cyril at midleft
@@ -133,8 +150,8 @@ label meet_dragons:
     menu:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
-            show cyril at right
-            show princess at midright
+            show cyril at left
+            show princess at midleft
             with move
             p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
             n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
@@ -143,8 +160,8 @@ label meet_dragons:
             c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
-            show cyril at right
-            show princess at midright
+            show cyril at left
+            show princess at midleft
             with move            
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
