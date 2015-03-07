@@ -94,7 +94,7 @@ label room_intro:
     p "No, no, this will do. You may leave me for now, but I may need your assistance later."
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean your majesty!  Your majesty.  Because you are most certainly not mine... errr... I will see to that bath."
     "..."
-    #TODO: SHOWER
+    #TODO: SHOWER?
     scene black with fade
     scene bg bedroom with fade
     show princess at center with dissolve
@@ -166,7 +166,7 @@ label meet_dragons:
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
             c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
-            n "I would call it mistreatment to be kept away from such a beautiful sight daily -to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
+            n "I would call it mistreatment to be kept away from the world daily - to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
     
     # Whom to talk to?
     menu:
@@ -189,7 +189,7 @@ label meet_dragons:
                     p "Not interested."
                     n "Pity.  I could have a lot of ussse for someone like you as my plaything."
                     b "This Princess is no one’s ‘plaything’, Niir, least of all yours. But, Princess, tell us about yourself. How is the royal family?"
-                    n "You have no ssssense of fun.  But if you would rather spend time with thisss sssourpus, then you can make your choice."
+                    n "You have no ssssense of fun.  But if you would rather spend time with thisss sourpussss, then you can make your choice."
                     p "My...family? (not sure what to write here)"
 
         "Address Balrung.":

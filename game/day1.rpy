@@ -115,7 +115,7 @@ label sharebalrung:
 label balrung_scepter:
     b "No one has been able to find it. It is presumed lost, and, as its powers are unknown, no one lately has tried very hard."
     p "Yes, the book said as much. Where is it?"
-    b "Perhaps that's why she chose this place..."  #TODO: This assumes the mage who imprisoned the dragons did choose this place? Or was it the dragon castle originally?
+    b "Perhaps that's why she chose this place..."  #TODO: This assumes the mage who imprisoned the dragons did choose this place?
     p "What? She who?"
     b "Never mind. I believe it is still here. I've felt latent power within the walls of the castle, but assumed it was just the binding curse."
     p "Interesting...could you pinpoint a certain location where that feeling is strongest?"

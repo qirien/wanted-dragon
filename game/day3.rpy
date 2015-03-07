@@ -97,7 +97,7 @@ label balrung3:
     show princess at midleft with moveinleft
     b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
-    b "Really? I imagine you're looking for some gullible fool that you can trick in to using their powers for your benefit? A thrall, a lackey, a minion?"
+    b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
     p "No, no of course not!"
     "(Is it that obvious?!)"
     b "Oh really? My apologies, then. What {b}does{/b} bring you here?"
