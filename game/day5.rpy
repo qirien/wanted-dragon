@@ -1,4 +1,4 @@
-# cyril dissuading against niir route
+# Everyone tries to get her to choose a different route
 # DAY 5?!
 label day5:
     if (route == "Niir"):
@@ -104,79 +104,7 @@ label somethigh:
     scene black
     p "Happy now?"
     n "Happy wouldn't be the word that I would ussssse."
-    p "I said LOOK, Niir."
-    p "Try to touch me again and you'll loose your hand."
-    n "You are no fun Princesssss."
-    scene castle
-    p "So there we go, I trust you enough with that and you..."
-    scene black
-    p "What do you think you're doing?"
-    n "Sssshowing you.  That'ssss what you wanted correct?  An eye for an eye?"
-    p "No, put that away.  I just wanted you to trust me."
-    scene castle
-    n "Ah, of course.  Sssstill not convincccccced."
-    with hpunch
-    n "Agh!  What wasssss that?"
-    p "Convincing.  Hurry up and trust me or I'll do it again."
-    n "It doessss not work- {i}stop human{/i}!"
-    n "Desist!"
-    "He grabbed me."
-    p"(He's stronger than I thought...)"
-    p "You're hurting me."
-    n "Do you trussssst me now?"
-    p "(Ah, a test.  Touche dragon.)"
-    p "Completely."
-    n "Really?"
-    p "Yes.  I trust you.  Do you trust me?"
-    n "..."
-    n "Yessss."
-    p "I didn't quite hear you, what was that?"
-    n "Yessss, don't make me repeat it Princessss."
-    p "So let us fool the mage about our love."
-    p "And I will make your trust worth it."
-    n "Yessss.  Fool.  We sssshall."
-    p "Then we are partners.  I want a full agreement Niir.  Nothing
-less will do."
-    n "Partnerssss."
-
-
-label trustfall:
-    p "I'll fall and you'll catch me."
-    n "What will that prove?"
-    p "That you can trust me because I'm trusting you with my very life."
-    n "You are trussssting me with your life jusssst by being in this room."
-    p "Well, let's make it more official then."
-    p "I won't fight back, I trust that you will not hurt me."
-    p "And that you will catch me."
-    p "Are you ready Niir?  I am going to fall."
-    n "No."
-    p "I'm going to fall, I do hope some annoying dragon with nothing
-better to do will catch me."
-    n "I ssssaid 'No!' human!"
-    p "I am trusting you, isn't that what you wanted?"
-    p "(I do believe I'm calling his bluff.)"
-    p "(I can tell that's not what he wanted at all.)"
-    n "..."
-    n "How can you trussssst me, when I do not even trussst myself?"
-    p "(Bingo!)"
-    p "(Though I almost feel... no, {i}pity{/i} is unbecoming on a
-princess.  I do not feel that.)"
-    p "Niir.  You have to start some time."
-    p "And why not start by trusting me?  You can trust yourself later."
-    p "Right now your own loyalty should be to your future Queen."
-    n "..."
-    p "Niir.  Will you catch me?"
-    n "..."
-    p "Will you catch me Niir?"
-    n "... "
-    extend "{i}Yessss.{/i}"
-    p "I am willing to trust you rght now when you certainly don't
-deserve it.  Surely this goes a long way for your trust in me."
-    n "Perhapssss."
-    p "Good.  Then are we ready to go onto the next step in our
-diabolical plan to gain your freedom and my throne?"
-    n "Perhapssss."
-    p "Then let's do it and stop talking about it."    
+    
     
     
 label cyril5:
