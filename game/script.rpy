@@ -3,13 +3,16 @@
 
 label start:
     call intro
-    call day1
-    call day2
-    call day3
-    call day4
-    call day5
-    call day6
-    call day7
-    call day8
+    $ i = 1
+    while (i<9):
+        scene black with fade
+        show text "Day [i]"
+        $ renpy.pause(1.6)
+        call expression "day" + str(i)
+        $ i += 1
+    
+    scene black with fade
+    show text "Day 9"
+    $ renpy.pause(1.6)
     call ending
     return

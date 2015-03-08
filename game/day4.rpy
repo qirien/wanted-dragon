@@ -28,12 +28,7 @@ label dragons4:
     b "Good morning, Princess. I trust you slept well?"
     p "That seems a silly thing to trust in. How can I sleep well when my kingdom is in the hands of a usurper?!"
     b "Well, you looked so radiant that I must have assumed it."
-    n "And by radiant, he meansss radiating a ssstench. Haven't you heard of bathing?"
-    p "I have more important things to worry about. Though I do love a good bath."
-    n "I know."
-    p "!!"
-    b "Most princesses do, is what he meant to say. Really, Niir, she might suspect you were engaged in untoward behavior."
-    p "Well, I haven't come to discuss bathing. I've come to offer you a proposal."
+    p "Well, I haven't come to discuss my radiance. I've come to offer you a proposal."
     b "Really? Please continue."
     p "Cyril will release you from your curse if you fall in love, right?"
     b "And have demonstrated reform, yes."
@@ -50,8 +45,8 @@ label dragons4:
             b "No, I'm afraid Niir always acts this way. But, perhaps he could learn to love you, given time."
             
     menu:
-        "\"Niir, you must act as though you are in love me.\"":
-            jump niir_pretend_love
+        "\"Niir, you must act as though you are in love with me.\"":
+            jump niir4
                 
         "\"Actually, I meant you, Balrung.\"":
             p "I think you would make a better vassal, Balrung. I have little hope that Niir could appear civilized."
@@ -75,7 +70,7 @@ label balrung4:
     b "Niir, perhaps you would like to play against the Princess?"
     n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
     hide niir with moveoutright
-    b "He never was very good at this game. I thought I could teach him, but..."
+    b "He never was very good at this game. I thought I could teach him, but...he doesn't wish me to teach him anything."
     p "I used to play against my father; he wasn't very good, though, for I would always win. Are you any good?"
     b "I've had so few people to play against, lately, and Merlonious won't play with me anymore."
     p "Why not?"
@@ -120,15 +115,15 @@ label niir4:
     n "Cook?  Hahahahaha.  I can… roassssst.  Hehe hahaha."
     p "Heh, heh...I'm serious."
     n "Cooking?  Poetry?  Flowersss?  I’m out."
-    b "Niir, isn't it with trying to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
+    b "Niir, isn't it worth {b}trying{/b} to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
     n "Affection, well why didn’t you sssssay so?"
     show niir at center with move
     p "It doesn't help to do that now, you imbecile, it has to be when Cyril's watching!"
-    show niir at midright with move
+    show niir at midright
+    show balrung at quarterright with move
     n "Soooo how much leeway do I get?" 
     b "Remember, you need to appear in love, not in lust... Perhaps you should practice a passionate, yet chaste embrace."
     n "Do you really think I can do that?"
-    n "I’m out."
     b "You must enjoy it here very much. Is it really that much of a sacrifice to embrace a beautiful princess?"
     n "Perhapssss not.  But I do not promise chassste.  That is the mage’s game."
     #todo show embrace somehow
@@ -139,20 +134,18 @@ label niir4:
     b "Yes... that may work. Not the sonnets; you can amuse each other and laugh together."
     n "Grrr.  No one asssked for your input!"
     b "Well, then perhaps I'll leave you two alone for a bit. Though, princess, should you need me, I will be nearby. Behave yourself, Niir."
-    #hide balrung with moveoutleft
+    hide balrung with moveoutleft
 
     n "Don’t lisssten to that crussty old dragon."
     p "Don't you have any hobbies? I mean, what do you normally do all day? Do you paint? Play sports?"
     n "Playing with the mage isss enough of a hobby for me."
     p "Well, just think of this façade as another way to trick him... But no wonder you're such a nuisance; we need to find you something else to do! Gardening? Novel reading? Hunting?"
-    n "I don’t need a hobby Princessss.  Essspecially not one of those."
+    n "I don’t need a hobby, Princessss.  Essspecially not one of those."
     n "Though if I wasss free I would be hunting again.  Jussst not the kind of prey mossst would approve of."
-    p "I bet you would enjoy a good theatrical performance."
-    n "The theatre?  I’m not that bored."
     p "I suppose you'll just have to spend time with me, then. You can tell me how wonderful I am and perhaps we'll even enjoy another \"chaste embrace\"."
     n "Are you bribing me Princess?"
-    p "Bribery is underrated."
-    n "It issss.  What ssssort of thing do {b}you{/b} like to be bribed with Princessss?"
+    p "It's not bribery if we both get something out of it. It's just a...negotiation."
+    n "What ssssort of thing do {b}you{/b} like to be bribed with Princessss?"
     p "Oh, what a charming question! Powerful artifacts are always good, though I also enjoy oaths of fealty and rare poisons."
     n "I think I have ssssomething in mind."
     n "You make it too eassssy."

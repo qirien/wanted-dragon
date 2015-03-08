@@ -36,7 +36,6 @@ label day2:
     c "I am, I am.  Forgive me your majesty."
     p "I forgive you, you foolish mage.  Just don't doubt me again."
     hide cyril with moveoutleft
-    #TODO: Have a conversation with Niir and Balrung somehow?!
     
     show niir at right with moveinright
     n "You were banisshhed? Your position musst be desssperate, then."
@@ -44,7 +43,7 @@ label day2:
     p "How long have you been eavesdropping?!"
     n "Long enough to hear you sssnorrrring. Mossst unladylike."
     p "Moronious!"
-    show cyril at midleft with moveinleft
+    show cyril at quarterleft with moveinleft
     c "Yes, Princess? Oh! What's {b}he{/b} doing here?!"
     p "That was my question. I would have thought that a capable mage would have this room warded against unwanted intrusions."
     n "If you think Cccyril is capable--"
@@ -65,11 +64,11 @@ label day2:
     c "No...I trust you, just- please, be careful!"
     hide cyril with moveoutleft
     
-    p "Do you have any business with me, dragon?"
+    p "Do you have business with me, dragon?"
     n "Yesss, Balrung wished to ssspeak with you."
     p "Well, where is he? Why doesn't he just come knock on my door?"
     n "I think he jussst likesss to send me on errandsss."
-    p "So you weren't really watching me sleep...?"
+    p "So, you weren't really watching me sleep for hours...?"
     n "I'll let you wonderrr about that one."
     hide niir with moveoutright
     
@@ -77,7 +76,34 @@ label day2:
     if (asked_scepter == "Balrung"):
         "(Perhaps he has found the scepter?!)"
         
+    hide princess with moveoutleft
     scene bg dungeon with fade
-    show balrung at midleft with dissolve
-    show her at midright with moveinright
+    show balrung at midright with dissolve
+    show princess at midleft with moveinleft
+    p "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
+    b "My apologies, my lady, I didn't think it appropriate to disturb a lady in her bedchamber so early in the morning."
+    p "But you thought it appropriate to send the lascivious Niir to my bedchamber?!"
+    b "I did not send him. I merely mentioned that I hoped I would get a chance to talk with you today, and he departed."
+    if (asked_scepter == "Balrung"):
+        p "Well, what is it? Have you found the scepter?"
+        b "No. It seems to be somewhere nearby, but I cannot discern its exact location yet."
+    else:
+        p "Well, here I am. Speak."
     
+    b "I understand you are not here entirely of your own free will. That you were banished."
+    p "A temporary state of affairs, I assure you."
+    b "Believe me, Princess, when I say that I understand completely. I know all too well how it feels to make one lapse in judgement, and have inordinate punishment dealt to you."
+    p "You... understand?"
+    b "Those who fear power are often overly vindictive against those who use it."
+    p "Vindictive, yes. Have you met my sister, Magnolia?"
+    b "Not precisely. But I knew someone quite like her, once. Afraid of my power."
+    p "Self-righteous."
+    b "Ambitious."
+    p "Narcissistic."
+    b "Self-sacrificing."
+    p "Knows whats best for everyone else."
+    b "Yes, precisely. So if you are in need of allies here, I hope you will seek me out, and perhaps we can aid each other."
+    p "But you could only aid me if you were freed."
+    b "Well, I would certainly have much greater power as a free dragon. But I am willing to do what little I can for you, in this form, as well."
+    p "I shall consider your offer, dragon."
+    return

@@ -43,7 +43,7 @@ label sweet:
     show cyril at midright
     show princess at midleft
     with moveinright
-    p "It is cold in here...would you mind showing me to my room?"
+    p "It is so cold in here; would you mind showing me to my room?"
     c "Your...room? Yes. Um. Well, you can have mine, that's probably the nicest. I mean, the only room that's not covered in dust, really."
     jump room_intro
 
@@ -93,17 +93,25 @@ label room_intro:
     c "And it is close to the dragons so I can regularly keep watch over them, as I am supposed to.  Would you like to be somewhere further away?  This is a large castle."
     p "No, no, this will do. You may leave me for now, but I may need your assistance later."
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean your majesty!  Your majesty.  Because you are most certainly not mine... errr... I will see to that bath."
-    "..."
+    p "..."
     #TODO: SHOWER?
     scene black with fade
     scene bg bedroom with fade
     show princess at center with dissolve
     
-    "(That’s better! One of these days I will need to look into learning more weather magic...awful that I should be drenched at the whim of the mere skies)."
-    "(But now to meet with the dragons…)"
+    "(That’s better! One of these days I will need to look into obtaining my own weather mage...awful that I should be drenched at the whim of the mere skies)."
+    "(But now to meet with the dragons...)"
     menu:
         "Call for Cyril.":
-            jump meet_dragons
+            hide princess with moveoutleft
+            scene bg corridor with fade
+            show princess at midright with moveinright            
+            p "Mage! Moronious! I'm ready for you now!"
+            show cyril at midleft with moveinleft
+            c "Ready for me to what?"
+            p "I wish to speak to the dragons."
+            c "If-if you wish me to, though I'm not sure what you'd want with them."
+            jump meet_dragons            
         "Explore on your own.":
             jump explore 
 
@@ -126,10 +134,24 @@ label ignore:
 
 label explore:
     "(I'll find out more without that silly mage following me around.)"
-    #TODO: She sneaks down there but Cyril finds her, says it's dangerous, and accompanies her anyway.
+    hide princess with moveoutleft
+    scene bg corridor with fade
+    show princess at midright with moveinright
+    "(Now, which way...?)"
+    show cyril at midleft with moveinleft
+    c "Princess! You're done with your b-b-bath, then? Please, let me show you around the castle."
+    p "I do not require you at the moment. Leave me alone."
+    c "Oh, I don't think I should. This castle can be quite confusing, and there's no servants or anyone to help you. Please, I'll show you around."
+    p "...Very well. You may start with the dragons."
     
 label meet_dragons:
-    p "What can you tell me about the dragons?"
+    hide princess
+    hide cyril
+    with moveoutleft
+    scene bg stairs with fade
+    show princess at midright
+    show cyril at midleft
+    with moveinright
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
     c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat."
     c "He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
@@ -188,16 +210,15 @@ label meet_dragons:
                 "\"Not interested.\"":
                     p "Not interested."
                     n "Pity.  I could have a lot of ussse for someone like you as my plaything."
-                    b "This Princess is no one’s ‘plaything’, Niir, least of all yours. But, Princess, tell us about yourself. How is the royal family?"
+                    b "This Princess is no one’s ‘plaything’, Niir, least of all yours."
                     n "You have no ssssense of fun.  But if you would rather spend time with thisss sourpussss, then you can make your choice."
-                    p "My...family? (not sure what to write here)"
 
         "Address Balrung.":
             $ balrung_affection += 1
             p "Balrung...how long have you been here?"
             b "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
-            b "Well, I do, at any rate. I’m not sure I can say the same for my heartless young...companion here."
-            # TODO: Have Niir doing something funny, oblivious that he is being talked about?
+            b "Well, I do, at any rate. I’m not sure I can say the same for my heartless young companion here."
+            n "Heartlessss? I assssure you, my heart beats quite vigorously."
         
         "Address Cyril.":
             $ cyril_affection += 1
@@ -210,6 +231,26 @@ label meet_dragons:
             c "And I was telling them all that something must be done about those pesky dragons..."
             c "And then they all left.  And put out the lamps and I was just there.  So I guess the council had made their decision after all, that I was to do something about the dragons.  And here I am."
 
+    b "But, Princess, tell us about yourself. How is the royal family?"
+    p "My...family?"
+    b "Your father, the king, is he well?"    
+    p "Yes, very well, thank you. Do- do you know him?"
+    b "I met him once, before my sojourn here. He seemed capable, if a bit naïve. And the Queen?"
+    p "My mother died several months ago."
+    b "I'm terribly sorry; how rude of me to bring it up."
+    p "You didn't know."
+    c "B-but, he {b}did{/b} know, I mentioned it several weeks ago? I think? Or maybe I just thought of mentioning it? Or maybe I just thought about thinking about mentioning it?"
+    b "I don't think so, Merlonious."
+    p "Anyway, I am finished here...for now."
+    n "Ssseee you later, Prrrrincessss...."
+    hide cyril
+    hide princess
+    with moveoutleft
+
+    scene bg stairs with fade
+    show cyril at midleft
+    show princess at midright
+    with moveinright
     # After talked to Niir, Balrung, or Cyril
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
     c "I don't want to dwell on it but there have been some times where I have just felt like giving up!"
@@ -225,21 +266,32 @@ label meet_dragons:
         "\"I suppose I could join you if you don't bore with with your stories.\"":
             jump joinmage 
 
+label broughtfood:
+    p "I am tired. You may bring hot food to my room. That will be all, Moronious."
+    c "It's Merlonious. You could call me Cyril? No one does, but you could..."
+    p "Yes, yes, I said \"that will be all\"!"
+    c "Right! Food. I'll bring it later. Bye!"
+    return
+
 label joinmage:
     $ cyril_affection += 1
+    scene bg kitchen with fade
+    show cyril at midright
+    show princess at midleft
+    with moveinleft
     c "Ah, yes Princess.  So glad of you to join me."
     c "I mean glad of me."
     c "I mean I'm the one who's glad."
     c "I'm terribly sorry, I don't seem to be making much sense."
-    p "It's Moronious, isn't it?"
-    c "Merlonious.  Cyril Merlonious."
+    p "Your name- it's Moronious, isn't it?"
+    c "Merlonious. Cyril Merlonious."
     p "Have you ever thought of changing your name to Moronious?"
     c "Why would I do something like that?"
     p "Why not?"
     c "Yes, erm.  Good point."
     c "I'll just whip something up for us.  But nothing too complicated."
     c "Actually, my repertoire isn't that vast with food spells."
-    c "So I'd better just do what I can do."
+    c "So I'd better just do what I can do. Vittus Cottura!"
     p "..."
     c "I hope it is to your liking."
     c "It's not much but I-"
@@ -256,7 +308,7 @@ label joinmage:
     p "You do know that I am a princess, correct?"
     p "And in what way did you think that this was worthy of a princess?"
     c "I... I'm not quite sure."
-    
+    p "I am sure you will do better next time."
     return
 
     ## MAGE ROUTE

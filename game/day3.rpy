@@ -134,15 +134,17 @@ label balrung3:
     return
     
 label niir3:
-    show niir at quarterright with moveinright
-    n "Ssssen anything interesting today Princessss?"
+    n "Knock, knock, Prrrrincesss..."
+    p "Oh, what is it now, Niir. I'll warn you: I'm already in a foul mood!"
+    show niir at quarterright with moveinleft
+    n "Sssseen anything interesting today Princessss?"
     p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
     n "I sssupect the question should be to you.  What do {i}you{/i} want?"
     n "You came here, acting ssssupicious in the first place."
     p "I need something powerful. Something that will make it clear that I am the rightful Queen. If you don’t have anything like that, then away with you."
     n "More powerful than a dragon?  My aren’t you ambitioussss?"
     p "It doesn’t take much to be more powerful than you right now."
-    p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for… what? Ten, twenty years?"
+    p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for...years?"
 
     n "I know sssssecrets of all kindsss.  And not just about the cassstle."
     n "I could find you ssssomething powerful.  But what would you do for me in return?"
@@ -154,7 +156,7 @@ label niir3:
     n "Don’t waste your time with him.  I am the only one who knowssss."
     menu:
         "Go with Niir.":
-            p "I don't believe you."
+            p "You, the only one who knows secrets? I don't believe you."
         "Go ask Moronious":
             p "I'm going to ask that mage instead. Good-bye, Niir."
             hide princess with moveoutleft
@@ -190,14 +192,14 @@ label niir3:
     show niir at midright
     show princess at midleft
     with moveinright
-    p "Good. By the way, isn’t this the kitchen? Where are you taking me?"
+    p "By the way, isn’t this the kitchen? Where are you taking me?"
     n "We have to go through the kitchen.  Patiencccce."
     p "Now you’re starting to sound like my father! You don’t usually sound like my father, though. He doesn’t seem to care what I wear or what I do or what I want at all."
     n "Ssssounds heartbreaking, princessss.  I don’t care either.  But I want to find out what your plansss are, as it seems like you don’t have any."
     n "Watching you fail could be entertaining."
     p "Hmph. That’s no way to talk to your future Queen."
     n "My queen?  Ha ha ha ha.  I am a dragon.  I have no queen."
-    p "Cyril might as well be your queen, since he controls where you can go and keeps you in human form. I wouldn’t be so cruel."
+    p "{b}Moronious{/b} might as well be your queen, since he controls where you can go and keeps you in human form. I wouldn’t be so cruel."
     n "He is rather pretty."
     n "But you, are ssslightly more becoming.  Just ssslightly."
     hide niir

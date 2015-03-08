@@ -39,7 +39,7 @@ label library1:
     "(This completely ruins my plans.  But perhaps I could turn it to my advantage?)"
     show princess at midleft with moveinleft
     p "Doing some reading?"
-    c "Yah!"
+    c "Yah!" with hpunch
     "He dropped the book like it was a hot potato."
     c "Princess.  Yes, well I..."
     p "Let me get that."

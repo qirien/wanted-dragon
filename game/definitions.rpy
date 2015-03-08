@@ -8,7 +8,7 @@ init -1:
     define cyril_affection = 0
     define p_name = "Chrysandra"
     define k_name = "Novaria"
-    define asked_sceptre = "no one"
+    define asked_scepter = "no one"
     define route = None
 
     #
@@ -37,6 +37,7 @@ init -1:
     image bg hall = "bg/hall_day.jpg"
     image bg kitchen = "bg/kitchen.jpg" 
     image bg stairs = "bg/stairs_dusk.jpg"
+    image bg stairs night = "bg/stairs_night.jpg"
     image bg storage = "bg/storage.jpg"
 
 

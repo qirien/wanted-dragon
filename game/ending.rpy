@@ -1,11 +1,20 @@
 label ending:
     if (route == "Balrung"):
         jump balrung_ending
+    elif (route == "Niir"):
+        jump niir_ending
+    else:
+        jump cyril_ending
 
+############################################################
+# Cyril route ending
+#
+label cyril_ending:
+    # TODO: She should finally call him by his real name!
 
-
-
+############################################################
 # Balrung route ending
+#
 label balrung_ending:
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
     c "Resonantia Concretus!"
