@@ -1,12 +1,10 @@
 label day1:
     scene bg bedroom with fade
-    show princess at center with dissolve
     p "What a terrible start to a day; I'm still not queen."
     p "But that's why I came here; to remedy that."
     p "Dragons are powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
     scene bg dungeon with fade
     n "Ssssomething tasssty comes!"
-    show princess at midleft with moveinleft
     p "Ahem. Dragons? I wish to speak with you!"
     show niir at midright
     show balrung at right
@@ -37,7 +35,6 @@ label library1:
     c "And you mark my words!  I will stop you, I will!"
     c "As soon as I find that proper spellbook!"
     "(This completely ruins my plans.  But perhaps I could turn it to my advantage?)"
-    show princess at midleft with moveinleft
     p "Doing some reading?"
     c "Yah!" with hpunch
     "He dropped the book like it was a hot potato."
@@ -108,7 +105,6 @@ label sharebalrung:
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
     show balrung at midright with dissolve
-    show princess at midleft with moveinleft
     b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
     
@@ -166,7 +162,6 @@ label sharecyril:
     
 label explore1:
     scene bg corridor with fade
-    show princess at midleft with moveinleft
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
@@ -206,7 +201,6 @@ label explore1:
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"
     "..."
     scene bg stairs with fade
-    show princess at center with dissolve
     p "This castle just has endless steps!"
     "(Hours of searching... and nothing. Well, except for this delicious salted fish from the kitchens. So I supposed it wasn't a complete waste of time.)"
     return

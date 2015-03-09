@@ -2,13 +2,12 @@
 # The game starts here.
 label intro:
     scene bg gate with fade
-    show princess at midleft with moveinleft
     play music princess_theme
-    p "Finally. You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
+    p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p "But first... I’ll have to deal with the mage in charge."
-    show cyril at midright with moveinright
-    p "... what. They put a kid in charge?! This is exactly the kind of inefficiency I intend to remedy when I am queen!"
-    p "Still… I’ll have to deal with him somehow."
+    show cyril at center with moveinright
+    "({b}This{/b} is the mage in charge?! He's barely more than a child! This is exactly the kind of inefficiency I intend to remedy when I am queen!)"
+    "(Still… I’ll have to deal with him somehow.)"
     c "Biggeldy, boggaldy, wap!"
     c "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
 #    p "My name is..."
@@ -36,12 +35,10 @@ label sweet:
     c "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
-    hide princess
     hide cyril
     with moveoutleft
     scene bg hall with fade
     show cyril at midright
-    show princess at midleft
     with moveinright
     p "It is so cold in here; would you mind showing me to my room?"
     c "Your...room? Yes. Um. Well, you can have mine, that's probably the nicest. I mean, the only room that's not covered in dust, really."
@@ -53,12 +50,10 @@ label truth:
     p "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
     c "Ah, erm, yes of course your majesty!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p "That is acceptable. You may lead me there now."
-    hide princess
     hide cyril
     with moveoutleft
     scene bg hall with fade
-    show cyril at midright
-    show princess at midleft
+    show cyril at center
     with moveinright
     c "So, this is the castle of the banished.  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but we have no shortage of warm water here.  That's for certain."
     p "Yes, yes. Now, what can you tell me about the other... residents of this place?"
@@ -81,12 +76,10 @@ label truth:
             jump room_intro
     
 label room_intro:
-    hide princess
     hide cyril
     with moveoutleft
     scene bg bedroom with fade
     show cyril at midright
-    show princess at midleft
     with moveinright
     p "{b}This{/b} is the best room in the castle?"    
     c "It is.  Well, I’ve tried to make it as comfortable as possible.  I have a few keepsakes from home in it and my frilly rug which does keep it warm in the middle of the cold snap.  "
@@ -97,17 +90,14 @@ label room_intro:
     #TODO: SHOWER?
     scene black with fade
     scene bg bedroom with fade
-    show princess at center with dissolve
     
     "(That’s better! One of these days I will need to look into obtaining my own weather mage...awful that I should be drenched at the whim of the mere skies)."
     "(But now to meet with the dragons...)"
     menu:
         "Call for Cyril.":
-            hide princess with moveoutleft
             scene bg corridor with fade
-            show princess at midright with moveinright            
             p "Mage! Moronious! I'm ready for you now!"
-            show cyril at midleft with moveinleft
+            show cyril at center with moveinleft
             c "Ready for me to what?"
             p "I wish to speak to the dragons."
             c "If-if you wish me to, though I'm not sure what you'd want with them."
@@ -134,22 +124,18 @@ label ignore:
 
 label explore:
     "(I'll find out more without that silly mage following me around.)"
-    hide princess with moveoutleft
     scene bg corridor with fade
-    show princess at midright with moveinright
     "(Now, which way...?)"
-    show cyril at midleft with moveinleft
+    show cyril at center with moveinleft
     c "Princess! You're done with your b-b-bath, then? Please, let me show you around the castle."
     p "I do not require you at the moment. Leave me alone."
     c "Oh, I don't think I should. This castle can be quite confusing, and there's no servants or anyone to help you. Please, I'll show you around."
     p "...Very well. You may start with the dragons."
     
 label meet_dragons:
-    hide princess
     hide cyril
     with moveoutleft
     scene bg stairs with fade
-    show princess at midright
     show cyril at midleft
     with moveinright
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
@@ -160,21 +146,17 @@ label meet_dragons:
     "(And yet also intriguing.)"
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     scene bg dungeon with fade
-    show cyril at midleft
-    show princess at left with moveinleft
+    show cyril at quarterleft
     play music balrung_theme
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     show balrung at quarterright with moveinright
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
-    show niir at midright with moveinright
+    show niir at center with moveinright
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
-            show cyril at left
-            show princess at midleft
-            with move
             p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
             n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
             b "There are many injustices I would fight, had I only the freedom to do so."
@@ -182,9 +164,6 @@ label meet_dragons:
             c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
-            show cyril at left
-            show princess at midleft
-            with move            
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
             c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
@@ -197,7 +176,7 @@ label meet_dragons:
             p "Niir...what an interesting name. Tell me about yourself."
             n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense for amusement or play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
             p "Tell me what it is, and then I shall decide."
-            n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  To be up here in this castle tower you are obviousssly not afraid of heights.  Perhaps you would like to get higher ssstill?"  #TODO: I thought they were in the dungeon?
+            n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  Are you afrrrraid of heights?  Perhaps you would like see some of the ssssights of the cassstle?"
             p "What did you have in mind?"
             n "That, is my little sssecret.  You will have to help me leave to find out."
             
@@ -244,12 +223,10 @@ label meet_dragons:
     p "Anyway, I am finished here...for now."
     n "Ssseee you later, Prrrrincessss...."
     hide cyril
-    hide princess
     with moveoutleft
 
     scene bg stairs with fade
     show cyril at midleft
-    show princess at midright
     with moveinright
     # After talked to Niir, Balrung, or Cyril
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
@@ -277,7 +254,6 @@ label joinmage:
     $ cyril_affection += 1
     scene bg kitchen with fade
     show cyril at midright
-    show princess at midleft
     with moveinleft
     c "Ah, yes Princess.  So glad of you to join me."
     c "I mean glad of me."

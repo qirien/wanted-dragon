@@ -1,6 +1,5 @@
 label day3:
     scene bg bedroom with fade
-    show princess at center with dissolve
     
     p "Ugh, this castle is so cold and dank. The snow hasn't quite melted yet, here. But the birds are still out..."
     p "Strange... one of them is flying this way. Almost as if it's going to-"
@@ -70,7 +69,6 @@ label cyril3:
     scene bg library with fade
     show cyril at midright with dissolve
     p "Ohhhh Cyril!"
-    show princess at midleft with moveinleft
     p "What progress have you made with obtaining that scepter for me?"
     c "Oh!  You disturbed me!  I didn't notice you there for a second."
     c "About the what now?"
@@ -94,7 +92,6 @@ label cyril3:
 label balrung3:
     scene bg dungeon with fade
     show balrung at midright with dissolve
-    show princess at midleft with moveinleft
     b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
     b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
@@ -159,11 +156,9 @@ label niir3:
             p "You, the only one who knows secrets? I don't believe you."
         "Go ask Moronious":
             p "I'm going to ask that mage instead. Good-bye, Niir."
-            hide princess with moveoutleft
             jump cyril3
         "Go ask Balrung":
             p "I'm going to speak with Balrung about it. Good-bye."
-            hide princess with moveoutleft
             jump balrung3
             
     $ niir_affection += 1
@@ -171,11 +166,9 @@ label niir3:
     p "Very well. Lead on, Niir."
     n "Thissss way."
     hide niir
-    hide princess
     with moveoutleft
     scene bg corridor with fade
     show niir at midright
-    show princess at midleft
     with moveinright
     n "Why do you care about the kingdom anyway?  What hasss the kingdom done for you?"
     p "Nothing, yet. That’s why I need to be Queen."
@@ -186,11 +179,9 @@ label niir3:
     p "It is my {b}right{/b}! I was born to be QUEEN!!"
     n "I don’t care about that.  But I am interessssted in you jussst taking it."
     hide niir
-    hide princess
     with moveoutleft
     scene bg kitchen with fade
     show niir at midright
-    show princess at midleft
     with moveinright
     p "By the way, isn’t this the kitchen? Where are you taking me?"
     n "We have to go through the kitchen.  Patiencccce."
@@ -203,11 +194,9 @@ label niir3:
     n "He is rather pretty."
     n "But you, are ssslightly more becoming.  Just ssslightly."
     hide niir
-    hide princess
     with moveoutleft
     scene bg storage with fade
     show niir at midright
-    show princess at midleft
     with moveinright
     p "Yes, well, it is a queenly duty to look becoming... though my presence would certainly be improved if I had my full royal wardrobe. Are we there yet?"    
     n "Ssssoon.  Hmmm.  Where is this royal wardrobe of yoursss?"
@@ -224,11 +213,9 @@ label niir3:
     p "I am not persuaded of anything, yet. Show me you are capable, however, and then I will decide."
     n "It would make things a little more entertaining.  I think I’ve worn Balrung down to the bone.  He isss less interesssting company than he initially wassss."
     hide niir
-    hide princess
     with moveoutleft
     scene bg corridor flip with fade
     show niir at midright
-    show princess at midleft
     with moveinright    
     n "What is your cassstle like?  Better than thisss?"
     p "Obviously. Though, this castle does have a certain... gravity that is hard to find in a castle these days. My castle was- {b}is{/b} full of beauty, with stained glass scenes of my ancestors’ achievements, and every comfort a queen deserves."
@@ -242,11 +229,9 @@ label niir3:
     p "We do have a few things in common."
     n "..."
     hide niir
-    hide princess
     with moveoutleft
     scene bg stairs with fade
     show niir at midright
-    show princess at midleft
     with moveinright
     p "What will you do once you’re free? Besides serve my every whim, of course."
     n "I’ll pretend you didn’t ssssay that."
@@ -265,11 +250,9 @@ label niir3:
     n "Thisss way."
     n "Here."
     hide niir
-    hide princess
     with moveoutleft
     scene bg exterior with fade
     show niir at midright
-    show princess at midleft
     with moveinright
     p "This...is a tower."
     n "Nicccce up here, isn’t it?"

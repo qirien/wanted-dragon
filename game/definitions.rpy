@@ -15,7 +15,7 @@ init -1:
     # CHARACTERS
     #
 
-    define p = DynamicCharacter("p_name", image="princess", color="#c8ffc8")
+    define p = DynamicCharacter("p_name", image="princess", color="#c8ffc8") #TODO: make her side image
     define b = Character('Balrug', image="balrung", color="#c8ffc8")
     define c = Character('Cyril Merlonious', image="merlin", color="#c8ffc8")
     define n = Character('Niir', image="niir", color="#c8ffc8")
@@ -45,7 +45,7 @@ init -1:
     # SPRITES
     #
 
-    image princess = Placeholder("girl")
+    image side princess = Placeholder("girl")
     image balrung = Placeholder("boy")
     image cyril = Placeholder("boy")
     image niir = Placeholder("boy")

@@ -24,7 +24,6 @@ label balrung_ending:
     
     scene bg dungeon with fade
     show cyril at midleft
-    show princess at left
     with moveinleft
     
     c "Ahhhh!"
@@ -48,7 +47,6 @@ label balrung_ending:
         menu:
             "Grab Cyril's wand.":
                 p "Cyril, before I go, there's just one thing I need from you."
-                show princess at quarterleft with move
                 c "Wh-what's that? Oh!"
                 p "Your wand." #TODO: foreshadow that he has a wand and uses it to do magic
                 c "My...wand? No! Princess! Without my wand, I cannot seal up the dragons again!"

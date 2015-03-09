@@ -1,6 +1,5 @@
 label day4:
     scene bg bedroom with fade
-    show princess at center with dissolve
     p "The Sceptre of Lavendorm sounds powerful, if we can find it."
     p "But it could be just a legend, or it could have been moved. I should pursue other avenues as well."
     p "Cyril has magical powers, if I could get him to use them the way I wanted."
@@ -23,7 +22,6 @@ label dragons4:
     show balrung at midright
     show niir at right
     with dissolve
-    show princess at midleft with moveinleft
     
     b "Good morning, Princess. I trust you slept well?"
     p "That seems a silly thing to trust in. How can I sleep well when my kingdom is in the hands of a usurper?!"
@@ -99,7 +97,6 @@ label balrung4:
     b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
     p "A warm-up, yes...perhaps. I'm leaving now."
     b "Until next time, Princess."
-    hide princess with moveoutright
     return
     
 label niir4:

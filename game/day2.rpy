@@ -1,6 +1,5 @@
 label day2:
     scene bg bedroom with fade
-    show princess at midright with dissolve
     "(Is that knocking?! Who could be brazen enough to wake me up so early?!)"
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
@@ -39,7 +38,6 @@ label day2:
     
     show niir at right with moveinright
     n "You were banisshhed? Your position musst be desssperate, then."
-    show princess at center with move
     p "How long have you been eavesdropping?!"
     n "Long enough to hear you sssnorrrring. Mossst unladylike."
     p "Moronious!"
@@ -76,10 +74,8 @@ label day2:
     if (asked_scepter == "Balrung"):
         "(Perhaps he has found the scepter?!)"
         
-    hide princess with moveoutleft
     scene bg dungeon with fade
     show balrung at midright with dissolve
-    show princess at midleft with moveinleft
     p "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
     b "My apologies, my lady, I didn't think it appropriate to disturb a lady in her bedchamber so early in the morning."
     p "But you thought it appropriate to send the lascivious Niir to my bedchamber?!"
