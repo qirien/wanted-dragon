@@ -19,6 +19,8 @@ Kristi is licensed under the SIL Open Font License.  See game/fonts/Kristi-Licen
 
 Daniel is free to use and distribute under its own license, found at game/fonts/Daniel Midgley.txt
 
+Freebooter is freeware under its own license, found at game/fonts/Freebooter-License.txt
+
 == Graphics
 
 === Character Sprites
@@ -42,6 +44,7 @@ All modifications are released under the same license as the original images.
 The following images are in the public domain.
 
 Parchment Scroll derived from <http://www.wpclipart.com/blanks/parchment/parchment_scroll_background.jpg.html>
+<book.jpg> derived from open book template, <http://dougitdesign.deviantart.com/art/open-book-template-PSD-198829525> by DougitDesign
 
 .License
 ****

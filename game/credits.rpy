@@ -9,4 +9,5 @@ label credits:
     "Tema de los Malos by clbustos"
     
     "Backgrounds"
-    "By Limp Nyanko, aquamary"
+    "By Limp Nyanko, aquamary, DougitDesign"
+    

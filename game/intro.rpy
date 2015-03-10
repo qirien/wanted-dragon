@@ -136,7 +136,7 @@ label meet_dragons:
     hide cyril
     with moveoutleft
     scene bg stairs with fade
-    show cyril at midleft
+    show cyril at center
     with moveinright
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
     c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat."

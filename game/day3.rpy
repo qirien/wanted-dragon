@@ -63,12 +63,43 @@ label day3:
             p "Father knows that I can never return as long as he is planning to crown my sister Magnolia as queen."
             p "Perhaps he will feel he has made a mistake if he thinks I am dead or kidnapped by bandits as a result of his rash decision!"
     
-    jump niir3
+    n "Knock, knock, Prrrrincesss..."
+    p "Oh, what is it now, Niir. I'll warn you: I'm already in a foul mood!"
+    show niir at quarterright with moveinleft
+    n "Sssseen anything interesting today Princessss?"
+    p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
+    n "I sssupect the question should be to you.  What do {i}you{/i} want?"
+    n "You came here, acting ssssupicious in the first place."
+    p "I need something powerful. Something that will make it clear that I am the rightful Queen. If you don’t have anything like that, then away with you."
+    n "More powerful than a dragon?  My aren’t you ambitioussss?"
+    p "It doesn’t take much to be more powerful than you right now."
+    p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for years."
+
+    n "I know sssssecrets of all kindsss.  And not just about the cassstle."
+    n "I could find you ssssomething powerful.  But what would you do for me in return?"
+    p "Why, I would help you gain your freedom, so you could continue to serve me."
+    n "That doesn’t ssssound like a very good deal."
+    p "It sounds good to me. Do you have a better idea?"
+    n "..."
+    p "No? Then perhaps I’ll just go and ask Moronious. He probably knows more than you do about the ‘ssssecrets’, anyway."
+    n "Don’t waste your time with him.  I am the only one who knowssss."
+    menu:
+        "Go with Niir.":
+            p "You, the only one who knows secrets? I don't believe you."
+            jump niir3
+        "Go ask Moronious":
+            p "I'm going to ask that mage instead. Good-bye, Niir."
+            jump cyril3
+        "Go ask Balrung":
+            p "I'm going to speak with Balrung about it. Good-bye."
+            jump balrung3
+            
     
 label cyril3:
     scene bg library with fade
-    show cyril at midright with dissolve
-    p "Ohhhh Cyril!"
+    show cyril at center with dissolve
+    $ cyril_affection += 1
+    p "Ohhhh Moroooonious!"
     p "What progress have you made with obtaining that scepter for me?"
     c "Oh!  You disturbed me!  I didn't notice you there for a second."
     c "About the what now?"
@@ -83,15 +114,15 @@ label cyril3:
     p "Oh, and if you don't I will be sure that your head is on a chopping block somewhere."
     c "Ah yes.  Very good reasons indeed!  I will return to the task at hand then!"
     p "Good, I see that we're on the same page then."
-    c "I do wonder what it is that you plan to do with such a scepter however, because I'm sure that it can only be wielded by a powerful mage."
-    p "Then you will become more useful too me than ever."
+    c "I do wonder what it is that you plan to do with such a scepter, however, because I'm sure that it can only be wielded by someone with magical knowledge." 
+    p "Then you will become more useful to me than ever."
     p "Wouldn't you want that?"
     c "I-I suppose it wouldn't be the worst thing, your majesty."
     return
      
 label balrung3:
     scene bg dungeon with fade
-    show balrung at midright with dissolve
+    show balrung at center with dissolve
     b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
     b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
@@ -105,10 +136,10 @@ label balrung3:
     else:
         p "Do you know anything about the Scepter of Lavendorm?"
         call balrung_scepter
-    b "Well, as I cannot offer you a scepter at the moment, can I offer you another game of Queens and Pawns?"
+    b "Well, as I cannot offer you a scepter at the moment, perhaps you would stay and talk with me for a bit? Your company would be much appreciated."
     menu:
-        "\"I will play.\"":
-            p "Yes, I will play. You may go first this time."
+        "\"I will join you.\"":
+            p "Yes, I can spare you a few moments of my time."
             $ balrung_affection += 1
         "\"No, I must ask Cyril about it.\"" if (asked_scepter != "Cyril") :
             jump cyril3
@@ -116,51 +147,56 @@ label balrung3:
             p "I will go and look for it myself."
             # TODO: Add exploration in here.
             
-    b "I do hope you enjoy the game, and aren't simply playing it to humor me."
-    p "I do not humor people. Or dragons."
     b "What do you do? When you don't have a kingdom to reclaim, that is."
-    p "I have many pursuits. Reading, hunting, music, dodging nosy questions."
+    p "I have many pursuits. Reading, hunting, music, alchemy, scheming, plotting."
     b "Ha! The usual royal activities, then."
     p "And what about you?"
     b "I sometimes read from the library, though human books are so maudlin and predictable."
-    p "What are dragon books like?"
-    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves."
-    b "Take the poetry of Phanos, for example."
-    p "What about it?"
-    #TODO: awesome dragon poetry?!
+    p "Are there dragon books?"
+    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
+    p "Dragon poetry? What is it like?"
+    b "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
+    
+    book "Fly:"
+    book "Wings soar,"
+    book "roar, writhe."
+    book "Thy yearning groweth."
+    book "This skin: nude, deft."
+    book "Two sinuous serpents"
+    book "soar rapturous."  #TODO: is this too...sexy? or something?
+    nvl clear
+    b "No, no, not that one. The one on the other side of the page."
+    p "Oh! Of-of course!"
+    
+    book "Freedom:"
+    book "Mastery you obtain,"
+    book "Kneeling never."
+    book "Remember reverie eternal,"
+    book "Like circling glorious summits-"
+    book "Soaring, graceful, limber-"
+    book "Revel, love, vanquish."
+    nvl clear
+    
+    b "What do you think?"
+    menu:
+        "\"Words, words, words. Boring!\"":
+            p "Words, words, and more words. Boring and useless."
+            b "I wouldn't underestimate their power. Sometimes ten words can accomplish what ten armies cannot."
+            p "I'd prefer the armies."
+            b "For your purposes, perhaps armies would work better."
+        "\"I like the 'vanquish' part.\"":
+            $ balrung_affection += 1
+            p "I like the part about vanquishing. Why do you like this poem so much?"
+            b "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
+    p "What form of poetry is this? I see no rhymes, no pattern of syllables."
+    b "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
+    p "That's it?"
+    b "And, the ending sound of each word must be the starting sound of the next word. This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
+    p "Yes, you are. Goodbye."
+    b "Another time, perhaps."
     return
     
 label niir3:
-    n "Knock, knock, Prrrrincesss..."
-    p "Oh, what is it now, Niir. I'll warn you: I'm already in a foul mood!"
-    show niir at quarterright with moveinleft
-    n "Sssseen anything interesting today Princessss?"
-    p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
-    n "I sssupect the question should be to you.  What do {i}you{/i} want?"
-    n "You came here, acting ssssupicious in the first place."
-    p "I need something powerful. Something that will make it clear that I am the rightful Queen. If you don’t have anything like that, then away with you."
-    n "More powerful than a dragon?  My aren’t you ambitioussss?"
-    p "It doesn’t take much to be more powerful than you right now."
-    p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for...years?"
-
-    n "I know sssssecrets of all kindsss.  And not just about the cassstle."
-    n "I could find you ssssomething powerful.  But what would you do for me in return?"
-    p "Why, I would help you gain your freedom, so you could continue to serve me."
-    n "That doesn’t ssssound like a very good deal."
-    p "It sounds good to me. Do you have a better idea?"
-    n "..."
-    p "No? Then perhaps I’ll just go and ask Moronious. He probably knows more than you do about the ‘ssssecrets’, anyway."
-    n "Don’t waste your time with him.  I am the only one who knowssss."
-    menu:
-        "Go with Niir.":
-            p "You, the only one who knows secrets? I don't believe you."
-        "Go ask Moronious":
-            p "I'm going to ask that mage instead. Good-bye, Niir."
-            jump cyril3
-        "Go ask Balrung":
-            p "I'm going to speak with Balrung about it. Good-bye."
-            jump balrung3
-            
     $ niir_affection += 1
     n "Follow me and I’ll sssshow you something."
     p "Very well. Lead on, Niir."

@@ -1,12 +1,20 @@
 style nvl_window:
-    xpadding 55
+    xpadding 60
     ypadding 170
     xfill True
     yfill True
-    background "bg/scroll.jpg"
+    background None
     
 style handwriting is text:
     color "#442211"
     size 24
     
 style nvl_dialogue is handwriting
+
+style say_window is window:
+    xsize 750
+    ysize 200
+    xalign 1.0
+    xpadding 10
+    ypadding 10
+    

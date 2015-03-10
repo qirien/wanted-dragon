@@ -6,7 +6,7 @@
 
 label balrung7:        
     scene bg dungeon with fade
-    Show balrung at center with dissolve
+    show balrung at center with dissolve
     p "Is that a scroll? Are you writing a letter?"
     b "Princess! I was not aware you had joined me. I'd better put this away..."
     p "Not so fast! Let me see that."
@@ -14,13 +14,9 @@ label balrung7:
     p "Is this... Dragon poetry? Did you write this?"
     b "It's not worthy of your attention, please don't..."
     p "Too late! Oh ho ho!"
-    b_write "She:"
-    b_write "Eyes shine noble, latent "
-    b_write "Supreme mischief."
-    b_write "Face sly, young, grand"
-    b_write "Defang grand dragons’ scheme."
-    b_write "Map pulse’s sussurus,"
-    b_write "sweet tyrant."
+    b_write "She:{vspace=-10}Eyes shine noble, latent{vspace=-10}Supreme mischief."
+    b_write "Face sly, young, grand{vspace=-10}Defang grand dragons’ scheme."
+    b_write "Map pulse’s sussurus,{vspace=-10}sweet tyrant."
     "This is... about me?! No one's ever written a poem in my honor before..."
     p "I--"
     b "It's terrible, I apologize that you had to see that. I'll just dispose of this awful drivel for you--"

@@ -15,7 +15,18 @@ label day4:
         
 # TODO: Something about how Cyril could help her even if he can't find the scepter.        
 label cyril4:
-    p "Mage! Moronious!"
+    $ route = "Cyril"
+    c "Ah, Princess!  I had been looking for you."
+    p "Well, you clearly didn't look very hard because I've been here."
+    c "Ah, well, this was one of the first places that I found myself looking."
+    p "What is it mage?"
+    c "Well, I have an update for you.  On the artefact."
+    c "It seems there were some notes that --- left for me and those notes, they specify a location."
+    c "Not pinpoint exactly, but where we should start looking."
+    p "And you're just thinking of this now?"
+    c "I've been here so long that I'd forgotten about those notes."
+    #TO DO: TBC
+    
 
 label dragons4:
     scene bg dungeon with fade
@@ -62,6 +73,7 @@ label dragons4:
           
 label balrung4:
     $ balrung_affection += 1
+    $ route = "Balrung"
     p "Queens and Pawns? Is this a joke?"
     b "I can hardly think of a game more fit for someone who wishes to retake a kingdom."
     n "You should play ssstrip Queensss and Pawnssss."
@@ -101,6 +113,7 @@ label balrung4:
     
 label niir4:
     $ niir_affection += 1
+    $ route = "Niir"
     n "Should I drool over you like thissss?"
     p "No, that just makes you look like a half-wit and soils my dress."
     n "You could alwaysss take off the dresss...."

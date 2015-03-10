@@ -102,19 +102,15 @@ label somethigh:
     p "Trust."
     n "I thought you'd never offer."
     scene black
+    # TODO: add vfx for Cyril's protection spell that got activated?
     p "Happy now?"
     n "Happy wouldn't be the word that I would ussssse."
-    p "I said LOOK, Niir."
-    p "Try to touch me again and you'll loose your hand."
+    p "Well, now I know how Moronious' protection spell works. I'm surprised you're still conscious after that much electricity."
     n "You are no fun Princesssss."
     scene castle
-    p "So there we go, I trust you enough with that and you..."
-    scene black
-    p "What do you think you're doing?"
-    n "Sssshowing you.  That'ssss what you wanted correct?  An eye for an eye?"
-    p "No, put that away.  I just wanted you to trust me."
+    p "So there we go, I trust you enough with that, and now you trust me. Say it."
     scene castle
-    n "Ah, of course.  Sssstill not convincccccced."
+    n "Sssstill not convincccccced."
     with hpunch
     n "Agh!  What wasssss that?"
     p "Convincing.  Hurry up and trust me or I'll do it again."
@@ -179,19 +175,6 @@ diabolical plan to gain your freedom and my throne?"
     p "Then let's do it and stop talking about it."    
     
     
-label cyril5:
-    
-    c "Ah, Princess!  I had been looking for you."
-    p "Well, you clearly didn't look very hard because I've been here."
-    c "Ah, well, this was one of the first places that I found myself looking."
-    p "What is it mage?"
-    c "Well, I have an update for you.  On the artefact."
-    c "It seems there were some notes that --- left for me and those notes, they specify a location."
-    c "Not pinpoint exactly, but where we should start looking."
-    p "And you're just thinking of this now?"
-    c "I've been here so long that I'd forgotten about those notes."
-    #TO DO: TBC
-    
     ###{I thought about a scene between Balrung and Niir that the princess overhears)
     
 if niir_love:
@@ -221,7 +204,7 @@ if niir_love:
     p "(But somehow, I don't enjoy the feeling.  What is this?)"
 
 
-label cyril6:
+label cyril5:
     
     # scepter progress
     # DAY 5 or 6?

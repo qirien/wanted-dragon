@@ -8,6 +8,7 @@ init -1:
     define cyril_affection = 0
     define p_name = "Chrysandra"
     define k_name = "Novaria"
+    define castle_name = "Ophir"
     define asked_scepter = "no one"
     define route = None
 
@@ -23,6 +24,7 @@ init -1:
     define k_write = Character("King", kind=nvl)
     define m_write = Character("Magnolia", kind=nvl)
     define b_write = Character("Balrung", kind=nvl)
+    define book = Character("Book", kind=nvl)
     
     #
     # BACKGROUNDS

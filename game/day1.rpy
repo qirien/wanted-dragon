@@ -83,10 +83,12 @@ label library1:
     "(A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful, don't need that.)"
     "(This one is quite curious.  This part here.)"
     # TODO: write this on a book-screen to look like an old book?
-    p "There is a scepter with emeralds that has not been located in centuries."
-    p "I think that it says it has ties to this very castle."
+    book "{size=50}The Scepter of Lavendorm{/size}"
+    book "Though it has not been located in centuries, this powerful artifact is rumored to reside in Castle [castle_name].\n"
+    book "Some claim it has the power to break enchantments, while others point to its use by royal families as a symbol of authority, and perhaps protection from assassination.\n"
+    book "Ancient texts describe it as being encrusted with emeralds and emanating a palpable magical aura."
+    nvl clear
     p "How... curious."
-    p "Although no one is sure what it does, they do presume it has magical powers."
     p "Well, I may as well find out more about it."
     p "The Scepter of Lavendorm."
     p "Hmmm..."
@@ -121,11 +123,10 @@ label balrung_scepter:
        
 label sharecyril:
     p "Oh Cyrilllll."
-    show her at midright with move
     p "That foolish mage has to be around here somewhere."
-    show her at midleft with move
+    scene bg corridor with fade
     p "Where {i}are{/i} you foolish mage?"
-    show cyril at midright #TODO: with some flash-bang transition
+    show cyril at center #TODO: with some flash-bang transition
     c "You called, your majesty?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
