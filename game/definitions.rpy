@@ -22,6 +22,7 @@ init -1:
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)
     define m_write = Character("Magnolia", kind=nvl)
+    define b_write = Character("Balrung", kind=nvl)
     
     #
     # BACKGROUNDS
