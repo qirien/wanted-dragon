@@ -8,7 +8,7 @@ init -1:
     define cyril_affection = 0
     define p_name = "Chrysandra"
     define k_name = "Novaria"
-    define castle_name = "Ophir"
+    define castle_name = "of the Banished"
     define asked_scepter = "no one"
     define route = None
 
@@ -72,4 +72,5 @@ init -1:
     # 
     define balrung_theme = "music/MephistoPolka.mp3"
     define niir_theme = "music/OniValse.mp3"
-    define princess_theme = "music/Malos.mp3"
+    define evil_theme = "music/Malos.mp3"
+    define princess_theme = "music/EvilPrincessMarch.ogg"

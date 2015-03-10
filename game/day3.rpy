@@ -51,11 +51,13 @@ label day3:
             p_write "I cannot allow such ineptitude, scheming, and gross negligence to rule over the Ancient and August Kingdom of [k_name]."
             p_write "To grant the throne to Magnolia would destroy our kingdom's power and glory!"
             p_write "While you, Father, may not be able to see her perfidy and betrayals, I can, which is why I cannot sit by and do nothing."
+            nvl clear
             p_write "Father, if you have any intelligence or care for the long-term well-being of our kingdom, you will not allow Magnolia's coronation to take place and will crown me instead."
             p_write "If you choose not to, I will do whatever is necessary to obtain the throne, for the good of the kingdom!"
             p_write "Love,"
             p_write "Your better daughter,"
             p_write "[p_name]"
+            nvl clear
             "(Now where'd that pigeon go?)"
             p "There, little bird. Fly true."
             

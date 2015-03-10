@@ -55,7 +55,7 @@ label truth:
     scene bg hall with fade
     show cyril at center
     with moveinright
-    c "So, this is the castle of the banished.  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but we have no shortage of warm water here.  That's for certain."
+    c "So, this is the castle of the banished.  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but I am pretty good with heating spells for the water."
     p "Yes, yes. Now, what can you tell me about the other... residents of this place?"
     c "It is just me.  Well, and the dragons.  But they are here from their punishment.  Kidnapping ladies is not a very delightful business I do say.  "
     c "Usually I find I must ignore them or they will try to plead their case.  Well, they don't really do that.  They more mock- anyway.  What brings you here again?"
@@ -100,7 +100,7 @@ label room_intro:
             show cyril at center with moveinleft
             c "Ready for me to what?"
             p "I wish to speak to the dragons."
-            c "If-if you wish me to, though I'm not sure what you'd want with them."
+            c "If-if you wish me to take you there, I will, though I'm not sure what you'd want with them."
             jump meet_dragons            
         "Explore on your own.":
             jump explore 
@@ -138,6 +138,7 @@ label meet_dragons:
     scene bg stairs with fade
     show cyril at center
     with moveinright
+    play music evil_theme    
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
     c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He quite looks at every female that way.  It is a good thing that I am not a female sometimes because it is rather disconcerting to be approached like a piece of meat."
     c "He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
@@ -147,7 +148,6 @@ label meet_dragons:
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     scene bg dungeon with fade
     show cyril at quarterleft
-    play music balrung_theme
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     show balrung at quarterright with moveinright
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
@@ -216,7 +216,7 @@ label meet_dragons:
     p "Yes, very well, thank you. Do- do you know him?"
     b "I met him once, before my sojourn here. He seemed capable, if a bit naïve. And the Queen?"
     p "My mother died several months ago."
-    b "I'm terribly sorry; how rude of me to bring it up."
+    b "I'm terribly sorry; how rude of me to bring it up! Please accept my apologies, Princess."
     p "You didn't know."
     c "B-but, he {b}did{/b} know, I mentioned it several weeks ago? I think? Or maybe I just thought of mentioning it? Or maybe I just thought about thinking about mentioning it?"
     b "I don't think so, Merlonious."
@@ -229,6 +229,7 @@ label meet_dragons:
     show cyril at midleft
     with moveinright
     # After talked to Niir, Balrung, or Cyril
+    # TODO: play music cyril_theme
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
     c "I don't want to dwell on it but there have been some times where I have just felt like giving up!"
     p "You don't say."

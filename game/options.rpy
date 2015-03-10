@@ -283,6 +283,7 @@ init -1 python hide:
     ## The default auto-forward time setting.
 
     config.default_afm_time = 10
+    config.fade_music = 2.0
 
     #########################################
     ## More customizations can go here.
@@ -351,4 +352,5 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
+    
     

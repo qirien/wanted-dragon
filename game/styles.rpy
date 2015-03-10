@@ -1,6 +1,6 @@
 style nvl_window:
     xpadding 60
-    ypadding 170
+    ypadding 160
     xfill True
     yfill True
     background None
