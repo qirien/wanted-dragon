@@ -4,6 +4,7 @@ label day4:
     p "But it could be just a legend, or it could have been moved. I should pursue other avenues as well."
     p "Cyril has magical powers, if I could get him to use them the way I wanted."
     p "Or perhaps the dragons would aid me in exchange for their freedom?"
+    p "They are all capable, but they certainly have faults. Every minion does, of course, but I need to decide who is the most likely to do what I want."
     p "Whose aid should I enlist?"
     menu:
         "Cyril.":
@@ -12,6 +13,15 @@ label day4:
             jump dragons4
         "I don't need help!":
             jump alone4
+        
+# TODO: Finish this option?
+label alone4:
+    p "In the end, the only person I can count on is myself."
+    p "Perhaps I should research some more potions? That poison would have worked if it weren't for that clumsy serving maid."
+    scene library with fade
+    p "Hmm, {i}Theory of Alchemy{/i}, sounds dull. {i}Fifty Five-Minute Potions{/i}, if they only take five minutes they can't be very good. {i}Puissant Potions for Pleasure and Profit{/i}, now {b}that{/b} sounds interesting!"
+    p "Ooh, they have a whole section on poisons... Slow-Acting Poison, Reversible Poison, Temporary Poison, Quasi-Death Draught..."
+    
         
 # TODO: Something about how Cyril could help her even if he can't find the scepter.        
 label cyril4:

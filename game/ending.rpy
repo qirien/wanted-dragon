@@ -10,7 +10,7 @@ label ending:
 # Cyril route ending
 #
 label cyril_ending:
-    # TODO: She should finally call him by his real name!
+    
 
 ############################################################
 # Balrung route ending
@@ -52,7 +52,7 @@ label balrung_ending:
                 c "My...wand? No! Princess! Without my wand, I cannot seal up the dragons again!"
                 p "Yes, that was rather the point."
                 b "Well done. Shall we depart?"
-                p "Finally! Now that I've freed you, on to [k_name], where I will rule, and you may be allowed to help!"
+                p "Finally! Now that I've freed you, on to [k_name], where I will rule, and you may be my minion!"
                 b "Oh, did I forget to mention? If you want me to help you with your kingdom, we will need to rule together."
                 p "Together? There can be only one Queen!"
                 b "But you may sometimes find it useful to have a King to help you. Don't you agree that we work well together?"

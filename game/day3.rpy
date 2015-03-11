@@ -290,7 +290,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg exterior with fade
-    show niir at midright
+    show niir at center
     with moveinright
     p "This...is a tower."
     n "Nicccce up here, isn’t it?"
