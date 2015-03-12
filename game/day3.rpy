@@ -120,6 +120,75 @@ label cyril3:
     p "Then you will become more useful to me than ever."
     p "Wouldn't you want that?"
     c "I-I suppose it wouldn't be the worst thing, your majesty."
+    p "Come and see my when you have more."
+    c "It would be my pleasure."
+    
+    scene black with fade
+    scene bg bedroom
+    p "Ugh, this place smells like moss.  Like sitting, rotting-"
+    c "Oh!  I'm sorry Princess.  I didn't mean to intrude!"
+    "How long has he been here?  "
+    extend "Is that my letter there?"
+    c "Or read your private correspondance.  You see, it was just out on the desk and it happened to catch my eye and-"
+    p "Quit blathering like a fool!"
+    "Honestly, one can't think with all the stuttering he does time and time again."
+    p "Did you or did you not {b}read{/b} my letter?"
+    c "It was an accident I assure you."
+    "Should I believe that?"
+    "Well, Moronious is strangely, and irritatingly honest."
+    "So it is possible it's the truth."
+menu:
+    "Believe him."
+        p "Hm, very well.  And just what were you doing in my private quarters?"
+        c "Well, it was my room if you remember..."
+        p "That doesn't sound like an explanation Moronious."
+        c "Ah, yes.  You did tell me to come and see you correct?  So I thought I would drop by and ah, catch up."
+        c "That is the terminology is it not?  I haven't used it for quite some time."
+        c "Or ever really."
+        p "I told you to come and see me if you have more information.  Do you?"
+        c "Well ah, more to say, I have.  But not more information, no."
+        p "So you decided to sneak in and read my letter?"
+        c "No!  But if I may say so, you should not miss your sister's coronation."
+        c "If you do, it'll never be the same between the two of you and you'll be saddened to miss-"
+        p "Do {b}not{/b} tell me what to feel, mage."
+        c "I wouldn't dream of it, your majesty.  I just thought that if you would consider..."
+        p "I would not consider.  You do not know my family."
+        # TO DO>  ANDREA - want to add a lengthy rant about her family here to an understanding Cyril?
+    
+    "Ignore him."
+        p "..."
+        "This will do the trick, keep that snivelling to a minimum."
+        "Hopefully he will take the hint and BEGONE!"
+        c "Princess, I am very sorry, I did not mean to intrude myself in your personal business."
+        p "..."
+        c "If you permit me to say so, your father and your sister seem to care for you dearly."
+        "Oooh you are testing me mage."
+        "You said that to have my break my silence and strike you down."
+        "But I am much more strong willed than that."
+        p "..."
+        c "Ahem."
+        c "Yes.  They do care for you and I do think you must get in contact."
+        "I will not fall for this.  He wants me to tell him about {i}my{/i} returned correspondence.  "
+        extend "I will {b}not{/b}."
+        c "Unless you think not.  That is up to you of course."
+        c "I just know if I had family that cared enough for my well-being-"
+        c "Ah, well you don't want to hear the musings of this foolish mage."
+        p "..."
+        "Perhaps if I settle down in the bed and close my eyes he might finally leave."
+        c "I do think however that it is in your best interests-"
+        p "..."
+        c "Oh.  I notice that you're a little tired."
+        c "I should come back anything time.  Good night Princess."
+        c "Even though it is still day.  "
+        extend "Baffling.  Goodbye then."
+        "That took him long enough.  Hm.  This is a good tactic for getting rid of him."
+        "I may employ it again in the future."
+        
+        return
+    
+    
+    
+    
     return
      
 label balrung3:
