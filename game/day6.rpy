@@ -3,6 +3,52 @@
 # Of course, it's only to ensure their loyalty...
 
 label day6:
+    # She goes around eavesdropping to find out how well her plans have been working.
+    
+    p "Ugggh, that moldy smell again. I must {b}still{/b} be in the old Castle [castle_name]."
+    p "But I believe I'm finally making some progress. Although... they could be deceiving me."
+    p "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
+    
+    if (route == "Niir"):
+        "I snuck down to the dungeon to spy on the dragons."
+        scene dungeon with fade
+        show niir at midright
+        show balrung at midleft
+        with dissolve
+        b "I do hope you haven't fallen in love with the tempestuous temptress that has entered our realm."
+        n "Now why would you ssssssay that?"
+        b "I have seen it happen many times before. Many dragons and princesses have come and gone since I arrived."
+        b "I can discern the signs."
+        n "Love is not ssssomething that I am acquainted with, old dragon."
+        n "Ssstop your posssstulating."
+        b "I'm no more happy about this than you are, Niir.  You are all what little distraction I have in this dreary place."
+        b "If I could keep you here, I would."
+        n "Your fearssss are ridiculousssss."
+        n "I am sssstaying here, old dragon."
+        b "Stubborn fool!  What is for you here?"
+        b "What other princesses are there?"
+        p "(Could Balrung be right?  Could Niir actually be... {i}in love{/i}?)"
+        "(The thought makes my stomach roil.)"
+        p "(Though I have to admit, I do feel some... animal magnetism towards Niir.)"
+        p "(Even if it is only animal.)"
+        n "Sssshut up.  I am done conversssssing."
+        b "I'd tell you to follow your heart. But that would require you to possess one in the first place."
+        p "(This is what I wanted, wasn't it?)"
+        p "(A dragon at my disposal.  Willing to leave, all for the delusion of love.)"
+        p "(But somehow, I don't enjoy the feeling.  What is this?)"
+    elif (route == "Cyril"):
+        "I snuck over to the library to spy on Moronious."
+        #TODO: She overhears him talking with someone or spies on a letter he wrote or something?!
+        
+    elif (route == "Balrung"):
+        "I snuck down to the dungeons to spy on the dragons."
+        scene dungeon with fade
+        show niir at midright
+        show balrung at midleft
+        with dissolve
+        b "That Princess is really quite...something."
+        b "Do you know, Niir, that she beat me at Queens and Pawns yesterday? Nobody has done that since..."
+        n "Ssssince "#TODO: what's Balrung's lost love's name?
     
     
     
@@ -219,4 +265,8 @@ label cyril6:
     c "Favorite? I-I do say."
     p "You may kiss my cheek, if you wish."
     c "Oh, I wasn’t expect- thank you Princess.  It would be my honor."
-    # fade to black.  hehe.  :)    
+    show cyril at center with come_closer
+    "He stepped forward, and leaned his head in for the quickest kiss that could possibly still bear the name."
+    p "(He's mine, now... mwah ha ha ha!)"
+    scene black with fade
+    return

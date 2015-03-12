@@ -67,6 +67,17 @@ init -1:
     define squatting = Position(ypos=0.25, yanchor=0)
     define standing = Position(ypos= 1.0, yanchor = 1.0)
     
+    # 
+    # TRANSITIONS
+    #
+    transform come_closer:
+        zoom 1.5
+        yalign 0.0
+        
+    transform reset_zoom:
+        zoom 1.0
+        yalign 1.0
+    
     #
     # MUSIC
     # 

@@ -8,19 +8,21 @@ label day4:
     p "Whose aid should I enlist?"
     menu:
         "Cyril.":
+            $ cyril_affection += 1
             jump cyril4
         "The dragons.":
             jump dragons4
         "I don't need help!":
             jump alone4
         
-# TODO: Finish this option?
 label alone4:
     p "In the end, the only person I can count on is myself."
     p "Perhaps I should research some more potions? That poison would have worked if it weren't for that clumsy serving maid."
     scene library with fade
     p "Hmm, {i}Theory of Alchemy{/i}, sounds dull. {i}Fifty Five-Minute Potions{/i}, if they only take five minutes they can't be very good. {i}Puissant Potions for Pleasure and Profit{/i}, now {b}that{/b} sounds interesting!"
     p "Ooh, they have a whole section on poisons... Slow-Acting Poison, Reversible Poison, Temporary Poison, Quasi-Death Draught..."
+    p "Hmm, these ingredients aren't too rare..."
+    jump cyril4
     
         
 # TODO: Something about how Cyril could help her even if he can't find the scepter.        
@@ -60,8 +62,9 @@ label dragons4:
             
         "\"It won't be hard for you to love me.\"":
             p "Well, aren't you half-mad with love for me already, Niir?"
-            n "What?! Love!"
+            n "Mad, yessss. Cccertainly not love!"
             b "No, I'm afraid Niir always acts this way. But, perhaps he could learn to love you, given time."
+            p "I don't have that much time."
             
     menu:
         "\"Niir, you must act as though you are in love with me.\"":
