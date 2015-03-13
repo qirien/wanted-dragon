@@ -8,7 +8,7 @@ init -1:
     define cyril_affection = 0
     define p_name = "Chrysandra"
     define k_name = "Novaria"
-    define castle_name = "of the Banished"
+    define castle_name = "the Castle of the Banished"
     define asked_scepter = "no one"
     define route = None
 
@@ -30,12 +30,13 @@ init -1:
     # BACKGROUNDS
     #
     # TODO: delete backgrounds we end up not using.
-    image bg exterior = "bg/exterior_dusk.jpg"
     image bg library = "bg/library.jpg"
     image bg bedroom = "bg/bedroom_dusk.jpg"
     image bg dungeon = "bg/dungeon_day.jpg"
     image bg corridor = "bg/corridor.jpg"
     image bg corridor flip = im.Flip("bg/corridor.jpg", horizontal = True)
+    image bg exterior dusk = "bg/exterior_dusk.jpg"    
+    image bg exterior day = "bg/exterior_day.jpg"
     image bg gate = "bg/gate_dusk.jpg"
     image bg hall = "bg/hall_day.jpg"
     image bg kitchen = "bg/kitchen.jpg" 

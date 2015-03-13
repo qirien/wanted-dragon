@@ -18,7 +18,7 @@ label day4:
 label alone4:
     p "In the end, the only person I can count on is myself."
     p "Perhaps I should research some more potions? That poison would have worked if it weren't for that clumsy serving maid."
-    scene library with fade
+    scene bg library with fade
     p "Hmm, {i}Theory of Alchemy{/i}, sounds dull. {i}Fifty Five-Minute Potions{/i}, if they only take five minutes they can't be very good. {i}Puissant Potions for Pleasure and Profit{/i}, now {b}that{/b} sounds interesting!"
     p "Ooh, they have a whole section on poisons... Slow-Acting Poison, Reversible Poison, Temporary Poison, Quasi-Death Draught..."
     p "Hmm, these ingredients aren't too rare..."
@@ -27,6 +27,7 @@ label alone4:
         
 # TODO: Something about how Cyril could help her even if he can't find the scepter.        
 label cyril4:
+    show cyril at center with moveinleft
     $ route = "Cyril"
     c "Ah, Princess!  I had been looking for you."
     p "Well, you clearly didn't look very hard because I've been here."
@@ -39,6 +40,7 @@ label cyril4:
     c "I've been here so long that I'd forgotten about those notes."
     #TO DO: TBC
     
+    return
 
 label dragons4:
     scene bg dungeon with fade
@@ -115,7 +117,7 @@ label balrung4:
     p "Hmph. You only have one queen left."
     b "But I have all my pawns. Your queens are quite unguarded."
     p "The pawns are insignificant."
-    b "I disagree."
+    b "I disagree. Your move."
     p "I only need one queen!"
     b "No, I'm afraid it won't be enough. You have no moves left."
     p "..."

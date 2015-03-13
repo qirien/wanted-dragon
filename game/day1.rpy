@@ -29,12 +29,12 @@ label library1:
     # TODO: against the dragons? Do you mean, against her sister or to free the dragons?
     scene bg library with fade
     show cyril at midright with dissolve
-    "(It appears the library is already occupied...)"
+    "It appears the library is already occupied..."
     c "I know this was you Niir!"
     "{i}He he he, ha ha ha...{/i}"
     c "And you mark my words!  I will stop you, I will!"
     c "As soon as I find that proper spellbook!"
-    "(This completely ruins my plans.  But perhaps I could turn it to my advantage?)"
+    "This completely ruins my plans.  But perhaps I could turn it to my advantage?"
     p "Doing some reading?"
     c "Yah!" with hpunch
     "He dropped the book like it was a hot potato."
@@ -42,7 +42,7 @@ label library1:
     p "Let me get that."
     p "{i}15 Erotic Tales by Twilight{/i}."
     p "You were reading {i}this{/i}?"
-    "(I know he wasn't really, but sometimes he makes it too easy.)"
+    "I know he wasn't really, but sometimes he makes it too easy."
     p "You'll have to read me out the good parts, I'm ever so curious."
     c "No, no.  Niir.  "
     extend "He's just having a joke."
@@ -79,11 +79,11 @@ label library1:
     p "Begone with you!"
     c "Good day Princess, I will just be seeing myself out."
     hide cyril with moveoutleft
-    "(I thought he'd never leave.  Now, what have we here...)"
-    "(A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful, don't need that.)"
-    "(This one is quite curious.  This part here.)"
+    "I thought he'd never leave.  Now, what have we here..."
+    "A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful, don't need that."
+    "This one is quite curious.  This part here."
     book "{size=50}The Scepter of Lavendorm{/size}"
-    book "Though it has not been located in centuries, this powerful artifact is rumored to reside in Castle [castle_name].\n"
+    book "Though it has not been located in centuries, this powerful artifact is rumored to reside in [castle_name].\n"
     book "Some claim it has the power to break enchantments, while others point to its use by royal families as a symbol of authority, and perhaps protection from assassination.\n"
     book "Ancient texts describe it as being encrusted with emeralds and emanating a palpable magical aura."
     nvl clear
@@ -129,11 +129,11 @@ label sharecyril:
     c "You called, your majesty?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
-    p "But a burden?  I see that." #TODO: This doesn't make sense to me.
-    p "But I do have something rather curious to share with you, so if you would like to come with me."
+    p "But I do have something rather curious to share with you, so you must come with me."
     c "I would come with you anywhere, your majesty."
-    p "..."
-    p "I'd rather you didn't."
+    hide cyril with moveoutright
+    scene bg library with fade
+    show cyril at center with moveinleft
     c "So what is it that you wish to show me?"
     p "This illustration of a scepter.  The Scepter of Lavendorm.  Is it real?"
     c "Quite real.  Once.  No one has seen it in quite some time."
@@ -167,7 +167,7 @@ label sharecyril:
     p "Is it not true that you cannot do a thing here?"
     c "I am loyal.  I did not have to take up post here."
     p "And where has your loyalty got you?  Hmmm?"
-    "His eyes flashed dangerously."
+    "His eyes flashed with uncharacterstic anger."
     "What do you know?  There is something boiling under that bumbling facade."
     c "You are testing me, Princess."
     "And I've never had so much fun."
@@ -231,5 +231,5 @@ label explore1:
     "..."
     scene bg stairs with fade
     p "This castle just has endless steps!"
-    "(Hours of searching... and nothing. Well, except for this delicious salted fish from the kitchens. So I supposed it wasn't a complete waste of time.)"
+    "Hours of searching... and nothing. Well, except for this delicious salted fish from the kitchens. So I supposed it wasn't a complete waste of time."
     return

@@ -1,10 +1,10 @@
 label day2:
     scene bg bedroom with fade
-    "(Is that knocking?! Who could be brazen enough to wake me up so early?!)"
+    "Is that knocking?! Who could be brazen enough to wake me up so early?!"
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
     p "Moronious?! This had better be important!"
-    show cyril at midleft with moveinleft
+    show cyril at center with moveinleft
     c "Good.  Good.  I'm glad that you opened up."
     c "I don't want you to think that I'm - well, dissapproving."
     c "But some information has come to my attention."
@@ -20,7 +20,7 @@ label day2:
     p "And you will be part of those plans Cyril."
     c "Erm-ahem!  Yes.  I don't think that is a good idea- it is already dangerous enough to have a disgraced Princess-"
     p "You don't {b}want{/b} me here?"
-    p "(Who does he think he is?  I'm not the one at fault here!  I'd like to {b}see{/b} him try to kick me out!)"
+    "Who does he think he is?  I'm not the one at fault here!  I'd like to {b}see{/b} him try to kick me out!"
     c "No! I didn't say that."
     c "I'm just {i}concerned{/i} Princess."
     c "If you have serious allegations before you then ah-"
@@ -41,7 +41,7 @@ label day2:
     p "How long have you been eavesdropping?!"
     n "Long enough to hear you sssnorrrring. Mossst unladylike."
     p "Moronious!"
-    show cyril at quarterleft with moveinleft
+    show cyril at midleft with moveinleft
     c "Yes, Princess? Oh! What's {b}he{/b} doing here?!"
     p "That was my question. I would have thought that a capable mage would have this room warded against unwanted intrusions."
     n "If you think Cccyril is capable--"
@@ -72,7 +72,7 @@ label day2:
     
     p "I suppose I'll see what Balrung wants..."
     if (asked_scepter == "Balrung"):
-        "(Perhaps he has found the scepter?!)"
+        "Perhaps he has found the scepter?!"
         
     scene bg dungeon with fade
     show balrung at midright with dissolve

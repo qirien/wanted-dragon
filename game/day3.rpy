@@ -3,8 +3,8 @@ label day3:
     
     p "Ugh, this castle is so cold and dank. The snow hasn't quite melted yet, here. But the birds are still out..."
     p "Strange... one of them is flying this way. Almost as if it's going to-"
-    "(It's coming in my room?!)"
-    "(Oh. It is simply one of Father's carrier pigeons dropping off a letter.)"
+    "It's coming in my room?!"
+    "Oh. It is simply one of Father's carrier pigeons dropping off a letter."
     
     k_write "My dearest [p_name],"
     k_write "I wish you hadn't left in such a hurry. You know I don't believe what the courtiers are saying."
@@ -15,7 +15,7 @@ label day3:
     nvl clear
     p "Father..."
     
-    "(There's something on the other side...there's hearts everywhere.)"
+    "There's something on the other side...there's hearts everywhere."
     m_write "[p_name],"
     m_write "The castle is so lonely, now - it kills me to be so far from you."
     m_write "Even if you can't be Queen, I'm sure there will be plenty of important things for you to help out with."
@@ -32,18 +32,18 @@ label day3:
     menu:
         "Sweetly.":
             p_write "Dear Father Who has Abandoned One Daughter in Favor of the Other,"
-            "(I will not deign to respond to Magnolia.)"
+            "I will not deign to respond to Magnolia."
             p_write "I was delighted to receive your letter and see that you haven't completely forgotten me, [p_name], your other daughter, the one that you should have chosen to be Queen."
             p_write "I'm afraid the only thing that could induce me to return would be an announcement that you have named me as your successor. I simply cannot in good conscience support {s}that evil bitch{/s}-"
             nvl clear
-            "(No, that's too obvious. I must be subtle.)"
+            "No, that's too obvious. I must be subtle."
             p_write "I simply cannot in good conscience support someone who does not have our kingdom's best interests at heart and is also completely inept, not to mention ugly, devious, scheming, and cruel!"
-            "(...I may have overdone it a bit.)"
+            "...I may have overdone it a bit."
             p_write "So I hope you can at least try to understand me, your poor, maligned, misunderstood, regal, capable, queenly daughter."
             p_write "Love and kisses,"
             p_write "[p_name]"
             nvl clear
-            "(Now where'd that pigeon go?)"
+            "Now where'd that pigeon go?"
             p "There, little bird. Fly true."            
             
         "Haughtily.":
@@ -58,7 +58,7 @@ label day3:
             p_write "Your better daughter,"
             p_write "[p_name]"
             nvl clear
-            "(Now where'd that pigeon go?)"
+            "Now where'd that pigeon go?"
             p "There, little bird. Fly true."
             
         "No reply. Let them wonder.":
@@ -67,7 +67,7 @@ label day3:
     
     n "Knock, knock, Prrrrincesss..."
     p "Oh, what is it now, Niir. I'll warn you: I'm already in a foul mood!"
-    show niir at quarterright with moveinleft
+    show niir at center with moveinleft
     n "Sssseen anything interesting today Princessss?"
     p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
     n "I sssupect the question should be to you.  What do {i}you{/i} want?"
@@ -227,7 +227,7 @@ label balrung3:
     p "No, I wanted to talk to you."
     b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
     p "No, no of course not!"
-    "(Is it that obvious?!)"
+    "Is it that obvious?!"
     b "Oh really? My apologies, then. What {b}does{/b} bring you here?"
     if (asked_scepter == "Balrung"):
         p "Have you found out more about the location of that scepter I asked you about?"
@@ -304,7 +304,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg corridor with fade
-    show niir at midright
+    show niir at center
     with moveinright
     n "Why do you care about the kingdom anyway?  What hasss the kingdom done for you?"
     p "Nothing, yet. That’s why I need to be Queen."
@@ -317,7 +317,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg kitchen with fade
-    show niir at midright
+    show niir at center
     with moveinright
     p "By the way, isn’t this the kitchen? Where are you taking me?"
     n "We have to go through the kitchen.  Patiencccce."
@@ -332,7 +332,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg storage with fade
-    show niir at midright
+    show niir at center
     with moveinright
     p "Yes, well, it is a queenly duty to look becoming... though my presence would certainly be improved if I had my full royal wardrobe. Are we there yet?"    
     n "Ssssoon.  Hmmm.  Where is this royal wardrobe of yoursss?"
@@ -351,7 +351,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg corridor flip with fade
-    show niir at midright
+    show niir at center
     with moveinright    
     n "What is your cassstle like?  Better than thisss?"
     p "Obviously. Though, this castle does have a certain... gravity that is hard to find in a castle these days. My castle was- {b}is{/b} full of beauty, with stained glass scenes of my ancestors’ achievements, and every comfort a queen deserves."
@@ -367,7 +367,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg stairs with fade
-    show niir at midright
+    show niir at center
     with moveinright
     p "What will you do once you’re free? Besides serve my every whim, of course."
     n "I’ll pretend you didn’t ssssay that."
@@ -379,15 +379,15 @@ label niir3:
     p "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom?"
     n "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss.  Won’t your people be displeasssed with your hearty appetite for destruction?"
     p "It’s not destruction I crave, but the throne! And if a little poison fails to do the trick, then perhaps I’ll try a little dragon fire."
-    "(Oops! Did I mention the poison?!)"
+    "Oops! Did I mention the poison?!"
     n "Poissson?  I will keep it in mind the next time you put a tasssty morsssel in front of my nossse."
-    p "A-a-anyway, is this the place you wanted to show me?"
+    p "I meant {i}poisson{/i}, as in, a fish! ...A-a-anyway, is this the place you wanted to show me?"
     n "Not yet!  Princesss!  We are almossst there.  I just got… dissstracted."
     n "Thisss way."
     n "Here."
     hide niir
     with moveoutleft
-    scene bg exterior with fade
+    scene bg exterior dusk with fade
     show niir at center
     with moveinright
     p "This...is a tower."
@@ -405,6 +405,6 @@ label niir3:
     n "Sssee you around, Princesss."
     hide niir with moveoutright
     p "W-w-wait, how do I get back?! Niir! You mustn’t leave your queen stranded!"
-    "(He left me stranded.)"
-    "(People will be hearing about this.  Perhaps that useless mage will keep him in line.)"
+    "He left me stranded."
+    "People will be hearing about this.  Perhaps that useless mage will keep him in line."
     return

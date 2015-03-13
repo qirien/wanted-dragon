@@ -4,8 +4,8 @@
 
 label day6:
     # She goes around eavesdropping to find out how well her plans have been working.
-    
-    p "Ugggh, that moldy smell again. I must {b}still{/b} be in the old Castle [castle_name]."
+    scene bg bedroom with fade
+    p "Ugggh, that moldy smell again. I must {b}still{/b} be in the old [castle_name]."
     p "But I believe I'm finally making some progress. Although... they could be deceiving me."
     p "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
     
@@ -25,17 +25,17 @@ label day6:
         b "If I could keep you here, I would."
         n "Your fearssss are ridiculousssss."
         n "I am sssstaying here, old dragon."
-        b "Stubborn fool!  What is for you here?"
+        b "Stubborn fool!  What life is there for you here?!"
         b "What other princesses are there?"
-        p "(Could Balrung be right?  Could Niir actually be... {i}in love{/i}?)"
-        "(The thought makes my stomach roil.)"
-        p "(Though I have to admit, I do feel some... animal magnetism towards Niir.)"
-        p "(Even if it is only animal.)"
+        "Could Balrung be right?  Could Niir actually be... {i}in love{/i}?"
+        "The thought makes my stomach roil."
+        "Though I have to admit, I do feel some... animal magnetism towards Niir."
+        "Even if it is only animal."
         n "Sssshut up.  I am done conversssssing."
         b "I'd tell you to follow your heart. But that would require you to possess one in the first place."
-        p "(This is what I wanted, wasn't it?)"
-        p "(A dragon at my disposal.  Willing to leave, all for the delusion of love.)"
-        p "(But somehow, I don't enjoy the feeling.  What is this?)"
+        "This is what I wanted, wasn't it?"
+        "A dragon at my disposal.  Willing to leave, all for the delusion of love."
+        "But somehow, it doesn't feel as good as I thought it would."
     elif (route == "Cyril"):
         "I snuck over to the library to spy on Moronious."
         #TODO: She overhears him talking with someone or spies on a letter he wrote or something?!
@@ -48,19 +48,85 @@ label day6:
         with dissolve
         b "That Princess is really quite...something."
         b "Do you know, Niir, that she beat me at Queens and Pawns yesterday? Nobody has done that since..."
-        n "Ssssince "#TODO: what's Balrung's lost love's name?
+        n "Ssssince Myriah?"
+        b "Yes...she distracted me by asking about my imprisonment. Clever human!"
+        n "Sssso what?"
+        b "Well, I don't wish to get your hopes up in vain, but it seems my long imprisonment may soon be over."
+        n "How niccce for {b}you{/b}."
+        b "If we can count on your aid as well, then perhaps it's time to end this preposterous tradition of imprisoning ambitious dragons."
+        n "I'm lissstening."
+        
+    return
+        
+# She does something nice for Balrung.
+label balrung6:
+    scene dungeon with fade
+    show balrung at center with dissolve
+    b "My dear lady..."
+    "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
+    "I smirked in return. Playing at love was more fun than I had imagined. No wonder ordinary people spend so much time on it."
+    p "You may call me Chrysandra."
+    b "Chrysandra...golden flower? Fitting... lovely as a blossom, hard as metal, yet malleable enough to thrive in any situation."
+    p "That's what my father says. Though if I was really so precious to him, he'd have made me Queen."
+    p "Anyway, I brought you something."
+    b "Princess, the brilliance of your presence is gift enough to soften this stone heart of mine. What more could I ask?"
+    p "How about a Hibernation Libation?"
+    "I handed him a flask containing the gloopy, dark green potion I had made. It was one of the few whose ingredients were commonplace enough to be found in and around the Castle [castle_name]."
+    b "I...I'm touched. How did you know I had trouble sleeping?"
+    p "Oh! I assumed you would use it on Niir when you wanted some peace and quiet. Or on that fool mage. I know you're not foolish enough to use it on me."
+    b "It has many uses, I see.  How many doses are in here?"
+    p "That's enough to make a human sleep for two days. I'm not sure how it would affect a dragon."
+    b "Well...thank you. I'm afraid I don't have anything for you."
+    p "You will, I'm sure. For now, let us play another game together. I hinted to Moronious that I would be down here, so he may drop by later and we can play with him some more."
+    b "Splendid. Why don't you go first this time?"
+    p "Yes, I will...there."
+    b "That's an interesting opening move."
+    p "I know All the Queen's Men is usually derided as transparent and inefficient, but it does have its uses."
+    b "It is one way to control the board early."
+    p "It sets up certain...expectations."
+    b "And illusions."
+    p "Illusions? Why, what do you think I'm up to?"
+    b "It's obvious. But I don't mind playing along with you."
+    p "Well, of course the first plot is obvious. But that's only to distract you from uncovering the second, third, and fourth plots."
+    b "How amusing it is to watch people who think they are cleverly manipulating you, when in reality you have already predicted their every move."
+    p "Ha! Did you predict this move?!"
+    b "Yes, that's why I had this setup here waiting for you."
+    p "No! Ohhh, you! You're distracting me with all your talk of plots and illusions!"
+    b "A valiant effort, but you should know that I won't be tricked by the Distressed Princess Bluff."
+    p "And I won't be misled by your Experienced Brooding Old Man Feint!"
+    b "You don't have to fall for it in order for it to be effective. There goes your last Queen."
+    p "Ohhhh... I suppose you win, this time."
+    show cyril at left with moveinleft
+    c "Princess?"
+    p "Moronious! How long have you been lurking over there?"
+    show cyril at midleft
+    show balrung at midright
+    with move
+    c "I ju-just came to check on you, make sure you were safe..."
+    p "Oh yes, Balrung is quite the gentleman. I'm not sure why you're so worried about him; the most dangerous thing he's done is arouse my temper by beating me at Queens and Pawns."
+    c "You two do seem to- to get along."
+    c "But it's not enough! A person, no, a {b}dragon{/b}, cannot change so easily!"
+    p "I have many powers, mage; you'd do well not to underestimate me."
+    b "Do you think allowing myself to love is {b}easy{/b}? It is not! I learned from Myriah the price of loving a human!"
+    c "And...do you, do you feel the same way, Princess?"
+    p "Balrung is charming and useful, so of course I love him."
+    c "...Y-you don't even know! You two can't fathom what true l-love is!"
+    hide cyril with moveoutleft
     
-    
+    b "I'm afraid it may not be possible to convince him, Chrysandra."
+    p "Don't give up, yet. Perhaps we just need to give him some time..."
+    b "Perhaps..."
+    return
     
 label niir6:
     scene bg library with fade
     show cyril at center with dissolve
     p "Moronious, are you competent enough to pull a rabbit out of your hat?"
-    c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days… What was it again?  Explodus Rabititious?  No.  That can’t be right…"
+    c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days... What was it again?  Explodus Rabititious?  No.  That can’t be right..."
     p "..."
     c "Let me see.  Accerso Leoparda!"
     extend "Oh dear."
-    p "I did not ask for a large cat!"
+    p "I did not ask for a large cat."
     c "That is not, not, not what I was trying to do. Amitto!"
     c "Whew, now that we both escaped with our eyebrows intact, let’s try again."
     c "Accerso Leporidae!"
@@ -138,7 +204,7 @@ label niir6:
     p "I bet he’s in the kitchen right now, cooking. Ha. I bet he’s making a mess of it."
     menu:
         "Stay here.":
-            p "I have better things to do than search for Niir. I found these delightful alchemy books in the library…"
+            p "I have better things to do than search for Niir. I found these delightful alchemy books in the library..."
             return
         "Go and see.":
                 
@@ -146,7 +212,7 @@ label niir6:
             show niir at midright with dissolve
             "I caught him in the middle of taking a huge bite. Juices dribbled down his chin, and he had closed his eyes to savor the taste."
             p "I thought I might find you here. Not that I was looking for you. Just curious"
-            "He held out a skewer full of gristle, singed meat, and bones that was once Cyril’s rabbit. He watched my expression carefully, expecting me to recoil."
+            "He opened his eyes, looking first guilty, then devious. He held out a skewer full of gristle, singed meat, and bones that was once Cyril’s rabbit. He watched my expression carefully, expecting me to recoil."
             n "Want ssssome?"
             p "Yes, actually, it’ll be nice to eat something not conjured up by that silly mage for once."
             n "Sssso, what’s the priccce?"
@@ -156,12 +222,13 @@ label niir6:
             n "I am not any ssssort of minion!"
             p "I treat my partners even better."
             n "Partnerssss, eh?"
-            p "Well, I would, if I had partners. So far I haven’t found anyone quite worthy of that status, but I’m still looking."
-
+            p "Though you're a little bit of both, honestly."
+            n "Princesssss..."
     
 label cyril6:
 
     scene hall with fade
+    show cyril at center with dissolve #TODO: make him green
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
     c "...and my spell book's gone again. Oh, p'zuffle!" #TODO: replace if you don't like, or delete this if it's fine.
@@ -181,7 +248,7 @@ label cyril6:
     p "I know I saw something around here... ah-hah! \"Perfect Potion Pranks\", just the sort of book every mage library needs! I’ll need something without too many complicated ingredients."
 
     scene kitchen with fade
-    p "Carrot tops, rat droppings, a smashed glass… this is servant’s work! I must see to getting a royal Potion maker… hmmm, but then I’d have to have a Potion Maker Supervisor to ensure he didn’t poison me… and then a supervisor for the supervisor...perhaps it’s best if I just continue to make them myself."
+    p "Carrot tops, rat droppings, broken glass... ohh, I've forgotten how much I love brewing potions!"
 
     scene bg dungeon with fade
     show niir at midright with dissolve
@@ -189,14 +256,14 @@ label cyril6:
     p "Niir, meet me at the castle gates in five minutes. I have something I want to show you that you will find VERY interesting."
     n "Interessssssting.  I have been waiting for interesssting."
     hide niir with moveoutleft
-    "(Now, I’ll just sprinkle this in his sheets...Ahhh!)"
+    "Now, I’ll just sprinkle this in his sheets...Ahhh!"
     show balrung at midright with moveinright
     b "Princess? Can I assist you?"
     p "No, no, no assistance needed, thank you."
     "He glanced at the flask in my hands and smiled."
     b "I believe I feel quite tired. I will be asleep and shall not see or hear anything."
-    "(Hmph, well, so much for secrecy. Still, now’s my chance!)"
-    "(There! He’ll have quite a surprise when he gets in bed next! \"Interesting\" indeed, mwah ha ha ha ha ha ha!)"
+    "Hmph, well, so much for secrecy. Still, now’s my chance!"
+    "There! He’ll have quite a surprise when he gets in bed next! \"Interesting\" indeed, mwah ha ha ha ha ha ha!"
     b "I suggest you return to your room before commencing with gleeful cackling, Princess."
     p "I shall return when I am ready! Oh, and Balrung, if Niir is looking for me, please tell him I’ll be in the hall."
     b "Very well. I wish you success in your...endeavors."
@@ -267,6 +334,6 @@ label cyril6:
     c "Oh, I wasn’t expect- thank you Princess.  It would be my honor."
     show cyril at center with come_closer
     "He stepped forward, and leaned his head in for the quickest kiss that could possibly still bear the name."
-    p "(He's mine, now... mwah ha ha ha!)"
+    "He's mine, now... mwah ha ha ha!"
     scene black with fade
     return

@@ -28,7 +28,7 @@ label mage_insane:
     c "I do find it highly unlikely that an apparition would call me inadequate and clueless."
     b "Unless you were making her up to be realistic."
     c "I am!  I am!  So true!  I just wanted it to be true!"
-    "(Is he for real?)"
+    "Is he for real?"
     p "Oh for the love of..."
     menu:
         "Kiss him.":

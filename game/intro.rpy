@@ -4,10 +4,11 @@ label intro:
     scene bg gate with fade
     play music princess_theme
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
-    p "But first... I’ll have to deal with the mage in charge."
+    p "But first... I’ll have to deal with the mage left to guard this place."
     show cyril at center with moveinright
-    "({b}This{/b} is the mage in charge?! He's barely more than a child! This is exactly the kind of inefficiency I intend to remedy when I am queen!)"
-    "(Still… I’ll have to deal with him somehow.)"
+    "{b}This{/b} is the mage in charge?! He's barely more than a child!"
+    "...This is exactly the kind of inefficiency I intend to remedy when I am queen!"
+    "Still... I’ll have to deal with him somehow."
     c "Biggeldy, boggaldy, wap!"
     c "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
 #    p "My name is..."
@@ -35,6 +36,7 @@ label sweet:
     c "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
+    "Ha ha, yes! Everyone falls for the princess-caught-in-the-rain ruse."
     hide cyril
     with moveoutleft
     scene bg hall with fade
@@ -91,8 +93,8 @@ label room_intro:
     scene black with fade
     scene bg bedroom with fade
     
-    "(That’s better! One of these days I will need to look into obtaining my own weather mage...awful that I should be drenched at the whim of the mere skies)."
-    "(But now to meet with the dragons...)"
+    "That’s better! One of these days I will need to look into obtaining my own weather mage...awful that I should be drenched at the whim of the mere skies)."
+    "But now to meet with the dragons..."
     menu:
         "Call for Cyril.":
             scene bg corridor with fade
@@ -108,10 +110,10 @@ label room_intro:
 label ignore:
     p "..."
     c "Oh yes.  Oh of course, there is an apparition in front of me, oh Cyril.  You’ve finally done it.  You’ve gone completely bonkers."
-    "(He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him)"
+    "He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him"
     c "Well, back to that spell again.  Biggeldy- I'll never get it!  Now where did I keep that spell-book.  It was around here somewhere!  "
     c "I just need to find it.  Perhaps one of those surly dragons knows where it got to."    
-    "(Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance...)"  
+    "Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance..."  
     
     scene bg dungeon with fade
     
@@ -123,9 +125,9 @@ label ignore:
     # TODO: Finish this branch or make it join in with the main. Early ending?
 
 label explore:
-    "(I'll find out more without that silly mage following me around.)"
+    "I'll find out more without that silly mage following me around."
     scene bg corridor with fade
-    "(Now, which way...?)"
+    "Now, which way...?"
     show cyril at center with moveinleft
     c "Princess! You're done with your b-b-bath, then? Please, let me show you around the castle."
     p "I do not require you at the moment. Leave me alone."
@@ -144,7 +146,7 @@ label meet_dragons:
     c "He was kidnapping ladies in the marketplace just for fun apparently.  Causing all sorts of trouble until he had to be locked away."
     c "Balrung, he is much more courteous but he is rather stubborn.  He will try to make you see it his way and not by the most honest methods."
     p "Oh my, that sounds dreadful!"
-    "(And yet also intriguing.)"
+    "And yet also intriguing."
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     scene bg dungeon with fade
     show cyril at quarterleft

@@ -42,7 +42,6 @@ label day5:
                     
     elif (route == "Balrung"):
         show niir at center with moveinleft
-        #TODO: who would dissuade from this? Niir? Balrung himself?
         n "What do you ssssee in that old tortoisssse?"
         p "Good morning to you as well, Niir."
         n "Balrrrung hassss no sensssse of fun, and he won't be easy to manipulate. Even for you."
@@ -71,12 +70,11 @@ label day5:
                 jump balrung5
         
     elif (route == "Cyril"):
-        #TODO: Balrung/Niir try to convince her that he's wimpy. "but if he's so wimpy, why are you still imprisoned?"
         p "Ugh, this room again... I do miss my own castle, sometimes..."
         "As I looked around, I noticed a piece of paper next to the door - a note?"
-        write_b "Princess,"
-        write_b "Meet me on the South Tower this morning if you wish to discuss terms for my aid."
-        write_b "\n-A Potential Ally"
+        b_write "Princess,"
+        b_write "Meet me on the South Tower this morning if you wish to discuss terms for my aid."
+        b_write "\n-A Potential Ally"
         nvl clear
         p "Well, that sounds exciting! I wonder who it's from?"
         menu:
@@ -86,7 +84,7 @@ label day5:
                 jump cyril5
             "Go and find out.":
                 p "I'll go and find out. There's no harm in that, surely."
-                scene bg exterior with fade
+                scene bg exterior day with fade
                 show balrung at center with dissolve
                 p "Oh! It's {b}you{/b}."
                 b "Yes, it is I. I'm surprised at you, Princess."
@@ -138,7 +136,7 @@ label balrung5:
     b "How generous of you."
     p "How did you come to be imprisoned here, anyway? I've heard you did something quite terrible."
     b "Terrible? Yes...but it's not that simple. Your turn."
-    p "Interesting move...tell me what happened. I want to hear your version of events, not just Moronious' self-righteous justification for your imprisonment."
+    p "Interesting move. Tell me what happened. I want to hear your version of events, not just Moronious' self-righteous justification for your imprisonment."
     b "You want to hear it? Well..."
     menu:
         "Pay attention":
@@ -149,7 +147,7 @@ label balrung5:
             "I was so caught up in what he was saying that I almost missed how he had setup his Pawns in a chain reaction. I saw it just in time."
         "Focus on strategy.":
             b "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
-            p "(He's trying to draw my attention with his Queens while the Pawns setup a chain reaction! My Queens shall whittle down his defenses while he's not paying attention.)"
+            "He's trying to draw my attention with his Queens while the Pawns setup a chain reaction! My Queens shall whittle down his defenses while he's not paying attention."
 
     p "Go on. Your move."
     b "So when I invited her to join me, permanently, as a part of a human-dragon marriage alliance, I thought she'd be honored. It was her life's work, after all."
@@ -170,8 +168,9 @@ label balrung5:
         "You loved her.":
                     p "You loved her, then?"
                     b "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
+                    $ balrung_affection += 1
 
-    p "You were a fool for discarding your strategy in favor of emotion. Much like this game. Do you wish to resign?"
+    p "You were a fool for discarding your strategy in favor of emotion. Much like in this game. Resign now, while you still can!"
     b "Resign? But...oh, I see. I've lost, haven't I? Well done, Princess."
     b "Yes, I resign. I've learned that much from my mistakes, at least."
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
@@ -185,37 +184,40 @@ label balrung5:
     c "Y-yes, they are! Maybe not all. But definitely this one!"
     b "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."# to soften up this old stone heart of mine."
     c "The r-r-right woman?! Surely you don't mean Princess [p_name]?!"
-    p "Ohhh, better stop there, you'll embarrass me to pieces!"
-    b "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's feelings!"
-    c "Her...feelings?!"
+    p "You don't believe I could induce feelings of love?! How cruel!"
+    b "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's delicate feelings!"
+    c "Her delicate...feelings?!"
     p "Oh, yes, I'm quite overcome, I do think I might faint."
     c "Faint?! Um, well, ah, what should we do?!"
-    "I pressed my hand to my forehead and collapsed into Balrung's arms."
+    "I pressed my hand to my forehead and collapsed into Balrung's arms. That's what heroines of love stories are always doing; it should help convince that fool Moronious."
     scene black
     c "St-stop that! You mustn't hold the Princess that way!"
     b "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
-    c "Well, no, but- I'm not- you can't!"
+    c "Well, no, I wouldn't want that, but- I'm not- you can't!"
     b "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene dungeon with irisin
     show balrung at center with come_closer
-    "He set me down, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
+    "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
     scene black with irisout
     b "Our poor Princess... she's been through so much."
-    "He stroked my hair gently away from my face while Cyril gaped. It was all I could do to keep from cackling with glee at his befuddlement."
-    c "Well I- I will just stay here and watch over the Princess until she comes around! I'll protect her from you, dragon!"
-    b "If you feel the need, by all means, do so. All I want is for her to be safe and comfortable."
+    "He stroked my hair tenderly away from my face while Cyril gaped. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor; almost as good as me."
+    c "Well I- I will just stay here and watch over the Princess until she recovers! I'll protect her from you, you, vituperous viper!"
+    b "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
     show niir at right with moveinright
     n "Why is the Princesss pretending to sssleep on your bed?"
-    b "I'm afraid she fainted. Merlonious was rather indelicate and her poor constitution just couldn't take his boorish suggestions."
-    c "That's not at all what happened!"
+    b "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
+    c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my chatter is faster than my brain!"
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
     scene dungeon with fade
     show balrung at center
     show cyril at midleft
     show niir at midright
     with dissolve
-    p "Oh, thank you gentlemen for taking such good care of me. I don't know what came over me. But I'm so glad I can trust you... well, {b}some{/b} of you, anyway. And now I need to be by myself for a time, so please excuse me."
+    p "Oh, thank you gentlemen for taking such good care of me. I don't know what came over me. But I'm so glad I can trust you... well, {b}some{/b} of you, anyway."
+    "I glared at the mage, hoping he would feel even more guilty."
+    p "And now I will depart, so please excuse me."
+    b "Until next we meet, Princess."
     
     return
 
@@ -259,7 +261,7 @@ label niir5:
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
     show niir at center with come_closer
-        
+
     p "Hold me like this, with your hands here, in case he peeks out."
     n "I can do that, at leassssst."
     p "Now, say things you like about me, and I will do the same for you. I've heard that's what lovers often talk about."
@@ -271,13 +273,16 @@ label niir5:
     p "I suppose that's a start. Don't just compliment my body, though, or he won't believe it's true love!"
     n "You're sssoo deviousss, when I ssseee your scheming grin I jussst want to eat you up!"
     show niir with vpunch
-    n "I mean, I jussst want to be good! And not kidnap any one else."
+    n "I mean, I jussst want to be good! And not kidnap any one elsssse."
     n "And only ssssteal you away if you assssk me to."
-    n "Your turn." #TODO: how to show whispering? smaller font? italics? parenthesis?
+    "He bent his head close to my ear and whispered,"
+    n "Your turn."
     p "Niir! I used to think you were an untrustworthy, lascivious, uncivilized beast of a dragon! But, oh, how wrong I was! Only now can I see past the mask of you wear to hide your pain. Now, I can see the true, sweet, caring Niir underneath!"
     n "I'm not ssssweeet or carrring!"
     p "You've worn this mask for so long, even you have started to believe it! But I know that you've changed. You've learned your lesson, and now you would never hurt anyone or offend a Princess's delicate sensibilities!"
+    "He hissed in my ear,"
     n "Delicate sensibilitiessss? Ssssurely you mussst mean some other Princessss?"
+    "I gripped his shoulders and whispered,"
     p "Your turn, Niir! Make it good; he has to believe you!"
     n "Yesss, how I've changed. If only I were frrreee, we'd live happily everrr afterrr!"
     p "If only you were free!"
@@ -305,16 +310,15 @@ label somethigh:
     with hpunch
     n "Agh!  What wasssss that?"
     p "Convincing.  Hurry up and trust me or I'll do it again."
-    n "It doessss not work- {i}stop human{/i}!"
-    n "Desist!"
-    "He grabbed me. Since I had just finished punching him, the protection spell didn't activate."
-    p "(He's stronger than I thought...)"
+    n "It doessss not work- {i}stop, human{/i}!"
+    n "Desisst!"
+    "He grabbed my fist before I could punch him again. The protection spell didn't activate, this time, since I touched him first."
     p "Release your hands from my royal person immediately!"
     n "Do you trussssst me now?"
     "Ah, a test.  Touché, dragon."
     p "Completely."
     n "Really?"
-    p "Yes.  I trust you.  Do you trust me?"
+    p "Yes.  I trust you. Do you trust me?"
     n "..."
     n "Yessss."
     p "I didn't quite hear you, what was that?"
@@ -340,26 +344,26 @@ label trustfall:
     p "I'm going to fall, I do hope some annoying dragon with nothing better to do will catch me."
     n "I ssssaid 'No!' human!"
     p "I am trusting you, isn't that what you wanted?"
-    p "(I do believe I'm calling his bluff.)"
-    p "(I can tell that's not what he wanted at all.)"
+    "I do believe I'm calling his bluff."
+    "I can tell that's not what he wanted at all."
     n "..."
     n "How can you trussssst me, when I do not even trussst myself?"
-    p "(Bingo!)"
-    p "(Though I almost feel... no, {i}pity{/i} is unbecoming on a princess.  I do not feel that.)"
+    "Bingo!"
+    "Though I almost feel... no, {i}pity{/i} is unbecoming of a princess.  I do {b}not{/b} feel that."
     p "Niir.  You have to start some time."
     p "And why not start by trusting me?  You can trust yourself later."
     p "Right now your own loyalty should be to your future Queen."
     n "..."
     p "Niir.  Will you catch me?"
     n "..."
-    p "Will you catch me Niir?"
+    p "Will you catch me, Niir?"
     n "... "
     extend "{i}Yessss.{/i}"
     p "I am willing to trust you right now when you certainly don't deserve it.  Surely this goes a long way for your trust in me."
     n "Perhapssss."
     "I tipped backward, fighting every instinct to catch myself. Hopefully I had not miscalculated...!"
     show niir at midleft with hpunch
-    "He caught me awkwardly, almost dumping me backwards on my head before helping me stand upright."
+    "He caught me awkwardly, almost dumping me backwards on my head before helping me stand upright. I smoothed my skirts and folded my arms."
     p "Good.  Then are we ready to go onto the next step in our diabolical plan to gain your freedom and my throne?"
     n "Perhapssss."
     p "Then let's do it and stop talking about it."    
@@ -390,9 +394,9 @@ label cyril5:
     p "Then try it already!"
     c "I will, I will."
     c "Stand back, your majesty."
-    p "What?  So I don't get flicked by your wand.  I think I'll take my chances."
+    p "What, so I don't get flicked by your wand?  I think I'll take my chances."
     c "I'm just not sure if the spell will go exactly as planned."
-    p "It had better Moronious or I will make sure that council of yours knows how dangerous you are with a spellbook in hand."
+    p "It had better, Moronious, or I will make sure that council of yours knows how dangerous you are with a spellbook in hand."
     c "More threats.  Jolly good, Princess.  I do think we're communicating quite well."
     c "You do look me in the eye when you're threatening me which is lovely, and gives me tingles all-"
     p "{size=+2}Just do the spell already!{/size}"
