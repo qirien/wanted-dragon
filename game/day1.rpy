@@ -120,7 +120,7 @@ label balrung_scepter:
     return
        
 label sharecyril:
-    p "Oh Cyrilllll."
+    p "Oh, Moronious."
     p "That foolish mage has to be around here somewhere."
     scene bg corridor with fade
     p "Where {i}are{/i} you foolish mage?"

@@ -2,12 +2,12 @@ label day4:
     scene bg bedroom with fade
     p "The Sceptre of Lavendorm sounds powerful, if we can find it."
     p "But it could be just a legend, or it could have been moved. I should pursue other avenues as well."
-    p "Cyril has magical powers, if I could get him to use them the way I wanted."
+    p "That mage has magical powers, if I could get him to use them the way I wanted."
     p "Or perhaps the dragons would aid me in exchange for their freedom?"
     p "They are all capable, but they certainly have faults. Every minion does, of course, but I need to decide who is the most likely to do what I want."
     p "Whose aid should I enlist?"
     menu:
-        "Cyril.":
+        "The mage.":
             $ cyril_affection += 1
             jump cyril4
         "The dragons.":
@@ -63,7 +63,7 @@ label dragons4:
     b "Well, you looked so radiant that I must have assumed it."
     p "Well, I haven't come to discuss my radiance. I've come to offer you a proposal."
     b "Really? Please continue."
-    p "Cyril will release you from your curse if you fall in love, right?"
+    p "That mage will release you from your curse if you fall in love, right?"
     b "And have demonstrated reform, yes."
 
     menu:
@@ -153,7 +153,7 @@ label niir4:
     b "Niir, isn't it worth {b}trying{/b} to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
     n "Affection, well why didn’t you sssssay so?"
     show niir at center with move
-    p "It doesn't help to do that now, you imbecile, it has to be when Cyril's watching!"
+    p "It doesn't help to do that now, you imbecile, it has to be when Moronious is watching!"
     show niir at midright
     show balrung at quarterright with move
     n "Soooo how much leeway do I get?" 

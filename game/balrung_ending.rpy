@@ -32,9 +32,9 @@ label balrung_ending:
         b "So you say. But the Princess and I have managed to work out an arrangement. Princess?"
         menu:
             "Grab Cyril's wand.":
-                p "Cyril, before I go, there's just one thing I need from you."
+                p "Moronious, before I go, there's just one thing I need from you."
                 c "Wh-what's that? Oh!"
-                p "Your wand." #TODO: foreshadow that he has a wand and uses it to do magic
+                p "Your wand."
                 c "My...wand? No! Princess! Without my wand, I cannot seal up the dragons again!"
                 p "Yes, that was rather the point."
                 b "Well done. Shall we depart?"
@@ -67,7 +67,7 @@ label balrung_ending:
                         "In a whoosh of wings, he was gone."
                         p "..."
                         c "...Princess? Can I have my wand back, now?"
-                        p "Mwah ha ha ha... he left behind the Scepter of Lavendorm! The fool! Cyril!"
+                        p "Mwah ha ha ha... he left behind the Scepter of Lavendorm! The fool! Moronious!"
                         c "Y-yes your highness?"
                         p "Shall we attack that evil dragon?"
                         c "We shall!"
@@ -82,7 +82,7 @@ label balrung_ending:
                 p "Balrung, it was rather foolish of you to trust me so easily."
                 "As I talked, I scanned the room. Where was the scepter? Balrung had used it earlier to break the spell, but I didn't see it in his hands- er, talons."
                 b "Oh, Princess, Princess. I let you win a few games of Queens and Pawns, and you imagine yourself some kind of master strategist. I don't need {b}you{/b} in order to claim your kingdom. It would have smoothed things over with the nobles, that's true, but your presence is certainly not necessary to my plans."
-                p "My presence is certainly required for {b}MY{/b} plans! Cyril! Your princess is in danger!"
+                p "My presence is certainly required for {b}MY{/b} plans! Moronious! Your princess is in danger!"
                 "Balrung reared back, readying an attack."
                 jump cyril_attack
             "Wait it out.":
@@ -102,7 +102,7 @@ label balrung_ending:
                 p "Balrung! I will hunt you down! I will find you and DESTROY YOU!!!"
                 # TODO: if her cyril_affection is high enough, send to cyril_attack instead?
                 b "Farewell, Princess. I hope you find better things to consume your life than revenge."
-                p "Cyril! Stop him! Why are you just standing there?! KILL HIM!"
+                p "Moronious! Stop him! Why are you just standing there?! KILL HIM!"
                 # TODO: Feel free to rewrite Cyril's lines better or end this differently
                 c "N-no, Princess, I don't th-think I will."
                 "Balrung's flapping wings filled the dungeon with dusty gusts, and then he was gone."                
