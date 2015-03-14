@@ -6,6 +6,7 @@ init -1:
     define balrung_affection = 0
     define niir_affection = 0
     define cyril_affection = 0
+    define cyril_insanity = 0
     define p_name = "Chrysandra"
     define k_name = "Novaria"
     define castle_name = "the Castle of the Banished"

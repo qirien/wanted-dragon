@@ -12,11 +12,11 @@ label day1:
     b "Princess [p_name]. To what do we owe this great honor?"
     n "Yesss, it's a pleasure..."
     p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
-    n "Vasssssals? We are no sssuch thing." #TODO: Better Niir response?
+    n "Vasssssals? We are no sssuch thing."
     b "Princess, our powers are extremely limited whilst we are held captive here."
     p "I thought all you had to do was kiss a human or something, and the spell would be broken."
-    n "If that were the casssse, I'd have kissssed you firssst and asssked questions later."
-    b "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found love and is reformed."
+    n "If that were the casssse, I'd have kissssed you firssst and asked questionssss later."
+    b "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found \"love\" and is reformed."
     p "Couldn't we overpower him? He doesn't seem that formidable..."
     b "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you are a sorceress...?"
     p "I am not. But I am interested in powerful magical objects. Do you know of any?"
@@ -26,7 +26,6 @@ label day1:
     
     
 label library1:
-    # TODO: against the dragons? Do you mean, against her sister or to free the dragons?
     scene bg library with fade
     show cyril at midright with dissolve
     "It appears the library is already occupied..."
@@ -67,7 +66,7 @@ label library1:
     p "You're starting to irritate me."
     c "Oh, of course - of course.  The book.  Well, there has been something around here.  Old and dusty and-"
     c "Quite like the dragons in fact!"
-    p "Are you trying to be witty mage?"
+    p "Are you trying to be witty, mage?"
     c "Not very hard.  It only just came to me really."
     p "Well don't."
     c "This is what I was looking for.  {i}Long-Hidden Powerful Objects: an abridged edition{/i}."

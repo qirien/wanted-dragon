@@ -25,20 +25,30 @@ label alone4:
     jump cyril4
     
         
-# TODO: Something about how Cyril could help her even if he can't find the scepter.        
 label cyril4:
-    show cyril at center with moveinleft
     $ route = "Cyril"
     c "Ah, Princess!  I had been looking for you."
     p "Well, you clearly didn't look very hard because I've been here."
     c "Ah, well, this was one of the first places that I found myself looking."
     p "What is it mage?"
     c "Well, I have an update for you.  On the artefact."
-    c "It seems there were some notes that --- left for me and those notes, they specify a location."
+    c "It seems there were some notes that Dykonis left for me and those notes, they specify a location."
     c "Not pinpoint exactly, but where we should start looking."
     p "And you're just thinking of this now?"
     c "I've been here so long that I'd forgotten about those notes."
-    #TO DO: TBC
+    p "Well, where is it?!"
+    c "As I said, it isn’t an exact location.  But it should be somewhere around the east wing.  At least that narrows our search.  Though it doesn’t help too much."
+    p "Then begin searching!"
+    c "It’s not that simple.  We need all hands on deck, so to speak.  Well, more hands than I have presently.  And I do not trust the hands of those dragons - slippery creatures that they are.  So yes, we are short-handed when it comes to searching.  It might take months to canvas the whole area!"
+    p "...I need more minions. Or perhaps simply more powerful minions. But, as there is just you, I will also search for this artifact. Direct me to the east wing!"
+    c "That is- that is most gracious of you.  The east wing is this way, but I wouldn’t want you to do too much hard work.  If there is any lifting you need, just call me over and with a wave of my wand, I will remove the item obstructing your search."
+    scene bg hall with fade
+    "We searched through bedrooms, storerooms, halls, and closets."
+    p "This is pointless! We are no closer than we were three hours ago!"
+    c "Well, now we know several hundred places the scepter is not."
+    p "And several million places it still could be. Find a better way to search! Isn’t this what magic is for?!"
+    c "Magic can’t- well, there {b}are{/b} summoning spells, but I do not think we know enough about this scepter for those to work."
+    p "Then find out more! While I am perfectly willing to waste your time, mine is much more valuable. I am done here."
     
     return
 

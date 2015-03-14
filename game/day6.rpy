@@ -36,9 +36,69 @@ label day6:
         "This is what I wanted, wasn't it?"
         "A dragon at my disposal.  Willing to leave, all for the delusion of love."
         "But somehow, it doesn't feel as good as I thought it would."
+        scene black with fade
+        jump niir6
     elif (route == "Cyril"):
         "I snuck over to the library to spy on Moronious."
-        #TODO: She overhears him talking with someone or spies on a letter he wrote or something?!
+        scene bg library with fade
+        show cyril at center with dissolve
+        c "I just can’t do it."
+        show cyril at midleft with move
+        c "It wouldn’t be right."
+        show cyril at midright with move
+        c "I’d dedicated my life to this post, so I couldn’t just… give it up.  Could I?"
+        "Give up his post? That would ruin everything I’ve been working for! No one else would be so eager to please and gullible."
+        show cyril at center with move
+        c "Preposterous."
+        c "No.  I could not.  Dyconis left me in charge and surely the dragons still need a guard."
+        c "I just… oh, master.  How I wish you were still around to sort out all this mess."
+        c "It would be quite the opportunity to study again under the tutelage of Master Grivvorn.  But- I am still bound to my duty."
+        c "To Dyconis."
+        c "I’m not even sure why I do this anymore to be honest."
+        c "But no.  Duty comes first."
+        c "It’s rather foolish that I’d even be considering it."
+        c "Isn’t it?"
+        c "If only the walls could talk, Cyril.  What would they say?"
+        c "Hmm, perhaps that is musing for another day."
+        "Is it possible he’s that credulous? It’s worth a try, I suppose."
+        menu:
+            "Make the walls speak!":
+                $ cyril_insanity += 1
+        p "{i}Stayyyyyyyy.  Staaaaaaay, Cyril.{/i}"
+        c "What was that?  "
+        extend "Who’s there?"
+        p "{i}staaaaayyyy…..{/i}"
+        c "..."
+        c "Could it be?  Could the walls actually have been listening to entire time?"
+        c "I know your tricks wall!  You just want to keep me here for your own company!"
+        c "Well, it is not my doing if you are lonely.  There will be someone else to come and occupy you, surely.  But I must follow my heart."
+        c "If only I knew what my heart was saying."
+
+            "Keep quiet.":
+                    "He’s not {b}that{/b} gullible."
+
+        c "Perhaps the princess could help me.  I have grown rather fond of her in this short stay.  But she does not know the council."
+        c "No.  This is my decision.  And no walls, nor princesses can make it for me."
+
+        #link both up
+        c "Perhaps, I just need to run a warm bath."
+        c "Yes, that’ll do the trick."
+        hide mage with moveoutleft
+
+        "While he’s in the bath, I’ll just slip out and see that letter he was reading..."
+
+        letter "To Cyril Merlonious of the order of Dyconis:"
+        letter "We are pleased to inform you that an opening has arisen at the Academy in the House of Master Grivvorn, Third Star. Although your previous application was rejected, due to your recent service and experience, we would like to welcome you to the Academy as a second-tier student."
+        letter "We await your speedy reply,"
+        letter "Sincerely,"
+        letter "Jillian Teslin"
+        letter "Undersecretary to Master Grivvorn, Third Star"
+        letter "Academy of Master Enchanters"
+
+        "Well, he’d be a fool not to accept and learn more powerful magic… but, then, he {b}is{/b} quite a fool, so anything’s possible."
+        "I’ll just have to make sure he has plenty of reasons to stay here…"
+        scene black with fade
+        jump cyril6
         
     elif (route == "Balrung"):
         "I snuck down to the dungeons to spy on the dragons."
@@ -66,7 +126,7 @@ label balrung6:
     "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
     "I smirked in return. Playing at love was more fun than I had imagined. No wonder ordinary people spend so much time on it."
     p "You may call me Chrysandra."
-    b "Chrysandra...golden flower? Fitting... lovely as a blossom, hard as metal, yet malleable enough to thrive in any situation."
+    b "Chrysandra...golden flower? Fitting... lovely as a blossom, tenacious as metal, yet malleable enough to thrive in any situation."
     p "That's what my father says. Though if I was really so precious to him, he'd have made me Queen."
     p "Anyway, I brought you something."
     b "Princess, the brilliance of your presence is gift enough to soften this stone heart of mine. What more could I ask?"

@@ -189,6 +189,7 @@ label cyril3:
             p "I will take you up on that."
         
         "Ignore him.":
+            $ cyril_insanity += 1
             p "..."
             "This will do the trick, keep that snivelling to a minimum."
             "Hopefully he will take the hint and BEGONE!"

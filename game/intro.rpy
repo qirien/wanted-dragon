@@ -108,6 +108,7 @@ label room_intro:
             jump explore 
 
 label ignore:
+    $ cyril_insanity += 1
     p "..."
     c "Oh yes.  Oh of course, there is an apparition in front of me, oh Cyril.  You’ve finally done it.  You’ve gone completely bonkers."
     "He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him"
@@ -122,7 +123,7 @@ label ignore:
     n "Cyril the Cowardly."
     n "And I see you've brought us a tassssty morssssel.  How generous."
     c "Oh don’t mind her.  She’s just my apparition.  Wait.  Why can you see her?"
-    # TODO: Finish this branch or make it join in with the main. Early ending?
+    jump dragon_chat
 
 label explore:
     "I'll find out more without that silly mage following me around."
@@ -156,7 +157,7 @@ label meet_dragons:
     show niir at center with moveinright
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
-    menu:
+    menu dragon_chat:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
             p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
