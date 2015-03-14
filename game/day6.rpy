@@ -64,15 +64,15 @@ label day6:
         menu:
             "Make the walls speak!":
                 $ cyril_insanity += 1
-        p "{i}Stayyyyyyyy.  Staaaaaaay, Cyril.{/i}"
-        c "What was that?  "
-        extend "Who’s there?"
-        p "{i}staaaaayyyy…..{/i}"
-        c "..."
-        c "Could it be?  Could the walls actually have been listening to entire time?"
-        c "I know your tricks wall!  You just want to keep me here for your own company!"
-        c "Well, it is not my doing if you are lonely.  There will be someone else to come and occupy you, surely.  But I must follow my heart."
-        c "If only I knew what my heart was saying."
+                p "{i}Stayyyyyyyy.  Staaaaaaay, Cyril.{/i}"
+                c "What was that?  "
+                extend "Who’s there?"
+                p "{i}staaaaayyyy…..{/i}"
+                c "..."
+                c "Could it be?  Could the walls actually have been listening to entire time?"
+                c "I know your tricks wall!  You just want to keep me here for your own company!"
+                c "Well, it is not my doing if you are lonely.  There will be someone else to come and occupy you, surely.  But I must follow my heart."
+                c "If only I knew what my heart was saying."
 
             "Keep quiet.":
                     "He’s not {b}that{/b} gullible."
@@ -80,7 +80,6 @@ label day6:
         c "Perhaps the princess could help me.  I have grown rather fond of her in this short stay.  But she does not know the council."
         c "No.  This is my decision.  And no walls, nor princesses can make it for me."
 
-        #link both up
         c "Perhaps, I just need to run a warm bath."
         c "Yes, that’ll do the trick."
         hide mage with moveoutleft
