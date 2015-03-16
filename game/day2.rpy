@@ -4,7 +4,7 @@ label day2:
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
     p "Moronious?! This had better be important!"
-    show cyril at center with moveinleft
+    show cyril hat neutral at center with moveinleft
     c "Good.  Good.  I'm glad that you opened up."
     c "I don't want you to think that I'm - well, dissapproving."
     c "But some information has come to my attention."
@@ -36,12 +36,12 @@ label day2:
     p "I forgive you, you foolish mage.  Just don't doubt me again."
     hide cyril with moveoutleft
     
-    show niir at right with moveinright
+    show niir neutral at right with moveinright
     n "You were banisshhed? Your position musst be desssperate, then."
     p "How long have you been eavesdropping?!"
     n "Long enough to hear you sssnorrrring. Mossst unladylike."
     p "Moronious!"
-    show cyril at midleft with moveinleft
+    show cyril hat neutral at midleft with moveinleft
     c "Yes, Princess? Oh! What's {b}he{/b} doing here?!"
     p "That was my question. I would have thought that a capable mage would have this room warded against unwanted intrusions."
     n "If you think Cccyril is capable--"
@@ -75,7 +75,7 @@ label day2:
         "Perhaps he has found the scepter?!"
         
     scene bg dungeon with fade
-    show balrung at midright with dissolve
+    show balrung neutral at midright with dissolve
     p "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
     b "My apologies, my lady, I didn't think it appropriate to disturb a lady in her bedchamber so early in the morning."
     p "But you thought it appropriate to send the lascivious Niir to my bedchamber?!"

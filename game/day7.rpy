@@ -18,7 +18,7 @@ label cyril7:
 
 label balrung7:
     scene bg dungeon with fade
-    show balrung at center with dissolve
+    show balrung neutral at center with dissolve
     p "Is that a scroll? Are you writing a letter?"
     b "Princess! I was not aware you had joined me. I'd better put this away..."
     p "Not so fast! Let me see that."

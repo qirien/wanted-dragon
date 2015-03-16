@@ -19,7 +19,7 @@ init -1:
 
     define p = DynamicCharacter("p_name", image="princess", color="#c8ffc8") #TODO: make her side image
     define b = Character('Balrug', image="balrung", color="#c8ffc8")
-    define c = Character('Cyril Merlonious', image="merlin", color="#c8ffc8")
+    define c = Character('Cyril Merlonious', image="cyril", color="#c8ffc8")
     define n = Character('Niir', image="niir", color="#c8ffc8")
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)
@@ -49,15 +49,26 @@ init -1:
     #
     # SPRITES
     #
-
     image side princess = Placeholder("girl")
-    image balrung = Placeholder("boy")
-    image cyril = Placeholder("boy")
-    image niir = Placeholder("boy")
+    
+    # Automatically import all sprites in the 'sprites' subdirectory 
+    # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
+init python:
+    import os
+    for fname in os.listdir(config.gamedir + '/sprites'):
+        if fname.endswith(('.jpg', '.png')):
+            tag = fname[:-4]
+            fname =  'sprites/' + fname
+            renpy.image(tag, fname)
+
+#    image balrung = Placeholder("boy")
+#    image cyril = Placeholder("boy")
+#    image niir = Placeholder("boy")
 
     #
     # POSITIONS
     #
+init -1:
     define fade = Fade(0.2, 0.2, 0.2) # TODO: Tweak these times for our game?
     define midleft = Position(xpos=0.35, xanchor=0.5)        
     define midright = Position(xpos=0.65, xanchor=0.5)

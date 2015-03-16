@@ -67,7 +67,7 @@ label day3:
     
     n "Knock, knock, Prrrrincesss..."
     p "Oh, what is it now, Niir. I'll warn you: I'm already in a foul mood!"
-    show niir at center with moveinleft
+    show niir neutral at center with moveinleft
     n "Sssseen anything interesting today Princessss?"
     p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
     n "I sssupect the question should be to you.  What do {i}you{/i} want?"
@@ -99,7 +99,7 @@ label day3:
     
 label cyril3:
     scene bg library with fade
-    show cyril at center with dissolve
+    show cyril hat neutral at center with dissolve
     $ cyril_affection += 1
     p "Ohhhh Moroooonious!"
     p "What progress have you made with obtaining that scepter for me?"
@@ -125,7 +125,7 @@ label cyril3:
     
     scene black with fade
     scene bg bedroom with fade
-    show cyril at midright with dissolve
+    show cyril hat neutral at midright with dissolve
     p "Ugh, this place smells like moss.  Like sitting, rotting-"
     c "Oh!  I'm sorry Princess.  I didn't mean to intrude!"
     "How long has he been here in my room?  "
@@ -223,7 +223,7 @@ label cyril3:
      
 label balrung3:
     scene bg dungeon with fade
-    show balrung at center with dissolve
+    show balrung neutral at center with dissolve
     b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
     b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
@@ -305,7 +305,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg corridor with fade
-    show niir at center
+    show niir neutral at center
     with moveinright
     n "Why do you care about the kingdom anyway?  What hasss the kingdom done for you?"
     p "Nothing, yet. That’s why I need to be Queen."
@@ -318,7 +318,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg kitchen with fade
-    show niir at center
+    show niir neutral at center
     with moveinright
     p "By the way, isn’t this the kitchen? Where are you taking me?"
     n "We have to go through the kitchen.  Patiencccce."
@@ -333,7 +333,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg storage with fade
-    show niir at center
+    show niir neutral at center
     with moveinright
     p "Yes, well, it is a queenly duty to look becoming... though my presence would certainly be improved if I had my full royal wardrobe. Are we there yet?"    
     n "Ssssoon.  Hmmm.  Where is this royal wardrobe of yoursss?"
@@ -352,7 +352,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg corridor flip with fade
-    show niir at center
+    show niir neutral at center
     with moveinright    
     n "What is your cassstle like?  Better than thisss?"
     p "Obviously. Though, this castle does have a certain... gravity that is hard to find in a castle these days. My castle was- {b}is{/b} full of beauty, with stained glass scenes of my ancestors’ achievements, and every comfort a queen deserves."
@@ -368,7 +368,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg stairs with fade
-    show niir at center
+    show niir neutral at center
     with moveinright
     p "What will you do once you’re free? Besides serve my every whim, of course."
     n "I’ll pretend you didn’t ssssay that."
@@ -389,7 +389,7 @@ label niir3:
     hide niir
     with moveoutleft
     scene bg exterior dusk with fade
-    show niir at center
+    show niir neutral at center
     with moveinright
     p "This...is a tower."
     n "Nicccce up here, isn’t it?"

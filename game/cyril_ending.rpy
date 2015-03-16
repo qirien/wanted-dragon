@@ -7,9 +7,9 @@ label cyril_ending:
     
 label mage_insane:
     scene bg dungeon with fade
-    show cyril at midleft
-    show balrung at midright
-    show niir at right
+    show cyril hat neutral at midleft
+    show balrung neutral at midright
+    show niir neutral at right
     with dissolve
     b "It took only a few short years of solitude to lose your mind."
     b "Are you sure she's even real?"

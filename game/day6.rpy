@@ -12,8 +12,8 @@ label day6:
     if (route == "Niir"):
         "I snuck down to the dungeon to spy on the dragons."
         scene dungeon with fade
-        show niir at midright
-        show balrung at midleft
+        show niir neutral at midright
+        show balrung neutral at midleft
         with dissolve
         b "I do hope you haven't fallen in love with the tempestuous temptress that has entered our realm."
         n "Now why would you ssssssay that?"
@@ -41,14 +41,14 @@ label day6:
     elif (route == "Cyril"):
         "I snuck over to the library to spy on Moronious."
         scene bg library with fade
-        show cyril at center with dissolve
+        show cyril hat neutral at center with dissolve
         c "I just can’t do it."
-        show cyril at midleft with move
+        show cyril hat neutral at midleft with move
         c "It wouldn’t be right."
-        show cyril at midright with move
+        show cyril hat neutral at midright with move
         c "I’d dedicated my life to this post, so I couldn’t just… give it up.  Could I?"
         "Give up his post? That would ruin everything I’ve been working for! No one else would be so eager to please and gullible."
-        show cyril at center with move
+        show cyril hat neutral at center with move
         c "Preposterous."
         c "No.  I could not.  Dyconis left me in charge and surely the dragons still need a guard."
         c "I just… oh, master.  How I wish you were still around to sort out all this mess."
@@ -102,8 +102,8 @@ label day6:
     elif (route == "Balrung"):
         "I snuck down to the dungeons to spy on the dragons."
         scene dungeon with fade
-        show niir at midright
-        show balrung at midleft
+        show niir neutral at midright
+        show balrung neutral at midleft
         with dissolve
         b "That Princess is really quite...something."
         b "Do you know, Niir, that she beat me at Queens and Pawns yesterday? Nobody has done that since..."
@@ -120,7 +120,7 @@ label day6:
 # She does something nice for Balrung.
 label balrung6:
     scene dungeon with fade
-    show balrung at center with dissolve
+    show balrung neutral at center with dissolve
     b "My dear lady..."
     "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
     "I smirked in return. Playing at love was more fun than I had imagined. No wonder ordinary people spend so much time on it."
@@ -155,11 +155,11 @@ label balrung6:
     p "And I won't be misled by your Experienced Brooding Old Man Feint!"
     b "You don't have to fall for it in order for it to be effective. There goes your last Queen."
     p "Ohhhh... I suppose you win, this time."
-    show cyril at left with moveinleft
+    show cyril hat neutral at left with moveinleft
     c "Princess?"
     p "Moronious! How long have you been lurking over there?"
-    show cyril at midleft
-    show balrung at midright
+    show cyril hat neutral at midleft
+    show balrung neutral at midright
     with move
     c "I ju-just came to check on you, make sure you were safe..."
     p "Oh yes, Balrung is quite the gentleman. I'm not sure why you're so worried about him; the most dangerous thing he's done is arouse my temper by beating me at Queens and Pawns."
@@ -179,7 +179,7 @@ label balrung6:
     
 label niir6:
     scene bg library with fade
-    show cyril at center with dissolve
+    show cyril hat neutral at center with dissolve
     p "Moronious, are you competent enough to pull a rabbit out of your hat?"
     c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days... What was it again?  Explodus Rabititious?  No.  That can’t be right..."
     p "..."
@@ -192,11 +192,11 @@ label niir6:
     p "I only need ONE rabbit, not a hundred of them!"
     c "Ah, yes.  I knew that.  I’ll just rectify that."
     c "Stop that rabbit from escaping!  We need them all in this room!"
-    show cyril at left with move
+    show cyril hat neutral at left with move
     p "That’s your job, fool. Though, I am rather enjoying watching you run around and gather them up."
-    show cyril at right with move
+    show cyril hat neutral at right with move
     c "Amitto! Amitto! Reddo amitto!"
-    show cyril at midright with move
+    show cyril hat neutral at midright with move
     c "Stay put for just one moment.   "
     extend "Ahh... that should be the last of them."
     c "One last time.  I’ve got it this time, Princess, don’t you worry."
@@ -207,7 +207,7 @@ label niir6:
     extend "I’d grown rather fond of him.  Princess?  Princess?"
 
     scene bg dungeon with fade
-    show niir at center with dissolve
+    show niir neutral at center with dissolve
     n "Come for a little game of hide-and-sssseek, Princessss?"
     p "Yes, actually, that’s exactly what I’ve come for."
     n "Rrrreally? You rrread my mind."
@@ -231,12 +231,12 @@ label niir6:
     "He licked his lips and sniffed the air. Then, without warning, he was off down the corridor, following its scent. I ran after him, my soft slippers making as little noise as his bare feet."
     hide niir with moveoutleft
     scene bg corridor with fade
-    show niir at center with moveinleft
+    show niir neutral at center with moveinleft
     n "Thissss way."
     hide niir with moveoutright
 
     scene bg hall with fade
-    show niir at midleft with moveinleft
+    show niir neutral at midleft with moveinleft
     n "Ssstop. He’s closssse."
     p "Under the statue!"
     n "Drrrive him thisss way."
@@ -244,7 +244,7 @@ label niir6:
     p "Come on out and play with Niir!"
     p "Get him!"
     "The rabbit burst out of hiding, darted right towards Niir, but then saw him and changed direction. I headed him off before he could leave the room, and he ran back towards Niir again."
-    show niir at center with move
+    show niir neutral at center with move
     n "Caught you!"
     "He caught it up in his hands, breathed on it, then sheepishly looked away."
     p "Did you just try to breathe fire? And it didn’t work?"
@@ -268,7 +268,7 @@ label niir6:
         "Go and see.":
                 
             scene bg kitchen with fade
-            show niir at midright with dissolve
+            show niir neutral at midright with dissolve
             "I caught him in the middle of taking a huge bite. Juices dribbled down his chin, and he had closed his eyes to savor the taste."
             p "I thought I might find you here. Not that I was looking for you. Just curious"
             "He opened his eyes, looking first guilty, then devious. He held out a skewer full of gristle, singed meat, and bones that was once Cyril’s rabbit. He watched my expression carefully, expecting me to recoil."
@@ -287,7 +287,7 @@ label niir6:
 label cyril6:
 
     scene hall with fade
-    show cyril at center with dissolve #TODO: make him green
+    show cyril hat neutral at center with dissolve #TODO: make him green
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
     c "...and my spell book's gone again. Oh, p'zuffle!" #TODO: replace if you don't like, or delete this if it's fine.
@@ -310,13 +310,13 @@ label cyril6:
     p "Carrot tops, rat droppings, broken glass... ohh, I've forgotten how much I love brewing potions!"
 
     scene bg dungeon with fade
-    show niir at midright with dissolve
+    show niir neutral at midright with dissolve
     n "Do I sssmell..?"
     p "Niir, meet me at the castle gates in five minutes. I have something I want to show you that you will find VERY interesting."
     n "Interessssssting.  I have been waiting for interesssting."
     hide niir with moveoutleft
     "Now, I’ll just sprinkle this in his sheets...Ahhh!"
-    show balrung at midright with moveinright
+    show balrung neutral at midright with moveinright
     b "Princess? Can I assist you?"
     p "No, no, no assistance needed, thank you."
     "He glanced at the flask in my hands and smiled."
@@ -328,7 +328,7 @@ label cyril6:
     b "Very well. I wish you success in your...endeavors."
 
     scene hall with fade
-    show cyril at midright with dissolve
+    show cyril hat neutral at midright with dissolve
     p "Well, that was the most fun I’ve had since poisoning my sis- I mean, passing my sister the ball in croquet!"
     c "Croquet you say?  I have always been meaning to play that..."
     p "Don’t bother. It’s dreadfully dull. Did you know you’re not supposed to hit the other players, only the balls? Who invented that game?!"
@@ -391,7 +391,7 @@ label cyril6:
     c "Favorite? I-I do say."
     p "You may kiss my cheek, if you wish."
     c "Oh, I wasn’t expect- thank you Princess.  It would be my honor."
-    show cyril at center with come_closer
+    show cyril hat neutral at center with come_closer
     "He stepped forward, and leaned his head in for the quickest kiss that could possibly still bear the name."
     "He's mine, now... mwah ha ha ha!"
     scene black with fade

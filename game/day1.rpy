@@ -6,28 +6,28 @@ label day1:
     scene bg dungeon with fade
     n "Ssssomething tasssty comes!"
     p "Ahem. Dragons? I wish to speak with you!"
-    show niir at midright
-    show balrung at right
+    show niir neutral at right
+    show balrung neutral at center
     with moveinright
-    b "Princess [p_name]. To what do we owe this great honor?"
-    n "Yesss, it's a pleasure..."
+    b smirk "Princess [p_name]. To what do we owe this great honor?"
+    n mischief "Yesss, it's a pleasure..."
     p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
-    n "Vasssssals? We are no sssuch thing."
-    b "Princess, our powers are extremely limited whilst we are held captive here."
+    n angry "Vasssssals? We are no sssuch thing."
+    b neutral "Princess, our powers are extremely limited whilst we are held captive here."
     p "I thought all you had to do was kiss a human or something, and the spell would be broken."
-    n "If that were the casssse, I'd have kissssed you firssst and asked questionssss later."
-    b "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found \"love\" and is reformed."
+    n smile "If that were the casssse, I'd have kissssed you firssst and asked questionssss later."
+    b angry "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found \"love\" and is reformed."
     p "Couldn't we overpower him? He doesn't seem that formidable..."
-    b "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you are a sorceress...?"
+    b smirk "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you are a sorceress...?"
     p "I am not. But I am interested in powerful magical objects. Do you know of any?"
-    b "There are many arcane tomes in the library that might describe such things. I have not read them, as they would be of no use to dragons."
+    b neutral "There are many arcane tomes in the library that might describe such things. I have not read them, as they would be of no use to dragons."
     p "Then I will seek out the library."
     jump library1
     
     
 label library1:
     scene bg library with fade
-    show cyril at midright with dissolve
+    show cyril hat neutral at midright with dissolve
     "It appears the library is already occupied..."
     c "I know this was you Niir!"
     "{i}He he he, ha ha ha...{/i}"
@@ -104,7 +104,7 @@ label library1:
 label sharebalrung:
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
-    show balrung at midright with dissolve
+    show balrung neutral at midright with dissolve
     b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
     
@@ -124,7 +124,7 @@ label sharecyril:
     p "That foolish mage has to be around here somewhere."
     scene bg corridor with fade
     p "Where {i}are{/i} you foolish mage?"
-    show cyril at center #TODO: with some flash-bang transition
+    show cyril hat neutral at center #TODO: with some flash-bang transition
     c "You called, your majesty?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
@@ -132,7 +132,7 @@ label sharecyril:
     c "I would come with you anywhere, your majesty."
     hide cyril with moveoutright
     scene bg library with fade
-    show cyril at center with moveinleft
+    show cyril hat neutral at center with moveinleft
     c "So what is it that you wish to show me?"
     p "This illustration of a scepter.  The Scepter of Lavendorm.  Is it real?"
     c "Quite real.  Once.  No one has seen it in quite some time."
@@ -195,7 +195,7 @@ label explore1:
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
     # TODO: rope drops
     # niir drops down
-    show niir at midright with moveintop
+    show niir neutral at midright with moveintop
     p "Well, what do we have here?"
     n "The ansssswer to all your problemsss."
     p "A piece of rope?"

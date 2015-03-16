@@ -5,7 +5,7 @@ label day5:
     "I was just finishing the unoriginal-yet-edible breakfast Moronious had dropped off for me when there was a knock at the door."
     
     if (route == "Niir"):
-        show cyril at midleft with moveinleft
+        show cyril hat neutral at midleft with moveinleft
         c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
         c "I saw you, your majesty."
         p "Saw me what?"
@@ -41,7 +41,7 @@ label day5:
                 # can you have both routes going at once? I think we need our endings to decide that.
                     
     elif (route == "Balrung"):
-        show niir at center with moveinleft
+        show niir neutral at center with moveinleft
         n "What do you ssssee in that old tortoisssse?"
         p "Good morning to you as well, Niir."
         n "Balrrrung hassss no sensssse of fun, and he won't be easy to manipulate. Even for you."
@@ -85,7 +85,7 @@ label day5:
             "Go and find out.":
                 p "I'll go and find out. There's no harm in that, surely."
                 scene bg exterior day with fade
-                show balrung at center with dissolve
+                show balrung neutral at center with dissolve
                 p "Oh! It's {b}you{/b}."
                 b "Yes, it is I. I'm surprised at you, Princess."
                 p "Why, because I followed your invitation?"
@@ -126,7 +126,7 @@ label day5:
 
 label balrung5:
     scene bg dungeon with fade
-    show balrung at center with dissolve
+    show balrung neutral at center with dissolve
     b "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
     p "You can save the flattery for later when Moronious can \"accidentally\" overhear you."
     b "That wasn't for Moronious; that was for you, my lady."
@@ -175,7 +175,7 @@ label balrung5:
     b "Yes, I resign. I've learned that much from my mistakes, at least."
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
     b "One day...perhaps."
-    show cyril at midleft with moveinleft
+    show cyril hat neutral at midleft with moveinleft
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
     b "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
@@ -197,22 +197,22 @@ label balrung5:
     b "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene dungeon with irisin
-    show balrung at center with come_closer
+    show balrung neutral at center with come_closer
     "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
     scene black with irisout
     b "Our poor Princess... she's been through so much."
     "He stroked my hair tenderly away from my face while Cyril gaped. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor; almost as good as me."
     c "Well I- I will just stay here and watch over the Princess until she recovers! I'll protect her from you, you, vituperous viper!"
     b "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
-    show niir at right with moveinright
+    show niir neutral at right with moveinright
     n "Why is the Princesss pretending to sssleep on your bed?"
     b "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
     c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my chatter is faster than my brain!"
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
     scene dungeon with fade
-    show balrung at center
-    show cyril at midleft
-    show niir at midright
+    show balrung neutral at center
+    show cyril hat neutral at midleft
+    show niir neutral at midright
     with dissolve
     p "Oh, thank you gentlemen for taking such good care of me. I don't know what came over me. But I'm so glad I can trust you... well, {b}some{/b} of you, anyway."
     "I glared at the mage, hoping he would feel even more guilty."
@@ -260,14 +260,14 @@ label niir5:
     n "Professsss love?!"
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
-    show niir at center with come_closer
+    show niir neutral at center with come_closer
 
     p "Hold me like this, with your hands here, in case he peeks out."
     n "I can do that, at leassssst."
     p "Now, say things you like about me, and I will do the same for you. I've heard that's what lovers often talk about."
     n "I suppossse."
     n "Oh, Princessss, your...dresss is ssssooo...shiny. And your earsss are ssso...sstrange. How can you even hearrr with those tiny things?"
-    show cyril at right with moveinright:
+    show cyril hat neutral at right with moveinright:
         zoom 0.5
         yalign 0.5
     p "I suppose that's a start. Don't just compliment my body, though, or he won't believe it's true love!"
@@ -286,9 +286,9 @@ label niir5:
     p "Your turn, Niir! Make it good; he has to believe you!"
     n "Yesss, how I've changed. If only I were frrreee, we'd live happily everrr afterrr!"
     p "If only you were free!"
-    show cyril at midright with reset_zoom
+    show cyril hat neutral at midright with reset_zoom
     c "Princess! You can't! Y-You mustn't believe him!"
-    show niir at center with reset_zoom
+    show niir neutral at center with reset_zoom
     p "Moronious! What a… surprise to see you here, interrupting our completely private conversation!"
     c "I warned you about him, Princess.  And I don’t believe any of this for a second!  You won’t fool old Cyril the Clever.  Errr, young Cyril.  I do quite forget my age some times."
     n "Nobody calls you Cccccyril the Cleverrr."
@@ -379,7 +379,7 @@ label trustfall:
     p "I am willing to trust you right now when you certainly don't deserve it.  Surely this goes a long way for your trust in me."
     n "Perhapssss."
     "I tipped backward, fighting every instinct to catch myself. Hopefully I had not miscalculated...!"
-    show niir at midleft with hpunch
+    show niir neutral at midleft with hpunch
     "He caught me awkwardly, almost dumping me backwards on my head before helping me stand upright. I smoothed my skirts and folded my arms."
     p "Good.  Then are we ready to go onto the next step in our diabolical plan to gain your freedom and my throne?"
     n "Perhapssss."
@@ -391,7 +391,7 @@ label cyril5:
     # scepter progress
     # DAY 5
     scene bg library with fade
-    show cyril at center with dissolve
+    show cyril hat neutral at center with dissolve
     
     c "I found it."
     p "My scepter? You are not as infantile as you seem."

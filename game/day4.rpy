@@ -54,8 +54,8 @@ label cyril4:
 
 label dragons4:
     scene bg dungeon with fade
-    show balrung at midright
-    show niir at right
+    show balrung neutral at midright
+    show niir neutral at right
     with dissolve
     
     b "Good morning, Princess. I trust you slept well?"
@@ -152,10 +152,10 @@ label niir4:
     n "Cooking?  Poetry?  Flowersss?  I’m out."
     b "Niir, isn't it worth {b}trying{/b} to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
     n "Affection, well why didn’t you sssssay so?"
-    show niir at center with move
+    show niir neutral at center with move
     p "It doesn't help to do that now, you imbecile, it has to be when Moronious is watching!"
-    show niir at midright
-    show balrung at quarterright with move
+    show niir neutral at midright
+    show balrung neutral at quarterright with move
     n "Soooo how much leeway do I get?" 
     b "Remember, you need to appear in love, not in lust... Perhaps you should practice a passionate, yet chaste embrace."
     n "Do you really think I can do that?"

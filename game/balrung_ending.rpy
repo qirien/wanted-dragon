@@ -9,7 +9,7 @@ label balrung_ending:
     p "Then we must follow the resonance and take it!"
     
     scene bg dungeon with fade
-    show cyril at midleft
+    show cyril hat neutral at midleft
     with moveinleft
     
     c "Ahhhh!"

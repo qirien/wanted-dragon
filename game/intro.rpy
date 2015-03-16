@@ -5,12 +5,12 @@ label intro:
     play music princess_theme
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p "But first... I’ll have to deal with the mage left to guard this place."
-    show cyril at center with moveinright
+    show cyril hat neutral at center with moveinright
     "{b}This{/b} is the mage in charge?! He's barely more than a child!"
     "...This is exactly the kind of inefficiency I intend to remedy when I am queen!"
     "Still... I’ll have to deal with him somehow."
-    c "Biggeldy, boggaldy, wap!"
-    c "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
+    c hat concerned "Biggeldy, boggaldy, wap!"
+    c hat surprised "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
 #    p "My name is..."
 #    $ p_name = renpy.input("What is your name?", "Chrysandra", length=30)
 #    p "I am Princess [p_name]."
@@ -27,20 +27,20 @@ label intro:
             
 label sweet:
     p "Oh hello! You must be in charge here. How lovely to make your acquaintance, Mr...?"
-    c "Merlonious.  Cyril Merlonious.  At least, the last time somebody called me it.  Which has been a while come to think of it.  "
-    c "Erm, wait a moment... it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  Did you find someone to relieve me?  Is that why you're here?"
-    c "I did so know this day would come."
+    c hat smile "Merlonious.  Cyril Merlonious.  At least, the last time somebody called me it.  Which has been a while come to think of it.  "
+    c hat surprised "Erm, wait a moment... it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  Did you find someone to relieve me?  Is that why you're here?"
+    c hat smile "I did so know this day would come."
     p "Yes, Moronious. Yes, I am here to relieve you. It’s quite a demotion for me, but well, one must perform one’s royal duties. So if you’ll just show me around, then you can be on your way and leave these… dragons in my care."
-    c "I can't tell you how happy I am to hear that!  I didn't think this day will come.  I must send word- oh!  I just need the royal seal from you.  Have you spoken with the council of mages?  Is everything in order?"
+    c hat laugh "I can't tell you how happy I am to hear that!  I didn't think this day will come.  I must send word- oh!  I just need the royal seal from you.  Have you spoken with the council of mages?  Is everything in order?"
     p "Oh, how dreadful! They didn’t send me with it! They must have assumed that any person of intelligence would immediately see my royal person and know to do whatever I say."
-    c "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
+    c hat concerned "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
-    c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
+    c hat smile "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
     "Ha ha, yes! Everyone falls for the princess-caught-in-the-rain ruse."
     hide cyril
     with moveoutleft
     scene bg hall with fade
-    show cyril at midright
+    show cyril hat neutral at midright
     with moveinright
     p "It is so cold in here; would you mind showing me to my room?"
     c "Your...room? Yes. Um. Well, you can have mine, that's probably the nicest. I mean, the only room that's not covered in dust, really."
@@ -55,7 +55,7 @@ label truth:
     hide cyril
     with moveoutleft
     scene bg hall with fade
-    show cyril at center
+    show cyril hat neutral at center
     with moveinright
     c "So, this is the castle of the banished.  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but I am pretty good with heating spells for the water."
     p "Yes, yes. Now, what can you tell me about the other... residents of this place?"
@@ -81,7 +81,7 @@ label room_intro:
     hide cyril
     with moveoutleft
     scene bg bedroom with fade
-    show cyril at midright
+    show cyril hat neutral at midright
     with moveinright
     p "{b}This{/b} is the best room in the castle?"    
     c "It is.  Well, I’ve tried to make it as comfortable as possible.  I have a few keepsakes from home in it and my frilly rug which does keep it warm in the middle of the cold snap.  "
@@ -99,7 +99,7 @@ label room_intro:
         "Call for Cyril.":
             scene bg corridor with fade
             p "Mage! Moronious! I'm ready for you now!"
-            show cyril at center with moveinleft
+            show cyril hat neutral at center with moveinright
             c "Ready for me to what?"
             p "I wish to speak to the dragons."
             c "If-if you wish me to take you there, I will, though I'm not sure what you'd want with them."
@@ -129,7 +129,7 @@ label explore:
     "I'll find out more without that silly mage following me around."
     scene bg corridor with fade
     "Now, which way...?"
-    show cyril at center with moveinleft
+    show cyril hat neutral at center with moveinright
     c "Princess! You're done with your b-b-bath, then? Please, let me show you around the castle."
     p "I do not require you at the moment. Leave me alone."
     c "Oh, I don't think I should. This castle can be quite confusing, and there's no servants or anyone to help you. Please, I'll show you around."
@@ -139,7 +139,7 @@ label meet_dragons:
     hide cyril
     with moveoutleft
     scene bg stairs with fade
-    show cyril at center
+    show cyril hat neutral at center
     with moveinright
     play music evil_theme    
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well that's not important and I most certainly did not cry for days about it."
@@ -150,57 +150,57 @@ label meet_dragons:
     "And yet also intriguing."
     c "Ah, yes.  Now where did I keep that key.  It is a magic key and it should be... yes.  There it is, right in the stone there.  Accimeidum! Now we shall enter."
     scene bg dungeon with fade
-    show cyril at quarterleft
+    show cyril hat neutral at quarterleft
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
-    show balrung at quarterright with moveinright
+    show balrung neutral at quarterright with moveinright
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
-    show niir at center with moveinright
+    show niir neutral at center with moveinright
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu dragon_chat:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
             p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
-            n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
-            b "There are many injustices I would fight, had I only the freedom to do so."
+            n smirk "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
+            b angry "There are many injustices I would fight, had I only the freedom to do so."
             c "Now, now.  Behave, you two."
             c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
-            b "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
+            b angry "Well, would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human-like appearance is not our normal state, you know."
             c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
-            n "I would call it mistreatment to be kept away from the world daily - to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
+            n smirk "I would call it mistreatment to be kept away from the world daily - to see the sights and smell the wome- flowers.  It has been unfortunate.  Perhapssss you are here to help though?  Eassse the pain?"
     
     # Whom to talk to?
     menu:
         "Address Niir.":
 
             p "Niir...what an interesting name. Tell me about yourself."
-            n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense for amusement or play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
+            n concerned "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense for amusement or play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
             p "Tell me what it is, and then I shall decide."
-            n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  Are you afrrrraid of heights?  Perhaps you would like see some of the ssssights of the cassstle?"
+            n mischief "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  Are you afrrrraid of heights?  Perhaps you would like see some of the ssssights of the cassstle?"
             p "What did you have in mind?"
-            n "That, is my little sssecret.  You will have to help me leave to find out."
+            n smirk "That, is my little sssecret.  You will have to help me leave to find out."
             
             menu:
                 "\"I shall consider your... offer, Niir.\"":
                     $ niir_affection += 1
                     p "I shall consider your... offer, Niir."
-                    n "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
+                    n mischief "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
                 
                 "\"Not interested.\"":
                     p "Not interested."
-                    n "Pity.  I could have a lot of ussse for someone like you as my plaything."
-                    b "This Princess is no one’s ‘plaything’, Niir, least of all yours."
-                    n "You have no ssssense of fun.  But if you would rather spend time with thisss sourpussss, then you can make your choice."
+                    n neutral "Pity.  I could have a lot of ussse for someone like you as my plaything."
+                    b shout "This Princess is no one’s ‘plaything’, Niir, least of all yours."
+                    n frown "You have no ssssense of fun.  But if you would rather spend time with thisss sourpussss, then you can make your choice."
 
         "Address Balrung.":
             $ balrung_affection += 1
             p "Balrung...how long have you been here?"
-            b "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
-            b "Well, I do, at any rate. I’m not sure I can say the same for my heartless young companion here."
-            n "Heartlessss? I assssure you, my heart beats quite vigorously."
+            b neutral "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
+            b smile "Well, I do, at any rate. I’m not sure I can say the same for my heartless young companion here."
+            n mischief "Heartlessss? I assssure you, my heart beats quite vigorously."
         
         "Address Cyril.":
             $ cyril_affection += 1
@@ -213,23 +213,23 @@ label meet_dragons:
             c "And I was telling them all that something must be done about those pesky dragons..."
             c "And then they all left.  And put out the lamps and I was just there.  So I guess the council had made their decision after all, that I was to do something about the dragons.  And here I am."
 
-    b "But, Princess, tell us about yourself. How is the royal family?"
+    b smile "But, Princess, tell us about yourself. How is the royal family?"
     p "My...family?"
-    b "Your father, the king, is he well?"    
+    b smirk "Your father, the king, is he well?"    
     p "Yes, very well, thank you. Do- do you know him?"
-    b "I met him once, before my sojourn here. He seemed capable, if a bit naïve. And the Queen?"
+    b smile "I met him once, before my sojourn here. He seemed capable, if a bit naïve. And the Queen?"
     p "My mother died several months ago."
-    b "I'm terribly sorry; how rude of me to bring it up! Please accept my apologies, Princess."
+    b neutral "I'm terribly sorry; how rude of me to bring it up! Please accept my apologies, Princess."
     p "You didn't know."
     c "B-but, he {b}did{/b} know, I mentioned it several weeks ago? I think? Or maybe I just thought of mentioning it? Or maybe I just thought about thinking about mentioning it?"
-    b "I don't think so, Merlonious."
+    b angry "I don't think so, Merlonious."
     p "Anyway, I am finished here...for now."
-    n "Ssseee you later, Prrrrincessss...."
+    n smirk "Ssseee you later, Prrrrincessss...."
     hide cyril
     with moveoutleft
 
     scene bg stairs with fade
-    show cyril at midleft
+    show cyril hat neutral at center
     with moveinright
     # After talked to Niir, Balrung, or Cyril
     # TODO: play music cyril_theme
@@ -257,7 +257,7 @@ label broughtfood:
 label joinmage:
     $ cyril_affection += 1
     scene bg kitchen with fade
-    show cyril at midright
+    show cyril hat neutral at midright
     with moveinleft
     c "Ah, yes Princess.  So glad of you to join me."
     c "I mean glad of me."
