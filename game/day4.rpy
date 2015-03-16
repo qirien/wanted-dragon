@@ -58,24 +58,24 @@ label dragons4:
     show niir neutral at right
     with dissolve
     
-    b "Good morning, Princess. I trust you slept well?"
+    b smile "Good morning, Princess. I trust you slept well?"
     p "That seems a silly thing to trust in. How can I sleep well when my kingdom is in the hands of a usurper?!"
-    b "Well, you looked so radiant that I must have assumed it."
+    b smirk "Well, you looked so radiant that I must have assumed it."
     p "Well, I haven't come to discuss my radiance. I've come to offer you a proposal."
-    b "Really? Please continue."
+    b neutral "Really? Please continue."
     p "That mage will release you from your curse if you fall in love, right?"
-    b "And have demonstrated reform, yes."
+    b angry "And have demonstrated reform, yes."
 
     menu:
         "\"We can fool him.\"":
             p "We should be able to fool him easily."
-            b "Yes... you may be just what we've been waiting for. "
-            extend "So, how shall we convince him that you and Niir are in love, and he will trouble the other ladies no more?"
+            b smile "Yes... you may be just what we've been waiting for. "
+            extend smirk "So, how shall we convince him that you and Niir are in love, and he will trouble the other ladies no more?"
             
         "\"It won't be hard for you to love me.\"":
             p "Well, aren't you half-mad with love for me already, Niir?"
             n "Mad, yessss. Cccertainly not love!"
-            b "No, I'm afraid Niir always acts this way. But, perhaps he could learn to love you, given time."
+            b smile eyes closed "No, I'm afraid Niir always acts this way. But, perhaps he could learn to love you, given time."
             p "I don't have that much time."
             
     menu:
@@ -84,15 +84,15 @@ label dragons4:
                 
         "\"Actually, I meant you, Balrung.\"":
             p "I think you would make a better vassal, Balrung. I have little hope that Niir could appear civilized."
-            b "Princess! I'm flattered. Though I'll admit, I assumed you'd want someone..."
+            b smile blush "Princess! I'm flattered. Though I'll admit, I assumed you'd want someone..."
             n "Lessss ssscarred? Lesss ancient? More agile? More sssensual?"
-            b "Yes, all of those things. I am not young, Princess."
+            b neutral "Yes, all of those things. I am not young, Princess."
             menu:
                 "\"You're right. Niir it is.\"":
                     jump niir4
                 "\"I prefer you.\"":
                     p "I am the princess!  {b}I{/b} decide who shall be my minion, and I have chosen you! Do not question my decisions."
-                    b "Interesting. "
+                    b smirk "Interesting. "
                     extend "Perhaps you would care to join me in a game of Queens and Pawns?"
                     jump balrung4
           
@@ -100,40 +100,40 @@ label balrung4:
     $ balrung_affection += 1
     $ route = "Balrung"
     p "Queens and Pawns? Is this a joke?"
-    b "I can hardly think of a game more fit for someone who wishes to retake a kingdom."
+    b smile "I can hardly think of a game more fit for someone who wishes to retake a kingdom."
     n "You should play ssstrip Queensss and Pawnssss."
-    b "Niir, perhaps you would like to play against the Princess?"
+    b smile eyes closed "Niir, perhaps you would like to play against the Princess?"
     n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
     hide niir with moveoutright
-    b "He never was very good at this game. I thought I could teach him, but...he doesn't wish me to teach him anything."
+    b neutral "He never was very good at this game. I thought I could teach him, but...he doesn't wish me to teach him anything."
     p "I used to play against my father; he wasn't very good, though, for I would always win. Are you any good?"
     b "I've had so few people to play against, lately, and Merlonious won't play with me anymore."
     p "Why not?"
-    b "He claims he can't concentrate when Niir's around, so of course whever I challenge him to play, Niir comes to distract him."
+    b smirk "He claims he can't concentrate when Niir's around, so of course whever I challenge him to play, Niir comes to distract him."
     p "Well, I will play against you. I will go first."
-    b "As you wish."
+    b neutral "As you wish."
     p "There's only one thing I don't understand about this game."
-    b "Only one thing?"
+    b smile "Only one thing?"
     p "Why are there so many queens? There should only be one queen!"
-    b "Well, at the end there {b}is{/b} only one queen, yes? And whatever pawns she manages to bring with her."
+    b neutral "Well, at the end there {b}is{/b} only one queen, yes? And whatever pawns she manages to bring with her."
     p "Still...if there's more than one, they aren't really queens. Just princesses."
-    b "It must be a hard lot to be a princess."
+    b smirk "It must be a hard lot to be a princess."
     p "I know! So close to power, and to have it ripped away..."
-    b "You know, the part I find most interesting is that in this game, there are no wizards, or knights, or sages. Merely those with power, and those used by those in power."
+    b determined "You know, the part I find most interesting is that in this game, there are no wizards, or knights, or sages. Merely those with power, and those used by those in power."
     p "That part, at least is true to life. Take that!"
-    b "But which are you, I wonder?"
+    b smirk "But which are you, I wonder?"
     p "Ha ha ha! Who's in power now?!"
-    b "That was a daring move. Reckless, but daring. Your turn."
+    b neutral "That was a daring move. Reckless, but daring. Your turn."
     p "Hmph. You only have one queen left."
-    b "But I have all my pawns. Your queens are quite unguarded."
+    b smile "But I have all my pawns. Your queens are quite unguarded."
     p "The pawns are insignificant."
-    b "I disagree. Your move."
+    b smile eyes closed "I disagree. Your move."
     p "I only need one queen!"
-    b "No, I'm afraid it won't be enough. You have no moves left."
+    b smirk "No, I'm afraid it won't be enough. You have no moves left."
     p "..."
-    b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
+    b smile eyes closed "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
     p "A warm-up, yes...perhaps. I'm leaving now."
-    b "Until next time, Princess."
+    b smirk "Until next time, Princess."
     return
     
 label niir4:

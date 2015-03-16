@@ -11,10 +11,12 @@ label balrung_ending:
     scene bg dungeon with fade
     show cyril hat neutral at midleft
     with moveinleft
-    
+    "When we got to the dungeon, Balrung and Niir were nowhere to be seen."
     c "Ahhhh!"
     p "Moronious! Don't just stand there; we need to get the scepter!"
     c "The dragons... the curse is broken! That is...not...RIGHT!"
+    #TODO show dragon shadow/head at right with vpunch
+    "The ground trembled, and a giant shadow emerged from the corner of the room. No, not a shadow-- a dragon. Two dragons."
     b "It {b}is{/b} right! Your prejudice and arrogance have gone far beyond justice and on to revenge for crimes not yet committed!"
     #TODO: lightning crackle
     n "Nicccce work, old man. But I'm leaving."

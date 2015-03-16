@@ -82,7 +82,7 @@ label day6:
 
         c "Perhaps, I just need to run a warm bath."
         c "Yes, that’ll do the trick."
-        hide mage with moveoutleft
+        hide cyril with moveoutleft
 
         "While he’s in the bath, I’ll just slip out and see that letter he was reading..."
 
@@ -105,76 +105,93 @@ label day6:
         show niir neutral at midright
         show balrung neutral at midleft
         with dissolve
-        b "That Princess is really quite...something."
-        b "Do you know, Niir, that she beat me at Queens and Pawns yesterday? Nobody has done that since..."
+        b smile blush "That Princess is really quite...something."
+        b smirk "Do you know, Niir, she beat me at Queens and Pawns yesterday? Nobody has done that since..."
         n "Ssssince Myriah?"
-        b "Yes...she distracted me by asking about my imprisonment. Clever human!"
+        b neutral "Yes...she accomplished it mostly by distracting me with questions, but even so... Clever, for a human!"
         n "Sssso what?"
-        b "Well, I don't wish to get your hopes up in vain, but it seems my long imprisonment may soon be over."
+        b smirk "Well, I don't wish to get your hopes up in vain, but it seems my long imprisonment may soon be over."
         n "How niccce for {b}you{/b}."
-        b "If we can count on your aid as well, then perhaps it's time to end this preposterous tradition of imprisoning ambitious dragons."
+        b determined "If we can count on your aid as well, then perhaps it's time to end this preposterous tradition of imprisoning ambitious dragons."
         n "I'm lissstening."
+        b neutral "I need you to go to Merlonious later today. Play one of your tricks on him or whatever it is you normally do. And then mention that the Princess and I are down here alone."
+        n "But then he'll come and interrrupt you."
+        b smirk "Yes, that's the idea."
+        n "How does thissss help me?"
+        b determined "When I'm a free dragon, I'll come back for you."
+        n "That'sss what Firgol said, and he hasn't even come to visssit since marrying Princessss Dianthus."
+        b neutral "And you were a fool to believe him. But you know you can trust me, Niir. I've been like a father to you."
+        n "The fatherrr I never wanted."
+        b smirk "Exactly. I look after you even though you show no gratitude or respect and give me nothing in return."
+        n "...I supposssse I could do this for you."
+        b smile "Thank you, Niir. I always knew Merlonious was wrong about you."
+        n "I'm not doing it to be niccce! I'm doing it becausssse that mage will hate it."
+        hide niir with moveoutleft
+        "I pressed myself to the wall as Niir left going the other direction."
+        "After a few moments of quiet, I entered the dungeon."
         
     return
         
 # She does something nice for Balrung.
 label balrung6:
+    $ balrung_affection += 1
     scene dungeon with fade
     show balrung neutral at center with dissolve
-    b "My dear lady..."
+    b smirk "My dear lady..."
     "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
     "I smirked in return. Playing at love was more fun than I had imagined. No wonder ordinary people spend so much time on it."
     p "You may call me Chrysandra."
-    b "Chrysandra...golden flower? Fitting... lovely as a blossom, tenacious as metal, yet malleable enough to thrive in any situation."
+    b neutral "Chrysandra...golden flower? Fitting... lovely as a blossom, tenacious as metal, yet malleable enough to thrive in any situation."
     p "That's what my father says. Though if I was really so precious to him, he'd have made me Queen."
     p "Anyway, I brought you something."
-    b "Princess, the brilliance of your presence is gift enough to soften this stone heart of mine. What more could I ask?"
+    b smirk "Princess, the brilliance of your presence is gift enough to soften this stone heart of mine. What more could I ask?"
     p "How about a Hibernation Libation?"
     "I handed him a flask containing the gloopy, dark green potion I had made. It was one of the few whose ingredients were commonplace enough to be found in and around the Castle [castle_name]."
-    b "I...I'm touched. How did you know I had trouble sleeping?"
+    b smile blush "I...I'm touched. How did you know I had insomnia?"
     p "Oh! I assumed you would use it on Niir when you wanted some peace and quiet. Or on that fool mage. I know you're not foolish enough to use it on me."
-    b "It has many uses, I see.  How many doses are in here?"
+    b neutral "It has many uses, I see.  How many doses are in here?"
     p "That's enough to make a human sleep for two days. I'm not sure how it would affect a dragon."
-    b "Well...thank you. I'm afraid I don't have anything for you."
-    p "You will, I'm sure. For now, let us play another game together. I hinted to Moronious that I would be down here, so he may drop by later and we can play with him some more."
-    b "Splendid. Why don't you go first this time?"
+    b smirk "Well...thank you. I'm afraid I don't have anything for you."
+    p "You will, I'm sure. For now, let us play another game together. I expect you'll have arranged for Moronious to drop by later, so he can witness our 'true love'?"
+    b smile "Yes, indeed... how did you know?"
+    p "I have resources of my own."
+    b smile eyes closed "Splendid. Why don't you go first this time?"
     p "Yes, I will...there."
-    b "That's an interesting opening move."
+    b smirk "That's an interesting opening move."
     p "I know All the Queen's Men is usually derided as transparent and inefficient, but it does have its uses."
-    b "It is one way to control the board early."
+    b neutral "It is one way to control the board early."
     p "It sets up certain...expectations."
-    b "And illusions."
+    b determined "And illusions."
     p "Illusions? Why, what do you think I'm up to?"
-    b "It's obvious. But I don't mind playing along with you."
+    b smirk "It's obvious. But I don't mind playing along with you."
     p "Well, of course the first plot is obvious. But that's only to distract you from uncovering the second, third, and fourth plots."
-    b "How amusing it is to watch people who think they are cleverly manipulating you, when in reality you have already predicted their every move."
+    b smile "How amusing it is to watch people who think they are cleverly manipulating you, when in reality you have already predicted their every move."
     p "Ha! Did you predict this move?!"
-    b "Yes, that's why I had this setup here waiting for you."
+    b neutral "Yes, that's why I had this setup here waiting for you."
     p "No! Ohhh, you! You're distracting me with all your talk of plots and illusions!"
-    b "A valiant effort, but you should know that I won't be tricked by the Distressed Princess Bluff."
-    p "And I won't be misled by your Experienced Brooding Old Man Feint!"
-    b "You don't have to fall for it in order for it to be effective. There goes your last Queen."
+    b smirk "A valiant effort, but you should know that I won't be tricked by the Distressed Princess Bluff."
+    p "And I won't be misled by your Brooding Old Man Feint!"
+    b smile "You don't have to fall for it in order for it to be effective. There goes your last Queen."
     p "Ohhhh... I suppose you win, this time."
     show cyril hat neutral at left with moveinleft
     c "Princess?"
     p "Moronious! How long have you been lurking over there?"
     show cyril hat neutral at midleft
-    show balrung neutral at midright
+    show balrung smile at midright
     with move
     c "I ju-just came to check on you, make sure you were safe..."
     p "Oh yes, Balrung is quite the gentleman. I'm not sure why you're so worried about him; the most dangerous thing he's done is arouse my temper by beating me at Queens and Pawns."
     c "You two do seem to- to get along."
     c "But it's not enough! A person, no, a {b}dragon{/b}, cannot change so easily!"
-    p "I have many powers, mage; you'd do well not to underestimate me."
-    b "Do you think allowing myself to love is {b}easy{/b}? It is not! I learned from Myriah the price of loving a human!"
+    b determined "Do you think allowing myself to love is {b}easy{/b}? It is not! I learned from Myriah the price of loving a human!"
     c "And...do you, do you feel the same way, Princess?"
     p "Balrung is charming and useful, so of course I love him."
     c "...Y-you don't even know! You two can't fathom what true l-love is!"
     hide cyril with moveoutleft
     
-    b "I'm afraid it may not be possible to convince him, Chrysandra."
+    b angry "I'm afraid it may not be possible to convince him, Chrysandra."
     p "Don't give up, yet. Perhaps we just need to give him some time..."
-    b "Perhaps..."
+    b neutral "Perhaps..."
     return
     
 label niir6:

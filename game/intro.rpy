@@ -1,7 +1,7 @@
 
 # The game starts here.
 label intro:
-    scene bg gate with fade
+    scene bg gate dusk with fade
     play music princess_theme
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p "But first... I’ll have to deal with the mage left to guard this place."
@@ -192,7 +192,7 @@ label meet_dragons:
                 "\"Not interested.\"":
                     p "Not interested."
                     n neutral "Pity.  I could have a lot of ussse for someone like you as my plaything."
-                    b shout "This Princess is no one’s ‘plaything’, Niir, least of all yours."
+                    b determined "This Princess is no one’s ‘plaything’, Niir, least of all yours."
                     n frown "You have no ssssense of fun.  But if you would rather spend time with thisss sourpussss, then you can make your choice."
 
         "Address Balrung.":

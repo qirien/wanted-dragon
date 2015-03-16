@@ -224,20 +224,20 @@ label cyril3:
 label balrung3:
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
-    b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
+    b smile "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
-    b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
+    b smirk "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
     p "No, no of course not!"
     "Is it that obvious?!"
-    b "Oh really? My apologies, then. What {b}does{/b} bring you here?"
+    b smile eyes closed "Oh really? My apologies, then. What {b}does{/b} bring you here?"
     if (asked_scepter == "Balrung"):
         p "Have you found out more about the location of that scepter I asked you about?"
-        b "No, I'm afraid not. Its powers must be dormant at the moment."
+        b neutral "No, I'm afraid not. Its powers must be dormant at the moment."
         p "You are beginning to seem useless to me."
     else:
         p "Do you know anything about the Scepter of Lavendorm?"
         call balrung_scepter
-    b "Well, as I cannot offer you a scepter at the moment, perhaps you would stay and talk with me for a bit? Your company would be much appreciated."
+    b neutral "Well, as I cannot offer you a scepter at the moment, perhaps you would stay and talk with me for a bit? Your company would be much appreciated."
     menu:
         "\"I will join you.\"":
             p "Yes, I can spare you a few moments of my time."
@@ -246,17 +246,17 @@ label balrung3:
             jump cyril3
         "\"I will look for it myself.\"" if (asked_scepter != "no one"):
             p "I will go and look for it myself."
-            # TODO: Add exploration in here.
+            jump explore1
             
-    b "What do you do? When you don't have a kingdom to reclaim, that is."
+    b smile "What do you do? When you don't have a kingdom to reclaim, that is."
     p "I have many pursuits. Reading, hunting, music, alchemy, scheming, plotting."
-    b "Ha! The usual royal activities, then."
+    b smirk "Ha! The usual royal activities, then."
     p "And what about you?"
-    b "I sometimes read from the library, though human books are so maudlin and predictable."
+    b neutral "I sometimes read from the library, though human books are so maudlin and predictable."
     p "Are there dragon books?"
-    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
+    b smile "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
     p "Dragon poetry? What is it like?"
-    b "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
+    b smirk "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
     
     book "Fly:"
     book "Wings soar,"
@@ -266,7 +266,7 @@ label balrung3:
     book "two sinuous serpents"
     book "soar rapturous."  #TODO: is this too...sexy?
     nvl clear
-    b "No, no, not that one. The one on the other side of the page."
+    b smile blush "No, no, not that one. The one on the other side of the page."
     p "Oh! Of-of course!"
     
     book "Freedom:"
@@ -278,23 +278,23 @@ label balrung3:
     book "Revel, love, vanquish."
     nvl clear
     
-    b "What do you think?"
+    b neutral "What do you think?"
     menu:
         "\"Words, words, words. Boring!\"":
             p "Words, words, and more words. Boring and useless."
-            b "I wouldn't underestimate their power. Sometimes ten words can accomplish what ten armies cannot."
+            b angry "I wouldn't underestimate their power. Sometimes ten words can accomplish what ten armies cannot."
             p "I'd prefer the armies."
-            b "For your purposes, perhaps armies would work better."
+            b smirk "For your purposes, perhaps armies would work better."
         "\"I like the 'vanquish' part.\"":
             $ balrung_affection += 1
             p "I like the part about vanquishing. Why do you like this poem so much?"
-            b "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
+            b neutral "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
     p "What form of poetry is this? I see no rhymes, no pattern of syllables."
-    b "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
+    b smile "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
     p "That's it?"
-    b "And, the ending sound of each word must be the starting sound of the next word. This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
+    b neutral "And, the ending sound of each word must be the starting sound of the next word. This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
     p "Yes, you are. Goodbye."
-    b "Another time, perhaps."
+    b smirk "Another time, perhaps."
     return
     
 label niir3:

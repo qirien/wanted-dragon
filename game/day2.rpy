@@ -92,7 +92,7 @@ label day2:
     p "You... understand?"
     b "Those who fear power are often overly vindictive against those who use it."
     p "Vindictive, yes. Have you met my sister, Magnolia?"
-    b "Not precisely. But I knew someone quite like her, once. Afraid of my power."
+    b "No, but I knew someone quite like her, once. Afraid of my power."
     p "Self-righteous."
     b "Ambitious."
     p "Narcissistic."

@@ -44,7 +44,7 @@ label day5:
         show niir neutral at center with moveinleft
         n "What do you ssssee in that old tortoisssse?"
         p "Good morning to you as well, Niir."
-        n "Balrrrung hassss no sensssse of fun, and he won't be easy to manipulate. Even for you."
+        n "Balrrrung hassss no sensssse of fun, and he won't be easy to contrrrol. Even for you."
         p "What concern is it of yours?! Or are you jealous, perhaps? I could use another minion, if you also want the job."
         n "The mage will never believe you have fallen in love with {b}him{/b}."
         p "Why not? Isn't that supposed to be the great thing about love? It's blind, knows no boundaries, is all you need, etc, etc?"
@@ -127,97 +127,97 @@ label day5:
 label balrung5:
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
-    b "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
+    b smile "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
     p "You can save the flattery for later when Moronious can \"accidentally\" overhear you."
-    b "That wasn't for Moronious; that was for you, my lady."
-    p "W-well, what shall we do together?"
-    b "Would you care to play Queens and Pawns?"
+    b smile blush "That wasn't for Moronious; that was for you, my lady. "
+    extend smile "Would you care to play Queens and Pawns?"
     p "I suppose there's not much else to do in this wretched dungeon. You may go first."
-    b "How generous of you."
+    b smirk "How generous of you."
     p "How did you come to be imprisoned here, anyway? I've heard you did something quite terrible."
-    b "Terrible? Yes...but it's not that simple. Your turn."
+    b neutral "Terrible? Yes...but it's not that simple. Your turn."
     p "Interesting move. Tell me what happened. I want to hear your version of events, not just Moronious' self-righteous justification for your imprisonment."
-    b "You want to hear it? Well..."
+    b smirk "You want to hear it? Well..."
     menu:
         "Pay attention":
-            b "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
-            b "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and (though she never said it) to prove to us that humans were worth talking to."
-            b "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
-            b "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
+            b determined "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
+            b neutral "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and (though she never said it) to prove to us that humans were worth talking to."
+            b smirk "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
+            b angry "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
             "I was so caught up in what he was saying that I almost missed how he had setup his Pawns in a chain reaction. I saw it just in time."
         "Focus on strategy.":
-            b "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
+            b determined "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
             "He's trying to draw my attention with his Queens while the Pawns setup a chain reaction! My Queens shall whittle down his defenses while he's not paying attention."
 
     p "Go on. Your move."
-    b "So when I invited her to join me, permanently, as a part of a human-dragon marriage alliance, I thought she'd be honored. It was her life's work, after all."
-    b "But she refused. She wanted {b}me{/b} to join {b}her{/b}. You humans always want to be the ones in charge."
+    b neutral "So when I invited her to join me, permanently, as a part of a human-dragon marriage alliance, I thought she'd be honored. It was her life's work, after all."
+    b determined "But she refused. She wanted {b}me{/b} to join {b}her{/b}. You humans always want to be the ones in charge."
     p "Of course we do. But wouldn't that accomplish the same thing?"
-    b "It's completely different! You humans want to use us, subordinate us, rule us! I wanted an alliance of equal partners!"
-    b "I should have waited. I should have elucidated my proposal more elegantly."
+    b angry "It's completely different! You humans want to use us, subordinate us, rule us! I wanted an alliance of equal partners!"
+    b neutral "I should have waited. I should have elucidated my proposal more elegantly."
     p "What did you do?"
-    b "When she wouldn't come with me, I brought her with me anyway."
+    b smirk "When she wouldn't come with me, I brought her with me anyway."
     p "You kidnapped her?!"
-    b "No! I would have let her leave, once she had listened to me! She refused to even talk to me! And her mentors were poisoning her mind against me. I had to bring her away from all of that."
+    b angry "No! I would have let her leave, once she had listened to me! She refused to even talk to me! And her mentors were poisoning her mind against me. I had to bring her away from all of that."
     p "Hmph. Did it work?"
-    b "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison. To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
+    b neutral "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison. To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
     menu:
         "Serves you right.":
                     p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her here with you."
-                    b "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
+                    b angry "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
         "You loved her.":
                     p "You loved her, then?"
-                    b "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
+                    b angry "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
                     $ balrung_affection += 1
 
     p "You were a fool for discarding your strategy in favor of emotion. Much like in this game. Resign now, while you still can!"
-    b "Resign? But...oh, I see. I've lost, haven't I? Well done, Princess."
-    b "Yes, I resign. I've learned that much from my mistakes, at least."
+    b determined "Resign? But...oh, I see. I've lost, haven't I? Well done, Princess."
+    b neutral "Yes, I resign. I've learned that much from my mistakes, at least."
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
-    b "One day...perhaps."
+    b smile "One day...perhaps."
     show cyril hat neutral at midleft with moveinleft
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
-    b "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
+    b smirk "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
     c "Well, yes, of course, but-"
     p "Now, Balrung, stop flattering me so much or I shall begin to suspect you like me. Weren't you just saying dragons were incapable of that, Moronious?"
     c "Y-yes, they are! Maybe not all. But definitely this one!"
-    b "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."# to soften up this old stone heart of mine."
+    b smile "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."
     c "The r-r-right woman?! Surely you don't mean Princess [p_name]?!"
     p "You don't believe I could induce feelings of love?! How cruel!"
-    b "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's delicate feelings!"
+    b neutral "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's delicate feelings!"
     c "Her delicate...feelings?!"
     p "Oh, yes, I'm quite overcome, I do think I might faint."
     c "Faint?! Um, well, ah, what should we do?!"
+    show balrung smile blush with dissolve
     "I pressed my hand to my forehead and collapsed into Balrung's arms. That's what heroines of love stories are always doing; it should help convince that fool Moronious."
     scene black
     c "St-stop that! You mustn't hold the Princess that way!"
-    b "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
+    b smirk "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
     c "Well, no, I wouldn't want that, but- I'm not- you can't!"
-    b "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
+    b smile blush "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene dungeon with irisin
-    show balrung neutral at center with come_closer
+    show balrung smile at center with come_closer
     "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
     scene black with irisout
-    b "Our poor Princess... she's been through so much."
+    b smile "Our poor Princess... she's been through so much."
     "He stroked my hair tenderly away from my face while Cyril gaped. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor; almost as good as me."
     c "Well I- I will just stay here and watch over the Princess until she recovers! I'll protect her from you, you, vituperous viper!"
-    b "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
+    b smirk "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
     show niir neutral at right with moveinright
     n "Why is the Princesss pretending to sssleep on your bed?"
-    b "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
-    c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my chatter is faster than my brain!"
+    b smile eyes closed "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
+    c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my batter is faster than my train! I mean, my chatter is faster than my brain..."
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
     scene dungeon with fade
-    show balrung neutral at center
+    show balrung smirk at center
     show cyril hat neutral at midleft
     show niir neutral at midright
     with dissolve
     p "Oh, thank you gentlemen for taking such good care of me. I don't know what came over me. But I'm so glad I can trust you... well, {b}some{/b} of you, anyway."
     "I glared at the mage, hoping he would feel even more guilty."
     p "And now I will depart, so please excuse me."
-    b "Until next we meet, Princess."
+    b smile "Until next we meet, Princess."
     
     return
 
