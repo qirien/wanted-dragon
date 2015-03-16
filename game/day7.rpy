@@ -153,11 +153,21 @@ label our_enemy:
     b smile blush "But for now, my lady..."
     show balrung at come_closer with dissolve
     "He bent down and kissed my forehead. Was this what it felt like to have someone be in love with you? It felt like...{b}power{/b}, delicious and thrilling."
-    "I wanted more."
-    "I grabbed his vest and pulled his head down to my level."
-    show balrung determined with dissolve
-    p "You will kiss your queen goodnight."
-    b smirk "Goodnight, my Queen."
+    menu:
+        "Kiss him back":
+            $ balrung_affection += 1
+            "I wanted more."
+            "I grabbed his vest and pulled his head down to my level."
+            show balrung determined with dissolve
+            p "You will kiss your queen goodnight."            
+        "Slap him":
+            $ balrung_affection -= 1
+            show balrung determined at reset_zoom with hpunch
+            p "You presume too much, minion."
+            
+        "Say good night":
+            p "Good night, Balrung."
     
+    b smirk "Goodnight, my Queen."
     scene black with fade
     return
