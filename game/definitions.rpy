@@ -20,10 +20,10 @@ init -1:
     # CHARACTERS
     #
 
-    define p = DynamicCharacter("p_name", image="princess", color="#c8ffc8") #TODO: make her side image
-    define b = Character('Balrug', image="balrung", color="#c8ffc8")
-    define c = Character('Cyril Merlonious', image="cyril", color="#c8ffc8")
-    define n = Character('Niir', image="niir", color="#c8ffc8")
+    define p = DynamicCharacter("p_name", image="princess", color="#3390a4")
+    define b = Character('Balrug', image="balrung", color="#a41c1c")
+    define c = Character('Cyril Merlonious', image="cyril", color="#7b1f43")
+    define n = Character('Niir', image="niir", color="#fec54d")
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)
     define m_write = Character("Magnolia", kind=nvl)
@@ -102,6 +102,7 @@ init -1:
     define flash = Fade(.25, 0, .75, color="#fff")
     define red_flash = Fade(.25, 0, .75, color="#a90000")
     define blood = Fade(.25, 0, .25, color="#f00")
+    define dissolve = Dissolve(0.5, alpha=True)
     transform come_closer:
         zoom 1.5
         yalign 0.0
@@ -109,6 +110,16 @@ init -1:
     transform reset_zoom:
         zoom 1.0
         yalign 1.0
+
+    transform basicfade:
+        on show:
+            linear 1.0 alpha 1.0
+        on hide:
+            linear 1.0 alpha 0.0
+        on replace:
+            linear 1.0 alpha 1.0
+        on replaced:
+            linear 1.0 alpha 0.0        
     
     #
     # MUSIC

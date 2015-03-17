@@ -255,7 +255,7 @@ init -1 python hide:
     config.exit_replay_transition = None
 
     ## Used when the image is changed by a say statement with image attributes.
-    config.say_attribute_transition = None
+    config.say_attribute_transition = dissolve
 
     #########################################
     ## This is the name of the directory where the game's data is

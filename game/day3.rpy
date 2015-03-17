@@ -1,5 +1,5 @@
 label day3:
-    scene bg bedroom with fade
+    scene bg bedroom day with fade
     
     p "Ugh, this castle is so cold and dank. The snow hasn't quite melted yet, here. But the birds are still out..."
     p "Strange... one of them is flying this way. Almost as if it's going to-"

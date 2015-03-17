@@ -1,6 +1,9 @@
 # DAY 7
 label day7:
-    # Whoever's route she didn't choose hinders her
+    # Another letter from home tells her that the Coronation is in three days!
+    
+    
+    # Whoever's route she didn't choose hinders her?
     if (route == "Cyril"):
         call cyril7
         

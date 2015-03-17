@@ -87,7 +87,7 @@ label truth:
 label room_intro:
     hide cyril
     with moveoutleft
-    scene bg bedroom with fade
+    scene bg bedroom dusk with fade
     show cyril hat neutral at midright
     with moveinright
     p "{b}This{/b} is the best room in the castle?"    
@@ -98,7 +98,7 @@ label room_intro:
     p "..."
     #TODO: SHOWER?
     scene black with fade
-    scene bg bedroom with fade
+    scene bg bedroom dusk with fade
     
     "That’s better! One of these days I will need to look into obtaining my own weather mage...awful that I should be drenched at the whim of the mere skies)."
     "But now to meet with the dragons..."
@@ -159,9 +159,9 @@ label meet_dragons:
     scene bg dungeon with fade
     show cyril hat neutral at quarterleft
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
-    show balrung neutral at quarterright with moveinright
+    show balrung neutral at center with moveinright
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
-    show niir neutral at center with moveinright
+    show niir neutral at quarterright with moveinright
     n "I sssssee that you have brought a friend.  Delic-delightful."
     c "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu dragon_chat:

@@ -1,5 +1,5 @@
 label day1:
-    scene bg bedroom with fade
+    scene bg bedroom day with fade
     p "What a terrible start to a day; I'm still not queen."
     p "But that's why I came here; to remedy that."
     p "Dragons are powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
