@@ -64,3 +64,21 @@ label mage_insane_step:
     c "I'm yours my majesty, I mean {i}your{/i} majesty of course."
     p "You had it right the first time."
     
+
+
+label cyril_epilogue1:
+        p_write "To Cyril Merlonious."
+        p_write "The Academy in the House of Master Grivvorn."
+        
+        p_write "I hope that half-wit you're studying under realizes your potential."
+        p_write "Otherwise you can direct him to me."
+        p_write "The castle has been left in ruins."
+        p_write "No one blames you of course."
+        p_write "You did what you had to in your own... feeble way."
+        p_write "I am still not Queen, but never mind that."
+        p_write "I am able to wait until after you finish your training."
+        p_write "Until you may at last be of use to me."
+        p_write "I trust your magic will be strong enough for me to procur the throne by then."
+        p_write "And you will be well compensated for your alliegence."
+        p_write "The Academy in the House of Master Grivvorn."
+        p_write "The Academy in the House of Master Grivvorn."
