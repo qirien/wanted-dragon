@@ -27,6 +27,12 @@ label day5:
                 c "Errr, good day, Princess?"
                 p "Begone!"
                 c "{i}I do wish you would quit telling me that.{/i}"
+                hide cyril with moveoutleft
+                "But now... I will see what progress I can make with Niir today."
+                scene bg corridor with fade
+                "If I can find him..."
+                scene bg dungeon with fade
+                jump niir5
             "\"Maybe you're right...\"":
                 p "That is not completely false. He does not know the meaning of respect."
                 p "You on the other hand..."
@@ -35,10 +41,15 @@ label day5:
                 c "P-p-power?"
                 p "You must have some measure of power, or these dragons would have escaped long ago. Use it to help me rid the throne of my scheming sister Magnolia!"
                 p "If you won't, I'll find someone else who will."
-                # TODO: Roleplay this
-                #TO DO:  ideas on finishing this?
-                # switch to mage route?
-                # can you have both routes going at once? I think we need our endings to decide that.
+                c "I do want to help me, I mean, to help you, but... I need time!"
+                p "Show me what you can do, then! I expect something concrete when I check in with you later today!"
+                c "Y-yes Princess! I'll start right away!"
+                hide cyril with moveoutleft
+                "Useless! Everyone here is useless!"
+                "In the meantime, I've got a little light reading I want to catch up on. It may even prove useful. Ah, my old favorite, {i}Draughts of Death, Destruction, and Devastation{/i}."
+                scene black with fade
+                "I feel much better, now. But I think that mage may require some... motivation to accomplish anything substantial."
+                jump cyril5
                     
     elif (route == "Balrung"):
         show niir neutral at center with moveinleft
@@ -222,6 +233,7 @@ label balrung5:
     return
 
 label niir5:
+    $ niir_affection += 1
     p "Could you stop disappearing on me Niir!"
     p "I wish to confer with you!"
     n "Confer?  On what?  Your choice of dresssss?"
@@ -392,7 +404,7 @@ label cyril5:
     # DAY 5
     scene bg library with fade
     show cyril hat neutral at center with dissolve
-    
+    $ cyril_affection += 1
     c "I found it."
     p "My scepter? You are not as infantile as you seem."
     p "I've actually been very impressed with the way you operate."

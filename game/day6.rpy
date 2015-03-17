@@ -15,28 +15,28 @@ label day6:
         show niir neutral at midright
         show balrung neutral at midleft
         with dissolve
-        b "I do hope you haven't fallen in love with the tempestuous temptress that has entered our realm."
+        b angry "I do hope you haven't fallen in love with the tempestuous temptress that has entered our realm."
         n "Now why would you ssssssay that?"
-        b "I have seen it happen many times before. Many dragons and princesses have come and gone since I arrived."
-        b "I can discern the signs."
+        b determined "I have seen it happen many times before. Many dragons and princesses have come and gone since I arrived."
+        b smirk "I can discern the signs."
         n "Love is not ssssomething that I am acquainted with, old dragon."
         n "Ssstop your posssstulating."
-        b "I'm no more happy about this than you are, Niir.  You are all what little distraction I have in this dreary place."
-        b "If I could keep you here, I would."
+        b determined "I'm no more happy about this than you are, Niir.  You are all what little distraction I have in this dreary place."
+        b smirk "If I could keep you here, I would."
         n "Your fearssss are ridiculousssss."
         n "I am sssstaying here, old dragon."
-        b "Stubborn fool!  What life is there for you here?!"
-        b "What other princesses are there?"
+        b angry "Stubborn fool!  What life is there for you here?!"
+        b determined "What other princesses are there?"
         "Could Balrung be right?  Could Niir actually be... {i}in love{/i}?"
         "The thought makes my stomach roil."
         "Though I have to admit, I do feel some... animal magnetism towards Niir."
-        "Even if it is only animal."
+        "Even if it is only physical."
         n "Sssshut up.  I am done conversssssing."
-        b "I'd tell you to follow your heart. But that would require you to possess one in the first place."
+        b neutral "I'd tell you to follow your heart. But that would require you to possess one in the first place."
         "This is what I wanted, wasn't it?"
         "A dragon at my disposal.  Willing to leave, all for the delusion of love."
         "But somehow, it doesn't feel as good as I thought it would."
-        scene black with fade
+        "Well, as long as Niir and I both get what we want, what's the harm? In fact... I have the perfect treat to reward Niir for his progress so far."
         jump niir6
     elif (route == "Cyril"):
         "I snuck over to the library to spy on Moronious."
@@ -77,14 +77,14 @@ label day6:
             "Keep quiet.":
                     "He’s not {b}that{/b} gullible."
 
-        c "Perhaps the princess could help me.  I have grown rather fond of her in this short stay.  But she does not know the council."
+        c "Perhaps the Princess could help me.  I have grown rather fond of her in this short stay.  But she does not know the council."
         c "No.  This is my decision.  And no walls, nor princesses can make it for me."
 
-        c "Perhaps, I just need to run a warm bath."
+        c "Perhaps, I just need to run a warm bath and think about it for a while."
         c "Yes, that’ll do the trick."
         hide cyril with moveoutleft
 
-        "While he’s in the bath, I’ll just slip out and see that letter he was reading..."
+        "While he’s occupied, I’ll just slip out and see that letter he was reading..."
 
         letter "To Cyril Merlonious of the order of Dyconis:"
         letter "We are pleased to inform you that an opening has arisen at the Academy in the House of Master Grivvorn, Third Star. Although your previous application was rejected, due to your recent service and experience, we would like to welcome you to the Academy as a second-tier student."
@@ -94,8 +94,8 @@ label day6:
         letter "Undersecretary to Master Grivvorn, Third Star"
         letter "Academy of Master Enchanters"
 
-        "Well, he’d be a fool not to accept and learn more powerful magic… but, then, he {b}is{/b} quite a fool, so anything’s possible."
-        "I’ll just have to make sure he has plenty of reasons to stay here…"
+        "Well, he’d be a fool not to accept and learn more powerful magic... but, then, he {b}is{/b} quite a fool, so anything’s possible."
+        "I’ll just have to make sure he has plenty of reasons to stay here."
         scene black with fade
         jump cyril6
         
@@ -283,7 +283,7 @@ label niir6:
             p "I have better things to do than search for Niir. I found these delightful alchemy books in the library..."
             return
         "Go and see.":
-                
+            $ niir_affection += 1
             scene bg kitchen with fade
             show niir neutral at midright with dissolve
             "I caught him in the middle of taking a huge bite. Juices dribbled down his chin, and he had closed his eyes to savor the taste."
@@ -300,11 +300,12 @@ label niir6:
             n "Partnerssss, eh?"
             p "Though you're a little bit of both, honestly."
             n "Princesssss..."
+            scene black with fade
     
 label cyril6:
 
     scene hall with fade
-    show cyril hat neutral at center with dissolve #TODO: make him green
+    show cyril neutral at center with dissolve #TODO: make him green
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
     c "...and my spell book's gone again. Oh, p'zuffle!" #TODO: replace if you don't like, or delete this if it's fine.
@@ -328,7 +329,7 @@ label cyril6:
 
     scene bg dungeon with fade
     show niir neutral at midright with dissolve
-    n "Do I sssmell..?"
+    n "Do I sssmell...Princesssss?"
     p "Niir, meet me at the castle gates in five minutes. I have something I want to show you that you will find VERY interesting."
     n "Interessssssting.  I have been waiting for interesssting."
     hide niir with moveoutleft
@@ -338,6 +339,7 @@ label cyril6:
     p "No, no, no assistance needed, thank you."
     "He glanced at the flask in my hands and smiled."
     b "I believe I feel quite tired. I will be asleep and shall not see or hear anything."
+    hide balrung with moveoutright
     "Hmph, well, so much for secrecy. Still, now’s my chance!"
     "There! He’ll have quite a surprise when he gets in bed next! \"Interesting\" indeed, mwah ha ha ha ha ha ha!"
     b "I suggest you return to your room before commencing with gleeful cackling, Princess."
@@ -349,7 +351,7 @@ label cyril6:
     p "Well, that was the most fun I’ve had since poisoning my sis- I mean, passing my sister the ball in croquet!"
     c "Croquet you say?  I have always been meaning to play that..."
     p "Don’t bother. It’s dreadfully dull. Did you know you’re not supposed to hit the other players, only the balls? Who invented that game?!"
-    c "Oh well, yes.  I think the purpose is to… how do you propose that it’s played?  Perhaps we can invent a new sport and name it after you [p_name]."
+    c "Oh well, yes.  I think the purpose is to... how do you propose that it’s played?  Perhaps we can invent a new sport and name it after you [p_name]."
     p "An excellent idea. There should certainly be bludgeoning involved, and perhaps pilfering? Alchemy? Princess-worship?"
     c "Ah, that sounds like a very interesting sport ind-"
     n "Princesssssss.  It musssst have been you, Princessssss."
@@ -361,10 +363,10 @@ label cyril6:
     n "End it!  End it now!"
     p "Well, I don’t know any magic, but Cyril is an absurdly kind magician...perhaps if you begged him, he might assist you?"
     p "Although... he might be a bit cross about the whole dyeing-him-green incident. You might have to grovel. Or you could continue your itching dance; I’m enjoying it."
-    n  "Begged?  I will not- ahhh!  It itchessss.  I will get you for thissss, mage!"
+    n "Beg?!  I will not- ahhh!  It itchessss.  I will get you for thissss, mage!"
     c "Just hold on.  I’ll think of something that can help you."
     c "If only I had my spellbook on hand..."
-    p "If only we knew where it was."
+    p "If only we knew where it was!"
     n "I’ll find your sssstupid ssspellbook if you get this sssspell off of me!"
     hide niir with moveoutleft
 
@@ -392,9 +394,9 @@ label cyril6:
     p "Perhaps you should kneel."
     n "I will not {b}kneel{/b}.  I will NOT!"
     c "Okay, I think that’s enough.  I’m looking for the spell now.  It itches right?  Any rash anywhere?"
-    n "Yesss, I need to sssratch.  Here.  Sssee for yoursssself."
+    n "Yesss, I need to ssscratch.  Here.  Sssee for yoursssself."
     p "Ha ha ha, I will never forget this."
-    c "This should do the trick - Pruritus Termine!"
+    c "This should do the trick - Prurius Termine!"
     n "I will not forget thissss."
     c "I do believe you have learned your lesson, Niir.  And there will be no more of that stealing books business, or turning people green, or making them slip, or sneaking something under the door when they are sleeping.  No more of that."
     n "Ssssay what you like. I’ll do as I pleasssse."
@@ -403,7 +405,7 @@ label cyril6:
     p "You mean entertaining! Perhaps he’ll at least think twice before bothering people."
     c "That is true, Princess.  You always do know how to look on the bright side of things.  I do find your perspective like a breath of fresh air around here."
     p "Ha! I approve of your flattery. That is a skill I prize in all my minions."
-    c "Minions?  Oh, yes.  Of course.  How could I have deluded myself into thinking anything but... I am honored to be anything to you, even a minion your majesty."
+    c "Minions?  Oh. Yes.  Of course.  How could I have deluded myself into thinking anything but... I am honored to be anything to you, even a minion, your majesty."
     p "Don’t look so disappointed. You are my favorite minion...at the moment."
     c "Favorite? I-I do say."
     p "You may kiss my cheek, if you wish."

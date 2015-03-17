@@ -19,7 +19,7 @@ label alone4:
     p "In the end, the only person I can count on is myself."
     p "Perhaps I should research some more potions? That poison would have worked if it weren't for that clumsy serving maid."
     scene bg library with fade
-    p "Hmm, {i}Theory of Alchemy{/i}, sounds dull. {i}Fifty Five-Minute Potions{/i}, if they only take five minutes they can't be very good. {i}Puissant Potions for Pleasure and Profit{/i}, now {b}that{/b} sounds interesting!"
+    p "Hmm, {i}Theory of Alchemy{/i}, sounds dull. {i}Fifty Five-Minute Potions{/i}? If they only take five minutes they can't be very good. {i}Puissant Potions for Pleasure and Profit{/i}, now {b}that{/b} sounds interesting!"
     p "Ooh, they have a whole section on poisons... Slow-Acting Poison, Reversible Poison, Temporary Poison, Quasi-Death Draught..."
     p "Hmm, these ingredients aren't too rare..."
     jump cyril4

@@ -102,6 +102,7 @@ label library1:
             jump explore1
        
 label sharebalrung:
+    $ balrung_affection += 1
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
     show balrung neutral at midright with dissolve
@@ -120,6 +121,7 @@ label balrung_scepter:
     return
        
 label sharecyril:
+    $ cyril_affection += 1
     p "Oh, Moronious."
     p "That foolish mage has to be around here somewhere."
     scene bg corridor with fade
@@ -220,12 +222,12 @@ label explore1:
     n "Oh of that, I'm well aware."
     p "So I guess that's why you're in here."
     p "You creeped everyone out so they couldn't stand you."
-    p "But it's a good thing I can stand you, because I'm the only shot you have to getting out of here."
+    p "But it's a good thing I can stand you, because I'm the only shot you have at getting out of here."
     n "You need to get your facts sssstraight nexxxt time."
     n "Prrrrrincessssss."
     hide niir with moveoutright
     p "I have got my- Niir!  Where did you get to?"
-    p "You sneaky dragon GET BACK HERE!"
+    p "You sneaky dragon, GET BACK HERE!"
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"
     "..."
     scene bg stairs with fade

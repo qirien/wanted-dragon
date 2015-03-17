@@ -12,6 +12,7 @@ init -1:
     define castle_name = "the Castle of the Banished"
     define asked_scepter = "no one"
     define route = None
+    define HIGH_AFFECTION = 7
 
     #
     # CHARACTERS
@@ -43,7 +44,9 @@ init -1:
     image bg gate dusk = "bg/gate_dusk.jpg"
     image bg hall = "bg/hall_day.jpg"
     image bg kitchen = "bg/kitchen.jpg" 
+    image bg kingdom = "bg/kingdom.jpg"
     image bg ruins = "bg/ruins.jpg" 
+    image bg stairs day = "bg/stairs_dusk.jpg"
     image bg stairs = "bg/stairs_dusk.jpg"
     image bg stairs night = "bg/stairs_night.jpg"
     image bg storage = "bg/storage.jpg"
@@ -72,7 +75,6 @@ init python:
     # POSITIONS
     #
 init -1:
-    define fade = Fade(0.2, 0.2, 0.2) # TODO: Tweak these times for our game?
     define midleft = Position(xpos=0.35, xanchor=0.5)        
     define midright = Position(xpos=0.65, xanchor=0.5)
     define quarterleft = Position(xpos=0.22, xanchor=0.5)
@@ -86,6 +88,9 @@ init -1:
     # 
     # TRANSITIONS
     #
+    define fade = Fade(0.2, 0.2, 0.2) # TODO: Tweak these times for our game?
+    define flash = Fade(.25, 0, .75, color="#fff")
+    define blood = Fade(.25, 0, .25, color="#f00")
     transform come_closer:
         zoom 1.5
         yalign 0.0

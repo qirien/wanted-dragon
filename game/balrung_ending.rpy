@@ -1,6 +1,38 @@
 ############################################################
 # Balrung route ending
 #
+
+
+label balrung_epilogue:
+    scene black with fade
+    show text "Epilogue"
+    scene bg kingdom with fade
+    show balrung smile at center with dissolve
+    b "Your kingdom is indeed beautiful, my dear Queen."
+    p "Yes... it's a good thing we didn't completely burn it to the ground. Though the fact that their new King could do so at any moment is a wonderful motivator. I think half the courtiers soiled themselves when you transformed into dragon form at our wedding."
+    b smirk "Yes... that was quite the scene, wasn't it?"
+    p "I only wish Magnolia could have seen it, too, and quivered in terror while you threatened to devour her whole... that would have been so nice."
+    b neutral "I think your sister will enjoy the Academy."
+    p "Yes... that's the dark lining hiding behind this silver cloud. If she gains enough power... she could be a danger to us."
+    b smirk "She could. But I have plans for that."
+    p "Really? Like what?"
+    b smile eyes closed "If I tell you, it'll spoil all the fun you could have unraveling it for yourself."
+    p "Hmph. Well then, I'm not telling you my plans, either."
+    b smirk "I wouldn't have it any other way."
+    show balrung smile blush at come_closer with dissolve
+    b "Queen:"
+    b "Nigh, how wonderful!"
+    b "Lost, tragic course!"
+    b "Soft tresses, silken neck, quick kisses,"
+    b "Savory yon nuptial love vexes,"
+    b "Sibilant treasure rhapsodically enchants,"
+    b "Sing, glorious sovereign!"
+    p "...I don't sing."
+    p "But I do kiss, when the mood strikes me."
+    scene black with fade
+
+
+
 label balrung_ending:
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
     c "Resonantia Concretus!"

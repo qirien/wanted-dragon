@@ -1,3 +1,10 @@
+################################################################################
+# WANTED: DRAGON to Aid in Regaining Throne, No Experience Necessary
+# 
+# This code is CC-BY-SA 4.0. Use it as long as you attribute and share your own code:
+# http://creativecommons.org/licenses/by-sa/4.0/
+#
+
 
 # The game starts here.
 label intro:
@@ -48,7 +55,7 @@ label sweet:
 
 label truth:
     p "I’m here to retake my rightful throne. Assist me, and be rewarded. Hinder me, and feel my wrath."
-    c "Oh, it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble servant of Dyconis could help you." #TODO: Is Dyconis the name we want to use here? Make sure this is consistent.
+    c "Oh, it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble servant of Dyconis could help you." 
     p "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
     c "Ah, erm, yes of course your majesty!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p "That is acceptable. You may lead me there now."
