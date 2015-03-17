@@ -13,6 +13,8 @@ init -1:
     define asked_scepter = "no one"
     define route = None
     define HIGH_AFFECTION = 7
+    define MEDIUM_AFFECTION = 3
+    define cyril_dead = False
 
     #
     # CHARACTERS
@@ -33,6 +35,7 @@ init -1:
     #
     # TODO: delete backgrounds we end up not using.
     image bg library = "bg/library.jpg"
+    image bg bedroom day = "bg/bedroom_day.jpg"
     image bg bedroom dusk = "bg/bedroom_dusk.jpg"
     image bg bedroom candle = "bg/bedroom_candle.jpg"
     image bg dungeon = "bg/dungeon_day.jpg"
@@ -46,10 +49,11 @@ init -1:
     image bg kitchen = "bg/kitchen.jpg" 
     image bg kingdom = "bg/kingdom.jpg"
     image bg ruins = "bg/ruins.jpg" 
-    image bg stairs day = "bg/stairs_dusk.jpg"
+    image bg stairs day = "bg/stairs_day.jpg"
     image bg stairs = "bg/stairs_dusk.jpg"
     image bg stairs night = "bg/stairs_night.jpg"
     image bg storage = "bg/storage.jpg"
+    image bg sunset = "bg/sunset.jpg"
 
 
     #
@@ -74,6 +78,8 @@ init python:
     #
     # POSITIONS
     #
+    define.move_transitions('move', 0.5)
+    define.move_transitions('quickmove', 0.25)    
 init -1:
     define midleft = Position(xpos=0.35, xanchor=0.5)        
     define midright = Position(xpos=0.65, xanchor=0.5)
@@ -88,8 +94,13 @@ init -1:
     # 
     # TRANSITIONS
     #
+    define punch_long = Move((20, 15), (-20, -15), .10, bounce=True, repeat=True, delay=2.0)
+    define vpunch_long = Move((0, 15), (0, -15), .10, bounce=True, repeat=True, delay=2.0)
+    define hpunch_long = Move((20, 0), (-20, 0), .10, bounce=True, repeat=True, delay=2.0)
+    
     define fade = Fade(0.2, 0.2, 0.2) # TODO: Tweak these times for our game?
     define flash = Fade(.25, 0, .75, color="#fff")
+    define red_flash = Fade(.25, 0, .75, color="#a90000")
     define blood = Fade(.25, 0, .25, color="#f00")
     transform come_closer:
         zoom 1.5

@@ -318,7 +318,7 @@ label cyril6:
     p "Well, if you aren't going to do anything about it, perhaps I will!"
     c "I wouldn’t-they’re, they’re dragons milady!  And one should know better than to take on a dragon.  Though I do appreciate the sentiment I absolutely cannot allow it."
     p "You cannot {b}allow{/b} it? It sounds as though you were trying to command YOUR future Queen? Surely even you would not be so ludicrously unintelligent."
-    c "Oh no.  That wasn’t what I was intending at all.  I was just-if anything were to happen to you over my own foolishness your majesty I would never be able to forgive myself."
+    c "Oh no.  That wasn’t what I was intending at all.  I was just-if anything were to happen to you over my own foolishness your highness I would never be able to forgive myself."
     p "That’s your concern, not mine. Stay here. That is an {b}order{/b}!"
 
     scene library with fade
@@ -373,7 +373,7 @@ label cyril6:
     p "Aha ha ha ha ha ha! Did you enjoy that as much as I did, Cyril?" 
     c "That was quite dev- wait.  Cyril?  You called me Cyril!"
     p "Of course I did. That’s your name, isn’t it?"
-    c "Ah, yes you’re right, my-your majesty.  That is correct.  I am Cyril - to you - which I couldn’t be happier about.  So what did you do exactly?"
+    c "Ah, yes you’re right, my-your highness.  That is correct.  I am Cyril - to you - which I couldn’t be happier about.  So what did you do exactly?"
     p "Me? I don’t know what you’re talking about."
     c "Ah, that must have been some magic indeed.  I think someone, somewhere must be punishing that misbehaving dragon for his misdeeds."
     p "It’s all very mysterious."
@@ -405,7 +405,7 @@ label cyril6:
     p "You mean entertaining! Perhaps he’ll at least think twice before bothering people."
     c "That is true, Princess.  You always do know how to look on the bright side of things.  I do find your perspective like a breath of fresh air around here."
     p "Ha! I approve of your flattery. That is a skill I prize in all my minions."
-    c "Minions?  Oh. Yes.  Of course.  How could I have deluded myself into thinking anything but... I am honored to be anything to you, even a minion, your majesty."
+    c "Minions?  Oh. Yes.  Of course.  How could I have deluded myself into thinking anything but... I am honored to be anything to you, even a minion, your highness."
     p "Don’t look so disappointed. You are my favorite minion...at the moment."
     c "Favorite? I-I do say."
     p "You may kiss my cheek, if you wish."

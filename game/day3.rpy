@@ -108,7 +108,7 @@ label cyril3:
     p "The Scepter of Lavendorm."
     p "The one purportedly hidden around these grounds."
     c "Oh yes, right."
-    c "Well, your majesty. I have drawn up a map of the castle."
+    c "Well, your highness. I have drawn up a map of the castle."
     c "And crossed off all the little places that I know most certainly that it isn't."
     c "And..."
     c "Wait just a moment here.  How did I get roped into doing your bidding again?"
@@ -119,7 +119,7 @@ label cyril3:
     c "I do wonder what it is that you plan to do with such a scepter, however, because I'm sure that it can only be wielded by someone with magical knowledge." 
     p "Then you will become more useful to me than ever."
     p "Wouldn't you want that?"
-    c "I-I suppose it wouldn't be the worst thing, your majesty."
+    c "I-I suppose it wouldn't be the worst thing, your highness."
     p "Come and see my when you have more."
     c "It would be my pleasure."
     
@@ -152,7 +152,7 @@ label cyril3:
             c "No!  But if I may say so, you should not miss your sister's coronation."
             c "If you do, it'll never be the same between the two of you and you'll be saddened to miss-"
             p "Do {b}not{/b} tell me what to feel, mage."
-            c "I wouldn't dream of it, your majesty.  I just thought that if you would consider..."
+            c "I wouldn't dream of it, your highness.  I just thought that if you would consider..."
             p "I would not consider.  You do not know my family."
             c "I am sorry. I should be more considerate! Sometimes I have one of those days, too."
             p "One of... those days?"
@@ -185,7 +185,7 @@ label cyril3:
             c "Well, she is the elder out of you... so I'm sure it was just-"
             p "If I want your opinion I'll ask."
             c "I'm sorry you had such a dreadful time."
-            c "But you are here now, and I am more than willing to do anything to appease you, your majesty."
+            c "But you are here now, and I am more than willing to do anything to appease you, your highness."
             p "I will take you up on that."
         
         "Ignore him.":

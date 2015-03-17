@@ -57,7 +57,7 @@ label truth:
     p "I’m here to retake my rightful throne. Assist me, and be rewarded. Hinder me, and feel my wrath."
     c "Oh, it's you.  Princess [p_name]!  I almost didn't recognize you!  Your majesty!  I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble servant of Dyconis could help you." 
     p "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
-    c "Ah, erm, yes of course your majesty!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
+    c "Ah, erm, yes of course your highness!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p "That is acceptable. You may lead me there now."
     hide cyril
     with moveoutleft
@@ -94,7 +94,7 @@ label room_intro:
     c "It is.  Well, I’ve tried to make it as comfortable as possible.  I have a few keepsakes from home in it and my frilly rug which does keep it warm in the middle of the cold snap.  "
     c "And it is close to the dragons so I can regularly keep watch over them, as I am supposed to.  Would you like to be somewhere further away?  This is a large castle."
     p "No, no, this will do. You may leave me for now, but I may need your assistance later."
-    c "Yes, yes.  I will get right to running that bath for you my majesty. I mean your majesty!  Your majesty.  Because you are most certainly not mine... errr... I will see to that bath."
+    c "Yes, yes.  I will get right to running that bath for you my majesty. I mean your highness!  Your majesty.  Because you are most certainly not mine... errr... I will see to that bath."
     p "..."
     #TODO: SHOWER?
     scene black with fade
@@ -243,7 +243,7 @@ label meet_dragons:
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
     c "I don't want to dwell on it but there have been some times where I have just felt like giving up!"
     p "You don't say."
-    c "But regardless you are here now, your majesty, so it isn't all bad!  Not at all."
+    c "But regardless you are here now, your highness, so it isn't all bad!  Not at all."
     c "Food is pretty spare in these parts, thanks to how isolated everything is."
     c "I normally conjure something up, however."
     c "If you'd like, you could join me for a supper.  Otherwise I could bring something to your room?"

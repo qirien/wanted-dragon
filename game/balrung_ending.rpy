@@ -6,14 +6,16 @@
 label balrung_epilogue:
     scene black with fade
     show text "Epilogue"
+    $ renpy.pause(1.6)
     scene bg kingdom with fade
     show balrung smile at center with dissolve
-    b "Your kingdom is indeed beautiful, my dear Queen."
-    p "Yes... it's a good thing we didn't completely burn it to the ground. Though the fact that their new King could do so at any moment is a wonderful motivator. I think half the courtiers soiled themselves when you transformed into dragon form at our wedding."
-    b smirk "Yes... that was quite the scene, wasn't it?"
+    b smirk "Your kingdom is indeed beautiful, my dear Queen."
+    p "Yes... it's a good thing we didn't completely burn it to the ground. Though the fact that their new King could do so at any moment is a wonderful motivator."
+    p "I think half the courtiers soiled themselves when you transformed into dragon form at our wedding."
+    b smile "Yes... that was quite the scene, wasn't it?"
     p "I only wish Magnolia could have seen it, too, and quivered in terror while you threatened to devour her whole... that would have been so nice."
     b neutral "I think your sister will enjoy the Academy."
-    p "Yes... that's the dark lining hiding behind this silver cloud. If she gains enough power... she could be a danger to us."
+    p "Yes... but that's the dark lining hiding behind this silver cloud. If she gains enough power... she could be a danger to us."
     b smirk "She could. But I have plans for that."
     p "Really? Like what?"
     b smile eyes closed "If I tell you, it'll spoil all the fun you could have unraveling it for yourself."
@@ -29,11 +31,78 @@ label balrung_epilogue:
     b "Sing, glorious sovereign!"
     p "...I don't sing."
     p "But I do kiss, when the mood strikes me."
+    show balrung smile eyes closed with dissolve
+    $ renpy.pause(1.6)    
     scene black with fade
-
+    return 
 
 
 label balrung_ending:
+    "Now that Moronious was not about to attack us, I wrapped up my arm in a dishtowel and turned to look at Balrung. He lay still, but was breathing."
+    "Slowly, he opened his eyes, and I helped him sit up."
+    show balrung at center with move
+    b determined "Such a fool..."
+    p "Yes, I shall be glad to be rid of him."
+    b angry "I meant you."
+    p "How dare you speak to your future Queen so disrespectfully?!"
+    b smirk "Is it still disrespectful if I am your King?"
+    p "King?!"
+    b smile "You freed me, Princess, and I want to aid you. What better way to help you maintain your kingdom than to serve by your side?"
+    p "You claim to have great power as a dragon. Moronious' spell is now broken, so show me!"
+    b smirk "I will."
+    hide balrung with red_flash
+    scene bg kitchen with punch_long
+    "He shook his head and stretched, and stretched, and stretched, skin shimmering into deep red scales. Wings emerged from his back and beat the air like waves crashing against a ship. His serpentine body filled the entire kitchen."
+    "He breathed a ball of fire at one of the chairs, turning it instantly to ash. He looked at me for my response."
+    scene bg kitchen with red_flash
+    # TODO: fireball vfx?
+    menu:
+        "Marry Balrung.": #TODO: only if balrung_affection high enough?
+            p "Balrung, your patient ruthlessness, and powers over flight and fire, will help you serve me well as my King. Now, let me climb on your back and take us to [k_name]."
+            b "What an excellent future we shall have together. None will dare to defy our reign!"
+            p "Mwah ha ha ha ha!"
+            b "Bwah ha ha ha ha!"
+            scene bg sunset with fade            
+            "With a rush of wings and dust, we flew out of the dungeon and into the wide evening sky. Balrung let fly a fireball at the gates of his old prison, just for fun."
+            "With a dragon on my side, my father would {b}have{/b} to make me Queen... and if not, well, I'd make sure there was no other choice."
+            "And Balrung would be an valuable ally to have as we ruled together."
+            "I reached down to pat his scaly cheek and could tell from the gleam in his eye that he was thinking the exact same thing. I'd never lack a worthy opponent again."
+            p "You're such an ambitious schemer!"
+            b "And you're dreadfully ruthless."
+            p "Mwah ha ha ha ha!"            
+            b "Bwah ha ha ha!"
+            call credits
+            jump balrung_epilogue
+        "Make him an advisor.":
+            p "While I admire your patient ruthlessness, you are not fit to be my King. You may be an advisor."
+            b "Oh ho ho, I don't think so. A pity. If you change your mind, I am going to go raze the kingdom of [k_name]. You'll be able to find me on the throne by tomorrow afternoon."
+
+        "Leave him here.":
+            p "I don't need any King telling me what to do!"
+            b "A pity. I rather enjoyed our time together. But I won't try to force you to change your mind. I've learned that lesson, at any rate."
+            
+    "In a whoosh of wings, he was gone." 
+    scene bg kitchen with punch_long    
+    if (cyril_dead):
+        "Leaving several shiny red scales behind."
+        p "With these, I can make as many Potions of Persuasion as I want! I'll become Queen all on my own! Mwah ha ha ha ha!"
+        # TODO: kidnapped by Niir, who is now free? Or rules on her own?
+    else:
+        p "..."
+        show cyril neutral hat at center with moveinleft
+        c "...Princess! I found it! The Scepter! It was under Balrung's bed the whole time!"
+        p "Mwah ha ha ha... he left behind the Scepter of Lavendorm?! The fool! Moronious!"
+        c "Y-yes your highness?"
+        p "Shall we attack that evil dragon?"
+        c "We shall!"
+        # TODO lightning crackles.
+        # TODO: jump to a Cyril ending?
+        call credits
+        #TODO jump some epilogue?
+        return
+    
+# Not using; keeping around for copy paste purposes
+label old_balrung_ending:
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
     c "Resonantia Concretus!"
     p "I can see wisps of something in the air. What did you do, mage?"
@@ -119,36 +188,7 @@ label balrung_ending:
                 p "My presence is certainly required for {b}MY{/b} plans! Moronious! Your princess is in danger!"
                 "Balrung reared back, readying an attack."
                 jump cyril_attack
-            "Wait it out.":
-                p "Hmmm, I must admit, I'm curious who would win if you two begin fighting. What better way to prove who is stronger and more fit to aid me?"
-                b "..."
-                c "..."
-                p "Well? What are you waiting for? Commence battle!"
-                b "Cyril, you've seen the Princess. Who do you really think is a greater threat to the safety of this kingdom? Yes, I know she's a \"princess\", and quite an attractive one at that; but she's selfish, lustful for power, and will stop at nothing. She had even agreed to poison you in your sleep if it was necessary for our plan. Would you trust the future of this kingdom to someone like that?"
-                p "Poisoning the mage was your idea!"
-                b "I was curious how far you'd go. You don't care whose life you have to destroy to get what you want. You don't care about the desires and goals of those around you. I know you, Princess, I've seen into your heart and it's dark with malice."
-                c "You'd know all about malice, wouldn't you?!"
-                b "Yes. I would. I used to be the same. But, Cyril, after all this time, do you know what I really want to do?"
-                c "Yes! You want revenge, and power!"
-                b "No. I only want to be able to fly over the mountains and be left alone."
-                p "He's lying! He was going to help me destroy [k_name]!"
-                b "Cyril, I hope you'll do the right thing and help the Princess see the error of her ways. You mages have helped me to, even though I disagree with the way it was done."
-                p "Balrung! I will hunt you down! I will find you and DESTROY YOU!!!"
-                # TODO: if her cyril_affection is high enough, send to cyril_attack instead?
-                b "Farewell, Princess. I hope you find better things to consume your life than revenge."
-                p "Moronious! Stop him! Why are you just standing there?! KILL HIM!"
-                # TODO: Feel free to rewrite Cyril's lines better or end this differently
-                c "N-no, Princess, I don't th-think I will."
-                "Balrung's flapping wings filled the dungeon with dusty gusts, and then he was gone."                
-                p "Useless! Betrayed at every turn! When I am Queen, you will regret this!"
-                c "You sh-shouldn't be Queen the way you are. I'm terribly sorry, my dear Princess [p_name], but..."
-                p "Moronious, you fool, point that wand at the dragon! Not at me!"
-                c "Carceratus!!"
-                p "What have you done to me?!"
-                c "Stay! You will stay here, until you learn to be good! I know, somewhere inside of you, there's goodness and love...please, find it quickly, Princess."
-                p "You thought guarding dragons was bad? I {b}will{/b} make your life a hell of mental pain, psychological torture, and physical anguish until you LET. ME. GO!"
-                c "I'm so sorry! It's for your own good...."
-                # TODO: jump to a common ending where she ends up imprisoned?
+            
                 
                 
 label cyril_attack:                

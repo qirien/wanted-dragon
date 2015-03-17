@@ -7,7 +7,7 @@ label day5:
     if (route == "Niir"):
         show cyril hat neutral at midleft with moveinleft
         c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
-        c "I saw you, your majesty."
+        c "I saw you, your highness."
         p "Saw me what?"
         c "Well, you see..."
         p "Spit it out mage!  I do not have all day."
@@ -422,7 +422,7 @@ label cyril5:
     c "It's not a locating spell but it does bring deep, powerful magical items to glow incessantly until I stop the spell."
     p "Then try it already!"
     c "I will, I will."
-    c "Stand back, your majesty."
+    c "Stand back, your highness."
     p "What, so I don't get flicked by your wand?  I think I'll take my chances."
     c "I'm just not sure if the spell will go exactly as planned."
     p "It had better, Moronious, or I will make sure that council of yours knows how dangerous you are with a spellbook in hand."
@@ -433,7 +433,7 @@ label cyril5:
     
     c "Magia Luxis!" #TODO: font for magic?
     c "Something is blocking it... but the scepter is here, in this castle!"
-    c "I'm so sorry, your majesty, but I need to study this more. Please be patient!"
+    c "I'm so sorry, your highness, but I need to study this more. Please be patient!"
     p "I am not a patient person, Moronious."
     c "I know. But...it's actually Merlonious.  Yes, Merlonious.  That is my name."
     p "Yes, yes, I know what your name is!"

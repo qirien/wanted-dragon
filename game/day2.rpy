@@ -32,7 +32,7 @@ label day2:
     p "And when I put things right you will see that for yourself."
     c "As long as I'm not seen as {i}aiding and abetting{/i}."
     p "If you are not willing to make sacrifices for your future Queen, then what good are you?"
-    c "I am, I am.  Forgive me your majesty."
+    c "I am, I am.  Forgive me your highness."
     p "I forgive you, you foolish mage.  Just don't doubt me again."
     hide cyril with moveoutleft
     

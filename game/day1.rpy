@@ -127,11 +127,11 @@ label sharecyril:
     scene bg corridor with fade
     p "Where {i}are{/i} you foolish mage?"
     show cyril hat neutral at center #TODO: with some flash-bang transition
-    c "You called, your majesty?"
+    c "You called, your highness?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to..."
     p "But I do have something rather curious to share with you, so you must come with me."
-    c "I would come with you anywhere, your majesty."
+    c "I would come with you anywhere, your highness."
     hide cyril with moveoutright
     scene bg library with fade
     show cyril hat neutral at center with moveinleft
@@ -157,7 +157,7 @@ label sharecyril:
     p "I wasn't being kind.  I was being truthful.  I have no time for {i}kindness{/i}, mage."
     c "Appreciated all the same."
     p "Now find me that scepter!"
-    c "I will try to recall for you just where it was.  Don't worry, my maj- your majesty."
+    c "I will try to recall for you just where it was.  Don't worry, my maj- your highness."
     p "You really are quite pathetic, aren't you?"
     c "Ex-excuse me?"
     p "I mean, no one knows who you are.  You're guarding this tower with no reward."
@@ -172,7 +172,7 @@ label sharecyril:
     "What do you know?  There is something boiling under that bumbling facade."
     c "You are testing me, Princess."
     "And I've never had so much fun."
-    c "What are you doing, your majesty?"
+    c "What are you doing, your highness?"
     p "Taking your wand, of course."
     p "You don't really need it, do you?"
     c "I do... need it.  Most certainly."

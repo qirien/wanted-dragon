@@ -1,13 +1,19 @@
 label credits:
     # TODO: How do you all want to be credited?
-    "Written by Bridget and Andrea Landaker"
-    "Sprites, CGs, and GUI by Анна Алексеева (Anne"
+    show text "Written by Bridget and Andrea Landaker"
+    $ renpy.pause(1.6)
+    show text "Sprites, CGs, and GUI by Анна Алексеева (Anne)"
+    $ renpy.pause(1.6)
     
-    "Music"
-    "La valse du oni from Démo musique de film by BLS"
-    "Mephisto Polka by Franz Liszt, performed by Sofja Gülbadamova"
-    "Tema de los Malos by clbustos"
+    show text "Music"
+    show text "La valse du oni from Démo musique de film by BLS"
+    show text "Mephisto Polka by Franz Liszt, performed by Sofja Gülbadamova"
+    show text "Tema de los Malos by clbustos"
+    $ renpy.pause(3.0)
     
-    "Backgrounds"
-    "By Limp Nyanko, aquamary, DougitDesign"
+    show text "Backgrounds"
+    show text "By Limp Nyanko, aquamary, DougitDesign"
+    $ renpy.pause(2.0)
+    
+    return
     

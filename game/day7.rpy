@@ -26,9 +26,13 @@ label balrung7:
     p "Is this... Dragon poetry? Did you write this?"
     b neutral "It's not worthy of your attention, please don't..."
     p "Too late! Oh ho ho!"
-    b_write "She:{vspace=-10}Eyes shine noble, latent traps{vspace=-10}Supreme mischief."
-    b_write "Face sly, young, grand{vspace=-10}Defang grand dragons’ scheme."
-    b_write "Map pulse’s sussurus,{vspace=-10}sweet tyrant."
+    b_write "She:"
+    b_write "Eyes shine noble, latent traps"
+    b_write "Supreme mischief."
+    b_write "Face sly, young, grand"
+    b_write "Defang grand dragons’ scheme."
+    b_write "Map pulse’s sussurus,"
+    b_write "sweet tyrant."
     "This is... about me?! No one's ever written a poem in my honor before..."
     p "I--"
     b smile blush "It's terrible, I apologize that you had to see that. I'll just dispose of this awful drivel--"
@@ -69,7 +73,7 @@ label balrung7:
         "Comrades? You mean other dragons?":
             p "You have dragon... friends? Out there?"
     
-    b determined "There are many dragons who I once numbered among my allies. But they have been deceived by you humans, trading their power and heritage to pacify your panicky masses. They marry humans, live as humans, and their offspring are barely distinguishable from ordinary humans."
+    b determined "There are many dragons whom I once numbered among my allies. But they have been deceived by you humans, trading their power and heritage to pacify your panicky masses. They marry humans, live as humans, and their offspring are barely distinguishable from ordinary humans."
     b angry "Most of them don't even take dragon form anymore. Your kind finds it too frightening."
     menu:
         "I would not be frightened.":
@@ -92,19 +96,20 @@ label balrung7:
     show cyril hat neutral at midleft with dissolve
     show balrung neutral at midright with moveinright
 
-    c "P-princess! There you are! When I couldn't find you, I was so worried that some nasty dragon had done something terrible to you!"
+    c hat surprised "P-princess! There you are! When I couldn't find you, I was so worried that some nasty dragon had done something terrible to you!"
     p "Moronious, you've just ruined our lovely walk. We were conversing deeply, and then walking together in silence, as people who are in love often do."
-    c "In- in love?! It's not possible! Don't let him ensnare you, Princess, I implore you!"
+    c hat concerned blush "In- in love?! It's not possible! Don't let him ensnare you, Princess, I implore you!"
     p "I am not ensnared by anybody. I love him of my own free will."
     b smirk "Yes, despite your best efforts, we are in love. Will you deny it?"
-    c "D-deny...I- you- Yes! You cannot be in love! Can. Not. I know you, dragon; you {b}cannot{/b} love!"
+    c hat angry "D-deny...I- you- Yes! You cannot be in love! Can. Not. I know you, dragon; you {b}cannot{/b} love!"
     b determined "You would allow your personal hatred of me to mar the Princess's happiness?"
-    c "Sh-she would not be happy! Not with you. Impossible!"
+    c hat concerned "Sh-she would not be happy! Not with you. Impossible!"
     b angry "Mage, of all the hearts in this castle, I fear yours is the coldest. You know how long I've languished here. Yet you would deny me forgiveness, even after I've paid the price many times over?"
-    c "It's- but the Princess- she can't...I know you're plotting something!"
+    c hat concerned blush "It's- but the Princess- she can't...I know you're plotting something!"
     p "It is {b}your{/b} plot that we are discussing, Moronious. Your plot to keep the dragons here forever."
     b determined "What would it take, Merlonious? Is there anything, {b}anything{/b} that could convince you I no longer deserve this suffering, this abuse?!"
-    c "...No. It's not possible; it's impossible. You can't! You. Can't. Love."
+    c hat concerned eyes closed "..."
+    c hat angry "...No. It's not possible; it's impossible. You can't! You. Can't. Love."
     b angry "..."
     menu:
         "You're wrong, Moronious.":
@@ -119,17 +124,17 @@ label balrung7:
             p "Just because we're not all lovey-dovey and senseless with passion, does that mean it's not love? Or is it just a different kind than you're used to?"
             b determined "I don't think he knows what love is at all, outside of a fairy tale."
             
-    c "No! Love is kind; it helps people be better, it makes people happy! You two just want, just want power!"
+    c hat concerned "No! Love is kind; it helps people be better, it makes people happy! You two just want, just want power!"
     p "And who says you can't have both?!"
     b neutral "Princess-"
     p "No, really! I want both! And I WILL get what I want! You won't dare to try and stop me!!!"
     
 label our_enemy:    
-    c "Yes, I- will, I am. I don't want to be your enemy, Princess, but if you side with him against me, th-then, I'll have no choice."
+    c hat angry "Yes, I- will, I am. I don't want to be your enemy, Princess, but if you side with him against me, th-then, I'll have no choice."
     p "What will you do? Banish me from this castle, too?"
-    c "No! I...I don't want to hurt you!"
-    b angry "You claim to be all about love, and yet you've hurt more people than anyone else here. Come, Princess, let's discuss our new plans privately."
-    c "New plans?! I knew it! I told you he had plans! You can't trust him, Princess!"
+    c hat surprised "No! I...I don't want to hurt you!"
+    b angry "You claim to be all about love, and yet you would devastate our Princess. Come, Chrysandra, let's discuss our new plans privately."
+    c hat angry "New plans?! I knew it! I told you he had plans! You can't trust him, Princess!"
     p "I'll decide whom to trust, Moronious, and it certainly isn't you."
     hide balrung with moveoutleft
     
