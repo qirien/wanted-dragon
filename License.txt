@@ -51,6 +51,17 @@ Parchment Scroll derived from <http://www.wpclipart.com/blanks/parchment/parchme
 These images are in the public domain.
 ****
 
+==== Attribution, Non-Commercial Use
+
+The following images are licensed Attribution, Non-Commercial Use 
+
+rain1.png, rain2.png, rain3.png Rain Texture pack by Neonescence, <http://neonescence.deviantart.com/art/Rain-Texture-Pack-98148660>
+
+.License
+****
+See <http://neonescence.deviantart.com/art/Rain-Texture-Pack-98148660>
+****
+
 ==== Non-Commercial Use
 
 The following images are licensed Non-Commercial Use <http://www.aquamary.com/etc/Readme.txt>.

@@ -55,6 +55,17 @@ init -1:
     image bg storage = "bg/storage.jpg"
     image bg sunset = "bg/sunset.jpg"
 
+    #
+    # VISUAL EFFECTS
+    #
+    image rain:
+        "bg/rain1.png"
+        0.1
+        "bg/rain2.png"
+        0.1
+        "bg/rain3.png"
+        0.1
+        repeat
 
     #
     # SPRITES
@@ -70,10 +81,6 @@ init python:
             tag = fname[:-4]
             fname =  'sprites/' + fname
             renpy.image(tag, fname)
-
-#    image balrung = Placeholder("boy")
-#    image cyril = Placeholder("boy")
-#    image niir = Placeholder("boy")
 
     #
     # POSITIONS
@@ -102,7 +109,7 @@ init -1:
     define flash = Fade(.25, 0, .75, color="#fff")
     define red_flash = Fade(.25, 0, .75, color="#a90000")
     define blood = Fade(.25, 0, .25, color="#f00")
-    define dissolve = Dissolve(0.5, alpha=True)
+    define dissolve = Dissolve(0.4, alpha=True)
     transform come_closer:
         zoom 1.5
         yalign 0.0

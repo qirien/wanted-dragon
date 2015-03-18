@@ -9,6 +9,7 @@
 # The game starts here.
 label intro:
     scene bg gate dusk with fade
+    show rain
     play music princess_theme
     play sound "sfx/rain.ogg" loop
     window show

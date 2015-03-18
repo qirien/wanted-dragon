@@ -14,6 +14,7 @@ label credits:
     
     show text "Backgrounds"
     show text "By Limp Nyanko, aquamary, DougitDesign"
+    show text "Rain Texture by Neonescence"
     $ renpy.pause(2.0)
     
     show text "Sounds"
