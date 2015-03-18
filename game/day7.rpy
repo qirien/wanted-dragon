@@ -13,10 +13,95 @@ label day7:
     elif (route == "Niir"):
         call niir7
 
-label niir7:
+label cyril7:
+    
     return
     
-label cyril7:
+label niir7:
+    n "Thissssss."
+    p "What is it, Niir?  I am in a predicament and do not have time for riddles - from you or the mage."
+    n "Take it."
+    p "Did you wrap this? And put a...bow on it? ...Did Balrung put you up to this?"
+    n "..."
+    n "I’m waiting Princessss."
+    p "I'm suspicious. It's probably lingerie or something equally tasteless."
+    n "Only the besssst for you, Princess.  Open it."
+    p "I'm warning you...if you try to toy with me, I'll- oh!"
+    p "It's...mother's amulet."
+    n "It’ssss yourssss."
+    p "Where did you find this?! She lost it many years ago, when I was a child…"
+    n "Who ssssaid I found it?"
+    p "Where. Did. You. Get it?!"
+    n "It wasss around, and I ssssnatched it up."
+    n "Don’t worry, Princesss.  I did not ssssteal…. thissss."
+    n "Ssssomething else perhaps."    
+    p "Around where?!"
+    n "Curiousss, aren’t we?"
+    n "Don’t you like your gift.  You got one for me, ssso I returned the favor."
+    p "I- thank you."
+    n "In that casssse, perhapsss I have more thingsss hidden away that might be of interessst to you."
+    p "Is there anything else of hers? Or with the royal seal?"
+    n "That isss one of a kind."
+    n "And not the only thing that issss one of it’sss kind."
+    p "To what are you referring?"
+    n "Issssn’t it obvioussss?"
+    p "I haven't seen your hoard, so I don't know what you have in there."
+    n "It’ssss not like you, Princessss, to be thissss denssse."
+    p "And it's not like you to outright insult me. I don't have time for play; my sister will be crowned in three days unless I can find a way to stop her!"
+    n "Your ssssisster hasss nothing on you, Princesss.  You are not like other princessesssss."
+    p "Well, you wouldn't have fallen in love with just any old princess. Actually, perhaps you would have, now that I think about it."
+    n "Fallen?  {I}Balrung, that sssscheming Balrung{/i}.  He issss to blame for putting ideassss into your head."
+    p "Well, it matters little what you think. What matters is stopping my sister! Will Moronious let you go, do you think?"
+    n "... "
+    n "Perhapssss, if he has amnessssia."
+    p "We could try blunt head trauma, but if it didn't work then he certainly wouldn't let you go. What sort of spells does he have keeping you here?"
+    n "If we try to esssscape, we fall unconscioussss.  And he takesss us back insssside the cassstle."
+    p "What if he couldn't find you? Or when you woke up, you were outside his spell? How far does it go, anyway?"
+    n "All around the entrancccce, the exitssss, the sidessss.  It isss all covered."
+    n "Are you sssugessting you’ll hide me?"
+    p "Yes...or perhaps I could move you past the spell. "
+    n "Did you want to practicccce?"
+    n "Perhapsss in your room.  With the door closssssed."
+    p "Once I'm Queen, then I'll have time for such frivolous activities. But, you are right that we should practice. Lie down and pretend to be unconscious. I will see if I can move you."
+    hide niir
+    n "Thissss isss lesss fun than I expecccted."
+    p "Hyaaah! What have you been eating, you enormous useless lump?!"
+    n "Exccccept for that rabbit, nothing but tasssstelesssss ssstew."
+    "I couldn't lift him at all; he seemed more dense than a normal human. I grabbed him under the arms and was able to slide him across the castle tiles down the hallway."
+    n "That hurtsssss Princessss."
+    p "Poor baby Niir; I thought you could take a little rough handling."
+    n "I prefer to be the one giving the punissssshment."
+    p "Don't give it if you can't take it- oof!"
+    "I fell back and sat on the floor, Niir's head in my lap. He was probably enjoying this way too much..."
+    menu:
+        "Shove him away.":
+                p "Get off me, you salacious serpent!"
+
+        "Tease him a bit.":
+            $ niir_affection += 1
+            p "You're enjoying this, aren't you?"
+            n "I can make it more enjoyable if you wissssh. You did it on purpossssse, didn’t you?"
+            p "I'm sure I don't know what you're talking about. Though, now that I look at you from this angle...your ears are very strange. What purpose does their strange shape serve?"
+            n "Touch them and guessss if you prefer but my lipsss are sssealed."
+            p "Hmph. Now I feel both curious and queasy. Not a mix of emotions I enjoy. Get up, now."
+            n "What if I ssssay no?"
+
+    "I stood up and his head hit the ground with a crack."
+    n "You clumssssy princessss.  What did you do that forrrrr?"
+    p "I need some way to make you lighter, or myself stronger…"
+    n "Impossssible.  Perhapssss you need to learn magic."
+    p "I don't need magic! Magic is for weaklings and sycophants."
+    p "But there may be another way...I must do some research, alone. You may leave me now. But you have been an excellent test subject. And-"
+    p "Thank you, for my mother's amulet. She was the only one who really understood me. If she was still alive-- But, she's not."
+    n "I am sssssure ssshe was extraordinary, jusssst like you."
+    p "There, you see, that wasn't so hard to flatter like a proper minion should."
+    n "It wassss not flattery, and I am not yourrrr minion, Princesssss."
+    p "I suppose we did agree to be partners."
+    n "Yessss, I will hold you to… that.  I sssshall leave, as you asssked."
+    n "Ssssee you ssssoon, Princessss."
+
+    "Niir was so uncomplicated, I felt confident that I could control him once he was free. But, in some ways, I wished it wasn't so easy. Would he love me as well if I hadn't tricked him into doing so? Was it even love at all?"
+    "...It was pointless to even think about it. He could help me regain the throne; everything else could wait until after that."
     return
 
 label balrung7:

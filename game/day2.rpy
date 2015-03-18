@@ -34,6 +34,10 @@ label day2:
     p "If you are not willing to make sacrifices for your future Queen, then what good are you?"
     c "I am, I am.  Forgive me your highness."
     p "I forgive you, you foolish mage.  Just don't doubt me again."
+    p "Oh, and one more thing."
+    c "Yes, highness?"
+    p "You will join me for dinner in the kitchens. Tonight."
+    c "Y-yes, of course!"
     hide cyril with moveoutleft
     
     show niir neutral at right with moveinright
@@ -68,6 +72,10 @@ label day2:
     n "I think he jussst likesss to send me on errandsss."
     p "So, you weren't really watching me sleep for hours...?"
     n "I'll let you wonderrr about that one."
+    p "Hmph. I won't be losing sleep over it. But, Niir?"
+    n "Yesss?"
+    p "Join me for dinner tonight. In the kitchen."
+    n "I'll be therrre."
     hide niir with moveoutright
     
     p "I suppose I'll see what Balrung wants..."
@@ -101,5 +109,125 @@ label day2:
     b "Yes, precisely. So if you are in need of allies here, I hope you will seek me out, and perhaps we can aid each other."
     p "But you could only aid me if you were freed."
     b "Well, I would certainly have much greater power as a free dragon. But I am willing to do what little I can for you, in this form, as well."
-    p "I shall consider your offer, dragon."
+    p "I shall consider your offer, dragon. And, one more thing."
+    b "Yes?"
+    p "Come to the kitchen at dinner time and eat with me."
+    b "I'd be honored, Highness."
+    
+label dinner_party:
+        
+    scene bg kitchen with fade
+    show niir neutral at right
+    show balrung neutral at center
+    show cyril neutral hat at left
+
+    p "Good, you are all here. That proves you can fulfill a simple request."
+    b smirk "It has been a long time since I attended a dinner party."
+    n "I hope the food issss better than usssual."
+    p "Yes, a dinner party requires food. Moronious? Isn't that your job?"
+    c hat surprised "R-right! But, surely you, you don't want to eat with these…creatures?"
+    n "She sssssummoned usss here.  Sssso clearly sshe doesss."
+    p "Yes, yes.  What that Niir dragon said.  I need all of you present."
+    c hat concerned "I just thought that when you requested dinner-"
+    b "You assumed she wanted be alone, with you, over a candlelit dinner? That's rather presumptuous, Merlonious."
+    n "Hilarioussss, don’t you think?"
+    c concerned blush "That wasn’t- it wasn’t entirely like that.  You must believe me Princess."
+    show cyril neutral hat at left
+    p "I don’t care what you thought.  Your future Queen hasn’t the time to consider such things.  What a waste.  No, I thought it would be nice for us to...{i}talk{/i} together about matters of the kingdom."
+    p "{b}Food{/b}, Moronious!"
+    c hat neutral "Right on it!  I apologize your majesty."
+    c hat angry "Vittus Cottura!"
+    p "Honestly, not {b}that{/b} again Moronious.  Is that all you know how to summon?"
+    c hat concerned "I’ll try something else then."
+    n "We’re waitingggg."
+    c hat concerned eyes closed "Do be quiet, dragon, you are making me lose my concentration."
+    # TODO: magic vfx
+    b angry "I am convinced that Merlonious summons this pitiful human food as part of our punishment. Dragons were never meant to be herbivorous."
+    c hat concerned "I-it's good for you!"
+    n "Ohhh, what I wouldn't give for a bit of deer, or mutton, or even ssssquirrel!"
+    b "Elk…"
+    n "Turrrkey…"
+    b "Bison…"
+    n "Rrrrabbit!"
+    c "Enough complaining, both of you."
+    p "Yes, anyway, I brought you all here together in order to discuss something."
+    p "It has come to my attention that all of you now know about my purported banishment." 
+    c hat surprised "Purported?"
+    p "Quiet, Moronious!  As I was saying… you all know the true reason why I am here.  And so, you all must realize by now that I have been cheated out of my destiny by my own blood."
+    b "Destiny is an unfaithful mistress…"
+    c "I wouldn’t go that far, your highness."
+    n "Desssstiny, you ssssay?"
+    p "And that if you align with my sister, you are no friend of [kingdom].  So it would be wise of all of you to work out where your allegiance lies in the future."
+    n "Dragonsss have no allegiancccce." 
+    b smirk "What advantages would an ally of yours gain, I wonder? And what would your sister do with this prison?"
+    c hat concerned "No, no, no, no, no, no.  We cannot be talking about this, Princess.  These are political matters.  This is not up for discussion over dinner."
+    p "Oh please, mage.  I think we’re all adults here.  Surely we can discuss the future of the kingdom together without any..."
+    n "Or we could dissscusss other forbidden topicsssss…"
+    b "That would be like the blind man describing a sunset in your case, Niir. No, let the Princess speak."
+    c "I warn you, speaking of things like this never go well.  My, word might even get out that we’re {i}conspiring{/i}!  Conspiring, Princess!  I think it would be best if we leave this alone for the present moment."
+    p "Charges of conspiracy only matter if we lose. No one charges Queens with conspiracy!"
+    c "It’s not the charge itself.  It’s the principle.  I would rather not take part in such a discussion."
+    b determined "Leave, then, and let the adults discuss matters too weighty for your simplistic morals."
+    n "Ssssimplistic Cccyril.  What ssshall we do with you?"
+    c "I don’t think we need to do any-"
+    c concerned blush "Excuse me, dragon!  Just what do you think you’re...."
+    n "Hahahaha.  Oh, look at that.  Hissss faccce is red."
+    c concerned "A hat is a rather serious piece of a magical wardrobe.  So I demand that you give that back."
+    c angry "This instant, Niir!"
+    n "Thissss inssstant, you sssay?"
+    c angry "Don’t you dangle that thing in front of me, Niir.  This is no joking matter."
+    c "And no, I will not jump for it.  I will not sink to such standards."
+    b smirk "Princess, it looks like you and I might need to discuss matters on our own, later, away from the squabbling children."
+    p "Perhaps. For now, I shall simply enjoy the evening's entertainment."
+    n "How about you fetch?  Insssstead of jumping."
+    c "Don’t you dare throw that Ni-"
+    c "He threw it.  Of course he did.  "
+    extend "Stay right here dragons, while I come right back.  Please keep an eye on them Princess."
+    "Oh, I'll keep an eye on them, alright. But, which one?"
+    menu:
+        "Talk to Balrung":
+            $ balrung_affection += 1
+            p "Balrung, you should know that my sister Magnolia is not a friend to dragons."
+            b neutral "Why do you say that?"
+            p "She's been trying to convince my father to sign new legislation forbidding dragons from owning titles." #TODO something more exciting?!
+        "Flirt with Niir":
+            $ niir_affection += 1
+            p "Now that we have gotten rid of that {i}inconvenience{/i}, we can get back to business."
+            p "I've enjoyed your antics; you are quite the asset to have on hand, Niir."
+            n "I would like to have my handsss on your as-"
+            b smirk "You were asking for that one, Princess."
+            p "Of course I was. And Niir was kind enough to deliver."
+            n "Kind?! You'rrrre suppossssed to be outraged!"
+            p "Why would I be outraged when you said exactly what I predicted? That wouldn't be logical, would it?"
+            b smirk "Oh ho ho! Careful with this one, Niir."
+            n "Perhapssss I sssshould have to try harder to sssurprise you."
+            "That's exactly what I'm hoping for…"
+    p "You can try, but I don’t believe it will be possible.  By all means though, try away."
+    n "Nexxxxt time, Princessss."        
+
+        "Help Cyril":
+            $ cyril_affection += 1
+            p "Wait a moment, Moronious.  I’ll get that hat of yours."
+            p "We wouldn’t want you to trip down the stairs doing so.  Actually, I’m not so sure that wasn’t what Niir had in mind."
+            c "Oh, thank you.  I’m most honored.  But I could not have you handling my hat yourself."
+            p "And why not?  Is your hat too precious for mere royalty to touch?"
+            c "Oh no.  That wasn’t what I meant at all.  It’s just, well, hats are a rather personal thing and I’m not sure if it would be strange suggesting-"
+            p "Don’t be ridiculous, Moronious.  It’s only a hat."
+            c "Ah, yes.  You are right with that one.  Only a hat after all." 
+            p "There it is."
+            show cyril hat smile blush with dissolve
+            c "I am most grateful."
+            p "Do stop smiling like a nitwit.  Your desperate plea for pitying is starting to disgust me."
+            show cyril hat neutral
+            c "Oh, of course.  I wouldn’t dream of disgusting you."
+            c "We should go back.  I’m not sure what mess those dragons have gotten into already.  I dare say the food won’t still be there."
+
+    p "Thank you all for an...informative evening. My apologies for the ineptitude of the chef."
+    b "Thank {b}you{/b}, Princess. Your presence is a delightful change from the ordinary events of this wretched place."
+    n "At leasssst the cccchef provided usss with entertainment."
+    c "Nobody was impressed by that, Niir.  But I am glad you got your kicks out of the way for the evening."
+    p "So we should get back to eating this horrid concoction that Moronious conjured."
+    n "Disssgusting."
+    c "It is perfectly healthy and nutritious!"
+    p "The things a princess must put up with for the future of her kingdom..."
     return
