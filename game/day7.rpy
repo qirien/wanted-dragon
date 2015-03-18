@@ -65,17 +65,17 @@ label niir7:
     p "Once I'm Queen, then I'll have time for such frivolous activities. But, you are right that we should practice. Lie down and pretend to be unconscious. I will see if I can move you."
     hide niir
     n "Thissss isss lesss fun than I expecccted."
-    p "Hyaaah! What have you been eating, you enormous useless lump?!"
+    p "Hyaaah! What have you been eating, you enormous useless lump?!" with vpunch
     n "Exccccept for that rabbit, nothing but tasssstelesssss ssstew."
     "I couldn't lift him at all; he seemed more dense than a normal human. I grabbed him under the arms and was able to slide him across the castle tiles down the hallway."
     n "That hurtsssss Princessss."
     p "Poor baby Niir; I thought you could take a little rough handling."
     n "I prefer to be the one giving the punissssshment."
     p "Don't give it if you can't take it- oof!"
-    "I fell back and sat on the floor, Niir's head in my lap. He was probably enjoying this way too much..."
+    "I fell back and sat on the floor, Niir's head in my lap. He was probably enjoying this way too much..." with vpunch
     menu:
         "Shove him away.":
-                p "Get off me, you salacious serpent!"
+            p "Get off me, you salacious serpent!"
 
         "Tease him a bit.":
             $ niir_affection += 1
