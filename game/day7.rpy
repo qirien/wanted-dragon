@@ -14,6 +14,50 @@ label day7:
         call niir7
 
 label cyril7:
+c "So, Princess.  I had something I wanted to discuss with you."
+c "I think you'd make a rather good sounding board and I am terribly grateful for what you did yesterday."
+c "I think Niir will think twice next time before he-"
+p "Did you just compare me to a sounding board mage?"
+c "Oh, well.  Not intentionally."
+c "I don't think you're anything like a piece of board.  You're much more... lively than that."
+p "Lively.  Yes.  One would {i}hope{/i} so."
+c "Anyway, I know it is my duty to guard this castle and these dragons.  It is something I take most seriously, but recently I have been made an offer."
+p "To study under ---.  Yes.  I am aware of that offer."
+menu:
+	"\"I think you should take it.\"":
+	    $ cyril_affection += 1
+		c "Oh really?  Do you really think so?"
+		c "I was hoping that I wasn't just being presumptous."
+		c "It was hard to imagine that they wanted {i}me{/i}.  But if you really think it would be worth taking and worth giving up my post for."
+		p "Well, your magic is rather pathetic Cyril.  And if you don't get any better then how can you aide me?"
+		p "It doesn't do us any favors to have you grow old here and forget spells for the rest of your days."
+		c "So you see a future?"
+		c "I mean, with us.  Between us.  Errr, together."
+		p "Possibly.  But you would need to be more powerful.  "
+		extend "And wear that ridiculous hat a lot less."		
+		c "I feel quite unclothed without my hat.  But I mean, I could.  {i}For you{/i}."
+		show cyril smile
+		"And then he took off his hat and looked at me with those pathetic puppy dog eyes of his as if he was begging for some kind of approval from me."
+		"Tsh.  Most unappealing.  Even though I know he would be loyal if I let him down, I feel as though I should at least bite my tongue."
+		p "That's a start, Cyril.  And after you go away and make yourself useful then maybe we can take more steps forward."
+		c "I- I'd like that your highness."
+		
+	
+	"\"That offer is a complete waste of my-I mean your time.\"":	
+		c "Well, yes.  It was rather perposterous come to think of it."
+		c "I do have a duty, and I am a man of my duty and of my word."
+		c "I couldn't just simply..."
+		"It is sad to see him try to justify not going like this."
+		"But if he goes, someone harder to manipulate will take his place."
+		"And then where will I be?"	
+		"Somebody had to make the hard choices around here and as usual that somebody had to be me."
+		p "Yes, your loyalty is to the dragons.  Anyone with eyes can see that."
+		p "You know their best interests and you put them above your own."
+		p "That is what makes you such a good dragon keeper.  However, I could help you out if you only said the word."
+		c "You would do that, for me?"
+		p "Of course I would Cyril.  You can trust me with these crafty dragons."
+		#MORE MANIPULATING?  IDEAS?
+
     
     return
     
