@@ -120,6 +120,16 @@ This music is licensed under the Creative Commons Attribution-NonCommercial-Shar
 "Wanted: Dragon" Sound Effects are modified and unmodified versions of sound files licensed under a variety of licenses.
 All modifications are released under the same license as the original sound files.
 
+==== Public Domain
+flippage.ogg from Freesound.org by Kodack, <http://www.freesound.org/people/Kodack/sounds/256475/>
+electricity.ogg from Freesound.org by ihitokage, <http://www.freesound.org/people/ihitokage/sounds/187363/>
+fireball.ogg from Freesound.org by ReadeOnly, <http://www.freesound.org/people/ReadeOnly/sounds/186932/>
+boiling.ogg from Freesound.org by 211redman112, <http://www.freesound.org/people/211redman112/sounds/145797/>
+stab.ogg from Freesound.org by Mixedupmoviestuff, <http://www.freesound.org/people/Mixedupmoviestuff/sounds/179222/>
+
+==== CC-BY
+lightning.ogg from Freesound.org by NoiseNoir, <http://www.freesound.org/people/NoiseNoir/sounds/238302/>
+rain.ogg from Freesound.org by D W, <http://www.freesound.org/people/D%20W/sounds/136971/>
 
 == Game Engine
 

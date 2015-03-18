@@ -1,6 +1,6 @@
 # DAY 7
 label day7:
-    # Another letter from home tells her that the Coronation is in three days!
+    # Another letter from home tells her that the Coronation is in two days!
     
     
     # Whoever's route she didn't choose hinders her?
@@ -14,49 +14,49 @@ label day7:
         call niir7
 
 label cyril7:
-c "So, Princess.  I had something I wanted to discuss with you."
-c "I think you'd make a rather good sounding board and I am terribly grateful for what you did yesterday."
-c "I think Niir will think twice next time before he-"
-p "Did you just compare me to a sounding board mage?"
-c "Oh, well.  Not intentionally."
-c "I don't think you're anything like a piece of board.  You're much more... lively than that."
-p "Lively.  Yes.  One would {i}hope{/i} so."
-c "Anyway, I know it is my duty to guard this castle and these dragons.  It is something I take most seriously, but recently I have been made an offer."
-p "To study under ---.  Yes.  I am aware of that offer."
-menu:
-	"\"I think you should take it.\"":
-	    $ cyril_affection += 1
-		c "Oh really?  Do you really think so?"
-		c "I was hoping that I wasn't just being presumptous."
-		c "It was hard to imagine that they wanted {i}me{/i}.  But if you really think it would be worth taking and worth giving up my post for."
-		p "Well, your magic is rather pathetic Cyril.  And if you don't get any better then how can you aide me?"
-		p "It doesn't do us any favors to have you grow old here and forget spells for the rest of your days."
-		c "So you see a future?"
-		c "I mean, with us.  Between us.  Errr, together."
-		p "Possibly.  But you would need to be more powerful.  "
-		extend "And wear that ridiculous hat a lot less."		
-		c "I feel quite unclothed without my hat.  But I mean, I could.  {i}For you{/i}."
-		show cyril smile
-		"And then he took off his hat and looked at me with those pathetic puppy dog eyes of his as if he was begging for some kind of approval from me."
-		"Tsh.  Most unappealing.  Even though I know he would be loyal if I let him down, I feel as though I should at least bite my tongue."
-		p "That's a start, Cyril.  And after you go away and make yourself useful then maybe we can take more steps forward."
-		c "I- I'd like that your highness."
-		
-	
-	"\"That offer is a complete waste of my-I mean your time.\"":	
-		c "Well, yes.  It was rather perposterous come to think of it."
-		c "I do have a duty, and I am a man of my duty and of my word."
-		c "I couldn't just simply..."
-		"It is sad to see him try to justify not going like this."
-		"But if he goes, someone harder to manipulate will take his place."
-		"And then where will I be?"	
-		"Somebody had to make the hard choices around here and as usual that somebody had to be me."
-		p "Yes, your loyalty is to the dragons.  Anyone with eyes can see that."
-		p "You know their best interests and you put them above your own."
-		p "That is what makes you such a good dragon keeper.  However, I could help you out if you only said the word."
-		c "You would do that, for me?"
-		p "Of course I would Cyril.  You can trust me with these crafty dragons."
-		#MORE MANIPULATING?  IDEAS?
+    c "So, Princess.  I had something I wanted to discuss with you."
+    c "I think you'd make a rather good sounding board and I am terribly grateful for what you did yesterday."
+    c "I think Niir will think twice next time before he-"
+    p "Did you just compare me to a sounding board mage?"
+    c "Oh, well.  Not intentionally."
+    c "I don't think you're anything like a piece of board.  You're much more... lively than that."
+    p "Lively.  Yes.  One would {i}hope{/i} so."
+    c "Anyway, I know it is my duty to guard this castle and these dragons.  It is something I take most seriously, but recently I have been made an offer."
+    p "To study under Grivvorn.  Yes.  I am aware of that offer."
+    menu:
+        "\"I think you should take it.\"":
+            $ cyril_affection += 1
+            c "Oh really?  Do you really think so?"
+            c "I was hoping that I wasn't just being presumptous."
+            c "It was hard to imagine that they wanted {i}me{/i}.  But if you really think it would be worth taking and worth giving up my post for."
+            p "Well, your magic is rather pathetic Cyril.  And if you don't get any better, then how can you aid me?"
+            p "It doesn't do us any favors to have you grow old here and forget spells for the rest of your days."
+            c "So you see a future?"
+            c "I mean, with us.  Between us.  Errr, together."
+            p "Possibly.  But you would need to be more powerful.  "
+            extend "And wear that ridiculous hat a lot less."                
+            c "I feel quite unclothed without my hat.  But I mean, I could.  {i}For you{/i}."
+            show cyril smile
+            "And then he took off his hat and looked at me with those pathetic puppy dog eyes of his as if he was begging for some kind of approval from me."
+            "Tsh.  Most unappealing.  Even though I know he would be loyal if I let him down, I feel as though I should at least bite my tongue."
+            p "That's a start, Cyril.  And after you go away and make yourself useful then maybe we can take more steps forward."
+            c "I- I'd like that, your Highness."
+            
+    
+        "\"That offer is a complete waste of my-I mean your time.\"":        
+                c "Well, yes.  It was rather perposterous come to think of it."
+                c "I do have a duty, and I am a man of my duty and of my word."
+                c "I couldn't just simply..."
+                "It is sad to see him try to justify not going like this."
+                "But if he goes, someone harder to manipulate will take his place."
+                "And then where will I be?"        
+                "Somebody had to make the hard choices around here, and as usual, that somebody had to be me."
+                p "Yes, your loyalty is to the dragons.  Anyone with eyes can see that."
+                p "You know their best interests and you put them above your own."
+                p "That is what makes you such a good dragon keeper.  However, I could help you out if you only said the word."
+                c "You would do that, for me?"
+                p "Of course I would Cyril.  You can trust me with these crafty dragons."
+                #MORE MANIPULATING?  IDEAS?
 
     
     return
@@ -94,7 +94,7 @@ label niir7:
     p "And it's not like you to outright insult me. I don't have time for play; my sister will be crowned in three days unless I can find a way to stop her!"
     n "Your ssssisster hasss nothing on you, Princesss.  You are not like other princessesssss."
     p "Well, you wouldn't have fallen in love with just any old princess. Actually, perhaps you would have, now that I think about it."
-    n "Fallen?  {I}Balrung, that sssscheming Balrung{/i}.  He issss to blame for putting ideassss into your head."
+    n "Fallen?  {i}Balrung, that sssscheming Balrung{/i}.  He issss to blame for putting ideassss into your head."
     p "Well, it matters little what you think. What matters is stopping my sister! Will Moronious let you go, do you think?"
     n "... "
     n "Perhapssss, if he has amnessssia."
@@ -127,10 +127,10 @@ label niir7:
             n "I can make it more enjoyable if you wissssh. You did it on purpossssse, didn’t you?"
             p "I'm sure I don't know what you're talking about. Though, now that I look at you from this angle...your ears are very strange. What purpose does their strange shape serve?"
             n "Touch them and guessss if you prefer but my lipsss are sssealed."
-            p "Hmph. Now I feel both curious and queasy. Not a mix of emotions I enjoy. Get up, now."
+            p "Hmph. Now I feel both curiousity and revulsion. Not a mix of emotions I enjoy. Get up, now."
             n "What if I ssssay no?"
 
-    "I stood up and his head hit the ground with a crack."
+    "I stood up and his head hit the ground with a crack." with hpunch
     n "You clumssssy princessss.  What did you do that forrrrr?"
     p "I need some way to make you lighter, or myself stronger…"
     n "Impossssible.  Perhapssss you need to learn magic."
@@ -284,7 +284,7 @@ label our_enemy:
     b smile blush "About being in love with you. Of course I said it so he could hear me, but... well..."
     p "Oh that! Yes, of course you're in love with me. That's why I can trust you."
     b determined "..."
-    p "So, it seems like the easiest way is going to be to kill Merlonious."
+    p "So, it seems like the next step in our plan will be to kill Merlonious."
     b neutral "Perhaps. Let us meet again tomorrow; there is something that could help us that I must research alone."
     p "Yes, it is getting late, isn't it?"
     b smile blush "But for now, my lady..."
@@ -296,13 +296,18 @@ label our_enemy:
             "I wanted more."
             "I grabbed his vest and pulled his head down to my level."
             show balrung determined with dissolve
-            p "You will kiss your queen goodnight."            
+            p "You will kiss your queen goodnight."
+            show balrung smile blush with dissolve
+            "It was the perfect kiss; just long enough to ignite passion, just firm enough to imply strength, and just gentle enough to signify tenderness."
         "Slap him":
-            $ balrung_affection -= 1
+            "If he thought a little kiss on the forehead was going to turn me into a simpering pliable damsel, he was greatly mistaken."
+            $ balrung_affection -= 3
             show balrung determined at reset_zoom with hpunch
             p "You presume too much, minion."
             
         "Say good night":
+            "I needed to remain aloof enough to keep him under my control. I took a step back."
+            show balrung at reset_zoom with dissolve
             p "Good night, Balrung."
     
     b smirk "Goodnight, my Queen."

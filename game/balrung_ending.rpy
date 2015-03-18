@@ -40,7 +40,7 @@ label balrung_epilogue:
 label balrung_ending:
     "Now that Moronious was not about to attack us, I wrapped up my arm in a dishtowel and turned to look at Balrung. He lay still, but was breathing."
     "Slowly, he opened his eyes, and I helped him sit up."
-    show balrung at center with move
+    show balrung neutral at center with moveinbottom
     b determined "Such a fool..."
     p "Yes, I shall be glad to be rid of him."
     b angry "I meant you."
@@ -48,22 +48,25 @@ label balrung_ending:
     b smirk "Is it still disrespectful if I am your King?"
     p "King?!"
     b smile "You freed me, Princess, and I want to aid you. What better way to help you maintain your kingdom than to serve by your side?"
+    "He would be useful...but could I trust him?"
     p "You claim to have great power as a dragon. Moronious' spell is now broken, so show me!"
     b smirk "I will."
     hide balrung with red_flash
     scene bg kitchen with punch_long
-    "He shook his head and stretched, and stretched, and stretched, skin shimmering into deep red scales. Wings emerged from his back and beat the air like waves crashing against a ship. His serpentine body filled the entire kitchen."
-    "He breathed a ball of fire at one of the chairs, turning it instantly to ash. He looked at me for my response."
+    "He shook his head and stretched, and stretched, and stretched, skin shimmering into deep red scales. Wings emerged from his back and beat the air like waves crashing against a ship."
+    "Balrung breathed a ball of fire at one of the chairs, turning it instantly to ash. His reptilian eyes looked at me for my response."
+    play sound "sfx/fireball.ogg"    
     scene bg kitchen with red_flash
     # TODO: fireball vfx?
     menu:
-        "Marry Balrung.": #TODO: only if balrung_affection high enough?
+        "Marry Balrung." if (balrung_affection >= HIGH_AFFECTION): #TODO: only if balrung_affection high enough?
             p "Balrung, your patient ruthlessness, and powers over flight and fire, will help you serve me well as my King. Now, let me climb on your back and take us to [k_name]."
             b "What an excellent future we shall have together. None will dare to defy our reign!"
             p "Mwah ha ha ha ha!"
             b "Bwah ha ha ha ha!"
             scene bg sunset with fade            
             "With a rush of wings and dust, we flew out of the dungeon and into the wide evening sky. Balrung let fly a fireball at the gates of his old prison, just for fun."
+            play sound "sfx/fireball.ogg"
             "With a dragon on my side, my father would {b}have{/b} to make me Queen... and if not, well, I'd make sure there was no other choice."
             "And Balrung would be an valuable ally to have as we ruled together."
             "I reached down to pat his scaly cheek and could tell from the gleam in his eye that he was thinking the exact same thing. I'd never lack a worthy opponent again."
@@ -87,6 +90,7 @@ label balrung_ending:
         "Leaving several shiny red scales behind."
         p "With these, I can make as many Potions of Persuasion as I want! I'll become Queen all on my own! Mwah ha ha ha ha!"
         # TODO: kidnapped by Niir, who is now free? Or rules on her own?
+        return
     else:
         p "..."
         show cyril neutral hat at center with moveinleft
@@ -95,6 +99,7 @@ label balrung_ending:
         c "Y-yes your highness?"
         p "Shall we attack that evil dragon?"
         c "We shall!"
+        play sound "sfx/electricity.ogg"
         # TODO lightning crackles.
         # TODO: jump to a Cyril ending?
         call credits
@@ -193,9 +198,11 @@ label old_balrung_ending:
                 
 label cyril_attack:                
     c "NOT. SO. FAST!"
+    play sound "sfx/electricity.ogg"
     # TODO lightning crackles
     c "YOU WILL NEVER LEAVE HERE!!!!"
     "Balrung breathed a maelstrom of fire in our direction, but Cyril swiped it away with a gesture from his wand. The old dragon pounced forwards as Cyril shouted another spell."
+    play sound "sfx/lightning.ogg"
     c "DRACONIS PETROMUNDI!"
     "There was a puff of smoke that sped towards Balrung like an arrow, and when it cleared... he had turned to stone." 
     # TODO: Finish this? Jump to a cyril ending?                

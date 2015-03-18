@@ -1,17 +1,27 @@
 label day8:
-    p "It's time."
+    scene bg bedroom day with fade
+    "Time is running out; Magnolia's coronation will take place tomorrow, unless I can find a way to stop it!"
+    "Careful plots would take too much time; I needed to act now."
+    if (route == "Niir"):
+        jump niir8
+    elif (route == "Cyril"):
+        jump cyril8
+    elif (route == "Balrung"):
+        jump balrung8
+        
+    return
     
 label balrung8:
-    scene bg bedroom day with fade
     "That fool mage won't let Balrung go no matter what. I need a new plan..."
     "There are some good books on potions in the library. There must be something that can help!"
     scene bg library with fade
     "Good, it's empty. Now, where was that book...?"
     "Ah yes, {i}Draughts of Death, Destruction, and Devastation{/i}. Death is such an uninteresting solution, but if it's the one that works best..."
-    # TODO: page flipping sfx"
+    play sound "sfx/flippage.ogg"
     "Hmmm, here's a Concotion of Confusion... but it takes griffon claws, and those aren't easy to find. And three-month dried kelp; I'm not waiting that long."
     "A Potion of Persuasion? That could work... it requires a dragon scale. Well, if we had any dragons in dragon form, that'd be no problem."
     "Transmogrification Tonic? If I could turn into a dragon... but then, I'd be stuck here as well. Unless I drank it after leaving... then I mightn't need help after all..."
+    stop sound fadeout 2.0
     show balrung neutral at center with moveinleft
     b determined "Chrysandra? There you are! I have another plan, but I'm not satisfied with its chances for success. Tell me you have something better."
     p "Depends. Do you have any dragon scales?"
@@ -49,9 +59,12 @@ label balrung8:
     b smirk "Of course, Chrysandra."
     hide balrung with moveoutleft
     scene bg kitchen with fade
+    play sound "sfx/boiling.ogg" loop
     "At least the scale only needs to boil in blood for an hour. But, it took more blood than I thought...I need to sit down."
     scene bg kitchen with vpunch
     "Oh. I'm already sitting down. On the floor."
+    scene bg kitchen with fade
+    stop sound fadeout 10.0
     show cyril hat neutral at quarterright with moveinleft
     c hat surprised "Princess! You're bleeding!"
     c hat concerned "Which dragon was it?! I'll make sure they can NEVER hurt anyone else again!"
@@ -61,17 +74,21 @@ label balrung8:
     show balrung neutral at center with moveinleft
     b determined "Princess? I have the- oh. {b}You're{/b} here."
     c hat angry "It was YOU! YOU SHALL NOT HURT THE PRINCESS!!"
+    play sound "sfx/electricity.ogg"
     b angry "I did nothing of the sort. Stop this ridiculous posturing and help her!"
     c hat concerned "You will regret calling me ridiculous!"
     c hat angry "FULGURENTIA MAXIMA!" #TODO: lots of lightning/
+    play sound "sfx/lightning.ogg"
     show cyril hat angry with flash
-    show balrung neutral at midleft, squatting with quickmove
+    hide balrung with quickmoveoutleft
     b angry "AHHHHH!"
+    play sound "sfx/electricity.ogg"
     p "Stop it, you stupid mage! It wasn't even him, it was me!"
     c hat concerned "You're not making delirious, I mean, you're not making sense, Princess! No, no, I'm going to do what they should have done to this villain in the first place!"
     "He began muttering, trying to remember the words. I grabbed the bloody knife and managed to stand up."
     menu:
         "Attack Cyril":
+            play sound "sfx/stab.ogg"
             $ cyril_dead = True
             show cyril hat surprised with blood
             "I brought the knife down and buried it into Cyril's back. He stopped chanting and fell forward, dead. The magical aura dissipated."
@@ -105,7 +122,7 @@ label balrung8:
         "Wait it out.":
             p "Hmmm, I must admit, I'm curious who would win if you two begin fighting. What better way to prove who is stronger and more fit to aid me?"
             "They looked at each other, surprised. Balrung stood up slowly, shaking, and shook his head."
-            show balrung at standing with move
+            show balrung neutral at center with moveinbottom
             b determined "..."
             c hat surprised "..."
             p "Well? What are you waiting for? Commence battle!"
