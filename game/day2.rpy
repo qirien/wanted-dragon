@@ -203,7 +203,12 @@ label dinner_party:
             $ balrung_affection += 1
             p "Balrung, you should know that my sister Magnolia is not a friend to dragons."
             b neutral "Why do you say that?"
-            p "She's been trying to convince my father to sign new legislation forbidding dragons from owning titles." #TODO something more exciting?!
+            p "She's been trying to convince my father to sign new legislation forbidding dragons from holding titles." 
+            b smirk "Are there many dragons attempting to hold titles?"
+            p "Oh, yes, it's quite the craze to have a dragon consort. Princess Dianthus from two kingdoms over wanted to make hers King-Consort, but the United Council hasn't acquiesed yet."
+            b determined "And what do you think they should do?"
+            p "Human, dragon, I don't really care, as long as I'm the Queen!"
+            b smile "Interesting."
             
             show cyril hat neutral at left with moveinleft
         "Flirt with Niir":

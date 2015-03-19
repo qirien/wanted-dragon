@@ -133,8 +133,11 @@ label ignore:
     
     stop sound fadeout 2.0
     scene bg dungeon with fade
-    show balrung neutral at center with moveinright
-    show niir neutral at quarterright with moveinright
+    show balrung neutral at center
+    show niir neutral at quarterright
+    with dissolve    
+    show cyril hat neutral at quarterleft with moveinleft
+
     play music evil_theme        
     c hat concerned "Dragons.  I do need to ask you about my spell book. It seems I've misplaced it."
     c hat angry "Again."

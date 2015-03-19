@@ -44,19 +44,19 @@ label cyril7:
             
     
         "\"That offer is a complete waste of my-I mean your time.\"":        
-                c "Well, yes.  It was rather perposterous come to think of it."
-                c "I do have a duty, and I am a man of my duty and of my word."
-                c "I couldn't just simply..."
-                "It is sad to see him try to justify not going like this."
-                "But if he goes, someone harder to manipulate will take his place."
-                "And then where will I be?"        
-                "Somebody had to make the hard choices around here, and as usual, that somebody had to be me."
-                p "Yes, your loyalty is to the dragons.  Anyone with eyes can see that."
-                p "You know their best interests and you put them above your own."
-                p "That is what makes you such a good dragon keeper.  However, I could help you out if you only said the word."
-                c "You would do that, for me?"
-                p "Of course I would Cyril.  You can trust me with these crafty dragons."
-                #MORE MANIPULATING?  IDEAS?
+            c "Well, yes.  It was rather perposterous come to think of it."
+            c "I do have a duty, and I am a man of my duty and of my word."
+            c "I couldn't just simply..."
+            "It is sad to see him try to justify not going like this."
+            "But if he goes, someone harder to manipulate will take his place."
+            "And then where will I be?"        
+            "Somebody had to make the hard choices around here, and as usual, that somebody had to be me."
+            p "Yes, your loyalty is to the dragons.  Anyone with eyes can see that."
+            p "You know their best interests and you put them above your own."
+            p "That is what makes you such a good dragon keeper.  However, I could help you out if you only said the word."
+            c "You would do that, for me?"
+            p "Of course I would Cyril.  You can trust me with these crafty dragons."
+            #MORE MANIPULATING?  IDEAS?
 
     
     return

@@ -55,7 +55,7 @@ These images are in the public domain.
 
 The following images are licensed Attribution, Non-Commercial Use 
 
-rain1.png, rain2.png, rain3.png Rain Texture pack by Neonescence, <http://neonescence.deviantart.com/art/Rain-Texture-Pack-98148660>
+rain1.png, rain2.png, rain3.png from Rain Texture pack by Neonescence, <http://neonescence.deviantart.com/art/Rain-Texture-Pack-98148660>
 
 .License
 ****
