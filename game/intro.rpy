@@ -19,8 +19,8 @@ label intro:
     show cyril hat neutral at center with moveinright
     "{b}This{/b} is the mage in charge?! He's barely more than a child!"
     "...This is exactly the kind of inefficiency I intend to remedy when I am queen!"
-    c hat concerned "Biggeldy, boggaldy, wap!"
-    c hat surprised "I knew I didn't get that spell right!  If only I could remember how that went.  Biggeldy, boggaldy, wu?  Boggaldy, biggaldy... hmmm... I'm not even sure that I'm using the proper words."
+    c hat concerned "Luxis Contigo! Luxia Contego? Conmigo?"
+    c hat surprised "I knew I didn't get that spell right!  If only I could remember how that went.  Luxing Contegus!  hmmm... I'm not even sure that I'm using proper words."
 #    p "My name is..."
 #    $ p_name = renpy.input("What is your name?", "Chrysandra", length=30)
 #    p "I am Princess [p_name]."
@@ -127,7 +127,7 @@ label ignore:
     p "..."
     c hat concerned "Oh yes.  Oh, of course, there is an apparition in front of me. Oh Cyril.  You’ve finally done it.  You’ve gone completely bonkers."
     "He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him."
-    c hat neutral "Well, back to that spell again.  Biggeldy- I'll never get it!  Now where did I keep that spellbook.  It was around here somewhere!  "
+    c hat neutral "Well, back to that spell again.  Luxius Conremo!- I'll never get it!  Now where did I keep that spellbook.  It was around here somewhere!  "
     c hat surprised "I just need to find it.  Perhaps one of those surly dragons knows where it got to."    
     "Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance..."  
     
@@ -176,7 +176,7 @@ label meet_dragons:
     show balrung neutral at center with moveinright
     b smirk "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
     show niir neutral at quarterright with moveinright
-    n "I sssssee that you have brought a friend.  Delic-delightful."
+    n "Cccyri the Chassssste.  I sssssee that you have brought a lady friend.  Delic-delightful."
     c hat concerned blush "Oh no you don't.  This is royalty.  The royal princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu dragon_chat:
         "Allude to your purpose in veiled terms.":
