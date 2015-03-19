@@ -85,7 +85,7 @@ label balrung_ending:
             b "A pity. I rather enjoyed our time together. But I won't try to force you to change your mind. I've learned that lesson, at any rate."
             
     "In a whoosh of wings, he was gone." 
-    scene bg kitchen with punch_long    
+    scene bg kitchen with hpunch    
     if (cyril_dead):
         "Leaving several shiny red scales behind."
         p "With these, I can make as many Potions of Persuasion as I want! I'll become Queen all on my own! Mwah ha ha ha ha!"

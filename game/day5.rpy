@@ -1,7 +1,7 @@
 # cyril dissuading against niir route
 # DAY 5?!
 label day5:
-    scene bg bedroom with fade
+    scene bg bedroom dusk with fade
     "I was just finishing the unoriginal-yet-edible breakfast Moronious had dropped off for me when there was a knock at the door."
     
     if (route == "Niir"):
@@ -130,7 +130,7 @@ label day5:
                         p "I do."
                         b "Why don't you meet me down in the dungeons in an hour, and we can spend some time together? If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
                         p "He seems to think you cannot change. How will you convince him otherwise?"
-                        b "As I have not changed for forty years, when I suddenly do appear kind and loving, he will have no choice but to believe me. That's the benefit of being honest most of the time; people tend to believe you are still honest the rest of the time."
+                        b "As I have acted the recalcitrant criminal for forty years, when I suddenly do appear kind and loving, it will be very convincing."
                         p "You are more shrewd than I gave you credit for... this might actually work."
                         $ route = "Balrung"
                         jump balrung5
@@ -141,7 +141,7 @@ label balrung5:
     b smile "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
     p "You can save the flattery for later when Moronious can \"accidentally\" overhear you."
     b smile blush "That wasn't for Moronious; that was for you, my lady. "
-    extend smile "Would you care to play Queens and Pawns?"
+    b smile "Would you care to play Queens and Pawns?"
     p "I suppose there's not much else to do in this wretched dungeon. You may go first."
     b smirk "How generous of you."
     p "How did you come to be imprisoned here, anyway? I've heard you did something quite terrible."
@@ -154,7 +154,7 @@ label balrung5:
             b neutral "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and (though she never said it) to prove to us that humans were worth talking to."
             b smirk "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
             b angry "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
-            "I was so caught up in what he was saying that I almost missed how he had setup his Pawns in a chain reaction. I saw it just in time."
+            "I was so caught up in what he was saying that I almost missed how he had setup his pawns in a chain reaction that was about to decimate my queens. But now that I had seen through his scheme it would be easy to unravel."
         "Focus on strategy.":
             b determined "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
             "He's trying to draw my attention with his Queens while the Pawns setup a chain reaction! My Queens shall whittle down his defenses while he's not paying attention."
@@ -173,7 +173,7 @@ label balrung5:
     b neutral "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison. To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
     menu:
         "Serves you right.":
-                    p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her here with you."
+                    p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her with you."
                     b angry "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
         "You loved her.":
                     p "You loved her, then?"
@@ -186,6 +186,7 @@ label balrung5:
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
     b smile "One day...perhaps."
     show cyril hat neutral at midleft with moveinleft
+    show balrung at midright with move
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
     b smirk "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
@@ -201,34 +202,34 @@ label balrung5:
     c "Faint?! Um, well, ah, what should we do?!"
     show balrung smile blush with dissolve
     "I pressed my hand to my forehead and collapsed into Balrung's arms. That's what heroines of love stories are always doing; it should help convince that fool Moronious."
-    scene black
+    scene black with fade
     c "St-stop that! You mustn't hold the Princess that way!"
     b smirk "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
     c "Well, no, I wouldn't want that, but- I'm not- you can't!"
     b smile blush "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
-    scene dungeon with irisin
-    show balrung smile at center with come_closer
+    scene bg dungeon 
+    show balrung smile at center, come_closer
+    with fade
     "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
-    scene black with irisout
+    scene black with fade
     b smile "Our poor Princess... she's been through so much."
-    "He stroked my hair tenderly away from my face while Cyril gaped. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor; almost as good as me."
+    "He stroked my hair tenderly away from my face while Cyril sputtered. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor. Almost as good as me."
     c "Well I- I will just stay here and watch over the Princess until she recovers! I'll protect her from you, you, vituperous viper!"
     b smirk "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
-    show niir neutral at right with moveinright
     n "Why is the Princesss pretending to sssleep on your bed?"
     b smile eyes closed "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
     c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my batter is faster than my train! I mean, my chatter is faster than my brain..."
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
-    scene dungeon with fade
+    scene bg dungeon with fade
     show balrung smirk at center
     show cyril hat neutral at midleft
     show niir neutral at midright
     with dissolve
-    p "Oh, thank you gentlemen for taking such good care of me. I don't know what came over me. But I'm so glad I can trust you... well, {b}some{/b} of you, anyway."
+    p "Oh, thank you, Balrung, for taking such good care of me. I don't know what came over me. But I'm so glad I can trust {b}you{/b}, at least."
     "I glared at the mage, hoping he would feel even more guilty."
     p "And now I will depart, so please excuse me."
-    b smile "Until next we meet, Princess."
+    b smile eyes closed "Until next we meet, Princess."
     
     return
 
@@ -301,7 +302,7 @@ label niir5:
     show cyril hat neutral at midright with reset_zoom
     c "Princess! You can't! Y-You mustn't believe him!"
     show niir neutral at center with reset_zoom
-    p "Moronious! What a… surprise to see you here, interrupting our completely private conversation!"
+    p "Moronious! What a... surprise to see you here, interrupting our completely private conversation!"
     c "I warned you about him, Princess.  And I don’t believe any of this for a second!  You won’t fool old Cyril the Clever.  Errr, young Cyril.  I do quite forget my age some times."
     n "Nobody calls you Cccccyril the Cleverrr."
     c "I’m sure someone has called me that once.  I’m sure some time..."
@@ -327,13 +328,13 @@ label somethigh:
     p "I'll show you some of mine if you show me some of yours."
     p "Trust."
     n "I thought you'd never offer."
-    scene black
+    scene black with magic_flash
     # TODO: add vfx for Cyril's protection spell that got activated?
     p "Happy now?"
     n "Happy wouldn't be the word that I would ussssse."
     p "Well, now I know how Moronious' protection spell works. I'm surprised you're still conscious after that much electricity."
     n "You are no fun Princesssss."
-    scene castle
+    scene bg dungeon with fade
     p "So there we go, I trust you enough with that, and now you trust me. Say it."
     n "Sssstill not convincccccced."
     with hpunch
@@ -431,7 +432,8 @@ label cyril5:
     p "{size=+2}Just do the spell already!{/size}"
     c "Ah yes."
     
-    c "Magia Luxis!" #TODO: font for magic?
+    c "{font=fonts/ankecallig-fg.ttf}Magia Luxis{/font}!"
+    show cyril hat angry with magic_flash
     c "Something is blocking it... but the scepter is here, in this castle!"
     c "I'm so sorry, your highness, but I need to study this more. Please be patient!"
     p "I am not a patient person, Moronious."
@@ -450,13 +452,13 @@ label cyril5:
     "Such an amusing plaything!"
     c "I wouldn’t- I wouldn’t say {i}that{/i}." 
     p "And if I lean on your shoulder, like this…?"
-    c "Oh dear.  I-I- do believe you have me flustered Princess."
+    c "Oh dear.  I-I- do believe you have me flustered, Princess."
     p "Well, we wouldn't want that. I suppose I'd better leave you alone for now, even though there's so many other things I'd like to show you."
     c "Ah yes."
     c "..."
     c "I mean no, no, that isn’t necessary.  You don’t-"
     p "Don't worry; I know exactly what you mean. You don't have to explain to me. So, until next time..."
     c "Good night, P-Princess."
-    "It's still midafternoon…"
+    "It's still midafternoon..."
     p "...Good night."
     return

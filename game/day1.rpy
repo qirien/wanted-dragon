@@ -1,5 +1,5 @@
 label day1:
-    scene bg bedroom day with fade
+    scene bg bedroom dusk with fade
     p "What a terrible start to a day; I'm still not queen."
     p "But that's why I came here; to remedy that."
     p "Dragons are powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
@@ -166,42 +166,41 @@ label explore1:
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
-    # TODO: rope drops
-    # niir drops down
-    show niir neutral at midright with moveintop
+    show rope at midright with moveintop
     p "Well, what do we have here?"
-    n "The ansssswer to all your problemsss."
+    show niir neutral at center with moveinright
+    n mischief "The ansssswer to all your problemsss."
     p "A piece of rope?"
-    n "Look clossser."
+    n smile "Look clossser."
     p "A noose.  How very... "
     extend "thoughtful of you."
-    n "Thoughtful is not ussssually one of the words used to describe the great dragon Niir."
+    n frown "Thoughtful is not ussssually one of the words used to describe the great dragon Niir."
     p "You don't say?"
     p "Well, Niir.  I am very busy with things."
     p "So if you'd please be on your way, I can get to my explorations."
-    n "Need an esssscort?"
-    n "You mussst.  Pretty young thing like you.  {i}Alone{/i}.  In the casssstle."
-    n "I'd advisssse you to be more careful."
+    n neutral "Need an esssscort?"
+    n mischief "You mussst.  Pretty young thing like you.  {i}Alone{/i}.  In the casssstle."
+    n smirk "I'd advisssse you to be more careful."
     p "In case what?  There's some dragon lurking around above me and spying on me?"
     p "How ever will I cope?"
-    n "Careful.  Or you might make a dragon mad."
+    n determined "Careful.  Or you might make a dragon mad."
     p "How do you know that wasn't what I intended?"
-    n "You are not sssscared?"
-    n "..."
-    n "Curiousss."
+    n concerned "You are not sssscared?"
+    n neutral "..."
+    n frown "Curiousss."
     p "And could you stop sniffing me like that, I {i}have{/i} recently bathed!"
-    n "Oh of that, I'm well aware."
+    n happy "Oh of that, I'm well aware."
     p "So I guess that's why you're in here."
-    p "You creeped everyone out so they couldn't stand you."
-    p "But it's a good thing I can stand you, because I'm the only shot you have at getting out of here."
-    n "You need to get your facts sssstraight nexxxt time."
-    n "Prrrrrincessssss."
+    p "Any proper lady would be repulsed by such loathsome habits."
+    show niir frown with dissolve
+    p "But it's a good thing I'm not so proper, because I'm the only shot you have at getting out of here."
+    n angry "You need to get your facts sssstraight nexxxt time."
+    n smirk "Prrrrrincessssss."
     hide niir with moveoutright
-    p "I have got my- Niir!  Where did you get to?"
-    p "You sneaky dragon, GET BACK HERE!"
+    p "I have got my- Niir!  Where did you get to, you sneaky dragon!"
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"
     "..."
     scene bg stairs with fade
     p "This castle just has endless steps!"
-    "Hours of searching... and nothing. Well, except for this delicious salted fish from the kitchens. So I supposed it wasn't a complete waste of time."
+    "Hours of searching... and nothing. Well, except for these delicious dried apples from the kitchens. And this rope...? So I supposed it wasn't a complete waste of time."
     return

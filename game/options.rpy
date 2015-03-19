@@ -287,6 +287,7 @@ init -1 python hide:
     #########################################
     ## More customizations can go here.
     config.fade_music = 2.0    
+    _window_during_transitions = True
 
 
 ## This section contains information about how to build your project into

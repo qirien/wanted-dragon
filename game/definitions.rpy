@@ -35,10 +35,12 @@ init -1:
     #
     # TODO: delete backgrounds we end up not using.
     image bg library = "bg/library.jpg"
-    image bg bedroom day = "bg/bedroom_day.jpg"
+    image bg bedroom dusk = "bg/bedroom_day.jpg"
     image bg bedroom dusk = "bg/bedroom_dusk.jpg"
     image bg bedroom candle = "bg/bedroom_candle.jpg"
+    image bg closet = "bg/closet.jpg"
     image bg dungeon = "bg/dungeon_day.jpg"
+    image bg dungeon night = "bg/dungeon_night.jpg"    
     image bg corridor = "bg/corridor.jpg"
     image bg corridor flip = im.Flip("bg/corridor.jpg", horizontal = True)
     image bg exterior dusk = "bg/exterior_dusk.jpg"    
@@ -71,7 +73,6 @@ init -1:
     # SPRITES
     #
     image side princess = Placeholder("girl")
-    
     # Automatically import all sprites in the 'sprites' subdirectory 
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
 init python:
@@ -105,8 +106,10 @@ init -1:
     define vpunch_long = Move((0, 15), (0, -15), .10, bounce=True, repeat=True, delay=2.0)
     define hpunch_long = Move((20, 0), (-20, 0), .10, bounce=True, repeat=True, delay=2.0)
     
-    define fade = Fade(0.2, 0.2, 0.2) # TODO: Tweak these times for our game?
+    define fade = Fade(0.3, 0.3, 0.3) # TODO: Tweak these times for our game?
+    define slowfade = Fade(0.5, 0.5, 0.5) # TODO: Tweak these times for our game?    
     define flash = Fade(.25, 0, .75, color="#fff")
+    define magic_flash = Fade(.25, 0, .75, color="#acf")
     define red_flash = Fade(.25, 0, .75, color="#a90000")
     define blood = Fade(.25, 0, .25, color="#f00")
     define dissolve = Dissolve(0.4, alpha=True)

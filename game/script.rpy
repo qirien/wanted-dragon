@@ -10,9 +10,5 @@ label start:
         $ renpy.pause(1.6)
         call expression "day" + str(i)
         $ i += 1
-    
-    scene black with fade
-    show text "Day 9"
-    $ renpy.pause(1.6)
-    call ending
+
     return

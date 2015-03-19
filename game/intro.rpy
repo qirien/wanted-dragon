@@ -8,12 +8,12 @@
 
 # The game starts here.
 label intro:
-    scene bg gate dusk with fade
+    scene bg gate dusk
     show rain
+    with fade
     play music princess_theme
     play sound "sfx/rain.ogg" loop
     window show
-    # TODO: add rain VFX?
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p "But first... I’ll have to deal with the mage left to guard this place."
     show cyril hat neutral at center with moveinright
@@ -191,7 +191,8 @@ label meet_dragons:
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b angry "Would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human appearance is not our normal state, you know."
             c hat concerned "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
-            n mischief "I would call it mistreatment to be kept away from the world daily - to see the sights and sssmell the... flowers.  Perhapssss you are here to help though?  Eassse the pain?"
+            n sad "I would call it mistreatment to be kept away from the world daily - to see the sights and sssmell the... flowers."
+            n mischief "Perhapssss you are here to help though?  Eassse the pain?"
     
     if (cyril_insanity > 0):
         c hat surprised "Sooo...wait, you're not an apparition? You're real? Why didn't you say something to me earlier?"
@@ -216,7 +217,7 @@ label meet_dragons:
                 
                 "\"Not interested.\"":
                     p "Not interested."
-                    n neutral "Pity.  I could have a lot of ussse for someone like you as my plaything."
+                    n smirk "Pity.  I could have a lot of ussse for someone like you as my plaything."
                     b determined "This Princess is no one’s ‘plaything’, Niir, least of all yours."
                     n frown "You have no ssssense of fun.  But if you would rather spend time with thisss sourpussss, then you can make your choice."
 
@@ -271,7 +272,7 @@ label meet_dragons:
     c hat concerned  "I am loyal.  I did not have to take up post here."
     p "And where has your loyalty got you?  Hmmm?"
     show cyril hat angry with dissolve
-    "His eyes flashed with uncharacterstic anger."
+    "His eyes flashed with uncharacteristic anger."
     "What do you know?  There is something boiling under that bumbling facade."
     c "You are testing me, Princess."
     "And I've never had so much fun."
@@ -287,14 +288,15 @@ label meet_dragons:
     c hat surprised "I will not."
     p "Of course you will, you're pathetic and I can do whatever I lik-"
     play sound "sfx/electricity.ogg"
-    c hat angry "You {b}will not{/b}." with flash
+    show cyril hat angry with magic_flash
+    c "You {b}will not{/b}."
     "Is that lightning?"
     "Cyril the Chaste has {i}actually{/i} become scary."
     p "Fine.  Have your wand."
     "Perhaps he is worth more than a slave after all."
     stop sound fadeout 2.0
-    c hat smile "Thank you, your Highness. Now, where was I? Oh yes, I was going to invite you to supper!"
-    c hat concerned "Food is pretty spare in these parts, thanks to how isolated everything is."
+    c hat smile blush eyes closed "Thank you, your Highness. Now, where was I? Oh yes, I was going to invite you to supper!"
+    c hat concerned blush "Food is pretty spare in these parts, thanks to how isolated everything is."
     c hat smile blush "I normally conjure something up, so, if you'd like, you could join me for a supper.  Otherwise, I could bring something to your room?"
 
     menu:
@@ -307,14 +309,14 @@ label broughtfood:
     p "I am tired. You may bring hot food to my room. That will be all, Moronious."
     c hat concerned blush eyes closed "I-It's Merlonious. You could call me Cyril? No one does, but you could..."
     p "Yes, yes, I said \"that will be all\"!"
-    c hat concerned blush "Right! Food. I'll bring it later. Bye!"
+    c hat smile blush "Right! Food. I'll bring it later. Bye!"
     hide cyril with moveoutleft
     return
 
 label joinmage:
     $ cyril_affection += 1
     scene bg kitchen with fade
-    show cyril hat neutral at midright
+    show cyril hat neutral at center
     with moveinleft
     c hat smile "Ah, yes, Princess.  So glad of you to join me."
     c hat concerned blush eyes closed "I mean glad of me."
@@ -328,7 +330,8 @@ label joinmage:
     c hat neutral "Yes, erm.  Good point."
     c hat smile "I'll just whip something up for us.  But nothing too complicated."
     c hat concerned "Actually, my repertoire isn't that vast with food spells."
-    c hat neutral "So I'd better just do what I can do. Vittus Cottura!"
+    c hat neutral "So I'd better just do what I can do. {font=fonts/ankecallig-fg.ttf}Vittus Cottura{/font}!"
+    show cyril hat neutral with magic_flash
     p "..."
     c hat smile "I hope it is to your liking."
     c hat smile blush "It's not much but I-"

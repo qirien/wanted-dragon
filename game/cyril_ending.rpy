@@ -67,8 +67,8 @@ label mage_insane_step:
 
 
 label cyril_epilogue1:
-        p_write "To Cyril Merlonious."
-        p_write "The Academy in the House of Master Grivvorn.\n"
+        p_write "To Cyril Merlonious,"
+        p_write "The Academy of Mages, House of Master Grivvorn\n"
         
         p_write "I hope that half-wit you're studying under realizes your potential."
         p_write "Otherwise you can direct him to me."
@@ -82,5 +82,6 @@ label cyril_epilogue1:
         nvl clear
         p_write "I trust your magic will be strong enough for me to procure the throne by then."
         p_write "And you will be well compensated for your alliegence."
-        p_write "The Academy in the House of Master Grivvorn."
-        p_write "The Academy in the House of Master Grivvorn."
+        p_write "Sincerely,"
+        p_write "Princess (soon to be Queen!) Chrysandra"
+        nvl clear

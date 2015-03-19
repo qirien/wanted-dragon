@@ -4,14 +4,14 @@
 
 label day6:
     # She goes around eavesdropping to find out how well her plans have been working.
-    scene bg bedroom with fade
+    scene bg bedroom dusk with fade
     p "Ugggh, that moldy smell again. I must {b}still{/b} be in the old [castle_name]."
     p "But I believe I'm finally making some progress. Although... they could be deceiving me."
     p "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
     
     if (route == "Niir"):
         "I snuck down to the dungeon to spy on the dragons."
-        scene dungeon with fade
+        scene bg dungeon with fade
         show niir neutral at midright
         show balrung neutral at midleft
         with dissolve
@@ -129,13 +129,13 @@ label day6:
         hide niir with moveoutleft
         "I pressed myself to the wall as Niir left going the other direction."
         "After a few moments of quiet, I entered the dungeon."
-        
+        jump balrung6
     return
         
 # She does something nice for Balrung.
 label balrung6:
     $ balrung_affection += 1
-    scene dungeon with fade
+    scene bg dungeon with fade
     show balrung neutral at center with dissolve
     b smirk "My dear lady..."
     "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
@@ -200,24 +200,27 @@ label niir6:
     p "Moronious, are you competent enough to pull a rabbit out of your hat?"
     c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days... What was it again?  Explodus Rabititious?  No.  That can’t be right..."
     p "..."
-    c "Let me see.  Accerso Leoparda!"
+    c "Let me see.  {font=fonts/ankecallig-fg.ttf}Accerso Leoparda{/font}!"
+    show cyril hat angry with magic_flash
     extend "Oh dear."
     p "I did not ask for a large cat."
-    c "That is not, not, not what I was trying to do. Amitto!"
+    c "That is not, not, not what I was trying to do. {font=fonts/ankecallig-fg.ttf}Amitto{/font}!"
     c "Whew, now that we both escaped with our eyebrows intact, let’s try again."
-    c "Accerso Leporidae!"
+    c "{font=fonts/ankecallig-fg.ttf}Accerso Leporidae{/font}!" #TODO: can we show a bunny?!
+    show cyril hat angry with magic_flash
     p "I only need ONE rabbit, not a hundred of them!"
     c "Ah, yes.  I knew that.  I’ll just rectify that."
     c "Stop that rabbit from escaping!  We need them all in this room!"
     show cyril hat neutral at left with move
     p "That’s your job, fool. Though, I am rather enjoying watching you run around and gather them up."
     show cyril hat neutral at right with move
-    c "Amitto! Amitto! Reddo amitto!"
+    c "{font=fonts/ankecallig-fg.ttf}Amitto! Amitto! Reddo amitto{/font}!"
     show cyril hat neutral at midright with move
     c "Stay put for just one moment.   "
     extend "Ahh... that should be the last of them."
     c "One last time.  I’ve got it this time, Princess, don’t you worry."
-    c "Accerso Leporida!"
+    c "{font=fonts/ankecallig-fg.ttf}Accerso Leporida{/font}!"
+    show cyril hat angry with magic_flash
     p "Thank you. Come with me, little bunny, I want you to meet my friend."
     c "Meet your...?  Not one of the dragons!"
     c "I just conjured that bunny!   "
@@ -261,7 +264,7 @@ label niir6:
     p "Come on out and play with Niir!"
     p "Get him!"
     "The rabbit burst out of hiding, darted right towards Niir, but then saw him and changed direction. I headed him off before he could leave the room, and he ran back towards Niir again."
-    show niir neutral at center with move
+    show niir neutral at center with quickmove
     n "Caught you!"
     "He caught it up in his hands, breathed on it, then sheepishly looked away."
     p "Did you just try to breathe fire? And it didn’t work?"
@@ -274,7 +277,7 @@ label niir6:
     hide niir with moveoutright
     p "Niir? Where you going?! Niir!"
 
-    scene bedroom with fade
+    scene bg bedroom candle with fade
     p "Ungrateful serpent."
     p "..."
     p "I bet he’s in the kitchen right now, cooking. Ha. I bet he’s making a mess of it."
@@ -389,14 +392,16 @@ label cyril6:
     c "Yes, very true.  I do think that is the least he can do after all this trouble."
     n "Pleassse?!  You mussst be jo-oh!   "
     extend "Pleassssse.  Pleassssse."
-    c "Here it is! Dermis Claro!" #TODO: un-green CYril
+    c "Here it is! {font=fonts/ankecallig-fg.ttf}Dermis Claro{/font}!" #TODO: un-green CYril
+    show cyril hat angry with magic_flash
     n "That doessssn’t help me, ussseless mage."
     p "Perhaps you should kneel."
     n "I will not {b}kneel{/b}.  I will NOT!"
     c "Okay, I think that’s enough.  I’m looking for the spell now.  It itches right?  Any rash anywhere?"
     n "Yesss, I need to ssscratch.  Here.  Sssee for yoursssself."
     p "Ha ha ha, I will never forget this."
-    c "This should do the trick - Prurius Termine!"
+    c "This should do the trick - {font=fonts/ankecallig-fg.ttf}Prurius Termine{/font}!"
+    show cyril hat angry with magic_flash
     n "I will not forget thissss."
     c "I do believe you have learned your lesson, Niir.  And there will be no more of that stealing books business, or turning people green, or making them slip, or sneaking something under the door when they are sleeping.  No more of that."
     n "Ssssay what you like. I’ll do as I pleasssse."

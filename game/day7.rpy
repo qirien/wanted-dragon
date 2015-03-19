@@ -1,19 +1,52 @@
 # DAY 7
 label day7:
     # Another letter from home tells her that the Coronation is in two days!
+    scene bg bedroom dusk with fade
+    "I've certainly made some progress here, even if things are moving rather slowly. Mother always said the best plans take time..."
+    "She always had such beautiful schemes... but even they weren't enough to save her, in the end..."
+    p "I will not end up like her! Dying peacefully, in my sleep, for no reason at all?! Ridiculous!"
+    "I stomped over to the washbasin and scrubbed my face. The water was icy cold, but it felt refreshing."
+    "I opened the window for some fresh air, and a pigeon swooped in carrying a scroll. I dreaded opening it; I was in no mood to hear from Father or Magnolia."
+    p "Better get it over with..."
+    k_write "\nMy sweet golden blossom Chrysandra,"
+    k_write "I hope you can find it in your heart to forgive me for choosing Magnolia, but it was what your Mother wanted."
+    k_write "We're holding the Coronation in two days; I hope you can come support your sister."
+    k_write "[k_name] needs you; we need you!"
+    k_write "All my love,"
+    k_write "Your Father"
+    nvl clear
+    p "Mother wanted... Magnolia to be Queen?! No, no, no; it's impossible! I can't believe; I won't believe it!"
+    p "It's true, she's more beautiful and more kind and smiles more and doesn't poison people... but Mother always said I was intelligent! She said a Queen needed to be clever, and always one step ahead of everyone else. Was she lying? Was she just humoring me?!"
+    p "No... Magnolia must have tainted Father's mind, twisted Mother's words to her own advantage!"
+    p "It's all {b}her{/b} fault!"
+    p "..."
+    p "Well. She will find out just how clever a Queen needs to be! I have my own plans! I'll need to work a bit faster if the coronation is in two days, however."
     
+    p "I need to think. I'll think better while I walk."
+    scene bg corridor with fade
+    p "This castle is so huge..."
     
-    # Whoever's route she didn't choose hinders her?
     if (route == "Cyril"):
+        scene bg library with fade       
+        p "If I had time, I'd read all these books and uncover all their secrets. But instead..."
         call cyril7
         
     elif (route == "Balrung"):
+        scene bg stairs day with fade
+        p "If I had time, I'd search it day and night for secrets. But instead..."       
         call balrung7
         
     elif (route == "Niir"):
+        scene bg stairs day with fade
+        p "If I had time, I'd search it day and night for secrets. But instead..."    
+        
         call niir7
+        
+    return
 
 label cyril7:
+    show cyril hat neutral at center with moveinleft
+    p "...I always find myself talking to you."
     c "So, Princess.  I had something I wanted to discuss with you."
     c "I think you'd make a rather good sounding board and I am terribly grateful for what you did yesterday."
     c "I think Niir will think twice next time before he-"
@@ -21,7 +54,7 @@ label cyril7:
     c "Oh, well.  Not intentionally."
     c "I don't think you're anything like a piece of board.  You're much more... lively than that."
     p "Lively.  Yes.  One would {i}hope{/i} so."
-    c "Anyway, I know it is my duty to guard this castle and these dragons.  It is something I take most seriously, but recently I have been made an offer."
+    c "Anyway, I know it is my duty to guard this castle and these dragons.  It is something I take most seriously, but recently I have been made an offer-"
     p "To study under Grivvorn.  Yes.  I am aware of that offer."
     menu:
         "\"I think you should take it.\"":
@@ -42,7 +75,6 @@ label cyril7:
             p "That's a start, Cyril.  And after you go away and make yourself useful then maybe we can take more steps forward."
             c "I- I'd like that, your Highness."
             
-    
         "\"That offer is a complete waste of my-I mean your time.\"":        
             c "Well, yes.  It was rather perposterous come to think of it."
             c "I do have a duty, and I am a man of my duty and of my word."
@@ -62,6 +94,9 @@ label cyril7:
     return
     
 label niir7:
+    scene bg hall with fade
+    p "...I always run end up running into you."
+    show niir neutral at center with moveinright
     n "Thissssss."
     p "What is it, Niir?  I am in a predicament and do not have time for riddles - from you or the mage."
     n "Take it."
@@ -73,11 +108,12 @@ label niir7:
     p "I'm warning you...if you try to toy with me, I'll- oh!"
     p "It's...mother's amulet."
     n "It’ssss yourssss."
-    p "Where did you find this?! She lost it many years ago, when I was a child…"
+    p "Where did you find this?! She lost it many years ago, when I was a child..."
+    "I fingered the necklace gently. This was proof that she wanted {b}me{/b} to be Queen."
     n "Who ssssaid I found it?"
     p "Where. Did. You. Get it?!"
     n "It wasss around, and I ssssnatched it up."
-    n "Don’t worry, Princesss.  I did not ssssteal…. thissss."
+    n "Don’t worry, Princesss.  I did not ssssteal.... thissss."
     n "Ssssomething else perhaps."    
     p "Around where?!"
     n "Curiousss, aren’t we?"
@@ -132,7 +168,7 @@ label niir7:
 
     "I stood up and his head hit the ground with a crack." with hpunch
     n "You clumssssy princessss.  What did you do that forrrrr?"
-    p "I need some way to make you lighter, or myself stronger…"
+    p "I need some way to make you lighter, or myself stronger..."
     n "Impossssible.  Perhapssss you need to learn magic."
     p "I don't need magic! Magic is for weaklings and sycophants."
     p "But there may be another way...I must do some research, alone. You may leave me now. But you have been an excellent test subject. And-"
@@ -141,7 +177,7 @@ label niir7:
     p "There, you see, that wasn't so hard to flatter like a proper minion should."
     n "It wassss not flattery, and I am not yourrrr minion, Princesssss."
     p "I suppose we did agree to be partners."
-    n "Yessss, I will hold you to… that.  I sssshall leave, as you asssked."
+    n "Yessss, I will hold you to... that.  I sssshall leave, as you asssked."
     n "Ssssee you ssssoon, Princessss."
 
     "Niir was so uncomplicated, I felt confident that I could control him once he was free. But, in some ways, I wished it wasn't so easy. Would he love me as well if I hadn't tricked him into doing so? Was it even love at all?"
@@ -151,6 +187,7 @@ label niir7:
 label balrung7:
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
+    p "...I always seem to find myself here."    
     p "Is that a scroll? Are you writing a letter?"
     b smile "Princess! I was not aware you had joined me. I'd better put this away..."
     p "Not so fast! Let me see that."
@@ -253,7 +290,7 @@ label balrung7:
             jump our_enemy
         "It's a different kind of love.":
             $ balrung_affection += 1
-            p "Just because we're not all lovey-dovey and senseless with passion, does that mean it's not love? Or is it just a different kind than you're used to?"
+            p "Just because we're not moping about with addled brains or senseless with passion, does that mean it's not love? Or is it just a different kind than you're used to?"
             b determined "I don't think he knows what love is at all, outside of a fairy tale."
             
     c hat concerned "No! Love is kind; it helps people be better, it makes people happy! You two just want, just want power!"

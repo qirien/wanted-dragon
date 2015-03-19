@@ -1,5 +1,5 @@
 label day8:
-    scene bg bedroom day with fade
+    scene bg bedroom dusk with fade
     "Time is running out; Magnolia's coronation will take place tomorrow, unless I can find a way to stop it!"
     "Careful plots would take too much time; I needed to act now."
     if (route == "Niir"):
@@ -10,7 +10,12 @@ label day8:
         jump balrung8
         
     return
+
+label cyril8:
     
+#TODO: she carries him across dragon barrier? 
+label niir8:
+
 label balrung8:
     "That fool mage won't let Balrung go no matter what. I need a new plan..."
     "There are some good books on potions in the library. There must be something that can help!"
@@ -77,9 +82,9 @@ label balrung8:
     play sound "sfx/electricity.ogg"
     b angry "I did nothing of the sort. Stop this ridiculous posturing and help her!"
     c hat concerned "You will regret calling me ridiculous!"
-    c hat angry "FULGURENTIA MAXIMA!" #TODO: lots of lightning/
+    c hat angry "{font=fonts/ankecallig-fg.ttf}{size=+10}FULGURENTIA MAXIMA{/size}{/font}!" #TODO: lots of lightning/
     play sound "sfx/lightning.ogg"
-    show cyril hat angry with flash
+    show cyril hat angry with magic_flash
     hide balrung with quickmoveoutleft
     b angry "AHHHHH!"
     play sound "sfx/electricity.ogg"
@@ -100,7 +105,7 @@ label balrung8:
         "Threaten to stab yourself":
             p "Stop it, Moronious, or I shall stab myself with this knife!"
             c "What?! Princess, no! What are you doing?!"
-            "You bumbling buffoon, I cut my own arm to make a potion! Balrung has been {b}helping{/b} me!"
+            p "You bumbling buffoon, I cut my own arm to make a potion! Balrung has been {b}helping{/b} me!"
             c hat surprised "He...didn't hurt you?"
             p "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
             # TODO: ? if (cyril_affection >= MEDIUM_AFFECTION):
@@ -154,8 +159,3 @@ label balrung8:
             c hat concerned eyes closed "I'm so sorry! It's for your own good...."
             # TODO: jump to a common ending where she ends up imprisoned?                    
      
-    
-label cyril8:
-    
-#TODO: she carries him across dragon barrier? 
-label niir8:
