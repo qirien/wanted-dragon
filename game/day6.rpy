@@ -86,13 +86,13 @@ label day6:
 
         "While he’s occupied, I’ll just slip out and see that letter he was reading..."
 
-        letter "To Cyril Merlonious of the order of Dyconis:"
-        letter "We are pleased to inform you that an opening has arisen at the Academy in the House of Master Grivvorn, Third Star. Although your previous application was rejected, due to your recent service and experience, we would like to welcome you to the Academy as a second-tier student."
-        letter "We await your speedy reply,"
-        letter "Sincerely,"
-        letter "Jillian Teslin"
-        letter "Undersecretary to Master Grivvorn, Third Star"
-        letter "Academy of Master Enchanters"
+        m_write "To Cyril Merlonious of the order of Dyconis:"
+        m_write "We are pleased to inform you that an opening has arisen at the Academy in the House of Master Grivvorn, Third Star. Although your previous application was rejected, due to your recent service and experience, we would like to welcome you to the Academy as a second-tier student."
+        m_write "We await your speedy reply,"
+        m_write "Sincerely,"
+        m_write "Jillian Teslin"
+        m_write "Undersecretary to Master Grivvorn, Third Star"
+        m_write "Academy of Master Enchanters"
 
         "Well, he’d be a fool not to accept and learn more powerful magic... but, then, he {b}is{/b} quite a fool, so anything’s possible."
         "I’ll just have to make sure he has plenty of reasons to stay here."
@@ -101,7 +101,7 @@ label day6:
         
     elif (route == "Balrung"):
         "I snuck down to the dungeons to spy on the dragons."
-        scene dungeon with fade
+        scene bg dungeon with fade
         show niir neutral at midright
         show balrung neutral at midleft
         with dissolve

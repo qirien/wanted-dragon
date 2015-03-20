@@ -66,22 +66,27 @@ label mage_insane_step:
     
 
 
-label cyril_epilogue1:
-        p_write "To Cyril Merlonious,"
-        p_write "The Academy of Mages, House of Master Grivvorn\n"
-        
-        p_write "I hope that half-wit you're studying under realizes your potential."
-        p_write "Otherwise you can direct him to me."
-        p_write "The castle has been left in ruins."
-        p_write "No one blames you of course."
-        nvl clear
-        p_write "You did what you had to in your own... feeble way."
-        p_write "I am still not Queen, but never mind that."
-        p_write "I am able to wait until after you finish your training."
-        p_write "Until you may at last be of use to me."
-        nvl clear
-        p_write "I trust your magic will be strong enough for me to procure the throne by then."
-        p_write "And you will be well compensated for your alliegence."
-        p_write "Sincerely,"
-        p_write "Princess (soon to be Queen!) Chrysandra"
-        nvl clear
+label cyril_scepter_epilogue:
+    p_write "To Cyril Merlonious,"
+    p_write "The Academy of Mages, House of Master Grivvorn\n"
+
+    p_write "I hope that half-wit you're studying under realizes your potential."
+    p_write "Otherwise you can direct him to me."
+    p_write "Queen of [k_name],\nChrysandra"
+    nvl clear
+    return
+
+label cyril_dragon_epilogue:
+    c neutral "It’s for the best, Chrysandra.  I know you don’t want to take this potion but I travelled a long way and met up with many, many members of the council in order to get it."
+    c smile "So if you would just drink the potion and then rest for a while, I am sure you will be back to normal in no time."
+    p "I still think that if I lit enough pants on fire, they might change the law to allow a dragon to be Queen. But… I'll drink it."
+    #TODO: some magical VFX
+    c smile blush "Thank you, my-your majesty.  I do think it’s best for everyone.  It was quite extraordinary that you became a dragon at all.  It’s good that scepter is now locked away securely so no one else can have the same fate."
+    p "Securely? Where exactly did you hide it?"
+    c surprised "You mustn’t worry about that my Queen.  But do trust me that it is securely away at the top of the cas- Oh dear.  I must work on holding my tongue more in the future."
+    "The top of the castle?! I wondered if I might get it back… but perhaps it was better to stay here, as a human, but a Queen. Well, if I ever tire of being Queen, I know just where to go!"
+    p "Don't worry about it, dear. Come here and rub my shoulders; they feel so cramped now that I'm human again. No wings! It's simply dreadful."
+    c smile blush eyes closed "Y-yes, your majesty."
+    p "That's a good boy.  Mmmmm.  Yeeees."
+    p "You certainly are my favorite minion."
+    return

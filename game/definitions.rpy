@@ -14,6 +14,7 @@ init -1:
     define route = None
     define HIGH_AFFECTION = 7
     define MEDIUM_AFFECTION = 3
+    define INSANE = 3
     define cyril_dead = False
 
     #
@@ -35,7 +36,7 @@ init -1:
     #
     # TODO: delete backgrounds we end up not using.
     image bg library = "bg/library.jpg"
-    image bg bedroom dusk = "bg/bedroom_day.jpg"
+    image bg bedroom day = "bg/bedroom_day.jpg"
     image bg bedroom dusk = "bg/bedroom_dusk.jpg"
     image bg bedroom candle = "bg/bedroom_candle.jpg"
     image bg closet = "bg/closet.jpg"

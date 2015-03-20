@@ -206,3 +206,26 @@ label cyril_attack:
     c "DRACONIS PETROMUNDI!"
     "There was a puff of smoke that sped towards Balrung like an arrow, and when it cleared... he had turned to stone." 
     # TODO: Finish this? Jump to a cyril ending?                
+    
+
+label imprisoned_epilogue:
+    scene bg dungeon with fade
+    show cyril hat concerned at midleft with moveinleft
+    c "I've brought you your breakfast, your Highness."
+    "I threw the bowl at his ridiculous face and it knocked off his ridiculous hat. Niir snatched it up and grinned."
+    show cyril surprised with dissolve
+    show niir at midright with moveinright
+    n mischief "Oooh, you're a much more interesssting companion."
+    c concerned blush "That was quite uncalled for.  I don’t think you’ve made any progress with your reform, you know."
+    c concerned eyes closed "Your father expects me to keep him updated and at this rate I will have nothing to update him with!"
+    p "My sister put you up to this, didn't she?! DIDN'T SHE?! She thinks she's won, but she's wrong! Eventually I will escape and PUNISH YOU ALL!!!!"
+    c neutral "Now, now Princess.  It might have taken me a week, but you were always going to show your true colors at the end.  Just start reflecting on your own behavior and soon you will understand what it is you have to do."
+    c smile "I do believe you can change.  I have seen it happen to dragons, why not you?"
+    p "...I will kill you. I will rip off your fingers and toes one by one and feed them to your stupid dragons!"
+    n frown "...that's disgusssting!"
+    c concerned blush "I will let that slide because I know you don’t mean that, Princess.  I’ll tell your father that you’re starting to see the error of your ways."
+    c neutral "See you at dinner, when I do hope you will be more agreeable."
+    "It was impossible. How had it come to this?! I thought I had him wrapped around my finger, and then…"
+    "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
+    "Mwah ha ha ha ha!"
+    
