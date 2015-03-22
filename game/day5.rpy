@@ -98,40 +98,40 @@ label day5:
                 scene bg exterior day with fade
                 show balrung neutral at center with dissolve
                 p "Oh! It's {b}you{/b}."
-                b "Yes, it is I. I'm surprised at you, Princess."
+                b smirk "Yes, it is I. I'm surprised at you, Princess."
                 p "Why, because I followed your invitation?"
-                b "No. I am astonished that you have chosen to ally yourself with that ridiculous mage. I assumed you were more canny than that."
+                b determined "No. I am astonished that you have chosen to ally yourself with that ridiculous mage. I assumed you were more canny than that."
                 p "You think {b}Moronious{/b} will betray {b}me{/b}?"
-                b "Cyril's intentions are certainly pure, but he may not be willing to do what you want. He is not capable of murder."
+                b smirk "Cyril's intentions are certainly pure, but he may not be willing to do what you want. He is not capable of murder."
                 p "And you are?"
-                b "If necessary, yes. I've proved that; that's how I came to be cursed here."
+                b determined "If necessary, yes. I've proved that; that's how I came to be cursed here."
                 p "Who'd you do in?"
-                b "Another time, perhaps. But here is the offer I will make to you - ally with me instead of that mage. Our interests align more closely, and I will not balk at your...more troublesome requests."
+                b neutral "Another time, perhaps. But here is the offer I will make to you - ally with me instead of that mage. Our interests align more closely, and I will not balk at your...more troublesome requests."
                 p "How could you help me?"
-                b "I'm a {b}dragon{/b}, Princess. If I were free, I could fly you anywhere you wished. I could set fire to anything you desired. I could obliterate any building or army that stood in our way."
+                b smile "I'm a {b}dragon{/b}, Princess. If I were free, I could fly you anywhere you wished. I could set fire to anything you desired. I could obliterate any building or army that stood in our way."
                 p "Well..."
                 menu:
                     "\"No. I don't trust you.\"":
                         p "I don't trust you, Balrung. Nor Niir. You may have potential for great destruction, but I see no reason to believe you will choose to do my will instead of your own."
-                        b "As you wish, Princess. What a shame we could not be allies."
+                        b determined "As you wish, Princess. What a shame we could not be allies."
                         p "Do not hinder me, Balrung. I shall leave you alone if you do the same for me."
-                        b "I make no promises. I have my own plans that you have no part in, now."
+                        b angry "I make no promises. I have my own plans that you have no part in, now."
                         hide balrung with moveoutleft
                         p "Hmph."
                         "I better go see what Moronious is up to."
                         jump cyril5
                     "\"Perhaps you would be a valuable ally.\"":
                         p "Perhaps you would be a valuable ally. But what assurance do I have that you will aid me?"
-                        b "I have the same ambitions you do - to be free and have the power to control my own destiny. Aiding you will help me with those goals."
+                        b neutral "I have the same ambitions you do - to be free and have the power to control my own destiny. Aiding you will help me with those goals."
                         p "What is your plan?"
-                        b "If you can convince Merlonious that I've found true love and reformed, he will have to let me go. In return, I'll help you regain your throne."
+                        b determined "If you can convince Merlonious that I've found true love and reformed, he will have to let me go. In return, I'll help you regain your throne."
                         p "True love? How shall we do {b}that{/b}?"
-                        b "I have some ideas. And I trust you have your own methods of getting others to believe what you wish."
+                        b smirk "I have some ideas. And I trust you have your own methods of getting others to believe what you wish."
                         p "I do."
-                        b "Why don't you meet me down in the dungeons in an hour, and we can spend some time together? If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
+                        b smile "Why don't you meet me down in the dungeons in an hour, and we can spend some time together? If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
                         p "He seems to think you cannot change. How will you convince him otherwise?"
-                        b "As I have acted the recalcitrant criminal for forty years, when I suddenly do appear kind and loving, it will be very convincing."
-                        p "You are more shrewd than I gave you credit for... this might actually work."
+                        b smirk "As I have acted the recalcitrant criminal for forty years, when I suddenly do appear kind and loving, it will be very convincing."
+                        p "Hmph. We'll see."
                         $ route = "Balrung"
                         jump balrung5
 
@@ -206,7 +206,7 @@ label balrung5:
     c "St-stop that! You mustn't hold the Princess that way!"
     b smirk "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
     c "Well, no, I wouldn't want that, but- I'm not- you can't!"
-    b smile blush "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
+    b smile eyes closed "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene bg dungeon 
     show balrung smile at center, come_closer

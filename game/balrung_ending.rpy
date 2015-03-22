@@ -48,7 +48,7 @@ label balrung_ending:
     b smirk "Is it still disrespectful if I am your King?"
     p "King?!"
     b smile "You freed me, Princess, and I want to aid you. What better way to help you maintain your kingdom than to serve by your side?"
-    "He would be useful...but could I trust him?"
+    "He would be useful...but could he really help me?"
     p "You claim to have great power as a dragon. Moronious' spell is now broken, so show me!"
     b smirk "I will."
     hide balrung with red_flash
@@ -70,7 +70,7 @@ label balrung_ending:
             "With a dragon on my side, my father would {b}have{/b} to make me Queen... and if not, well, I'd make sure there was no other choice."
             "And Balrung would be an valuable ally to have as we ruled together."
             "I reached down to pat his scaly cheek and could tell from the gleam in his eye that he was thinking the exact same thing. I'd never lack a worthy opponent again."
-            p "You're such an ambitious schemer!"
+            p "You're such an ambitious schemer."
             b "And you're dreadfully ruthless."
             p "Mwah ha ha ha ha!"            
             b "Bwah ha ha ha!"
@@ -78,7 +78,8 @@ label balrung_ending:
             jump balrung_epilogue
         "Make him an advisor.":
             p "While I admire your patient ruthlessness, you are not fit to be my King. You may be an advisor."
-            b "Oh ho ho, I don't think so. A pity. If you change your mind, I am going to go raze the kingdom of [k_name]. You'll be able to find me on the throne by tomorrow afternoon."
+            b "Oh ho ho. I let you win a few games of Queens and Pawns and you imagine yourself some sort of master strategist. No, Princess, I will not serve you as anything less than an equal."
+            b "A pity. If you change your mind, I am going to go raze the kingdom of [k_name]. You'll be able to find me on the throne by tomorrow afternoon."
 
         "Leave him here.":
             p "I don't need any King telling me what to do!"
@@ -105,7 +106,44 @@ label balrung_ending:
         call credits
         #TODO jump some epilogue?
         return
+                   
+                
+label cyril_attack:                
+    c "NOT. SO. FAST!"
+    play sound "sfx/electricity.ogg"
+    # TODO lightning crackles
+    c "YOU WILL NEVER LEAVE HERE!!!!"
+    "Balrung breathed a maelstrom of fire in our direction, but Cyril swiped it away with a gesture from his wand. The old dragon pounced forwards as Cyril shouted another spell."
+    play sound "sfx/lightning.ogg"
+    c "DRACONIS PETROMUNDI!"
+    "There was a puff of smoke that sped towards Balrung like an arrow, and when it cleared... he had turned to stone." 
+    # TODO: Finish this? Jump to a cyril ending?                
     
+
+label imprisoned_epilogue:
+    scene bg dungeon with fade
+    show cyril hat concerned at midleft with moveinleft
+    c "I've brought you your breakfast, your Highness."
+    "I threw the bowl at his ridiculous face and it knocked off his ridiculous hat. Niir snatched it up and grinned."
+    show cyril surprised with dissolve
+    show niir at midright with moveinright
+    n mischief "Oooh, you're a much more interesssting companion."
+    c concerned blush "That was quite uncalled for.  I don’t think you’ve made any progress with your reform, you know."
+    c concerned eyes closed "Your father expects me to keep him updated and at this rate I will have nothing to update him with!"
+    p "My sister put you up to this, didn't she?! DIDN'T SHE?! She thinks she's won, but she's wrong! Eventually I will escape and PUNISH YOU ALL!!!!"
+    c neutral "Now, now Princess.  It might have taken me a week, but you were always going to show your true colors at the end.  Just start reflecting on your own behavior and soon you will understand what it is you have to do."
+    c smile "I do believe you can change.  I have seen it happen to dragons, why not you?"
+    p "...I will kill you. I will rip off your fingers and toes one by one and feed them to your stupid dragons!"
+    n frown "...that's disgusssting!"
+    c concerned blush "I will let that slide because I know you don’t mean that, Princess.  I’ll tell your father that you’re starting to see the error of your ways."
+    c neutral "See you at dinner, when I do hope you will be more agreeable."
+    "It was impossible. How had it come to this?! I thought I had him wrapped around my finger, and then…"
+    "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
+    "Mwah ha ha ha ha!"
+    
+    
+######################################################################
+
 # Not using; keeping around for copy paste purposes
 label old_balrung_ending:
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
@@ -193,39 +231,4 @@ label old_balrung_ending:
                 p "My presence is certainly required for {b}MY{/b} plans! Moronious! Your princess is in danger!"
                 "Balrung reared back, readying an attack."
                 jump cyril_attack
-            
                 
-                
-label cyril_attack:                
-    c "NOT. SO. FAST!"
-    play sound "sfx/electricity.ogg"
-    # TODO lightning crackles
-    c "YOU WILL NEVER LEAVE HERE!!!!"
-    "Balrung breathed a maelstrom of fire in our direction, but Cyril swiped it away with a gesture from his wand. The old dragon pounced forwards as Cyril shouted another spell."
-    play sound "sfx/lightning.ogg"
-    c "DRACONIS PETROMUNDI!"
-    "There was a puff of smoke that sped towards Balrung like an arrow, and when it cleared... he had turned to stone." 
-    # TODO: Finish this? Jump to a cyril ending?                
-    
-
-label imprisoned_epilogue:
-    scene bg dungeon with fade
-    show cyril hat concerned at midleft with moveinleft
-    c "I've brought you your breakfast, your Highness."
-    "I threw the bowl at his ridiculous face and it knocked off his ridiculous hat. Niir snatched it up and grinned."
-    show cyril surprised with dissolve
-    show niir at midright with moveinright
-    n mischief "Oooh, you're a much more interesssting companion."
-    c concerned blush "That was quite uncalled for.  I don’t think you’ve made any progress with your reform, you know."
-    c concerned eyes closed "Your father expects me to keep him updated and at this rate I will have nothing to update him with!"
-    p "My sister put you up to this, didn't she?! DIDN'T SHE?! She thinks she's won, but she's wrong! Eventually I will escape and PUNISH YOU ALL!!!!"
-    c neutral "Now, now Princess.  It might have taken me a week, but you were always going to show your true colors at the end.  Just start reflecting on your own behavior and soon you will understand what it is you have to do."
-    c smile "I do believe you can change.  I have seen it happen to dragons, why not you?"
-    p "...I will kill you. I will rip off your fingers and toes one by one and feed them to your stupid dragons!"
-    n frown "...that's disgusssting!"
-    c concerned blush "I will let that slide because I know you don’t mean that, Princess.  I’ll tell your father that you’re starting to see the error of your ways."
-    c neutral "See you at dinner, when I do hope you will be more agreeable."
-    "It was impossible. How had it come to this?! I thought I had him wrapped around my finger, and then…"
-    "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
-    "Mwah ha ha ha ha!"
-    

@@ -146,7 +146,7 @@ label niir7:
     hide niir
     n "Thissss isss lesss fun than I expecccted."
     p "Hyaaah! What have you been eating, you enormous useless lump?!" with vpunch
-    n "Exccccept for that rabbit, nothing but tasssstelesssss ssstew."
+    n "Exccccept for that rabbit, nothing but tasssstelesssss vegetable ssstew."
     "I couldn't lift him at all; he seemed more dense than a normal human. I grabbed him under the arms and was able to slide him across the castle tiles down the hallway."
     n "That hurtsssss Princessss."
     p "Poor baby Niir; I thought you could take a little rough handling."
@@ -314,7 +314,7 @@ label our_enemy:
     p "No, it's all right. We'll just plan something else."
     b smirk "We?"
     p "Yes, of course; who else would I trust?"
-    b smile "Who else, indeed?"
+    b smile eyes closed "Who else, indeed?"
     p "I could poison him, though he'll be suspicious of both of us, now. Perhaps that sleeping perfume? No, his spell must still be active while he's asleep, otherwise you could just escape at night. Hmmm..."
     b smirk "I wasn't lying, you know."
     p "Hmm? Wasn't lying about what?"
@@ -341,6 +341,7 @@ label our_enemy:
             $ balrung_affection -= 3
             show balrung determined at reset_zoom with hpunch
             p "You presume too much, minion."
+            b neutral "Really? Hmmm... we shall see."
             
         "Say good night":
             "I needed to remain aloof enough to keep him under my control. I took a step back."

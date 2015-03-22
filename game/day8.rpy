@@ -295,7 +295,6 @@ label balrung8:
             c hat neutral "Stay! You will stay here, until you learn to be good! I know, somewhere inside of you, there's goodness and love...please, find it quickly, Princess."
             p "You thought guarding dragons was bad? I {b}will{/b} make your life a hell of mental pain, psychological torture, and physical anguish until you LET. ME. GO!"
             c hat concerned eyes closed "I'm so sorry! It's for your own good...."
-            # TODO: jump to a common ending where she ends up imprisoned?                    
-     
+
             call credits
             jump imprisoned_epilogue

@@ -341,7 +341,7 @@ label cyril6:
     b "Princess? Can I assist you?"
     p "No, no, no assistance needed, thank you."
     "He glanced at the flask in my hands and smiled."
-    b "I believe I feel quite tired. I will be asleep and shall not see or hear anything."
+    b smile eyes closed "I believe I feel quite tired. I will be asleep and shall not see or hear anything."
     hide balrung with moveoutright
     "Hmph, well, so much for secrecy. Still, now’s my chance!"
     "There! He’ll have quite a surprise when he gets in bed next! \"Interesting\" indeed, mwah ha ha ha ha ha ha!"
