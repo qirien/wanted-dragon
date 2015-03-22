@@ -139,3 +139,4 @@ init -1:
     define niir_theme = "music/OniValse.mp3"
     define evil_theme = "music/Malos.mp3"
     define princess_theme = "music/EvilPrincessMarch.ogg"
+    define cyril_theme = "music/AwkwardMageWaltz.ogg"

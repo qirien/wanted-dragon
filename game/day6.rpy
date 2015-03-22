@@ -261,7 +261,7 @@ label niir6:
     p "Under the statue!"
     n "Drrrive him thisss way."
     p "Oh little rabbit..."
-    p "Come on out and play with Niir!"
+    p "Come on out and play with us!"
     p "Get him!"
     "The rabbit burst out of hiding, darted right towards Niir, but then saw him and changed direction. I headed him off before he could leave the room, and he ran back towards Niir again."
     show niir neutral at center with quickmove

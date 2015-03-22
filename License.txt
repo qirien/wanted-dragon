@@ -137,6 +137,7 @@ electricity.ogg from Freesound.org by ihitokage, <http://www.freesound.org/peopl
 fireball.ogg from Freesound.org by ReadeOnly, <http://www.freesound.org/people/ReadeOnly/sounds/186932/>
 boiling.ogg from Freesound.org by 211redman112, <http://www.freesound.org/people/211redman112/sounds/145797/>
 stab.ogg from Freesound.org by Mixedupmoviestuff, <http://www.freesound.org/people/Mixedupmoviestuff/sounds/179222/>
+rip.ogg from Freesound.org by kbnevel, <http://www.freesound.org/people/kbnevel/sounds/119862/>
 
 ==== CC-BY
 lightning.ogg from Freesound.org by NoiseNoir, <http://www.freesound.org/people/NoiseNoir/sounds/238302/>

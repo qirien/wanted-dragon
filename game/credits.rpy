@@ -20,7 +20,7 @@ label credits:
     $ renpy.pause(2.0)
     
     show text "Sounds"
-    show text "By Freesound.org users Kodack, ihitokage, NoiseNoir, ReadeOnly, 211redman112, Mixedupmoviestuff, D W,"
+    show text "By Freesound.org users Kodack, ihitokage, NoiseNoir, ReadeOnly, 211redman112, Mixedupmoviestuff, D W, kbnevel, "
     $ renpy.pause(2.0)
     
     return

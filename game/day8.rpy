@@ -11,8 +11,282 @@ label day8:
         
     return
 
-#TODO: she carries him across dragon barrier? 
 label niir8:
+    scene bg library with fade
+    show cyril hat neutral at midright with dissolve
+    show niir neutral at midleft with moveinleft
+    p "Moronious, we are ready."
+    c hat surprised "Wh-?  {i}Please{/i} don’t sneak up, Princess.  Oh.  Of course.  {b}Niir{/b}.  He must have put you up to it."
+    p "I shall ignore your ridiculous insinuation that I would be \"put up\" to anything I did not wish to do. Try our love, mage. It is strong enough to overcome even your foolish \"test\"."
+    c hat laugh "Oh yes.  Your ‘love’.  You’re still on with that charade are you?"
+    n "It'sss no charade! She'sss my ssssweet hamhocks"
+    p "Yes exactly. See, we're even holding hands."
+    c hat eyes closed smile "If you two insist."
+    c hat laugh "This will be my amusement for the day.  Let’s begin."
+    c hat concerned "Niir! What is the Princess's favorite breakfast?"
+    n "Nothing you could make for her, that’s for sssssure."
+    c hat neutral "So that’s your answer then?  Too bad, Niir."
+    n "Wait!"
+    $ quiz_questions = 0
+    if (niir_affection >= HIGH_AFFECTION):
+        n "She likessss..."
+        "I sidled over out of Cyril's line of sight and mouthed the word \"eggs\"."
+        n "Ehhhhggs!"
+        c "Hmph. A lucky guess, I'm sure of it."
+        $ quiz_questions += 1
+    else:
+        n "She likesss crispy bacon, ssssucculent ham, and juicy ssssausage with a sssside of undercooked ssssquirrel.." 
+        c hat neutral "Squirrel?  And you do realize that ham and bacon are the same animal don’t you?"
+        p "I- yes, I like squirrel! Ham, bacon, mmmm!"
+        c "I’ll serve it to you then and see how much you eat.  Unless you’d just like to submit to the truth and move on."
+        p "You couldn't conjure it if you tried. I know how you've been feeding these dragons!"
+        c "I don't need to; I can tell you're lying."
+
+    c "Anyway! Next question!"
+    c "Who were Niir's parents?"
+    n "Why would I tell her about my parentssss, sssstupid mage?"
+    menu:
+        "He doesn't know them." if (niir_affection >= HIGH_AFFECTION):
+            p "That is a trick question! Niir doesn't even remember his parents, but Balrung has been like an inconvenient father."
+            c hat concerned "Well, it seems you have been doing more in the castle than just causing a ruckus together."
+            n "We haven't been doing nearrrly enough ruckussssing..."
+            c "I guess that is something positive."
+            $ quiz_questions +=1
+        "Some really nice dragons":
+            p "His parents were...both dragons...and they were... very kind and beautiful. For dragons."
+            c "And I expect that Niir is the one that told you this?"
+            n "..."
+            c "As I thought."
+        "Ghiulana and Zanbatar":
+            p "Their names were Ghiulana and Zanbatar. They were heartbroken at Niir's imprisonment and hope and pray with all their hearts that the dishonorable mage who has him in custody will soon relent and return their beloved son."
+            n "...did you ever lisssten to anything I sssaid?!"
+            c "Obviously not!"
+    
+    c "Question Three!"
+    c "What is the Princess' favorite pastime?"
+    if (niir_affection >= HIGH_AFFECTION):
+        n "Ssshe likes making potionsss. And scheming."
+        c "I don’t know about the scheming.  But I’ll give you the point for the potions.  At least you said something somewhat believable."
+        p "If you really don't believe him, I have a potion for that."
+        $ quiz_questions += 1
+    else:
+        n "That’ssss easssy.  Knitting hass to be it." 
+        p "What?! The only thing I'd knit is a noose for your asinine neck!"
+        n "Ssssuch a lady."
+
+    c "Last question!"
+    c "What is Niir’s favorite thing to hunt?" 
+    menu:
+        "Women, and rabbits" if (niir_affection >= HIGH_AFFECTION):
+            p "He pretends to enjoy seducing women, but the truth is he's never even kissed one. As for meals, rabbits would be his prey of choice." 
+            n "..."
+            c hat blush smile "Is that so?"
+            n "Liessss, Cccyril the chaste.  Liesss."
+            c "No, I’d have to side with the princess on this one.  Absolutely correct."
+            n "..."
+            $ quiz_questions += 1
+
+        "Foolish mages":
+            p "Foolish mages like yourself, Moronious."
+            n "Ssssstart running Cccyril the Cowardly."
+            c "Yes, very amusing.  But joke answers are not accepted as real answers.  We have already been through the rules."
+
+        "Deer":
+            p "Deer, of course. That's what I like to hunt."
+            n "...yesss, I love to hunt those... deer."
+            c "And what does a deer look like Niir?  The alive type, not the type that have already been roasted and served on a plate."
+            n "It issss pink, and hassss a curly tail.  With spotssss.  Lotsss of spotsss."
+            p "That's a pig. And you call yourself a carnivore..."
+
+    c "And, one final bonus question!"
+    n "That'sss not fair, you sssaid the other one was the lassst."
+    c hat smile "Princess, why is it that this lout of a dragon Niir has not yet left the castle?"
+    menu:
+        "He hadn't met me yet.":
+            p "He hadn't met me yet. Obviously."
+            c "Oh, well.  I guess you do have a point.  But I do find it hard to believe that despite your... uniqueness that Niir has really changed."
+            n "Ssshe can do what no one elsssse can."
+            n "Let her ssshow you."
+            c "Erm, well yes.  I suppose some progress has been made already.  But is it really love?  That is the question."
+        "You'll never let him go.":
+            p "Even if he changed into a butterfly, you'd still see him as a menace."
+            c "You don’t understand princess.  He {b}is{/b} a menace.  I let him go and then it will be my job to go out and round him up all over again for disturbing the peace!  It is much simpler this way."
+            n "Peaccccce is overrated, Ccccyril."
+            p "Well, you could trust me to keep a leash on him. I certainly wouldn't allow him to cause trouble in [k_name]."
+        "He has too much loyalty to Balrung.":
+            p "Can't you see? It's his sense of filial duty to his surrogate father, Balrung. As long as he is imprisoned here, Niir is loath to leave his side. My poor, noble, Niir..."
+            c "Oh.  I didn’t even consider that possibility."
+            n "That'sss because it's not a posssibility."
+            c "I suppose the dragons are... close...  I am not really sure how dragons show filial affection but maybe that is what Niir has been doing all along."
+            p "You see?  But now he has me, and so he must leave poor Balrung and begin a new glorious life in service to his queen.  Unless you’d permit Balrung to come with us..."
+            c "Absolutely not!"
+            p "I tried, Niir.  You tell Balrung that I tried."    
+
+    c "Very well! The test is over!"
+    if (quiz_questions >= 4):
+        c "I-I'm not sure how you did it, but somehow you’ve managed to astound me with how in sync you are."
+        c "But is it {i}love{/i}?  I cannot figure that out."
+        n "Perhapssss you sssshould let usss figure that out ourselvessss."
+        c "Very true Niir.  Perhaps I should."
+        c "I can’t believe I am saying this.  I thought I would have to deal with Niir’s childish taunts until the day I got old and died in this castle."
+        n "Very sssad."
+        c "Regardless, I suppose I can let you go."
+        c "Don’t make me regret this Niir.  I feel like I’m regretting it already.  If you are anything less than completely loyal to this lovely young princess..."
+        p "I will string him up by his dragony sinews and boil his scales for my potions. Until he learns his lesson."
+        n "Pleassse don’t."
+        c "INCARCERUS TERMINE!"
+        show cyril hat angry with magic_flash
+        "Niir shimmered a little, and there was a distant noise like breaking glass."
+        n "It isss done?  I feel... {i}powerful{/i} again."
+        n "I will not sssstay here one minute more."
+        p "Then it's time for us to fly."
+        "Niir closed his eyes, concentrating, and then shifted, his skin turning golden and scaly, his frame lengthening. Huge glimmering wings unfolded behind him, and he stamped the ground with clawed feet."
+        n "Let’ssss."
+        "I climbed on his back, looping my arms around his neck. Cyril frowned up at us disapprovingly as the wind from Niir's wings swirled around him, but did nothing to stop our flight."
+        call credits
+        jump niir_free_epilogue
+    else:
+        c "As I thought! The only thing between you is lies and plots!"
+        n "Not true.  There issss alsssso the mutual wish to sssee you ssssuffer."
+            p "So, you won't let him go? You'll force me to find some other way to be with my true love?"
+        c "Well, I suppose if your father agrees to have you stay here in the castle, it wouldn’t be too bad to have you around as extra company.  Though I would not like to have to the be constant chaperone to you and the dragon."
+        p "Well, I can show you how that will go right now. Niir, come with me. Moronious, you may not come."
+        c "Ah, yes.  I don’t think it’s a good idea to leave you two alone right now."
+        p "Then follow us, if you dare."
+
+        scene ruins with fade
+        show niir neutral at center with fade
+        p "Is he following us?"
+        n "Yesss, I can ssstill sssmell that mage around here."
+        menu:
+            "Let's take him by surprise.":
+                p "You're no weakling; why not take him by surprise?"
+                n "I ssssupossse he won’t be expecting that."
+                hide niir with dissolve
+                "We walked around a corner, and Niir hung back behind a pillar. Sure enough, soon Moronious came creeping by."
+                show cyril hat surprised at center
+                c hat surprised "Princess? Where's Niir?"
+                "Just then Niir swung out from behind the mage and knocked his feet out from under him."
+                "That sleight of hand was just what I needed to take the mage’s wand."
+                c "INCARCERATUS!"
+                c "Why isn’t it-?  My hand seems to be empty."
+                c "Niir, this is {b}no{/b} joke.’"    
+                p "Tie him up, Niir. Here. Look familiar?"
+                n "My rope.  I sssshould have known."
+                p "Aren't you glad I didn't hang myself with it?"
+                n "Yessss, now hold sssstill Ccccyril."
+                c "I will do no such thing!  Let me go you brute, or I’ll have to-"
+                p "We can't have you calling for help or casting spells, either. You didn't need the hem of this robe, right?"
+c "This is a special magical garment!  You cannot merely- I am warning you-"                
+                play sound "sfx/rip.ogg"
+                c "The council will be hearing about this.  A princess, in cahoots with a dragon!  It will not go overlooked."
+                p "Good! Let them learn to fear me! Now, you will be silent."
+                c "I hardly thi- Mmmffffhhh..."
+                n "Nicccce work, Princesssss."
+                jump secret_weapon
+    
+            "Let's get Balrung to help."
+                p "Let's get Balrung to help. If the three of us attack him, we should be able to overpower him."
+                n "Give me a sssssecond."
+                hide niir with moveoutright
+
+                "I waited patiently, but I didn't realize that those two dragons had already started the attack without me until I heard the noise of spells being cast. I ran towards the source of the sound - by the castle gates."
+                scene bg gate with fade
+                show balrung at quarterright
+                show cyril at center
+                show niir at quarterleft
+                with dissolve
+                n "Your sssspellsss can’t ssstop usss thisss time."
+                c "Oh yes they can!  They have before and they will again.  You will answer to the council of- Oof!"
+                show niir at center with quickmove
+                show cyril surprised at squatting with quickmove
+                "Niir tackled Cyril and his wand and hat went flying."
+                show cyril angry at standing with move
+                c angry "I don't need my wand for this spell! IGNI-"
+                "Balrung came up behind him and gagged him with a strip of cloth so he couldn't cast any more spells."
+                show balrung at midright with quickmove
+                p "Good work.  I don’t know why you two haven’t tried doing this more often.  Then he would have had to have let you go."
+                b "The problem is, he can't break the spell unless I allow him to speak. But the moment I do that...well, I have little faith that he will do so."
+                p "But I don’t need him to break the spell.  I can only take one of you, and I’ve already agreed to take Niir.  Certainly, you can understand Balrung."
+                p "So you can enjoy your captivity, and the two of us will be off."
+                b "Unacceptable. I will remove this gag and let him continue his spells if that is your course of action."
+                n "Isss that the way you want to play it, old frrriend?"
+                p "If you side with that mage, I will make sure you rot in here when I am queen." 
+                b "How is that any different than if I let you go? Either way, I'm trapped here. alone."
+                n "Yessss, perhapsss I will sssend sssome princessessss your way.  If I remember."
+                b "I think we both know you have no intentions of aiding me unless you have to."
+                n "Then let ussss fight.  Whoever winsss getsss to go with the princesss."
+                b "I hardly dare agree to such an unfair arrangement. You have so little experience, and so meager intelligence, that your chances are defeating me are minimal."
+                n "Experiencccce and intelligencccce are not everything, old fool." 
+                p "This is ridiculous. I did not say I would help whoever won some sort of primeval dragon duel. I chose Niir, and that's whom I will aid!"
+                b "Still... I suppose your death would be a small price to pay for my freedom."
+                n "Then you ssshall have to kill me."
+                "No one ignores me like that! That violent viper will have me to contend with as well!"
+                "Balrung dropped Cyril and lunged at Niir, attempting a chokehold. But Niir slithered out of his grasp and tried to pin his arms from behind. Balrung flung his head back and hit Niir in the nose."
+                "Blood gushed down Niir's face as the two circled each other warily. This time it was Niir who attacked first, aiming a punch at Balrung's face. But Balrung caught his fist and turned his own weight against him, throwing Niir to the ground."
+                "The old dragon stepped on Niir's chest, pinning him to the ground, and was about to attack again when I called out."
+                p "I've had enough of your bickering! I'm leaving!"
+                "Balrung looked over at me long enough for Niir to twist his ankle and send him sprawling as well. I ran over to see if I could help, when suddenly we heard the mage's voice shout."
+                c "CARCERATUS!"
+                p "What is this?! I am no dragon; you have no right to imprison me!"
+                c "I am very sorry to have to do this, your Highness! But I cannot abide your wrongdoing any longer!"
+                p "Impossible! I am a PRINCESS! I am your future QUEEN!"
+                c "Now, now, that's enough yelling, Princess. You forced my hand.  Siding with the dragons like this.  You really are responsible for this."
+                c "I’ve told you all along, you cannot trust these dragons.  They will only put themselves first." 
+                n "Sssorry, Princessss...we were ssso clossse! But at leassst we can keep each other company."
+                p "Shut up, you imbecile!  I can’t believe I agreed to help you!"
+                n "...Sssso much for \"love\"..."  
+                call credits
+                jump imprisoned_epilogue
+
+            "Kiss me.":
+                p "Hmph. Very well then. Kiss me. It'll make him leave us alone."
+                n "Princessss, I-"
+                p "No words! Just kissing!"
+                n "..."
+                n "I sssshould not want to ssstart sssomething I cannot ssstop, princesss."
+                p "Oh, how very considerate of you. Do you trust yourself so little? Fortunately, I trust you more."
+                n "How sssstupid of you."
+                show niir neutral at come_closer
+                "I seized his ridiculous ears and brought our lips together.  He struggled a little at first but I made sure to put a stop to that by putting a foot in his shin."
+                "He gingerly put his hands on my hips, then held me tighter as I ran my fingers through his hair. Not bad, for his first kiss."
+                p "Is he gone yet?"
+                n "..."
+                p "I’m talking to you, dragon.  Is.  He. Gone?"
+                n "Yessss.  Yesss, he isss gone."
+                show niir neutral at reset_zoom
+
+    label secret_weapon:
+        p "Now it's time for my secret weapon."
+        n "Is it in your blousssse?"
+        p "Yes, actually it is. Would you mind getting it for me?"
+        n "..."
+        p "Oh, very well, must I do everything myself?!"
+        "I pulled out a glass vial full of a fizzy purple liquid."
+        n "It really wasss in your bloussse.  Is it poissson?"
+        p "Of course not. Drink it."
+        n "Your inssssisstence that I drink doesss not reasssure me that it isss not poissson."
+        p "Why would I go through all the trouble of seducing you and getting rid of that mage just to kill you? I want you free so you can aid me!"
+        n "Not for amusssement?"
+        p "What kind of evil princess do you think I am?!"
+        n  "One lassst kissss before I drink.  If it isss poisssson, I want it to be worth it."
+        p "Well, I suppose we have time for one-"
+        "Well. This kiss was much more satisfactory. At least the dragon could learn quickly."
+        n smirk "Bottomssss up."
+        p "You have no idea."
+        "He drank the entire vial in one gulp. I almost didn't think he'd do it."
+        p "Now, try not to belch."
+        "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes. Not that I had ever carried sacks of potatoes. But I'd seen it done."
+        n "Don’t ssstrain yoursssself, princessss."
+        "I strode over to the barrier. It was barely visible as a slight haze in the air. I probably should have packed some provisions or tools or something, but I was done with this place."
+        "Hopefully once Niir was out of the castle and had regained consciousness, he could turn into a dragon and fly us the rest of the way to [k_name]."
+        p "Hold on, Niir, this may hurt a bit."
+        "He didn't even scream as I walked through the barrier; just went limp. No alarms rang or mages popped out of the air."
+        "It was easier than I expected.  Stopping my sister’s coronation was probably not going to be quite so easy."
+
+        call credits
+        jump niir_asleep_epilogue
+
 
 label cyril8:
     if (cyril_insanity >= INSANE):
@@ -290,7 +564,7 @@ label balrung8:
             p "Useless! Betrayed at every turn! When I am Queen, you will regret this!"
             c hat concerned eyes closed blush "You sh-shouldn't be Queen the way you are. I'm terribly sorry, my dear Princess [p_name], but..."
             p "Moronious, you fool, point that wand at the dragon! Not at me!"
-            c hat concerned blush "Carceratus!!"
+            c hat concerned blush "CARCERATUS!!"
             p "What have you done to me?!"
             c hat neutral "Stay! You will stay here, until you learn to be good! I know, somewhere inside of you, there's goodness and love...please, find it quickly, Princess."
             p "You thought guarding dragons was bad? I {b}will{/b} make your life a hell of mental pain, psychological torture, and physical anguish until you LET. ME. GO!"

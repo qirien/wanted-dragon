@@ -258,7 +258,7 @@ label meet_dragons:
     show cyril hat neutral at center
     with moveinright
     # After talked to Niir, Balrung, or Cyril
-    # TODO: play music cyril_theme
+    play music cyril_theme
     c hat concerned "So there we have it.  The dragons.  As you can see my job is not at all easy."
     c hat concerned eyes closed "I don't want to dwell on it but there have been some times where I have just felt like giving up!"
     p "You really are quite pathetic, aren't you?"
