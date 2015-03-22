@@ -148,7 +148,7 @@ label niir8:
     else:
         c "As I thought! The only thing between you is lies and plots!"
         n "Not true.  There issss alsssso the mutual wish to sssee you ssssuffer."
-            p "So, you won't let him go? You'll force me to find some other way to be with my true love?"
+        p "So, you won't let him go? You'll force me to find some other way to be with my true love?"
         c "Well, I suppose if your father agrees to have you stay here in the castle, it wouldn’t be too bad to have you around as extra company.  Though I would not like to have to the be constant chaperone to you and the dragon."
         p "Well, I can show you how that will go right now. Niir, come with me. Moronious, you may not come."
         c "Ah, yes.  I don’t think it’s a good idea to leave you two alone right now."
@@ -177,7 +177,7 @@ label niir8:
                 n "Yessss, now hold sssstill Ccccyril."
                 c "I will do no such thing!  Let me go you brute, or I’ll have to-"
                 p "We can't have you calling for help or casting spells, either. You didn't need the hem of this robe, right?"
-c "This is a special magical garment!  You cannot merely- I am warning you-"                
+                c "This is a special magical garment!  You cannot merely- I am warning you-"                
                 play sound "sfx/rip.ogg"
                 c "The council will be hearing about this.  A princess, in cahoots with a dragon!  It will not go overlooked."
                 p "Good! Let them learn to fear me! Now, you will be silent."
@@ -185,7 +185,7 @@ c "This is a special magical garment!  You cannot merely- I am warning you-"
                 n "Nicccce work, Princesssss."
                 jump secret_weapon
     
-            "Let's get Balrung to help."
+            "Let's get Balrung to help.":
                 p "Let's get Balrung to help. If the three of us attack him, we should be able to overpower him."
                 n "Give me a sssssecond."
                 hide niir with moveoutright
