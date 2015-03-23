@@ -2,6 +2,7 @@
 label day7:
     # Another letter from home tells her that the Coronation is in two days!
     scene bg bedroom dusk with fade
+    play music princess_theme
     "I've certainly made some progress here, even if things are moving rather slowly. Mother always said the best plans take time..."
     "She always had such beautiful schemes... but even they weren't enough to save her, in the end..."
     p "I will not end up like her! Dying peacefully, in my sleep, for no reason at all?! Ridiculous!"
@@ -46,11 +47,13 @@ label day7:
 
 label cyril7:
     show cyril hat neutral at center with moveinleft
+    play music cyril_theme
+    
     p "...I always find myself talking to you."
     c "So, Princess.  I had something I wanted to discuss with you."
     c "I think you'd make a rather good sounding board and I am terribly grateful for what you did yesterday."
     c "I think Niir will think twice next time before he-"
-    p "Did you just compare me to a sounding board mage?"
+    p "Did you just compare me to a sounding board, mage?"
     c "Oh, well.  Not intentionally."
     c "I don't think you're anything like a piece of board.  You're much more... lively than that."
     p "Lively.  Yes.  One would {i}hope{/i} so."
@@ -95,6 +98,8 @@ label cyril7:
     
 label niir7:
     scene bg hall with fade
+    play music niir_theme
+    
     p "...I always run end up running into you."
     show niir neutral at center with moveinright
     n "Thissssss."
@@ -106,7 +111,7 @@ label niir7:
     p "I'm suspicious. It's probably lingerie or something equally tasteless."
     n "Only the besssst for you, Princess.  Open it."
     p "I'm warning you...if you try to toy with me, I'll- oh!"
-    p "It's...mother's amulet."
+    p "It's...mother's amulet!"
     n "It’ssss yourssss."
     p "Where did you find this?! She lost it many years ago, when I was a child..."
     "I fingered the necklace gently. This was proof that she wanted {b}me{/b} to be Queen."
@@ -117,12 +122,12 @@ label niir7:
     n "Ssssomething else perhaps."    
     p "Around where?!"
     n "Curiousss, aren’t we?"
-    n "Don’t you like your gift.  You got one for me, ssso I returned the favor."
+    n "Don’t you like your gift?  You got one for me, ssso I returned the favor."
     p "I- thank you."
     n "In that casssse, perhapsss I have more thingsss hidden away that might be of interessst to you."
     p "Is there anything else of hers? Or with the royal seal?"
     n "That isss one of a kind."
-    n "And not the only thing that issss one of it’sss kind."
+    n "And not the only thing that issss one of itsss kind."
     p "To what are you referring?"
     n "Issssn’t it obvioussss?"
     p "I haven't seen your hoard, so I don't know what you have in there."
@@ -152,7 +157,8 @@ label niir7:
     p "Poor baby Niir; I thought you could take a little rough handling."
     n "I prefer to be the one giving the punissssshment."
     p "Don't give it if you can't take it- oof!"
-    "I fell back and sat on the floor, Niir's head in my lap. He was probably enjoying this way too much..." with vpunch
+    show niir neutral at center,come_closer with vpunch
+    "I fell back and sat on the floor, Niir's head in my lap. He was probably enjoying this way too much..."
     menu:
         "Shove him away.":
             p "Get off me, you salacious serpent!"
@@ -166,13 +172,16 @@ label niir7:
             p "Hmph. Now I feel both curiousity and revulsion. Not a mix of emotions I enjoy. Get up, now."
             n "What if I ssssay no?"
 
-    "I stood up and his head hit the ground with a crack." with hpunch
+    show niir angry at center,reset_zoom with vpunch
+    "I stood up and his head hit the ground with a crack."
     n "You clumssssy princessss.  What did you do that forrrrr?"
     p "I need some way to make you lighter, or myself stronger..."
     n "Impossssible.  Perhapssss you need to learn magic."
     p "I don't need magic! Magic is for weaklings and sycophants."
     p "But there may be another way...I must do some research, alone. You may leave me now. But you have been an excellent test subject. And-"
-    p "Thank you, for my mother's amulet. She was the only one who really understood me. If she was still alive-- But, she's not."
+    p "Thank you, for my mother's amulet. She was the only one who really understood me."
+    p "If she was still alive- "
+    extend "But, she's not."
     n "I am sssssure ssshe was extraordinary, jusssst like you."
     p "There, you see, that wasn't so hard to flatter like a proper minion should."
     n "It wassss not flattery, and I am not yourrrr minion, Princesssss."
@@ -187,6 +196,8 @@ label niir7:
 label balrung7:
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
+    play music balrung_theme
+    
     p "...I always seem to find myself here."    
     p "Is that a scroll? Are you writing a letter?"
     b smile "Princess! I was not aware you had joined me. I'd better put this away..."
@@ -198,7 +209,7 @@ label balrung7:
     b_write "She:"
     b_write "Eyes shine noble, latent traps"
     b_write "Supreme mischief."
-    b_write "Face sly, young, grand"
+    b_write "Face sly, young, gold"
     b_write "Defang grand dragons’ scheme."
     b_write "Map pulse’s sussurus,"
     b_write "sweet tyrant."
@@ -296,7 +307,7 @@ label balrung7:
     c hat concerned "No! Love is kind; it helps people be better, it makes people happy! You two just want, just want power!"
     p "And who says you can't have both?!"
     b neutral "Princess-"
-    p "No, really! I want both! And I WILL get what I want! You won't dare to try and stop me!!!"
+    p "No, Moronious! I want both! And I WILL get what I want! You won't dare to try and stop me!!!"
     
 label our_enemy:    
     c hat angry "Yes, I- will, I am. I don't want to be your enemy, Princess, but if you side with him against me, th-then, I'll have no choice."

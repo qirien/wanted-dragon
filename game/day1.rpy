@@ -1,13 +1,14 @@
 label day1:
     scene bg bedroom dusk with fade
+    play music niir_theme
     p "What a terrible start to a day; I'm still not queen."
     p "But that's why I came here; to remedy that."
-    p "Dragons are powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
+    p "Dragons are supposed to be powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
     scene bg dungeon with fade
     n "Ssssomething tasssty comes!"
     p "Ahem. Dragons? I wish to speak with you!"
-    show niir neutral at right
-    show balrung neutral at center
+    show niir neutral at midright
+    show balrung neutral at midleft
     with moveinright
     b smirk "Princess [p_name]. To what do we owe this great honor?"
     n mischief "Yesss, it's a pleasure..."
@@ -27,7 +28,8 @@ label day1:
     
 label library1:
     scene bg library with fade
-    show cyril hat concerned at midright with dissolve
+    play music cyril_theme
+    show cyril hat concerned at center with dissolve
     "It appears the library is already occupied..."
     c hat concerned eyes closed "I know this was you Niir!"
     "{i}He he he, ha ha ha...{/i}"
@@ -104,6 +106,7 @@ label library1:
             jump explore1
        
 label sharebalrung:
+    play music evil_theme
     $ balrung_affection += 1
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
@@ -123,6 +126,7 @@ label balrung_scepter:
     return
        
 label sharecyril:
+    play music evil_theme    
     $ cyril_affection += 1
     p "Oh, Moronious~."
     p "That foolish mage has to be around here somewhere."
@@ -162,11 +166,14 @@ label sharecyril:
     return
     
 label explore1:
+    play music evil_theme
     scene bg corridor with fade
+    play music princess_theme
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
     show rope at midright with moveintop
+    play sound "sfx/stab.ogg"
     p "Well, what do we have here?"
     show niir neutral at center with moveinright
     n mischief "The ansssswer to all your problemsss."

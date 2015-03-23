@@ -2,10 +2,11 @@
 # DAY 5?!
 label day5:
     scene bg bedroom dusk with fade
+    play music princess_theme
     "I was just finishing the unoriginal-yet-edible breakfast Moronious had dropped off for me when there was a knock at the door."
     
     if (route == "Niir"):
-        show cyril hat neutral at midleft with moveinleft
+        show cyril hat neutral at center with moveinleft
         c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
         c "I saw you, your highness."
         p "Saw me what?"
@@ -81,16 +82,15 @@ label day5:
                 jump balrung5
         
     elif (route == "Cyril"):
-        p "Ugh, this room again... I do miss my own castle, sometimes..."
-        "As I looked around, I noticed a piece of paper next to the door - a note?"
+        "When I opened the door, there was nothing - except a slip of paper."
         b_write "Princess,"
-        b_write "Meet me on the South Tower this morning if you wish to discuss terms for my aid."
+        b_write "Meet me on the south tower this morning if you wish to discuss terms for my aid."
         b_write "\n-A Potential Ally"
         nvl clear
         p "Well, that sounds exciting! I wonder who it's from?"
         menu:
             "Stay here.":
-                p "It's probably a ruse. Besides, I already have Moronious helping me out."
+                p "It's probably a ruse. If I went up there, someone might shove me off the tower to my death. Besides, I already have Moronious helping me out."
                 p "Speaking of which, perhaps I'll go and see his progress."
                 jump cyril5
             "Go and find out.":
@@ -138,6 +138,7 @@ label day5:
 label balrung5:
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
+    play music balrung_theme
     b smile "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
     p "You can save the flattery for later when Moronious can \"accidentally\" overhear you."
     b smile blush "That wasn't for Moronious; that was for you, my lady. "
@@ -151,7 +152,7 @@ label balrung5:
     menu:
         "Pay attention":
             b determined "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
-            b neutral "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and (though she never said it) to prove to us that humans were worth talking to."
+            b neutral "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and, though she never said it, to prove to us that humans were worth talking to."
             b smirk "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
             b angry "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
             "I was so caught up in what he was saying that I almost missed how he had setup his pawns in a chain reaction that was about to decimate my queens. But now that I had seen through his scheme it would be easy to unravel."
@@ -166,7 +167,7 @@ label balrung5:
     b angry "It's completely different! You humans want to use us, subordinate us, rule us! I wanted an alliance of equal partners!"
     b neutral "I should have waited. I should have elucidated my proposal more elegantly."
     p "What did you do?"
-    b smirk "When she wouldn't come with me, I brought her with me anyway."
+    b smirk "When she chose not to come with me, I brought her anyway."
     p "You kidnapped her?!"
     b angry "No! I would have let her leave, once she had listened to me! She refused to even talk to me! And her mentors were poisoning her mind against me. I had to bring her away from all of that."
     p "Hmph. Did it work?"
@@ -187,6 +188,7 @@ label balrung5:
     b smile "One day...perhaps."
     show cyril hat neutral at midleft with moveinleft
     show balrung at midright with move
+    play music cyril_theme
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
     b smirk "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
@@ -222,9 +224,9 @@ label balrung5:
     c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my batter is faster than my train! I mean, my chatter is faster than my brain..."
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
     scene bg dungeon with fade
-    show balrung smirk at center
     show cyril hat neutral at midleft
     show niir neutral at midright
+    show balrung smirk at come_closer    
     with dissolve
     p "Oh, thank you, Balrung, for taking such good care of me. I don't know what came over me. But I'm so glad I can trust {b}you{/b}, at least."
     "I glared at the mage, hoping he would feel even more guilty."
@@ -234,9 +236,11 @@ label balrung5:
     return
 
 label niir5:
+    play music niir_theme
     $ niir_affection += 1
     p "Could you stop disappearing on me Niir!"
     p "I wish to confer with you!"
+    show niir neutral at center with moveinright    
     n "Confer?  On what?  Your choice of dresssss?"
     p "No! The pretence!  The acting like you're in love with me!"
     p "How are we faring?"
@@ -273,16 +277,14 @@ label niir5:
     n "Professsss love?!"
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
-    show niir neutral at center with come_closer
+    show niir neutral at center, come_closer with dissolve
 
     p "Hold me like this, with your hands here, in case he peeks out."
     n "I can do that, at leassssst."
     p "Now, say things you like about me, and I will do the same for you. I've heard that's what lovers often talk about."
     n "I suppossse."
     n "Oh, Princessss, your...dresss is ssssooo...shiny. And your earsss are ssso...sstrange. How can you even hearrr with those tiny things?"
-    show cyril hat neutral at right with moveinright:
-        zoom 0.5
-        yalign 0.5
+    c "Is that...Niir?! I've never heard him talk in such a positive manner."
     p "I suppose that's a start. Don't just compliment my body, though, or he won't believe it's true love!"
     n "You're sssoo deviousss, when I ssseee your scheming grin I jussst want to eat you up!"
     show niir with vpunch
@@ -306,9 +308,11 @@ label niir5:
     n "Thissss will not work."
     p "You've never actually kissed anyone, have you?! Well, we simply must remedy that right away." 
     "But before I could execute my plan, Cyril came running towards us. Niir's education would have to wait until later." 
-    show cyril hat neutral at midright with reset_zoom
+    show cyril hat neutral at midleft, come_closer with moveinleft
     c "Princess! You can't! Y-You mustn't believe him!"
-    show niir neutral at center with reset_zoom
+    show niir neutral at midright, reset_zoom
+    show cyril hat neutral at midleft, reset_zoom
+    with dissolve
     p "Moronious! What a... surprise to see you here, interrupting our completely private conversation!"
     c "I warned you about him, Princess.  And I don’t believe any of this for a second!  You won’t fool old Cyril the Clever.  Errr, young Cyril.  I do quite forget my age some times."
     n "Nobody calls you Cccccyril the Cleverrr."
@@ -322,7 +326,8 @@ label niir5:
     p "Moronious, you are dreadfully mistaken. But I will be generous and allow you a few days to change your mind."
     c "I propose a test if this is to go on.  Niir, you must prove this to me.  And then at the end I will test you both to see how well you know one another and how deep your commitment is to one another.  I do not let dragons leave willy-nilly you know."
     p "Our love is strong enough to pass your silly tests! I have no doubts about that."
-    n "Give us a few dayssss, and I'll know her well enough to passs any tessst..."
+    n smirk "Give us a few dayssss, and I'll know her well enough to passs any tessst..."
+    show niir determined with vpunch
     "I kicked Niir in the shins. Was he truly so foolish?!"
     c "There is more to love than knowing, so don’t think the test will be that easy to pass."
     p "I am not concerned with your tests. "
@@ -335,6 +340,7 @@ label somethigh:
     p "I'll show you some of mine if you show me some of yours."
     p "Trust."
     n "I thought you'd never offer."
+    play sound "sfx/lightning.ogg"
     scene black with magic_flash
     # TODO: add vfx for Cyril's protection spell that got activated?
     p "Happy now?"
@@ -342,16 +348,20 @@ label somethigh:
     p "Well, now I know how Moronious' protection spell works. I'm surprised you're still conscious after that much electricity."
     n "You are no fun Princesssss."
     scene bg dungeon with fade
+    show niir neutral at center with dissolve
     p "So there we go, I trust you enough with that, and now you trust me. Say it."
     n "Sssstill not convincccccced."
-    with hpunch
+    show niir determined with hpunch
     n "Agh!  What wasssss that?"
     p "Convincing.  Hurry up and trust me or I'll do it again."
+    show niir angry with vpunch
     n "It doessss not work- {i}stop, human{/i}!"
+    show niir angry with hpunch
     n "Desisst!"
+    show niir at come_closer with dissolve
     "He grabbed my fist before I could punch him again. The protection spell didn't activate, this time, since I touched him first."
     p "Release your hands from my royal person immediately!"
-    n "Do you trussssst me now?"
+    n smirk "Do you trussssst me now?"
     "Ah, a test.  Touché, dragon."
     p "Completely."
     n "Really?"
@@ -412,19 +422,21 @@ label cyril5:
     # DAY 5
     scene bg library with fade
     show cyril hat neutral at center with dissolve
+    play music cyril_theme
+    
     $ cyril_affection += 1
     c "I found it."
     p "My scepter? You are not as infantile as you seem."
     p "I've actually been very impressed with the way you operate."
-    p "Acting like you don't know a thing and then astounding us all with your competence."
-    p "Keeps the dragons on their toes as well, I'd presume."
+    p "Acting like you don't know a thing, and then astounding us all with your competence."
+    p "Keeps the dragons on their toes as well, I presume."
     c "Errr... no.  I found my spellbook."
     c "It was right under my nose the entire time."
     p "..."
     p "Don't think because I'm banished I can't bring about your death."
     c "I'm dreadfully sorry."
     c "But now that I have my spellbook I can find some sort of locating spell, surely."
-    p "You'd better because I've grown tired of waiting."
+    p "You'd better, because I grow tired of waiting."
     c "Let's see here... locater-locater... lo-"
     c "Here!"
     c "It's not a locating spell but it does bring deep, powerful magical items to glow incessantly until I stop the spell."
@@ -442,7 +454,7 @@ label cyril5:
     c "{font=fonts/ankecallig-fg.ttf}Magia Luxis{/font}!"
     show cyril hat angry with magic_flash
     c "Something is blocking it... but the scepter is here, in this castle!"
-    c "I'm so sorry, your highness, but I need to study this more. Please be patient!"
+    c "I'm so sorry, your Highness, but I need to study this more. Please be patient!"
     p "I am not a patient person, Moronious."
     c "I know. But...it's actually Merlonious.  Yes, Merlonious.  That is my name."
     p "Yes, yes, I know what your name is!"
@@ -458,7 +470,7 @@ label cyril5:
     p "Do tell me, how does it feel? You seem uncomfortable; do you dislike it?"
     "Such an amusing plaything!"
     c "I wouldn’t- I wouldn’t say {i}that{/i}." 
-    p "And if I lean on your shoulder, like this…?"
+    p "And if I lean on your shoulder, like this...?"
     c "Oh dear.  I-I- do believe you have me flustered, Princess."
     p "Well, we wouldn't want that. I suppose I'd better leave you alone for now, even though there's so many other things I'd like to show you."
     c "Ah yes."

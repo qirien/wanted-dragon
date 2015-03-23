@@ -188,6 +188,7 @@ label meet_dragons:
             c hat concerned "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
+            $ cyril_affection += 1
             p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             b angry "Would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human appearance is not our normal state, you know."
             c hat concerned "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
@@ -212,7 +213,9 @@ label meet_dragons:
                 "\"I shall consider your... offer, Niir.\"":
                     $ niir_affection += 1
                     p "I shall consider your... offer, Niir."
-                    n mischief "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
+                    show niir mischief at center,come_closer
+                    n "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
+                    show niir at quarterright, reset_zoom
                     p "I can acquaint myself with you well enough from here."
                 
                 "\"Not interested.\"":

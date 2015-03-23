@@ -1,5 +1,6 @@
 label day8:
     scene bg bedroom dusk with fade
+    play music evil_theme
     "Time is running out; Magnolia's coronation will take place tomorrow, unless I can find a way to stop it!"
     "Careful plots would take too much time; I needed to act now."
     if (route == "Niir"):
@@ -12,15 +13,24 @@ label day8:
     return
 
 label niir8:
+    scene bg dungeon with fade
+    show niir neutral at center with dissolve
+    
+    p "Niir, it is time."
+    n "What sssurrrpise do you have forrr me today?"
+    p "Come with me and find out."
+    n "The suspensssse is delicioussss."
+    
     scene bg library with fade
-    show cyril hat neutral at midright with dissolve
-    show niir neutral at midleft with moveinleft
+    show cyril hat neutral at midleft with dissolve
+    show niir neutral at midright with moveinleft
+    play music cyril_theme
     p "Moronious, we are ready."
     c hat surprised "Wh-?  {i}Please{/i} don’t sneak up, Princess.  Oh.  Of course.  {b}Niir{/b}.  He must have put you up to it."
     p "I shall ignore your ridiculous insinuation that I would be \"put up\" to anything I did not wish to do. Try our love, mage. It is strong enough to overcome even your foolish \"test\"."
-    c hat laugh "Oh yes.  Your ‘love’.  You’re still on with that charade are you?"
-    n "It'sss no charade! She'sss my ssssweet hamhocks"
-    p "Yes exactly. See, we're even holding hands."
+    c hat laugh "Oh yes.  Your \"love\".  You’re still on with that charade, are you?"
+    n "It'sss no charade! She'sss my ssssweet little... hamhocks."
+    p "Yes, exactly. See, we're even holding hands."
     c hat eyes closed smile "If you two insist."
     c hat laugh "This will be my amusement for the day.  Let’s begin."
     c hat concerned "Niir! What is the Princess's favorite breakfast?"
@@ -31,7 +41,7 @@ label niir8:
     if (niir_affection >= HIGH_AFFECTION):
         n "She likessss..."
         "I sidled over out of Cyril's line of sight and mouthed the word \"eggs\"."
-        n "Ehhhhggs!"
+        n "Eggssss!"
         c "Hmph. A lucky guess, I'm sure of it."
         $ quiz_questions += 1
     else:
@@ -43,7 +53,7 @@ label niir8:
         c "I don't need to; I can tell you're lying."
 
     c "Anyway! Next question!"
-    c "Who were Niir's parents?"
+    c "Princess! Who were Niir's parents?"
     n "Why would I tell her about my parentssss, sssstupid mage?"
     menu:
         "He doesn't know them." if (niir_affection >= HIGH_AFFECTION):
@@ -127,19 +137,21 @@ label niir8:
         c "I-I'm not sure how you did it, but somehow you’ve managed to astound me with how in sync you are."
         c "But is it {i}love{/i}?  I cannot figure that out."
         n "Perhapssss you sssshould let usss figure that out ourselvessss."
-        c "Very true Niir.  Perhaps I should."
+        c "Very true, Niir.  Perhaps I should."
         c "I can’t believe I am saying this.  I thought I would have to deal with Niir’s childish taunts until the day I got old and died in this castle."
         n "Very sssad."
         c "Regardless, I suppose I can let you go."
-        c "Don’t make me regret this Niir.  I feel like I’m regretting it already.  If you are anything less than completely loyal to this lovely young princess..."
+        c "Don’t make me regret this, Niir.  I feel like I’m regretting it already.  If you are anything less than completely loyal to this lovely young princess..."
         p "I will string him up by his dragony sinews and boil his scales for my potions. Until he learns his lesson."
         n "Pleassse don’t."
-        c "INCARCERUS TERMINE!"
+        c "{font=fonts/ankecallig-fg.ttf}{size=+10}INCARCERUS TERMINE{/size}{/font}!"
         show cyril hat angry with magic_flash
+        play music happy_ending
         "Niir shimmered a little, and there was a distant noise like breaking glass."
         n "It isss done?  I feel... {i}powerful{/i} again."
         n "I will not sssstay here one minute more."
         p "Then it's time for us to fly."
+        hide niir with golden_flash
         "Niir closed his eyes, concentrating, and then shifted, his skin turning golden and scaly, his frame lengthening. Huge glimmering wings unfolded behind him, and he stamped the ground with clawed feet."
         n "Let’ssss."
         "I climbed on his back, looping my arms around his neck. Cyril frowned up at us disapprovingly as the wind from Niir's wings swirled around him, but did nothing to stop our flight."
@@ -156,6 +168,7 @@ label niir8:
 
         scene ruins with fade
         show niir neutral at center with fade
+        play music niir_theme
         p "Is he following us?"
         n "Yesss, I can ssstill sssmell that mage around here."
         menu:
@@ -168,7 +181,7 @@ label niir8:
                 c hat surprised "Princess? Where's Niir?"
                 "Just then Niir swung out from behind the mage and knocked his feet out from under him."
                 "That sleight of hand was just what I needed to take the mage’s wand."
-                c "INCARCERATUS!"
+                c "{font=fonts/ankecallig-fg.ttf}INCARCERATUS{/font}!"
                 c "Why isn’t it-?  My hand seems to be empty."
                 c "Niir, this is {b}no{/b} joke.’"    
                 p "Tie him up, Niir. Here. Look familiar?"
@@ -276,13 +289,14 @@ label niir8:
         p "You have no idea."
         "He drank the entire vial in one gulp. I almost didn't think he'd do it."
         p "Now, try not to belch."
-        "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes. Not that I had ever carried sacks of potatoes. But I'd seen it done."
+        "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes. Not that I had ever carried sacks of potatoes. But I'd seen it done. It looked easy."
         n "Don’t ssstrain yoursssself, princessss."
         "I strode over to the barrier. It was barely visible as a slight haze in the air. I probably should have packed some provisions or tools or something, but I was done with this place."
         "Hopefully once Niir was out of the castle and had regained consciousness, he could turn into a dragon and fly us the rest of the way to [k_name]."
         p "Hold on, Niir, this may hurt a bit."
         "He didn't even scream as I walked through the barrier; just went limp. No alarms rang or mages popped out of the air."
         "It was easier than I expected.  Stopping my sister’s coronation was probably not going to be quite so easy."
+        "But I {b}would{/b} be Queen. No matter what!"
 
         call credits
         jump niir_asleep_epilogue
@@ -291,21 +305,24 @@ label niir8:
 label cyril8:
     if (cyril_insanity >= INSANE):
         jump mage_insane
+    scene bg library with fade
+    show cyril hat neutral at center with dissolve
     p "Time is running out, Moro-, er, Cyril. Unless you have something for me today, I will be forced to pursue other...options."
     c "I know, I know.  Time is of the essence.  I have been staying awake at night thinking of what to do about it but to no avail."
     p "Hmph. Then I will find something on my own. How unfortunate that your power was not enough to bring me the one thing I truly need."
     c "W-wait! One more time!"
 
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
-    c "Resonantia Concretus!"
-    p "I can see wisps of something in the air. What did you do, mage?"
+    c "{font=fonts/ankecallig-fg.ttf}Resonantia Concretus{/font}!"
+    p "I can see wisps of something in the air. What did you do, mage?" #TODO: vfx for this?
     c "That should solidify the resonance for a while. It's coming from...the dungeon. Princess, someone is using the scepter right now!"
     p "Then we must follow the resonance and take it! What are you waiting for?!"
     c "R-right!"
 
     scene bg dungeon night with fade
-    show cyril hat neutral at midleft
+    show cyril hat neutral at center
     with moveinleft
+    play music balrung_theme
     "When we got to the dungeon, Balrung and Niir were nowhere to be seen."
     c hat concerned eyes closed "Ahhhh!"
     p "Cyril! Don't just stand there; we need to get the scepter!"
@@ -318,7 +335,7 @@ label cyril8:
     hide cyril with quickmoveoutleft
     "Balrung's tail came out of nowhere and knocked Cyril to the ground."
     b "I'll supervise Niir. That's what you mages should have done in the first place; let dragons discipline dragons."
-    show cyril concerned at midleft with moveinleft   #he lost his hat
+    show cyril concerned at center with moveinleft   #he lost his hat
     c "That wouldn't work! Nobody can trust you!"
     c concerned eyes closed "..."
     c angry "And wait Balrung, WHERE IS THAT SCEPTER?!" 
@@ -332,18 +349,20 @@ label cyril8:
             p "Cyril, I'm trusting you with this. Don't fail me!"
             c smile blush "I won’t, Princess."
             b "You're making a mistake!  I WILL not be imprisoned AGAIN!"
-            c angry "You were the one making the mistake and now you will reap the consequences of such a mistake."
+            c angry "You were the one making the mistake. And now you will reap the consequences of such a mistake."
             play sound "sfx/electricity.ogg"
             "Cyril started to chant, preparing some kind of powerful magic, I hoped."
             "Balrung breathed a maelstrom of fire in our direction, but Cyril swiped it away with a gesture. The old dragon pounced forwards as Cyril brandished the scepter at him and shouted another spell."
+            play sound "sfx/fireball.ogg"
             c angry "{font=fonts/ankecallig-fg.ttf}{size=+10}DRACONIS PETROMUNDI{/size}{/font}!"
+            play sound "sfx/lightning.ogg"
             show cyril angry with magic_flash
             "There was a puff of smoke that sped towards Balrung like an arrow, and when it cleared... he had turned to stone."
             p "You...stopped him. Cyril, that was...power!"
             c smile blush "Ah, yes.  I suppose it was, mostly.  This scepter is very dangerous buisness.  "
             extend "I think I’ll hold on to it."
             p "And I'll hold on to {b}you{/b}."
-            show cyril concerned blush at come_closer
+            show cyril concerned blush at center,come_closer
             show cyril smile blush eyes closed
             "I grabbed the sleeves of his robe and kissed him thoroughly. He was too surprised to respond at first, and almost dropped the scepter, but soon he had his arms around me awkwardly and was attempting some sort of kiss in response. It was...adorable. Yes, perhaps now he was worthy to aid me."
             p "Yes...Cyril, I think it's time for you and I to stop a coronation. When my father sees the power we possess, he will certainly change his mind."
@@ -440,6 +459,7 @@ label balrung8:
     "Transmogrification Tonic? If I could turn into a dragon... but then, I'd be stuck here as well. Unless I drank it after leaving... then I mightn't need help after all..."
     stop sound fadeout 2.0
     show balrung neutral at center with moveinleft
+    play music balrung_theme
     b determined "Chrysandra? There you are! I have another plan, but I'm not satisfied with its chances for success. Tell me you have something better."
     p "Depends. Do you have any dragon scales?"
     b neutral "Perhaps; how many do you need?"
@@ -483,6 +503,7 @@ label balrung8:
     scene bg kitchen with fade
     stop sound fadeout 10.0
     show cyril hat neutral at quarterright with moveinleft
+    play music cyril_theme
     c hat surprised "Princess! You're bleeding!"
     c hat concerned "Which dragon was it?! I'll make sure they can NEVER hurt anyone else again!"
     "I tried to stand up, but couldn't quite manage it."

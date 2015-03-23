@@ -16,6 +16,7 @@ init -1:
     define MEDIUM_AFFECTION = 3
     define INSANE = 3
     define cyril_dead = False
+    define book_flipped = False
 
     #
     # CHARACTERS
@@ -112,6 +113,7 @@ init -1:
     define flash = Fade(.25, 0, .75, color="#fff")
     define magic_flash = Fade(.25, 0, .75, color="#acf")
     define red_flash = Fade(.25, 0, .75, color="#a90000")
+    define golden_flash = Fade(.25, 0, .75, color="#f9a900")
     define blood = Fade(.25, 0, .25, color="#f00")
     define dissolve = Dissolve(0.4, alpha=True)
     transform come_closer:
@@ -121,6 +123,14 @@ init -1:
     transform reset_zoom:
         zoom 1.0
         yalign 1.0
+        
+    transform hop:
+        yalign 0.0
+        linear 0.5 ypos +30
+        pause 0.5
+        linear 0.5 ypos 0
+        repeat
+        
 
     transform basicfade:
         on show:
@@ -135,8 +145,11 @@ init -1:
     #
     # MUSIC
     # 
-    define balrung_theme = "music/MephistoPolka.mp3"
+    # TODO: normalize audio
+    define balrung_theme = "music/Cello.mp3" 
     define niir_theme = "music/OniValse.mp3"
     define evil_theme = "music/Malos.mp3"
     define princess_theme = "music/EvilPrincessMarch.ogg"
-    define cyril_theme = "music/AwkwardMageWaltz.ogg"
+    define cyril_theme = "music/AwkwardMageWaltz.ogg" #TODO: updated version?
+    define happy_ending = "music/SettingTheSails.mp3"
+    define intro_music = "music/AMomentOfTwilight.mp3"

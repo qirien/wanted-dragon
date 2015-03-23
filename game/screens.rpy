@@ -185,7 +185,10 @@ screen nvl(dialogue, items=None):
 screen book_screen:
     default side_image = None
     
-    add "bg/book.jpg"
+    if (book_flipped):
+        add im.Flip("bg/book.jpg", horizontal = True)
+    else:
+        add "bg/book.jpg"
     window:
         style "nvl_window"
         xpadding 50

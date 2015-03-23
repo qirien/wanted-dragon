@@ -1,5 +1,6 @@
 label day4:
     scene bg bedroom dusk with fade
+    play music princess_theme
     p "The Sceptre of Lavendorm sounds powerful, if we can find it."
     p "But it could be just a legend, or it could have been moved. I should pursue other avenues as well."
     p "That mage has magical powers, if I could get him to use them the way I wanted."
@@ -28,6 +29,7 @@ label alone4:
 label cyril4:
     $ route = "Cyril"
     show cyril hat neutral at center with moveinleft
+    play music cyril_theme
     c hat surprised "Ah, Princess!  I had been looking for you."
     p "Well, you clearly didn't look very hard because I've been here."
     c hat smile eyes closed blush "Ah, well, this was one of the first places that I found myself looking."
@@ -64,6 +66,7 @@ label dragons4:
     show balrung neutral at midleft
     show niir neutral at midright
     with dissolve
+    play music evil_theme
     
     b smile "Good morning, Princess. I trust you slept well?"
     p "That seems a silly thing to trust in. How can I sleep well when my kingdom is in the hands of a usurper?!"
@@ -115,6 +118,7 @@ label balrung4:
     b smile eyes closed "Niir, perhaps you would like to play against the Princess?"
     n smirk "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
     hide niir with moveoutright
+    show balrung neutral at center with move
     b neutral "He never was very good at this game. I thought I could teach him, but...he doesn't wish me to teach him anything."
     p "I used to play against my father; he wasn't very good, though, for I would always win. Are you any good?"
     b determined "I've had so few people to play against, lately, and Merlonious won't play with me anymore."
@@ -138,7 +142,7 @@ label balrung4:
     b smile "But I have all my pawns. Your queens are quite unguarded."
     p "The pawns are insignificant."
     b smile eyes closed "I disagree. Your move."
-    p "I only need one queen!"
+    p "The queens are much more powerful!"
     b smirk "No, I'm afraid it won't be enough. You have no moves left."
     p "..."
     b smile eyes closed "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
@@ -162,24 +166,24 @@ label niir4:
     n angry "Cooking?  Poetry?  Flowersss?  I’m out."
     b determined "Niir, isn't it worth {b}trying{/b} to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
     n smirk "Affection, well why didn’t you sssssay so?"
-    show niir neutral at come_closer with dissolve
+    show niir neutral at center,come_closer with dissolve
     p "It doesn't help to do that now, you imbecile, it has to be when Moronious is watching!"
-    show niir neutral at reset_zoom with dissolve
+    show niir neutral at midright,reset_zoom with dissolve
     n mischief "Soooo how much leeway do I get?" 
     b smirk "Remember, you need to appear in love, not in lust... Perhaps you should practice a passionate, yet chaste embrace."
     n determined "Do you really think I can do that?"
     b determined "You must enjoy it here very much. Is it really that much of a sacrifice to embrace a beautiful princess?"
     n neutral "Perhapssss not.  But I do not promise chassste.  That is the mage’s game."
-    show niir smirk at come_closer with dissolve
+    show niir smirk at center,come_closer with dissolve
     #todo show embrace somehow
     p "Yes, that was... That'll do. You may remove your hands now."
-    show niir determined at reset_zoom with dissolve
+    show niir determined at midright,reset_zoom with dissolve
     n mischief "I wassss just getting ssstarted."
     p "Can you sing? Perhaps you could compose a sonnet."
     n happy "Hahahaha.  You really have to sstop with these foolissssh suggestions!"
     b smirk "Yes... that may work. Not the sonnets; you can amuse each other and laugh together."
     n determined "Grrr.  No one asssked for your input!"
-    b smile eyes closed "Well, then perhaps I'll leave you two alone for a bit. Though, princess, should you need me, I will be nearby. Behave yourself, Niir."
+    b smile eyes closed "Well, then perhaps I'll leave you two alone for a bit. Though, Princess, should you need me, I will be nearby. Behave yourself, Niir."
     hide balrung with moveoutleft
     show niir at center with move
     n determined "Don’t lisssten to that crussty old dragon."

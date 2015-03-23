@@ -1,21 +1,24 @@
 ############################################################
-# Cyril route ending
+# Cyril route endings
 #
-label cyril_ending:
-        # TODO: calculate ignoring times to check for insane ending
 
     
 label mage_insane:
+    p "Cyril? CYRIL! Hmmm.  Usually he responds to my summons right away. Where can he be?"
+    scene bg stairs day with fade
+    "I hear noises coming from the dungeon..."
     scene bg dungeon with fade
-    show cyril hat neutral at midleft
-    show balrung neutral at midright
-    show niir neutral at right
+    show balrung neutral at center
+    show niir neutral at quarterright
+    show cyril hat neutral at quarterleft    
     with dissolve
+    play music cyril_theme
+    
     b "It took only a few short years of solitude to lose your mind."
     b "Are you sure she's even real?"
     c "Yes!  Of course I am!"
     n "Sssshe's interested in you.  Ssshe must not be real."
-    c "She is real.  She is the real princess.  Just look at her."
+    c "She is real.  She is the real princess.  Here she is; just look at her!"
     b "Are you sure about that?"
     n "I can't ssssee a thing."
     p "You blithering fool, Cyril.  They're playing you."
@@ -37,6 +40,7 @@ label mage_insane:
             jump mage_insane_step
             
 label mage_insane_kiss:
+    show cyril hat smile blush eyes closed at center, come_closer with dissolve
     "..."
     c "Ah, sweet, sweet apparition."
     c "I'm afraid this is the closest that we're going to get to being together for real."
@@ -79,12 +83,12 @@ label cyril_scepter_epilogue:
 label cyril_dragon_epilogue:
     c neutral "It’s for the best, Chrysandra.  I know you don’t want to take this potion but I travelled a long way and met up with many, many members of the council in order to get it."
     c smile "So if you would just drink the potion and then rest for a while, I am sure you will be back to normal in no time."
-    p "I still think that if I lit enough pants on fire, they might change the law to allow a dragon to be Queen. But… I'll drink it."
+    p "I still think that if I lit enough pants on fire, they might change the law to allow a dragon to be Queen. But... I'll drink it."
     #TODO: some magical VFX
     c smile blush "Thank you, my-your majesty.  I do think it’s best for everyone.  It was quite extraordinary that you became a dragon at all.  It’s good that scepter is now locked away securely so no one else can have the same fate."
     p "Securely? Where exactly did you hide it?"
     c surprised "You mustn’t worry about that my Queen.  But do trust me that it is securely away at the top of the cas- Oh dear.  I must work on holding my tongue more in the future."
-    "The top of the castle?! I wondered if I might get it back… but perhaps it was better to stay here, as a human, but a Queen. Well, if I ever tire of being Queen, I know just where to go!"
+    "The top of the castle?! I wondered if I might get it back... but perhaps it was better to stay here, as a human, but a Queen. Well, if I ever tire of being Queen, I know just where to go!"
     p "Don't worry about it, dear. Come here and rub my shoulders; they feel so cramped now that I'm human again. No wings! It's simply dreadful."
     c smile blush eyes closed "Y-yes, your majesty."
     p "That's a good boy.  Mmmmm.  Yeeees."

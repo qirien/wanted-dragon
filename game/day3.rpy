@@ -1,5 +1,6 @@
 label day3:
     scene bg bedroom dusk with fade
+    play music princess_theme
     
     p "Ugh, this castle is so cold and dank. The snow hasn't quite melted yet, here. But the birds are still out..."
     p "Strange... one of them is flying this way. Almost as if it's going to-"
@@ -91,15 +92,19 @@ label day3:
             jump niir3
         "Go ask Moronious":
             p "I'm going to ask that mage instead. Good-bye, Niir."
+            n determined "You're making a misssstake, Princessss."
             jump cyril3
         "Go ask Balrung":
             p "I'm going to speak with Balrung about it. Good-bye."
+            n determined "You're making a misssstake, Princessss."
             jump balrung3
             
     
 label cyril3:
     scene bg library with fade
     show cyril hat neutral at center with dissolve
+    play music cyril_theme
+    
     $ cyril_affection += 1
     p "Ohhhh Moroooonious!"
     p "What progress have you made with obtaining that scepter for me?"
@@ -123,12 +128,16 @@ label cyril3:
     p "Come and see my when you have more."
     c "It would be my pleasure."
     
-    scene black with fade
+    scene bg library with fade
+    "I supposed while Moronious is working on that, I may as well do some research of my own."
+    "What else is there in this oddly large library?  This is possibly the only room in this castle that is well-kept."
+    "Ahhh, {i}Powerful Ingredients And Where to Find Them{/i}. Lovely."
+    "I'll just take this back to my room where I won't be bothered."
     scene bg bedroom day with fade
-    show cyril hat neutral at midright with dissolve
-    p "Ugh, this place smells like moss.  Like sitting, rotting-"
+    show cyril hat neutral at center with dissolve
+    p "Ugh, this place smells like moss.  Like stinking, rotting-"
     c "Oh!  I'm sorry Princess.  I didn't mean to intrude!"
-    "How long has he been here in my room?  "
+    "How long has he been here in my room?  And... "
     extend "Is that my letter?!"
     c "Or read your private correspondance.  You see, it was just out on the desk and it happened to catch my eye and-"
     p "Quit blathering like a fool!"
@@ -191,30 +200,32 @@ label cyril3:
         "Ignore him.":
             $ cyril_insanity += 1
             p "..."
-            "This will do the trick, keep that snivelling to a minimum."
+            "This will do the trick to keep that snivelling to a minimum."
             "Hopefully he will take the hint and BEGONE!"
             c "Princess, I am very sorry, I did not mean to intrude myself in your personal business."
             p "..."
             c "If you permit me to say so, your father and your sister seem to care for you dearly."
-            "Oooh you are testing me mage."
-            "You said that to have my break my silence and strike you down."
-            "But I am much more strong willed than that."
+            "Oooh, you are testing me, mage."
+            "You said that to have me break my silence and strike you down."
+            "But I am much more strong-willed than that."
             p "..."
             c "Ahem."
             c "Yes.  They do care for you and I do think you must get in contact."
-            "I will not fall for this.  He wants me to tell him about {i}my{/i} returned correspondence.  "
+            "I will not fall for this.  He wants me to tell him about {i}my{/i} return correspondence.  "
             extend "I will {b}not{/b}."
             c "Unless you think not.  That is up to you of course."
             c "I just know if I had family that cared enough for my well-being-"
             c "Ah, well you don't want to hear the musings of this foolish mage."
             p "..."
-            "Perhaps if I lie down and close my eyes he might finally leave." # TODO: perhaps she starts to undress and he gets really embarrassed and leaves?
+            "Perhaps if I lie down and close my eyes he might finally leave." 
             c "I do think however that it is in your best interests-"
+            scene black with fade
             p "..."
             c "Oh.  I notice that you're a little tired."
-            c "I should come back anything time.  Good night Princess."
+            c "I should come back another time?  Good night Princess."
             c "Even though it is still day.  "
             extend "Baffling.  Goodbye then."
+            scene bg bedroom day with fade
             "That took him long enough.  Hm.  This is a good tactic for getting rid of him."
             "I may employ it again in the future."
     
@@ -224,6 +235,8 @@ label cyril3:
 label balrung3:
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
+    play music balrung_theme
+    
     b smile "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
     b smirk "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
@@ -258,6 +271,7 @@ label balrung3:
     p "Dragon poetry? What is it like?"
     b smirk "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
     
+    $ book_flipped = True
     book "Fly:"
     book "Wings soar,"
     book "roar, writhe;"
@@ -266,6 +280,8 @@ label balrung3:
     book "two sinuous serpents"
     book "soar rapturous."  
     nvl clear
+    $ book_flipped = False
+    
     b smile blush "No, no, not that one. The one on the other side of the page."
     p "Oh! Of-of course!"
     
@@ -287,7 +303,7 @@ label balrung3:
             b smirk "For your purposes, perhaps armies would work better."
         "\"I like the 'vanquish' part.\"":
             $ balrung_affection += 1
-            p "I like the part about vanquishing. Why do you like this poem so much?"
+            p "I like the part about vanquishing. Why do you like it?"
             b neutral "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
     p "Is this really poetry? I see no rhymes, no pattern of syllables."
     b smile "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
@@ -298,6 +314,7 @@ label balrung3:
     return
     
 label niir3:
+    play music niir_theme
     $ niir_affection += 1
     n smile "Follow me and I’ll sssshow you something."
     p "Very well. Lead on, Niir."

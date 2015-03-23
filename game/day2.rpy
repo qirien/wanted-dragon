@@ -1,5 +1,6 @@
 label day2:
     scene bg bedroom dusk with fade
+    play music cyril_theme
     "Is that knocking?! Who could be brazen enough to wake me up so early?!"
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
@@ -86,6 +87,7 @@ label day2:
         
     scene bg dungeon with fade
     show balrung neutral at center with dissolve
+    play music balrung_theme
     p "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
     b smile "My apologies, my lady, I didn't think it appropriate to disturb a lady in her bedchamber so early in the morning."
     p "But you thought it appropriate to send the lascivious Niir to my bedchamber?!"
@@ -115,10 +117,10 @@ label day2:
     b smirk "Please do."
     p "But first, I have a simple request of you."
     b neutral "Yes?"
-    p "Come to the kitchen at dinner time and eat with me."
+    p "Come to the kitchen this evening and dine with me."
     b smile "I'd be honored, Highness."
     scene black with fade
-    "And now, for dinner...A little test, to see who would be the most useful to me..."
+    "And now, for dinner...A little test, to see who will be the most useful to me..."
     
 label dinner_party:
         
@@ -127,7 +129,8 @@ label dinner_party:
     show balrung neutral at center
     show cyril neutral hat at left
     with dissolve
-
+    play music cyril_theme
+    
     p "Good, you are all here. That proves you can fulfill a simple request."
     b smirk "It has been a long time since I attended a dinner party."
     n frown "I hope the food issss better than usssual."
@@ -224,7 +227,7 @@ label dinner_party:
             p "Of course I was. And Niir was kind enough to deliver."
             n frown "Kind?! You'rrrre suppossssed to be outraged!"
             p "Why would I be outraged when you said exactly what I predicted? That wouldn't be logical, would it?"
-            b smirk "Oh ho ho! Careful with this one, Niir."
+            b smile eyes closed "Oh ho ho! Careful with this one, Niir."
             n neutral "Perhapssss I should try harder to sssurprise you."
             "That's exactly what I'm hoping for..."
             p "You can try, but I don’t believe it will be possible."
@@ -249,6 +252,11 @@ label dinner_party:
             show cyril hat neutral
             c hat concerned blush "Oh, of course.  I wouldn’t dream of disgusting you."
             c hat concerned "We should go back. I’m not sure what mess those dragons have gotten into already.  I dare say the food won’t still be there."
+            scene bg kitchen with fade
+            show balrung neutral at center
+            show niir neutral at right
+            with dissolve
+            show cyril hat neutral at left with moveinleft
 
     p "Thank you all for an...informative evening. My apologies for the ineptitude of the chef."
     b smile "Thank {b}you{/b}, Princess. Your presence is a delightful change from the ordinary events of this wretched place."
