@@ -54,12 +54,10 @@ label cyril4:
     p "...I need more minions. Or perhaps simply more powerful minions. But, as there is just you, I will also search for this artifact. Direct me to the east wing!"
     show cyril hat smile blush at basicfade
     c "That is- that is most gracious of you.  The east wing is this way, but I wouldn’t want you to do too much hard work.  If there is any lifting you need, just call me over and with a wave of my wand, I will remove the item obstructing your search."
-    window hide
     scene bg corridor with slowfade
     scene bg stairs day with slowfade
     scene bg hall with slowfade
     scene bg storage with slowfade
-    window show
     "We searched through bedrooms, storerooms, halls, and closets."
     p "This is pointless! We are no closer than we were three hours ago!"
     show cyril hat neutral at center with moveinleft

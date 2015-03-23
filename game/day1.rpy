@@ -142,7 +142,7 @@ label sharebalrung:
     $ balrung_affection += 1
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
-    show balrung neutral at midright, basicfade
+    show balrung neutral at center, basicfade
     show balrung smirk at basicfade
     b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"

@@ -13,7 +13,6 @@ label intro:
     with fade
     play music princess_theme
     play sound "sfx/rain.ogg" loop
-    window show
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p "But first... I’ll have to deal with the mage left to guard this place."
     show cyril hat neutral at center with moveinright

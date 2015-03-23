@@ -555,8 +555,7 @@ label balrung8:
     show balrung smile blush at come_closer, basicfade
     b "You and I, soaring above, circling, conflagrating..."
     p "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
-    show balrung smirk at reset_zoom, basicfade
-    show balrung smirk at basicfade
+    show balrung smirk at center, reset_zoom, basicfade
     b "Of course, Chrysandra."
     hide balrung with moveoutleft
     scene bg kitchen with fade
@@ -588,9 +587,10 @@ label balrung8:
     show cyril hat angry at basicfade
     c "{font=fonts/ankecallig-fg.ttf}{size=+10}FULGURENTIA MAXIMA{/size}{/font}!" #TODO: lots of lightning/
     play sound "sfx/lightning.ogg"
-    show cyril hat angry with magic_flash
+    show cyril hat angry
+    show balrung angry
+    with magic_flash
     hide balrung with quickmoveoutleft
-    show balrung angry at basicfade
     b "AHHHHH!"
     play sound "sfx/electricity.ogg"
     p "Stop it, you stupid mage! It wasn't even him, it was me!"
