@@ -2,7 +2,6 @@ label credits:
     # TODO: Updated License.txt with whatever license we decide to use, and if additional resources are added.
     # TODO: How do you all want to be credited?
     scene black with fade
-    play music princess_theme
 
     show text "Written by Bridget and Andrea Landaker"
     $ renpy.pause(1.6)

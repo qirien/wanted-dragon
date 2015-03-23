@@ -47,9 +47,9 @@ label cyril4:
     c hat smile blush "That is- that is most gracious of you.  The east wing is this way, but I wouldn’t want you to do too much hard work.  If there is any lifting you need, just call me over and with a wave of my wand, I will remove the item obstructing your search."
     window hide
     scene bg corridor with slowfade
-    scene bg storage with slowfade
+    scene bg stairs day with slowfade
     scene bg hall with slowfade
-    scene bg closet with slowfade
+    scene bg storage with slowfade
     window show
     "We searched through bedrooms, storerooms, halls, and closets."
     p "This is pointless! We are no closer than we were three hours ago!"

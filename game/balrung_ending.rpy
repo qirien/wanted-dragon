@@ -119,6 +119,7 @@ label balrung_ending:
             p "I don't need any King telling me what to do!"
             b "A pity. I rather enjoyed our time together. But I won't try to force you to change your mind. I've learned that lesson, at any rate."
             
+    play music princess_theme            
     "In a whoosh of wings, he was gone." 
     scene bg kitchen with hpunch    
     if (cyril_dead):

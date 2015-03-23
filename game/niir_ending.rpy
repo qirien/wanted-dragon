@@ -9,6 +9,8 @@ label niir_free_epilogue:
     
     
 label niir_asleep_epilogue:
+    scene bg forest with fade
+    play music niir_theme
     "I jabbed Niir again, but all I got out of him was the soft sound of him breathing."
     p "Niir!  I’m warning you.  You have been asleep for two weeks!  You have made me miss my sister’s coronation.  You will pay for that, I assure you."
     p "And what’s worse is that I’ve been out here.  Miserable.  Having to get food for myself!  Foraging, Niir.  Foraging!  All because you are a useless dragon who won’t WAKE UP!"

@@ -240,7 +240,8 @@ label niir8:
                 "The old dragon stepped on Niir's chest, pinning him to the ground, and was about to attack again when I called out."
                 p "I've had enough of your bickering! I'm leaving!"
                 "Balrung looked over at me long enough for Niir to twist his ankle and send him sprawling as well. I ran over to see if I could help, when suddenly we heard the mage's voice shout."
-                c "CARCERATUS!"
+                c "CARCERATUS!" #TODO: VFX? Glowing magical bars?
+                play music princess_theme
                 p "What is this?! I am no dragon; you have no right to imprison me!"
                 c "I am very sorry to have to do this, your Highness! But I cannot abide your wrongdoing any longer!"
                 p "Impossible! I am a PRINCESS! I am your future QUEEN!"
@@ -284,11 +285,15 @@ label niir8:
         p "What kind of evil princess do you think I am?!"
         n  "One lassst kissss before I drink.  If it isss poisssson, I want it to be worth it."
         p "Well, I suppose we have time for one-"
+        show niir smirk at come_closer with dissolve
         "Well. This kiss was much more satisfactory. At least the dragon could learn quickly."
+        show niir neutral at reset_zoom with dissolve
         n smirk "Bottomssss up."
         p "You have no idea."
-        "He drank the entire vial in one gulp. I almost didn't think he'd do it."
+        "He drank the entire vial in one gulp. Good, I was beginning to worry he wouldn't do it."
         p "Now, try not to belch."
+        hide niir with dissolve
+        play music princess_theme
         "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes. Not that I had ever carried sacks of potatoes. But I'd seen it done. It looked easy."
         n "Don’t ssstrain yoursssself, princessss."
         "I strode over to the barrier. It was barely visible as a slight haze in the air. I probably should have packed some provisions or tools or something, but I was done with this place."
@@ -435,6 +440,7 @@ label cyril8:
             "With one final nod to me, Balrung bashed a hole in the dungeon wall and leapt out through it. Cyril gingerly stepped onto my hind leg, and then clambered up onto my back. His weight felt like that of a small child, barely even registering."
             c concerned "There's nothing to hold on to! Shouldn't there be reins or something?!"
             p "Never!"
+            play music happy_ending
             "With a running start, I surged out of the castle walls and out into the glowing evening. Cyril shrieked and almost fell off, but I leveled out just in time. Flying felt so natural, it was hard to believe I had only been capable of it for mere minutes."
             scene bg sunset with fade
             c concerned eyes closed "I don’t believe I’m doing this.  I don’t believe I’m doing this.  I’m not sure if we should be doing this, Princess."

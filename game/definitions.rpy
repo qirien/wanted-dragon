@@ -40,7 +40,6 @@ init -1:
     image bg bedroom day = "bg/bedroom_day.jpg"
     image bg bedroom dusk = "bg/bedroom_dusk.jpg"
     image bg bedroom candle = "bg/bedroom_candle.jpg"
-    image bg closet = "bg/closet.jpg"
     image bg dungeon = "bg/dungeon_day.jpg"
     image bg dungeon night = "bg/dungeon_night.jpg"    
     image bg corridor = "bg/corridor.jpg"
@@ -58,6 +57,7 @@ init -1:
     image bg stairs night = "bg/stairs_night.jpg"
     image bg storage = "bg/storage.jpg"
     image bg sunset = "bg/sunset.jpg"
+    # TODO: image bg woods = "bg/woods.jpg"
 
     #
     # VISUAL EFFECTS
