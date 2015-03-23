@@ -237,10 +237,10 @@ init -1 python hide:
     config.window_hide_transition = None
 
     ## Used when showing NVL-mode text directly after ADV-mode text.
-    config.adv_nvl_transition = dissolve
+    config.adv_nvl_transition = fade
 
     ## Used when showing ADV-mode text directly after NVL-mode text.
-    config.nvl_adv_transition = dissolve
+    config.nvl_adv_transition = fade
 
     ## Used when yesno is shown.
     config.enter_yesno_transition = None
@@ -255,7 +255,7 @@ init -1 python hide:
     config.exit_replay_transition = None
 
     ## Used when the image is changed by a say statement with image attributes.
-    config.say_attribute_transition = dissolve
+    #config.say_attribute_transition = dissolve
 
     #########################################
     ## This is the name of the directory where the game's data is

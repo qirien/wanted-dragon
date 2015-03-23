@@ -10,18 +10,26 @@ label day1:
     show niir neutral at midright
     show balrung neutral at midleft
     with moveinright
-    b smirk "Princess [p_name]. To what do we owe this great honor?"
-    n mischief "Yesss, it's a pleasure..."
+    show balrung smirk at basicfade
+    b "Princess [p_name]. To what do we owe this great honor?"
+    show niir mischief at basicfade
+    n "Yesss, it's a pleasure..."
     p "I'm sure. Anyway, I am seeking loyal vassals to aid me in reclaiming my throne from my evil sister. Do you accept?"
-    n angry "Vasssssals? We are no sssuch thing."
-    b neutral "Princess, our powers are extremely limited whilst we are held captive here."
+    show niir angry at basicfade
+    n "Vasssssals? We are no sssuch thing."
+    show balrung neutral at basicfade
+    b "Princess, our powers are extremely limited whilst we are held captive here."
     p "I thought all you had to do was kiss a human or something, and the spell would be broken."
-    n mischief "If that were the casssse, I'd have kissssed you firssst and asked questionssss later."
-    b angry "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found \"love\" and is reformed."
+    show niir mischief at basicfade
+    n "If that were the casssse, I'd have kissssed you firssst and asked questionssss later."
+    show balrung angry at basicfade
+    b "Yes, it's not quite that simple. You see, Merlonious will only release a dragon from captivity if he proves that he has found \"love\" and is reformed."
     p "Couldn't we overpower him? He doesn't seem that formidable..."
-    b smirk "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you are a sorceress...?"
+    show balrung smirk at basicfade
+    b "He possesses powerful magic, and our powers are dormant because of the curse. So, unless you are a sorceress...?"
     p "I am not. But I am interested in powerful magical objects and alchemical recipes. Do you know of any?"
-    b neutral "There are many arcane tomes in the library that might describe such things. I have not read them, as they would be of little use to dragons."
+    show balrung neutral at basicfade
+    b "There are many arcane tomes in the library that might describe such things. I have not read them, as they would be of little use to dragons."
     p "Then I will seek out the library."
     jump library1
     
@@ -29,12 +37,15 @@ label day1:
 label library1:
     scene bg library with fade
     play music cyril_theme
-    show cyril hat concerned at center with dissolve
+    show cyril hat concerned at center, basicfade
     "It appears the library is already occupied..."
-    c hat concerned eyes closed "I know this was you Niir!"
+    show cyril hat concerned eyes closed at basicfade
+    c "I know this was you Niir!"
     "{i}He he he, ha ha ha...{/i}"
-    c hat angry "And you mark my words!  I will stop you, I will!"
-    c hat concerned "As soon as I find that proper spellbook!"
+    show cyril hat angry at basicfade
+    c "And you mark my words!  I will stop you, I will!"
+    show cyril hat concerned at basicfade
+    c "As soon as I find that proper spellbook!"
     "This completely ruins my plans.  But perhaps I could turn it to my advantage?"
     p "Doing some reading?"
     show cyril hat surprised with hpunch
@@ -46,40 +57,61 @@ label library1:
     p "You were reading {i}this{/i}?"
     "I know he wasn't really, but sometimes he makes it too easy."
     p "You'll have to read me the good parts, I'm ever so curious."
-    c hat concerned blush "No, no.  Niir.  "
+    show cyril hat concerned blush at basicfade
+    c "No, no.  Niir.  "
     extend "He's just having a joke."
-    c hat concerned "We joke together all the time.  Ha ha ha."
-    c hat angry "Hilarious dragon that he is."
-    c hat concerned "Well, anyway.  I must find my spellbook.  My real spellbook."
-    c hat concerned blush "Not.. this."
+    show cyril hat concerned at basicfade
+    c "We joke together all the time.  Ha ha ha."
+    show cyril hat angry at basicfade
+    c "Hilarious dragon that he is."
+    show cyril hat concerned at basicfade
+    c "Well, anyway.  I must find my spellbook.  My real spellbook."
+    show cyril hat concerned blush at basicfade
+    c "Not.. this."
     p "I'm not sure, I think {i}15 Erotic Tales by Twilight{/i} could cast a completely different kind of spell."
-    c hat concerned eyes closed blush "..."
-    c hat concerned blush "Have you been talking with {i}him{/i} perchance?  Is this all part of the joke?"
+    show cyril hat concerned eyes closed blush at basicfade
+    c "..."
+    show cyril hat concerned blush at basicfade
+    c "Have you been talking with {i}him{/i} perchance?  Is this all part of the joke?"
     p "Of course it is.  This life is all one big joke at your expense, Moronious."
-    c hat angry "Merlonious.  Cyril Merlonious."
+    show cyril hat angry at basicfade
+    c "Merlonious.  Cyril Merlonious."
     p "Anyways, I came by for a some research, but if you are busy reading erotic tales, I will let you be."
-    c hat smile "I'm not busy- not at all!"
-    c hat laugh "Please, do spend time with me.  I mean, what are you looking for?  I will always be a helpful librarian."
-    c hat smile blush "Err, mage.  Librarian-mage type person."
+    show cyril hat smile at basicfade
+    c "I'm not busy- not at all!"
+    show cyril hat laugh at basicfade
+    c "Please, do spend time with me.  I mean, what are you looking for?  I will always be a helpful librarian."
+    show cyril hat smile blush at basicfade
+    c "Err, mage.  Librarian-mage type person."
     p "You {i}are{/i} odd Moronious."
     p "I suppose I will let you help me, if you promise not to be irritating."
-    c hat neutral "I think I can manage."
+    show cyril hat neutral at basicfade
+    c "I think I can manage."
     p "Good.  Now direct me to a book outlining powerful artifacts in this vicinity."
-    c hat surprised "In this vicinity?  Whyever would you-"
+    show cyril hat surprised at basicfade
+    c "In this vicinity?  Whyever would you-"
     p "You're starting to irritate me."
-    c hat neutral "Oh, of course - of course.  The book.  Well, there has been something around here.  Old and dusty and-"
-    c hat laugh "Quite like the dragons in fact!"
+    show cyril hat neutral at basicfade
+    c "Oh, of course - of course.  The book.  Well, there has been something around here.  Old and dusty and-"
+    show cyril hat laugh at basicfade
+    c "Quite like the dragons in fact!"
     p "Are you trying to be witty, mage?"
-    c hat concerned blush "Not very hard.  It only just came to me really."
+    show cyril hat concerned blush at basicfade
+    c "Not very hard.  It only just came to me really."
     p "Well, don't."
-    c hat smile "This is what I was looking for.  {i}Long-Hidden Powerful Objects: an abridged edition{/i}."
-    c hat concerned "It's really the best I could do at such short notice."
+    show cyril hat smile at basicfade
+    c "This is what I was looking for.  {i}Long-Hidden Powerful Objects: an abridged edition{/i}."
+    show cyril hat concerned at basicfade
+    c "It's really the best I could do at such short notice."
     p "While it is quite pitiful that you don't have more research materials in this castle of yours, I suppose this will have to do."
-    c hat laugh "Great! Now if I can be of any-"
+    show cyril hat laugh at basicfade
+    c "Great! Now if I can be of any-"
     p "Begone!"
-    c hat smile blush "Alright, I'll just gather up my-"
+    show cyril hat smile blush at basicfade
+    c "Alright, I'll just gather up my-"
     p "Begone with you!"
-    c hat concerned blush eyes closed "Good day Princess, I will just be seeing myself out."
+    show cyril hat concerned blush eyes closed at basicfade
+    c "Good day Princess, I will just be seeing myself out."
     hide cyril with moveoutleft
     "I thought he'd never leave.  Now, what have we here..."
     play sound "sfx/flippage.ogg"
@@ -110,18 +142,23 @@ label sharebalrung:
     $ balrung_affection += 1
     p "Back down to the dungeons, again. This castle is much too large for the few people that live here."
     scene bg dungeon with fade
-    show balrung neutral at midright with dissolve
-    b smirk "Back so soon?"
+    show balrung neutral at midright, basicfade
+    show balrung smirk at basicfade
+    b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
     
 label balrung_scepter:
-    b determined "No one has been able to find it. It is presumed lost, and, as its powers are unknown, no one lately has looked very hard."
+    show balrung determined at basicfade
+    b "No one has been able to find it. It is presumed lost, and, as its powers are unknown, no one lately has looked very hard."
     p "Yes, the book said as much. Where is it?"
-    b angry "Perhaps that's why she chose this place..."
+    show balrung angry at basicfade
+    b "Perhaps that's why she chose this place..."
     p "What? She who?"
-    b neutral "Never mind. I believe it is still here. I've felt latent power within the walls of the castle, but assumed it was just the binding curse."
+    show balrung neutral at basicfade
+    b "Never mind. I believe it is still here. I've felt latent power within the walls of the castle, but assumed it was just the binding curse."
     p "Interesting...could you pinpoint a certain location where that feeling is strongest?"
-    b smirk "The feeling is not constant or consistent; but if I detect it again I shall inform you."
+    show balrung smirk at basicfade
+    b "The feeling is not constant or consistent; but if I detect it again I shall inform you."
     p "Very good, Balrung."
     return
        
@@ -134,34 +171,48 @@ label sharecyril:
     p "Where {i}are{/i} you, foolish mage?"
     show cyril hat neutral at center with flash #TODO: with some flash-bang transition
     play sound "sfx/lightning.ogg"
-    c hat surprised "You called, your highness?"
+    show cyril hat surprised at basicfade
+    c "You called, your highness?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
-    c hat neutral "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to help-"
+    show cyril hat neutral at basicfade
+    c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to help-"
     p "But I do have something rather curious to share with you, so you must come with me."
-    c hat smile blush "I would come with you anywhere, your Highness."
+    show cyril hat smile blush at basicfade
+    c "I would come with you anywhere, your Highness."
     hide cyril with moveoutright
     scene bg library with fade
     show cyril hat neutral at center with moveinleft
-    c hat surprised "So what is it that you wish to show me?"
+    show cyril hat surprised at basicfade
+    c "So what is it that you wish to show me?"
     p "This illustration of a scepter.  The Scepter of Lavendorm.  Is it real?"
-    c hat neutral "Oh yes, it was real.  Once.  No one has seen it in quite some time."
+    show cyril hat neutral at basicfade
+    c "Oh yes, it was real.  Once.  No one has seen it in quite some time."
     p "And this mentor of yours that put you in charge, he must have been centuries old.  Did he ever see it?"
-    c hat surprised "Well, I don't know about centuries..."
-    c hat concerned "He {b}might{/b} have said there was a powerful but uncontrollable magic that I shouldn't go looking for."
-    c hat surprised "But I thought he was just joking with me.  Although come to think of it, he wasn't really the joking type."
+    show cyril hat surprised at basicfade
+    c "Well, I don't know about centuries..."
+    show cyril hat concerned at basicfade
+    c "He {b}might{/b} have said there was a powerful but uncontrollable magic that I shouldn't go looking for."
+    show cyril hat surprised at basicfade
+    c "But I thought he was just joking with me.  Although come to think of it, he wasn't really the joking type."
     p "So did he say {i}where{/i} not to go looking for it?"
-    c hat concerned "Not specifically, but he did say it was bound up with special magic somewhere within these walls."
+    show cyril hat concerned at basicfade
+    c "Not specifically, but he did say it was bound up with special magic somewhere within these walls."
     p "And you didn't think to mention this earlier?"
-    c hat neutral "I thought your interest was with the dragons, not with any ancient artifacts that everyone has forgotten about."
+    show cyril hat neutral at basicfade
+    c "I thought your interest was with the dragons, not with any ancient artifacts that everyone has forgotten about."
     p "My {i}interest{/i} is in whatever will get me on that throne the quickest!"
     p "Don't you ever forget that."
-    c hat concerned blush "I can't make any promises there, but I will try to make your stay here both accomodating and useful."
+    show cyril hat concerned blush at basicfade
+    c "I can't make any promises there, but I will try to make your stay here both accomodating and useful."
     p "Making my stay useful means getting me that scepter."
-    c hat smile blush "I-I'll certainly do my best, Highness."
+    show cyril hat smile blush at basicfade
+    c "I-I'll certainly do my best, Highness."
     p "It seems I've underestimated you, Moronious."
-    c hat concerned "Ah yes.  You wouldn't be the first and you are surely not the last."
+    show cyril hat concerned at basicfade
+    c "Ah yes.  You wouldn't be the first and you are surely not the last."
     p "Now find me that scepter!"
-    c hat concerned blush "I will try to recall for you just where it was.  Don't worry, my maj- your highness."
+    show cyril hat concerned blush at basicfade
+    c "I will try to recall for you just where it was.  Don't worry, my maj- your highness."
     
     return
     
@@ -176,33 +227,46 @@ label explore1:
     play sound "sfx/stab.ogg"
     p "Well, what do we have here?"
     show niir neutral at center with moveinright
-    n mischief "The ansssswer to all your problemsss."
+    show niir mischief at basicfade
+    n "The ansssswer to all your problemsss."
     p "A piece of rope?"
-    n smile "Look clossser."
+    show niir smile at basicfade
+    n "Look clossser."
     p "A noose.  How very... "
     extend "thoughtful of you."
-    n frown "Thoughtful is not ussssually one of the words used to describe the great dragon Niir."
+    show niir frown at basicfade
+    n "Thoughtful is not ussssually one of the words used to describe the great dragon Niir."
     p "You don't say?"
     p "Well, Niir.  I am very busy with things."
     p "So if you'd please be on your way, I can get to my explorations."
-    n neutral "Need an esssscort?"
-    n mischief "You mussst.  Pretty young thing like you.  {i}Alone{/i}.  In the casssstle."
-    n smirk "I'd advisssse you to be more careful."
+    show niir neutral at basicfade
+    n "Need an esssscort?"
+    show niir mischief at basicfade
+    n "You mussst.  Pretty young thing like you.  {i}Alone{/i}.  In the casssstle."
+    show niir smirk at basicfade
+    n "I'd advisssse you to be more careful."
     p "In case what?  There's some dragon lurking around above me and spying on me?"
     p "How ever will I cope?"
-    n determined "Careful.  Or you might make a dragon mad."
+    show niir determined at basicfade
+    n "Careful.  Or you might make a dragon mad."
     p "How do you know that wasn't what I intended?"
-    n concerned "You are not sssscared?"
-    n neutral "..."
-    n frown "Curiousss."
+    show niir concerned at basicfade
+    n "You are not sssscared?"
+    show niir neutral at basicfade
+    n "..."
+    show niir frown at basicfade
+    n "Curiousss."
     p "And could you stop sniffing me like that, I {i}have{/i} recently bathed!"
-    n happy "Oh of that, I'm well aware."
+    show niir happy at basicfade
+    n "Oh of that, I'm well aware."
     p "So I guess that's why you're in here."
     p "Any proper lady would be repulsed by such loathsome habits."
-    show niir frown with dissolve
+    show niir frown at basicfade
     p "But it's a good thing I'm not so proper, because I'm the only shot you have at getting out of here."
-    n angry "You need to get your facts sssstraight nexxxt time."
-    n smirk "Prrrrrincessssss."
+    show niir angry at basicfade
+    n "You need to get your facts sssstraight nexxxt time."
+    show niir smirk at basicfade
+    n "Prrrrrincessssss."
     hide niir with moveoutright
     p "I have got my- Niir!  Where did you get to, you sneaky dragon!"
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"

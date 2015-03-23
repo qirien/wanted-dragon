@@ -96,142 +96,186 @@ label day5:
             "Go and find out.":
                 p "I'll go and find out. There's no harm in that, surely."
                 scene bg exterior day with fade
-                show balrung neutral at center with dissolve
+                show balrung neutral at center, basicfade
                 p "Oh! It's {b}you{/b}."
-                b smirk "Yes, it is I. I'm surprised at you, Princess."
+                show balrung smirk at basicfade
+                b "Yes, it is I. I'm surprised at you, Princess."
                 p "Why, because I followed your invitation?"
-                b determined "No. I am astonished that you have chosen to ally yourself with that ridiculous mage. I assumed you were more canny than that."
+                show balrung determined at basicfade
+                b "No. I am astonished that you have chosen to ally yourself with that ridiculous mage. I assumed you were more canny than that."
                 p "You think {b}Moronious{/b} will betray {b}me{/b}?"
-                b smirk "Cyril's intentions are certainly pure, but he may not be willing to do what you want. He is not capable of murder."
+                show balrung smirk at basicfade
+                b "Cyril's intentions are certainly pure, but he may not be willing to do what you want. He is not capable of murder."
                 p "And you are?"
-                b determined "If necessary, yes. I've proved that; that's how I came to be cursed here."
+                show balrung determined at basicfade
+                b "If necessary, yes. I've proved that; that's how I came to be cursed here."
                 p "Who'd you do in?"
-                b neutral "Another time, perhaps. But here is the offer I will make to you - ally with me instead of that mage. Our interests align more closely, and I will not balk at your...more troublesome requests."
+                show balrung neutral at basicfade
+                b "Another time, perhaps. But here is the offer I will make to you - ally with me instead of that mage. Our interests align more closely, and I will not balk at your...more troublesome requests."
                 p "How could you help me?"
-                b smile "I'm a {b}dragon{/b}, Princess. If I were free, I could fly you anywhere you wished. I could set fire to anything you desired. I could obliterate any building or army that stood in our way."
+                show balrung smile at basicfade
+                b "I'm a {b}dragon{/b}, Princess. If I were free, I could fly you anywhere you wished. I could set fire to anything you desired. I could obliterate any building or army that stood in our way."
                 p "Well..."
                 menu:
                     "\"No. I don't trust you.\"":
                         p "I don't trust you, Balrung. Nor Niir. You may have potential for great destruction, but I see no reason to believe you will choose to do my will instead of your own."
-                        b determined "As you wish, Princess. What a shame we could not be allies."
+                        show balrung determined at basicfade
+                        b "As you wish, Princess. What a shame we could not be allies."
                         p "Do not hinder me, Balrung. I shall leave you alone if you do the same for me."
-                        b angry "I make no promises. I have my own plans that you have no part in, now."
+                        show balrung angry at basicfade
+                        b "I make no promises. I have my own plans that you have no part in, now."
                         hide balrung with moveoutleft
                         p "Hmph."
                         "I better go see what Moronious is up to."
                         jump cyril5
                     "\"Perhaps you would be a valuable ally.\"":
                         p "Perhaps you would be a valuable ally. But what assurance do I have that you will aid me?"
-                        b neutral "I have the same ambitions you do - to be free and have the power to control my own destiny. Aiding you will help me with those goals."
+                        show balrung neutral at basicfade
+                        b "I have the same ambitions you do - to be free and have the power to control my own destiny. Aiding you will help me with those goals."
                         p "What is your plan?"
-                        b determined "If you can convince Merlonious that I've found true love and reformed, he will have to let me go. In return, I'll help you regain your throne."
+                        show balrung determined at basicfade
+                        b "If you can convince Merlonious that I've found true love and reformed, he will have to let me go. In return, I'll help you regain your throne."
                         p "True love? How shall we do {b}that{/b}?"
-                        b smirk "I have some ideas. And I trust you have your own methods of getting others to believe what you wish."
+                        show balrung smirk at basicfade
+                        b "I have some ideas. And I trust you have your own methods of getting others to believe what you wish."
                         p "I do."
-                        b smile "Why don't you meet me down in the dungeons in an hour, and we can spend some time together? If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
+                        show balrung smile at basicfade
+                        b "Why don't you meet me down in the dungeons in an hour, and we can spend some time together? If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
                         p "He seems to think you cannot change. How will you convince him otherwise?"
-                        b smirk "As I have acted the recalcitrant criminal for forty years, when I suddenly do appear kind and loving, it will be very convincing."
+                        show balrung smirk at basicfade
+                        b "As I have acted the recalcitrant criminal for forty years, when I suddenly do appear kind and loving, it will be very convincing."
                         p "Hmph. We'll see."
                         $ route = "Balrung"
                         jump balrung5
 
 label balrung5:
     scene bg dungeon with fade
-    show balrung neutral at center with dissolve
+    show balrung neutral at center, basicfade
     play music balrung_theme
-    b smile "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
+    show balrung smile at basicfade
+    b "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
     p "You can save the flattery for later when Moronious can \"accidentally\" overhear you."
-    b smile blush "That wasn't for Moronious; that was for you, my lady. "
-    b smile "Would you care to play Queens and Pawns?"
+    show balrung smile blush at basicfade
+    b "That wasn't for Moronious; that was for you, my lady. "
+    show balrung smile at basicfade
+    b "Would you care to play Queens and Pawns?"
     p "I suppose there's not much else to do in this wretched dungeon. You may go first."
-    b smirk "How generous of you."
+    show balrung smirk at basicfade
+    b "How generous of you."
     p "How did you come to be imprisoned here, anyway? I've heard you did something quite terrible."
-    b neutral "Terrible? Yes...but it's not that simple. Your turn."
+    show balrung neutral at basicfade
+    b "Terrible? Yes...but it's not that simple. Your turn."
     p "Interesting move. Tell me what happened. I want to hear your version of events, not just Moronious' self-righteous justification for your imprisonment."
-    b smirk "You want to hear it? Well..."
+    show balrung smirk at basicfade
+    b "You want to hear it? Well..."
     menu:
         "Pay attention":
-            b determined "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
-            b neutral "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and, though she never said it, to prove to us that humans were worth talking to."
-            b smirk "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
-            b angry "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
+            show balrung determined at basicfade
+            b "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
+            show balrung neutral at basicfade
+            b "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and, though she never said it, to prove to us that humans were worth talking to."
+            show balrung smirk at basicfade
+            b "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
+            show balrung angry at basicfade
+            b "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
             "I was so caught up in what he was saying that I almost missed how he had setup his pawns in a chain reaction that was about to decimate my queens. But now that I had seen through his scheme it would be easy to unravel."
         "Focus on strategy.":
-            b determined "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
+            show balrung determined at basicfade
+            b "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
             "He's trying to draw my attention with his Queens while the Pawns setup a chain reaction! My Queens shall whittle down his defenses while he's not paying attention."
 
     p "Go on. Your move."
-    b neutral "So when I invited her to join me, permanently, as a part of a human-dragon marriage alliance, I thought she'd be honored. It was her life's work, after all."
-    b determined "But she refused. She wanted {b}me{/b} to join {b}her{/b}. You humans always want to be the ones in charge."
+    show balrung neutral at basicfade
+    b "So when I invited her to join me, permanently, as a part of a human-dragon marriage alliance, I thought she'd be honored. It was her life's work, after all."
+    show balrung determined at basicfade
+    b "But she refused. She wanted {b}me{/b} to join {b}her{/b}. You humans always want to be the ones in charge."
     p "Of course we do. But wouldn't that accomplish the same thing?"
-    b angry "It's completely different! You humans want to use us, subordinate us, rule us! I wanted an alliance of equal partners!"
-    b neutral "I should have waited. I should have elucidated my proposal more elegantly."
+    show balrung angry at basicfade
+    b "It's completely different! You humans want to use us, subordinate us, rule us! I wanted an alliance of equal partners!"
+    show balrung neutral at basicfade
+    b "I should have waited. I should have elucidated my proposal more elegantly."
     p "What did you do?"
-    b smirk "When she chose not to come with me, I brought her anyway."
+    show balrung smirk at basicfade
+    b "When she chose not to come with me, I brought her anyway."
     p "You kidnapped her?!"
-    b angry "No! I would have let her leave, once she had listened to me! She refused to even talk to me! And her mentors were poisoning her mind against me. I had to bring her away from all of that."
+    show balrung angry at basicfade
+    b "No! I would have let her leave, once she had listened to me! She refused to even talk to me! And her mentors were poisoning her mind against me. I had to bring her away from all of that."
     p "Hmph. Did it work?"
-    b neutral "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison. To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
+    show balrung neutral at basicfade
+    b "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison. To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
     menu:
         "Serves you right.":
                     p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her with you."
-                    b angry "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
+                    show balrung angry at basicfade
+                    b "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
         "You loved her.":
                     p "You loved her, then?"
-                    b angry "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
+                    show balrung angry at basicfade
+                    b "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
                     $ balrung_affection += 1
 
     p "You were a fool for discarding your strategy in favor of emotion. Much like in this game. Resign now, while you still can!"
-    b determined "Resign? But...oh, I see. I've lost, haven't I? Well done, Princess."
-    b neutral "Yes, I resign. I've learned that much from my mistakes, at least."
+    show balrung determined at basicfade
+    b "Resign? But...oh, I see. I've lost, haven't I? Well done, Princess."
+    show balrung neutral at basicfade
+    b "Yes, I resign. I've learned that much from my mistakes, at least."
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
-    b smile "One day...perhaps."
+    show balrung smile at basicfade
+    b "One day...perhaps."
     show cyril hat neutral at midleft with moveinleft
     show balrung at midright with move
     play music cyril_theme
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
-    b smirk "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
+    show balrung smirk at basicfade
+    b "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
     c "Well, yes, of course, but-"
     p "Now, Balrung, stop flattering me so much or I shall begin to suspect you like me. Weren't you just saying dragons were incapable of that, Moronious?"
     c "Y-yes, they are! Maybe not all. But definitely this one!"
-    b smile "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."
+    show balrung smile at basicfade
+    b "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."
     c "The r-r-right woman?! Surely you don't mean Princess [p_name]?!"
     p "You don't believe I could induce feelings of love?! How cruel!"
-    b neutral "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's delicate feelings!"
+    show balrung neutral at basicfade
+    b "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's delicate feelings!"
     c "Her delicate...feelings?!"
     p "Oh, yes, I'm quite overcome, I do think I might faint."
     c "Faint?! Um, well, ah, what should we do?!"
-    show balrung smile blush with dissolve
+    show balrung smile blush at basicfade
     "I pressed my hand to my forehead and collapsed into Balrung's arms. That's what heroines of love stories are always doing; it should help convince that fool Moronious."
     scene black with fade
     c "St-stop that! You mustn't hold the Princess that way!"
-    b smirk "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
+    show balrung smirk at basicfade
+    b "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
     c "Well, no, I wouldn't want that, but- I'm not- you can't!"
-    b smile eyes closed "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
+    show balrung smile eyes closed at basicfade
+    b "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene bg dungeon 
     show balrung smile at center, come_closer
     with fade
     "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
     scene black with fade
-    b smile "Our poor Princess... she's been through so much."
+    show balrung smile at basicfade
+    b "Our poor Princess... she's been through so much."
     "He stroked my hair tenderly away from my face while Cyril sputtered. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor. Almost as good as me."
     c "Well I- I will just stay here and watch over the Princess until she recovers! I'll protect her from you, you, vituperous viper!"
-    b smirk "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
+    show balrung smirk at basicfade
+    b "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
     n "Why is the Princesss pretending to sssleep on your bed?"
-    b smile eyes closed "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
+    show balrung smile eyes closed at basicfade
+    b "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
     c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my batter is faster than my train! I mean, my chatter is faster than my brain..."
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
     scene bg dungeon with fade
-    show cyril hat neutral at midleft
-    show niir neutral at midright
-    show balrung smirk at come_closer    
-    with dissolve
+    show cyril hat neutral at midleft, basicfade
+    show niir neutral at midright, basicfade
+    show balrung smirk at come_closer, basicfade   
     p "Oh, thank you, Balrung, for taking such good care of me. I don't know what came over me. But I'm so glad I can trust {b}you{/b}, at least."
     "I glared at the mage, hoping he would feel even more guilty."
     p "And now I will depart, so please excuse me."
-    b smile eyes closed "Until next we meet, Princess."
+    show balrung smile eyes closed at basicfade
+    b "Until next we meet, Princess."
     
     return
 
@@ -277,7 +321,7 @@ label niir5:
     n "Professsss love?!"
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
-    show niir neutral at center, come_closer with dissolve
+    show niir neutral at center, come_closer, basicfade
 
     p "Hold me like this, with your hands here, in case he peeks out."
     n "I can do that, at leassssst."
@@ -310,9 +354,8 @@ label niir5:
     "But before I could execute my plan, Cyril came running towards us. Niir's education would have to wait until later." 
     show cyril hat neutral at midleft, come_closer with moveinleft
     c "Princess! You can't! Y-You mustn't believe him!"
-    show niir neutral at midright, reset_zoom
-    show cyril hat neutral at midleft, reset_zoom
-    with dissolve
+    show niir neutral at midright, reset_zoom, basicfade
+    show cyril hat neutral at midleft, reset_zoom, basicfade
     p "Moronious! What a... surprise to see you here, interrupting our completely private conversation!"
     c "I warned you about him, Princess.  And I don’t believe any of this for a second!  You won’t fool old Cyril the Clever.  Errr, young Cyril.  I do quite forget my age some times."
     n "Nobody calls you Cccccyril the Cleverrr."
@@ -326,7 +369,8 @@ label niir5:
     p "Moronious, you are dreadfully mistaken. But I will be generous and allow you a few days to change your mind."
     c "I propose a test if this is to go on.  Niir, you must prove this to me.  And then at the end I will test you both to see how well you know one another and how deep your commitment is to one another.  I do not let dragons leave willy-nilly you know."
     p "Our love is strong enough to pass your silly tests! I have no doubts about that."
-    n smirk "Give us a few dayssss, and I'll know her well enough to passs any tessst..."
+    show niir smirk at basicfade
+    n "Give us a few dayssss, and I'll know her well enough to passs any tessst..."
     show niir determined with vpunch
     "I kicked Niir in the shins. Was he truly so foolish?!"
     c "There is more to love than knowing, so don’t think the test will be that easy to pass."
@@ -348,7 +392,7 @@ label somethigh:
     p "Well, now I know how Moronious' protection spell works. I'm surprised you're still conscious after that much electricity."
     n "You are no fun Princesssss."
     scene bg dungeon with fade
-    show niir neutral at center with dissolve
+    show niir neutral at center, basicfade
     p "So there we go, I trust you enough with that, and now you trust me. Say it."
     n "Sssstill not convincccccced."
     show niir determined with hpunch
@@ -358,10 +402,11 @@ label somethigh:
     n "It doessss not work- {i}stop, human{/i}!"
     show niir angry with hpunch
     n "Desisst!"
-    show niir at come_closer with dissolve
+    show niir at come_closer, basicfade
     "He grabbed my fist before I could punch him again. The protection spell didn't activate, this time, since I touched him first."
     p "Release your hands from my royal person immediately!"
-    n smirk "Do you trussssst me now?"
+    show niir smirk at basicfade
+    n "Do you trussssst me now?"
     "Ah, a test.  Touché, dragon."
     p "Completely."
     n "Really?"
@@ -421,7 +466,7 @@ label cyril5:
     # scepter progress
     # DAY 5
     scene bg library with fade
-    show cyril hat neutral at center with dissolve
+    show cyril hat neutral at center, basicfade
     play music cyril_theme
     
     $ cyril_affection += 1

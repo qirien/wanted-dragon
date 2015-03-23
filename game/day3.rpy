@@ -69,40 +69,51 @@ label day3:
     n "Knock, knock, Prrrrincesss..."
     p "Oh, what is it now, Niir. I'll warn you: I'm already in a foul mood!"
     show niir neutral at center with moveinleft
-    n mischief "Sssseen anything interesting today Princessss?"
+    show niir mischief at basicfade
+    n "Sssseen anything interesting today Princessss?"
     p "No, it’s all been very dull. And now it’s become tedious as well. What do you want?"
-    n concerned "I sssupect the question should be to you.  What do {i}you{/i} want?"
-    n frown "You came here, acting ssssupicious in the first place."
+    show niir concerned at basicfade
+    n "I sssupect the question should be to you.  What do {i}you{/i} want?"
+    show niir frown at basicfade
+    n "You came here, acting ssssupicious in the first place."
     p "I need something powerful. Something that will make it clear that I am the rightful Queen. If you don’t have anything like that, then away with you."
-    n smirk "More powerful than a dragon?  My aren’t you ambitioussss?"
+    show niir smirk at basicfade
+    n "More powerful than a dragon?  My aren’t you ambitioussss?"
     p "It doesn’t take much to be more powerful than you right now."
     p "You probably don’t even know any secrets of this castle, despite the fact that you’ve lived here for years."
 
-    n neutral "I know sssssecrets of all kindsss.  And not just about the cassstle."
-    n mischief "I could find you ssssomething powerful.  But what would you do for me in return?"
+    show niir neutral at basicfade
+    n "I know sssssecrets of all kindsss.  And not just about the cassstle."
+    show niir mischief at basicfade
+    n "I could find you ssssomething powerful.  But what would you do for me in return?"
     p "Why, I would help you gain your freedom, so you could continue to serve me."
-    n frown "That doesn’t ssssound like a very good deal."
+    show niir frown at basicfade
+    n "That doesn’t ssssound like a very good deal."
     p "It sounds good to me. Do you have a better idea?"
-    n determined "..."
+    show niir determined at basicfade
+    n "..."
     p "No? Then perhaps I’ll just go and ask Moronious. He probably knows more than you do about the ‘ssssecrets’, anyway."
-    n angry "Don’t waste your time with him.  I am the only one who knowssss."
+    show niir angry at basicfade
+    n "Don’t waste your time with him.  I am the only one who knowssss."
     menu:
         "Go with Niir.":
             p "You, the only one who knows secrets? I don't believe you."
             jump niir3
         "Go ask Moronious":
             p "I'm going to ask that mage instead. Good-bye, Niir."
-            n determined "You're making a misssstake, Princessss."
+            show niir determined at basicfade
+            n "You're making a misssstake, Princessss."
             jump cyril3
         "Go ask Balrung":
             p "I'm going to speak with Balrung about it. Good-bye."
-            n determined "You're making a misssstake, Princessss."
+            show niir determined at basicfade
+            n "You're making a misssstake, Princessss."
             jump balrung3
             
     
 label cyril3:
     scene bg library with fade
-    show cyril hat neutral at center with dissolve
+    show cyril hat neutral at center, basicfade
     play music cyril_theme
     
     $ cyril_affection += 1
@@ -134,7 +145,7 @@ label cyril3:
     "Ahhh, {i}Powerful Ingredients And Where to Find Them{/i}. Lovely."
     "I'll just take this back to my room where I won't be bothered."
     scene bg bedroom day with fade
-    show cyril hat neutral at center with dissolve
+    show cyril hat neutral at center, basicfade
     p "Ugh, this place smells like moss.  Like stinking, rotting-"
     c "Oh!  I'm sorry Princess.  I didn't mean to intrude!"
     "How long has he been here in my room?  And... "
@@ -234,23 +245,28 @@ label cyril3:
      
 label balrung3:
     scene bg dungeon with fade
-    show balrung neutral at center with dissolve
+    show balrung neutral at center, basicfade
     play music balrung_theme
     
-    b smile "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
+    show balrung smile at basicfade
+    b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
     p "No, I wanted to talk to you."
-    b smirk "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
+    show balrung smirk at basicfade
+    b "Really? I imagine you're looking for some gullible fool that you can trick into using their powers for your benefit? A thrall, a lackey, a minion?"
     p "No, no of course not!"
     "Is it that obvious?!"
-    b smile eyes closed "Oh really? My apologies, then. What {b}does{/b} bring you here?"
+    show balrung smile eyes closed at basicfade
+    b "Oh really? My apologies, then. What {b}does{/b} bring you here?"
     if (asked_scepter == "Balrung"):
         p "Have you found out more about the location of that scepter I asked you about?"
-        b neutral "No, I'm afraid not. Its powers must be dormant at the moment."
+        show balrung neutral at basicfade
+        b "No, I'm afraid not. Its powers must be dormant at the moment."
         p "You are beginning to seem useless to me."
     else:
         p "Do you know anything about the Scepter of Lavendorm?"
         call balrung_scepter
-    b neutral "Well, as I cannot offer you a scepter at the moment, perhaps you would stay and talk with me for a bit? Your company would be much appreciated."
+    show balrung neutral at basicfade
+    b "Well, as I cannot offer you a scepter at the moment, perhaps you would stay and talk with me for a bit? Your company would be much appreciated."
     menu:
         "\"I will join you.\"":
             p "Yes, I can spare you a few moments of my time."
@@ -261,15 +277,20 @@ label balrung3:
             p "I will go and look for it myself."
             jump explore1
             
-    b smile "What do you do? When you don't have a kingdom to reclaim, that is."
+    show balrung smile at basicfade
+    b "What do you do? When you don't have a kingdom to reclaim, that is."
     p "I have many pursuits. Reading, hunting, music, alchemy, scheming, plotting."
-    b smirk "Ha! The usual royal activities, then."
+    show balrung smirk at basicfade
+    b "Ha! The usual royal activities, then."
     p "And what about you?"
-    b neutral "I sometimes read from the library, though human books are so maudlin and predictable."
+    show balrung neutral at basicfade
+    b "I sometimes read from the library, though human books are so maudlin and predictable."
     p "Are there dragon books?"
-    b smile "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
+    show balrung smile at basicfade
+    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
     p "Dragon poetry? What is it like?"
-    b smirk "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
+    show balrung smirk at basicfade
+    b "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
     
     $ book_flipped = True
     book "Fly:"
@@ -282,7 +303,8 @@ label balrung3:
     nvl clear
     $ book_flipped = False
     
-    b smile blush "No, no, not that one. The one on the other side of the page."
+    show balrung smile blush at basicfade
+    b "No, no, not that one. The one on the other side of the page."
     p "Oh! Of-of course!"
     
     book "Freedom:"
@@ -294,132 +316,180 @@ label balrung3:
     book "Revel, love, vanquish."
     nvl clear
     
-    b neutral "What do you think?"
+    show balrung neutral at basicfade
+    b "What do you think?"
     menu:
         "\"Words, words, words. Boring!\"":
             p "Words, words, and more words. Boring and useless."
-            b angry "I wouldn't underestimate their power. Sometimes ten words can accomplish what ten armies cannot."
+            show balrung angry at basicfade
+            b "I wouldn't underestimate their power. Sometimes ten words can accomplish what ten armies cannot."
             p "I'd prefer the armies."
-            b smirk "For your purposes, perhaps armies would work better."
+            show balrung smirk at basicfade
+            b "For your purposes, perhaps armies would work better."
         "\"I like the 'vanquish' part.\"":
             $ balrung_affection += 1
             p "I like the part about vanquishing. Why do you like it?"
-            b neutral "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
+            show balrung neutral at basicfade
+            b "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
     p "Is this really poetry? I see no rhymes, no pattern of syllables."
-    b smile "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
+    show balrung smile at basicfade
+    b "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
     p "That's it?"
-    b neutral "And, the ending sound of each word must be the starting sound of the next word. This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
+    show balrung neutral at basicfade
+    b "And, the ending sound of each word must be the starting sound of the next word. This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
     p "Yes, you are. Goodbye."
-    b smirk "Another time, perhaps."
+    show balrung smirk at basicfade
+    b "Another time, perhaps."
     return
     
 label niir3:
     play music niir_theme
     $ niir_affection += 1
-    n smile "Follow me and I’ll sssshow you something."
+    show niir smile at basicfade
+    n "Follow me and I’ll sssshow you something."
     p "Very well. Lead on, Niir."
-    n smirk "Thissss way."
+    show niir smirk at basicfade
+    n "Thissss way."
     hide niir
     with moveoutleft
     scene bg corridor with fade
     show niir neutral at center
     with moveinright
-    n determined "Why do you care about the kingdom anyway?  What hasss the kingdom done for you?"
+    show niir determined at basicfade
+    n "Why do you care about the kingdom anyway?  What hasss the kingdom done for you?"
     p "Nothing, yet. That’s why I need to be Queen."
     p "Surely you can understand wanting greater power and recognition?"
-    n neutral "There are other wayssss of getting power.  Much more amusing ways, than dealing with royalty." 
+    show niir neutral at basicfade
+    n "There are other wayssss of getting power.  Much more amusing ways, than dealing with royalty." 
     p "The throne should be mine! It {b}is{/b} mine! My sister is not fit to rule! If my father can’t see that--"
-    n concerned "Ssso you just want to take it?"
+    show niir concerned at basicfade
+    n "Ssso you just want to take it?"
     p "It is my {b}right{/b}! I was born to be QUEEN!!"
-    n smirk "I don’t care about that.  But I am interessssted in you jussst taking it."
+    show niir smirk at basicfade
+    n "I don’t care about that.  But I am interessssted in you jussst taking it."
     hide niir
     with moveoutleft
     scene bg kitchen with fade
     show niir neutral at center
     with moveinright
     p "By the way, isn’t this the kitchen? Where are you taking me?"
-    n determined "We have to go through the kitchen.  Patiencccce."
+    show niir determined at basicfade
+    n "We have to go through the kitchen.  Patiencccce."
     p "Now you’re starting to sound like my father! You don’t usually sound like my father, though. He doesn’t seem to care what I wear or what I do or what I want at all."
-    n concerned "Ssssounds heartbreaking, princessss.  I don’t care either.  But I want to find out what your plansss are, as it seems like you don’t have any."
-    n mischief "Watching you fail could be entertaining."
+    show niir concerned at basicfade
+    n "Ssssounds heartbreaking, princessss.  I don’t care either.  But I want to find out what your plansss are, as it seems like you don’t have any."
+    show niir mischief at basicfade
+    n "Watching you fail could be entertaining."
     p "Hmph. That’s no way to talk to your future Queen."
-    n smile "My queen?  Ha ha ha ha.  I am a dragon.  I have no queen."
+    show niir smile at basicfade
+    n "My queen?  Ha ha ha ha.  I am a dragon.  I have no queen."
     p "{b}Moronious{/b} might as well be your queen, since he controls where you can go and keeps you in human form. I wouldn’t be so cruel."
-    n neutral "He is rather pretty."
-    n mischief "But you are ssslightly more becoming.  Just ssslightly."
+    show niir neutral at basicfade
+    n "He is rather pretty."
+    show niir mischief at basicfade
+    n "But you are ssslightly more becoming.  Just ssslightly."
     hide niir
     with moveoutleft
     scene bg storage with fade
     show niir neutral at center
     with moveinright
     p "Yes, well, it is a queenly duty to look becoming... though my presence would certainly be improved if I had my full royal wardrobe. Are we there yet?"    
-    n smile "Ssssoon.  Hmmm.  Where is this royal wardrobe of yoursss?"
+    show niir smile at basicfade
+    n "Ssssoon.  Hmmm.  Where is this royal wardrobe of yoursss?"
     p "Back at {b}my{/b} castle, which I must say is in much better repair than this one. Why, did you want to try something on?"
-    n smirk "I will if you do."
+    show niir smirk at basicfade
+    n "I will if you do."
     p "I think you would look fabulous inside a wardrobe."
-    n neutral "Perhapsss.  Why leave sssuch a lovely wardrobe behind? " 
+    show niir neutral at basicfade
+    n "Perhapsss.  Why leave sssuch a lovely wardrobe behind? " 
     p "I left in a bit of a...hurry."
-    n concerned "And you may never go back."
+    show niir concerned at basicfade
+    n "And you may never go back."
     p "Of course I’m going back! But when I go back, it shall be with such power and magnificence that they will have no choice but to accept me as Queen! I had thought to find something useful here, but it seems there’s only dusty old rooms and dusty old dragons."
-    n mischief "Leaving issss not alwaysss an option.  Not just for dragonsss either.  I might make it my misssion to keep you here."
+    show niir mischief at basicfade
+    n "Leaving issss not alwaysss an option.  Not just for dragonsss either.  I might make it my misssion to keep you here."
     p "Hmph. Well, then your mission will need to include renovating this castle, finding me a new wardrobe, making me a queen, and making yourself...less of a nuisance. I’m not sure you can handle all that, particularly the last requirement. Though, if you could..."
-    n smirk "Ahhh, ssseems it took less persuasion than I originally thought."
+    show niir smirk at basicfade
+    n "Ahhh, ssseems it took less persuasion than I originally thought."
     p "I am not persuaded of anything, yet. Show me you are capable, however, and then I will decide."
-    n concerned "It would make things a little more entertaining.  I think I’ve worn Balrung down to the bone.  He isss less interesssting company than he initially wassss."
+    show niir concerned at basicfade
+    n "It would make things a little more entertaining.  I think I’ve worn Balrung down to the bone.  He isss less interesssting company than he initially wassss."
     hide niir
     with moveoutleft
     scene bg corridor flip with fade
     show niir neutral at center
     with moveinright    
-    n smile "What is your cassstle like?  Better than thisss?"
+    show niir smile at basicfade
+    n "What is your cassstle like?  Better than thisss?"
     p "Obviously. Though, this castle does have a certain... gravity that is hard to find in a castle these days. My castle was- {b}is{/b} -full of beauty, with stained glass scenes of my ancestors’ achievements, and every comfort a queen deserves."
-    n neutral "Perhapsss I will consider helping you take that one inssstead.  But you ssstill haven’t made me a good enough deal.  What will we do with thissss father of yourss if I help you take it?"
+    show niir neutral at basicfade
+    n "Perhapsss I will consider helping you take that one inssstead.  But you ssstill haven’t made me a good enough deal.  What will we do with thissss father of yourss if I help you take it?"
     p "Father? Well, I...he... what do you care what I do with my father?!"
-    n smirk "Oh, a sssore spot.  Fathersss usually are.  At leassst you have not had to deal with a dragon father."
+    show niir smirk at basicfade
+    n "Oh, a sssore spot.  Fathersss usually are.  At leassst you have not had to deal with a dragon father."
     p "What is your father like?"
-    n frown "I don’t remember, usss dragonsss do not have strong paternal bondsss.  But ever since I arrived here Balrung hasss acted like my father.  And every time I try to be rid of him, it sssseems I am ssstuck with him, in this form.  We dragonsss would rather not have such submisssion to parental figures."
+    show niir frown at basicfade
+    n "I don’t remember, usss dragonsss do not have strong paternal bondsss.  But ever since I arrived here Balrung hasss acted like my father.  And every time I try to be rid of him, it sssseems I am ssstuck with him, in this form.  We dragonsss would rather not have such submisssion to parental figures."
     p "He wants you to be something you’re not."
-    n determined "It sssseems in two dayss you understand me more than he."
+    show niir determined at basicfade
+    n "It sssseems in two dayss you understand me more than he."
     p "We do have a few things in common."
-    n frown "..."
+    show niir frown at basicfade
+    n "..."
     hide niir
     with moveoutleft
     scene bg stairs with fade
     show niir neutral at center
     with moveinright
     p "What will you do once you’re free? Besides serve my every whim, of course."
-    n determined "I’ll pretend you didn’t ssssay that."
-    n angry "..."
-    n sad "I don’t remember tasssting true freedom.  It hasss been too long."
+    show niir determined at basicfade
+    n "I’ll pretend you didn’t ssssay that."
+    show niir angry at basicfade
+    n "..."
+    show niir sad at basicfade
+    n "I don’t remember tasssting true freedom.  It hasss been too long."
     p "..."
     p "Surely you can think of {b}something{/b}? Flying around a volcano, or devouring a herd of sheep, or decimating an enemy castle? Actually, you’ll need to leave the castle in good enough condition that I can inherit it; just do enough damage to scare everyone out of it."
-    n determined "Who {b}are{/b} you Princessss?  You ssssurely do not act like any princess that I have ssseen."
+    show niir determined at basicfade
+    n "Who {b}are{/b} you Princessss?  You ssssurely do not act like any princess that I have ssseen."
     p "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom?"
-    n neutral "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss.  Won’t your people be displeasssed with your hearty appetite for destruction?"
+    show niir neutral at basicfade
+    n "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss.  Won’t your people be displeasssed with your hearty appetite for destruction?"
     p "It’s not destruction I crave, but the throne! And if a little poison fails to do the trick, then perhaps I’ll try a little dragon fire."
     "Oops! Did I mention the poison?!"
-    n determined "Poissson?  I will keep it in mind the next time you put a tasssty morsssel in front of my nossse."
+    show niir determined at basicfade
+    n "Poissson?  I will keep it in mind the next time you put a tasssty morsssel in front of my nossse."
     p "I meant {i}poisson{/i}, as in, a fish! Fish are useless! ...A-a-anyway, is this the place you wanted to show me?"
-    n smile "Not yet!  We are almossst there.  I just got... dissstracted."
-    n neutral "Thisss way."
+    show niir smile at basicfade
+    n "Not yet!  We are almossst there.  I just got... dissstracted."
+    show niir neutral at basicfade
+    n "Thisss way."
     hide niir
     with moveoutleft
     scene bg exterior dusk with fade
     show niir neutral at center
     with moveinright
     p "This...is a tower."
-    n smile "Nicccce up here, isn’t it?"
-    n concerned "It’ssss where I come sometimesss. "
+    show niir smile at basicfade
+    n "Nicccce up here, isn’t it?"
+    show niir concerned at basicfade
+    n "It’ssss where I come sometimesss. "
     p "I thought you were going to show me something powerful?!"
-    n happy "Sssomething that makesss me feel powerful."
+    show niir happy at basicfade
+    n "Sssomething that makesss me feel powerful."
     p "That’s not what I meant! I need something that can make me Queen!"
-    n mischief "Have you ever flown before, Princesss?"
+    show niir mischief at basicfade
+    n "Have you ever flown before, Princesss?"
     p "Of course not. Do I look like a dragon to you?"
-    n determined "Then you do not truly know what power issss."
-    n smirk "Maybe sssome day..."
+    show niir determined at basicfade
+    n "Then you do not truly know what power issss."
+    show niir smirk at basicfade
+    n "Maybe sssome day..."
     p "It is nice up here, though. I suppose it wasn’t a complete waste of time."
-    n sad "It’sss not the sssame."
-    n frown "Sssee you around, Princesss."
+    show niir sad at basicfade
+    n "It’sss not the sssame."
+    show niir frown at basicfade
+    n "Sssee you around, Princesss."
     hide niir with moveoutright
     p "W-w-wait, how do I get back?! Niir! You mustn’t leave your queen stranded!"
     "He left me stranded."
