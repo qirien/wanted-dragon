@@ -165,6 +165,14 @@ label niir8:
         "Niir closed his eyes, concentrating, and then shifted, his skin turning golden and scaly, his frame lengthening. Huge glimmering wings unfolded behind him, and he stamped the ground with clawed feet."
         n "Let’ssss."
         "I climbed on his back, looping my arms around his neck. Cyril frowned up at us disapprovingly as the wind from Niir's wings swirled around him, but did nothing to stop our flight."
+        n "He let ussss go."
+        p "Less talking, more flying!"
+        n "Would you like to try ssssomething... dangerousss?"
+        p "Of course!"
+        n "Then grrrip me tightly, Prrrincesssss..."
+        "I dug in my heels and clutched his wings right where they met his back. He twisted into a barrel roll, then looped several times. I almost fell off, but had never felt so alive."
+        n "Direct me to your casssstle."
+        p "Onward!"
         call credits
         jump niir_free_epilogue
     else:
@@ -320,8 +328,6 @@ label niir8:
 
 
 label cyril8:
-    if (cyril_insanity >= INSANE):
-        jump mage_insane
     scene bg library with fade
     show cyril hat neutral at center, basicfade
     p "Time is running out, Moro-, er, Cyril. Unless you have something for me today, I will be forced to pursue other...options."
@@ -451,7 +457,10 @@ label cyril8:
             c "There is... nothing else for me here."
 
             call credits
-            jump cyril_crazy_epilogue
+            if (cyril_insanity >= INSANE):
+                jump cyril_dark_epilogue
+            else:
+                jump cyril_scepter_epilogue
 
         "Use the scepter on yourself":
             "I turned the scepter toward myself, feeling the intense energy that came from it."
@@ -487,10 +496,9 @@ label cyril8:
             play music happy_ending
             "With a running start, I surged out of the castle walls and out into the glowing evening. Cyril shrieked and almost fell off, but I leveled out just in time. Flying felt so natural, it was hard to believe I had only been capable of it for mere minutes."
             scene bg sunset with fade
-            show cyril concerned eyes closed at basicfade
+
             c "I don’t believe I’m doing this.  I don’t believe I’m doing this.  I’m not sure if we should be doing this, Princess."
             p "I wonder if I can breathe fire? ...Oh, look, I can! Did you see that, Cyril?!"
-            show cyril concerned blush at basicfade
             c "Please don’t.  Don’t do that, Princess.  At least not without due warning."
             p "I'm warning you right now, Cyril, there will be a lot more fire and destruction before the night is over! Mwah ha ha ha ha!"
 

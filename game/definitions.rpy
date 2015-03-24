@@ -124,21 +124,26 @@ init -1:
         zoom 1.0
         yalign 1.0
         
+    transform exit_left:
+        linear 3.0 xpos -600
+        
+    transform exit_right:
+        linear 3.0 xpos +600
+        
     transform hop:
         yalign 0.0
         linear 0.5 ypos +30
         pause 0.5
         linear 0.5 ypos 0
         repeat
-        
 
     transform basicfade:
         on show:
             linear 1.0 alpha 1.0
         on hide:
             linear 1.0 alpha 0.0
-        on replace:
-            linear 1.0 alpha 1.0
+#        on replace:
+#            linear 1.0 alpha 1.0
         on replaced:
             linear 1.0 alpha 0.0        
     

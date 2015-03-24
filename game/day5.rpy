@@ -6,25 +6,33 @@ label day5:
     "I was just finishing the unoriginal-yet-edible breakfast Moronious had dropped off for me when there was a knock at the door."
     
     if (route == "Niir"):
-        show cyril hat neutral at center with moveinleft
+        show cyril hat concerned at center with moveinleft
         c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
+        show cyril hat concerned blush at basicfade
         c "I saw you, your highness."
         p "Saw me what?"
+        show cyril hat concerned blush eyes closed at basicfade
         c "Well, you see..."
-        p "Spit it out mage!  I do not have all day."
+        p "Spit it out, mage!  I do not have all day."
+        show cyril hat surprised at basicfade
         c "With Niir, that {i}dragon{/i}."
+        show cyril hat angry at basicfade
         c "Do not trust him.  There is a reason he is here.  He shall not be freed, milady!"
         c "Shall not.  Do you have any idea what he would be like out there?"
+        show cyril hat concerned at basicfade        
         c "You cannot trust him for a second.  Not one second!"
         menu:
             "\"I can make up my own mind - Begone!.\"":
+                show cyril hat concerned blush at basicfade
                 c "I understand that, but I don't think you have all the facts."
                 c "He is most surely using you."
                 p "How do you know I'm not using him?"
+                show cyril hat surprised at basicfade
                 c "I... I hadn't thought of that."
                 c "{b}Are{/b} you using him?"
                 p "Oh no.  We're hopelessly in love.  No one is using anyone."
                 p "Good day, Moronious."
+                show cyril hat surprised at basicfade
                 c "Errr, good day, Princess?"
                 p "Begone!"
                 c "{i}I do wish you would quit telling me that.{/i}"
@@ -39,11 +47,14 @@ label day5:
                 p "You on the other hand..."
                 p "Someone like you would understand when a lady is in need."
                 p "And has demands on her that only power can fulfill."
+                show cyril hat surprised at basicfade
                 c "P-p-power?"
                 p "You must have some measure of power, or these dragons would have escaped long ago. Use it to help me rid the throne of my scheming sister Magnolia!"
                 p "If you won't, I'll find someone else who will."
+                show cyril hat concerned blush at basicfade
                 c "I do want to help me, I mean, to help you, but... I need time!"
                 p "Show me what you can do, then! I expect something concrete when I check in with you later today!"
+                show cyril hat concerned blush eyes closed at basicfade
                 c "Y-yes Princess! I'll start right away!"
                 hide cyril with moveoutleft
                 "Useless! Everyone here is useless!"
@@ -53,30 +64,38 @@ label day5:
                 jump cyril5
                     
     elif (route == "Balrung"):
-        show niir neutral at center with moveinleft
+        show niir frown at center, basicfade with moveinleft
         n "What do you ssssee in that old tortoisssse?"
         p "Good morning to you as well, Niir."
+        show niir angry at basicfade
         n "Balrrrung hassss no sensssse of fun, and he won't be easy to contrrrol. Even for you."
         p "What concern is it of yours?! Or are you jealous, perhaps? I could use another minion, if you also want the job."
+        show niir determined at basicfade
         n "The mage will never believe you have fallen in love with {b}him{/b}."
         p "Why not? Isn't that supposed to be the great thing about love? It's blind, knows no boundaries, is all you need, etc, etc?"
+        show niir frown at basicfade
         n "He'sss crafty. He'sss planning ssssomething. He'll betrrray you at the end."
         p "Really? What proof do you have?"
+        show niir angry at basicfade
         n "I know him!  That'ssss how he worksss."
         p "If he was really so good at plotting and scheming, he would have found a way out by now."
         n "He'sss patient! Trussst me."
         p "Trust {b}you{/b}?!"
+        show niir smirk at basicfade
         n "Yesss. I guarantee you'll find me much... eassssier to worrrk with."
         "I thought about it. Niir was more transparent - it was obvious what he was thinking. But perhaps that's what I liked about Balrung... the idea of a challenge."
         menu:
             "\"Prove that I can trust you.\"":
                 p "Prove to me that I can trust you."
-                n "Prove that I can trusssst you."
+                show niir mischief at basicfade
+                n "Prove that {b}I{/b} can trusssst {b}you{/b}."
                 jump trust_niir
             "\"No, I'm working with Balrung.\"":
                 p "No. I'm working with Balrung."
+                show niir determined at basicfade
                 n "Fine. But don't expect any ssssympathy when he turnsss on you in the end."
                 p "I neither expect nor require anyone's sympathy!"
+                hide niir with moveoutleft
                 "He slunk out, defeated, and I turned my attention to other things."
                 "It was probably time to visit Balrung and see what progress we could make together on our plans."
                 jump balrung5
@@ -222,33 +241,36 @@ label balrung5:
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
     show balrung smile at basicfade
     b "One day...perhaps."
-    show cyril hat neutral at midleft with moveinleft
+    show cyril hat surprised at midleft with moveinleft
     show balrung at midright with move
     play music cyril_theme
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
     show balrung smirk at basicfade
     b "She's quite a clever opponent! Quick-witted as well as beautiful, wouldn't you say, Merlonious?"
+    show cyril hat concerned blush at basicfade
     c "Well, yes, of course, but-"
     p "Now, Balrung, stop flattering me so much or I shall begin to suspect you like me. Weren't you just saying dragons were incapable of that, Moronious?"
+    show cyril hat angry at basicfade
     c "Y-yes, they are! Maybe not all. But definitely this one!"
     show balrung smile at basicfade
     b "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."
+    show cyril hat concerned blush at basicfade
     c "The r-r-right woman?! Surely you don't mean Princess [p_name]?!"
     p "You don't believe I could induce feelings of love?! How cruel!"
     show balrung neutral at basicfade
     b "Yes, really, Merlonious, I would have thought you'd be more gentle with our dear Princess's delicate feelings!"
+    show cyril hat concerned blush eyes closed at basicfade
     c "Her delicate...feelings?!"
     p "Oh, yes, I'm quite overcome, I do think I might faint."
+    show cyril hat surprised at basicfade
     c "Faint?! Um, well, ah, what should we do?!"
     show balrung smile blush at basicfade
-    "I pressed my hand to my forehead and collapsed into Balrung's arms. That's what heroines of love stories are always doing; it should help convince that fool Moronious."
+    "I pressed my hand to my forehead and collapsed into Balrung's arms. That's what heroines of love stories are always doing; it was just the sort of thing that might convince that fool Moronious."
     scene black with fade
     c "St-stop that! You mustn't hold the Princess that way!"
-    show balrung smirk at basicfade
     b "Really? You'd have preferred I let her head crack on this stone floor? I never thought you were so heartless, Merlonious!"
     c "Well, no, I wouldn't want that, but- I'm not- you can't!"
-    show balrung smile eyes closed at basicfade
     b "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene bg dungeon 
@@ -256,21 +278,18 @@ label balrung5:
     with fade
     "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
     scene black with fade
-    show balrung smile at basicfade
     b "Our poor Princess... she's been through so much."
     "He stroked my hair tenderly away from my face while Cyril sputtered. It was all I could do to keep from cackling with glee at his befuddlement. Balrung was quite the actor. Almost as good as me."
     c "Well I- I will just stay here and watch over the Princess until she recovers! I'll protect her from you, you, vituperous viper!"
-    show balrung smirk at basicfade
     b "If you feel the need, by all means, do so. Though perhaps you might think about protecting her from your rudeness, since that is what got her into this position in the first place."
     n "Why is the Princesss pretending to sssleep on your bed?"
-    show balrung smile eyes closed at basicfade
     b "I'm afraid she fainted. Merlonious made an indelicate comment and her poor constitution just couldn't take his boorish suggestions."
     c "That's not at all what happened! Is it? Oh dear, I would never be unkind to the Princess, not on purpose, but sometimes my batter is faster than my train! I mean, my chatter is faster than my brain..."
     "This was getting ridiculous. I think we had made our point, so I opened my eyes."
     scene bg dungeon with fade
-    show cyril hat neutral at midleft, basicfade
+    show cyril hat concerned blush at midleft, basicfade
     show niir neutral at midright, basicfade
-    show balrung smirk at come_closer, basicfade   
+    show balrung smirk at center, come_closer, basicfade   
     p "Oh, thank you, Balrung, for taking such good care of me. I don't know what came over me. But I'm so glad I can trust {b}you{/b}, at least."
     "I glared at the mage, hoping he would feel even more guilty."
     p "And now I will depart, so please excuse me."
@@ -284,30 +303,37 @@ label niir5:
     $ niir_affection += 1
     p "Could you stop disappearing on me Niir!"
     p "I wish to confer with you!"
-    show niir neutral at center with moveinright    
+    show niir mischief at center with moveinright    
     n "Confer?  On what?  Your choice of dresssss?"
     p "No! The pretence!  The acting like you're in love with me!"
     p "How are we faring?"
     p "Why don't you just tell that Moronious already that you want to leave with me."
     p "And start a happily ever after of such."
+    show niir frown at basicfade
     n "I haven't been convinccccced."
     p "You say that every time!  I can promise you freedom, destruction, and power."
     p "Isn't that enough?"
-    n "Dragonsss aren't that easssy to trussst, Princesssss."
+    show niir smirk at basicfade
+    n "Dragonsss aren't that quick to trussst, Princesssss."
     p "Haven't I told you not to stare at me like tha-oh, you can't help it.  Can you?"
     p "That's the way you always look."
     p "Regardless, Niir, I can promise you what you want."
+    show niir mischief at basicfade
     n "What if I want more?"
     p "More?"
     n "Perhapsss."
     p "You'll have your freedom; I'll have my throne. What more is there?"
+    show niir neutral at basicfade
     n "Isssn't it obvioussss?"
-    p "You mean?  No.  Absolutely not.  "
-    extend "Especially not with you."
-    n "You wound me Princessss."
-    p "And why should I trust you?"
+    p "You mean...?  No.  Absolutely not!  "
+    extend "I'm a {b}princess{/b}."
+    show niir sad at basicfade
+    n "You wound me, Princessss."
+    p "There's no way I could trust you enough for {b}that{/b}."
+    show niir neutral at basicfade
     n "Assss you ssssee.  Trusssst is not easssy, isss it?"
     p "How can I get you to trust me?"
+    show niir determined at basicfade
     n "I won't trussst you, until you trusssst me."
     p "..."
     p "I see how it is."
@@ -318,55 +344,73 @@ label niir5:
             call somethigh 
             
     p "Now, Moronious usually spends his time in the library. So if we are in the hall near the library, professing our love to each other, he will hear us."
+    show niir angry at basicfade
     n "Professsss love?!"
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
     show niir neutral at center, come_closer, basicfade
 
     p "Hold me like this, with your hands here, in case he peeks out."
+    show niir mischief at basicfade
     n "I can do that, at leassssst."
     p "Now, say things you like about me, and I will do the same for you. I've heard that's what lovers often talk about."
     n "I suppossse."
+    show niir concerned at basicfade
     n "Oh, Princessss, your...dresss is ssssooo...shiny. And your earsss are ssso...sstrange. How can you even hearrr with those tiny things?"
     c "Is that...Niir?! I've never heard him talk in such a positive manner."
     p "I suppose that's a start. Don't just compliment my body, though, or he won't believe it's true love!"
+    show niir mischief at basicfade
     n "You're sssoo deviousss, when I ssseee your scheming grin I jussst want to eat you up!"
-    show niir with vpunch
+    show niir concerned with vpunch
+    
     n "I mean, I jussst want to be good! And not kidnap any one elsssse."
+    show niir smirk at basicfade
     n "And only ssssteal you away if you assssk me to."
     "He bent his head close to my ear and whispered,"
     n "Your turn."
     p "Niir! I used to think you were an untrustworthy, lascivious, uncivilized beast of a dragon! But, oh, how wrong I was! Only now can I see past the mask you wear to hide your pain. Now, I can see the true, sweet, caring Niir underneath!"
+    show niir determined at basicfade
     n "I'm not ssssweeet or carrring!"
     p "You've worn this mask for so long, even you have started to believe it! But I know that you've changed. You've learned your lesson, and now you would never hurt anyone or offend a Princess's delicate sensibilities!"
     "He hissed in my ear,"
+    show niir smirk at basicfade
     n "Delicate sensibilitiessss? Ssssurely you mussst mean some {b}other{/b} Princessss?"
     "I gripped his shoulders and whispered,"
     p "Your turn, Niir! Make it good; he has to believe you!"
+    show niir concerned at basicfade
     n "Yesss, how I've changed. If only I were frrreee, we'd live happily everrr afterrr!"
     p "If only you were free!"
     "I turned my face up to him and whispered,"
     p "Now kiss me!"
+    show niir frown at basicfade
     n "..."
     "What was he hesitating for? Obviously he wanted to; it was practically all he could talk about."
+    show niir determined at basicfade
     n "Thissss will not work."
     p "You've never actually kissed anyone, have you?! Well, we simply must remedy that right away." 
     "But before I could execute my plan, Cyril came running towards us. Niir's education would have to wait until later." 
-    show cyril hat neutral at midleft, come_closer with moveinleft
+    show cyril hat surprised at midleft, come_closer with moveinleft
     c "Princess! You can't! Y-You mustn't believe him!"
     show niir neutral at midright, reset_zoom, basicfade
-    show cyril hat neutral at midleft, reset_zoom, basicfade
+    show cyril hat concerned at midleft, reset_zoom, basicfade
     p "Moronious! What a... surprise to see you here, interrupting our completely private conversation!"
     c "I warned you about him, Princess.  And I don’t believe any of this for a second!  You won’t fool old Cyril the Clever.  Errr, young Cyril.  I do quite forget my age some times."
+    show niir angry at basicfade
     n "Nobody calls you Cccccyril the Cleverrr."
+    show cyril hat concerned blush at basicfade
     c "I’m sure someone has called me that once.  I’m sure some time..."
     p "Cyril, I consider you somewhat of a friend. Niir is my friend, too, and it would be so dreadful if my friends couldn't get along. Can't you see how different he is now, how he's changed?!"
+    show cyril hat smile blush at basicfade
     c "Friend?  I do say!  I am glad that you see us like that Princess.  But I cannot say this dragon has your best interests at heart."
+    show niir mischief at basicfade
     n "My hearrrt is ssso full of love, I have no room for missschief." 
     p "There now, you see? Amazing, isn't it, what love can do in such a short time?"
+    show cyril hat surprised at basicfade
     c "Well, I suppose there is no arguing with love.  But no.  "
+    show cyril hat angry at basicfade    
     extend "It must be a trick."
     p "Moronious, you are dreadfully mistaken. But I will be generous and allow you a few days to change your mind."
+    show cyril hat concerned at basicfade
     c "I propose a test if this is to go on.  Niir, you must prove this to me.  And then at the end I will test you both to see how well you know one another and how deep your commitment is to one another.  I do not let dragons leave willy-nilly you know."
     p "Our love is strong enough to pass your silly tests! I have no doubts about that."
     show niir smirk at basicfade
@@ -383,10 +427,10 @@ label somethigh:
     p "Alright.  Fine."
     p "I'll show you some of mine if you show me some of yours."
     p "Trust."
+    show niir mischief at basicfade
     n "I thought you'd never offer."
+    scene black with magic_flash    
     play sound "sfx/lightning.ogg"
-    scene black with magic_flash
-    # TODO: add vfx for Cyril's protection spell that got activated?
     p "Happy now?"
     n "Happy wouldn't be the word that I would ussssse."
     p "Well, now I know how Moronious' protection spell works. I'm surprised you're still conscious after that much electricity."
@@ -394,50 +438,61 @@ label somethigh:
     scene bg dungeon with fade
     show niir neutral at center, basicfade
     p "So there we go, I trust you enough with that, and now you trust me. Say it."
+    show niir frown at basicfade
     n "Sssstill not convincccccced."
     show niir determined with hpunch
     n "Agh!  What wasssss that?"
     p "Convincing.  Hurry up and trust me or I'll do it again."
     show niir angry with vpunch
     n "It doessss not work- {i}stop, human{/i}!"
-    show niir angry with hpunch
+    show niir determined with hpunch
     n "Desisst!"
-    show niir at come_closer, basicfade
+    show niir concerned at come_closer, basicfade
     "He grabbed my fist before I could punch him again. The protection spell didn't activate, this time, since I touched him first."
     p "Release your hands from my royal person immediately!"
     show niir smirk at basicfade
     n "Do you trussssst me now?"
     "Ah, a test.  Touché, dragon."
     p "Completely."
+    show niir concerned at basicfade
     n "Really?"
     p "Yes.  I trust you. Do you trust me?"
+    show niir frown at basicfade
     n "..."
-    n "Yessss."
+    n "{size=-3}Yessss.{/size}"
     p "I didn't quite hear you, what was that?"
+    show niir angry at basicfade
     n "Yessss, don't make me repeat it Princessss."
     p "So let us fool the mage about our love."
     p "And I will make your trust worth it."
+    show niir neutral at basicfade
     n "Yessss.  Fool.  We sssshall."
     p "Then we are partners.  I want a full agreement Niir.  Nothing less will do."
+    show niir smirk at basicfade
     n "Partnerssss."
     return
 
 label trustfall:
     p "I'll fall and you'll catch me."
+    show niir concerned at basicfade
     n "What will that prove?"
     p "That you can trust me because I'm trusting you with my very life."
+    show niir angry at basicfade
     n "You are trussssting me with your life jusssst by being in this room."
-    p "Well, let's make it more official then."
-    p "I won't fight back; I trust that you will not hurt me."
+    p "Well, let's make it more official, then."
+    p "I trust that you will not let me get hurt."
     p "And that you will catch me."
     "I climbed up onto a chair and turned my back on him."
     p "Are you ready Niir?  I am going to fall."
+    show niir frown at basicfade
     n "No."
     p "I'm going to fall, I do hope some annoying dragon with nothing better to do will catch me."
+    show niir angry at basicfade
     n "I ssssaid 'No!' human!"
     p "I am trusting you, isn't that what you wanted?"
     "I do believe I'm calling his bluff."
     "I can tell that's not what he wanted at all."
+    show niir sad at basicfade
     n "..."
     n "How can you trussssst me, when I do not even trussst myself?"
     "Bingo!"
@@ -445,11 +500,13 @@ label trustfall:
     p "Niir.  You have to start some time."
     p "And why not start by trusting me?  You can trust yourself later."
     p "Right now your own loyalty should be to your future Queen."
+    show niir frown at basicfade
     n "..."
     p "Niir.  Will you catch me?"
     n "..."
     p "Will you catch me, Niir?"
     n "... "
+    show niir determined at basicfade
     extend "{i}Yessss.{/i}"
     p "I am willing to trust you right now when you certainly don't deserve it.  Surely this goes a long way for your trust in me."
     n "Perhapssss."
@@ -457,8 +514,9 @@ label trustfall:
     show niir neutral at midleft with hpunch
     "He caught me awkwardly, almost dumping me backwards on my head before helping me stand upright. I smoothed my skirts and folded my arms."
     p "Good.  Then are we ready to go onto the next step in our diabolical plan to gain your freedom and my throne?"
+    show niir neutral at basicfade
     n "Perhapssss."
-    p "Then let's do it and stop talking about it."    
+    p "Then let us proceed!"    
     return
 
 label cyril5:
@@ -466,7 +524,7 @@ label cyril5:
     # scepter progress
     # DAY 5
     scene bg library with fade
-    show cyril hat neutral at center, basicfade
+    show cyril hat smile at center, basicfade
     play music cyril_theme
     
     $ cyril_affection += 1
@@ -475,53 +533,74 @@ label cyril5:
     p "I've actually been very impressed with the way you operate."
     p "Acting like you don't know a thing, and then astounding us all with your competence."
     p "Keeps the dragons on their toes as well, I presume."
+    show cyril hat concerned blush at basicfade
     c "Errr... no.  I found my spellbook."
+    show cyril hat smile blush eyes closed at basicfade
     c "It was right under my nose the entire time."
     p "..."
     p "Don't think because I'm banished I can't bring about your death."
+    show cyril hat surprised at basicfade
     c "I'm dreadfully sorry."
+    show cyril hat smile at basicfade
     c "But now that I have my spellbook I can find some sort of locating spell, surely."
     p "You'd better, because I grow tired of waiting."
+    show cyril hat concerned at basicfade
     c "Let's see here... locater-locater... lo-"
     c "Here!"
-    c "It's not a locating spell but it does bring deep, powerful magical items to glow incessantly until I stop the spell."
+    show cyril hat neutral at basicfade
+    c "It's not a locating spell precisely, but it does bring deep, powerful magical items to glow incessantly until I stop the spell."
     p "Then try it already!"
     c "I will, I will."
+    show cyril hat concerned at basicfade
     c "Stand back, your highness."
     p "What, so I don't get flicked by your wand?  I think I'll take my chances."
     c "I'm just not sure if the spell will go exactly as planned."
     p "It had better, Moronious, or I will make sure that council of yours knows how dangerous you are with a spellbook in hand."
+    show cyril hat concerned blush at basicfade
     c "More threats.  Jolly good, Princess.  I do think we're communicating quite well."
+    show cyril hat smile blush eyes closed at basicfade
     c "You do look me in the eye when you're threatening me which is lovely, and gives me tingles all-"
     p "{size=+2}Just do the spell already!{/size}"
+    show cyril hat neutral at basicfade
     c "Ah yes."
-    
+    show cyril hat angry at basicfade
     c "{font=fonts/ankecallig-fg.ttf}Magia Luxis{/font}!"
     show cyril hat angry with magic_flash
     c "Something is blocking it... but the scepter is here, in this castle!"
+    show cyril hat concerned at basicfade
     c "I'm so sorry, your Highness, but I need to study this more. Please be patient!"
     p "I am not a patient person, Moronious."
+    show cyril hat concerned blush at basicfade
     c "I know. But...it's actually Merlonious.  Yes, Merlonious.  That is my name."
     p "Yes, yes, I know what your name is!"
+    show cyril hat neutral at basicfade
     c "Good. So long as you, erm, know that."
     p "Find this scepter, and my future kingdom may have a place for you."
     "I reached out to touch him on the shoulder."
+    show cyril hat surprised at basicfade with vpunch
     "And he recoiled quickly, much to my amusement."
     p "You have never been touched by a woman before, have you?"
+    show cyril hat concerned blush at basicfade
     c "Errr, yes.  I mean no.  Not entirely in person, no.  But I have watched the dragons and read some rather riveting books.  But short answer...erm, no."
     p "I should have guessed."
     p "So, no one has ever held your hand, like this?"
+    show cyril hat concerned blush eyes closed at basicfade
     c "Errr, not in recent memory."
     p "Do tell me, how does it feel? You seem uncomfortable; do you dislike it?"
     "Such an amusing plaything!"
+    show cyril hat smile blush at basicfade
     c "I wouldn’t- I wouldn’t say {i}that{/i}." 
     p "And if I lean on your shoulder, like this...?"
+    show cyril hat smile blush eyes closed at basicfade
     c "Oh dear.  I-I- do believe you have me flustered, Princess."
     p "Well, we wouldn't want that. I suppose I'd better leave you alone for now, even though there's so many other things I'd like to show you."
+    show cyril hat concerned blush at basicfade
     c "Ah yes."
     c "..."
+    show cyril hat smile blush eyes closed at basicfade
     c "I mean no, no, that isn’t necessary.  You don’t-"
     p "Don't worry; I know exactly what you mean. You don't have to explain to me. So, until next time..."
+    show cyril hat smile blush at basicfade
     c "Good night, P-Princess."
     "It's still midafternoon..."
     p "...Good night."

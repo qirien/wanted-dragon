@@ -2,85 +2,67 @@
 # Cyril route endings
 #
 
-    
-label mage_insane:
-    p "Cyril? CYRIL! Hmmm.  Usually he responds to my summons right away. Where can he be?"
-    scene bg stairs day with fade
-    "I hear noises coming from the dungeon..."
-    scene bg dungeon with fade
-    show balrung neutral at center, basicfade
-    show niir neutral at quarterright, basicfade
-    show cyril hat neutral at quarterleft, basicfade
-    play music cyril_theme
-    
-    b "It took only a few short years of solitude to lose your mind."
-    b "Are you sure she's even real?"
-    c "Yes!  Of course I am!"
-    n "Sssshe's interested in you.  Ssshe must not be real."
-    c "She is real.  She is the real princess.  Here she is; just look at her!"
-    b "Are you sure about that?"
-    n "I can't ssssee a thing."
-    p "You blithering fool, Cyril.  They're playing you."
-    p "Of course I'm real."
-    c "She says she's real!"
-    b "Exactly what a false princess would say, don't you think?"
-    n "Exacccctly."
-    p "Cyril the Clueless.  You astound me.  I came here for a dragon."
-    p "But despite your many inadequacies - and there are many - I found myself drawn to you."
-    c "I do find it highly unlikely that an apparition would call me inadequate and clueless."
-    b "Unless you were making her up to be realistic."
-    c "I am!  I am!  So true!  I just wanted it to be true!"
-    "Is he for real?"
-    p "Oh for the love of..."
-    menu:
-        "Kiss him.":
-            jump mage_insane_kiss
-        "Step on his toes.":
-            jump mage_insane_step
-            
-label mage_insane_kiss:
-    show cyril hat smile blush eyes closed at center, come_closer, basicfade
-    "..."
-    c "Ah, sweet, sweet apparition."
-    c "I'm afraid this is the closest that we're going to get to being together for real."
-    p "Cyril the Crazy, I just kissed you."
-    c "And I'm going to spend all my years in this castle imagining you."
-    p "You are completely insane."
-    c "Insane with love, my dear."
-    p "No, insane with insanity.  I'm leaving."
-    c "But you can never leave, as you are in my mind."
-    p "Watch me."
-    p "Dragons, sorry it didn't work out."
-    p "Cyril, this has been a complete waste of my time. Adieu."
-    return
-    #MAGE INSANE END
-    
-    
-label mage_insane_step:
-    c "Ouch!  You trod on me!"
-    p "Would an imaginary person do this?" with hpunch
-    p "Or this?" with hpunch
-    c "Ow!  Ow!  Ow!"
-    c "I suppose not.  You must be real after all."
-    p "Yes and I was hoping that a certain foolish mage and I might go to the council of mages to get someone else to do this job."
-    p "It seems I'm going to need you in the immediate future."
-    c "I'm yours my majesty, I mean {i}your{/i} majesty of course."
-    p "You had it right the first time."
-    
 
+label cyril_dark_epilogue:
+    scene bg dungeon with fade
+    show cyril concerned at center, basicfade
+    p "I have a job for you."
+    c "No, no, no, no.  {i}It can’t be.{/i}  You shouldn't be here, your Highness."
+    p "That's \"your majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me. Pity my father had to get in the way, of course, but... well, that's in the past."
+    show cyril angry at basicfade
+    c "Well, I would do {i}anything{/i} for you, your majesty.  After killing that dragon, I don’t know why I spent so long not exacting a thorough comeuppance on those deserving it.  Your family were doing you a great disservice.  They did deserve it."
+    p "Yes, there are many more that deserve justice. In fact, I have decided to allow you to work off some of your sentence by exacting that justice."
+    p "You've proven yourself capable of greater things. There is a dragon, in a neighboring kingdom, who has amassed too much power. You know the kind?"
+    show cyril concerned at basicfade
+    c "I do. "
+    p "Then ensure he doesn't cause any more trouble."
+    show cyril angry at basicfade
+    c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around.  I was wrong.  Imprisoning them was wrong.  They only deserve death."
+    p "Good, good. I'm so glad I can count on you, Cyril. You'll always be my favorite minion."
+    return
+      
 
 label cyril_scepter_epilogue:
+    # since you can only get this ending if affection points are high and telling Cyril to go study gives you more points, it’s safe to say he’s away studying...  
     p_write "To Cyril Merlonious,"
     p_write "The Academy of Mages, House of Master Grivvorn\n"
-
     p_write "I hope that half-wit you're studying under realizes your potential."
-    p_write "Otherwise you can direct him to me."
-    p_write "Queen of [k_name],\nChrysandra"
+    p_write "Otherwise you can direct him to me, the Queen of [k_name]."
+    p_write "Also..."
     nvl clear
+
+    p "Oh, this is ridiculous. I can't say everything in a letter!"
+    p "Cyril Merlonious! I summon thee!"
+    show cyril hat smile at center with magic_flash
+    c "I am here, my Queen!"
+    p "I do wish you would not do that, Cyril the- what are they calling you now, at the Academy?"
+    c "Oh.  Well, it’s embarrassing.  I really don’t want all that kerfluffle made...."
+    p "What is it then?"
+    c "It’s Cyril the Courageous.  Quite a bit better than Cyril the Competent, but even still a rather hefty weight to bear."
+    p "Oh, do stop with the false humility Cyril.  If the Queen sees worth in you, it’s only natural that others will."
+    p "Now, make yourself useful and cast a spell to summon me some cinnamon cakes."
+    c "Oh, yes.  Yes your majesty."
+    p "After that, perhaps you'll have enough courage to ask to accompany me to the Coronation Ball this Saturday."
+    c "Accompany you?  That would be... I would be with people?  I mean, with {i}you{/i} with people?"
+    p "Are you Cyril the Courageous, or not?!"
+    c "Oh, well, ah.  I suppose I am."
+    p "... "
+    extend "I'm waiting."
+    c "Oh, the cakes!  Of course.  {font=fonts/ankecallig-fg.ttf}Dulcis Cottura{/font}!"
+    p "No, you fool! Ask me! To accompany you!"
+    c "Ah, your majesty, would you do me the honor of going to the ball... that’s in your honor.  But it would be {i}my{/i} honor to-"
+    p "Go on!"
+    c "Yes-ahem.  Please come with me to this ball, great Queen.  I would be privileged to accompany you."
+    p "There, was that really so hard? Of course you may accompany me. And, have one of these cinnamon cakes; they're delicious."
+    c "Thank you, your majesty."
     return
 
+
+
+
 label cyril_dragon_epilogue:
-    show cyril neutral at basicfade
+    scene bg kingdom with fade
+    show cyril neutral at center, basicfade
     c "It’s for the best, Chrysandra.  I know you don’t want to take this potion but I travelled a long way and met up with many, many members of the council in order to get it."
     show cyril smile at basicfade
     c "So if you would just drink the potion and then rest for a while, I am sure you will be back to normal in no time."
@@ -96,5 +78,6 @@ label cyril_dragon_epilogue:
     show cyril smile blush eyes closed at basicfade
     c "Y-yes, your majesty."
     p "That's a good boy.  Mmmmm.  Yeeees."
+    show cyril smile blush at basicfade
     p "You certainly are my favorite minion."
     return

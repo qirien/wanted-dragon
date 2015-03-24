@@ -54,9 +54,9 @@ label sweet:
     p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     show cyril hat smile at basicfade
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
+    show cyril at exit_left
     "Ha ha, yes! Everyone falls for the princess-caught-in-the-rain ruse."
-    hide cyril
-    with moveoutleft
+    #with moveoutleft
     stop sound fadeout 2.0
     scene bg hall with fade
     show cyril hat neutral at midright

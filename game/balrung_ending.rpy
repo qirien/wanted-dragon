@@ -103,7 +103,7 @@ label balrung_ending:
     "Balrung breathed a ball of fire at one of the chairs, turning it instantly to ash. His reptilian eyes looked at me for my response."
     # TODO: fireball vfx?
     menu:
-        "Make him your King." if (balrung_affection >= HIGH_AFFECTION): #TODO: only if balrung_affection high enough?
+        "Make him your King." if (balrung_affection >= HIGH_AFFECTION):
             p "Balrung, your patient ruthlessness, and powers over flight and fire, will help you serve me well as my King. Now, let me climb on your back and take us to [k_name]."
             b "What an excellent future we shall have together. None will dare to defy our reign!"
             p "Mwah ha ha ha ha!"
@@ -147,8 +147,6 @@ label balrung_ending:
         p "Shall we attack that evil dragon?"
         c "We shall!"
         play sound "sfx/electricity.ogg"
-        # TODO lightning crackles.
-        # TODO: jump to a Cyril ending?
         call credits
         jump balrung_revenge_epilogue
                    
@@ -182,94 +180,3 @@ label imprisoned_epilogue:
     "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
     "Mwah ha ha ha ha!"
     
-    
-######################################################################
-
-# Not using; keeping around for copy paste purposes
-label old_balrung_ending:
-    c "There it is again! The scepter's magical echo! Before it fades, I must..."
-    c "Resonantia Concretus!"
-    p "I can see wisps of something in the air. What did you do, mage?"
-    c "That should solidify the resonance for a while. It's coming from...the dungeon. Princess, someone is using the scepter right now!"
-    p "Then we must follow the resonance and take it!"
-    
-    scene bg dungeon with fade
-    show cyril hat neutral at midleft
-    with moveinleft
-    "When we got to the dungeon, Balrung and Niir were nowhere to be seen."
-    c "Ahhhh!"
-    p "Moronious! Don't just stand there; we need to get the scepter!"
-    c "The dragons... the curse is broken! That is...not...RIGHT!"
-    #TODO show dragon shadow/head at right with vpunch
-    "The ground trembled, and a giant shadow emerged from the corner of the room. No, not a shadow-- a dragon. Two dragons."
-    b "It {b}is{/b} right! Your prejudice and arrogance have gone far beyond justice and on to revenge for crimes not yet committed!"
-    #TODO: lightning crackle
-    n "Nicccce work, old man. But I'm leaving."
-    if (route == "Niir"):
-        n "Coming, Princesssss?"
-        p "Yes, now that I've freed you, we shall turn our attention to my kingdom."
-        n "Let'sss fly."
-        jump niir_end
-    
-    c "Niir! You must stay! You WILL-- oof!"
-    "Balrung's tail came out of nowhere and knocked Cyril to the ground."
-    b "I'll supervise Niir. That's what you mages should have done in the first place; let dragons discipline dragons."
-    c "That wouldn't work! Nobody can trust you!"
-    if (route == "Balrung"):
-        b "So you say. But the Princess and I have managed to work out an arrangement. Princess?"
-        menu:
-            "Grab Cyril's wand.":
-                p "Moronious, before I go, there's just one thing I need from you."
-                c "Wh-what's that? Oh!"
-                p "Your wand."
-                c "My...wand? No! Princess! Without my wand, I cannot seal up the dragons again!"
-                p "Yes, that was rather the point."
-                b "Well done. Shall we depart?"
-                p "Finally! Now that I've freed you, on to [k_name], where I will rule, and you may be my minion!"
-                b "Oh, did I forget to mention? If you want me to help you with your kingdom, we will need to rule together."
-                p "Together? There can be only one Queen!"
-                b "But you may sometimes find it useful to have a King to help you. Don't you agree that we work well together?"
-                c "Princess, no! He'll destroy your kingdom! All he knows is bitterness and destruction!"
-                b "Merlonious, you don't understand in the slightest. There is no point in destroying a kingdom you intend to rule. That would be like ruling an empty castle... as you may do, with this castle, now."
-                menu:
-                    "Agree to marry Balrung.": #TODO: only if balrung_affection high enough?
-                        p "Balrung, your patient ruthlessness will help you serve well as my King. Now, let me climb on your back and take us to [k_name]."
-                        b "What an excellent future we shall have together. None will dare to defy our reign!"
-                        p "Mwah ha ha ha ha!"
-                        b "Bwah ha ha ha ha!"
-                        c "Noooooooooo!"
-                        "With a rush of wings and dust, we flew out of the dungeon and into the blue, blue sky. Balrung let fly a fireball at the gates of his old prison, just for fun."
-                        "With a dragon on my side, my father would {b}have{/b} to make me Queen... and if not, well, if Magnolia was dead he'd have no choice."
-                        "And Balrung would be an intelligent ally to have as we ruled together. If he crossed, me, though... I brought along some new poison recipes from the library."
-                        "I reached down to pat his cheek and could tell from the gleam in his eye that he was thinking the exact same thing. I'd never lack a worthy opponent again. How exciting!"
-                        p "You're such an ambitious schemer! I love that about you."
-                        b "Is it evil of me if I love how dreadfully ruthless you are?"
-                        p "Probably."
-                        b "Bwah ha ha ha!"
-                        p "Mwah ha ha ha ha!"
-                        jump credits
-                    "Offer to make him an advisor.":
-                        p "While I admire your patient ruthlessness, you are not fit to be my King. You may be an advisor."
-                        b "Oh ho ho, I don't think so. A pity. If you change your mind, I am going to go raze the kingdom of [k_name]. You'll be able to find me on the throne by tomorrow afternoon."
-                        "In a whoosh of wings, he was gone."
-                        p "..."
-                        c "...Princess? Can I have my wand back, now?"
-                        p "Mwah ha ha ha... he left behind the Scepter of Lavendorm! The fool! Moronious!"
-                        c "Y-yes your highness?"
-                        p "Shall we attack that evil dragon?"
-                        c "We shall!"
-                        # TODO lightning crackles.
-                        # TODO: jump to a Cyril ending?
-                    "Give Cyril back his wand.":
-                        p "That wasn't our agreement, Balrung. I detest betrayal."
-                        "As I moved closer, I stood in front of Cyril, handing him back his wand behind my back."
-                        b "A pity. Well, if you change your mind, I'll be-"
-                        jump cyril_attack
-            "Try to help Cyril.":
-                p "Balrung, it was rather foolish of you to trust me so easily."
-                "As I talked, I scanned the room. Where was the scepter? Balrung had used it earlier to break the spell, but I didn't see it in his hands- er, talons."
-                b "Oh, Princess, Princess. I let you win a few games of Queens and Pawns, and you imagine yourself some kind of master strategist. I don't need {b}you{/b} in order to claim your kingdom. It would have smoothed things over with the nobles, that's true, but your presence is certainly not necessary to my plans."
-                p "My presence is certainly required for {b}MY{/b} plans! Moronious! Your princess is in danger!"
-                "Balrung reared back, readying an attack."
-                jump cyril_attack
-                

@@ -227,7 +227,6 @@ label niir4:
     show niir neutral at basicfade
     n "Perhapssss not.  But I do not promise chassste.  That is the mage’s game."
     show niir smirk at center,come_closer, basicfade
-    #todo show embrace somehow
     p "Yes, that was... That'll do. You may remove your hands now."
     show niir determined at midright,reset_zoom, basicfade
     show niir mischief at basicfade
@@ -272,8 +271,6 @@ label niir4:
     p "Niir!  Niir!"
     p "I will never understand that dragon!  Not that dragons are {i}ever{/i} to be understood."
     p "Used, yes.  But not understood."
-    p "But still...  "
-    extend "I wish I knew what that infernal dragon meant."
     return
         
     
