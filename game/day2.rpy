@@ -201,7 +201,8 @@ label dinner_party:
     show cyril hat concerned blush at basicfade
     c "That wasn’t- it wasn’t entirely like that.  You must believe me Princess."
     show cyril neutral hat at left
-    p "I don’t care what you thought.  Your future Queen hasn’t the time to consider such things.  What a waste.  No, I thought it would be nice for us to...{i}talk{/i} together about matters of the kingdom."
+    p "I don’t care what you thought.  Your future Queen hasn’t the time to consider such things.  What a waste. "
+    p "No, I thought it would be nice for us to...{i}talk{/i} together about matters of the kingdom."
     p "{b}Food{/b}, Moronious!"
     show cyril hat neutral at basicfade
     c "Right on it!  I apologize your majesty."
@@ -258,7 +259,8 @@ label dinner_party:
     show balrung determined at basicfade
     b "That would be like the blind man describing a sunset in your case, Niir. No, let the Princess speak."
     show cyril hat angry at basicfade
-    c "I warn you, speaking of things like this never go well.  My, word might even get out that we’re {i}conspiring{/i}!  Conspiring, Princess!  I think it would be best if we leave this alone for the present moment."
+    c "I warn you, speaking of things like this never go well.  "
+    c "My, word might even get out that we’re {i}conspiring{/i}!  Conspiring, Princess!  I think it would be best if we leave this alone for the present moment."
     p "Charges of conspiracy only matter if we lose. No one charges Queens with conspiracy!"
     show cyril hat concerned eyes closed at basicfade
     c "It’s not the charge itself.  It’s the principle.  I would rather not take part in such a discussion."
@@ -311,7 +313,8 @@ label dinner_party:
             p "She's been trying to convince the United Council to sign new legislation forbidding dragons from holding titles." 
             show balrung smirk at basicfade
             b "Are there many dragons attempting to hold titles?"
-            p "Oh, yes, it's quite the craze to have a dragon consort. Princess Dianthus from two kingdoms over wanted to make hers King-Consort, but the United Council hasn't acquiesed yet."
+            p "Oh, yes, it's quite the craze to have a dragon consort. "
+            p "Princess Dianthus from two kingdoms over wanted to make hers King-Consort, but the United Council hasn't acquiesed yet."
             show balrung determined at basicfade
             b "And what do you think they should do?"
             p "Human, dragon, I don't really care, as long as I'm the Queen!"

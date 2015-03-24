@@ -41,9 +41,11 @@ label sweet:
     c "Erm, wait a moment... it's you.  Princess [p_name]!  I almost didn't recognize you!  Your Highness!  Did you find someone to relieve me?  Is that why you're here?"
     show cyril hat smile at basicfade
     c "I did so know this day would come."
-    p smile "Yes, Moronious. Yes, I am here to relieve you. It’s quite a demotion for me, but well, one must perform one’s royal duties. So if you’ll just show me around, then you can be on your way and leave these... dragons in my care."
+    p smile "Yes, Moronious. Yes, I am here to relieve you. It’s quite a demotion for me, but well, one must perform one’s royal duties. "
+    p smile "So if you’ll just show me around, then you can be on your way and leave these... dragons in my care."
     show cyril hat laugh at basicfade
-    c "I can't tell you how happy I am to hear that!  I didn't think this day will come.  I must send word- oh!  I just need the royal seal from you.  Have you spoken with the council of mages?  Is everything in order?"
+    c "I can't tell you how happy I am to hear that!  I didn't think this day will come.  I must send word- oh!  "
+    c "I just need the royal seal from you.  Have you spoken with the council of mages?  Is everything in order?"
     p surprised "Oh, how dreadful! They didn’t send me with it! They must have assumed that any person of intelligence would immediately see my royal person and know to do whatever I say."
     show cyril hat concerned at basicfade
     c "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
@@ -78,7 +80,8 @@ label truth:
     show cyril hat neutral at center
     with moveinright
     show cyril hat smile blush at basicfade
-    c "So, this is [castle_name].  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but I am pretty good with heating spells for the water."
+    c "So, this is [castle_name].  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  "
+    c "I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but I am pretty good with heating spells for the water."
     p angry "Yes, yes. Now, what can you tell me about the other... residents of this place?"
     show cyril hat concerned at basicfade
     c "It is just me.  Well, and the dragons.  But they are here for their punishment.  Kidnapping ladies is not a very delightful business I do say.  "
@@ -88,7 +91,8 @@ label truth:
         "Make up something flattering.":
             $ cyril_affection += 1
             p laugh eyes closed "Believe it or not, I was thinking about... you."
-            p smile "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
+            p smile "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? "
+            p smile "I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
             show cyril hat smile blush at basicfade
             c "Oh erm... you don't say..."
             show cyril hat smile blush eyes closed at basicfade
@@ -195,7 +199,8 @@ label meet_dragons:
     show cyril hat concerned at basicfade
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well, that's not important, and I most certainly did not cry for days about it."
     show cyril hat neutral at basicfade
-    c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He looks at every female that way.  It is a good thing that I am not a female sometimes because I don't know what I'd do if he talked to me like that!"
+    c "The dragons are Niir and Balrung?  Niir, well, don't be surprised if he looks at you like he might eat you for dinner.  He looks at every female that way.  "
+    c "It is a good thing that I am not a female sometimes because I don't know what I'd do if he talked to me like that!"
     show cyril hat angry at basicfade
     c "He was kidnapping ladies in the marketplace, just for fun, apparently.  Causing all sorts of trouble until he had to be locked away."
     show cyril hat concerned at basicfade
@@ -212,7 +217,8 @@ label meet_dragons:
     show niir neutral at quarterright with moveinright
     n "Cccyri the Chassssste.  I sssssee that you have brought a lady friend.  Delic-delightful."
     show cyril hat concerned blush at basicfade
-    c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir.  I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
+    c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir.  "
+    c "I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu dragon_chat:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
@@ -296,7 +302,8 @@ label meet_dragons:
             c "I'm not even sure if I'm remembering it right.  But these two have made this place home for a long time."
             p laugh "You must have considerable magical powers, if you are guarding them here all on your own."
             show cyril hat smile blush at basicfade
-            c "Oh, well I wouldn’t say.  I mean people have said.  Well, my mother.  Once.  But yes, I suppose someone has to do the job and that someone is me.  It’s quite a funny story really, I just fell into it.  "
+            c "Oh, well I wouldn’t say.  I mean people have said.  Well, my mother.  Once.  But yes, I suppose someone has to do the job and that someone is me. "
+            c "It’s quite a funny story really, I just fell into it.  "
             show cyril hat neutral at basicfade
             c "I was at the council and they were all concerned about the legacy of my master and they were all shouting over one another and didn’t even realize I was in the room.  "
             c "And I was telling them all that they needed someone new to guard these pesky dragons..."
