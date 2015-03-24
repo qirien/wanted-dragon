@@ -21,10 +21,10 @@ init -1:
     # CHARACTERS
     #
 
-    define p = DynamicCharacter("p_name", image="princess", color="#3390a4")
-    define b = Character('Balrug', image="balrung", color="#a41c1c")
-    define c = Character('Cyril Merlonious', image="cyril", color="#7b1f43")
-    define n = Character('Niir', image="niir", color="#fec54d")
+    define p = DynamicCharacter("p_name", show_two_window=True, show_side_image= Image("sprites/princess.png"))
+    define b = Character('Balrug', image="balrung", show_two_window=True)
+    define c = Character('Cyril Merlonious', image="cyril", show_two_window=True)
+    define n = Character('Niir', image="niir", show_two_window=True)
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)
     define m_write = Character("Magnolia", kind=nvl)
@@ -73,7 +73,7 @@ init -1:
     #
     # SPRITES
     #
-    image side princess = Placeholder("girl")
+    image side princess = "sprites/princess"
     # Automatically import all sprites in the 'sprites' subdirectory 
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
 init python:
