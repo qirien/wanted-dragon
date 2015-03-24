@@ -382,7 +382,7 @@ label niir5:
     p "If only you were free!"
     "I turned my face up to him and whispered,"
     p "Now kiss me!"
-    show niir frown at basicfade
+    show niir frown blush at basicfade
     n "..."
     "What was he hesitating for? Obviously he wanted to; it was practically all he could talk about."
     show niir determined at basicfade

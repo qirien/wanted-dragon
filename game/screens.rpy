@@ -53,10 +53,10 @@ screen say(who, what, side_image=None, two_window=False):
 
     # If there's a side image, display it above the text.
     if side_image:
-        add side_image xpos 66 ypos 530
-        add "GUI/side frame.png" xpos 62 ypos 489
+        add side_image xpos 62 ypos 489
     else:
-        add "GUI/side.png" xpos 62 ypos 489
+        add SideImage() xpos 66 ypos 530
+        add "GUI/side frame.png" xpos 62 ypos 489
 
     # Use the quick menu.
     use quick_menu

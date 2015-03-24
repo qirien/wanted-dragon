@@ -97,10 +97,12 @@ label niir8:
     menu:
         "Women, and rabbits" if (niir_affection >= HIGH_AFFECTION):
             p "He pretends to enjoy seducing women, but the truth is he's never even kissed one. As for meals, rabbits would be his prey of choice." 
+            show niir frown blush at basicfade
             n "..."
             show cyril hat blush smile at basicfade
             c "Is that so?"
-            n "Liessss, Cccyril the chaste.  Liesss."
+            show niir angry at basicfade
+            n "Liessss, Cccyril the Chaste.  Liesss."
             c "No, I’d have to side with the princess on this one.  Absolutely correct."
             n "..."
             $ quiz_questions += 1
@@ -274,15 +276,16 @@ label niir8:
 
             "Kiss me.":
                 p "Hmph. Very well then. Kiss me. It'll make him leave us alone."
+                show niir frown blush at basicfade
                 n "Princessss, I-"
                 p "No words! Just kissing!"
                 n "..."
                 n "I sssshould not want to ssstart sssomething I cannot ssstop, princesss."
-                p "Oh, how very considerate of you. Do you trust yourself so little? Fortunately, I trust you more."
+                p "Do you trust yourself so little? Fortunately, I trust you more."
                 n "How sssstupid of you."
                 show niir neutral at come_closer
                 "I seized his ridiculous ears and brought our lips together.  He struggled a little at first but I made sure to put a stop to that by putting a foot in his shin."
-                "He gingerly put his hands on my hips, then held me tighter as I ran my fingers through his hair. Not bad, for his first kiss."
+                "He gingerly put his hands on my hips, then held me tighter as I ran my fingers through his hair. Not bad, for his first kiss." #TODO: this sounds off to me.
                 p "Is he gone yet?"
                 n "..."
                 p "I’m talking to you, dragon.  Is.  He. Gone?"

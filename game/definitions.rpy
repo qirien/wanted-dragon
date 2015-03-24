@@ -21,10 +21,12 @@ init -1:
     #
     # CHARACTERS
     #
-    define p = DynamicCharacter("p_name", show_two_window=True, show_side_image="princess")
-    define b = Character('Balrug', image="balrung", show_two_window=True)
-    define c = Character('Cyril', image="cyril", show_two_window=True)
-    define n = Character('Niir', image="niir", show_two_window=True)
+    define p = DynamicCharacter("p_name", image="princess", show_two_window=True)
+    define b = Character('Balrug', image="balrung", show_two_window=True, show_side_image="GUI/side.png")
+    define c = Character('Cyril', image="cyril", show_two_window=True, show_side_image="GUI/side.png")
+    define n = Character('Niir', image="niir", show_two_window=True, show_side_image="GUI/side.png")
+    define narrator = Character(' ', show_two_window=True, show_side_image="GUI/side.png")
+    
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)
     define m_write = Character("Magnolia", kind=nvl)
@@ -73,9 +75,20 @@ init -1:
     #
     # SPRITES
     #
+    # For some reason, side images don't automatically import.  
+    # Maybe they would if they were side princess whatever (instead of princess side whatever), but I'm just defining them manually
+    image side princess = "sprites/princess neutral.png"
+    image side princess angry = "sprites/princess angry.png"
+    image side princess laugh = "sprites/princess laugh.png"
+    image side princess laugh eyes closed = "sprites/princess laugh eyes closed.png"
+    image side princess neutral = "sprites/princess neutral.png"
+    image side princess shout = "sprites/princess shout.png"
+    image side princess smile = "sprites/princess smile.png"
+    image side princess surprised = "sprites/princess surprised.png"
+    image side princess tsk = "sprites/princess tsk.png"
+    
     # Automatically import all sprites in the 'sprites' subdirectory 
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
-    image princess = "sprites/princess neutral.png"
 init python:
     import os
     for fname in os.listdir(config.gamedir + '/sprites'):
@@ -149,7 +162,6 @@ init -1:
     #
     # MUSIC
     # 
-    # TODO: normalize audio
     define balrung_theme = "music/Cello.mp3" 
     define niir_theme = "music/OniValse.mp3"
     define evil_theme = "music/Malos.mp3"

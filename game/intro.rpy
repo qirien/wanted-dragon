@@ -14,7 +14,7 @@ label intro:
     play music princess_theme
     play sound "sfx/rain.ogg" loop
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
-    p "But first... I’ll have to deal with the mage left to guard this place."
+    p angry "But first... I’ll have to deal with the mage left to guard this place."
     show cyril hat neutral at center with moveinright
     "{b}This{/b} is the mage in charge?! He's barely more than a child!"
     "...This is exactly the kind of inefficiency I intend to remedy when I am queen!"
@@ -22,11 +22,7 @@ label intro:
     c "Luxis Contigo! Luxia Contego? Conmigo?"
     show cyril hat surprised at basicfade
     c "I knew I didn't get that spell right!  If only I could remember how that went.  Luxing Contegus!  hmmm... I'm not even sure that I'm using proper words."
-#    p "My name is..."
-#    $ p_name = renpy.input("What is your name?", "Chrysandra", length=30)
-#    p "I am Princess [p_name]."
-#    c "How can I help you, Princess [p_name]?"
-    
+
     menu:
         "Play it sweet":
             jump sweet
@@ -38,20 +34,20 @@ label intro:
             
 label sweet:
     $ cyril_affection += 1
-    p "Oh hello! You must be in charge here. How lovely to make your acquaintance, Mr...?"
+    p laugh eyes closed "Oh hello! You must be in charge here. How lovely to make your acquaintance, Mr...?"
     show cyril hat smile at basicfade
     c "Merlonious.  Cyril Merlonious.  At least, the last time somebody called me it.  Which has been a while come to think of it.  "
     show cyril hat surprised at basicfade
     c "Erm, wait a moment... it's you.  Princess [p_name]!  I almost didn't recognize you!  Your Highness!  Did you find someone to relieve me?  Is that why you're here?"
     show cyril hat smile at basicfade
     c "I did so know this day would come."
-    p "Yes, Moronious. Yes, I am here to relieve you. It’s quite a demotion for me, but well, one must perform one’s royal duties. So if you’ll just show me around, then you can be on your way and leave these... dragons in my care."
+    p smile "Yes, Moronious. Yes, I am here to relieve you. It’s quite a demotion for me, but well, one must perform one’s royal duties. So if you’ll just show me around, then you can be on your way and leave these... dragons in my care."
     show cyril hat laugh at basicfade
     c "I can't tell you how happy I am to hear that!  I didn't think this day will come.  I must send word- oh!  I just need the royal seal from you.  Have you spoken with the council of mages?  Is everything in order?"
-    p "Oh, how dreadful! They didn’t send me with it! They must have assumed that any person of intelligence would immediately see my royal person and know to do whatever I say."
+    p surprised "Oh, how dreadful! They didn’t send me with it! They must have assumed that any person of intelligence would immediately see my royal person and know to do whatever I say."
     show cyril hat concerned at basicfade
     c "Of course.  But it is the custom, and you know what they say about rules being meant to be followed and all that gobbledy-spook that I think I remembered once.  Ah, well."
-    p "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
+    p smile "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     show cyril hat smile at basicfade
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
     show cyril at exit_left
@@ -66,13 +62,15 @@ label sweet:
     jump room_intro
 
 label truth:
-    p "I’m here to retake my rightful throne. Assist me, and be rewarded. Hinder me, and feel my wrath."
+    p angry "I’m here to retake my rightful throne. Assist me, and be rewarded. Hinder me, and feel my wrath."
     show cyril hat surprised at basicfade
-    c "Oh, it's you.  Princess [p_name]!  I almost didn't recognize you!  Your Highness!  I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble first-star mage, could help you." 
-    p "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
+    c "Oh, it's you.  Princess [p_name]!  I almost didn't recognize you!  Your Highness!"
+    c "I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble first-star mage, could help you." 
+    p shout "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
     show cyril hat concerned blush at basicfade
-    c "Ah, erm, yes of course your highness!  A bath is coming right up!  And a room.  Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
-    p "That is acceptable. You may lead me there now."
+    c "Ah, erm, yes of course your highness!  A bath is coming right up!  And a room."
+    c "Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
+    p neutral "That is acceptable. You may lead me there now."
     hide cyril
     with moveoutleft
     stop sound fadeout 2.0
@@ -81,7 +79,7 @@ label truth:
     with moveinright
     show cyril hat smile blush at basicfade
     c "So, this is [castle_name].  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but I am pretty good with heating spells for the water."
-    p "Yes, yes. Now, what can you tell me about the other... residents of this place?"
+    p angry "Yes, yes. Now, what can you tell me about the other... residents of this place?"
     show cyril hat concerned at basicfade
     c "It is just me.  Well, and the dragons.  But they are here for their punishment.  Kidnapping ladies is not a very delightful business I do say.  "
     show cyril hat neutral at basicfade
@@ -89,23 +87,23 @@ label truth:
     menu:
         "Make up something flattering.":
             $ cyril_affection += 1
-            p "Believe it or not, I was thinking about... you."
-            p "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
+            p laugh eyes closed "Believe it or not, I was thinking about... you."
+            p smile "Doesn’t it get terribly lonely out here? Don’t you often find yourself wishing for companionship? I try to meet the needs of all the citizens of our realm, as part of my royal duties. Surely there’s something I could help you with..."
             show cyril hat smile blush at basicfade
             c "Oh erm... you don't say..."
             show cyril hat smile blush eyes closed at basicfade
             c "I guess I... I mean as much as anyone... I mean... Oh.  It's a very thoughtful offer from you, surely."
-            p "I’m certain we could help each other. But for now...is this my new room?"
+            p laugh "I’m certain we could help each other. But for now...is this my new room?"
             show cyril hat concerned blush at center
             c "Yes, it's my- your room, now."
             jump room_intro
         "Tell the truth.":
-            p "Unfortunately, I find myself in the unenviable position of needing assistance from others to claim the crown that has been wrenched from my rightful hands."
+            p tsk "Unfortunately, I find myself in the unenviable position of needing assistance from others to claim the crown that has been wrenched from my rightful hands."
             show cyril hat concerned at basicfade
             c "Oh, that is rather disappointing.  But as I believe, you were never in line for the throne?  Is that right?  It was that other girl?  That sister of yours?  "
             show cyril hat concerned blush at basicfade
             c "I do hope I got my facts right.  I'm incredibly mixed up these days.  Don't know my right from my left and my left from my right."
-            p "Clearly. You’d best leave the facts to me and concentrate on doing my bidding."
+            p angry "Clearly. You’d best leave the facts to me and concentrate on doing my bidding."
             show cyril hat concerned blush eyes closed at basicfade
             c "I am sorry to have offended you Princess; I will leave it to you.  But, we've arrived at my room- er, your room. Is this to your liking?"
             jump room_intro
@@ -116,15 +114,15 @@ label room_intro:
     scene bg bedroom dusk with fade
     show cyril hat neutral at midright
     with moveinright
-    p "{b}This{/b} is the best room in the castle?"    
+    p tsk "{b}This{/b} is the best room in the castle?"    
     show cyril hat concerned at basicfade
     c "It is.  Well, I’ve tried to make it as comfortable as possible.  I have a few keepsakes from home in it and my frilly rug which does keep it warm in the middle of the cold snap.  "
     show cyril hat neutral at basicfade
     c "And it is close to the dragons so I can regularly keep watch over them, as I am supposed to.  Would you like to be somewhere further away?  This is a large castle."
-    p "No, no, this will do. You may leave me for now, but I may need your assistance later."
+    p angry "No, no, this will do. You may leave me for now, but I may need your assistance later."
     show cyril hat concerned blush at basicfade
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean my highness!  Your highness.  Because you are most certainly not mine... errr... I will see to that bath."
-    p "..."
+    p neutral "..."
     #TODO: SHOWER?
     scene black with fade
     scene bg bedroom dusk with fade
@@ -134,11 +132,11 @@ label room_intro:
     menu:
         "Call for Cyril.":
             scene bg corridor with fade
-            p "Mage! Moronious! I'm ready for you now!"
+            p shout "Mage! Moronious! I'm ready for you now!"
             show cyril hat neutral at center with moveinright
             show cyril hat surprised at basicfade
             c "Ready for me to what?"
-            p "I wish to speak to the dragons."
+            p neutral "I wish to speak to the dragons."
             show cyril hat concerned blush at basicfade
             c "If-if you wish me to take you there, I will, though I'm not sure what you'd want with them."
             jump meet_dragons            
@@ -147,7 +145,7 @@ label room_intro:
 
 label ignore:
     $ cyril_insanity += 1
-    p "..."
+    p neutral "..."
     show cyril hat concerned at basicfade
     c "Oh yes.  Oh, of course, there is an apparition in front of me. Oh Cyril.  You’ve finally done it.  You’ve gone completely bonkers."
     "He thinks I’m a ghost?! What a strange man... still, I can use that to my advantage and slip past him."
@@ -185,7 +183,7 @@ label explore:
     p "I do not require you at the moment. Leave me alone."
     show cyril hat concerned blush at basicfade
     c "Oh, I don't think I should. This castle can be quite confusing, and there's no servants or anyone to help you. Please, I'll show you around."
-    p "...Very well. You may start with the dragons."
+    p angry "...Very well. You may start with the dragons."
     
 label meet_dragons:
     hide cyril
@@ -202,7 +200,7 @@ label meet_dragons:
     c "He was kidnapping ladies in the marketplace, just for fun, apparently.  Causing all sorts of trouble until he had to be locked away."
     show cyril hat concerned at basicfade
     c "Balrung, he is much more courteous but also rather stubborn.  He will try to make you see things his way, and not by the most honest methods."
-    p "Oh my, that sounds dreadful!"
+    p surprised "Oh my, that sounds dreadful!"
     "And yet also intriguing."
     scene bg dungeon with fade
     show cyril hat neutral at quarterleft
@@ -218,7 +216,7 @@ label meet_dragons:
     menu dragon_chat:
         "Allude to your purpose in veiled terms.":
             $ balrung_affection += 1
-            p "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
+            p neutral "I, Princess [p_name], am here in the hopes that one day, old enemies may become allies who work together to remedy the injustices of the realm."
             show niir smirk at basicfade
             n "I would rather work on the injustices of that unflattering dress of yours.  How about you come a little closssser, so that I can see it more fully." 
             show balrung angry at basicfade
@@ -230,7 +228,7 @@ label meet_dragons:
             
         "Pretend you are just checking on things.":
             $ cyril_affection += 1
-            p "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
+            p smile "I’m Princess [p_name]. I just...wanted to see how things were going here. You aren’t being mistreated, are you?"
             show balrung angry at basicfade
             b "Would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human appearance is not our normal state, you know."
             show cyril hat concerned at basicfade
@@ -243,33 +241,33 @@ label meet_dragons:
     if (cyril_insanity > 0):
         show cyril hat surprised at basicfade
         c "Sooo...wait, you're not an apparition? You're real? Why didn't you say something to me earlier?"
-        p "I am not interested in unnecessary conversation."
+        p angry "I am not interested in unnecessary conversation."
         show balrung smirk at basicfade
         b "What {b}are{/b} you interested in, then?"
     # Whom to talk to?
     menu:
         "Address Niir.":
-            p "Niir...what an interesting name. Tell me about yourself."
+            p laugh "Niir...what an interesting name. Tell me about yourself."
             show niir concerned at basicfade
             n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense of amusement or...play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
-            p "Tell me what it is, and then I shall decide."
+            p neutral "Tell me what it is, and then I shall decide."
             show niir mischief at basicfade
             n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  Are you afrrrraid of heights?  Perhaps you would like see some of the ssssights of the cassstle?"
-            p "What did you have in mind?"
+            p surprised "What did you have in mind?"
             show niir smirk at basicfade
             n "That, is my little sssecret.  You will have to help me leave to find out."
             
             menu:
                 "\"I shall consider your... offer, Niir.\"":
                     $ niir_affection += 1
-                    p "I shall consider your... offer, Niir."
+                    p smile "I shall consider your... offer, Niir."
                     show niir mischief at center,come_closer
                     n "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
                     show niir at quarterright, reset_zoom
-                    p "I can acquaint myself with you well enough from here."
+                    p angry "I can acquaint myself with you well enough from here."
                 
                 "\"Not interested.\"":
-                    p "Not interested."
+                    p tsk "Not interested."
                     show niir smirk at basicfade
                     n "Pity.  I could have a lot of ussse for someone like you as my plaything."
                     show balrung determined at basicfade
@@ -279,7 +277,7 @@ label meet_dragons:
 
         "Address Balrung.":
             $ balrung_affection += 1
-            p "Balrung...how long have you been here?"
+            p laugh "Balrung...how long have you been here?"
             show balrung neutral at basicfade
             b "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
             show balrung smile at basicfade
@@ -289,12 +287,12 @@ label meet_dragons:
         
         "Address Cyril.":
             $ cyril_affection += 1
-            p "It’s just these two? Aren’t there any other dragons here?"
+            p angry "It’s just these two? Aren’t there any other dragons here?"
             show cyril hat neutral at basicfade
             c "Well, as I said.  Most of the other dragons have moved on.  Actually, come to think of it, I've forgotten when the last one left.  Findol? Firgol? And he left with a young lady?  "
             show cyril hat concerned at basicfade
             c "I'm not even sure if I'm remembering it right.  But these two have made this place home for a long time."
-            p "You must have considerable magical powers, if you are guarding them here all on your own."
+            p laugh "You must have considerable magical powers, if you are guarding them here all on your own."
             show cyril hat smile blush at basicfade
             c "Oh, well I wouldn’t say.  I mean people have said.  Well, my mother.  Once.  But yes, I suppose someone has to do the job and that someone is me.  It’s quite a funny story really, I just fell into it.  "
             show cyril hat neutral at basicfade
@@ -305,21 +303,21 @@ label meet_dragons:
 
     show balrung smile at basicfade
     b "Yes, yes...But, Princess, tell us about yourself. How is the royal family?"
-    p "My...family?"
+    p surprised "My...family?"
     show balrung smirk at basicfade
     b "Your father, the king, is he well?"    
-    p "Yes, very well, thank you. Do- do you know him?"
+    p neutral "Yes, very well, thank you. Do- do you know him?"
     show balrung smile at basicfade
     b "I met him once, before my sojourn here. He seemed capable, if a bit naïve. And the Queen?"
-    p "My mother died several months ago."
+    p angry "My mother died several months ago."
     show balrung neutral at basicfade
     b "I'm terribly sorry; how rude of me to bring it up! Please accept my apologies, Princess."
-    p "You didn't know."
+    p neutral "You didn't know."
     show cyril hat concerned blush at basicfade
     c "B-but, he {b}did{/b} know, I mentioned it several weeks ago? I think? Or maybe I just thought of mentioning it? Or maybe I just thought about thinking about mentioning it?"
     show balrung angry at basicfade
     b "I don't think so, Merlonious."
-    p "Anyway, I am finished here...for now."
+    p neutral "Anyway, I am finished here...for now."
     show niir mischief at basicfade
     n "Ssseee you later, Prrrrincessss...."
     hide cyril hat at basicfade with moveoutleft
@@ -333,20 +331,20 @@ label meet_dragons:
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
     show cyril hat concerned eyes closed at basicfade
     c "I don't want to dwell on it but there have been some times where I have just felt like giving up!"
-    p "You really are quite pathetic, aren't you?"
+    p laugh eyes closed "You really are quite pathetic, aren't you?"
     show cyril hat surprised at basicfade
     c "Ex-excuse me?"
-    p "I mean, no one knows who you are.  You're guarding this tower with no reward."
-    p "You're completely pathetic."
+    p laugh "I mean, no one knows who you are.  You're guarding this tower with no reward."
+    p smile "You're completely pathetic."
     show cyril hat concerned blush at basicfade
     c "I-I... I assure you that I'm not."
     show cyril hat concerned eyes closed at basicfade
     c "Surely, some people have said some things akin to that, but they d-do not know."
-    p "You assure me?  How inspiring.  So I should believe you then?"
-    p "Is it not true that you cannot do a thing here?"
+    p angry "You assure me?  How inspiring.  So I should believe you then?"
+    p neutral "Is it not true that you cannot do a thing here?"
     show cyril hat concerned  at basicfade
     c "I am loyal.  I did not have to take up post here."
-    p "And where has your loyalty got you?  Hmmm?"
+    p angry "And where has your loyalty got you?  Hmmm?"
     show cyril hat angry at basicfade
     "His eyes flashed with uncharacteristic anger."
     "What do you know?  There is something boiling under that bumbling facade."
@@ -354,25 +352,25 @@ label meet_dragons:
     "And I've never had so much fun."
     show cyril hat surprised at basicfade
     c "What are you doing, your highness?"
-    p "Taking your wand, of course."
-    p "You don't really need it, do you?"
+    p laugh "Taking your wand, of course."
+    p laugh eyes closed "You don't really need it, do you?"
     show cyril hat concerned blush eyes closed at basicfade
     c "I do... need it.  Most certainly."
-    p "Beg me."
+    p shout "Beg me."
     show cyril hat concerned blush at basicfade
     c "Um- pardon?"
-    p "Beg me for it."
+    p laugh "Beg me for it."
     "He is not proving himself in the slightest."
     "But still it is amusing... perhaps he could make a good {i}slave{/i} one day..."
     show cyril hat surprised at basicfade
     c "I will not."
-    p "Of course you will, you're pathetic and I can do whatever I lik-"
+    p neutral "Of course you will, you're pathetic and I can do whatever I lik-"
     play sound "sfx/electricity.ogg"
     show cyril hat angry with magic_flash
     c "You {b}will not{/b}."
     "Is that lightning?"
     "Cyril the Chaste has {i}actually{/i} become scary."
-    p "Fine.  Have your wand."
+    p smile "Fine.  Have your wand."
     "Perhaps he is worth more than a slave after all."
     stop sound fadeout 2.0
     show cyril hat smile blush eyes closed at basicfade
@@ -389,10 +387,10 @@ label meet_dragons:
             jump joinmage 
 
 label broughtfood:
-    p "I am tired. You may bring hot food to my room. That will be all, Moronious."
+    p neutral "I am tired. You may bring hot food to my room. That will be all, Moronious."
     show cyril hat concerned blush eyes closed at basicfade
     c "I-It's Merlonious. You could call me Cyril? No one does, but you could..."
-    p "Yes, yes, I said \"that will be all\"!"
+    p angry "Yes, yes, I said \"that will be all\"!"
     show cyril hat smile blush at basicfade
     c "Right! Food. I'll bring it later. Bye!"
     hide cyril with moveoutleft
@@ -411,13 +409,13 @@ label joinmage:
     c "I mean I'm the one who's glad."
     show cyril hat concerned blush at basicfade
     c "I'm terribly sorry, I don't seem to be making much sense."
-    p "Your name- it's Moronious, isn't it?"
+    p laugh "Your name- it's Moronious, isn't it?"
     show cyril hat neutral at basicfade
     c "Merlonious. Cyril Merlonious."
-    p "Have you ever thought of changing your name to Moronious?"
+    p surprised "Have you ever thought of changing your name to Moronious?"
     show cyril hat surprised at basicfade
     c "Why would I do something like that?"
-    p "Why not?"
+    p laugh eyes closed "Why not?"
     show cyril hat neutral at basicfade
     c "Yes, erm.  Good point."
     show cyril hat smile at basicfade
@@ -427,17 +425,17 @@ label joinmage:
     show cyril hat neutral at basicfade
     c "So I'd better just do what I can do. {font=fonts/ankecallig-fg.ttf}Vittus Cottura{/font}!"
     show cyril hat neutral with magic_flash
-    p "..."
+    p tsk "..."
     show cyril hat smile at basicfade
     c "I hope it is to your liking."
     show cyril hat smile blush at basicfade
     c "It's not much but I-"
-    p "Silence."
+    p shout "Silence."
     show cyril hat concerned blush at basicfade
     c "Ah, yes.  I will be entirely, completely-"
     show cyril hat concerned blush eyes closed at basicfade
     c "Silent."
-    p "...That's better."
+    p neutral "...That's better."
     show cyril hat concerned at basicfade
     c "..."
     show cyril hat smile at basicfade
@@ -450,9 +448,9 @@ label joinmage:
     c "But never mind that."
     show cyril hat smile blush at basicfade
     c "Are you enjoying your meal?"
-    p "You do know that I am a princess, correct?"
-    p "And in what way did you think that this was worthy of a princess?"
+    p angry "You do know that I am a princess, correct?"
+    p tsk "And in what way did you think that this was worthy of a princess?"
     show cyril hat concerned blush at basicfade
     c "I... I'm not quite sure."
-    p "I am sure you will do better next time."
+    p neutral "I am sure you will do better next time."
     return
