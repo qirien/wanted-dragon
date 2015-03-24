@@ -96,7 +96,7 @@ label truth:
             show cyril hat smile blush eyes closed at basicfade
             c "I guess I... I mean as much as anyone... I mean... Oh.  It's a very thoughtful offer from you, surely."
             p "I’m certain we could help each other. But for now...is this my new room?"
-            show cyril hat concerned blush at basicfade
+            show cyril hat concerned blush at center
             c "Yes, it's my- your room, now."
             jump room_intro
         "Tell the truth.":

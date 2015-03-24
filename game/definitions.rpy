@@ -24,7 +24,7 @@ init -1:
 
     define p = DynamicCharacter("p_name", image="princess", color="#3390a4")
     define b = Character('Balrug', image="balrung", color="#a41c1c")
-    define c = Character('Cyril Merlonious', image="cyril", color="#7b1f43")
+    define c = Character('Cyril', image="cyril", color="#7b1f43")
     define n = Character('Niir', image="niir", color="#fec54d")
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)

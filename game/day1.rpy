@@ -117,6 +117,7 @@ label library1:
     play sound "sfx/flippage.ogg"
     "A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful; I don't need that."
     "This one is quite curious.  This part here."
+    stop sound fadeout 1.0
     book "{size=50}The Scepter of Lavendorm{/size}"
     book "Though it has not been located in centuries, this powerful artifact is rumored to reside in [castle_name].\n"
     book "Some claim it has the power to break enchantments, while others point to its use by royal families as a symbol of authority, and perhaps protection from assassination.\n"
