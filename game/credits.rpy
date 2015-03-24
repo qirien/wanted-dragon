@@ -20,7 +20,7 @@ label credits:
     $ renpy.pause(2.0)
     
     
-    show text "Sounds\n\nBy Freesound.org users wjl, Kodack, ihitokage, 211redman112, Mixedupmoviestuff, D W, kbnevel"
+    show text "Sounds\n\nBy Freesound.org users wjl, Kodack, ihitokage, 211redman112, Mixedupmoviestuff, D W, kbnevel, DJ Chronos, homejrande"
     $ renpy.pause(2.0)
 
     scene black with fade

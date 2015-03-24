@@ -135,9 +135,9 @@ This music is licensed under the Creative Commons Attribution-NonCommercial-Shar
 All modifications are released under the same license as the original sound files.
 
 ==== Public Domain
+electricity.ogg by wjl
 flippage.ogg from Freesound.org by Kodack, <http://www.freesound.org/people/Kodack/sounds/256475/>
-electricity.ogg from Freesound.org by ihitokage, <http://www.freesound.org/people/ihitokage/sounds/187363/>
-fireball.ogg from Freesound.org by ReadeOnly, <http://www.freesound.org/people/ReadeOnly/sounds/186932/>
+fireball.ogg from Freesound.org by wjl, <http://www.freesound.org/people/wjl/sounds/267887/>
 boiling.ogg from Freesound.org by 211redman112, <http://www.freesound.org/people/211redman112/sounds/145797/>
 stab.ogg from Freesound.org by Mixedupmoviestuff, <http://www.freesound.org/people/Mixedupmoviestuff/sounds/179222/>
 rip.ogg from Freesound.org by kbnevel, <http://www.freesound.org/people/kbnevel/sounds/119862/>
@@ -145,6 +145,10 @@ rip.ogg from Freesound.org by kbnevel, <http://www.freesound.org/people/kbnevel/
 ==== CC-BY
 lightning.ogg from Freesound.org by NoiseNoir, <http://www.freesound.org/people/NoiseNoir/sounds/238302/>
 rain.ogg from Freesound.org by D W, <http://www.freesound.org/people/D%20W/sounds/136971/>
+wings.ogg based off sounds from Freesound.org by DJ Chronos, <http://www.freesound.org/people/DJ%20Chronos/packs/5010/>
+
+==== CC-BY-NC
+crash.ogg from Freesound.org by homejrande, <http://www.freesound.org/people/homejrande/sounds/17369/>
 
 == Game Engine
 

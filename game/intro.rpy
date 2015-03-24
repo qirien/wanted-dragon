@@ -224,7 +224,8 @@ label meet_dragons:
             show cyril hat angry at basicfade
             c "Now, now.  Behave, you two."
             show cyril hat concerned at basicfade
-            c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
+            c "They are here for a reason, Princess - they have behaved badly. They can leave once they find love and find reform."
+            c "True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             
         "Pretend you are just checking on things.":
             $ cyril_affection += 1
@@ -232,7 +233,8 @@ label meet_dragons:
             show balrung angry at basicfade
             b "Would you call it mistreatment to keep someone chained not only to a location, but inside an inferior form? This frail human appearance is not our normal state, you know."
             show cyril hat concerned at basicfade
-            c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform.  True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
+            c "Oh, he's just being dramatic Princess.  They know the rules of the agreement.  They can leave once they find love and find reform."
+            c "True reform cannot happen without love, you know.  So they are quite simply prisoners of their own choosing."
             show niir sad at basicfade
             n "I would call it mistreatment to be kept away from the world daily - to see the sights and sssmell the... flowers."
             show niir mischief at basicfade

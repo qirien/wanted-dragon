@@ -166,6 +166,7 @@ label niir8:
         hide niir with golden_flash
         "Niir closed his eyes, concentrating, and then shifted, his skin turning golden and scaly, his frame lengthening. Huge glimmering wings unfolded behind him, and he stamped the ground with clawed feet."
         n "Let’ssss."
+        play sound "sfx/wings.ogg" loop
         "I climbed on his back, looping my arms around his neck. Cyril frowned up at us disapprovingly as the wind from Niir's wings swirled around him, but did nothing to stop our flight."
         n "He let ussss go."
         p "Less talking, more flying!"
@@ -175,6 +176,7 @@ label niir8:
         "I dug in my heels and clutched his wings right where they met his back. He twisted into a barrel roll, then looped several times. I almost fell off, but had never felt so alive."
         n "Direct me to your casssstle."
         p "Onward!"
+        stop sound fadeout 2.0
         call credits
         jump niir_free_epilogue
     else:
@@ -422,25 +424,27 @@ label cyril8:
             c "Princess!  Hide!  Don’t let that beast have the scepter!  I beseech you!"
             "This was not a battle in which I wanted to risk my royal person; that's what minions are for. I dived out into the hallway, leaving Cyril and Balrung to fight it out on their own."
             "Balrung swiped at Cyril with his claws, but Cyril managed to roll out of the way."
-            show cyril concerned at basicfade
+            show cyril concerned at basicfade with hpunch
             c "She won’t give you the scepter, so we may as well stop this Balrung.  You must surrender yourself to me, and I will have the council decide what to do with you."
             b "I know what your Council would do with me. The same thing they've done for forty years!"
             b "I'd rather die a free dragon than live an enslaved half-existence as a human! Rrrraaaagh!"
+            show cyril surprised at basicfade with vpunch
             "The room filled with a raging inferno of fire breath. A shimmering magic shield surrounded Cyril, and I stepped back to avoid getting my hair singed."
-            show cyril angry at basicfade
+            show cyril angry at basicfade with red_flash
             c "You must stop, Balrung!  {font=fonts/ankecallig-fg.ttf}INCARCERO{/font}!"
             show cyril angry with magic_flash
             "I peeked around the corner to see chains snaked around the dragon, though it was only a moment later when Balrung lunged free of the chains."
-            show cyril angry at basicfade
             c "I didn’t want to have to do- STAY PUT, YOU DRAGON!"
             b "If you want me to stay put, you'll have to kill me. Are you {i}man{/i} enough to do that?!"
-            show cyril angry at basicfade
+            show cyril concerned at basicfade
             c "Don’t-don’t test me.  You submit to my authority and to the authority of the council of mages or - or else."
             b "I didn't think so. You humans are so weak! Farewell!"
+            play sound "sfx/crash.ogg" 
             "Balrung smashed a giant hole in the side of the dungeon and crouched, ready to spring out into the evening sky." with hpunch
-            show cyril angry at basicfade
+            show cyril angry with magic_flash
             c "{font=fonts/ankecallig-fg.ttf}{size=+10}FULGURENTIA MAXIMA{/size}{/font}!" #with lightning?
             "Cyril’s wand dropped to the ground."
+            show cyril surprised at basicfade
             "Balrung stopped mid-leap and crashed to the ground, dead. There was no time for last words or final taunts - it was over. Cyril just stood there, staring at the dragon's corpse."
             show cyril concerned eyes closed at basicfade
             c "{i}I-I... he was supposed to stop{/i}."
@@ -474,7 +478,9 @@ label cyril8:
             show cyril concerned eyes closed at basicfade
             c "Princess, please stop this! You don't know what it might do! You won't be able to control it!"
             p "I'll do whatever I have to! Hyaaah!"
-            "I felt myself thrust backwards, and I hit the wall. Then the magic began to work. My skin tingled and stretched, twisted and changed. I looked down at my hands and watched as they morphed into powerful claws. I tossed my head, and instead of hair, felt horns. And, to either side, enormous leathery wings strained against the ceiling, yearning for the open air."
+            "I felt myself thrust backwards, and I hit the wall. Then the magic began to work."
+            "My skin tingled and stretched, twisted and changed. I looked down at my hands and watched as they morphed into powerful claws. I tossed my head, and instead of hair, felt horns."
+            "And, to either side, enormous leathery wings strained against the ceiling, yearning for the open air."
             b "Princess... you're... marvelous!"
             show cyril surprised at basicfade
             c "Chrysandra!  No!"
@@ -492,19 +498,23 @@ label cyril8:
             show cyril surprised at basicfade
             c "Ah, yes.  But Balrung- he will still be here.  And we need to find Niir.  I can’t have him causing trouble again."
             b "Leave Niir to me. And, Princess, if you ever tire of humans and their petty, insignificant squabbling... come and join us."
-            "With one final nod to me, Balrung bashed a hole in the dungeon wall and leapt out through it. Cyril gingerly stepped onto my hind leg, and then clambered up onto my back. His weight felt like that of a small child, barely even registering."
+            play sound "sfx/crash.ogg" 
+            "With one final nod to me, Balrung bashed a hole in the dungeon wall and leapt out through it."
+            "Cyril gingerly stepped onto my hind leg, and then clambered up onto my back. His weight felt like that of a small child, barely even registering."
             show cyril concerned at basicfade
             c "There's nothing to hold on to! Shouldn't there be reins or something?!"
             p "Never!"
             play music happy_ending
-            "With a running start, I surged out of the castle walls and out into the glowing evening. Cyril shrieked and almost fell off, but I leveled out just in time. Flying felt so natural, it was hard to believe I had only been capable of it for mere minutes."
+            play sound "sfx/wings.ogg" loop
+            "With a running start, I surged out of the castle walls and out into the glowing evening. Cyril shrieked and almost fell off, but I leveled out just in time."
+            "Flying felt so natural, it was hard to believe I had only been capable of it for mere minutes."
             scene bg sunset with fade
 
             c "I don’t believe I’m doing this.  I don’t believe I’m doing this.  I’m not sure if we should be doing this, Princess."
             p "I wonder if I can breathe fire? ...Oh, look, I can! Did you see that, Cyril?!"
             c "Please don’t.  Don’t do that, Princess.  At least not without due warning."
             p "I'm warning you right now, Cyril, there will be a lot more fire and destruction before the night is over! Mwah ha ha ha ha!"
-
+            stop sound fadeout 2.0
             call credits
             jump cyril_dragon_epilogue
 

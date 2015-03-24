@@ -30,7 +30,8 @@ label cyril_scepter_epilogue:
     p_write "Otherwise you can direct him to me, the Queen of [k_name]."
     p_write "Also..."
     nvl clear
-
+    scene bg kingdom with fade
+    play music happy_ending
     p "Oh, this is ridiculous. I can't say everything in a letter!"
     p "Cyril Merlonious! I summon thee!"
     show cyril hat smile at center with magic_flash
@@ -69,7 +70,7 @@ label cyril_dragon_epilogue:
     p "I still think that if I lit enough pants on fire, they might change the law to allow a dragon to be Queen. But... I'll drink it."
     #TODO: some magical VFX
     show cyril smile blush at basicfade
-    c "Thank you, my-your majesty.  I do think it’s best for everyone.  It was quite extraordinary that you became a dragon at all.  It’s good that scepter is now locked away securely so no one else can have the same fate."
+    c "Thank you, my-your majesty.  It was quite extraordinary that you became a dragon at all.  It’s good that scepter is now locked away securely so no one else can have the same fate."
     p "Securely? Where exactly did you hide it?"
     show cyril surprised at basicfade
     c "You mustn’t worry about that my Queen.  But do trust me that it is securely away at the top of the cas- Oh dear.  I must work on holding my tongue more in the future."

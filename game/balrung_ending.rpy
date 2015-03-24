@@ -98,10 +98,8 @@ label balrung_ending:
     hide balrung with red_flash
     scene bg kitchen with punch_long
     "He shook his head and stretched, and stretched, and stretched, skin shimmering into deep red scales. Wings emerged from his back and beat the air like waves crashing against a ship."
-    play sound "sfx/fireball.ogg"    
-    scene bg kitchen with red_flash    
-    "Balrung breathed a ball of fire at one of the chairs, turning it instantly to ash. His reptilian eyes looked at me for my response."
-    # TODO: fireball vfx?
+    play sound "sfx/crash.ogg" 
+    "He rammed into the wall of the kitchen and crashed a huge hole into it. He looked at me with those smirking, reptilian eyes, awaiting my response."
     menu:
         "Make him your King." if (balrung_affection >= HIGH_AFFECTION):
             p "Balrung, your patient ruthlessness, and powers over flight and fire, will help you serve me well as my King. Now, let me climb on your back and take us to [k_name]."
@@ -110,8 +108,8 @@ label balrung_ending:
             b "Bwah ha ha ha ha!"
             scene bg sunset with fade            
             play music happy_ending
+            play sound "sfx/wings.ogg" loop
             "With a rush of wings and dust, we flew out of the dungeon and into the wide evening sky. Balrung let fly a fireball at the gates of his old prison, just for fun."
-            play sound "sfx/fireball.ogg"
             "With a dragon on my side, my father would {b}have{/b} to make me Queen... and if not, well, I'd make sure there was no other choice."
             "And Balrung would be an valuable ally to have as we ruled together."
             "I reached down to pat his scaly cheek and could tell from the gleam in his eye that he was thinking the exact same thing. I'd never lack a worthy opponent again."
@@ -119,6 +117,7 @@ label balrung_ending:
             b "And you're dreadfully ruthless."
             p "Mwah ha ha ha ha!"            
             b "Bwah ha ha ha!"
+            stop sound fadeout 2.0
             call credits
             jump balrung_epilogue
         "Make him an advisor.":
