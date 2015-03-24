@@ -6,7 +6,7 @@ label day6:
     # She goes around eavesdropping to find out how well her plans have been working.
     scene bg bedroom dusk with fade
     play music evil_theme
-    p "Ugggh, that moldy smell again. I must {b}still{/b} be in the old [castle_name]."
+    p "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name]."
     p "But I believe I'm finally making some progress. Although... they could be deceiving me."
     p "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
     

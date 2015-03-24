@@ -31,6 +31,7 @@ label balrung_epilogue:
     b "Savory yon nuptial love vexes,"
     b "Sibilant treasure rhapsodically enchants,"
     b "Sing, glorious sovereign!"
+    nvl clear    
     p "...I don't sing."
     p "But I do kiss, when the mood strikes me."
     show balrung smile eyes closed at basicfade
@@ -42,7 +43,7 @@ label balrung_revenge_epilogue:
     scene bg bedroom candle with fade
     play music evil_theme
     p "I must be patient. I will not allow this minor setback derail my plans for [k_name]!"
-    "I sat down for some serious plotting. It was too late to stop the coronation, but if the died, then I was still in line for the throne."
+    "I sat down for some serious plotting. It was too late to stop the coronation, but if Magnolia died, then I was still in line for the throne."
     "My plans were interrupted by a pigeon landing on my table. A letter?"
     m_write "Sister,"
     m_write "I'm sorry you missed my coronation. You would have loved the little cinnamon cakes they served."
@@ -74,6 +75,7 @@ label balrung_revenge_epilogue:
         p "Mwah ha ha ha ha!"
     
     ".:. Revenge Never Ends\nEnding 2 of 8"
+    return
 
 label balrung_ending:
     play music balrung_theme
@@ -178,4 +180,4 @@ label imprisoned_epilogue:
     "It was impossible. How had it come to this?! I thought I had him wrapped around my finger, and then..."
     "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
     "Mwah ha ha ha ha!"
-    
+    return

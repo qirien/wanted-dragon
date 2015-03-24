@@ -19,9 +19,9 @@ label intro:
     "{b}This{/b} is the mage in charge?! He's barely more than a child!"
     "...This is exactly the kind of inefficiency I intend to remedy when I am queen!"
     show cyril hat concerned at basicfade
-    c "Luxis Contigo! Luxia Contego? Conmigo?"
+    c "{font=fonts/ankecallig-fg.ttf}Luxis Contigo! Luxia Contego? Conmigo?{/font}"
     show cyril hat surprised at basicfade
-    c "I knew I didn't get that spell right!  If only I could remember how that went.  Luxing Contegus!  hmmm... I'm not even sure that I'm using proper words."
+    c "I knew I didn't get that spell right!  If only I could remember how that went.  {font=fonts/ankecallig-fg.ttf}Luxing Contegus{/font}!  Hmmm... I'm not even sure that I'm using proper words."
 
     menu:
         "Play it sweet":

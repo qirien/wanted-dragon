@@ -22,7 +22,7 @@ init -1:
     # CHARACTERS
     #
     define p = DynamicCharacter("p_name", image="princess", show_two_window=True)
-    define b = Character('Balrug', image="balrung", show_two_window=True, show_side_image="GUI/side.png")
+    define b = Character('Balrung', image="balrung", show_two_window=True, show_side_image="GUI/side.png")
     define c = Character('Cyril', image="cyril", show_two_window=True, show_side_image="GUI/side.png")
     define n = Character('Niir', image="niir", show_two_window=True, show_side_image="GUI/side.png")
     define narrator = Character(' ', show_two_window=True, show_side_image="GUI/side.png")

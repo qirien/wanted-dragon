@@ -489,7 +489,7 @@ screen preferences():
         ypos 275
         style_group "prefs"
 
-        bar value Preference("text speed")
+        bar value Preference("auto-forward time")
         
         
     vbox:

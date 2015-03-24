@@ -68,3 +68,4 @@ label niir_asleep_epilogue:
     n "{i}zzz{/i}."
     p "Niir!  NIIR!  I will not stand for this, Niir.  You must serve your queen!"
     p "You owe me for this, dragon."
+    return
