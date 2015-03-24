@@ -288,7 +288,7 @@ init -1 python hide:
 
     #########################################
     ## More customizations can go here.
-    config.fade_music = 2.0    
+    config.fade_music = 1.0    
     #_window_during_transitions = True
 
     style.say_label.font="fonts/Anderson Thunderbirds Are GO!.ttf"

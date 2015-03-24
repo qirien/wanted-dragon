@@ -151,13 +151,13 @@ init -1:
 
     transform basicfade:
         on show:
-            linear 1.0 alpha 1.0
+            linear 0.5 alpha 1.0
         on hide:
-            linear 1.0 alpha 0.0
+            linear 0.5 alpha 0.0
 #        on replace:
-#            linear 1.0 alpha 1.0
+#            linear 0.5 alpha 1.0
         on replaced:
-            linear 1.0 alpha 0.0        
+            linear 0.5 alpha 0.0        
     
     #
     # MUSIC
