@@ -184,7 +184,7 @@ label niir8:
         c "Ah, yes.  I don’t think it’s a good idea to leave you two alone right now."
         p "Then follow us, if you dare."
 
-        scene ruins with fade
+        scene bg ruins with fade
         show niir neutral at center with fade
         play music niir_theme
         p "Is he following us?"
@@ -223,7 +223,7 @@ label niir8:
                 hide niir with moveoutright
 
                 "I waited patiently, but I didn't realize that those two dragons had already started the attack without me until I heard the noise of spells being cast. I ran towards the source of the sound - by the castle gates."
-                scene bg gate with fade
+                scene bg gate dusk with fade
                 show balrung at quarterright, basicfade
                 show cyril at center, basicfade
                 show niir at quarterleft, basicfade

@@ -71,7 +71,7 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#a24637",
+        mm_root = "GUI/title.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
@@ -96,28 +96,29 @@ init -1 python hide:
     ## are the size of the left/right and top/bottom borders,
     ## respectively.
 
-    # style.window.background = Frame("frame.png", 12, 12)
+    style.window.background = Frame("GUI/textbox.png", 0, 0)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
 
-    # style.window.left_margin = 6
-    # style.window.right_margin = 6
-    # style.window.top_margin = 6
-    # style.window.bottom_margin = 6
+    style.window.left_margin = 0
+    style.window.right_margin = 0
+    style.window.top_margin = 0
+    style.window.bottom_margin = 0
 
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 322
+    style.window.right_padding = 200
+    style.window.top_padding =105
+    style.window.bottom_padding = 55
 
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    style.window.yminimum = 280
+    style.window.ymaximum = 280
 
 
     #########################################
@@ -145,11 +146,12 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "fonts/Quivira.ttf"
+    style.default.color = "#400000"
 
     ## The default size of text.
 
-    # style.default.size = 22
+    style.default.size = 22
 
     ## Note that these only change the size of some of the text. Other
     ## buttons have their own styles.
@@ -287,8 +289,21 @@ init -1 python hide:
     #########################################
     ## More customizations can go here.
     config.fade_music = 2.0    
-    _window_during_transitions = True
+    #_window_during_transitions = True
 
+    style.say_label.font="fonts/Anderson Thunderbirds Are GO!.ttf"
+    style.say_label.bold=False 
+    style.say_label.size=60
+    style.say_who_window.background = Frame("GUI/namebox.png", 0, 0)
+    style.say_who_window.left_padding = 50
+    style.say_who_window.right_padding = 17
+    style.say_who_window.top_padding = 5
+    style.say_who_window.bottom_padding = 5
+    style.say_who_window.xminimum = 320
+    style.say_who_window.yminimum = 48
+    style.say_label.xalign=0.6
+    style.say_dialogue.outlines=[(0, "#000000"),(0, "#000000")]
+    style.say_thought.outlines=[(0, "#000000"),(0, "#000000")]
 
 ## This section contains information about how to build your project into
 ## distribution files.

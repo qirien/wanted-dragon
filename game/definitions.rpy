@@ -21,11 +21,10 @@ init -1:
     #
     # CHARACTERS
     #
-
-    define p = DynamicCharacter("p_name", image="princess", color="#3390a4")
-    define b = Character('Balrug', image="balrung", color="#a41c1c")
-    define c = Character('Cyril', image="cyril", color="#7b1f43")
-    define n = Character('Niir', image="niir", color="#fec54d")
+    define p = DynamicCharacter("p_name", show_two_window=True, show_side_image="princess")
+    define b = Character('Balrug', image="balrung", show_two_window=True)
+    define c = Character('Cyril', image="cyril", show_two_window=True)
+    define n = Character('Niir', image="niir", show_two_window=True)
     define p_write = Character("Princess", kind=nvl)
     define k_write = Character("King", kind=nvl)
     define m_write = Character("Magnolia", kind=nvl)
@@ -57,7 +56,7 @@ init -1:
     image bg stairs night = "bg/stairs_night.jpg"
     image bg storage = "bg/storage.jpg"
     image bg sunset = "bg/sunset.jpg"
-    # TODO: image bg woods = "bg/woods.jpg"
+    image bg woods = "bg/woods.jpg"
 
     #
     # VISUAL EFFECTS
@@ -74,9 +73,9 @@ init -1:
     #
     # SPRITES
     #
-    image side princess = Placeholder("girl")
     # Automatically import all sprites in the 'sprites' subdirectory 
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
+    image princess = "sprites/princess neutral.png"
 init python:
     import os
     for fname in os.listdir(config.gamedir + '/sprites'):

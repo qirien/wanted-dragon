@@ -10,13 +10,13 @@ label credits:
     $ renpy.pause(1.6)
     
     
-    show text "Voice Actors\n\nPrincess - \nBalrung - \nNiir - \nCyril - "
+    show text "Voice Actors\n\nPrincess - \nBalrung - \nNiir - Lance Meibos\nCyril - "
     $ renpy.pause(2.0)
     
     show text "Music\n\nLa valse du oni from Démo musique de film by BLS\nMephisto Polka by Franz Liszt, performed by Sofja Gülbadamova\nTema de los Malos by clbustos\nEvil Princess Theme & Awkward Mage Theme by Wes Landaker\nSetting The Sails & A Moment of Twilight by Marc Teichert\nCello by Bo Moonlight"
     $ renpy.pause(3.0)
     
-    show text "Backgrounds\n\nBy Limp Nyanko\naquamary\nDougitDesign\n\nRain Texture by Neonescence"
+    show text "Backgrounds\n\nBy Limp Nyanko\naquamary\nDougitDesign\nSylwia77\n\nRain Texture by Neonescence"
     $ renpy.pause(2.0)
     
     

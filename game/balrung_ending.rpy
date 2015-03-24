@@ -39,7 +39,7 @@ label balrung_epilogue:
     return 
 
 label balrung_revenge_epilogue:
-    scene bg bedroom with fade
+    scene bg bedroom candle with fade
     play music evil_theme
     p "I must be patient. I will not allow this minor setback derail my plans for [k_name]!"
     "I sat down for some serious plotting. It was too late to stop the coronation, but if the died, then I was still in line for the throne."
