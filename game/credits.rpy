@@ -3,7 +3,7 @@ label credits:
     # TODO: How do you all want to be credited?
     scene black with fade
 
-    show text "Written by Bridget and Andrea Landaker"
+    show text "Written by Bridget Loyola and Andrea Landaker"
     $ renpy.pause(1.6)
     
     show text "Sprites, CGs, and GUI by Anne"
