@@ -99,7 +99,8 @@ label balrung_ending:
     b "I will."
     hide balrung with red_flash
     scene bg kitchen with punch_long
-    "He shook his head and stretched, and stretched, and stretched, skin shimmering into deep red scales. Wings emerged from his back and beat the air like waves crashing against a ship."
+    "He shook his head and stretched, and stretched, and stretched, skin shimmering into deep red scales." 
+    "Wings emerged from his back and beat the air like waves crashing against a ship."
     play sound "sfx/crash.ogg" 
     "He rammed into the wall of the kitchen and crashed a huge hole into it. He looked at me with those smirking, reptilian eyes, awaiting my response."
     menu:
@@ -124,7 +125,8 @@ label balrung_ending:
             jump balrung_epilogue
         "Make him an advisor.":
             p "While I admire your patient ruthlessness, you are not fit to be my King. You may be an advisor."
-            b "Oh ho ho. I let you win a few games of Queens and Pawns and you imagine yourself some sort of master strategist. No, Princess, I will not serve you as anything less than an equal."
+            b "Oh ho ho. I let you win a few games of Queens and Pawns and you imagine yourself some sort of master strategist." 
+            b "No, Princess, I will not serve you as anything less than an equal."
             b "A pity. If you change your mind, I am going to go raze the kingdom of [k_name]. You'll be able to find me on the throne by tomorrow afternoon."
 
         "Leave him here.":
@@ -167,7 +169,8 @@ label imprisoned_epilogue:
     c "Your father expects me to keep him updated and at this rate I will have nothing to update him with!"
     p "My sister put you up to this, didn't she?! DIDN'T SHE?! She thinks she's won, but she's wrong! Eventually I will escape and PUNISH YOU ALL!!!!"
     show cyril neutral at basicfade
-    c "Now, now Princess.  It might have taken me a week, but you were always going to show your true colors at the end.  Just start reflecting on your own behavior and soon you will understand what it is you have to do."
+    c "Now, now Princess.  It might have taken me a week, but you were always going to show your true colors at the end."  
+    c "Just start reflecting on your own behavior and soon you will understand what it is you have to do."
     show cyril smile at basicfade
     c "I do believe you can change.  I have seen it happen to dragons, why not you?"
     p "...I will kill you. I will rip off your fingers and toes one by one and feed them to your stupid dragons!"
@@ -178,7 +181,8 @@ label imprisoned_epilogue:
     show cyril neutral at basicfade
     c "See you at dinner, when I do hope you will be more agreeable."
     "It was impossible. How had it come to this?! I thought I had him wrapped around my finger, and then..."
-    "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
+    "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]." 
+    "I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
     "Mwah ha ha ha ha!"
     scene black with veryslowfade
     return
