@@ -245,7 +245,7 @@ label niir6:
     p "Moronious, are you competent enough to pull a rabbit out of your hat?"
     c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days... What was it again?  Explodus Rabititious?  No.  That can’t be right..."
     p "..."
-    c "Let me see.  {font=fonts/ankecallig-fg.ttf}Accerso Leoparda{/font}!"
+    c "Let me see.  {font=fonts/ankecallig-fg.ttf}Accerso Leoparda{/font}!  "
     show cyril hat angry with magic_flash
     extend "Oh dear."
     p "I did not ask for a large cat."

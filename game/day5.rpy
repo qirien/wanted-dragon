@@ -348,50 +348,50 @@ label niir5:
     n "Professsss love?!"
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
-    show niir neutral at center, come_closer, basicfade
+    show niir neutral at center, basicfade
 
     p "Hold me like this, with your hands here, in case he peeks out."
-    show niir mischief at basicfade
+    show niir mischief at basicfade, come_closer
     n "I can do that, at leassssst."
     p "Now, say things you like about me, and I will do the same for you. I've heard that's what lovers often talk about."
     n "I suppossse."
-    show niir concerned at basicfade
+    show niir concerned at basicfade, come_closer
     n "Oh, Princessss, your...dresss is ssssooo...shiny. And your earsss are ssso...sstrange. How can you even hearrr with those tiny things?"
     c "Is that...Niir?! I've never heard him talk in such a positive manner."
     p "I suppose that's a start. Don't just compliment my body, though, or he won't believe it's true love!"
-    show niir mischief at basicfade
+    show niir mischief at basicfade, come_closer
     n "You're sssoo deviousss, when I ssseee your scheming grin I jussst want to eat you up!"
     show niir concerned with vpunch
     
     n "I mean, I jussst want to be good! And not kidnap any one elsssse."
-    show niir smirk at basicfade
+    show niir smirk at basicfade, come_closer
     n "And only ssssteal you away if you assssk me to."
     "He bent his head close to my ear and whispered,"
     n "Your turn."
     p "Niir! I used to think you were an untrustworthy, lascivious, uncivilized beast of a dragon! But, oh, how wrong I was! Only now can I see past the mask you wear to hide your pain. Now, I can see the true, sweet, caring Niir underneath!"
-    show niir determined at basicfade
+    show niir determined at basicfade, come_closer
     n "I'm not ssssweeet or carrring!"
     p "You've worn this mask for so long, even you have started to believe it! But I know that you've changed. You've learned your lesson, and now you would never hurt anyone or offend a Princess's delicate sensibilities!"
     "He hissed in my ear,"
-    show niir smirk at basicfade
+    show niir smirk at basicfade, come_closer
     n "Delicate sensibilitiessss? Ssssurely you mussst mean some {b}other{/b} Princessss?"
     "I gripped his shoulders and whispered,"
     p "Your turn, Niir! Make it good; he has to believe you!"
-    show niir concerned at basicfade
+    show niir concerned at basicfade, come_closer
     n "Yesss, how I've changed. If only I were frrreee, we'd live happily everrr afterrr!"
     p "If only you were free!"
     "I turned my face up to him and whispered,"
     p "Now kiss me!"
-    show niir frown blush at basicfade
+    show niir frown blush at basicfade, come_closer
     n "..."
     "What was he hesitating for? Obviously he wanted to; it was practically all he could talk about."
-    show niir determined at basicfade
+    show niir determined at basicfade, reset_zoom
     n "Thissss will not work."
     p "You've never actually kissed anyone, have you?! Well, we simply must remedy that right away." 
     "But before I could execute my plan, Cyril came running towards us. Niir's education would have to wait until later." 
-    show cyril hat surprised at midleft, come_closer with moveinleft
+    show cyril hat surprised at midleft with moveinleft 
+    show niir neutral at midright, basicfade with move
     c "Princess! You can't! Y-You mustn't believe him!"
-    show niir neutral at midright, reset_zoom, basicfade
     show cyril hat concerned at midleft, reset_zoom, basicfade
     p "Moronious! What a... surprise to see you here, interrupting our completely private conversation!"
     c "I warned you about him, Princess.  And I don’t believe any of this for a second!  You won’t fool old Cyril the Clever.  Errr, young Cyril.  I do quite forget my age some times."

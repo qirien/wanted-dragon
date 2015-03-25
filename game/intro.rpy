@@ -115,7 +115,7 @@ label truth:
 label room_intro:
     hide cyril
     with moveoutleft
-    scene bg bedroom dusk with fade
+    scene bg bedroom candle with fade
     show cyril hat neutral at midright
     with moveinright
     p tsk "{b}This{/b} is the best room in the castle?"    
@@ -129,7 +129,7 @@ label room_intro:
     p neutral "..."
     #TODO: SHOWER?
     scene black with fade
-    scene bg bedroom dusk with fade
+    scene bg bedroom candle with fade
     
     "That’s better! One of these days I will need to look into obtaining my own weather mage...awful that I should be drenched at the whim of the mere skies."
     "But now to meet with the dragons..."
@@ -257,7 +257,7 @@ label meet_dragons:
         "Address Niir.":
             p laugh "Niir...what an interesting name. Tell me about yourself."
             show niir concerned at basicfade
-            n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense of amusement or...play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
+            n "Intrigue you do I?  I ssssuppose I would.  Unlike my decrepit friend here who has no sense of amusement or... play.  How about you, are you interesssted in fun?  Perhaps playing a little game?"
             p neutral "Tell me what it is, and then I shall decide."
             show niir mischief at basicfade
             n "Oh, it is a game that would have you sssscreaming for more.  That much is for sssure.  Are you afrrrraid of heights?  Perhaps you would like see some of the ssssights of the cassstle?"

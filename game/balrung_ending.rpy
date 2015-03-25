@@ -35,14 +35,14 @@ label balrung_epilogue:
     p "...I don't sing."
     p "But I do kiss, when the mood strikes me."
     show balrung smile eyes closed at basicfade
-    $ renpy.pause(1.6)    
-    scene black with fade
+    $ renpy.pause(1.6)
+    scene black with veryslowfade
     return 
 
 label balrung_revenge_epilogue:
     scene bg bedroom candle with fade
     play music evil_theme
-    p "I must be patient. I will not allow this minor setback derail my plans for [k_name]!"
+    p "I must be patient. I will not allow this minor setback to derail my plans for [k_name]!"
     "I sat down for some serious plotting. It was too late to stop the coronation, but if Magnolia died, then I was still in line for the throne."
     "My plans were interrupted by a pigeon landing on my table. A letter?"
     m_write "Sister,"
@@ -55,17 +55,17 @@ label balrung_revenge_epilogue:
     m_write "I'm sure you'd like him."
     m_write "Come home, Chrysandra, won't you?"
     m_write "Lots of love,"
-    m_write "{b}Queen{/b} Magnolia"
+    m_write "{size=+15}Queen{/size} Magnolia"
     nvl clear
     
-    p "It couldn't be Balrung..."
-    p "It has to be him. How many older, poetry-writing dragons are there?!"
-    p "The vicious viper! The selfish serpent! The acrimonious adder! The lying lizard!  The, the, the..."
-    p "..."
+    p surprised "It couldn't be Balrung..."
+    p tsk "It has to be him. How many older, poetry-writing dragons are there?!"
+    p shout "The vicious viper! The selfish serpent! The acrimonious adder! The lying lizard!  The, the, the..."
+    p neutral "..."
     if (cyril_dead):
         p "Niir!"
         p "Niir!  Where are you when I need you...come to think of it, I haven't seen him since..."
-        show cyril at center, basicfade
+        show cyril hat surprised at center, basicfade with dissolve
         hide cyril with red_flash
         p "I suppose when that mage died, it broke the spell. I'm on my own, now."
         p "But... I have this entire castle at my disposal!  I'll find something! I {b}will{/b} be Queen!  You'll see, Mother!"
@@ -74,14 +74,14 @@ label balrung_revenge_epilogue:
         p "This changes nothing!  Moronious and I have the scepter now, and together we will rid [k_name] of not one illegitimate tyrant, but two!"
         p "Mwah ha ha ha ha!"
     
-    ".:. Revenge Never Ends\nEnding 2 of 8"
+    scene black with veryslowfade
     return
 
 label balrung_ending:
     play music balrung_theme
     "Now that Moronious was not about to attack us, I wrapped up my arm in a dishtowel and turned to look at Balrung. He lay still, but was breathing."
     "Slowly, he opened his eyes, and I helped him sit up."
-    show balrung neutral at center, come_closer, basicfade
+    show balrung neutral at center with moveinbottom
     show balrung determined at basicfade
     b "Such a fool..."
     p "Yes, I shall be glad to be rid of him."
@@ -158,9 +158,9 @@ label imprisoned_epilogue:
     c "I've brought you your breakfast, your Highness."
     "I threw the bowl at his ridiculous face and it knocked off his ridiculous hat. Niir snatched it up and grinned."
     show cyril surprised at basicfade
-    show niir at midright with moveinright
+    show niir neutral at midright with moveinright
     show niir mischief at basicfade
-    n "Oooh, you're a much more interesssting companion."
+    n "Oooh, thingsss will be much more excccciting with {b}you{/b} around."
     show cyril concerned blush at basicfade
     c "That was quite uncalled for.  I don’t think you’ve made any progress with your reform, you know."
     show cyril concerned eyes closed at basicfade
@@ -180,4 +180,5 @@ label imprisoned_epilogue:
     "It was impossible. How had it come to this?! I thought I had him wrapped around my finger, and then..."
     "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]. I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
     "Mwah ha ha ha ha!"
+    scene black with veryslowfade
     return

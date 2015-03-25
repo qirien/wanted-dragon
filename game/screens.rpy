@@ -186,9 +186,9 @@ screen nvl(dialogue, items=None):
 
                                 text caption style "nvl_dialogue"
 
-    add SideImage() xalign 0.0 yalign 1.0
+    #add SideImage() xalign 0.0 yalign 1.0
 
-    use quick_menu
+    #use quick_menu
     
 screen book_screen:
     default side_image = None

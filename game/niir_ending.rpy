@@ -42,6 +42,7 @@ label niir_free_epilogue:
     p "Not nearly enough. Everyone's too scared to misbehave around here."
     n "I’m not ssscared to misssbehave.  Perhapsss I ssshould make up for the lack of misssbehavior around here."
     p "That's what I'm counting on."
+    scene black with veryslowfade
     return 
     
     
@@ -53,19 +54,28 @@ label niir_asleep_epilogue:
     p "And what’s worse is that I’ve been out here.  Miserable.  Having to get food for myself!  Foraging, Niir.  Foraging!  All because you are a useless dragon who won’t WAKE UP!"
     p "I can’t believe I even freed you, you know.  To think that I almost deluded myself that I lo-"
     p "Wait.  You’re moving?"
+    show niir frown at center,squatting with moveinbottom
     p "Niir?"
+    show niir sad at standing with move
     n "Ughhhhh."
     p "You have to make up for this, Niir.  We have lost time to gain back.  Time in which I should have been queen."
+    show niir determined at basicfade
     n "My head.  It hurtsssss."
     p "Do stop your complaining.  You left me out here to starve.  A princess is not supposed to do everything herself; that's why I brought you along! But I guess at least I survived."
     p "Now turn into your dragon form so we can go and storm my father’s castle!"
+    show niir concerned at basicfade
     n "Eggghh."
     p "Quickly now.  Time awaits!"
-    n "I need to resssst.  I think I’ll jusssst lay here a little longer." with hpunch
-    p "Oh, no Niir.  Enough resting.  It’s time for you to get moving."
+    show niir smirk at basicfade
+    n "I need to resssst.  I think I’ll jusssst lay here a little longer."
+    p "Oh, no Niir.  Enough resting.  It’s time for you to get moving." with hpunch
+    show niir frown at basicfade
     n "If I could, Princessss.  But I need to resssst."
+    show niir frown
     p "If I have to go one more day without my-"
+    hide niir with moveoutbottom
     n "{i}zzz{/i}."
     p "Niir!  NIIR!  I will not stand for this, Niir.  You must serve your queen!"
     p "You owe me for this, dragon."
+    scene black with veryslowfade
     return

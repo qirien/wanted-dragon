@@ -19,6 +19,7 @@ label cyril_dark_epilogue:
     show cyril angry at basicfade
     c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around.  I was wrong.  Imprisoning them was wrong.  They only deserve death."
     p "Good, good. I'm so glad I can count on you, Cyril. You'll always be my favorite minion."
+    scene black with veryslowfade
     return
       
 
@@ -56,9 +57,8 @@ label cyril_scepter_epilogue:
     c "Yes-ahem.  Please come with me to this ball, great Queen.  I would be privileged to accompany you."
     p "There, was that really so hard? Of course you may accompany me. And, have one of these cinnamon cakes; they're delicious."
     c "Thank you, your majesty."
+    scene black with veryslowfade
     return
-
-
 
 
 label cyril_dragon_epilogue:
@@ -81,4 +81,5 @@ label cyril_dragon_epilogue:
     p "That's a good boy.  Mmmmm.  Yeeees."
     show cyril smile blush at basicfade
     p "You certainly are my favorite minion."
+    scene black with veryslowfade
     return

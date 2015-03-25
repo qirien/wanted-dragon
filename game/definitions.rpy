@@ -116,12 +116,13 @@ init -1:
     # 
     # TRANSITIONS
     #
-    define punch_long = Move((20, 15), (-20, -15), .10, bounce=True, repeat=True, delay=2.0)
-    define vpunch_long = Move((0, 15), (0, -15), .10, bounce=True, repeat=True, delay=2.0)
-    define hpunch_long = Move((20, 0), (-20, 0), .10, bounce=True, repeat=True, delay=2.0)
+    define punch_long = Move((20, 15), (-20, -15), .10, bounce=True, repeat=True, delay=1.5)
+    define vpunch_long = Move((0, 15), (0, -15), .10, bounce=True, repeat=True, delay=1.5)
+    define hpunch_long = Move((20, 0), (-20, 0), .10, bounce=True, repeat=True, delay=1.5)
     
     define fade = Fade(0.3, 0.3, 0.3) # TODO: Tweak these times for our game?
-    define slowfade = Fade(0.5, 0.5, 0.5) # TODO: Tweak these times for our game?    
+    define slowfade = Fade(0.5, 0.5, 0.5)
+    define veryslowfade = Fade(2.0, 0.5, 2.0)
     define flash = Fade(.25, 0, .75, color="#fff")
     define magic_flash = Fade(.25, 0, .75, color="#acf")
     define red_flash = Fade(.25, 0, .75, color="#a90000")

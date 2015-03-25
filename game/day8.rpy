@@ -109,7 +109,7 @@ label niir8:
 
         "Foolish mages":
             p "Foolish mages like yourself, Moronious."
-            n "Ssssstart running Cccyril the Cowardly."
+            n "Ssssstart running, Cccyril the Cowardly."
             c "Yes, very amusing.  But joke answers are not accepted as real answers.  We have already been through the rules."
 
         "Deer":
@@ -168,6 +168,7 @@ label niir8:
         n "Let’ssss."
         play sound "sfx/wings.ogg" loop
         "I climbed on his back, looping my arms around his neck. Cyril frowned up at us disapprovingly as the wind from Niir's wings swirled around him, but did nothing to stop our flight."
+        scene bg sunset with fade
         n "He let ussss go."
         p "Less talking, more flying!"
         n "Would you like to try ssssomething... dangerousss?"
@@ -189,7 +190,7 @@ label niir8:
         p "Then follow us, if you dare."
 
         scene bg ruins with fade
-        show niir neutral at center with fade
+        show niir neutral at center, basicfade
         play music niir_theme
         p "Is he following us?"
         n "Yesss, I can ssstill sssmell that mage around here."
@@ -228,19 +229,23 @@ label niir8:
 
                 "I waited patiently, but I didn't realize that those two dragons had already started the attack without me until I heard the noise of spells being cast. I ran towards the source of the sound - by the castle gates."
                 scene bg gate dusk with fade
-                show balrung at quarterright, basicfade
-                show cyril at center, basicfade
-                show niir at quarterleft, basicfade
+                show balrung determined at quarterleft
+                show cyril angry at center
+                show niir angry at quarterright
                 n "Your sssspellsss can’t ssstop usss thisss time."
                 c "Oh yes they can!  They have before and they will again.  You will answer to the council of- Oof!"
                 show niir at center with quickmove
+                show niir at quarterright with quickmove                
                 show cyril surprised at squatting with quickmove
                 "Niir tackled Cyril and his wand and hat went flying."
                 show cyril angry at standing with move
                 show cyril angry at basicfade
-                c "I don't need my wand for this spell! IGNI-"
+                c "I don't need my wand for this spell! {font=fonts/ankecallig-fg.ttf}IGNI-{/font}"
                 "Balrung came up behind him and gagged him with a strip of cloth so he couldn't cast any more spells."
-                show balrung at midright with quickmove
+                show balrung angry at midleft with quickmove
+                
+                hide cyril with moveoutbottom 
+                show niir at midright with quickmove
                 p "Good work.  I don’t know why you two haven’t tried doing this more often.  Then he would have had to have let you go."
                 b "The problem is, he can't break the spell unless I allow him to speak. But the moment I do that...well, I have little faith that he will do so."
                 p "But I don’t need him to break the spell.  I can only take one of you, and I’ve already agreed to take Niir.  Certainly, you can understand Balrung."
@@ -258,14 +263,28 @@ label niir8:
                 b "Still... I suppose your death would be a small price to pay for my freedom."
                 n "Then you ssshall have to kill me."
                 "No one ignores me like that! That violent viper will have me to contend with as well!"
-                "Balrung dropped Cyril and lunged at Niir, attempting a chokehold. But Niir slithered out of his grasp and tried to pin his arms from behind. Balrung flung his head back and hit Niir in the nose."
-                "Blood gushed down Niir's face as the two circled each other warily. This time it was Niir who attacked first, aiming a punch at Balrung's face. But Balrung caught his fist and turned his own weight against him, throwing Niir to the ground."
+                show balrung angry at center with quickmove
+                show niir angry at midleft behind balrung with quickmove
+                "Balrung dropped Cyril and lunged at Niir, attempting a chokehold. But Niir slithered out of his grasp and tried to pin his arms from behind. Balrung flung his head back and hit Niir in the nose." with hpunch
+                show niir at quarterright with move
+                show balrung at center with move
+                "Blood gushed down Niir's face as the two circled each other warily. This time it was Niir who attacked first, aiming a punch at Balrung's face." with vpunch
+                "But Balrung caught his fist and turned his own weight against him, throwing Niir to the ground."
+                show balrung at midright with quickmove
+                hide niir with moveoutbottom
                 "The old dragon stepped on Niir's chest, pinning him to the ground, and was about to attack again when I called out."
                 p "I've had enough of your bickering! I'm leaving!"
+                show cyril surprised at quarterleft with moveinleft
+                show balrung determined with vpunch
                 "Balrung looked over at me long enough for Niir to twist his ankle and send him sprawling as well. I ran over to see if I could help, when suddenly we heard the mage's voice shout."
-                c "CARCERATUS!" #TODO: VFX? Glowing magical bars?
+                show cyril at center with quickmove
+                c "{font=fonts/ankecallig-fg.ttf}CARCERATUS!{/font}" #TODO: VFX? Glowing magical bars?
+                show cyril angry with magic_flash
+                hide balrung with moveoutbottom
                 play music princess_theme
-                p "What is this?! I am no dragon; you have no right to imprison me!"
+                "Magical energy shot from Cyril's wand towards Balrung, Niir... and me, holding us in place."
+                p tsk "What is this?! I am no dragon; you have no right to imprison me!"
+                show cyril concerned at basicfade
                 c "I am very sorry to have to do this, your Highness! But I cannot abide your wrongdoing any longer!"
                 p "Impossible! I am a PRINCESS! I am your future QUEEN!"
                 c "Now, now, that's enough yelling, Princess. You forced my hand.  Siding with the dragons like this.  You really are responsible for this."
@@ -307,7 +326,7 @@ label niir8:
         p "Why would I go through all the trouble of seducing you and getting rid of that mage just to kill you? I want you free so you can aid me!"
         n "Not for amusssement?"
         p "What kind of evil princess do you think I am?!"
-        n  "One lassst kissss before I drink.  If it isss poisssson, I want it to be worth it."
+        n "One lassst kissss before I drink.  If it isss poisssson, I want it to be worth it."
         p "Well, I suppose we have time for one-"
         show niir smirk at come_closer, basicfade
         "Well. This kiss was much more satisfactory. At least the dragon could learn quickly."
@@ -357,7 +376,7 @@ label cyril8:
     p "Cyril! Don't just stand there; we need to get the scepter!"
     show cyril hat angry at basicfade
     c "The dragons... the curse is broken! That is...not...RIGHT!"
-    #TODO show dragon shadow/head at right with vpunch
+    show cyril hat surprised at basicfade with vpunch
     "The ground trembled, and a giant shadow emerged from the corner of the room. No, not a shadow-- a dragon. {b}Two{/b} dragons."
     b "It {b}is{/b} right! Your prejudice and arrogance have gone far beyond justice and on to revenge for crimes not yet committed!"
     n "Nicccce work, old tortoissse. But I'm leaving."
@@ -540,6 +559,7 @@ label balrung8:
     b "Perhaps; how many do you need?"
     p "Just one, and some other ingredients. I thought I saw berry grass on our walk the other day, and I know the kitchen has molasses, and I brought some nightshade."
     show balrung angry at basicfade
+    show balrung angry at center
     b "So many dragons have come and gone, here, we should be able to find at least one dragon scale. Firgol left several months ago from the top tower, so let's try there."
     hide balrung with moveoutleft
     
@@ -553,8 +573,8 @@ label balrung8:
     b "Yes, she was ruling with a regency, and they threatened to take over if she did not produce any heirs. She decided the quickest way to get married was to seek a dragon here."
     p "Why did she choose Firgol?"
     show balrung smirk at basicfade
+    show balrung smirk at center
     b "Well...Niir wasn't interested, since she was a bit older and not particularly beautiful. I chatted with her several times, but she wanted someone guileless and pliable. Firgol was both."
-       
     hide balrung with moveoutleft
     
     scene bg exterior day with fade
@@ -577,6 +597,7 @@ label balrung8:
     b "You and I, soaring above, circling, conflagrating..."
     p "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
     show balrung smirk at center, reset_zoom, basicfade
+    show balrung smirk at center
     b "Of course, Chrysandra."
     hide balrung with moveoutleft
     scene bg kitchen with fade
@@ -608,8 +629,8 @@ label balrung8:
     show cyril hat angry at basicfade
     c "{font=fonts/ankecallig-fg.ttf}{size=+10}FULGURENTIA MAXIMA{/size}{/font}!" #TODO: lots of lightning/
     play sound "sfx/lightning.ogg"
-    show cyril hat angry
-    show balrung angry
+    show cyril hat angry at quarterright
+    show balrung angry at center
     with magic_flash
     hide balrung with quickmoveoutleft
     b "AHHHHH!"
@@ -636,7 +657,6 @@ label balrung8:
             show cyril hat surprised at basicfade
             c "He...didn't hurt you?"
             p "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
-            # TODO: ? if (cyril_affection >= MEDIUM_AFFECTION):
             show cyril hat concerned eyes closed at basicfade
             c "I...I'm not fit for this job. I never should have agreed to it..."
             "He dropped his hands, dejected, and turned to leave."
