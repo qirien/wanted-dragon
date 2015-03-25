@@ -8,16 +8,20 @@ label cyril_dark_epilogue:
     show cyril concerned at center, basicfade
     p "I have a job for you."
     c "No, no, no, no.  {i}It can’t be.{/i}  You shouldn't be here, your Highness."
-    p "That's \"your majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me. Pity my father had to get in the way, of course, but... well, that's in the past."
+    p "That's \"your majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me." 
+    p "Pity my father had to get in the way, of course, but... well, that's in the past."
     show cyril angry at basicfade
-    c "Well, I would do {i}anything{/i} for you, your majesty.  After killing that dragon, I don’t know why I spent so long not exacting a thorough comeuppance on those deserving it.  Your family were doing you a great disservice.  They did deserve it."
+    c "Well, I would do {i}anything{/i} for you, your majesty."  
+    c "After killing that dragon, I don’t know why I spent so long not exacting a thorough comeuppance on those deserving it."  
+    c "Your family were doing you a great disservice.  They did deserve it."
     p "Yes, there are many more that deserve justice. In fact, I have decided to allow you to work off some of your sentence by exacting that justice."
     p "You've proven yourself capable of greater things. There is a dragon, in a neighboring kingdom, who has amassed too much power. You know the kind?"
     show cyril concerned at basicfade
     c "I do. "
     p "Then ensure he doesn't cause any more trouble."
     show cyril angry at basicfade
-    c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around.  I was wrong.  Imprisoning them was wrong.  They only deserve death."
+    c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around."  
+    c "I was wrong.  Imprisoning them was wrong.  They only deserve death."
     p "Good, good. I'm so glad I can count on you, Cyril. You'll always be my favorite minion."
     scene black with veryslowfade
     return
@@ -74,7 +78,8 @@ label cyril_dragon_epilogue:
     p "Securely? Where exactly did you hide it?"
     show cyril surprised at basicfade
     c "You mustn’t worry about that my Queen.  But do trust me that it is securely away at the top of the cas- Oh dear.  I must work on holding my tongue more in the future."
-    "The top of the castle?! I wondered if I might get it back... but perhaps it was better to stay here, as a human, but a Queen. Well, if I ever tire of being Queen, I know just where to go!"
+    "The top of the castle?! I wondered if I might get it back... but perhaps it was better to stay here, as a human, but a Queen." 
+    "Well, if I ever tire of being Queen, I know just where to go!"
     p "Don't worry about it, dear. Come here and rub my shoulders; they feel so cramped now that I'm human again. No wings! It's simply dreadful."
     show cyril smile blush eyes closed at basicfade
     c "Y-yes, your majesty."
