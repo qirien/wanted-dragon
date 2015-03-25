@@ -394,7 +394,7 @@ label cyril8:
     "As they talked, I scanned the room. Balrung had used it earlier to break the spell, but I didn't see it in his hands- er, talons. But traces of Cyril's spell still lingered and led me to it."
     p "You mean...this scepter? Really, Balrung, under the bed is such an obvious hiding place." 
     show cyril surprised at basicfade
-    c "Of course, I should have seen it.  I am sorry, my highness."
+    c "Of course, I should have seen it.  I am sorry, my Highness."
     b "I put it there for you to find, Princess. I've already used the scepter for what I needed. And now I've passed it on to you. I know you'll put it to much better use than this fool."
     show cyril concerned blush eyes closed at basicfade
     c "No, don't! It's too powerful; you can't control it without magical training! It could kill you, {i}kill{/i} you, Princess!"

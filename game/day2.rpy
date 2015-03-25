@@ -48,15 +48,15 @@ label day2:
     c "As long as I'm not seen as {i}aiding and abetting{/i}."
     p "If you are not willing to make sacrifices for your future Queen, then what good are you?"
     show cyril hat concerned blush at basicfade
-    c "I am, I am.  Forgive me your highness."
+    c "I am, I am.  Forgive me your Highness."
     p "I forgive you, you foolish mage.  Just don't doubt me again."
     p "Oh, and one more thing."
     show cyril hat surprised at basicfade
-    c "Yes, highness?"
+    c "Yes, Highness?"
     p "You will join me for dinner in the kitchens. Tonight."
     show cyril hat concerned blush eyes closed at basicfade
     c "Y-yes, of course!"
-    hide cyril with moveoutleft
+    hide cyril at center with moveoutleft
     
     show niir neutral at right with moveinright
     show niir smirk at basicfade
@@ -99,7 +99,7 @@ label day2:
     p "Do you not trust your own spell? Or is it {b}I{/b} you do not trust?"
     show cyril hat concerned blush eyes closed at basicfade
     c "No...I trust you, just- please, be careful!"
-    hide cyril with moveoutleft
+    hide cyril at midleft with moveoutleft
     
     p "Do you have business with me, dragon?"
     show niir smile at basicfade
@@ -111,12 +111,12 @@ label day2:
     show niir mischief at basicfade
     n "I'll let you wonderrr about that one."
     p "Hmph. I won't be losing sleep over it. But, as long as you're here..."
-    show niir happy at basicfade
+    show niir smirk at basicfade
     n "Yesss?"
     p "Join me for dinner tonight. In the kitchen."
-    show niir smirk at basicfade
+    show niir mischief at basicfade
     n "I'll be therrre."
-    hide niir with moveoutright
+    hide niir at center with moveoutright
     
     p "I suppose I'll see what Balrung wants..."
     if (asked_scepter == "Balrung"):
@@ -302,7 +302,7 @@ label dinner_party:
     c "He threw it.  Of course he did.  "
     show cyril concerned at basicfade
     c "Stay right here dragons, while I come right back.  Please keep an eye on them Princess."
-    hide cyril with moveoutleft
+    hide cyril at left with moveoutleft
     "Oh, I'll keep an eye on them, alright. But, which one?"
     menu:
         "Talk to Balrung":

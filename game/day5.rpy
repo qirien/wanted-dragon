@@ -9,7 +9,7 @@ label day5:
         show cyril hat concerned at center with moveinleft
         c "I saw you, I'm begging your pardon.  I didn't want to have to bring this up but I feel compelled."
         show cyril hat concerned blush at basicfade
-        c "I saw you, your highness."
+        c "I saw you, your Highness."
         p "Saw me what?"
         show cyril hat concerned blush eyes closed at basicfade
         c "Well, you see..."
@@ -552,7 +552,7 @@ label cyril5:
     p "Then try it already!"
     c "I will, I will."
     show cyril hat concerned at basicfade
-    c "Stand back, your highness."
+    c "Stand back, your Highness."
     p "What, so I don't get flicked by your wand?  I think I'll take my chances."
     c "I'm just not sure if the spell will go exactly as planned."
     p "It had better, Moronious, or I will make sure that council of yours knows how dangerous you are with a spellbook in hand."

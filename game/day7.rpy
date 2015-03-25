@@ -199,7 +199,7 @@ label cyril7:
             extend "Just one…"
             p "Please tell me they are not stuck."
             c "If you’d just bear with me…  "
-            extend "There we go.  You may observe your shoes, your highness."
+            extend "There we go.  You may observe your shoes, your Highness."
             "Whew. If I'd had to wear those any longer...But they did look lovely."
             p "I believe they would look best decorating my room. It still looks as though a reclusive wizard lives there, for some reason."
             c "Yes!  Your room!  I’m sorry I have yet to make it fit for a princess.  Perhaps later I can try to make it more accomodating."
@@ -208,7 +208,7 @@ label cyril7:
 
         "They're ridiculous.":
             p "This is the most ridiculous pair of footwear I've seen in my life. Not only are they a terrible tripping hazard to my royal person, but they will rub on my heel and give me blisters! Are you trying to injure me, Cyril?!"
-            c "Errr, no.  That wasn’t my intention, I assure you!  Here, I’ll just ah, sit down please your highness and I will remove these shoes for you."
+            c "Errr, no.  That wasn’t my intention, I assure you!  Here, I’ll just ah, sit down please your Highness and I will remove these shoes for you."
             p "Yes, immediately!"
             hide cyril with moveoutbottom 
             c "They are a little tighter than expected.  Just wait a moment."

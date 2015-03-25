@@ -144,7 +144,7 @@ label balrung_ending:
         show cyril neutral hat at center with moveinleft
         c "...Princess! I found it! The Scepter! It was under Balrung's bed the whole time!"
         p "Mwah ha ha ha... he left behind the Scepter of Lavendorm?! The fool! Moronious!"
-        c "Y-yes your highness?"
+        c "Y-yes your Highness?"
         p "Shall we attack that evil dragon?"
         c "We shall!"
         play sound "sfx/electricity.ogg"

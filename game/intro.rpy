@@ -21,7 +21,7 @@ label intro:
     show cyril hat concerned at basicfade
     c "{font=fonts/ankecallig-fg.ttf}Luxis Contigo! Luxia Contego? Conmigo?{/font}"
     show cyril hat surprised at basicfade
-    c "I knew I didn't get that spell right!  If only I could remember how that went.  {font=fonts/ankecallig-fg.ttf}Luxing Contegus{/font}!  Hmmm... I'm not even sure that I'm using proper words."
+    c "I knew I didn't get that spell right!  If only I could remember how that went.  {font=fonts/ankecallig-fg.ttf}Luxing Contegus{/font}!  Hmmm... are those the proper words?"
 
     menu:
         "Play it sweet":
@@ -52,9 +52,8 @@ label sweet:
     p smile "Perhaps I could come in out of the rain, and stay until we can get everything sorted out?"
     show cyril hat smile at basicfade
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
-    show cyril at exit_left
+    hide cyril at center with moveoutleft
     "Ha ha, yes! Everyone falls for the princess-caught-in-the-rain ruse."
-    #with moveoutleft
     stop sound fadeout 2.0
     scene bg hall with fade
     show cyril hat neutral at midright
@@ -70,7 +69,7 @@ label truth:
     c "I ummm... I most certainly don't want to hinder you.  But I am awfully confused to how I, a humble first-star mage, could help you." 
     p shout "I’m wet, cold, and tired. I need the warmest room in this dreadful castle and a hot bath. If you can’t arrange that, then you are useless to me and had best begone."
     show cyril hat concerned blush at basicfade
-    c "Ah, erm, yes of course your highness!  A bath is coming right up!  And a room."
+    c "Ah, erm, yes of course your Highness!  A bath is coming right up!  And a room."
     c "Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p neutral "That is acceptable. You may lead me there now."
     hide cyril
@@ -113,8 +112,7 @@ label truth:
             jump room_intro
     
 label room_intro:
-    hide cyril
-    with moveoutleft
+    hide cyril at center with moveoutleft
     scene bg bedroom candle with fade
     show cyril hat neutral at midright
     with moveinright
@@ -125,7 +123,7 @@ label room_intro:
     c "And it is close to the dragons so I can regularly keep watch over them, as I am supposed to.  Would you like to be somewhere further away?  This is a large castle."
     p angry "No, no, this will do. You may leave me for now, but I may need your assistance later."
     show cyril hat concerned blush at basicfade
-    c "Yes, yes.  I will get right to running that bath for you my majesty. I mean my highness!  Your highness.  Because you are most certainly not mine... errr... I will see to that bath."
+    c "Yes, yes.  I will get right to running that bath for you my majesty. I mean my Highness!  Your Highness.  Because you are most certainly not mine... errr... I will see to that bath."
     p neutral "..."
     #TODO: SHOWER?
     scene black with fade
@@ -160,7 +158,7 @@ label ignore:
     "Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance..."  
     
     stop sound fadeout 2.0
-    scene bg dungeon with fade
+    scene bg dungeon night with fade
     show balrung neutral at center, basicfade
     show niir neutral at quarterright, basicfade
     show cyril hat neutral at quarterleft with moveinleft
@@ -190,9 +188,8 @@ label explore:
     p angry "...Very well. You may start with the dragons."
     
 label meet_dragons:
-    hide cyril
-    with moveoutleft
-    scene bg stairs with fade
+    hide cyril at center with moveoutleft
+    scene bg stairs night with fade
     show cyril hat neutral at center
     with moveinright
     play music evil_theme    
@@ -207,8 +204,9 @@ label meet_dragons:
     c "Balrung, he is much more courteous but also rather stubborn.  He will try to make you see things his way, and not by the most honest methods."
     p surprised "Oh my, that sounds dreadful!"
     "And yet also intriguing."
-    scene bg dungeon with fade
-    show cyril hat neutral at quarterleft
+    hide cyril at center with moveoutright
+    scene bg dungeon night with fade
+    show cyril hat neutral at quarterleft with moveinleft
     show cyril hat neutral at basicfade
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     show balrung neutral at center with moveinright
@@ -216,8 +214,9 @@ label meet_dragons:
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
     show niir neutral at quarterright with moveinright
     n "Cccyri the Chassssste.  I sssssee that you have brought a lady friend.  Delic-delightful."
+    show cyril hat concerned at basicfade
+    c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir."  #TODO: weird flash here?!  no idea why, has to do with basicfade...
     show cyril hat concerned blush at basicfade
-    c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir.  "
     c "I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu dragon_chat:
         "Allude to your purpose in veiled terms.":
@@ -331,7 +330,7 @@ label meet_dragons:
     n "Ssseee you later, Prrrrincessss...."
     hide cyril hat at basicfade with moveoutleft
 
-    scene bg stairs with fade
+    scene bg stairs night with fade
     show cyril hat neutral at center
     with moveinright
     # After talked to Niir, Balrung, or Cyril
@@ -360,7 +359,7 @@ label meet_dragons:
     c "You are testing me, Princess."
     "And I've never had so much fun."
     show cyril hat surprised at basicfade
-    c "What are you doing, your highness?"
+    c "What are you doing, your Highness?"
     p laugh "Taking your wand, of course."
     p laugh eyes closed "You don't really need it, do you?"
     show cyril hat concerned blush eyes closed at basicfade
@@ -390,9 +389,10 @@ label meet_dragons:
     c "I normally conjure something up, so, if you'd like, you could join me for a supper.  Otherwise, I could bring something to your room?"
 
     menu:
-        "\"I'd rather have something brought to me, and brought to me hot!\"":
+        "\"Bring food to my room!\"":
             jump broughtfood
-        "\"I suppose I could join you if you don't bore with with your stories.\"":
+        "\"I suppose I could join you...\"":
+            p smile "I suppose I could join you if you don't bore with with your stories."
             jump joinmage 
 
 label broughtfood:
@@ -402,7 +402,7 @@ label broughtfood:
     p angry "Yes, yes, I said \"that will be all\"!"
     show cyril hat smile blush at basicfade
     c "Right! Food. I'll bring it later. Bye!"
-    hide cyril with moveoutleft
+    hide cyril at center with moveoutleft
     return
 
 label joinmage:

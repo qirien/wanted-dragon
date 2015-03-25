@@ -76,7 +76,7 @@ label library1:
     p "Of course it is.  This life is all one big joke at your expense, Moronious."
     show cyril hat angry at basicfade
     c "Merlonious.  Cyril Merlonious."
-    p "Anyways, I came by for a some research, but if you are busy reading erotic tales, I will let you be."
+    p "Anyway, I came by for a some research, but if you are busy reading erotic tales, I will let you be."
     show cyril hat smile at basicfade
     c "I'm not busy- not at all!"
     show cyril hat laugh at basicfade
@@ -112,7 +112,7 @@ label library1:
     p "Begone with you!"
     show cyril hat concerned blush eyes closed at basicfade
     c "Good day Princess, I will just be seeing myself out."
-    hide cyril with moveoutleft
+    hide cyril at center with moveoutleft
     "I thought he'd never leave.  Now, what have we here..."
     play sound "sfx/flippage.ogg"
     "A hedge-trimming sword? Useless. Sleeping perfume? Possibly useful, but not what I'm looking for. Elixir of Youth? I'm already young and beautiful; I don't need that."
@@ -173,14 +173,14 @@ label sharecyril:
     show cyril hat neutral at center with flash #TODO: with some flash-bang transition
     play sound "sfx/lightning.ogg"
     show cyril hat surprised at basicfade
-    c "You called, your highness?"
+    c "You called, your Highness?"
     p "I am already quite aware that you are a magic wielder. Please do not just appear like that in the future."
     show cyril hat neutral at basicfade
     c "Oh, I'm sorry.  I overheard that you were looking for me, and I just wanted to help-"
     p "But I do have something rather curious to share with you, so you must come with me."
     show cyril hat smile blush at basicfade
     c "I would come with you anywhere, your Highness."
-    hide cyril with moveoutright
+    hide cyril at center with moveoutright
     scene bg library with fade
     show cyril hat neutral at center with moveinleft
     show cyril hat surprised at basicfade
@@ -213,7 +213,7 @@ label sharecyril:
     c "Ah yes.  You wouldn't be the first and you are surely not the last."
     p "Now find me that scepter!"
     show cyril hat concerned blush at basicfade
-    c "I will try to recall for you just where it was.  Don't worry, my maj- your highness."
+    c "I will try to recall for you just where it was.  Don't worry, my maj- your Highness."
     
     return
     
@@ -268,7 +268,7 @@ label explore1:
     n "You need to get your facts sssstraight nexxxt time."
     show niir smirk at basicfade
     n "Prrrrrincessssss."
-    hide niir with moveoutright
+    hide niir at center with moveoutright
     p "I have got my- Niir!  Where did you get to, you sneaky dragon!"
     p "Oh, well.  I didn't want you around anyway, you ridiculous reptile!"
     "..."
