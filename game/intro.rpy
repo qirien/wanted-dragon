@@ -72,8 +72,7 @@ label truth:
     c "Ah, erm, yes of course your Highness!  A bath is coming right up!  And a room."
     c "Well, my room is the warmest room, but if you give me some time to relocate I'm sure I could find somewhere else to settle for the moment."
     p neutral "That is acceptable. You may lead me there now."
-    hide cyril
-    with moveoutleft
+    hide cyril at center with moveoutleft
     stop sound fadeout 2.0
     scene bg hall with fade
     show cyril hat neutral at center
@@ -328,7 +327,7 @@ label meet_dragons:
     p neutral "Anyway, I am finished here...for now."
     show niir mischief at basicfade
     n "Ssseee you later, Prrrrincessss...."
-    hide cyril hat at basicfade with moveoutleft
+    hide cyril at quarterleft with moveoutleft
 
     scene bg stairs night with fade
     show cyril hat neutral at center

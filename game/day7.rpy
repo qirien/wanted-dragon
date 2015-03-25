@@ -195,7 +195,7 @@ label cyril7:
             p "What a...thoughtful gift."
             p "But...I would like to look at them more closely. Would it be possible for you to remove them and place them in my hands? I wouldn't want to break them."
             c "Right away!  I’ll just get down here and - "
-            hide cyril with moveoutbottom 
+            hide cyril at center with moveoutbottom 
             extend "Just one…"
             p "Please tell me they are not stuck."
             c "If you’d just bear with me…  "
@@ -210,7 +210,7 @@ label cyril7:
             p "This is the most ridiculous pair of footwear I've seen in my life. Not only are they a terrible tripping hazard to my royal person, but they will rub on my heel and give me blisters! Are you trying to injure me, Cyril?!"
             c "Errr, no.  That wasn’t my intention, I assure you!  Here, I’ll just ah, sit down please your Highness and I will remove these shoes for you."
             p "Yes, immediately!"
-            hide cyril with moveoutbottom 
+            hide cyril at center with moveoutbottom 
             c "They are a little tighter than expected.  Just wait a moment."
             p "They had better not be stuck!"
             c "And there.  I am dreadfully sorry."
@@ -376,7 +376,7 @@ label balrung7:
     p "Yes, perfect. But we need to make sure he finds us lost in deep conversation at some point in our walk."
     show balrung smirk at basicfade
     b "That can certainly be arranged."
-    hide balrung with moveoutleft
+    hide balrung at center with moveoutleft
     
     scene bg gate day with fade
     show balrung neutral at center with moveinleft
@@ -385,7 +385,7 @@ label balrung7:
     show balrung determined at basicfade
     b "The wards that keep us from simply walking away."
 
-    hide balrung with moveoutright
+    hide balrung at center with moveoutright
     scene bg ruins with fade    
     show balrung neutral with moveinleft
     p "What would happen if you tried to walk through the wards?"
@@ -504,7 +504,7 @@ label our_enemy:
     show cyril hat angry at basicfade
     c "New plans?! I knew it! I told you he had plans! You can't trust him, Princess!"
     p "I'll decide whom to trust, Moronious, and it certainly isn't you."
-    hide balrung with moveoutleft
+    hide balrung at midright with moveoutleft
     
     scene bg bedroom candle with fade
     show balrung neutral at center with moveinleft

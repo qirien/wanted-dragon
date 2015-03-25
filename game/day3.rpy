@@ -438,8 +438,7 @@ label niir3:
     p "We do have a few things in common."
     show niir frown at basicfade
     n "..."
-    hide niir at center
-    with moveoutleft
+    hide niir at center with moveoutleft
     scene bg stairs with fade
     show niir neutral at center
     with moveinright

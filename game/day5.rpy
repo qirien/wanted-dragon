@@ -34,9 +34,9 @@ label day5:
                 p "Good day, Moronious."
                 show cyril hat surprised at basicfade
                 c "Errr, good day, Princess?"
-                p "Begone!"
+                p shout "Begone!"
                 c "{i}I do wish you would quit telling me that.{/i}"
-                hide cyril with moveoutleft
+                hide cyril at center with moveoutleft
                 "But now... I will see what progress I can make with Niir today."
                 scene bg corridor with fade
                 "If I can find him..."
@@ -56,7 +56,7 @@ label day5:
                 p "Show me what you can do, then! I expect something concrete when I check in with you later today!"
                 show cyril hat concerned blush eyes closed at basicfade
                 c "Y-yes Princess! I'll start right away!"
-                hide cyril with moveoutleft
+                hide cyril at center with moveoutleft
                 "Useless! Everyone here is useless!"
                 "In the meantime, I've got a little light reading I want to catch up on. It may even prove useful. Ah, my old favorite, {i}Draughts of Death, Destruction, and Devastation{/i}."
                 scene black with fade
@@ -95,7 +95,7 @@ label day5:
                 show niir determined at basicfade
                 n "Fine. But don't expect any ssssympathy when he turnsss on you in the end."
                 p "I neither expect nor require anyone's sympathy!"
-                hide niir with moveoutleft
+                hide niir at center with moveoutleft
                 "He slunk out, defeated, and I turned my attention to other things."
                 "It was probably time to visit Balrung and see what progress we could make together on our plans."
                 jump balrung5
@@ -143,7 +143,7 @@ label day5:
                         p "Do not hinder me, Balrung. I shall leave you alone if you do the same for me."
                         show balrung angry at basicfade
                         b "I make no promises. I have my own plans that you have no part in, now."
-                        hide balrung with moveoutleft
+                        hide balrung at center with moveoutleft
                         p "Hmph."
                         "I better go see what Moronious is up to."
                         jump cyril5

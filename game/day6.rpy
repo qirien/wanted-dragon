@@ -90,7 +90,7 @@ label day6:
 
         c "Perhaps, I just need to run a warm bath and think about it for a while."
         c "Yes, that’ll do the trick."
-        hide cyril with moveoutleft
+        hide cyril at center with moveoutleft
 
         "While he’s occupied, I’ll just slip out and see that letter he was reading..."
 
@@ -148,7 +148,7 @@ label day6:
         show balrung smile at basicfade
         b "Thank you, Niir. I always knew Merlonious was wrong about you."
         n "I'm not doing it to be niccce! I'm doing it becausssse that mage will hate it."
-        hide niir with moveoutleft
+        hide niir at midright with moveoutleft
         "I pressed myself to the wall as Niir left going the other direction."
         "After a few moments of quiet, I entered the dungeon."
         jump balrung6
@@ -227,7 +227,7 @@ label balrung6:
     c "And...do you, do you feel the same way, Princess?"
     p "Balrung is charming and useful, so of course I love him."
     c "...Y-you don't even know! You two can't fathom what true l-love is!"
-    hide cyril with moveoutleft
+    hide cyril at midleft with moveoutleft
     show balrung determined at center with move
     
     show balrung angry at basicfade
@@ -296,11 +296,11 @@ label niir6:
     p "If you’re not going to hunt it, then I will. I brought a spear star, which is what we \"inferior humans\" use in my kingdom. Hunting is a popular royal pastime."
     n "Then let’sss hunt."
     "He licked his lips and sniffed the air. Then, without warning, he was off down the corridor, following its scent. I ran after him, my soft slippers making as little noise as his bare feet."
-    hide niir with moveoutleft
+    hide niir at center with moveoutleft
     scene bg corridor with fade
     show niir neutral at center with moveinleft
     n "Thissss way."
-    hide niir with moveoutright
+    hide niir at center with moveoutright
 
     scene bg hall with fade
     show niir neutral at quarterleft with moveinleft
@@ -321,7 +321,7 @@ label niir6:
     p "Me? Cook?! That’s servants’ work."
     n "I’m no sssservant."
     p "Or just eat it raw, or hide in Moronious’ bed for him to find later, or drop it out a window and see if it bounces. I don’t care. Though, if you don’t appreciate your little gift, I may not feel inclined to express future generosity."
-    hide niir with moveoutright
+    hide niir at center with moveoutright
     p "Niir? Where you going?! Niir!"
 
     scene bg bedroom candle with fade
@@ -383,7 +383,7 @@ label cyril6:
     n "Do I sssmell...Princesssss?"
     p "Niir, meet me at the castle gates in five minutes. I have something I want to show you that you will find VERY interesting."
     n "Interessssssting.  I have been waiting for interesssting."
-    hide niir with moveoutleft
+    hide niir at center with moveoutleft
     "Now, I’ll just sprinkle this in his sheets...Ahhh!"
     show balrung neutral at center with moveinright
     b "Princess? Can I assist you?"
@@ -391,7 +391,7 @@ label cyril6:
     "He glanced at the flask in my hands and smiled."
     show balrung smile eyes closed at basicfade
     b "I believe I feel quite tired. I will be asleep and shall not see or hear anything."
-    hide balrung with moveoutright
+    hide balrung at center with moveoutright
     "Hmph, well, so much for secrecy. Still, now’s my chance!"
     "There! He’ll have quite a surprise when he gets in bed next! \"Interesting\" indeed, mwah ha ha ha ha ha ha!"
     b "I suggest you return to your room before commencing with gleeful cackling, Princess."
@@ -425,7 +425,7 @@ label cyril6:
     c "If only I had my spellbook on hand..."
     p "If only we knew where it was!"
     n "I’ll find your sssstupid ssspellbook if you get this sssspell off of me!"
-    hide niir with moveoutleft
+    hide niir at midright with moveoutleft
 
     p "Aha ha ha ha ha ha! Did you enjoy that as much as I did, Cyril?" 
     c "That was quite dev- wait.  Cyril?  You called me Cyril!"
@@ -462,7 +462,7 @@ label cyril6:
     n "I will not forget thissss."
     c "I do believe you have learned your lesson, Niir.  And there will be no more of that stealing books business, or turning people green, or making them slip, or sneaking something under the door when they are sleeping.  No more of that."
     n "Ssssay what you like. I’ll do as I pleasssse."
-    hide niir with moveoutleft
+    hide niir at midright with moveoutleft
     show cyril neutral at center with move
     c "It didn’t seem like he learned anything from all that.  Quite disappointing."
     p "You mean entertaining! Perhaps he’ll at least think twice before bothering people."

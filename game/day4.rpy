@@ -143,7 +143,7 @@ label balrung4:
     b "Niir, perhaps you would like to play against the Princess?"
     show niir smirk at basicfade
     n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
-    hide niir with moveoutright
+    hide niir at midright with moveoutright
     show balrung neutral at center with move
     show balrung neutral at basicfade
     b "He never was very good at this game. I thought I could teach him, but...he doesn't wish me to teach him anything."
@@ -243,7 +243,7 @@ label niir4:
     n "Grrr.  No one asssked for your input!"
     show balrung smile eyes closed at basicfade
     b "Well, then perhaps I'll leave you two alone for a bit. Though, Princess, should you need me, I will be nearby. Behave yourself, Niir."
-    hide balrung with moveoutleft
+    hide balrung at midleft with moveoutleft
     show niir at center with move
     show niir determined at basicfade
     n "Don’t lisssten to that crussty old dragon."
@@ -270,7 +270,7 @@ label niir4:
     show niir happy at basicfade
     n "..."
     p "Niir.  I demand you- where are you going?"
-    hide niir with moveoutright
+    hide niir at center with moveoutright
     p "Niir!  Niir!"
     p "I will never understand that dragon!  Not that dragons are {i}ever{/i} to be understood."
     p "Used, yes.  But not understood."

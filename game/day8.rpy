@@ -225,7 +225,7 @@ label niir8:
             "Let's get Balrung to help.":
                 p "Let's get Balrung to help. If the three of us attack him, we should be able to overpower him."
                 n "Give me a sssssecond."
-                hide niir with moveoutright
+                hide niir at center with moveoutright
 
                 "I waited patiently, but I didn't realize that those two dragons had already started the attack without me until I heard the noise of spells being cast. I ran towards the source of the sound - by the castle gates."
                 scene bg gate dusk with fade
@@ -244,7 +244,7 @@ label niir8:
                 "Balrung came up behind him and gagged him with a strip of cloth so he couldn't cast any more spells."
                 show balrung angry at midleft with quickmove
                 
-                hide cyril with moveoutbottom 
+                hide cyril at center with moveoutbottom 
                 show niir at midright with quickmove
                 p "Good work.  I don’t know why you two haven’t tried doing this more often.  Then he would have had to have let you go."
                 b "The problem is, he can't break the spell unless I allow him to speak. But the moment I do that...well, I have little faith that he will do so."
@@ -271,7 +271,7 @@ label niir8:
                 "Blood gushed down Niir's face as the two circled each other warily. This time it was Niir who attacked first, aiming a punch at Balrung's face." with vpunch
                 "But Balrung caught his fist and turned his own weight against him, throwing Niir to the ground."
                 show balrung at midright with quickmove
-                hide niir with moveoutbottom
+                hide niir at quarterright with moveoutbottom
                 "The old dragon stepped on Niir's chest, pinning him to the ground, and was about to attack again when I called out."
                 p "I've had enough of your bickering! I'm leaving!"
                 show cyril surprised at quarterleft with moveinleft
@@ -280,7 +280,7 @@ label niir8:
                 show cyril at center with quickmove
                 c "{font=fonts/ankecallig-fg.ttf}CARCERATUS!{/font}" #TODO: VFX? Glowing magical bars?
                 show cyril angry with magic_flash
-                hide balrung with moveoutbottom
+                hide balrung at midright with moveoutbottom
                 play music princess_theme
                 "Magical energy shot from Cyril's wand towards Balrung, Niir... and me, holding us in place."
                 p tsk "What is this?! I am no dragon; you have no right to imprison me!"
@@ -561,7 +561,7 @@ label balrung8:
     show balrung angry at basicfade
     show balrung angry at center
     b "So many dragons have come and gone, here, we should be able to find at least one dragon scale. Firgol left several months ago from the top tower, so let's try there."
-    hide balrung with moveoutleft
+    hide balrung at center with moveoutleft
     
     scene bg stairs day with fade
     show balrung neutral at center with moveinright
@@ -575,7 +575,7 @@ label balrung8:
     show balrung smirk at basicfade
     show balrung smirk at center
     b "Well...Niir wasn't interested, since she was a bit older and not particularly beautiful. I chatted with her several times, but she wanted someone guileless and pliable. Firgol was both."
-    hide balrung with moveoutleft
+    hide balrung at center with moveoutleft
     
     scene bg exterior day with fade
     show balrung neutral at center with moveinleft
@@ -597,9 +597,8 @@ label balrung8:
     b "You and I, soaring above, circling, conflagrating..."
     p "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
     show balrung smirk at center, reset_zoom, basicfade
-    show balrung smirk at center
     b "Of course, Chrysandra."
-    hide balrung with moveoutleft
+    hide balrung at center with moveoutleft
     scene bg kitchen with fade
     play sound "sfx/boiling.ogg" loop
     "At least the scale only needs to boil in blood for an hour. But, it took more blood than I thought...I need to sit down."
@@ -645,7 +644,7 @@ label balrung8:
             $ cyril_dead = True
             show cyril hat surprised with blood
             "I brought the knife down and buried it into Cyril's back. He stopped chanting and fell forward, dead. The magical aura dissipated."
-            hide cyril with moveoutbottom
+            hide cyril at quarterright with moveoutbottom
             p "So this...is what it feels like. To have a plot work. To be victorious."
             p "...it's not as much fun as I thought."
             jump balrung_ending
@@ -661,7 +660,7 @@ label balrung8:
             c "I...I'm not fit for this job. I never should have agreed to it..."
             "He dropped his hands, dejected, and turned to leave."
             c "You're free to leave, Balrung. You m-may not be perfect, but I am no butter. I mean, no better."
-            hide cyril with moveoutleft
+            hide cyril at quarterright with moveoutleft
             jump balrung_ending
         "Shield Balrung" if (balrung_affection >= HIGH_AFFECTION):
             "I ran to stand in front of Balrung. I didn't think that mage would be foolish enough to attack me."
@@ -673,7 +672,7 @@ label balrung8:
             c "I...I'm not fit for this job. I never should have agreed to it..."
             "He dropped his hands, dejected, and turned to leave."
             c "You're free to leave, Balrung. You m-may not be perfect, but I am no butter. I mean, no better."
-            hide cyril with moveoutleft
+            hide cyril at quarterright with moveoutleft
             jump balrung_ending
         "Wait it out.":
             p "Hmmm, I must admit, I'm curious who would win if you two begin fighting. What better way to prove who is stronger and more fit to aid me?"
@@ -705,7 +704,7 @@ label balrung8:
             # TODO: if her cyril_affection is high enough, send to cyril_attack instead?
             show balrung smile at basicfade
             b "Farewell, Princess. I hope you find better things to consume your life than revenge."
-            hide balrung with moveoutleft
+            hide balrung at center with moveoutleft
             p "Moronious! Stop him! Why are you just standing there?! KILL HIM!"
             # TODO: Feel free to rewrite Cyril's lines better or end this differently
             show cyril hat concerned at basicfade
