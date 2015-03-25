@@ -17,7 +17,8 @@ label day7:
     k_write "Your Father"
     nvl clear
     p "Mother wanted... Magnolia to be Queen?! No, no, no; it's impossible! I can't believe; I won't believe it!"
-    p "It's true, she's more beautiful and more kind and smiles more and doesn't poison people... but Mother always said I was intelligent! She said a Queen needed to be clever, and always one step ahead of everyone else. Was she lying? Was she just humoring me?!"
+    p "It's true, she's more beautiful and more kind and smiles more and doesn't poison people... but Mother always said I was intelligent!" 
+    p "She said a Queen needed to be clever, and always one step ahead of everyone else. Was she lying? Was she just humoring me?!"
     p "No... Magnolia must have tainted Father's mind, twisted Mother's words to her own advantage!"
     p "It's all {b}her{/b} fault!"
     p "..."
@@ -210,7 +211,8 @@ label cyril7:
             c hat blush "Oh my!  I’d forgotten about those!"
 
         "They're ridiculous.":
-            p "This is the most ridiculous pair of footwear I've seen in my life. Not only are they a terrible tripping hazard to my royal person, but they will rub on my heel and give me blisters! Are you trying to injure me, Cyril?!"
+            p "This is the most ridiculous pair of footwear I've seen in my life. Not only are they a terrible tripping hazard to my royal person, but they will rub on my heel and give me blisters!" 
+            p "Are you trying to injure me, Cyril?!"
             c "Errr, no.  That wasn’t my intention, I assure you!  Here, I’ll just ah, sit down please your Highness and I will remove these shoes for you."
             p "Yes, immediately!"
             hide cyril at center with moveoutbottom 
@@ -339,7 +341,8 @@ label niir7:
     n "Yessss, I will hold you to... that.  I sssshall leave, as you asssked."
     n "Ssssee you ssssoon, Princessss."
 
-    "Niir was so uncomplicated, I felt confident that I could control him once he was free. But, in some ways, I wished it wasn't so easy. Would he love me as well if I hadn't tricked him into doing so? Was it even love at all?"
+    "Niir was so uncomplicated, I felt confident that I could control him once he was free." 
+    "But, in some ways, I wished it wasn't so easy. Would he love me as well if I hadn't tricked him into doing so? Was it even love at all?"
     "...It was pointless to even think about it. He could help me regain the throne; everything else could wait until after that."
     return
 
@@ -397,7 +400,8 @@ label balrung7:
     b "The last time I attempted to do so, I fell unconscious for two weeks."
     p "How long ago was that?"
     show balrung determined at basicfade
-    b "When Merlonious first arrived here. As he was new, I thought perhaps he would not be as strong as some of the previous guardians. But I underestimated him. A mistake I don't intend to repeat."  #TODO: how many years ago was that?
+    b "When Merlonious first arrived here. As he was new, I thought perhaps he would not be as strong as some of the previous guardians." 
+    b "But I underestimated him. A mistake I don't intend to repeat."  #TODO: how many years ago was that?
     p "So that's why he doesn't trust you?"
     show balrung neutral at basicfade
     b "That, and the fact that I've been here so long. He believes that if I could have changed, I would have done so already."
@@ -418,7 +422,8 @@ label balrung7:
             p "You have dragon... friends? Out there?"
     
     show balrung determined at basicfade
-    b "There are many dragons whom I once numbered among my allies. But they have been deceived by you humans, trading their power and heritage to pacify your panicky masses. They marry humans, live as humans, and their offspring are barely distinguishable from ordinary humans."
+    b "There are many dragons whom I once numbered among my allies. But they have been deceived by you humans, trading their power and heritage to pacify your panicky masses." 
+    b "They marry humans, live as humans, and their offspring are barely distinguishable from ordinary humans."
     show balrung angry at basicfade
     b "Most of them don't even take dragon form anymore. Your kind finds it too frightening."
     menu:
@@ -436,7 +441,8 @@ label balrung7:
         "What is your dragon form like?":
             p "What do you look like? As a dragon, I mean?"
             show balrung neutral at basicfade
-            b "What do I look like? Hmmmm... It's been so long, and I wasn't even full-grown when I was trapped here. But I do remember long limbs covered with burgundy scales, long teeth sharp enough to pierce a deer's heart in one bite, and, oh, the wings!"
+            b "What do I look like? Hmmmm... It's been so long, and I wasn't even full-grown when I was trapped here." 
+            b "But I do remember long limbs covered with burgundy scales, long teeth sharp enough to pierce a deer's heart in one bite, and, oh, the wings!"
             show balrung smile at basicfade
             b "I remember the wings most of all; the feeling of beating upon the wind, a battle every time I'd take to the air, and the surge of victory with every new voyage."
             p "How can they keep you from such power? I could not imagine a worse punishment."
@@ -521,7 +527,8 @@ label our_enemy:
     p "Yes, of course; who else would I trust?"
     show balrung smile eyes closed at basicfade
     b "Who else, indeed?"
-    p "I could poison him, though he'll be suspicious of both of us, now. Perhaps that sleeping perfume? No, his spell must still be active while he's asleep, otherwise you could just escape at night. Hmmm..."
+    p "I could poison him, though he'll be suspicious of both of us, now. Perhaps that sleeping perfume?" 
+    p "No, his spell must still be active while he's asleep, otherwise you could just escape at night. Hmmm..."
     show balrung smirk at basicfade
     b "I wasn't lying, you know."
     p "Hmm? Wasn't lying about what?"
