@@ -320,7 +320,8 @@ label niir6:
     n "Why don’t {b}you{/b} cook it?"
     p "Me? Cook?! That’s servants’ work."
     n "I’m no sssservant."
-    p "Or just eat it raw, or hide in Moronious’ bed for him to find later, or drop it out a window and see if it bounces. I don’t care. Though, if you don’t appreciate your little gift, I may not feel inclined to express future generosity."
+    p "Or just eat it raw, or hide in Moronious’ bed for him to find later, or drop it out a window and see if it bounces. I don’t care." 
+    p "Though, if you don’t appreciate your little gift, I may not feel inclined to express future generosity."
     hide niir at center with moveoutright
     p "Niir? Where you going?! Niir!"
 
@@ -460,7 +461,8 @@ label cyril6:
     with magic_flash
     
     n "I will not forget thissss."
-    c "I do believe you have learned your lesson, Niir.  And there will be no more of that stealing books business, or turning people green, or making them slip, or sneaking something under the door when they are sleeping.  No more of that."
+    c "I do believe you have learned your lesson, Niir."  
+    c "And there will be no more of that stealing books business, or turning people green, or making them slip, or sneaking something under the door when they are sleeping.  No more of that."
     n "Ssssay what you like. I’ll do as I pleasssse."
     hide niir at midright with moveoutleft
     show cyril neutral at center with move
