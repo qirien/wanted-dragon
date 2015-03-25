@@ -51,7 +51,8 @@ label niir_asleep_epilogue:
     play music niir_theme
     "I jabbed Niir again, but all I got out of him was the soft sound of him breathing."
     p "Niir!  I’m warning you.  You have been asleep for two weeks!  You have made me miss my sister’s coronation.  You will pay for that, I assure you."
-    p "And what’s worse is that I’ve been out here.  Miserable.  Having to get food for myself!  Foraging, Niir.  Foraging!  All because you are a useless dragon who won’t WAKE UP!"
+    p "And what’s worse is that I’ve been out here.  Miserable.  Having to get food for myself!"  
+    p "Foraging, Niir.  Foraging!  All because you are a useless dragon who won’t WAKE UP!"
     p "I can’t believe I even freed you, you know.  To think that I almost deluded myself that I lo-"
     p "Wait.  You’re moving?"
     show niir frown at center,squatting with moveinbottom
@@ -61,7 +62,8 @@ label niir_asleep_epilogue:
     p "You have to make up for this, Niir.  We have lost time to gain back.  Time in which I should have been queen."
     show niir determined at basicfade
     n "My head.  It hurtsssss."
-    p "Do stop your complaining.  You left me out here to starve.  A princess is not supposed to do everything herself; that's why I brought you along! But I guess at least I survived."
+    p "Do stop your complaining.  You left me out here to starve." 
+    p "A princess is not supposed to do everything herself; that's why I brought you along! But I guess at least I survived."
     p "Now turn into your dragon form so we can go and storm my father’s castle!"
     show niir concerned at basicfade
     n "Eggghh."
