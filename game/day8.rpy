@@ -28,7 +28,8 @@ label niir8:
     p "Moronious, we are ready."
     show cyril hat surprised at basicfade
     c "Wh-?  {i}Please{/i} don’t sneak up, Princess.  Oh.  Of course.  {b}Niir{/b}.  He must have put you up to it."
-    p "I shall ignore your ridiculous insinuation that I would be \"put up\" to anything I did not wish to do. Try our love, mage. It is strong enough to overcome even your foolish \"test\"."
+    p "I shall ignore your ridiculous insinuation that I would be \"put up\" to anything I did not wish to do." 
+    p "Try our love, mage. It is strong enough to overcome even your foolish \"test\"."
     show cyril hat laugh at basicfade
     c "Oh yes.  Your \"love\".  You’re still on with that charade, are you?"
     n "It'sss no charade! She'sss my ssssweet little... hamhocks."
@@ -76,7 +77,8 @@ label niir8:
             n "..."
             c "As I thought."
         "Ghiulana and Zanbatar":
-            p "Their names were Ghiulana and Zanbatar. They were heartbroken at Niir's imprisonment and hope and pray with all their hearts that the dishonorable mage who has him in custody will soon relent and return their beloved son."
+            p "Their names were Ghiulana and Zanbatar." 
+            p "They were heartbroken at Niir's imprisonment and hope and pray with all their hearts that the dishonorable mage who has him in custody will soon relent and return their beloved son."
             n "...did you ever lisssten to anything I sssaid?!"
             c "Obviously not!"
     
@@ -184,7 +186,8 @@ label niir8:
         c "As I thought! The only thing between you is lies and plots!"
         n "Not true.  There issss alsssso the mutual wish to sssee you ssssuffer."
         p "So, you won't let him go? You'll force me to find some other way to be with my true love?"
-        c "Well, I suppose if your father agrees to have you stay here in the castle, it wouldn’t be too bad to have you around as extra company.  Though I would not like to have to the be constant chaperone to you and the dragon."
+        c "Well, I suppose if your father agrees to have you stay here in the castle, it wouldn’t be too bad to have you around as extra company."  
+        c "Though I would not like to have to the be constant chaperone to you and the dragon."
         p "Well, I can show you how that will go right now. Niir, come with me. Moronious, you may not come."
         c "Ah, yes.  I don’t think it’s a good idea to leave you two alone right now."
         p "Then follow us, if you dare."
@@ -227,7 +230,8 @@ label niir8:
                 n "Give me a sssssecond."
                 hide niir at center with moveoutright
 
-                "I waited patiently, but I didn't realize that those two dragons had already started the attack without me until I heard the noise of spells being cast. I ran towards the source of the sound - by the castle gates."
+                "I waited patiently, but I didn't realize that those two dragons had already started the attack without me until I heard the noise of spells being cast." 
+                "I ran towards the source of the sound - by the castle gates."
                 scene bg gate dusk with fade
                 show balrung determined at quarterleft
                 show cyril angry at center
@@ -338,7 +342,8 @@ label niir8:
         p "Now, try not to belch."
         hide niir at basicfade
         play music princess_theme
-        "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes. Not that I had ever carried sacks of potatoes. But I'd seen it done. It looked easy."
+        "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes." 
+        "Not that I had ever carried sacks of potatoes. But I'd seen it done. It looked easy."
         n "Don’t ssstrain yoursssself, princessss."
         "I strode over to the barrier. It was barely visible as a slight haze in the air. I probably should have packed some provisions or tools or something, but I was done with this place."
         "Hopefully once Niir was out of the castle and had regained consciousness, he could turn into a dragon and fly us the rest of the way to [k_name]."
@@ -422,7 +427,8 @@ label cyril8:
             p "And I'll hold on to {b}you{/b}."
             show cyril concerned blush at center,come_closer
             show cyril smile blush eyes closed
-            "I grabbed the sleeves of his robe and kissed him thoroughly. He was too surprised to respond at first, and almost dropped the scepter, but soon he had his arms around me awkwardly and was attempting some sort of kiss in response. It was...adorable. Yes, perhaps now he was worthy to aid me."
+            "I grabbed the sleeves of his robe and kissed him thoroughly." 
+            "He was too surprised to respond at first, and almost dropped the scepter, but soon he had his arms around me awkwardly and was attempting some sort of kiss in response. It was...adorable. Yes, perhaps now he was worthy to aid me."
             p "Yes...Cyril, I think it's time for you and I to stop a coronation. When my father sees the power we possess, he will certainly change his mind."
 
             call credits
@@ -684,11 +690,13 @@ label balrung8:
             c "..."
             p "Well? What are you waiting for? Commence battle!"
             show balrung smirk at basicfade
-            b "Cyril, you've seen the Princess. Who do you really think is a greater threat to the safety of this kingdom? Yes, I know she's a \"princess\", and quite an attractive one at that; but she's selfish, lustful for power, and will stop at nothing."
+            b "Cyril, you've seen the Princess. Who do you really think is a greater threat to the safety of this kingdom?" 
+            b "Yes, I know she's a \"princess\", and quite an attractive one at that; but she's selfish, lustful for power, and will stop at nothing."
             b "She had even agreed to poison you in your sleep if it was necessary for our plan. Would you trust the future of this kingdom to someone like that?"
             p "Poisoning the mage was your idea!"
             show balrung angry at basicfade
-            b "You don't care whose life you have to destroy to get what you want. You don't care about the desires and goals of those around you. I know you, Princess, I've seen into your heart and it's dark with malice."
+            b "You don't care whose life you have to destroy to get what you want. You don't care about the desires and goals of those around you." 
+            b"I know you, Princess, I've seen into your heart and it's dark with malice."
             c "You'd know all about malice, wouldn't you?!"
             show balrung neutral at basicfade
             b "Yes. I would. I used to be the same. But, Cyril, after all this time, do you know what I really want to do?"
