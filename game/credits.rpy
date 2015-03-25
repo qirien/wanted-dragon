@@ -27,5 +27,6 @@ label credits:
     show text "{color=#fff}Epilogue{/font}"
     $ renpy.pause(1.6)
     
+    scene black with fade
     return
     

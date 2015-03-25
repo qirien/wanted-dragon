@@ -149,13 +149,14 @@ label cyril7:
             c "I mean, with us.  Between us.  Errr, together."
             p "Possibly.  But you would need to be more powerful.  "
             extend "And wear that ridiculous hat a lot less."                
-            show cyril concerned blush at basicfade
+            show cyril hat concerned blush at basicfade
             c "I feel quite unclothed without my hat.  But I mean, I could.  {i}For you{/i}."
-            show cyril smile blush
+            show cyril smile blush at basicfade
             "And then he took off his hat and looked at me with those pathetic puppy dog eyes of his as if he was begging for some kind of approval from me."
             "Tsh.  Most unappealing.  Even though I know he would be loyal if I let him down, I feel as though I should at least bite my tongue."
             p "That's a start, Cyril.  And after you go away and make yourself useful then maybe we can take more steps forward."
             c "I- I'd like that, your Highness."
+            "He turned away, embarrassed, and put his hat back on."
             
         "\"That offer is a complete waste of my-I mean your time.\"":        
             c "Well, yes.  It was rather perposterous come to think of it."
@@ -171,6 +172,7 @@ label cyril7:
             c "You would do that, for me?"
             p "Of course I would Cyril.  You can trust me with these crafty dragons."
             
+    show cyril hat laugh at basicfade
     c "I thank you Princess.  You have been a great sounding board.  Person.  Great sounding person."
     c "Oh! I almost forgot! I have something for you!"
     p "Hand it over, then! I am...fond of presents."
@@ -196,9 +198,10 @@ label cyril7:
             p "But...I would like to look at them more closely. Would it be possible for you to remove them and place them in my hands? I wouldn't want to break them."
             c "Right away!  I’ll just get down here and - "
             hide cyril at center with moveoutbottom 
-            extend "Just one…"
+            extend "Just one..."
             p "Please tell me they are not stuck."
-            c "If you’d just bear with me…  "
+            c "If you’d just bear with me...  "
+            show cyril hat smile blush at center with moveinbottom
             extend "There we go.  You may observe your shoes, your Highness."
             "Whew. If I'd had to wear those any longer...But they did look lovely."
             p "I believe they would look best decorating my room. It still looks as though a reclusive wizard lives there, for some reason."
@@ -213,6 +216,7 @@ label cyril7:
             hide cyril at center with moveoutbottom 
             c "They are a little tighter than expected.  Just wait a moment."
             p "They had better not be stuck!"
+            show cyril hat concerned blush at center with moveinbottom
             c "And there.  I am dreadfully sorry."
             p "Whoever heard of shoes made of glass?! It sounds like an assassination weapon, if you ask me."
             c "Oh well.  I thought it was regular princess wear.  I suppose I was mistaken.  It won’t happen again, Princess."
