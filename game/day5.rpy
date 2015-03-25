@@ -159,7 +159,8 @@ label day5:
                         b "I have some ideas. And I trust you have your own methods of getting others to believe what you wish."
                         p "I do."
                         show balrung smile at basicfade
-                        b "Why don't you meet me down in the dungeons in an hour, and we can spend some time together? If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
+                        b "Why don't you meet me down in the dungeons in an hour, and we can spend some time together?" 
+                        b "If you can arrange so that Merlonious happens to find out where you are, you'll have set the stage for him to believe we are falling in love."
                         p "He seems to think you cannot change. How will you convince him otherwise?"
                         show balrung smirk at basicfade
                         b "As I have acted the recalcitrant criminal for forty years, when I suddenly do appear kind and loving, it will be very convincing."
@@ -192,7 +193,8 @@ label balrung5:
             show balrung determined at basicfade
             b "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
             show balrung neutral at basicfade
-            b "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding. She was a mage who came to live among our kind to learn more about us and, though she never said it, to prove to us that humans were worth talking to."
+            b "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding." 
+            b "She was a mage who came to live among our kind to learn more about us and, though she never said it, to prove to us that humans were worth talking to."
             show balrung smirk at basicfade
             b "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
             show balrung angry at basicfade
@@ -221,7 +223,8 @@ label balrung5:
     b "No! I would have let her leave, once she had listened to me! She refused to even talk to me! And her mentors were poisoning her mind against me. I had to bring her away from all of that."
     p "Hmph. Did it work?"
     show balrung neutral at basicfade
-    b "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison. To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
+    b "No. No, it...didn't work at all. She used her magic, and her very life force, to create this...prison." 
+    b "To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
     menu:
         "Serves you right.":
                     p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her with you."
@@ -368,10 +371,12 @@ label niir5:
     n "And only ssssteal you away if you assssk me to."
     "He bent his head close to my ear and whispered,"
     n "Your turn."
-    p "Niir! I used to think you were an untrustworthy, lascivious, uncivilized beast of a dragon! But, oh, how wrong I was! Only now can I see past the mask you wear to hide your pain. Now, I can see the true, sweet, caring Niir underneath!"
+    p "Niir! I used to think you were an untrustworthy, lascivious, uncivilized beast of a dragon! But, oh, how wrong I was!" 
+    p "Only now can I see past the mask you wear to hide your pain. Now, I can see the true, sweet, caring Niir underneath!"
     show niir determined at basicfade, come_closer
     n "I'm not ssssweeet or carrring!"
-    p "You've worn this mask for so long, even you have started to believe it! But I know that you've changed. You've learned your lesson, and now you would never hurt anyone or offend a Princess's delicate sensibilities!"
+    p "You've worn this mask for so long, even you have started to believe it!" 
+    p "But I know that you've changed. You've learned your lesson, and now you would never hurt anyone or offend a Princess's delicate sensibilities!"
     "He hissed in my ear,"
     show niir smirk at basicfade, come_closer
     n "Delicate sensibilitiessss? Ssssurely you mussst mean some {b}other{/b} Princessss?"
@@ -411,7 +416,8 @@ label niir5:
     extend "It must be a trick."
     p "Moronious, you are dreadfully mistaken. But I will be generous and allow you a few days to change your mind."
     show cyril hat concerned at basicfade
-    c "I propose a test if this is to go on.  Niir, you must prove this to me.  And then at the end I will test you both to see how well you know one another and how deep your commitment is to one another.  I do not let dragons leave willy-nilly you know."
+    c "I propose a test if this is to go on.  Niir, you must prove this to me."  
+    c "And then at the end I will test you both to see how well you know one another and how deep your commitment is to one another.  I do not let dragons leave willy-nilly you know."
     p "Our love is strong enough to pass your silly tests! I have no doubts about that."
     show niir smirk at basicfade
     n "Give us a few dayssss, and I'll know her well enough to passs any tessst..."
