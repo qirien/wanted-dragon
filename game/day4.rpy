@@ -50,10 +50,12 @@ label cyril4:
     c "As I said, it isn’t an exact location.  But it should be somewhere around the east wing.  At least that narrows our search.  Though it doesn’t help too much."
     p "Then begin searching!"
     show cyril hat concerned blush at basicfade
-    c "It’s not that simple.  We need all hands on deck, so to speak.  Well, more hands than I have presently.  And I do not trust the hands of those dragons - slippery creatures that they are.  So yes, we are short-handed when it comes to searching.  It might take months to canvas the whole area!"
+    c "It’s not that simple.  We need all hands on deck, so to speak.  Well, more hands than I have presently.  And I do not trust the hands of those dragons - slippery creatures that they are.  "
+    c "So yes, we are short-handed when it comes to searching.  It might take months to canvas the whole area!"
     p "...I need more minions. Or perhaps simply more powerful minions. But, as there is just you, I will also search for this artifact. Direct me to the east wing!"
     show cyril hat smile blush at basicfade
-    c "That is- that is most gracious of you.  The east wing is this way, but I wouldn’t want you to do too much hard work.  If there is any lifting you need, just call me over and with a wave of my wand, I will remove the item obstructing your search."
+    c "That is- that is most gracious of you.  The east wing is this way, but I wouldn’t want you to do too much hard work."  
+    c "If there is any lifting you need, just call me over and with a wave of my wand, I will remove the item obstructing your search."
     scene bg corridor with slowfade
     scene bg stairs day with slowfade
     scene bg hall with slowfade
@@ -183,7 +185,8 @@ label balrung4:
     b "No, I'm afraid it won't be enough. You have no moves left."
     p "..."
     show balrung smile eyes closed at basicfade
-    b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent. Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
+    b "Thank you so much, Princess, I can't express how much I've enjoyed the chance to play against a real opponent." 
+    b "Perhaps you'll consider this a warm-up match and we can play a real game some other time?"
     p "A warm-up, yes...perhaps. I'm leaving now."
     show balrung smirk at basicfade
     b "Until next time, Princess."

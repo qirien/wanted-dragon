@@ -405,10 +405,12 @@ label niir3:
     p "I left in a bit of a...hurry."
     show niir concerned at basicfade
     n "And you may never go back."
-    p "Of course I’m going back! But when I go back, it shall be with such power and magnificence that they will have no choice but to accept me as Queen! I had thought to find something useful here, but it seems there’s only dusty old rooms and dusty old dragons."
+    p "Of course I’m going back! But when I go back, it shall be with such power and magnificence that they will have no choice but to accept me as Queen! "
+    p "I had thought to find something useful here, but it seems there’s only dusty old rooms and dusty old dragons."
     show niir mischief at basicfade
     n "Leaving issss not alwaysss an option.  Not just for dragonsss either.  I might make it my misssion to keep you here."
-    p "Hmph. Well, then your mission will need to include renovating this castle, finding me a new wardrobe, making me a queen, and making yourself...less of a nuisance. I’m not sure you can handle all that, particularly the last requirement. Though, if you could..."
+    p "Hmph. Well, then your mission will need to include renovating this castle, finding me a new wardrobe, making me a queen, and making yourself...less of a nuisance." 
+    p "I’m not sure you can handle all that, particularly the last requirement. Though, if you could..."
     show niir smirk at basicfade
     n "Ahhh, ssseems it took less persuasion than I originally thought."
     p "I am not persuaded of anything, yet. Show me you are capable, however, and then I will decide."
@@ -421,7 +423,8 @@ label niir3:
     with moveinright    
     show niir smile at basicfade
     n "What is your cassstle like?  Better than thisss?"
-    p "Obviously. Though, this castle does have a certain... gravity that is hard to find in a castle these days. My castle was- {b}is{/b} -full of beauty, with stained glass scenes of my ancestors’ achievements, and every comfort a queen deserves."
+    p "Obviously. Though, this castle does have a certain... gravity that is hard to find in a castle these days." 
+    p "My castle was- {b}is{/b} -full of beauty, with stained glass scenes of my ancestors’ achievements, and every comfort a queen deserves."
     show niir neutral at basicfade
     n "Perhapsss I will consider helping you take that one inssstead.  But you ssstill haven’t made me a good enough deal.  What will we do with thissss father of yourss if I help you take it?"
     p "Father? Well, I...he... what do you care what I do with my father?!"
@@ -429,7 +432,8 @@ label niir3:
     n "Oh, a sssore spot.  Fathersss usually are.  At leassst you have not had to deal with a dragon father."
     p "What is your father like?"
     show niir frown at basicfade
-    n "I don’t remember, usss dragonsss do not have strong paternal bondsss.  But ever since I arrived here Balrung hasss acted like my father.  And every time I try to be rid of him, it sssseems I am ssstuck with him, in this form.  We dragonsss would rather not have such submisssion to parental figures."
+    n "I don’t remember, usss dragonsss do not have strong paternal bondsss.  But ever since I arrived here Balrung hasss acted like my father.  And every time I try to be rid of him, it sssseems I am ssstuck with him, in this form. "
+    n "We dragonsss would rather not have such submisssion to parental figures."
     p "He wants you to be something you’re not."
     show niir determined at basicfade
     n "It sssseems in two dayss you understand me more than he."
@@ -449,12 +453,14 @@ label niir3:
     show niir sad at basicfade
     n "I don’t remember tasssting true freedom.  It hasss been too long."
     p "..."
-    p "Surely you can think of {b}something{/b}? Flying around a volcano, or devouring a herd of sheep, or decimating an enemy castle? Actually, you’ll need to leave the castle in good enough condition that I can inherit it; just do enough damage to scare everyone out of it."
+    p "Surely you can think of {b}something{/b}? Flying around a volcano, or devouring a herd of sheep, or decimating an enemy castle?" 
+    p "Actually, you’ll need to leave the castle in good enough condition that I can inherit it; just do enough damage to scare everyone out of it."
     show niir determined at basicfade
     n "Who {b}are{/b} you Princessss?  You ssssurely do not act like any princess that I have ssseen."
     p "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom?"
     show niir neutral at basicfade
-    n "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss.  Won’t your people be displeasssed with your hearty appetite for destruction?"
+    n "The princessesss did not tell me to devour ssssheep or decimate a cassstle.  If that isss the type.  I thought it wasssn’t ‘regal’ to sssugest such thingsss."  
+    n "Won’t your people be displeasssed with your hearty appetite for destruction?"
     p "It’s not destruction I crave, but the throne! And if a little poison fails to do the trick, then perhaps I’ll try a little dragon fire."
     "Oops! Did I mention the poison?!"
     show niir determined at basicfade
