@@ -2,7 +2,7 @@
 # Cyril route endings
 #
 
-
+# Dark Queen
 label cyril_dark_epilogue:
     scene bg dungeon with fade
     show cyril concerned at center, basicfade
@@ -22,11 +22,13 @@ label cyril_dark_epilogue:
     show cyril angry at basicfade
     c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around."  
     c "I was wrong.  Imprisoning them was wrong.  They only deserve death."
-    p "Good, good. I'm so glad I can count on you, Cyril. You'll always be my favorite minion."
+    p "Good, good. You've come a long way since the stuttering, bumbling half-mage you used to be. I'm proud of you, Cyril."
+    
+    $persistent.DarkQueen = True
     scene black with veryslowfade
     return
       
-
+# Queen's Hero
 label cyril_scepter_epilogue:
     # since you can only get this ending if affection points are high and telling Cyril to go study gives you more points, it’s safe to say he’s away studying...  
     p_write "To Cyril Merlonious,"
@@ -61,10 +63,12 @@ label cyril_scepter_epilogue:
     c "Yes-ahem.  Please come with me to this ball, great Queen.  I would be privileged to accompany you."
     p "There, was that really so hard? Of course you may accompany me. And, have one of these cinnamon cakes; they're delicious."
     c "Thank you, your majesty."
+    
+    $persistent.QueensHero = True
     scene black with veryslowfade
     return
 
-
+# Dragon Queen
 label cyril_dragon_epilogue:
     scene bg kingdom with fade
     show cyril neutral at center, basicfade
@@ -72,8 +76,7 @@ label cyril_dragon_epilogue:
     show cyril smile at basicfade
     c "So if you would just drink the potion and then rest for a while, I am sure you will be back to normal in no time."
     p "I still think that if I lit enough pants on fire, they might change the law to allow a dragon to be Queen. But... I'll drink it."
-    #TODO: some magical VFX
-    show cyril smile blush at basicfade
+    show cyril smile blush at magic_flash
     c "Thank you, my-your majesty.  It was quite extraordinary that you became a dragon at all.  It’s good that scepter is now locked away securely so no one else can have the same fate."
     p "Securely? Where exactly did you hide it?"
     show cyril surprised at basicfade
@@ -86,5 +89,7 @@ label cyril_dragon_epilogue:
     p "That's a good boy.  Mmmmm.  Yeeees."
     show cyril smile blush at basicfade
     p "You certainly are my favorite minion."
+    
+    $persistent.DragonQueen = True
     scene black with veryslowfade
     return

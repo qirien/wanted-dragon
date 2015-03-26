@@ -1,6 +1,6 @@
 label day3:
     scene bg bedroom dusk with fade
-    play music princess_theme
+    play music evil_theme
     
     p "Ugh, this castle is so cold and dank. The snow hasn't quite melted yet, here. But the birds are still out..."
     p "Strange... one of them is flying this way. Almost as if it's going to-"
@@ -27,7 +27,7 @@ label day3:
     p "Magnolia...so devious! Even as she outwardly pretends to want me back, it's clear she knows I was the one who put the poison in her tea."
     p "Look how she tries to put me in my place! \"Important things to help out with,\" ridiculous. But I know she has Father completely fooled."
     p "Well, if she thinks I'm going to slink back there and \"help out\" with \"important\" things like planning balls and planting gardens, she's delusional!"
-    p "I WILL BE QUEEN!!!"
+    p "I WILL BE QUEEN!!!" with vpunch
     
     p "But for now... how should I reply?"
     menu:
@@ -287,7 +287,9 @@ label balrung3:
     b "I sometimes read from the library, though human books are so maudlin and predictable."
     p "Are there dragon books?"
     show balrung smile at basicfade
-    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces. We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
+    b "Most dragons don't take time to read... so I'm afraid there aren't many. But the few books that have been written are masterpieces."
+    show balrung smile eyes closed at basicfade
+    b "We dragons don't do anything by halves. I only have one of my books here - this book of poetry."
     p "Dragon poetry? What is it like?"
     show balrung smirk at basicfade
     b "It's not nearly as powerful in translation, but there's one here that still speaks to me. Would you care to read it?"
@@ -333,10 +335,12 @@ label balrung3:
             b "It speaks to me of freedoms I have all but forgotten. Of a life so far in the past it feels like history. Of the possibilities of the future."
     p "Is this really poetry? I see no rhymes, no pattern of syllables."
     show balrung smile at basicfade
-    b "This is an example of the 7-chain form. There are seven lines in the poem. The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
+    b "This is an example of the 7-chain form. There are seven lines in the poem."
+    b "The first is a single word that introduces the topic of the poem. The next five elaborate, and the last line restates the topic in a different way."
     p "That's it?"
     show balrung neutral at basicfade
-    b "And, the ending sound of each word must be the starting sound of the next word. This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
+    b "And, the ending sound of each word must be the starting sound of the next word."
+    b "This is much easier in our language because of the simpler conjugation of verbs and greater variety of- Forgive me, Princess. I'm afraid I'm boring you."
     p "Yes, you are. Goodbye."
     show balrung smirk at basicfade
     b "Another time, perhaps."

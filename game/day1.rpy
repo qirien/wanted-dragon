@@ -220,7 +220,6 @@ label sharecyril:
 label explore1:
     play music evil_theme
     scene bg corridor with fade
-    play music princess_theme
     p "I don't need any help! I will scour this place myself!"
     p "And if I find something I can use to my advantage then it won't be a pathetic waste of a day."
     p "I just wish something would fall out of the sky that would be the answer to all my problems."
@@ -247,23 +246,23 @@ label explore1:
     show niir smirk at basicfade
     n "I'd advisssse you to be more careful."
     p "In case what?  There's some dragon lurking around above me and spying on me?"
-    p "How ever will I cope?"
+    p "However will I cope?"
     show niir determined at basicfade
     n "Careful.  Or you might make a dragon mad."
-    p "How do you know that wasn't what I intended?"
+    p smile "How do you know that wasn't what I intended?"
     show niir concerned at basicfade
     n "You are not sssscared?"
     show niir neutral at basicfade
     n "..."
     show niir frown at basicfade
     n "Curiousss."
-    p "And could you stop sniffing me like that, I {i}have{/i} recently bathed!"
+    p tsk "And could you stop sniffing me like that, I {i}have{/i} recently bathed!"
     show niir happy at basicfade
     n "Oh of that, I'm well aware."
     p "So I guess that's why you're in here."
     p "Any proper lady would be repulsed by such loathsome habits."
     show niir frown at basicfade
-    p "But it's a good thing I'm not so proper, because I'm the only shot you have at getting out of here."
+    p "But it's a good thing I'm not so proper, because I'm the only chance you have at getting out of here."
     show niir angry at basicfade
     n "You need to get your facts sssstraight nexxxt time."
     show niir smirk at basicfade

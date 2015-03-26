@@ -155,7 +155,7 @@ label day2:
     p "Narcissistic."
     show balrung determined at basicfade
     b "Self-sacrificing."
-    p "Knows whats best for everyone else."
+    p "Knows what's best for everyone else."
     show balrung neutral at basicfade
     b "Yes, precisely. So if you are in need of allies here, I hope you will seek me out, and perhaps we can aid each other."
     p "But you could only aid me if you were freed."
@@ -175,11 +175,12 @@ label day2:
     
 label dinner_party:
         
-    scene bg kitchen with fade
+    scene bg kitchen
     show niir neutral at right
     show balrung neutral at center, basicfade
     show cyril neutral hat at left, basicfade
-    play music cyril_theme
+    with fade
+    play music princess_theme
     
     p "Good, you are all here. That proves you can fulfill a simple request."
     show balrung smirk at basicfade
@@ -199,7 +200,7 @@ label dinner_party:
     show niir mischief at basicfade
     n "Hilarioussss, don’t you think?"
     show cyril hat concerned blush at basicfade
-    c "That wasn’t- it wasn’t entirely like that.  You must believe me Princess."
+    c "That wasn’t- it wasn’t entirely like that.  You must believe me, Princess!"
     show cyril neutral hat at left
     p "I don’t care what you thought.  Your future Queen hasn’t the time to consider such things.  What a waste. "
     p "No, I thought it would be nice for us to...{i}talk{/i} together about matters of the kingdom."
@@ -260,6 +261,7 @@ label dinner_party:
     b "That would be like the blind man describing a sunset in your case, Niir. No, let the Princess speak."
     show cyril hat angry at basicfade
     c "I warn you, speaking of things like this never go well.  "
+    show cyril hat surprised at basicfade
     c "My, word might even get out that we’re {i}conspiring{/i}!  Conspiring, Princess!  I think it would be best if we leave this alone for the present moment."
     p "Charges of conspiracy only matter if we lose. No one charges Queens with conspiracy!"
     show cyril hat concerned eyes closed at basicfade
@@ -282,10 +284,10 @@ label dinner_party:
     c "This instant, Niir!"
     show niir neutral at basicfade
     n "Thissss inssstant, you sssay?"
+    show cyril angry at basicfade
     show niir at center
     show balrung neutral at right
     with move
-    show cyril angry at basicfade
     c "Don’t you dangle that thing in front of me, Niir.  This is no joking matter."
     show cyril concerned at basicfade
     c "And no, I will not jump for it.  I will not sink to such standards."
@@ -302,6 +304,7 @@ label dinner_party:
     c "He threw it.  Of course he did.  "
     show cyril concerned at basicfade
     c "Stay right here dragons, while I come right back.  Please keep an eye on them Princess."
+    show balrung neutral at right    
     hide cyril at left with moveoutleft
     "Oh, I'll keep an eye on them, alright. But, which one?"
     menu:

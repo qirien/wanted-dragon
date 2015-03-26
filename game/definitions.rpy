@@ -56,7 +56,7 @@ init -1:
     image bg stairs day = "bg/stairs_day.jpg"
     image bg stairs = "bg/stairs_dusk.jpg"
     image bg stairs night = "bg/stairs_night.jpg"
-    image bg storage = "bg/storage.jpg"
+    image bg storage = "bg/closet.jpg"
     image bg sunset = "bg/sunset.jpg"
     image bg woods = "bg/woods.jpg"
 
@@ -167,6 +167,6 @@ init -1:
     define niir_theme = "music/OniValse.mp3"
     define evil_theme = "music/Malos.mp3"
     define princess_theme = "music/EvilPrincessMarch.ogg"
-    define cyril_theme = "music/AwkwardMageWaltz.ogg" #TODO: updated version?
+    define cyril_theme = "music/AwkwardMageWaltz.ogg" 
     define happy_ending = "music/SettingTheSails.mp3"
-    define intro_music = "music/AMomentOfTwilight.mp3"
+    define intro_music = "music/Pompous.mp3"

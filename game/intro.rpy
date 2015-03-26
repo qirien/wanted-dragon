@@ -53,10 +53,10 @@ label sweet:
     show cyril hat smile at basicfade
     c "Well, I guess I haven't had company in quite some time.  And it does get rather dreary with those dragons questioning me.  Come in, yes.  Come in."
     hide cyril at center with moveoutleft
-    "Ha ha, yes! Everyone falls for the princess-caught-in-the-rain ruse."
+    "Everyone falls for the Princess-caught-in-the-rain ruse."
     stop sound fadeout 2.0
     scene bg hall with fade
-    show cyril hat neutral at midright
+    show cyril hat neutral at center
     with moveinright
     p "It is so cold in here; would you mind showing me to my room?"
     c "Your...room? Yes. Um. Well, you can have mine, that's probably the nicest. I mean, the only room that's not covered in dust, really."
@@ -113,7 +113,7 @@ label truth:
 label room_intro:
     hide cyril at center with moveoutleft
     scene bg bedroom candle with fade
-    show cyril hat neutral at midright
+    show cyril hat neutral at center
     with moveinright
     p tsk "{b}This{/b} is the best room in the castle?"    
     show cyril hat concerned at basicfade
@@ -124,7 +124,7 @@ label room_intro:
     show cyril hat concerned blush at basicfade
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean my Highness!  Your Highness.  Because you are most certainly not mine... errr... I will see to that bath."
     p neutral "..."
-    #TODO: SHOWER?
+    #TODO: SHOWER? splash sfx?
     scene black with fade
     scene bg bedroom candle with fade
     
@@ -190,8 +190,7 @@ label meet_dragons:
     hide cyril at center with moveoutleft
     scene bg stairs night with fade
     show cyril hat neutral at center
-    with moveinright
-    play music evil_theme    
+    with moveinright  
     show cyril hat concerned at basicfade
     c "I must warn you, do not believe a word they say.  They can be quite cutting at times.  I remember this one day where they- well, that's not important, and I most certainly did not cry for days about it."
     show cyril hat neutral at basicfade
@@ -205,16 +204,17 @@ label meet_dragons:
     "And yet also intriguing."
     hide cyril at center with moveoutright
     scene bg dungeon night with fade
+    play music evil_theme  
     show cyril hat neutral at quarterleft with moveinleft
-    show cyril hat neutral at basicfade
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     show balrung neutral at center with moveinright
+    show cyril hat neutral at basicfade
     show balrung smirk at basicfade
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
     show niir neutral at quarterright with moveinright
     n "Cccyri the Chassssste.  I sssssee that you have brought a lady friend.  Delic-delightful."
     show cyril hat concerned at basicfade
-    c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir."  #TODO: weird flash here?!  no idea why, has to do with basicfade...
+    c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir." 
     show cyril hat concerned blush at basicfade
     c "I mean, I don't- I can't- Regardless, she is here to see you.  Apparently.  Though I still don't get why..."
     menu dragon_chat:
@@ -456,7 +456,7 @@ label joinmage:
     c "But never mind that."
     show cyril hat smile blush at basicfade
     c "Are you enjoying your meal?"
-    p angry "You do know that I am a princess, correct?"
+    p angry "You do know that I am the Princess, correct?"
     p tsk "And in what way did you think that this was worthy of a princess?"
     show cyril hat concerned blush at basicfade
     c "I... I'm not quite sure."

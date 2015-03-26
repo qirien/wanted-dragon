@@ -2,6 +2,7 @@
 # Balrung route endings
 #
 
+# Queen's Gambit
 label balrung_epilogue:
     scene bg kingdom with fade
     show balrung smile at center, basicfade
@@ -36,9 +37,12 @@ label balrung_epilogue:
     p "But I do kiss, when the mood strikes me."
     show balrung smile eyes closed at basicfade
     $ renpy.pause(1.6)
+    
+    $persistent.QueensGambit = True
     scene black with veryslowfade
     return 
 
+# Revenge Never Ends
 label balrung_revenge_epilogue:
     scene bg bedroom candle with fade
     play music evil_theme
@@ -74,6 +78,7 @@ label balrung_revenge_epilogue:
         p "This changes nothing!  Moronious and I have the scepter now, and together we will rid [k_name] of not one illegitimate tyrant, but two!"
         p "Mwah ha ha ha ha!"
     
+    $persistent.RevengeNeverEnds = True
     scene black with veryslowfade
     return
 
@@ -153,6 +158,7 @@ label balrung_ending:
         call credits
         jump balrung_revenge_epilogue
                    
+# Princess in Prison
 label imprisoned_epilogue:
     scene bg dungeon with fade
     show cyril hat concerned at midleft with moveinleft
@@ -184,5 +190,7 @@ label imprisoned_epilogue:
     "...but I refused to be beaten. It wasn't too late to escape this hell and return to [k_name]." 
     "I'd just have to be more careful, lay better plans, put on my good-princess face, and THEN take my revenge. On all of them!"
     "Mwah ha ha ha ha!"
+    
+    $persistent.PrincessInPrison = True
     scene black with veryslowfade
     return

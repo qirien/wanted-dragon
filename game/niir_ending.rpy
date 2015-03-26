@@ -2,6 +2,7 @@
 # Niir Route endings
 #
 
+# Definitely True Love
 label niir_free_epilogue:
     scene bg kingdom with fade
     show niir neutral at center, basicfade with moveinright
@@ -42,10 +43,12 @@ label niir_free_epilogue:
     p "Not nearly enough. Everyone's too scared to misbehave around here."
     n "I’m not ssscared to misssbehave.  Perhapsss I ssshould make up for the lack of misssbehavior around here."
     p "That's what I'm counting on."
+    
+    $persistent.DefinitelyTrueLove = True
     scene black with veryslowfade
     return 
     
-    
+# Never Too Late    
 label niir_asleep_epilogue:
     scene bg woods with fade
     play music niir_theme
@@ -79,5 +82,7 @@ label niir_asleep_epilogue:
     n "{i}zzz{/i}."
     p "Niir!  NIIR!  I will not stand for this, Niir.  You must serve your queen!"
     p "You owe me for this, dragon."
+    
+    $persistent.NeverTooLate = True
     scene black with veryslowfade
     return

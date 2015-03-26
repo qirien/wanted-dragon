@@ -7,7 +7,7 @@ label start:
     while (i<9):
         stop music fadeout 2.0
         scene black with fade
-        show text "Day [i]"
+        show text "{color=#fff}{size=+10}Day [i]{/size}{/color}"
         $ renpy.pause(1.6)
         call expression "day" + str(i)
         $ i += 1

@@ -191,7 +191,8 @@ label balrung5:
     menu:
         "Pay attention":
             show balrung determined at basicfade
-            b "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent.  Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
+            b "It starts with a human woman. Myriah. She was... like you, in many ways. Powerful. Ambitious. Intelligent."
+            b "Her Queens and Pawns strategies were always elegant and ruthless; her victories surprising yet inevitable."
             show balrung neutral at basicfade
             b "We met forty years ago. I was young, then, full of ideals of cooperation and mutual understanding." 
             b "She was a mage who came to live among our kind to learn more about us and, though she never said it, to prove to us that humans were worth talking to."
@@ -199,11 +200,13 @@ label balrung5:
             b "We played many games together. After her studies were complete and she returned to her Academy, I'd take on this feeble human form just to meet her there and match wits with her."
             show balrung angry at basicfade
             b "I'm not sure she understood how much of a sacrifice that was for me; how I was ridiculed, how many friends I alienated."
-            "I was so caught up in what he was saying that I almost missed how he had setup his pawns in a chain reaction that was about to decimate my queens. But now that I had seen through his scheme it would be easy to unravel."
+            "I was so caught up in what he was saying that I almost missed how he had setup his pawns in a chain reaction that was about to decimate my queens."
+            "But now that I had seen through his scheme it would be easy to unravel."
         "Focus on strategy.":
             show balrung determined at basicfade
             b "Human woman Myriah, blah, blah... forty years... blah, blah, cooperation... blah, blah ambitious, blah blah, strategies... blah, blah, sacrifice."
-            "He's trying to draw my attention with his Queens while the Pawns setup a chain reaction! My Queens shall whittle down his defenses while he's not paying attention."
+            "He's trying to draw my attention with his Queens while the Pawns setup a chain reaction!"
+            "My Queens shall whittle down his defenses while he's not paying attention."
 
     p "Go on. Your move."
     show balrung neutral at basicfade
@@ -227,14 +230,14 @@ label balrung5:
     b "To trap me in human form, and make it possible for her colleagues to trap other dragons who failed to conform to their human ideals of dragon behavior."
     menu:
         "Serves you right.":
-                    p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her with you."
-                    show balrung angry at basicfade
-                    b "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
+            p "Serves you right. That's what {b}you{/b} wanted to do to {b}her{/b}, after all - trap her with you."
+            show balrung angry at basicfade
+            b "I didn't want that. I wanted her to choose to be with me. But she chose to die instead..."
         "You loved her.":
-                    p "You loved her, then?"
-                    show balrung angry at basicfade
-                    b "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
-                    $ balrung_affection += 1
+            p "You loved her, then?"
+            show balrung angry at basicfade
+            b "Of course I loved her! That was the point of the whole thing! But she chose to die rather than be with me..."
+            $ balrung_affection += 1
 
     p "You were a fool for discarding your strategy in favor of emotion. Much like in this game. Resign now, while you still can!"
     show balrung determined at basicfade

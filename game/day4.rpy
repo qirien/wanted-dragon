@@ -73,9 +73,10 @@ label cyril4:
     return
 
 label dragons4:
-    scene bg dungeon with fade
+    scene bg dungeon
     show balrung neutral at midleft, basicfade
     show niir neutral at midright, basicfade
+    with fade
     play music evil_theme
     
     show balrung smile at basicfade
@@ -107,7 +108,7 @@ label dragons4:
             p "I don't have that much time."
             
     menu:
-        "\"Niir, you must act as though you are in love with me.\"":
+        "\"Niir, act as though you are in love with me.\"":
             p "Niir, you must act as though you are in love with me."
             jump niir4
                 
@@ -141,7 +142,7 @@ label balrung4:
     n "You should play ssstrip Queensss and Pawnssss."
     show balrung smile eyes closed at basicfade
     b "Niir, perhaps you would like to play against the Princess?"
-    show niir smirk at basicfade
+    show niir frown at basicfade
     n "I do have a fine opening move... but not for Queensss and Pawnssss. I shall ssseeek better entertainment."
     hide niir at midright with moveoutright
     show balrung neutral at center with move

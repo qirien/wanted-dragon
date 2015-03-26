@@ -122,7 +122,7 @@ The following songs are licensed CC-BY-NC-SA 3.0.
 "Tema de los Malos", <Malos.mp3> from  3 Obras de Teatro by clbustos, <https://www.jamendo.com/en/list/a8447/3-obras-de-teatro>
 "Cello", <Cello.mp3> from Yellow by Bo Moonlight, <https://www.jamendo.com/en/track/344576/cello>
 "Setting the Sails", <SettingTheSails.mp3> by Marc Teichert, <https://www.jamendo.com/en/track/477393/setting-the-sails>
-"A Moment of Twilight", <AMomentOfTwilight.mp3> by Marc Teichert, <https://www.jamendo.com/en/track/477310/a-moment-of-twilight>
+"Pompous", <Pompous.mp3> by Celestial Aeon Project, <https://www.jamendo.com/en/track/818612/pompous>
 
 .License
 ****
