@@ -70,25 +70,45 @@ label cyril_scepter_epilogue:
 
 # Dragon Queen
 label cyril_dragon_epilogue:
-    scene bg kingdom with fade
-    show cyril neutral at center, basicfade
-    c "It’s for the best, Chrysandra.  I know you don’t want to take this potion but I travelled a long way and met up with many, many members of the council in order to get it."
-    show cyril smile at basicfade
-    c "So if you would just drink the potion and then rest for a while, I am sure you will be back to normal in no time."
-    p "I still think that if I lit enough pants on fire, they might change the law to allow a dragon to be Queen. But... I'll drink it."
-    show cyril smile blush at magic_flash
-    c "Thank you, my-your majesty.  It was quite extraordinary that you became a dragon at all.  It’s good that scepter is now locked away securely so no one else can have the same fate."
-    p "Securely? Where exactly did you hide it?"
-    show cyril surprised at basicfade
-    c "You mustn’t worry about that my Queen.  But do trust me that it is securely away at the top of the cas- Oh dear.  I must work on holding my tongue more in the future."
-    "The top of the castle?! I wondered if I might get it back... but perhaps it was better to stay here, as a human, but a Queen." 
-    "Well, if I ever tire of being Queen, I know just where to go!"
-    p "Don't worry about it, dear. Come here and rub my shoulders; they feel so cramped now that I'm human again. No wings! It's simply dreadful."
-    show cyril smile blush eyes closed at basicfade
-    c "Y-yes, your majesty."
-    p "That's a good boy.  Mmmmm.  Yeeees."
-    show cyril smile blush at basicfade
-    p "You certainly are my favorite minion."
+    scene bg woods with fade
+    c "Stop, stop, {b}stop{/b}! Your Highness!"
+    p "Oh, are you still here, Cyril? I'll land and you may depart. You have served me well."
+    show cyril neutral at center, basicfade   
+    c "Where are you going anyway?  The kingdom is back {b}that way{/b}!  We’re going to far from where you are to rule.  We must go back!"
+    p "Why rule a tiny kingdom when I can rule the entire skies?! I've never seen what's beyond the Seven Kingdoms."
+    c "Well I- I hadn’t quite thought of it like that."
+    c "But who is going to rule the kingdom your Highness?  You can’t just up and leave!"
+    c "There are responsibilities to be had..."
+    p "Oh, I don't care. As long as it's not Magnolia...though, I don't think she'll dare return after the singing I gave her!"
+    p "...in fact, why don't you take the throne? Keep it warm for me, in case I change my mind. I know {b}you{/b} at least would not betray me."
+    c "Me?  Take the?  Oh, no no.  I am just a humble mage.  But perhaps-"
+    c "But where would you go?  And when would you be back?"
+    p "I shall fly wherever I want!  See everything that there is! Return whenever I please! I am a dragon, Cyril, a DRAGON!"
+    c "But I- but… {size=-1}I’d miss you.{/size}"
+    p "Oh, come, don't look so crestfallen. When I return I'll tell you all about my adventures and you can write a book about me."
+    c "Well, yes, I guess I could write a book.  When you do return, whoever knows when that will be."
+    p "Farewell, Cyril! I suppose I should thank you for the small part you played in my becoming more powerful than I had ever dreamed…"
+    c "Wait!"
+    p "...but, really, it's no less than I deserve."
+    c "I-I can’t let you leave."
+    p "Try and stop me, then!"
+    "I stamped my feet and roared in his face."
+    c "No- I mean I can’t let you leave without me."
+    c "I do appreciate the offer to run the kingdom, but I-"
+    p "I don't think you'll be able to keep up with me."
+    c "But could you let me... try?"
+    p "Ha! Try, then! Here I go!"
+    c "Ah, yes.  Not so fast.  DRACONIS TRANSFORMA!"
+    "I was almost ready to take off when his transformation caught my eye. In a flash of light, a blue, nervous-looking dragon appeared where Cyril had been."
+    p "...Could you have done this at any time?! Why didn't you just transform me into a dragon in the first place?!"
+    c "I didn’t-I didn’t think you’d {b}want{/b} to be a dragon!"
+    p "Why {b}wouldn't{/b} someone want to be a dragon? Isn't it wonderful, Cyril?!"
+    c "Ah-I don’t think I’m quite ready for this flying business."
+    p "Keep up, or stay behind!"
+    "I lunged into the air, wings beating faster and faster, and soared off to the south."
+    c "Wait for me, my dragon Princess!"
+    "I launched a ball of flame in his direction."
+    c "I mean, my dragon Queen!"
     
     $persistent.DragonQueen = True
     scene black with veryslowfade
