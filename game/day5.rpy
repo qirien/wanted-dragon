@@ -44,6 +44,7 @@ label day5:
                 scene bg dungeon with fade
                 jump niir5
             "\"Maybe you're right...\"":
+                route = "Cyril"
                 p "That is not completely false. He does not know the meaning of respect."
                 p "You on the other hand..."
                 p "Someone like you would understand when a lady is in need."
@@ -87,6 +88,7 @@ label day5:
         "I thought about it. Niir was more transparent - it was obvious what he was thinking. But perhaps that's what I liked about Balrung... the idea of a challenge."
         menu:
             "\"Prove that I can trust you.\"":
+                route = "Niir"
                 p "Prove to me that I can trust you."
                 show niir mischief at basicfade
                 n "Prove that {b}I{/b} can trusssst {b}you{/b}."

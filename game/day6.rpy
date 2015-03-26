@@ -284,10 +284,12 @@ label niir6:
     n "Where did you find thissss... creature?"
     menu:
         "It doesn't matter where I found it.":
+            p "You needn't concern yourself with that."
             n "It only matterssss if you can get more."
             p "I can get as many as is needed."
         "The mage has his uses after all.":
             $ niir_affection += 1
+            p "Moronious is not completely useless, you know."
             n "Ah, perhapsss he resssspondsss better to your requesssts than to mine."
             n "Did you... have to sssacrifice much for it?"
             p "Only a few moments of my time.  Which could have been better spent.  But I thought you would like it."

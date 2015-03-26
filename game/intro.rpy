@@ -212,7 +212,7 @@ label meet_dragons:
     show balrung smirk at basicfade
     b "Merlonious. Here to taunt us again? Yes, dangling the key in front of the chained prisoners, very tasteful. But who’s this charming lady?"
     show niir neutral at quarterright with moveinright
-    n "Cccyri the Chassssste.  I sssssee that you have brought a lady friend.  Delic-delightful."
+    n "Cccyril the Chassssste.  I sssssee that you have brought a lady friend.  Delic-delightful."
     show cyril hat concerned at basicfade
     c "Oh, no you don't!  This is royalty.  The royal Princess [p_name]! And I will not have you looking at her like that Niir." 
     show cyril hat concerned blush at basicfade

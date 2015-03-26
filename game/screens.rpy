@@ -245,15 +245,15 @@ screen main_menu():
 #        textbutton ("Extras") action ShowMenu("extras") at buttonfade  
 #        textbutton ("Quit") action Quit(confirm=False) at buttonfade
 
-        imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" focus_mask True action Start() at buttonfade
+        imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" focus_mask None action Start() at buttonfade
         
-        imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" focus_mask True action ShowMenu("main_load") at buttonfade
+        imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" focus_mask None action ShowMenu("main_load") at buttonfade
 
-        imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png"  focus_mask True action ShowMenu("main_preferences") at buttonfade
+        imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png"  focus_mask None action ShowMenu("main_preferences") at buttonfade
 
-        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png"  focus_mask True action ShowMenu("extras") at buttonfade    
+        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png"  focus_mask None action ShowMenu("extras") at buttonfade    
 
-        imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png"  focus_mask True action Quit(confirm=False) at buttonfade
+        imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png"  focus_mask None action Quit(confirm=False) at buttonfade
             
 #        textbutton _("Start Game") action Start()
 #        textbutton _("Load Game") action ShowMenu("load")

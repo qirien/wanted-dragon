@@ -136,7 +136,7 @@ label cyril3:
     p "Then you will become more useful to me than ever."
     p "Wouldn't you want that?"
     c "I-I suppose it wouldn't be the worst thing, your Highness."
-    p "Come and see my when you have more."
+    p "Come and see me when you have more."
     c "It would be my pleasure."
     
     scene bg library with fade
@@ -190,7 +190,7 @@ label cyril3:
             c "Oh no.  I'm not quite miserable enough for that."
             p "Well, what can we do to make you {i}more{/i} miserable then?"
             c "Hmmm... I guess if I am to be reminded of my childhood I will probably be more miserable."
-            p "{i}Your{/i} childhood mage?  What was so wrong with {i}your{/i} childhood?"
+            p "{i}Your{/i} childhood, mage?  What was so wrong with {i}your{/i} childhood?"
             c "I learned all my spells quite well, but I was rather ignored for the flashier mages."
             c "People didn't really remember my name and my own mother told me to stop snivelling about being forgotten."
             c "Even though it was in private, and I can do what I like with my private time and..."
