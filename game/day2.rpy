@@ -350,7 +350,7 @@ label dinner_party:
         "Help Cyril":
             $ cyril_affection += 1
             scene bg stairs night with fade
-            show cyril neutral at midright, basicfade
+            show cyril neutral at center, basicfade
             p "Wait a moment, Moronious.  I’ll get that hat of yours."
             p "We wouldn’t want you to trip down the stairs doing so.  Actually, I’m not so sure that wasn’t what Niir had in mind."
             show cyril concerned blush at basicfade

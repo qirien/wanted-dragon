@@ -114,7 +114,7 @@ label day3:
 label cyril3:
     scene bg library with fade
     show cyril hat neutral at center, basicfade
-    play music cyril_theme
+    play music balrung_theme
     
     $ cyril_affection += 1
     p "Ohhhh Moroooonious!"
@@ -434,7 +434,9 @@ label niir3:
     n "Oh, a sssore spot.  Fathersss usually are.  At leassst you have not had to deal with a dragon father."
     p "What is your father like?"
     show niir frown at basicfade
-    n "I don’t remember, usss dragonsss do not have strong paternal bondsss.  But ever since I arrived here Balrung hasss acted like my father.  And every time I try to be rid of him, it sssseems I am ssstuck with him, in this form. "
+    n "I don’t remember, usss dragonsss do not have strong paternal bondsss.  But ever since I arrived here Balrung hasss acted like my father."
+    show niir angry at basicfade
+    n "And every time I try to be rid of him, it sssseems I am ssstuck with him, in this form. "
     n "We dragonsss would rather not have such submisssion to parental figures."
     p "He wants you to be something you’re not."
     show niir determined at basicfade

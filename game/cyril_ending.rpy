@@ -78,12 +78,12 @@ label cyril_dragon_epilogue:
     c "Stop, stop, {b}stop{/b}! Your Highness!"
     p "Oh, are you still here, Cyril? I'll land and you may depart. You have served me well."
     show cyril neutral at center, basicfade   
-    c "Where are you going anyway?  The kingdom is back {b}that way{/b}!  We’re going to far from where you are to rule.  We must go back!"
+    c "Where are you going anyway?  The kingdom is back {b}that way{/b}!  We’re going too far from where you are to rule.  We must go back!"
     p "Why rule a tiny kingdom when I can rule the entire skies?! I've never seen what's beyond the Seven Kingdoms."
     c "Well I- I hadn’t quite thought of it like that."
     c "But who is going to rule the kingdom your Highness?  You can’t just up and leave!"
     c "There are responsibilities to be had..."
-    p "Oh, I don't care. As long as it's not Magnolia...though, I don't think she'll dare return after the singing I gave her!"
+    p "Oh, I don't care. As long as it's not Magnolia...though, I don't think she'll dare return after the singeing I gave her!"
     p "...in fact, why don't you take the throne? Keep it warm for me, in case I change my mind. I know {b}you{/b} at least would not betray me."
     c "Me?  Take the?  Oh, no no.  I am just a humble mage.  But perhaps-"
     c "But where would you go?  And when would you be back?"
@@ -103,6 +103,7 @@ label cyril_dragon_epilogue:
     c "But could you let me... try?"
     p "Ha! Try, then! Here I go!"
     c "Ah, yes.  Not so fast.  DRACONIS TRANSFORMA!"
+    hide cyril with magic_flash
     "I was almost ready to take off when his transformation caught my eye. In a flash of light, a blue, nervous-looking dragon appeared where Cyril had been."
     p "...Could you have done this at any time?! Why didn't you just transform me into a dragon in the first place?!"
     c "I didn’t-I didn’t think you’d {b}want{/b} to be a dragon!"

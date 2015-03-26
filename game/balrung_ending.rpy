@@ -24,6 +24,18 @@ label balrung_epilogue:
     p "Hmph. Well then, I'm not telling you my plans, either."
     show balrung smirk at basicfade
     b "I wouldn't have it any other way."
+    if (cyril_dead):
+        "I had done it. Finally, I was Queen. It had taken some small sacrifices..."
+        scene bg kitchen with fade
+        show cyril hat surprised at center, basicfade with dissolve
+        hide cyril with red_flash
+        
+        scene bg kingdom
+        show balrung smile at center
+        with fade
+        "...but Mother always said that a Queen couldn't fret about the past."
+        "Why worry about that when I could enjoy what I had now?"
+        
     show balrung smile blush at come_closer, basicfade
     b "Queen:"
     b "Nigh, how wonderful!"
@@ -36,7 +48,7 @@ label balrung_epilogue:
     p "...I don't sing."
     p "But I do kiss, when the mood strikes me."
     show balrung smile eyes closed at basicfade, come_closer
-    $ renpy.pause(1.6)
+    $ renpy.pause(1.5)
     
     $persistent.QueensGambit = True
     scene black with veryslowfade
@@ -67,11 +79,10 @@ label balrung_revenge_epilogue:
     p shout "The vicious viper! The selfish serpent! The acrimonious adder! The lying lizard!  The, the, the..."
     p neutral "..."
     if (cyril_dead):
-        p "Niir!"
-        p "Niir!  Where are you when I need you...come to think of it, I haven't seen him since..."
+        "And after I had made so many sacrifices..."
         show cyril hat surprised at center, basicfade with dissolve
         hide cyril with red_flash
-        p "I suppose when that mage died, it broke the spell. I'm on my own, now."
+        p "I'm on my own, now."
         p "But... I have this entire castle at my disposal!  I'll find something! I {b}will{/b} be Queen!  You'll see, Mother!"
         "It would just take a bit more time."
     else:
@@ -82,6 +93,7 @@ label balrung_revenge_epilogue:
     scene black with veryslowfade
     return
 
+# Continued from Day8
 label balrung_ending:
     play music balrung_theme
     "Now that Moronious was not about to attack us, I wrapped up my arm in a dishtowel and turned to look at Balrung. He lay still, but was breathing."

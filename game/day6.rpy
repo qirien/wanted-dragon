@@ -5,7 +5,7 @@
 label day6:
     # She goes around eavesdropping to find out how well her plans have been working.
     scene bg bedroom dusk with fade
-    play music evil_theme
+    play music niir_theme
     p "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name]."
     p "But I believe I'm finally making some progress. Although... they could be deceiving me."
     p "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
@@ -36,7 +36,7 @@ label day6:
         b "What other princesses are there?"
         "Could Balrung be right?  Could Niir actually be... {i}in love{/i}?"
         "The thought makes my stomach roil."
-        "Though I have to admit, I do feel some... animal magnetism towards Niir."
+        "Though I have to admit, I do feel some... attraction towards Niir."
         "Even if it is only physical."
         n "Sssshut up.  I am done conversssssing."
         show balrung neutral at basicfade
@@ -44,7 +44,7 @@ label day6:
         "This is what I wanted, wasn't it?"
         "A dragon at my disposal.  Willing to leave, all for the delusion of love."
         "But somehow, it doesn't feel as good as I thought it would."
-        "Well, as long as Niir and I both get what we want, what's the harm? In fact... I have the perfect treat to reward Niir for his progress so far."
+        "Well, as long as Niir and I both get what we want, what's the harm? In fact... I have the perfect idea to reward Niir for his progress so far."
         jump niir6
     elif (route == "Cyril"):
         "I snuck over to the library to spy on Moronious."
@@ -159,7 +159,7 @@ label balrung6:
     $ balrung_affection += 1
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    play music balrung_theme
+    play music princess_theme
     show balrung smirk at basicfade
     b "My dear lady..."
     "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
@@ -275,7 +275,7 @@ label niir6:
 
     scene bg dungeon with fade
     show niir neutral at center, basicfade
-    play music niir_theme
+    play music princess_theme
     n "Come for a little game of hide-and-sssseek, Princessss?"
     p "Yes, actually, that’s exactly what I’ve come for."
     n "Rrrreally? You rrread my mind."
@@ -337,10 +337,11 @@ label niir6:
         "Go and see.":
             $ niir_affection += 1
             scene bg kitchen with fade
-            show niir neutral at midright, basicfade
+            show niir neutral at center, basicfade
             "I caught him in the middle of taking a huge bite. Juices dribbled down his chin, and he had closed his eyes to savor the taste."
             p "I thought I might find you here. Not that I was looking for you. Just slightly curious."
-            "He opened his eyes, looking first guilty, then devious. He held out a skewer full of gristle, singed meat, and bones that was once Cyril’s rabbit. He watched my expression carefully, expecting me to recoil."
+            "He opened his eyes, looking first guilty, then devious."
+            "He held out a skewer full of gristle, singed meat, and bones that was once Cyril’s rabbit. He watched my expression carefully, expecting me to recoil."
             n "Want ssssome?"
             p "Yes, actually, it’ll be nice to eat something not conjured up by that silly mage for once."
             n "Sssso, what’s the priccce?"
@@ -358,7 +359,7 @@ label niir6:
 label cyril6:
     scene bg hall with fade
     show cyril neutral at center, basicfade #TODO: make him green
-    play music niir_theme
+    play music princess_theme
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
     c "...and my spell book's gone again. Oh, p'zuffle!" #TODO: replace if you don't like, or delete this if it's fine.
@@ -410,6 +411,7 @@ label cyril6:
     c "Ah, that sounds like a very interesting sport ind-"
     show niir determined at midright with moveinright
     show cyril neutral at midleft with move
+    show niir determined at hop
     n "Princesssssss.  It musssst have been you, Princessssss."
     p "Niir? Why are you dancing around like a festival girl? I don’t dance, you know, and it’s unbecoming to dance alone."
     show niir angry at standing, hop

@@ -13,7 +13,8 @@ label niir_free_epilogue:
     show niir smile at basicfade
     n "Did you misss me?"
     p "Miss you? It has been several months...I was wondering when you'd come around again. You're supposed to bow to the Queen, you know."
-    show niir neutral at basicfade
+    show niir neutral at squatting with move
+    show niir neutral at standing with move
     n "Of courssse, your Majesssty."
     p "Well! Is it possible you've learned some manners during your journeys? Impressive!"
     show niir smirk at basicfade
@@ -51,7 +52,6 @@ label niir_free_epilogue:
 # Never Too Late    
 label niir_asleep_epilogue:
     scene bg woods with fade
-    play music niir_theme
     "I jabbed Niir again, but all I got out of him was the soft sound of him breathing."
     p "Niir!  I’m warning you.  You have been asleep for two weeks!  You have made me miss my sister’s coronation.  You will pay for that, I assure you."
     p "And what’s worse is that I’ve been out here.  Miserable.  Having to get food for myself!"  

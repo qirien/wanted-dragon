@@ -2,7 +2,7 @@
 label day7:
     # Another letter from home tells her that the Coronation is in two days!
     scene bg bedroom dusk with fade
-    play music princess_theme
+    play music evil_theme
     "I've certainly made some progress here, even if things are moving rather slowly. Mother always said the best plans take time..."
     "She always had such beautiful schemes... but even they weren't enough to save her, in the end..."
     p "I will not end up like her! Dying peacefully, in my sleep, for no reason at all?! Ridiculous!"
@@ -176,7 +176,7 @@ label cyril7:
     show cyril hat laugh at basicfade
     c "I thank you Princess.  You have been a great sounding board.  Person.  Great sounding person."
     c "Oh! I almost forgot! I have something for you!"
-    p "Hand it over, then! I am...fond of presents."
+    p "Hand it over, then! I am... fond of presents."
     "What could he possibly find here that is fit for a princess, I wonder?"
     c "It requires a spell… oh, what is it?! I practiced it just fine this morning!"
     c "Oh yes! Vitreo Calceatus!"
@@ -241,7 +241,7 @@ label cyril7:
     b "Out of all the princesses, I didn't think you'd be the type to hold such incompetent company."
     p "He's holding {b}you{/b} here isn't he?  So I would think the mage isn't quite as useless as you would have everyone believe, Balrung."
     p "Not that your attitude does much for your reputation either Cyril.  You should really teach these dragons more of a lesson."
-    show cyril concerned blush at basicfade
+    show cyril hat concerned blush at basicfade
     c "Well, perhaps... thank you, Princess."
     return            
           

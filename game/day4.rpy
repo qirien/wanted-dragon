@@ -29,7 +29,7 @@ label alone4:
 label cyril4:
     $ route = "Cyril"
     show cyril hat neutral at center with moveinleft
-    play music cyril_theme
+    play music evil_theme
     show cyril hat surprised at basicfade
     c "Ah, Princess!  I had been looking for you."
     p "Well, you clearly didn't look very hard because I've been here."
@@ -100,7 +100,7 @@ label dragons4:
             b "So, how shall we convince him that you and Niir are in love, and he will trouble the other ladies no more?"
             
         "\"It won't be hard for you to love me.\"":
-            p "Well, aren't you half-mad with love for me already, Niir?"
+            p "Well, aren't you half-mad with love for me already?"
             show niir determined at basicfade
             n "Mad, yessss. Cccertainly not love!"
             show balrung smile eyes closed at basicfade
@@ -259,7 +259,7 @@ label niir4:
     p "I suppose you'll just have to spend time with me, then. You can tell me how wonderful I am and perhaps we'll even enjoy another \"chaste embrace\"."
     show niir mischief at basicfade
     n "Are you bribing me, Princess?"
-    p "It's not bribery if we both get something out of it. It's just a...negotiation."
+    p "It's not bribery if we both get something out of it. It's just a... negotiation."
     show niir smile at basicfade
     n "What ssssort of thing do {b}you{/b} like to be bribed with Princessss?"
     p "Oh, what a charming question! Powerful artifacts are always good, though I also enjoy oaths of fealty and rare poisons."

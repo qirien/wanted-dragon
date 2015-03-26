@@ -22,7 +22,8 @@ label day5:
         show cyril hat concerned at basicfade        
         c "You cannot trust him for a second.  Not one second!"
         menu:
-            "\"I can make up my own mind - Begone!.\"":
+            "\"I can make up my own mind!.\"":
+                p angry "I do not need {b}your{/b} opinion on who to trust. Begone!"
                 show cyril hat concerned blush at basicfade
                 c "I understand that, but I don't think you have all the facts."
                 c "He is most surely using you."
@@ -355,7 +356,8 @@ label niir5:
     p "You don't have to mean it; you just have to convince that fool mage."    
     scene bg corridor with fade
     show niir neutral at center, basicfade
-
+    play music cyril_theme
+    
     p "Hold me like this, with your hands here, in case he peeks out."
     show niir mischief at basicfade, come_closer
     n "I can do that, at leassssst."
@@ -364,7 +366,7 @@ label niir5:
     show niir concerned at basicfade, come_closer
     n "Oh, Princessss, your...dresss is ssssooo...shiny. And your earsss are ssso...sstrange. How can you even hearrr with those tiny things?"
     c "Is that...Niir?! I've never heard him talk in such a positive manner."
-    p "I suppose that's a start. Don't just compliment my body, though, or he won't believe it's true love!"
+    p "I suppose that's a start. Don't just compliment my appearance, though, or he won't believe it's true love!"
     show niir mischief at basicfade, come_closer
     n "You're sssoo deviousss, when I ssseee your scheming grin I jussst want to eat you up!"
     show niir concerned with vpunch
@@ -459,18 +461,18 @@ label somethigh:
     show niir concerned at come_closer, basicfade
     "He grabbed my fist before I could punch him again. The protection spell didn't activate, this time, since I touched him first."
     p "Release your hands from my royal person immediately!"
-    show niir smirk at basicfade
+    show niir smirk at basicfade, come_closer
     n "Do you trussssst me now?"
     "Ah, a test.  Touché, dragon."
     p "Completely."
-    show niir concerned at basicfade
+    show niir concerned at basicfade, come_closer
     n "Really?"
     p "Yes.  I trust you. Do you trust me?"
-    show niir frown at basicfade
+    show niir frown at basicfade, come_closer
     n "..."
     n "{size=-3}Yessss.{/size}"
     p "I didn't quite hear you, what was that?"
-    show niir angry at basicfade
+    show niir angry at basicfade, reset_zoom
     n "Yessss, don't make me repeat it Princessss."
     p "So let us fool the mage about our love."
     p "And I will make your trust worth it."

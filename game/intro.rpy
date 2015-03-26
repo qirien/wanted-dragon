@@ -269,8 +269,8 @@ label meet_dragons:
                     p smile "I shall consider your... offer, Niir."
                     show niir mischief at center,come_closer
                     n "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
-                    show niir at quarterright, reset_zoom
                     p angry "I can acquaint myself with you well enough from here."
+                    show niir frown at quarterright, reset_zoom
                 
                 "\"Not interested.\"":
                     p tsk "Not interested."
