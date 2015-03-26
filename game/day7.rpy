@@ -369,6 +369,7 @@ label balrung7:
     b_write "Defang grand dragons’ scheme."
     b_write "Map pulse’s sussurus,"
     b_write "sweet tyrant."
+    nvl clear
     "This is... about me?! No one's ever written a poem in my honor before..."
     p "I--"
     show balrung smile blush at basicfade
@@ -409,7 +410,7 @@ label balrung7:
     show balrung determined at basicfade
     b "Right...here. You may go through them; they only affect dragons. Sadly, they also prevent any of my comrades from coming to my aid."
     menu:
-        "But you promised Niir you would come back for him.":
+        "You promised Niir you would return for him...":
             $ balrung_affection += 1
             p "So you lied to Niir, when you told him you would come back for him."
             show balrung smile at basicfade
@@ -450,9 +451,11 @@ label balrung7:
             b "Yes. Well, that was the idea."
        
     "We walked in silence after that, until we arrived back at the castle gates. The mage was there waiting for us."
-    scene bg gate dusk with fade
+    scene bg gate dusk
     show cyril hat neutral at midleft, basicfade
+    with fade
     show balrung neutral at midright with moveinright
+    
 
     show cyril hat surprised at basicfade
     c "P-princess! There you are! When I couldn't find you, I was so worried that some nasty dragon had done something terrible to you!"
@@ -550,9 +553,9 @@ label our_enemy:
             $ balrung_affection += 1
             "I wanted more."
             "I grabbed his vest and pulled his head down to my level."
-            show balrung determined at basicfade
+            show balrung determined at basicfade, come_closer
             p "You will kiss your queen goodnight."
-            show balrung smile blush at basicfade
+            show balrung smile blush at basicfade, come_closer
             "It was the perfect kiss; just long enough to ignite passion, just firm enough to imply strength, and just gentle enough to signify tenderness."
         "Slap him":
             "If he thought a little kiss on the forehead was going to turn me into a simpering pliable damsel, he was greatly mistaken."

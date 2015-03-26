@@ -80,7 +80,7 @@ label niir_asleep_epilogue:
     p "If I have to go one more day without my-"
     hide niir with moveoutbottom
     n "{i}zzz{/i}."
-    p "Niir!  NIIR!  I will not stand for this, Niir.  You must serve your queen!"
+    p "Niir!  NIIR!  I will not stand for this, Niir.  You must serve your Queen!"
     p "You owe me for this, dragon."
     
     $persistent.NeverTooLate = True

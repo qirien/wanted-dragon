@@ -24,7 +24,7 @@ label cyril_dark_epilogue:
     c "I was wrong.  Imprisoning them was wrong.  They only deserve death."
     c "That is the only way."
     p "Good, good. You've come a long way since the stuttering, bumbling half-mage you used to be. I'm proud of you, Cyril."
-    c "You have taught me much, your majesty."
+    c "You have taught me much, your Majesty."
     c "I owe it all to you."
     
     $persistent.DarkQueen = True
@@ -65,7 +65,7 @@ label cyril_scepter_epilogue:
     p "Go on!"
     c "Yes-ahem.  Please come with me to this ball, great Queen.  I would be privileged to accompany you."
     p "There, was that really so hard? Of course you may accompany me. And, have one of these cinnamon cakes; they're delicious."
-    c "Thank you, your majesty."
+    c "Thank you, your Majesty."
     "I would make this mage worthy of a Queen yet."
     
     $persistent.QueensHero = True

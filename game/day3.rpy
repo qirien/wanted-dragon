@@ -299,7 +299,7 @@ label balrung3:
     book "Wings soar,"
     book "roar, writhe;"
     book "thy yearning groweth."
-    book "This skin: nude, deft;" #TODO: is this too...smexy?
+    book "These scales slide, deft;"
     book "two sinuous serpents"
     book "soar rapturous."  
     nvl clear

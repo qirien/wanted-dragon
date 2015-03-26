@@ -1,6 +1,6 @@
 label day8:
     scene bg bedroom dusk with fade
-    play music evil_theme
+    play music princess_theme
     "Time is running out; Magnolia's coronation will take place tomorrow, unless I can find a way to stop it!"
     "Careful plots would take too much time; I needed to act now."
     if (route == "Niir"):
@@ -557,7 +557,6 @@ label balrung8:
     "Transmogrification Tonic? If I could turn into a dragon... but then, I'd be stuck here as well. Unless I drank it after leaving... then I mightn't need help after all..."
     stop sound fadeout 2.0
     show balrung neutral at center with moveinleft
-    play music balrung_theme
     show balrung determined at basicfade
     b "Chrysandra? There you are! I have another plan, but I'm not satisfied with its chances for success. Tell me you have something better."
     p "Depends. Do you have any dragon scales?"
@@ -607,12 +606,14 @@ label balrung8:
     hide balrung at center with moveoutleft
     scene bg kitchen with fade
     play sound "sfx/boiling.ogg" loop
+    play music balrung_theme
     "At least the scale only needs to boil in blood for an hour. But, it took more blood than I thought...I need to sit down."
     scene bg kitchen with vpunch
     "Oh. I'm already sitting down. On the floor."
-    scene bg kitchen with fade
+    scene bg kitchen
+    show cyril hat neutral at quarterright
+    with slowfade
     stop sound fadeout 10.0
-    show cyril hat neutral at quarterright with moveinleft
     play music cyril_theme
     show cyril hat surprised at basicfade
     c "Princess! You're bleeding!"
@@ -662,8 +663,10 @@ label balrung8:
             show cyril hat surprised at basicfade
             c "He...didn't hurt you?"
             p "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
-            show cyril hat concerned eyes closed at basicfade
-            c "I...I'm not fit for this job. I never should have agreed to it..."
+            show cyril hat concerned at basicfade
+            c "I..."
+            show cyril hat concerned eyes closed at basicfade            
+            c "I'm not fit for this job. I never should have agreed to it..."
             "He dropped his hands, dejected, and turned to leave."
             c "You're free to leave, Balrung. You m-may not be perfect, but I am no butter. I mean, no better."
             hide cyril at quarterright with moveoutleft
@@ -674,19 +677,22 @@ label balrung8:
             show cyril hat surprised at basicfade
             c "He...didn't hurt you?"
             p "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
-            show cyril hat concerned eyes closed at basicfade
-            c "I...I'm not fit for this job. I never should have agreed to it..."
+            show cyril hat concerned at basicfade
+            c "I..."
+            show cyril hat concerned eyes closed at basicfade            
+            c "I'm not fit for this job. I never should have agreed to it..."
             "He dropped his hands, dejected, and turned to leave."
             c "You're free to leave, Balrung. You m-may not be perfect, but I am no butter. I mean, no better."
             hide cyril at quarterright with moveoutleft
             jump balrung_ending
         "Wait it out.":
             p "Hmmm, I must admit, I'm curious who would win if you two begin fighting. What better way to prove who is stronger and more fit to aid me?"
+            show cyril hat surprised at basicfade
             "They looked at each other, surprised. Balrung stood up slowly, shaking, and shook his head."
             show balrung neutral at center with moveinbottom
             show balrung determined at basicfade
             b "..."
-            show cyril hat surprised at basicfade
+            show cyril hat concerned at basicfade
             c "..."
             p "Well? What are you waiting for? Commence battle!"
             show balrung smirk at basicfade
@@ -710,6 +716,7 @@ label balrung8:
             b "Cyril, I hope you'll do the right thing and help the Princess see the error of her ways. You mages have helped me to, even though I disagree with the way it was done."
             p "Balrung! I will hunt you down! I will find you and DESTROY YOU!!!"
             # TODO: if her cyril_affection is high enough, send to cyril_attack instead?
+            show cyril hat angry at basicfade
             show balrung smile at basicfade
             b "Farewell, Princess. I hope you find better things to consume your life than revenge."
             hide balrung at center with moveoutleft
@@ -722,7 +729,7 @@ label balrung8:
             c "You sh-shouldn't be Queen the way you are. I'm terribly sorry, my dear Princess [p_name], but..."
             p "Moronious, you fool, point that wand at the dragon! Not at me!"
             show cyril hat concerned blush at basicfade
-            c "CARCERATUS!!"
+            c "{font=fonts/ankecallig-fg.ttf}CARCERATUS{/font}!!" with magic_flash
             p "What have you done to me?!"
             show cyril hat neutral at basicfade
             c "Stay! You will stay here, until you learn to be good! I know, somewhere inside of you, there's goodness and love...please, find it quickly, Princess."

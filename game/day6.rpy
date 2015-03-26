@@ -172,10 +172,11 @@ label balrung6:
     show balrung smirk at basicfade
     b "Princess, the brilliance of your presence is gift enough to soften this stone heart of mine. What more could I ask?"
     p "How about a Hibernation Libation?"
-    "I handed him a flask containing the gloopy, dark green potion I had made. It was one of the few whose ingredients were commonplace enough to be found in and around the Castle [castle_name]."
+    "I handed him a flask containing the gloopy, dark green potion I had made."
+    "It was one of the few whose ingredients were commonplace enough to be found in and around the Castle [castle_name]."
     show balrung smile blush at basicfade
     b "I...I'm touched. How did you know I had insomnia?"
-    p "Oh! I assumed you would use it on Niir when you wanted some peace and quiet. Or on that fool mage. I know you're not foolish enough to use it on me."
+    p "Oh! I assumed you would use it on Niir when you wanted some peace and quiet. Or on that fool mage. I know you're not foolish enough to use it on me." #TODO: we sort of foreshadowed him using this and then never did anything with it...
     show balrung neutral at basicfade
     b "It has many uses, I see.  How many doses are in here?"
     p "That's enough to make a human sleep for two days. I'm not sure how it would affect a dragon."

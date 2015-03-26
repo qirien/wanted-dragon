@@ -35,7 +35,7 @@ label balrung_epilogue:
     nvl clear    
     p "...I don't sing."
     p "But I do kiss, when the mood strikes me."
-    show balrung smile eyes closed at basicfade
+    show balrung smile eyes closed at basicfade, come_closer
     $ renpy.pause(1.6)
     
     $persistent.QueensGambit = True
@@ -112,8 +112,6 @@ label balrung_ending:
         "Make him your King." if (balrung_affection >= HIGH_AFFECTION):
             p "Balrung, your patient ruthlessness, and powers over flight and fire, will help you serve me well as my King. Now, let me climb on your back and take us to [k_name]."
             b "What an excellent future we shall have together. None will dare to defy our reign!"
-            p "Mwah ha ha ha ha!"
-            b "Bwah ha ha ha ha!"
             scene bg sunset with fade            
             play music happy_ending
             play sound "sfx/wings.ogg" loop
@@ -162,7 +160,7 @@ label balrung_ending:
 label imprisoned_epilogue:
     scene bg dungeon with fade
     show cyril hat concerned at midleft with moveinleft
-    play music cyril_theme
+    play music evil_theme
     c "I've brought you your breakfast, your Highness."
     "I threw the bowl at his ridiculous face and it knocked off his ridiculous hat. Niir snatched it up and grinned."
     show cyril surprised at basicfade
