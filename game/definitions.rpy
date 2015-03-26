@@ -163,10 +163,10 @@ init -1:
     #
     # MUSIC
     # 
-    define balrung_theme = "music/Cello.mp3" 
-    define niir_theme = "music/OniValse.mp3"
-    define evil_theme = "music/Malos.mp3"
+    define balrung_theme = "music/Cello.ogg" 
+    define niir_theme = "music/OniValse.ogg"
+    define evil_theme = "music/Malos.ogg"
     define princess_theme = "music/EvilPrincessMarch.ogg"
     define cyril_theme = "music/AwkwardMageWaltz.ogg" 
-    define happy_ending = "music/SettingTheSails.mp3"
-    define intro_music = "music/Pompous.mp3"
+    define happy_ending = "music/SettingTheSails.ogg"
+    define intro_music = "music/Pompous.ogg"

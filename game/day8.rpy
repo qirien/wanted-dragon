@@ -1,6 +1,6 @@
 label day8:
+    play music princess_theme    
     scene bg bedroom dusk with fade
-    play music princess_theme
     "Time is running out; Magnolia's coronation will take place tomorrow, unless I can find a way to stop it!"
     "Careful plots would take too much time; I needed to act now."
     if (route == "Niir"):
@@ -21,10 +21,10 @@ label niir8:
     p "Come with me and find out."
     n "The suspensssse is delicioussss."
     
+    play music cyril_theme    
     scene bg library with fade
     show cyril hat neutral at midleft, basicfade
     show niir neutral at midright with moveinleft
-    play music cyril_theme
     p "Moronious, we are ready."
     show cyril hat surprised at basicfade
     c "Wh-?  {i}Please{/i} don’t sneak up, Princess.  Oh.  Of course.  {b}Niir{/b}.  He must have put you up to it."
@@ -193,9 +193,9 @@ label niir8:
         c "Ah, yes.  I don’t think it’s a good idea to leave you two alone right now."
         p "Then follow us, if you dare."
 
+        play music niir_theme
         scene bg ruins with fade
         show niir neutral at center, basicfade
-        play music niir_theme
         p "Is he following us?"
         n "Yesss, I can ssstill sssmell that mage around here."
         menu:
@@ -304,8 +304,7 @@ label niir8:
                 p "Do you trust yourself so little? Fortunately, I trust you more."
                 n "How sssstupid of you."
                 show niir neutral at come_closer
-                "I seized his ridiculous ears and brought our lips together.  He struggled a little at first but I made sure to put a stop to that by putting a foot in his shin."
-                "He gingerly put his hands on my hips, then held me tighter as I ran my fingers through his hair. Not bad, for his first kiss." #TODO: this sounds off to me.
+                "I seized his ridiculous ears and brought our lips together.  He struggled a little at first, but then held me tighter and attempted to kiss me back. Not bad, for his first kiss." #TODO: this sounds off to me.
                 p "Is he gone yet?"
                 n "..."
                 p "I’m talking to you, dragon.  Is.  He. Gone?"
@@ -367,10 +366,10 @@ label cyril8:
     p "Then we must follow the resonance and take it! What are you waiting for?!"
     c "R-right!"
 
+    play music balrung_theme
     scene bg dungeon night with fade
     show cyril hat neutral at center
     with moveinleft
-    play music balrung_theme
     "When we got to the dungeon, Balrung and Niir were nowhere to be seen."
     show cyril hat concerned eyes closed at basicfade
     c "Ahhhh!"
@@ -602,17 +601,19 @@ label balrung8:
     show balrung smirk at center, reset_zoom, basicfade
     b "Of course, Chrysandra."
     hide balrung at center with moveoutleft
+    
+    play music balrung_theme    
     scene bg kitchen with fade
     play sound "sfx/boiling.ogg" loop
-    play music balrung_theme
     "At least the scale only needs to boil in blood for an hour. But, it took more blood than I thought...I need to sit down."
     scene bg kitchen with vpunch
     "Oh. I'm already sitting down. On the floor."
+    
+    play music cyril_theme    
     scene bg kitchen
     show cyril hat neutral at quarterright
     with slowfade
     stop sound fadeout 10.0
-    play music cyril_theme
     show cyril hat surprised at basicfade
     c "Princess! You're bleeding!"
     show cyril hat concerned at basicfade

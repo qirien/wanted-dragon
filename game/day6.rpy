@@ -4,8 +4,8 @@
 
 label day6:
     # She goes around eavesdropping to find out how well her plans have been working.
+    play music niir_theme    
     scene bg bedroom dusk with fade
-    play music niir_theme
     p "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name]."
     p "But I believe I'm finally making some progress. Although... they could be deceiving me."
     p "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
@@ -157,9 +157,9 @@ label day6:
 # She does something nice for Balrung.
 label balrung6:
     $ balrung_affection += 1
+    play music princess_theme
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    play music princess_theme
     show balrung smirk at basicfade
     b "My dear lady..."
     "He carefully took my hand and brought it to his lips, watching my reaction with the barest hint of smugness."
@@ -239,9 +239,9 @@ label balrung6:
     return
     
 label niir6:
+    play music cyril_theme
     scene bg library with fade
     show cyril hat neutral at center, basicfade
-    play music cyril_theme
     
     p "Moronious, are you competent enough to pull a rabbit out of your hat?"
     c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days... What was it again?  Explodus Rabititious?  No.  That can’t be right..."
@@ -273,9 +273,9 @@ label niir6:
     c "I just conjured that bunny!   "
     extend "I’d grown rather fond of him.  Princess?  Princess?"
 
+    play music princess_theme
     scene bg dungeon with fade
     show niir neutral at center, basicfade
-    play music princess_theme
     n "Come for a little game of hide-and-sssseek, Princessss?"
     p "Yes, actually, that’s exactly what I’ve come for."
     n "Rrrreally? You rrread my mind."
@@ -357,9 +357,10 @@ label niir6:
     return
     
 label cyril6:
+    play music princess_theme
     scene bg hall with fade
     show cyril neutral at center, basicfade #TODO: make him green
-    play music princess_theme
+
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
     c "...and my spell book's gone again. Oh, p'zuffle!" #TODO: replace if you don't like, or delete this if it's fine.

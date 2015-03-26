@@ -1,8 +1,8 @@
 # DAY 7
 label day7:
+    play music evil_theme
     # Another letter from home tells her that the Coronation is in two days!
     scene bg bedroom dusk with fade
-    play music evil_theme
     "I've certainly made some progress here, even if things are moving rather slowly. Mother always said the best plans take time..."
     "She always had such beautiful schemes... but even they weren't enough to save her, in the end..."
     p "I will not end up like her! Dying peacefully, in my sleep, for no reason at all?! Ridiculous!"
@@ -55,11 +55,11 @@ label mage_insane:
     p "Cyril? CYRIL! Hmmm.  Usually he responds to my summons right away. Where can he be?"
     scene bg stairs day with fade
     "I hear noises coming from the dungeon..."
+    play music cyril_theme
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
     show niir neutral at quarterright, basicfade
     show cyril hat neutral at quarterleft, basicfade
-    play music cyril_theme
     
     b "It took only a few short years of solitude to lose your mind."
     b "Are you sure she's even real?"
@@ -117,8 +117,8 @@ label mage_insane_step:
   
 
 label cyril7:
+    play music cyril_theme    
     show cyril hat neutral at center with moveinleft
-    play music cyril_theme
 
     p "...I always find myself talking to you."
     c "So, Princess.  I had something I wanted to discuss with you."
@@ -249,8 +249,8 @@ label cyril7:
     return
     
 label niir7:
+    play music niir_theme    
     scene bg hall with fade
-    play music niir_theme
     
     p "...I always run end up running into you."
     show niir neutral at center with moveinright
@@ -347,9 +347,9 @@ label niir7:
     return
 
 label balrung7:
+    play music balrung_theme    
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    play music balrung_theme
     
     p "...I always seem to find myself here."    
     p "Is that a scroll? Are you writing a letter?"

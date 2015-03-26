@@ -1,8 +1,8 @@
-# cyril dissuading against niir route
-# DAY 5?!
+# dissuading against other routes
+# DAY 5
 label day5:
+    play music princess_theme    
     scene bg bedroom dusk with fade
-    play music princess_theme
     "I was just finishing the unoriginal-yet-edible breakfast Moronious had dropped off for me when there was a knock at the door."
     
     if (route == "Niir"):
@@ -170,9 +170,9 @@ label day5:
                         jump balrung5
 
 label balrung5:
+    play music balrung_theme
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    play music balrung_theme
     show balrung smile at basicfade
     b "Princess! How lovely to see you. Your presence is like a light that makes even this gloomy dungeon seem like a sunny garden."
     p "You can save the flattery for later when Moronious can \"accidentally\" overhear you."
@@ -248,9 +248,9 @@ label balrung5:
     p "Perhaps one day your strategy and emotion can be aligned towards the same goal."
     show balrung smile at basicfade
     b "One day...perhaps."
+    play music cyril_theme
     show cyril hat surprised at midleft with moveinleft
     show balrung at midright with move
-    play music cyril_theme
     c "Princess! You're here! With...Balrung?"
     p "Yes, we've just been enjoying a wonderful game of Queens and Pawns."
     show balrung smirk at basicfade
@@ -354,9 +354,9 @@ label niir5:
     show niir angry at basicfade
     n "Professsss love?!"
     p "You don't have to mean it; you just have to convince that fool mage."    
+    play music cyril_theme    
     scene bg corridor with fade
     show niir neutral at center, basicfade
-    play music cyril_theme
     
     p "Hold me like this, with your hands here, in case he peeks out."
     show niir mischief at basicfade, come_closer
@@ -534,9 +534,9 @@ label cyril5:
     
     # scepter progress
     # DAY 5
+    play music cyril_theme    
     scene bg library with fade
     show cyril hat smile at center, basicfade
-    play music cyril_theme
     
     $ cyril_affection += 1
     c "I found it."

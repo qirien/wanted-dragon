@@ -1,6 +1,6 @@
 label day2:
+    play music cyril_theme    
     scene bg bedroom dusk with fade
-    play music cyril_theme
     "Is that knocking?! Who could be brazen enough to wake me up so early?!"
     p "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
@@ -122,9 +122,9 @@ label day2:
     if (asked_scepter == "Balrung"):
         "Perhaps he has found the scepter?!"
         
+    play music balrung_theme        
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    play music balrung_theme
     p "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
     show balrung smile at basicfade
     b "My apologies, my lady, I didn't think it appropriate to disturb a lady in her bedchamber so early in the morning."
@@ -174,13 +174,12 @@ label day2:
     "And now, for dinner...A little test, to see who will be the most useful to me..."
     
 label dinner_party:
-        
+    play music princess_theme        
     scene bg kitchen
     show niir neutral at right
     show balrung neutral at center, basicfade
     show cyril neutral hat at left, basicfade
     with fade
-    play music princess_theme
     
     p "Good, you are all here. That proves you can fulfill a simple request."
     show balrung smirk at basicfade

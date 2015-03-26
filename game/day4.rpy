@@ -1,6 +1,6 @@
 label day4:
+    play music princess_theme    
     scene bg bedroom dusk with fade
-    play music princess_theme
     p "The Sceptre of Lavendorm sounds powerful, if we can find it."
     p "But it could be just a legend, or it could have been moved. I should pursue other avenues as well."
     p "That mage has magical powers, if I could get him to use them the way I wanted."
@@ -28,8 +28,8 @@ label alone4:
         
 label cyril4:
     $ route = "Cyril"
+    play music evil_theme    
     show cyril hat neutral at center with moveinleft
-    play music evil_theme
     show cyril hat surprised at basicfade
     c "Ah, Princess!  I had been looking for you."
     p "Well, you clearly didn't look very hard because I've been here."
@@ -73,11 +73,11 @@ label cyril4:
     return
 
 label dragons4:
+    play music evil_theme    
     scene bg dungeon
     show balrung neutral at midleft, basicfade
     show niir neutral at midright, basicfade
     with fade
-    play music evil_theme
     
     show balrung smile at basicfade
     b "Good morning, Princess. I trust you slept well?"

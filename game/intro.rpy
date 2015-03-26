@@ -8,10 +8,10 @@
 
 # The game starts here.
 label intro:
+    play music princess_theme
     scene bg gate dusk
     show rain
     with fade
-    play music princess_theme
     play sound "sfx/rain.ogg" loop
     p "Finally! You’d think that if they were going to hold some dragons captive, they would hold them in a place more accessible to princesses who want to harness their power for more important things!"
     p angry "But first... I’ll have to deal with the mage left to guard this place."
@@ -157,12 +157,12 @@ label ignore:
     "Yes! Lead me right to the dragons!  I’ll just follow from a discreet distance..."  
     
     stop sound fadeout 2.0
+    play music evil_theme  
     scene bg dungeon night with fade
     show balrung neutral at center, basicfade
     show niir neutral at quarterright, basicfade
     show cyril hat neutral at quarterleft with moveinleft
-
-    play music evil_theme        
+      
     show cyril hat concerned at basicfade
     c "Dragons.  I do need to ask you about my spell book. It seems I've misplaced it."
     show cyril hat angry at basicfade
@@ -203,8 +203,8 @@ label meet_dragons:
     p surprised "Oh my, that sounds dreadful!"
     "And yet also intriguing."
     hide cyril at center with moveoutright
+    play music evil_theme      
     scene bg dungeon night with fade
-    play music evil_theme  
     show cyril hat neutral at quarterleft with moveinleft
     c "Helllo!  Dragons!  It is I, Cyril.  Are you in here?"
     show balrung neutral at center with moveinright
@@ -329,11 +329,11 @@ label meet_dragons:
     n "Ssseee you later, Prrrrincessss...."
     hide cyril at quarterleft with moveoutleft
 
+    play music cyril_theme
     scene bg stairs night with fade
     show cyril hat neutral at center
     with moveinright
     # After talked to Niir, Balrung, or Cyril
-    play music cyril_theme
     show cyril hat concerned at basicfade
     c "So there we have it.  The dragons.  As you can see my job is not at all easy."
     show cyril hat concerned eyes closed at basicfade

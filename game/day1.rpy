@@ -1,6 +1,6 @@
 label day1:
-    scene bg bedroom dusk with fade
     play music niir_theme
+    scene bg bedroom dusk with fade
     p "What a terrible start to a day; I'm still not queen."
     p "But that's why I came here; to remedy that."
     p "Dragons are supposed to be powerful, and I need more power. I should talk to them without that mage around; maybe they can tell me more."
@@ -35,8 +35,8 @@ label day1:
     
     
 label library1:
+    play music cyril_theme    
     scene bg library with fade
-    play music cyril_theme
     show cyril hat concerned at center, basicfade
     "It appears the library is already occupied..."
     show cyril hat concerned eyes closed at basicfade

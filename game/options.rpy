@@ -264,7 +264,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the $persistent.information can be found by the init code.)
 python early:
-    config.save_directory = "Wanted: Dragon-1425162662"
+    config.save_directory = "Wanted-Dragon-1425162662"
 
 init -1 python hide:
     #########################################
@@ -288,7 +288,7 @@ init -1 python hide:
 
     #########################################
     ## More customizations can go here.
-    #config.fade_music = 1.0    
+    config.fade_music = 0.5
     _window_during_transitions = True
 
     style.say_label.font="fonts/Anderson Thunderbirds Are GO!.ttf"
@@ -312,7 +312,7 @@ init python:
     ## The name that's used for directories and archive files. For example, if
     ## this is 'mygame-1.0', the windows distribution will be in the
     ## directory 'mygame-1.0-win', in the 'mygame-1.0-win.zip' file.
-    build.directory_name = "Wanted: Dragon-1.0"
+    build.directory_name = "Wanted-Dragon-1.0"
 
     ## The name that's uses for executables - the program that users will run
     ## to start the game. For example, if this is 'mygame', then on Windows,

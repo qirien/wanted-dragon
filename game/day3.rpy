@@ -1,6 +1,6 @@
 label day3:
+    play music evil_theme    
     scene bg bedroom dusk with fade
-    play music evil_theme
     
     p "Ugh, this castle is so cold and dank. The snow hasn't quite melted yet, here. But the birds are still out..."
     p "Strange... one of them is flying this way. Almost as if it's going to-"
@@ -112,9 +112,9 @@ label day3:
             
     
 label cyril3:
+    play music balrung_theme    
     scene bg library with fade
     show cyril hat neutral at center, basicfade
-    play music balrung_theme
     
     $ cyril_affection += 1
     p "Ohhhh Moroooonious!"
@@ -244,9 +244,9 @@ label cyril3:
     return
      
 label balrung3:
+    play music balrung_theme    
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    play music balrung_theme
     
     show balrung smile at basicfade
     b "Princess. What a pleasure it is to see your face. But, of course, you didn't come here to talk with me. Are you looking for Niir?"
