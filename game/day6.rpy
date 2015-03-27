@@ -361,7 +361,7 @@ label niir6:
 label cyril6:
     play music princess_theme
     scene bg hall with fade
-    show cyril neutral at center, basicfade #TODO: make him green
+    show cyril green neutral at center, basicfade 
 
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
@@ -405,7 +405,7 @@ label cyril6:
     b "Very well. I wish you success in your...endeavors."
 
     scene bg hall with fade
-    show cyril neutral at center, basicfade
+    show cyril green neutral at center, basicfade
     p "Well, that was the most fun I’ve had since poisoning my sis- I mean, passing my sister the ball in croquet!"
     c "Croquet you say?  I have always been meaning to play that..."
     p "Don’t bother. It’s dreadfully dull. Did you know you’re not supposed to hit the other players, only the balls? Who invented that game?!"
@@ -413,7 +413,7 @@ label cyril6:
     p "An excellent idea. There should certainly be bludgeoning involved, and perhaps pilfering? Alchemy? Princess-worship?"
     c "Ah, that sounds like a very interesting sport ind-"
     show niir determined at midright with moveinright
-    show cyril neutral at midleft with move
+    show cyril green neutral at midleft with move
     show niir determined at hop
     n "Princesssssss.  It musssst have been you, Princessssss."
     p "Niir? Why are you dancing around like a festival girl? I don’t dance, you know, and it’s unbecoming to dance alone."
@@ -453,7 +453,7 @@ label cyril6:
     c "Yes, very true.  I do think that is the least he can do after all this trouble."
     n "Pleassse?!  You mussst be jo-oh!   "
     extend "Pleassssse.  Pleassssse."
-    c "Here it is! {font=fonts/ankecallig-fg.ttf}Dermis Claro{/font}!" #TODO: un-green CYril
+    c "Here it is! {font=fonts/ankecallig-fg.ttf}Dermis Claro{/font}!" 
     show cyril angry with magic_flash
     n "That doessssn’t help me, ussseless mage."
     p "Perhaps you should kneel."

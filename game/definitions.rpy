@@ -89,6 +89,7 @@ init -1:
     image side princess surprised = "sprites/princess surprised.png"
     image side princess tsk = "sprites/princess tsk.png"
     
+
     # Automatically import all sprites in the 'sprites' subdirectory 
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
 init python:
@@ -98,6 +99,12 @@ init python:
             tag = fname[:-4]
             fname =  'sprites/' + fname
             renpy.image(tag, im.FactorScale(fname, .667))
+    
+            # add green cyril images
+            if (tag.startswith("cyril")):
+                renpy.image(tag + " green", im.FactorScale(im.MatrixColor(fname, im.matrix.desaturate() * im.matrix.tint(0.7, 1.0, 0.7)), .667))
+            
+            # add zoomin images at original size
             tag += " zoomin"
             renpy.image(tag, fname)
 
