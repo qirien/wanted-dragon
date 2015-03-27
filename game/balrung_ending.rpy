@@ -36,7 +36,7 @@ label balrung_epilogue:
         "...but Mother always said that a Queen couldn't fret about the past."
         "Why worry about that when I could enjoy what I had now?"
         
-    show balrung smile blush at come_closer, basicfade
+    show balrung smile blush zoomin at come_closer, basicfade
     b "Queen:"
     b "Nigh, how wonderful!"
     b "Lost, tragic course!"
@@ -47,7 +47,7 @@ label balrung_epilogue:
     nvl clear    
     p "...I don't sing."
     p "But I do kiss, when the mood strikes me."
-    show balrung smile eyes closed at basicfade, come_closer
+    show balrung smile eyes closed zoom at basicfade, come_closer
     $ renpy.pause(1.5)
     
     $persistent.QueensGambit = True

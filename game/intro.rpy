@@ -120,7 +120,7 @@ label room_intro:
     c "It is.  Well, I’ve tried to make it as comfortable as possible.  I have a few keepsakes from home in it and my frilly rug which does keep it warm in the middle of the cold snap.  "
     show cyril hat neutral at basicfade
     c "And it is close to the dragons so I can regularly keep watch over them, as I am supposed to.  Would you like to be somewhere further away?  This is a large castle."
-    p angry "No, no, this will do. You may leave me for now, but I may need your assistance later."
+    p angry "No, no, this will do. Prepare my bath, and then you may leave."
     show cyril hat concerned blush at basicfade
     c "Yes, yes.  I will get right to running that bath for you my majesty. I mean my Highness!  Your Highness.  Because you are most certainly not mine... errr... I will see to that bath."
     p neutral "..."
@@ -267,7 +267,7 @@ label meet_dragons:
                 "\"I shall consider your... offer, Niir.\"":
                     $ niir_affection += 1
                     p smile "I shall consider your... offer, Niir."
-                    show niir mischief at center,come_closer
+                    show niir mischief zoomin at center, come_closer, basicfade
                     n "I’ll be waiting.  Until then, why not come clossser?  Let usss get...acquainted."
                     p angry "I can acquaint myself with you well enough from here."
                     show niir frown at quarterright, reset_zoom

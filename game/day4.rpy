@@ -217,7 +217,7 @@ label niir4:
     b "Niir, isn't it worth {b}trying{/b} to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
     show niir smirk at basicfade
     n "Affection, well why didn’t you sssssay so?"
-    show niir neutral at center,come_closer, basicfade
+    show niir neutral zoomin at center,come_closer, basicfade
     p "It doesn't help to do that now, you imbecile, it has to be when Moronious is watching!"
     show niir neutral at midright,reset_zoom, basicfade
     show niir mischief at basicfade
@@ -230,7 +230,7 @@ label niir4:
     b "You must enjoy it here very much. Is it really that much of a sacrifice to embrace a beautiful princess?"
     show niir neutral at basicfade
     n "Perhapssss not.  But I do not promise chassste.  That is the mage’s game."
-    show niir smirk at center,come_closer, basicfade
+    show niir smirk zoomin at center,come_closer, basicfade
     p "Yes, that was... That'll do. You may remove your hands now."
     show niir determined at midright,reset_zoom, basicfade
     show niir mischief at basicfade

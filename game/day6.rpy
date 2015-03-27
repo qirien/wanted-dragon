@@ -481,7 +481,7 @@ label cyril6:
     c "Favorite? I-I do say."
     p "You may kiss my cheek, if you wish."
     c "Oh, I wasn’t expect- thank you Princess.  It would be my honor."
-    show cyril smile blush eyes closed at come_closer
+    show cyril smile blush eyes closed zoomin at come_closer
     "He stepped forward, and leaned his head in for the quickest kiss that could possibly still bear the name."
     "He's mine, now... mwah ha ha ha!"
     scene black with fade

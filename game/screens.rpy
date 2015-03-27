@@ -53,10 +53,10 @@ screen say(who, what, side_image=None, two_window=False):
 
     # If there's a side image, display it above the text.
     if side_image:
-        add side_image xpos 66 ypos 489
+        add side_image xpos 62 ypos 489
     else:
-        add SideImage() xpos 68 ypos 530
-        add "GUI/side frame.png" xpos 66 ypos 489
+        add SideImage() xpos 66 ypos 530
+        add "GUI/side frame.png" xpos 62 ypos 489
 
     # Use the quick menu.
     use quick_menu
@@ -101,13 +101,15 @@ init -2:
         clear
         yalign 0.3
         hover_color "#400000"
-        idle_color "#380000"
+        idle_color "#803b3b"
 
     style menu_choice_button is button:
         xminimum 573
         xmaximum 573
         background Frame("GUI/choice.png",28,9)
         yminimum 114
+        ypadding 5
+        xpadding 20
 
 ##############################################################################
 # Input
@@ -245,15 +247,15 @@ screen main_menu():
 #        textbutton ("Extras") action ShowMenu("extras") at buttonfade  
 #        textbutton ("Quit") action Quit(confirm=False) at buttonfade
 
-        imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" focus_mask None action Start() at buttonfade
+        imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" focus_mask True action Start() at buttonfade
         
-        imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" focus_mask None action ShowMenu("main_load") at buttonfade
+        imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" focus_mask True action ShowMenu("main_load") at buttonfade
 
-        imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png"  focus_mask None action ShowMenu("main_preferences") at buttonfade
+        imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png"  focus_mask True action ShowMenu("main_preferences") at buttonfade
 
-        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png"  focus_mask None action ShowMenu("extras") at buttonfade    
+        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png"  focus_mask True action ShowMenu("princess_endings") at buttonfade    
 
-        imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png"  focus_mask None action Quit(confirm=False) at buttonfade
+        imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png"  focus_mask True action Quit(confirm=False) at buttonfade
             
 #        textbutton _("Start Game") action Start()
 #        textbutton _("Load Game") action ShowMenu("load")
@@ -583,7 +585,7 @@ init -2:
 
     style prefs_button_text:
         hover_color "#400000"
-        idle_color "#755b5b"
+        idle_color "#803b3b"
         selected_hover_color "#400000"
         selected_idle_color "#400000"
         xalign 0.0
@@ -637,28 +639,134 @@ init -2:
         text_align 0.5
         color "#400000"
 
+##############################################################################
 
-
-screen extras:
+screen princess_endings:
     tag menu
     add "GUI/sun.png"
     add "GUI/extras.png"
     
+    vbox:
+        xalign 0.5
+        yalign 0.3
+        if (persistent.PrincessInPrison):
+            text "Princess in Prison"
+        else:
+            text "LOCKED"
      
         
     hbox:
         xalign 0.5
         yalign 0.75
-        imagebutton idle "GUI/button_princess.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess_hover.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
-        imagebutton idle "GUI/button_cyril.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril_hover.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
-        imagebutton idle "GUI/button_balrung.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung_hover.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
-        imagebutton idle "GUI/button_niir.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir_hover.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
 
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade     
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade  
         
+screen cyril_endings:
+    tag menu
+    add "GUI/sun.png"
+    add "GUI/extras.png"
+    
+    vbox:
+        xalign 0.5
+        yalign 0.3
+        if (persistent.DarkQueen):
+            text "Dark Queen"
+        else:
+            text "LOCKED"
+        
+        if (persistent.DragonQueen):
+            text "Dragon Queen"
+        else:
+            text "LOCKED"     
+
+        if (persistent.QueensHero):
+            text "Queen's Hero"
+        else:
+            text "LOCKED"
+
+    hbox:
+        xalign 0.5
+        yalign 0.75
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+
+    hbox:
+        yalign 0.99
+        xalign 0.98
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade 
+
+screen balrung_endings:
+    tag menu
+    add "GUI/sun.png"
+    add "GUI/extras.png"
+    
+    vbox:
+        xalign 0.5
+        yalign 0.3
+        if (persistent.QueensGambit):
+            text "Queen's Gambit"
+        else:
+            text "LOCKED"
+            
+        if (persistent.RevengeNeverEnds):
+            text "Revenge Never Ends"
+        else:
+            text "LOCKED"     
+        
+    hbox:
+        xalign 0.5
+        yalign 0.75
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+
+    hbox:
+        yalign 0.99
+        xalign 0.98
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade 
+
+screen niir_endings:
+    tag menu
+    add "GUI/sun.png"
+    add "GUI/extras.png"
+    
+    vbox:
+        xalign 0.5
+        yalign 0.3
+        if (persistent.DefinitelyTrueLove):
+            text "Definitely True Love"
+        else:
+            text "LOCKED"
+
+        if (persistent.NeverTooLate):
+            text "Never Too Late"
+        else:
+            text "LOCKED"
+
+        
+    hbox:
+        xalign 0.5
+        yalign 0.75
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+
+    hbox:
+        yalign 0.99
+        xalign 0.98
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade 
+
 ##############################################################################
 # Quick Menu
 #

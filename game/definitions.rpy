@@ -79,9 +79,11 @@ init -1:
     # Maybe they would if they were side princess whatever (instead of princess side whatever), but I'm just defining them manually
     image side princess = "sprites/princess neutral.png"
     image side princess angry = "sprites/princess angry.png"
+    image side princess friendly = "sprites/princess friendly.png"
     image side princess laugh = "sprites/princess laugh.png"
     image side princess laugh eyes closed = "sprites/princess laugh eyes closed.png"
     image side princess neutral = "sprites/princess neutral.png"
+    image side princess shocked = "sprites/princess shocked.png"
     image side princess shout = "sprites/princess shout.png"
     image side princess smile = "sprites/princess smile.png"
     image side princess surprised = "sprites/princess surprised.png"
@@ -95,6 +97,8 @@ init python:
         if fname.endswith(('.jpg', '.png')):
             tag = fname[:-4]
             fname =  'sprites/' + fname
+            renpy.image(tag, im.FactorScale(fname, .667))
+            tag += " zoomin"
             renpy.image(tag, fname)
 
     #
@@ -130,7 +134,7 @@ init -1:
     define blood = Fade(.25, 0, .25, color="#f00")
     define dissolve = Dissolve(0.4, alpha=True)
     transform come_closer:
-        zoom 1.5
+        #zoom 1.5
         yalign 0.0
         
     transform reset_zoom:

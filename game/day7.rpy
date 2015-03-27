@@ -89,7 +89,7 @@ label mage_insane:
     return
             
 label mage_insane_kiss:
-    show cyril hat smile blush eyes closed at center, come_closer, basicfade
+    show cyril hat smile blush eyes closed zoomin at center, come_closer, basicfade
     "..."
     c "Ah, sweet, sweet apparition."
     show cyril hat smile blush at center, reset_zoom
@@ -309,7 +309,7 @@ label niir7:
     p "Poor baby Niir; I thought you could take a little rough handling."
     n "I prefer to be the one giving the punissssshment."
     p "Don't give it if you can't take it- oof!"
-    show niir neutral at center,come_closer with vpunch
+    show niir neutral zoomin at center,come_closer with vpunch
     "I fell back and sat on the floor, Niir's head in my lap. He was probably enjoying this way too much..."
     menu:
         "Shove him away.":
@@ -452,12 +452,12 @@ label balrung7:
        
     "We walked in silence after that, until we arrived back at the castle gates. The mage was there waiting for us."
     scene bg gate dusk
-    show cyril hat neutral at midleft, basicfade
+    show cyril hat neutral at midleft
     with fade
     show balrung neutral at midright with moveinright
     
 
-    show cyril hat surprised at basicfade
+    show cyril hat surprised at basicfade #TODO: test this expression.
     c "P-princess! There you are! When I couldn't find you, I was so worried that some nasty dragon had done something terrible to you!"
     p "Moronious, you've just ruined our lovely walk. We were conversing deeply, and then walking together in silence, as people who are in love often do."
     show cyril hat concerned blush at basicfade
@@ -546,16 +546,16 @@ label our_enemy:
     p "Yes, it is getting late, isn't it?"
     show balrung smile blush at basicfade
     b "But for now, my lady..."
-    show balrung at come_closer, basicfade
+    show balrung smile blush zoomin at come_closer, basicfade
     "He bent down and kissed my forehead. Was this what it felt like to have someone be in love with you? It felt like...{b}power{/b}, delicious and thrilling."
     menu:
         "Kiss him back":
             $ balrung_affection += 1
             "I wanted more."
             "I grabbed his vest and pulled his head down to my level."
-            show balrung determined at basicfade, come_closer
+            show balrung determined zoomin at basicfade, come_closer
             p "You will kiss your queen goodnight."
-            show balrung smile blush at basicfade, come_closer
+            show balrung smile blush zoomin at basicfade, come_closer
             "It was the perfect kiss; just long enough to ignite passion, just firm enough to imply strength, and just gentle enough to signify tenderness."
         "Slap him":
             "If he thought a little kiss on the forehead was going to turn me into a simpering pliable damsel, he was greatly mistaken."

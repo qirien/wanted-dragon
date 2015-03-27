@@ -303,8 +303,8 @@ label niir8:
                 n "I sssshould not want to ssstart sssomething I cannot ssstop, princesss."
                 p "Do you trust yourself so little? Fortunately, I trust you more."
                 n "How sssstupid of you."
-                show niir neutral at come_closer
-                "I seized his ridiculous ears and brought our lips together.  He struggled a little at first, but then held me tighter and attempted to kiss me back. Not bad, for his first kiss." #TODO: this sounds off to me.
+                show niir neutral zoomin at come_closer
+                "I seized his ridiculous ears and brought our lips together.  He struggled a little at first, but then held me tighter and attempted to kiss me back. Not bad, for his first kiss." 
                 p "Is he gone yet?"
                 n "..."
                 p "I’m talking to you, dragon.  Is.  He. Gone?"
@@ -327,7 +327,7 @@ label niir8:
         p "What kind of evil princess do you think I am?!"
         n "One lassst kissss before I drink.  If it isss poisssson, I want it to be worth it."
         p "Well, I suppose we have time for one-"
-        show niir smirk at come_closer, basicfade
+        show niir smirk zoomin at come_closer, basicfade
         "Well. This kiss was certainly satisfactory. At least the dragon could learn quickly."
         show niir neutral at reset_zoom, basicfade
         show niir smirk at basicfade
@@ -421,8 +421,8 @@ label cyril8:
             c "Ah, yes.  I suppose it was, mostly.  This scepter is very dangerous buisness.  "
             extend "I think I’ll hold on to it."
             p "And I'll hold on to {b}you{/b}."
-            show cyril concerned blush at center,come_closer
-            show cyril smile blush eyes closed
+            show cyril concerned blush zoomin at center,come_closer
+            show cyril smile blush eyes closed zoomin
             "I grabbed the sleeves of his robe and kissed him thoroughly." 
             "He was too surprised to respond at first, and almost dropped the scepter, but soon he had his arms around me awkwardly and was attempting some sort of kiss in response."
             "It was...adorable. Yes, perhaps now he was worthy to aid me."
@@ -595,7 +595,7 @@ label balrung8:
     p "Ha. Stop it, Balrung, now you're just teasing me."
     show balrung smile at basicfade
     b "Not at all. Perhaps we should destroy {b}this{/b} castle? It would look nice as a pile of smoldering debris, wouldn't it? "
-    show balrung smile blush at come_closer, basicfade
+    show balrung smile blush zoomin at come_closer, basicfade
     b "You and I, soaring above, circling, conflagrating..."
     p "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
     show balrung smirk at center, reset_zoom, basicfade

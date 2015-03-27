@@ -8,7 +8,7 @@ label cyril_dark_epilogue:
     show cyril concerned at center, basicfade
     p "I have a job for you."
     c "No, no, no, no.  {i}It can’t be.{/i}  You shouldn't be here, your Highness."
-    p "That's \"your majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me." 
+    p "That's \"your Majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me." 
     p "Pity my father had to get in the way, of course, but... well, that's in the past."
     show cyril angry at basicfade
     c "Well, I would do {i}anything{/i} for you, your majesty."  

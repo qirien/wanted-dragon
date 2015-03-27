@@ -44,7 +44,7 @@ label day5:
                 scene bg dungeon with fade
                 jump niir5
             "\"Maybe you're right...\"":
-                route = "Cyril"
+                $ route = "Cyril"
                 p "That is not completely false. He does not know the meaning of respect."
                 p "You on the other hand..."
                 p "Someone like you would understand when a lady is in need."
@@ -88,7 +88,7 @@ label day5:
         "I thought about it. Niir was more transparent - it was obvious what he was thinking. But perhaps that's what I liked about Balrung... the idea of a challenge."
         menu:
             "\"Prove that I can trust you.\"":
-                route = "Niir"
+                $ route = "Niir"
                 p "Prove to me that I can trust you."
                 show niir mischief at basicfade
                 n "Prove that {b}I{/b} can trusssst {b}you{/b}."
@@ -283,7 +283,7 @@ label balrung5:
     b "I'll just set her her down here on my bed, where she can be comfortable until she wakes up."
     c "On your bed! No, no, that won't do at all!"
     scene bg dungeon 
-    show balrung smile at center, come_closer
+    show balrung smile zoomin at center, come_closer
     with fade
     "He set me down gently, and I cracked one eye open. Balrung winked at me and I closed my eyes again."
     scene black with fade
@@ -298,7 +298,7 @@ label balrung5:
     scene bg dungeon with fade
     show cyril hat concerned blush at midleft, basicfade
     show niir neutral at midright, basicfade
-    show balrung smirk at center, come_closer, basicfade   
+    show balrung smirk zoomin at center, come_closer, basicfade   
     p "Oh, thank you, Balrung, for taking such good care of me. I don't know what came over me. But I'm so glad I can trust {b}you{/b}, at least."
     "I glared at the mage, hoping he would feel even more guilty."
     p "And now I will depart, so please excuse me."
@@ -361,40 +361,40 @@ label niir5:
     show niir neutral at center, basicfade
     
     p "Hold me like this, with your hands here, in case he peeks out."
-    show niir mischief at basicfade, come_closer
+    show niir mischief zoomin at basicfade, come_closer
     n "I can do that, at leassssst."
     p "Now, say things you like about me, and I will do the same for you. I've heard that's what lovers often talk about."
     n "I suppossse."
-    show niir concerned at basicfade, come_closer
+    show niir concerned zoomin at basicfade, come_closer
     n "Oh, Princessss, your...dresss is ssssooo...shiny. And your earsss are ssso...sstrange. How can you even hearrr with those tiny things?"
     c "Is that...Niir?! I've never heard him talk in such a positive manner."
     p "I suppose that's a start. Don't just compliment my appearance, though, or he won't believe it's true love!"
-    show niir mischief at basicfade, come_closer
+    show niir mischief zoomin at basicfade, come_closer
     n "You're sssoo deviousss, when I ssseee your scheming grin I jussst want to eat you up!"
-    show niir concerned with vpunch
+    show niir concerned zoomin with vpunch
     
     n "I mean, I jussst want to be good! And not kidnap any one elsssse."
-    show niir smirk at basicfade, come_closer
+    show niir smirk zoomin at basicfade, come_closer
     n "And only ssssteal you away if you assssk me to."
     "He bent his head close to my ear and whispered,"
     n "Your turn."
     p "Niir! I used to think you were an untrustworthy, lascivious, uncivilized beast of a dragon! But, oh, how wrong I was!" 
     p "Only now can I see past the mask you wear to hide your pain. Now, I can see the true, sweet, caring Niir underneath!"
-    show niir determined at basicfade, come_closer
+    show niir determined zoomin at basicfade, come_closer
     n "I'm not ssssweeet or carrring!"
     p "You've worn this mask for so long, even you have started to believe it!" 
     p "But I know that you've changed. You've learned your lesson, and now you would never hurt anyone or offend a Princess's delicate sensibilities!"
     "He hissed in my ear,"
-    show niir smirk at basicfade, come_closer
+    show niir smirk zoomin at basicfade, come_closer
     n "Delicate sensibilitiessss? Ssssurely you mussst mean some {b}other{/b} Princessss?"
     "I gripped his shoulders and whispered,"
     p "Your turn, Niir! Make it good; he has to believe you!"
-    show niir concerned at basicfade, come_closer
+    show niir concerned zoomin at basicfade, come_closer
     n "Yesss, how I've changed. If only I were frrreee, we'd live happily everrr afterrr!"
     p "If only you were free!"
     "I turned my face up to him and whispered,"
     p "Now kiss me!"
-    show niir frown blush at basicfade, come_closer
+    show niir frown blush zoomin at basicfade, come_closer
     n "..."
     "What was he hesitating for? Obviously he wanted to; it was practically all he could talk about."
     show niir determined at basicfade, reset_zoom
@@ -460,17 +460,17 @@ label somethigh:
     n "It doessss not work- {i}stop, human{/i}!"
     show niir determined with hpunch
     n "Desisst!"
-    show niir concerned at come_closer, basicfade
+    show niir concerned zoomin at come_closer, basicfade
     "He grabbed my fist before I could punch him again. The protection spell didn't activate, this time, since I touched him first."
     p "Release your hands from my royal person immediately!"
-    show niir smirk at basicfade, come_closer
+    show niir smirk zoomin at basicfade, come_closer
     n "Do you trussssst me now?"
     "Ah, a test.  Touché, dragon."
     p "Completely."
-    show niir concerned at basicfade, come_closer
+    show niir concerned zoomin at basicfade, come_closer
     n "Really?"
     p "Yes.  I trust you. Do you trust me?"
-    show niir frown at basicfade, come_closer
+    show niir frown zoomin at basicfade, come_closer
     n "..."
     n "{size=-3}Yessss.{/size}"
     p "I didn't quite hear you, what was that?"

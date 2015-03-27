@@ -6,10 +6,12 @@ label start:
     $ i = 1
     while (i<9):
         stop music fadeout 2.0
-        scene black with fade
-        show text "{color=#fff}{size=+10}Day [i]{/size}{/color}"
+        #scene black with fade
+        $ current_day = "day" + str(i)
+        show expression current_day + " zoomin" at top with slowfade
+        #show text "{color=#fff}{size=+10}Day [i]{/size}{/color}"
         $ renpy.pause(1.6)
-        call expression "day" + str(i)
+        call expression current_day
         $ i += 1
 
     return
