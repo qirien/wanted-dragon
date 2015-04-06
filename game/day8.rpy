@@ -18,22 +18,22 @@ label niir8:
     
     p "Niir, it is time."
     n "What sssurrrpise do you have forrr me today?"
-    p "Come with me and find out."
+    p smile "Come with me and find out."
     n "The suspensssse is delicioussss."
     
     play music cyril_theme    
     scene bg library with fade
     show cyril hat neutral at midleft, basicfade
     show niir neutral at midright with moveinleft
-    p "Moronious, we are ready."
+    p smile "Moronious, we are ready."
     show cyril hat surprised at basicfade
     c "Wh-?  {i}Please{/i} don’t sneak up, Princess.  Oh.  Of course.  {b}Niir{/b}.  He must have put you up to it."
-    p "I shall ignore your ridiculous insinuation that I would be \"put up\" to anything I did not wish to do." 
-    p "Try our love, mage. It is strong enough to overcome even your foolish \"test\"."
+    p friendly "I shall ignore your ridiculous insinuation that I would be \"put up\" to anything I did not wish to do." 
+    p tsk "Try our love, mage. It is strong enough to overcome even your foolish \"test\"."
     show cyril hat laugh at basicfade
     c "Oh yes.  Your \"love\".  You’re still on with that charade, are you?"
     n "It'sss no charade! She'sss my ssssweet little... hamhocks."
-    p "Yes, exactly. See, we're even holding hands."
+    p smile "Yes, exactly. See, we're even holding hands."
     show cyril hat eyes closed smile at basicfade
     c "If you two insist."
     show cyril hat laugh at basicfade
@@ -55,9 +55,9 @@ label niir8:
         n "She likesss crispy bacon, ssssucculent ham, and juicy ssssausage with a sssside of undercooked ssssquirrel.." 
         show cyril hat neutral at basicfade
         c "Squirrel?  And you do realize that ham and bacon are the same animal don’t you?"
-        p "I- yes, I like squirrel! Ham, bacon, mmmm!"
+        p smile "I- yes, I like squirrel! Ham, bacon, mmmm!"
         c "I’ll serve it to you then and see how much you eat.  Unless you’d just like to submit to the truth and move on."
-        p "You couldn't conjure it if you tried. I know how you've been feeding these dragons!"
+        p angry "You couldn't conjure it if you tried. I know how you've been feeding these dragons!"
         c "I don't need to; I can tell you're lying."
 
     c "Anyway! Next question!"
@@ -65,20 +65,20 @@ label niir8:
     n "Why would I tell her about my parentssss, sssstupid mage?"
     menu:
         "He doesn't know them." if (niir_affection >= HIGH_AFFECTION):
-            p "That is a trick question! Niir doesn't even remember his parents, but Balrung has been like an inconvenient father."
+            p friendly "That is a trick question! Niir doesn't even remember his parents, but Balrung has been like an inconvenient father."
             show cyril hat concerned at basicfade
             c "Well, it seems you have been doing more in the castle than just causing a ruckus together."
             n "We haven't been doing nearrrly enough ruckussssing..."
             c "I guess that is something positive."
             $ quiz_questions +=1
         "Some really nice dragons":
-            p "His parents were...both dragons...and they were... very kind and beautiful. For dragons."
+            p shocked "His parents were...both dragons...and they were... very kind and beautiful. For dragons."
             c "And I expect that Niir is the one that told you this?"
             n "..."
             c "As I thought."
         "Ghiulana and Zanbatar":
-            p "Their names were Ghiulana and Zanbatar." 
-            p "They were heartbroken at Niir's imprisonment and hope and pray with all their hearts that the dishonorable mage who has him in custody will soon relent and return their beloved son."
+            p smile "Their names were Ghiulana and Zanbatar." 
+            p smile "They were heartbroken at Niir's imprisonment and hope and pray with all their hearts that the dishonorable mage who has him in custody will soon relent and return their beloved son."
             n "...did you ever lisssten to anything I sssaid?!"
             c "Obviously not!"
     
@@ -87,11 +87,11 @@ label niir8:
     if (niir_affection >= HIGH_AFFECTION):
         n "Ssshe likes making potionsss. And scheming."
         c "I don’t know about the scheming.  But I’ll give you the point for the potions.  At least you said something somewhat believable."
-        p "If you really don't believe him, I have a potion for that."
+        p smile "If you really don't believe him, I have a potion for that."
         $ quiz_questions += 1
     else:
         n "That’ssss easssy.  Knitting hass to be it." 
-        p "What?! The only thing I'd knit is a noose for your asinine neck!"
+        p angry "What?! The only thing I'd knit is a noose for your asinine neck!"
         n "Ssssuch a lady."
 
     c "Last question!"
@@ -110,16 +110,16 @@ label niir8:
             $ quiz_questions += 1
 
         "Foolish mages":
-            p "Foolish mages like yourself, Moronious."
+            p laugh "Foolish mages like yourself, Moronious."
             n "Ssssstart running, Cccyril the Cowardly."
             c "Yes, very amusing.  But joke answers are not accepted as real answers.  We have already been through the rules."
 
         "Deer":
-            p "Deer, of course. That's what I like to hunt."
+            p smile "Deer, of course. That's what I like to hunt."
             n "...yesss, I love to hunt those... deer."
             c "And what does a deer look like Niir?  The alive type, not the type that have already been roasted and served on a plate."
             n "It issss pink, and hassss a curly tail.  With spotssss.  Lotsss of spotsss."
-            p "That's a pig. And you call yourself a carnivore..."
+            p angry "That's a pig.  A spotty pig.  And you call yourself a carnivore..."
 
     c "And, one final bonus question!"
     n "That'sss not fair, you sssaid the other one was the lassst."
@@ -127,7 +127,7 @@ label niir8:
     c "Princess, why is it that this lout of a dragon Niir has not yet left the castle?"
     menu:
         "He hadn't met me yet.":
-            p "He hadn't met me yet. Obviously."
+            p smile "He hadn't met me yet. Obviously."
             c "Oh, well.  I guess you do have a point.  But I do find it hard to believe that despite your... uniqueness that Niir has really changed."
             n "Ssshe can do what no one elsssse can."
             n "Let her ssshow you."
@@ -136,13 +136,13 @@ label niir8:
             p "Even if he changed into a butterfly, you'd still see him as a menace."
             c "You don’t understand princess.  He {b}is{/b} a menace.  I let him go and then it will be my job to go out and round him up all over again for disturbing the peace!  It is much simpler this way."
             n "Peaccccce is overrated, Ccccyril."
-            p "Well, you could trust me to keep a leash on him. I certainly wouldn't allow him to cause trouble in [k_name]."
+            p friendly "Well, you could trust me to keep a leash on him. I certainly wouldn't allow him to cause trouble in [k_name]."
         "He has too much loyalty to Balrung.":
-            p "Can't you see? It's his sense of filial duty to his surrogate father, Balrung. As long as he is imprisoned here, Niir is loath to leave his side. My poor, noble, Niir..."
+            p smile "Can't you see? It's his sense of filial duty to his surrogate father, Balrung. As long as he is imprisoned here, Niir is loath to leave his side. My poor, noble, Niir..."
             c "Oh.  I didn’t even consider that possibility."
             n "That'sss because it's not a posssibility."
             c "I suppose the dragons are... close...  I am not really sure how dragons show filial affection but maybe that is what Niir has been doing all along."
-            p "You see?  But now he has me, and so he must leave poor Balrung and begin a new glorious life in service to his queen.  Unless you’d permit Balrung to come with us..."
+            p smile "You see?  But now he has me, and so he must leave poor Balrung and begin a new glorious life in service to his queen.  Unless you’d permit Balrung to come with us..."
             c "Absolutely not!"
             p "I tried, Niir.  You tell Balrung that I tried."    
 
@@ -156,7 +156,7 @@ label niir8:
         n "Very sssad."
         c "Regardless, I suppose I can let you go."
         c "Don’t make me regret this, Niir.  I feel like I’m regretting it already.  If you are anything less than completely loyal to this lovely young princess..."
-        p "I will string him up by his dragony sinews and boil his scales for my potions. Until he learns his lesson."
+        p angry "I will string him up by his dragony sinews and boil his scales for my potions. Until he learns his lesson."
         n "Pleassse don’t."
         c "{font=fonts/ankecallig-fg.ttf}{size=+10}INCARCERUS TERMINE{/size}{/font}!"
         show cyril hat angry with magic_flash
@@ -164,7 +164,7 @@ label niir8:
         "Niir shimmered a little, and there was a distant noise like breaking glass."
         n "It isss done?  I feel... {i}powerful{/i} again."
         n "I will not sssstay here one minute more."
-        p "Then it's time for us to fly."
+        p laugh "Then it's time for us to fly."
         hide niir with golden_flash
         "Niir closed his eyes, concentrating, and then shifted, his skin turning golden and scaly, his frame lengthening."
         "Huge glimmering wings unfolded behind him, and he stamped the ground with clawed feet."
@@ -173,25 +173,25 @@ label niir8:
         "I climbed on his back, looping my arms around his neck. Cyril frowned up at us disapprovingly as the wind from Niir's wings swirled around him, but did nothing to stop our flight."
         scene bg sunset with fade
         n "He let ussss go."
-        p "Less talking, more flying!"
+        p shout "Less talking, more flying!"
         n "Would you like to try ssssomething... dangerousss?"
-        p "Of course!"
+        p smile "Of course!"
         n "Then grrrip me tightly, Prrrincesssss..."
         "I dug in my heels and clutched his wings right where they met his back. He twisted into a barrel roll, then looped several times. I almost fell off, but had never felt so alive."
         n "Direct me to your casssstle."
-        p "Onward!"
+        p shout "Onward!"
         stop sound fadeout 2.0
         call credits
         jump niir_free_epilogue
     else:
         c "As I thought! The only thing between you is lies and plots!"
         n "Not true.  There issss alsssso the mutual wish to sssee you ssssuffer."
-        p "So, you won't let him go? You'll force me to find some other way to be with my true love?"
+        p tsk "So, you won't let him go? You'll force me to find some other way to be with my true love?"
         c "Well, I suppose if your father agrees to have you stay here in the castle, it wouldn’t be too bad to have you around as extra company."  
         c "Though I would not like to have to the be constant chaperone to you and the dragon."
-        p "Well, I can show you how that will go right now. Niir, come with me. Moronious, you may not come."
+        p angry "Well, I can show you how that will go right now. Niir, come with me. Moronious, you may not come."
         c "Ah, yes.  I don’t think it’s a good idea to leave you two alone right now."
-        p "Then follow us, if you dare."
+        p angry "Then follow us, if you dare."
 
         play music niir_theme
         scene bg ruins with fade
@@ -200,7 +200,7 @@ label niir8:
         n "Yesss, I can ssstill sssmell that mage around here."
         menu:
             "Let's take him by surprise.":
-                p "You're no weakling; why not take him by surprise?"
+                p surprised "You're no weakling; why not take him by surprise?"
                 n "That won't worrrrk; we dragonsss can't touch him!"
                 p "True... but {b}I{/b} can."
                 n "I ssssupossse he won’t be expecting that."
@@ -218,16 +218,16 @@ label niir8:
                 c "Why isn’t it-?  My hand seems to be empty."
                 "Niir sneered at him, and Cyril tried to bat him away. But as he touched the dragon, his protective barrier deactivated, and Niir took the opportunity to hold him down."
                 c "Stop, Princess! Niir! This is {b}no{/b} joke.’"
-                p "Tie him up, Niir. Here. Look familiar?"
+                p smile "Tie him up, Niir. Here. Look familiar?"
                 n "My rope.  I sssshould have known."
-                p "Aren't you glad I didn't hang myself with it?"
+                p smile "Aren't you glad I didn't hang myself with it?"
                 n "Yessss, now hold sssstill Ccccyril."
                 c "I will do no such thing!  Let me go you brute, or I’ll have to-"
-                p "We can't have you calling for help or casting spells, either. You didn't need the hem of this robe, right?"
+                p friendly "We can't have you calling for help or casting spells, either. You didn't need the hem of this robe, right?"
                 c "This is a special magical garment!  You cannot merely- I am warning you-"                
                 play sound "sfx/rip.ogg"
                 c "The council will be hearing about this.  A princess, in cahoots with a dragon!  It will not go overlooked."
-                p "Good! Let them learn to fear me! Now, you will be silent."
+                p smile "Good! Let them learn to fear me! Now, you will be silent."
                 c "I hardly thi- Mmmffffhhh..."
                 n "Nicccce work, Princesssss."
                 hide cyril with moveoutbottom
@@ -239,11 +239,11 @@ label niir8:
                 hide niir at center with moveoutright
 
                 "I waited impatiently, until I heard the noise of spells being cast."
-                p "They started without me?!"
+                p angry "They started without me?!"
                 "I ran towards the source of the sound - by the castle gates."
                 scene bg gate dusk with fade
                 show balrung determined at center
-                show cyril angry at left
+                show cyril hat angry at left
                 show niir angry at right
                 b "What did you think would happen if you tried to touch the mage? That was an idiotic move. If you had waited for five seconds to listen to my plan, we'd-"
                 show niir determined at midright with quickmove
@@ -261,19 +261,19 @@ label niir8:
                 hide niir at quarterright with moveoutbottom
                 "The old dragon stepped on Niir's chest, pinning him to the ground."
                 c "Dragons, stop this! Someone might get hurt!"
-                p "Yes, and it won't be Moronious! I need you two to cooperate!"
+                p tsk "Yes, and it won't be Moronious! I need you two to cooperate!"
                 b "Yes, Niir, cooperate with me! I'm just a distraction! Merlonious is our real enemy!"
                 "Balrung looked over at me for a split second while he said this. Was he trying to... yes."
                 c "If you won't stop on your own, I'm afraid I shall have to incapacitate you both!"
                 "While Moronious was distracted watching the dragons, I sidled up next to him."
-                p "They're hopeless, aren't they?"
+                p angry "They're hopeless, aren't they?"
                 c "What? Oh, yes, Princess, they are. I've never seen them go at it with this much intensity-- oof!"
                 hide cyril with moveoutbottom
                 "I tackled him with all my weight, pinning his wand hand down."
                 b smile "Excellent work, Princess!"
                 p "Let go of the wand, Moronious!"
                 c "Princess! I don't want to attack you! Please, let me help everyone!"
-                p "We've had enough of your \"help\"! Let these dragons go!"
+                p shout "We've had enough of your \"help\"! Let these dragons go!"
                 c "I'm so sorry, Princess! You leave me no choice!"
                 show cyril hat angry at quarterleft with moveinbottom
                 "I was thrown back by the blast from his spell."
@@ -285,11 +285,11 @@ label niir8:
                 p tsk "What is this?! I am no dragon; you have no right to imprison me!"
                 show cyril hat concerned at basicfade
                 c "I am very sorry to have to do this, your Highness! But I cannot abide your wrongdoing any longer!"
-                p "Impossible! I am a PRINCESS! I am your future QUEEN!"
+                p shout "Impossible! I am a PRINCESS! I am your future QUEEN!"
                 c "Now, now, that's enough yelling, Princess. You forced my hand.  Siding with the dragons like this.  You really are responsible for this."
                 c "I’ve told you all along, you cannot trust these dragons.  They will only put themselves first." 
                 n "Sssorry, Princessss...we were ssso clossse! But at leassst we can keep each other company."
-                p "Shut up, you imbecile!  I can’t believe I ever agreed to help you!"
+                p shout "Shut up, you imbecile!  I can’t believe I ever agreed to help you!"
                 n "...Sssso much for \"love\"..."  
                 call credits
                 jump imprisoned_epilogue
@@ -298,14 +298,14 @@ label niir8:
                 p "Hmph. Very well then. Kiss me. It'll make him leave us alone."
                 show niir frown blush at basicfade
                 n "Princessss, I-"
-                p "No words! Just kissing!"
+                p shout "No words! Just kissing!"
                 n "..."
                 n "I sssshould not want to ssstart sssomething I cannot ssstop, princesss."
-                p "Do you trust yourself so little? Fortunately, I trust you more."
+                p angry "Do you trust yourself so little? Fortunately, I trust you more."
                 n "How sssstupid of you."
                 show niir neutral zoomin at come_closer
                 "I seized his ridiculous ears and brought our lips together.  He struggled a little at first, but then held me tighter and attempted to kiss me back. Not bad, for his first kiss." 
-                p "Is he gone yet?"
+                p smile "Is he gone yet?"
                 n "..."
                 p "I’m talking to you, dragon.  Is.  He. Gone?"
                 n "Yessss.  Yesss, he isss gone."
@@ -313,20 +313,20 @@ label niir8:
 
     label secret_weapon:
         show niir neutral at center with move
-        p "Now it's time for my secret weapon."
-        n "Is it in your blousssse?"
-        p "Yes, actually it is. Would you mind getting it for me?"
-        n "..."
-        p "Oh, very well, must I do everything myself?!"
+        p smile "Now it's time for my secret weapon."
+        n happy "Is it in your blousssse?"
+        p friendly "Yes, actually it is. Would you mind getting it for me?"
+        n frown blush "..."
+        p angry "Oh, very well, must I do everything myself?!"
         "I pulled out a glass vial full of a fizzy purple liquid."
-        n "It really wasss in your bloussse.  Is it poissson?"
-        p "Of course not. Drink it."
-        n "Your inssssisstence that I drink doesss not reasssure me that it isss not poissson."
-        p "Why would I go through all the trouble of seducing you and getting rid of that mage just to kill you? I want you free so you can aid me!"
+        n smile "It really wasss in your bloussse.  Is it poissson?"
+        p smile "Of course not. Drink it."
+        n angry "Your inssssisstence that I drink doesss not reasssure me that it isss not poissson."
+        p tsk "Why would I go through all the trouble of seducing you and getting rid of that mage just to kill you? I want you free so you can aid me!"
         n "Not for amusssement?"
-        p "What kind of evil princess do you think I am?!"
+        p surprised "What kind of evil princess do you think I am?!"
         n "One lassst kissss before I drink.  If it isss poisssson, I want it to be worth it."
-        p "Well, I suppose we have time for one-"
+        p shocked "Well, I suppose we have time for one-"
         show niir smirk zoomin at come_closer, basicfade
         "Well. This kiss was certainly satisfactory. At least the dragon could learn quickly."
         show niir neutral at reset_zoom, basicfade
@@ -334,15 +334,15 @@ label niir8:
         n "Bottomssss up."
         p "You have no idea."
         "He drank the entire vial in one gulp. Good, I was beginning to worry he wouldn't do it."
-        p "Now, try not to belch."
+        p smile "Now, try not to belch."
         hide niir at basicfade
         play music princess_theme
         "I hoisted him up onto my shoulder. With the weight-reducing potion in effect, it was as easy as carrying a sack of potatoes." 
         "Not that I had ever carried sacks of potatoes. But I'd seen it done. It looked easy."
-        n "Don’t ssstrain yoursssself, princessss."
+        n frown "Don’t ssstrain yoursssself, princessss."
         "I strode over to the barrier. It was barely visible as a slight haze in the air. I probably should have packed some provisions or tools or something, but I was done with this place."
         "Hopefully once Niir was out of the castle and had regained consciousness, he could turn into a dragon and fly us the rest of the way to [k_name]."
-        p "Hold on, Niir, this may hurt a bit."
+        p laugh "Hold on, Niir, this may hurt a bit."
         "He didn't even scream as I walked through the barrier; just went limp. No alarms rang or mages popped out of the air."
         "It was easier than I expected.  Stopping my sister’s coronation was probably not going to be quite so easy."
         "But I {b}would{/b} be Queen. No matter what!"
@@ -354,16 +354,16 @@ label niir8:
 label cyril8:
     scene bg library with fade
     show cyril hat neutral at center, basicfade
-    p "Time is running out, Moro-, er, Cyril. Unless you have something for me today, I will be forced to pursue other...options."
+    p angry "Time is running out, Moro-, er, Cyril. Unless you have something for me today, I will be forced to pursue other...options."
     c "I know, I know.  Time is of the essence.  I have been staying awake at night thinking of what to do about it but to no avail."
     p "Hmph. Then I will find something on my own. How unfortunate that your power was not enough to bring me the one thing I truly need."
     c "W-wait! One more time!"
 
     c "There it is again! The scepter's magical echo! Before it fades, I must..."
     c "{font=fonts/ankecallig-fg.ttf}Resonantia Concretus{/font}!"
-    p "I can see wisps of something in the air. What did you do, mage?" #TODO: vfx for this?
+    p surprised "I can see wisps of something in the air. What did you do, mage?" #TODO: vfx for this?
     c "That should solidify the resonance for a while. It's coming from...the dungeon. Princess, someone is using the scepter right now!"
-    p "Then we must follow the resonance and take it! What are you waiting for?!"
+    p shout "Then we must follow the resonance and take it! What are you waiting for?!"
     c "R-right!"
 
     play music balrung_theme
@@ -373,7 +373,7 @@ label cyril8:
     "When we got to the dungeon, Balrung and Niir were nowhere to be seen."
     show cyril hat concerned eyes closed at basicfade
     c "Ahhhh!"
-    p "Cyril! Don't just stand there; we need to get the scepter!"
+    p shout "Cyril! Don't just stand there; we need to get the scepter!"
     show cyril hat angry at basicfade
     c "The dragons... the curse is broken! That is...not...RIGHT!"
     show cyril hat surprised at basicfade with vpunch
@@ -392,7 +392,7 @@ label cyril8:
     show cyril angry at basicfade
     c "And wait Balrung, WHERE IS THAT SCEPTER?!" 
     "As they talked, I scanned the room. Balrung had used it earlier to break the spell, but I didn't see it in his hands- er, talons. But traces of Cyril's spell still lingered and led me to it."
-    p "You mean...this scepter? Really, Balrung, under the bed is such an obvious hiding place." 
+    p smile "You mean...this scepter? Really, Balrung, under the bed is such an obvious hiding place." 
     show cyril surprised at basicfade
     c "Of course, I should have seen it.  I am sorry, my Highness."
     b "I put it there for you to find, Princess. I've already used the scepter for what I needed. And now I've passed it on to you. I know you'll put it to much better use than this fool."
@@ -400,7 +400,7 @@ label cyril8:
     c "No, don't! It's too powerful; you can't control it without magical training! It could kill you, {i}kill{/i} you, Princess!"
     menu:
         "Give the scepter to Cyril" if (cyril_affection >= HIGH_AFFECTION):
-            p "Cyril, I'm trusting you with this. Don't fail me!"
+            p smile "Cyril, I'm trusting you with this. Don't fail me!"
             show cyril smile blush at basicfade
             c "I won’t, Princess."
             b "You're making a mistake!  I WILL not be imprisoned AGAIN!"
@@ -416,26 +416,29 @@ label cyril8:
             play sound "sfx/lightning.ogg"
             show cyril angry with magic_flash
             "There was a puff of smoke that sped towards Balrung like an arrow, and when it cleared... he had turned to stone."
-            p "You...stopped him. Cyril, that was...power!"
+            p smile "You...stopped him. Cyril, that was...power!"
             show cyril smile blush at basicfade
             c "Ah, yes.  I suppose it was, mostly.  This scepter is very dangerous buisness.  "
             extend "I think I’ll hold on to it."
-            p "And I'll hold on to {b}you{/b}."
+            p friendly "And I'll hold on to {b}you{/b}."
             show cyril concerned blush zoomin at center,come_closer
             show cyril smile blush eyes closed zoomin
             "I grabbed the sleeves of his robe and kissed him thoroughly." 
             "He was too surprised to respond at first, and almost dropped the scepter, but soon he had his arms around me awkwardly and was attempting some sort of kiss in response."
             "It was...adorable. Yes, perhaps now he was worthy to aid me."
-            p "Yes...Cyril, I think it's time for you and I to stop a coronation. When my father sees the power we possess, he will certainly change his mind."
+            p smile "Yes...Cyril, I think it's time for you and I to stop a coronation. When my father sees the power we possess, he will certainly change his mind."
 
             call credits
-            jump cyril_scepter_epilogue
+            if (cyril_insanity >= INSANE):
+                jump cyril_insane_epilogue
+            else:
+                jump cyril_scepter_epilogue
 
 
         "Use the scepter on Balrung":
-            p "Cyril is right about one thing, dragon. You should not be free; you'll cause me too much trouble."
+            p shout "Cyril is right about one thing, dragon. You should not be free; you'll cause me too much trouble."
             "I pointed the scepter at him and focused my will on it."
-            p "Hyaaaaah!"
+            p tsk "Hyaaaaah!"
             b "..."
             show cyril surprised at basicfade
             c "..."
@@ -470,16 +473,16 @@ label cyril8:
             "Balrung stopped mid-leap and crashed to the ground, dead. There was no time for last words or final taunts - it was over. Cyril just stood there, staring at the dragon's corpse."
             show cyril concerned eyes closed at basicfade
             c "{i}I-I... he was supposed to stop{/i}."
-            p "That was...very competent of you, Cyril."
+            p smile "That was...very competent of you, Cyril."
             show cyril concerned at basicfade
             c "He didn’t give me a choice.  "
             extend "I hope the council of mages understand."
             show cyril concerned at basicfade
             c "You will, tell them, won’t you?"
-            p "Of course I will. After you help me."
+            p friendly "Of course I will. After you help me."
             show cyril angry at basicfade
             c "Oh yes.  You need the scepter, and you have it.  Quite... marvelous."
-            p "But...I can't use it! I just tried, and it did nothing. You must come with me!"
+            p surprised "But...I can't use it! I just tried, and it did nothing. You must come with me!"
             show cyril concerned at basicfade
             c "I will Princess.  I will help you."
             show cyril concerned eyes closed at basicfade
@@ -495,28 +498,29 @@ label cyril8:
             "I turned the scepter toward myself, feeling the intense energy that came from it."
             show cyril surprised at basicfade
             c "Wh-wh-what are you doing Princess?"
-            p "Stand back Moro-Cyril.  We had an agreement.  The scepter would be {b}mine{/b}."
+            p shout "Stand back Moro-Cyril.  We had an agreement.  The scepter would be {b}mine{/b}."
             b "Outsmarted again, mage.  Oh, ho ho!"
             show cyril concerned eyes closed at basicfade
             c "Princess, please stop this! You don't know what it might do! You won't be able to control it!"
-            p "I'll do whatever I have to! Hyaaah!"
+            p shout "I'll do whatever I have to! Hyaaah!"
             "I felt myself thrust backwards, and I hit the wall. Then the magic began to work."
-            "My skin tingled and stretched, twisted and changed. I looked down at my hands and watched as they morphed into powerful claws. I tossed my head, and instead of hair, felt horns."
+            "My skin tingled and stretched, twisted and changed. I looked down at my hands and watched as they morphed into powerful claws." 
+            "I tossed my head, and instead of hair, felt horns."
             "And, to either side, enormous leathery wings strained against the ceiling, yearning for the open air."
             b "Princess... you're... marvelous!"
             show cyril surprised at basicfade
             c "Chrysandra!  No!"
             show cyril angry at basicfade
             c "This cannot be.  We can fix you.  Give me that scepter!"
-            p "No, no, no."
+            p tsk "No, no, no."
             show cyril concerned at basicfade
             c "Princess, it’s okay.  I have heard of this happening.  Well, I heard of it happening once.  We can fix this, I {b}can{/b}!  You must trust me."
             "My new voice sounded deep and strange. I growled, just for the fun of it, and my laugh was like rolling thunder."
-            p "This is how I was meant to be! But I won't forget you, Cyril. In fact, I shall allow you to accompany me so that you might serve me further."
+            p laugh "This is how I was meant to be! But I won't forget you, Cyril. In fact, I shall allow you to accompany me so that you might serve me further."
             show cyril concerned blush at basicfade
             c "And then I will fix you, right?"
             "I crushed one of the stones from the wall to powder in my claws, and swung my tail back and forth, knocking a door off its hinges. I could get used to this."
-            p "Climb on, Cyril! And I will give my sister a coronation she'll never forget!"
+            p shout "Climb on, Cyril! And I will give my sister a coronation she'll never forget!"
             show cyril surprised at basicfade
             c "Ah, yes.  But Balrung- he will still be here.  And we need to find Niir.  I can’t have him causing trouble again."
             b "Leave Niir to me. And, Princess, if you ever tire of humans and their petty, insignificant squabbling... come and join us."
@@ -525,7 +529,7 @@ label cyril8:
             "Cyril gingerly stepped onto my hind leg, and then clambered up onto my back. His weight felt like that of a small child, barely even registering."
             show cyril concerned at basicfade
             c "There's nothing to hold on to! Shouldn't there be reins or something?!"
-            p "Never!"
+            p shout "Never!"
             play music happy_ending
             play sound "sfx/wings.ogg" loop
             scene bg sunset with fade
@@ -533,9 +537,11 @@ label cyril8:
             "Flying felt so natural, it was hard to believe I had only been capable of it for mere minutes."
 
             c "I don’t believe I’m doing this.  I don’t believe I’m doing this.  I’m not sure if we should be doing this, Princess."
-            p "I wonder if I can breathe fire? ...Oh, look, I can! Did you see that, Cyril?!"
+            p surprised "I wonder if I can breathe fire? ...Oh, look, I can! Did you see that, Cyril?!"
             c "Please don’t.  Don’t do that, Princess.  At least not without due warning."
-            p "I'm warning you right now, Cyril, there will be a lot more fire and destruction before the night is over! Mwah ha ha ha ha!"
+            p laugh eyes closed "I'm warning you right now, Cyril, there will be a lot more fire and destruction before the night is over! Mwah ha ha ha ha!"
+            scene cg1 with fade
+            $ renpy.pause()
             stop sound fadeout 2.0
             call credits
             jump cyril_dragon_epilogue
@@ -556,10 +562,10 @@ label balrung8:
     show balrung neutral at center with moveinleft
     show balrung determined at basicfade
     b "Chrysandra? There you are! I have another plan, but I'm not satisfied with its chances for success. Tell me you have something better."
-    p "Depends. Do you have any dragon scales?"
+    p surprised "Depends. Do you have any dragon scales?"
     show balrung neutral at basicfade
     b "Perhaps; how many do you need?"
-    p "Just one, and some other ingredients. I thought I saw berry grass on our walk the other day, and I know the kitchen has molasses, and I brought some nightshade."
+    p smile "Just one, and some other ingredients. I thought I saw berry grass on our walk the other day, and I know the kitchen has molasses, and I brought some nightshade."
     show balrung angry at basicfade
     show balrung angry at center
     b "So many dragons have come and gone, here, we should be able to find at least one dragon scale. Firgol left several months ago from the top tower, so let's try there."
@@ -567,13 +573,13 @@ label balrung8:
     
     scene bg stairs day with fade
     show balrung neutral at center with moveinright
-    p "Tell me about Firgol."
+    p friendly "Tell me about Firgol."
     show balrung determined at basicfade
     b "None too bright, but he was honest and sincere. That's what his Princess wanted, I suppose."
-    p "She came here seeking a dragon?"
+    p surprised "She came here seeking a dragon?"
     show balrung neutral at basicfade
     b "Yes, she was ruling with a regency, and they threatened to take over if she did not produce any heirs. She decided the quickest way to get married was to seek a dragon here."
-    p "Why did she choose Firgol?"
+    p surprised "Why did she choose Firgol?"
     show balrung smirk at basicfade
     show balrung smirk at center
     b "Well...Niir wasn't interested, since she was a bit older and not particularly beautiful. I chatted with her several times, but she wanted someone guileless and pliable. Firgol was both."
@@ -586,18 +592,18 @@ label balrung8:
     b "I'm afraid I don't know. I couldn't bear to watch {b}him{/b} return to dragon form while I was incapable of doing so."
     show balrung smile at basicfade
     b "But tell me...what potion are you planning on making, Chrysandra?"
-    p "Persuasion. I wanted to make one to use on my father, but I had no dragon scales."
+    p smile "Persuasion. I wanted to make one to use on my father, but I had no dragon scales."
     show balrung smirk at basicfade
     b "Ah-hah! Here's one. Once I'm free, you can have as many scales as you like. Perhaps using a potion on your father would be a better way to regain your kingdom than burning it to the ground?"
-    p "Ohhhh, I suppose. I had such lovely visions of flames and rubble...but it is expensive to rebuild a castle."
+    p friendly "Ohhhh, I suppose. I had such lovely visions of flames and rubble...but it is expensive to rebuild a castle."
     show balrung neutral at basicfade
     b "Your pragmatism is delightful. I'm sure we can find something else to destroy together."
-    p "Ha. Stop it, Balrung, now you're just teasing me."
+    p laugh eyes closed "Ha. Stop it, Balrung, now you're just teasing me."
     show balrung smile at basicfade
     b "Not at all. Perhaps we should destroy {b}this{/b} castle? It would look nice as a pile of smoldering debris, wouldn't it? "
     show balrung smile blush zoomin at come_closer, basicfade
     b "You and I, soaring above, circling, conflagrating..."
-    p "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
+    p smile "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
     show balrung smirk at center, reset_zoom, basicfade
     b "Of course, Chrysandra."
     hide balrung at center with moveoutleft
@@ -619,7 +625,7 @@ label balrung8:
     show cyril hat concerned at basicfade
     c "Which dragon was it?! I'll make sure they can NEVER hurt anyone else again!"
     "I tried to stand up, but couldn't quite manage it."
-    p "It was... it wasn't... Balrung...!"
+    p shocked "It was... it wasn't... Balrung...!"
     
     show balrung neutral at center with moveinleft
     show balrung determined at basicfade
@@ -640,7 +646,7 @@ label balrung8:
     hide balrung with quickmoveoutleft
     b "AHHHHH!"
     play sound "sfx/electricity.ogg"
-    p "Stop it, you stupid mage! It wasn't even him, it was me!"
+    p shout "Stop it, you stupid mage! It wasn't even him, it was me!"
     show cyril hat concerned at basicfade
     c "You're not making delirious, I mean, you're not making sense, Princess! No, no, I'm going to do what they should have done to this villain in the first place!"
     "He began muttering, trying to remember the words. I grabbed the bloody knife and managed to stand up."
@@ -653,19 +659,19 @@ label balrung8:
             hide cyril at quarterright with moveoutbottom
             "Blood spread quickly, pooling in the cracks between stones on the floor."
             "Was he... dead?  So quickly?"
-            p "...Moronious, it's your own fault. You should have let me have my way! You shouldn't have been so weak."
+            p tsk "...Moronious, it's your own fault. You should have let me have my way! You shouldn't have been so weak."
             "Yes, it was his own fault. A waste of a mage, I suppose."
             "There was nothing standing in our way, now."
             p "..."
             jump balrung_ending
             
         "Threaten to stab yourself":
-            p "Stop it, Moronious, or I shall stab myself with this knife!"
+            p shout "Stop it, Moronious, or I shall stab myself with this knife!"
             c "What?! Princess, no! What are you doing?!"
-            p "You bumbling buffoon, I cut my own arm to make a potion! Balrung has been {b}helping{/b} me!"
+            p angry "You bumbling buffoon, I cut my own arm to make a potion! Balrung has been {b}helping{/b} me!"
             show cyril hat surprised at basicfade
             c "He...didn't hurt you?"
-            p "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
+            p tsk "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
             show cyril hat concerned at basicfade
             c "I..."
             show cyril hat concerned eyes closed at basicfade            
@@ -676,10 +682,10 @@ label balrung8:
             jump balrung_ending
         "Shield Balrung" if (balrung_affection >= HIGH_AFFECTION):
             "I ran to stand in front of Balrung. I didn't think that mage would be foolish enough to attack me."
-            p "Stop, stop, stop! You bumbling buffoon, I cut my own arm to make a potion! Balrung has been {b}helping{/b} me!"
+            p shout "Stop, stop, stop! You bumbling buffoon, I cut my own arm to make a potion! Balrung has been {b}helping{/b} me!"
             show cyril hat surprised at basicfade
             c "He...didn't hurt you?"
-            p "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
+            p tsk "No, idiot! The only one in this castle who has been hurting people is {b}you{/b}!"
             show cyril hat concerned at basicfade
             c "I..."
             show cyril hat concerned eyes closed at basicfade            
@@ -689,7 +695,7 @@ label balrung8:
             hide cyril at quarterright with moveoutleft
             jump balrung_ending
         "Wait it out.":
-            p "Hmmm, I must admit, I'm curious who would win if you two begin fighting. What better way to prove who is stronger and more fit to aid me?"
+            p smile "Hmmm, I must admit, I'm curious who would win if you two begin fighting. What better way to prove who is stronger and more fit to aid me?"
             show cyril hat surprised at basicfade
             "They looked at each other, surprised. Balrung stood up slowly, shaking, and shook his head."
             show balrung neutral at center with moveinbottom
@@ -697,12 +703,12 @@ label balrung8:
             b "..."
             show cyril hat concerned at basicfade
             c "..."
-            p "Well? What are you waiting for? Commence battle!"
+            p surprised "Well? What are you waiting for? Commence battle!"
             show balrung smirk at basicfade
             b "Cyril, you've seen the Princess. Who do you really think is a greater threat to the safety of this kingdom?" 
             b "Yes, I know she's a \"princess\", and quite an attractive one at that; but she's selfish, lustful for power, and will stop at nothing."
             b "She had even agreed to poison you in your sleep if it was necessary for our plan. Would you trust the future of this kingdom to someone like that?"
-            p "Poisoning the mage was your idea!"
+            p tsk "Poisoning the mage was your idea!"
             show balrung angry at basicfade
             b "You don't care whose life you have to destroy to get what you want. You don't care about the desires and goals of those around you." 
             b"I know you, Princess, I've seen into your heart and it's dark with malice."
@@ -714,29 +720,28 @@ label balrung8:
             show balrung determined at basicfade
             b "No. I only want to be able to fly over the mountains and be left alone."
             show cyril hat surprised at basicfade
-            p "He's lying! He was going to help me destroy [k_name]!"
+            p shout "He's lying! He was going to help me destroy [k_name]!"
             show balrung smirk at basicfade
             b "Cyril, I hope you'll do the right thing and help the Princess see the error of her ways. You mages have helped me to, even though I disagree with the way it was done."
-            p "Balrung! I will hunt you down! I will find you and DESTROY YOU!!!"
+            p shout "Balrung! I will hunt you down! I will find you and DESTROY YOU!!!"
             # TODO: if her cyril_affection is high enough, send to cyril_attack instead?
             show cyril hat angry at basicfade
             show balrung smile at basicfade
             b "Farewell, Princess. I hope you find better things to consume your life than revenge."
             hide balrung at center with moveoutleft
-            p "Moronious! Stop him! Why are you just standing there?! KILL HIM!"
-            # TODO: Feel free to rewrite Cyril's lines better or end this differently
+            p shout "Moronious! Stop him! Why are you just standing there?! KILL HIM!"
             show cyril hat concerned at basicfade
             c "N-no, Princess, I don't th-think I will."
-            p "Useless! Betrayed at every turn! When I am Queen, you will regret this!"
+            p tsk "Useless! Betrayed at every turn! When I am Queen, you will regret this!"
             show cyril hat concerned eyes closed blush at basicfade
             c "You sh-shouldn't be Queen the way you are. I'm terribly sorry, my dear Princess [p_name], but..."
-            p "Moronious, you fool, point that wand at the dragon! Not at me!"
+            p shout "Moronious, you fool, point that wand at the dragon! Not at me!"
             show cyril hat concerned blush at basicfade
             c "{font=fonts/ankecallig-fg.ttf}CARCERATUS{/font}!!" with magic_flash
-            p "What have you done to me?!"
+            p angry "What have you done to me?!"
             show cyril hat neutral at basicfade
             c "Stay! You will stay here, until you learn to be good! I know, somewhere inside of you, there's goodness and love...please, find it quickly, Princess."
-            p "You thought guarding dragons was bad? I {b}will{/b} make your life a hell of mental pain, psychological torture, and physical anguish until you LET. ME. GO!"
+            p angry "You thought guarding dragons was bad? I {b}will{/b} make your life a hell of mental pain, psychological torture, and physical anguish until you LET. ME. GO!"
             show cyril hat concerned eyes closed at basicfade
             c "I'm so sorry! It's for your own good...."
 

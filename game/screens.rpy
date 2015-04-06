@@ -247,22 +247,24 @@ screen main_menu():
 #        textbutton ("Extras") action ShowMenu("extras") at buttonfade  
 #        textbutton ("Quit") action Quit(confirm=False) at buttonfade
 
-        imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" focus_mask True action Start() at buttonfade
+        imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" action Start() at buttonfade
         
-        imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" focus_mask True action ShowMenu("main_load") at buttonfade
+        imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" action ShowMenu("main_load") at buttonfade
 
-        imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png"  focus_mask True action ShowMenu("main_preferences") at buttonfade
+        imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" action ShowMenu("main_preferences") at buttonfade
 
-        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png"  focus_mask True action ShowMenu("princess_endings") at buttonfade    
+        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png" action ShowMenu("princess_endings") at buttonfade    
 
-        imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png"  focus_mask True action Quit(confirm=False) at buttonfade
+        imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png" action Quit(confirm=False) at buttonfade
             
 #        textbutton _("Start Game") action Start()
 #        textbutton _("Load Game") action ShowMenu("load")
 #        textbutton _("Preferences") action ShowMenu("preferences")
 #        textbutton _("Help") action Help()
 #        textbutton _("Quit") action Quit(confirm=False)
-
+    
+    on "show" action Stop ("sound")
+    
 init -2:
 
     # Make all the main menu buttons be the same size.
@@ -359,13 +361,13 @@ screen save:
       
       
 
-    imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 195 focus_mask True action ShowMenu("load") at buttonfade
+    imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 195 action ShowMenu("load") at buttonfade
 
-    imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 focus_mask True action ShowMenu("preferences") at buttonfade
+    imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 action ShowMenu("preferences") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 focus_mask True action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade    
 
-    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 focus_mask True action Return() at buttonfade
+    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
     imagebutton idle "GUI/button_a.png" hover "GUI/button_a_hover.png" selected_idle "GUI/button_a_hover.png" selected_hover "GUI/button_a_hover.png" xpos 500 ypos 440 focus_mask True action FilePage("auto")  at buttonfade
     imagebutton idle "GUI/button_1.png" hover "GUI/button_1_hover.png" selected_idle "GUI/button_1_hover.png" selected_hover "GUI/button_1_hover.png" xpos 550 ypos 440 focus_mask True action FilePage("1")  at buttonfade
@@ -396,13 +398,13 @@ screen load:
       
       
 
-    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 focus_mask True action ShowMenu("save") at buttonfade
+    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
-    imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 focus_mask True action ShowMenu("preferences") at buttonfade
+    imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 action ShowMenu("preferences") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 focus_mask True action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade    
 
-    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 focus_mask True action Return() at buttonfade
+    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
     imagebutton idle "GUI/button_a.png" hover "GUI/button_a_hover.png" selected_idle "GUI/button_a_hover.png" selected_hover "GUI/button_a_hover.png" xpos 500 ypos 440 focus_mask True action FilePage("auto")  at buttonfade
     imagebutton idle "GUI/button_1.png" hover "GUI/button_1_hover.png" selected_idle "GUI/button_1_hover.png" selected_hover "GUI/button_1_hover.png" xpos 550 ypos 440 focus_mask True action FilePage("1")  at buttonfade
@@ -432,13 +434,13 @@ screen main_load:
       
       
 
-    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 focus_mask True action ShowMenu("save") at buttonfade
+    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
-    imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 focus_mask True action ShowMenu("main_preferences") at buttonfade
+    imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 action ShowMenu("main_preferences") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 focus_mask True action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action Return() at buttonfade    
 
-    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 focus_mask True action Return() at buttonfade
+    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
     imagebutton idle "GUI/button_a.png" hover "GUI/button_a_hover.png" selected_idle "GUI/button_a_hover.png" selected_hover "GUI/button_a_hover.png" xpos 500 ypos 440 focus_mask True action FilePage("auto")  at buttonfade
     imagebutton idle "GUI/button_1.png" hover "GUI/button_1_hover.png" selected_idle "GUI/button_1_hover.png" selected_hover "GUI/button_1_hover.png" xpos 550 ypos 440 focus_mask True action FilePage("1")  at buttonfade
@@ -507,13 +509,13 @@ screen preferences():
         style_group "prefs"        
         bar value Preference("music volume")
 
-    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 focus_mask True action ShowMenu("save") at buttonfade
+    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
-    imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 245 focus_mask True action ShowMenu("load") at buttonfade
+    imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 245 action ShowMenu("load") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 focus_mask True action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade    
 
-    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 focus_mask True action Return() at buttonfade
+    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
 screen main_preferences():
 
@@ -559,13 +561,13 @@ screen main_preferences():
         style_group "prefs"        
         bar value Preference("music volume")
 
-    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 focus_mask True action ShowMenu("save") at buttonfade
+    imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
-    imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 245 focus_mask True action ShowMenu("main_load") at buttonfade
+    imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 245 action ShowMenu("main_load") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 focus_mask True action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action Return() at buttonfade    
 
-    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 focus_mask True action Return() at buttonfade
+    imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
 
 
@@ -625,8 +627,8 @@ screen yesno_prompt(message, yes_action, no_action):
             xalign 0.5
             spacing 100
 
-            imagebutton idle "GUI/button_yes.png" hover "GUI/button_yes_hover.png" focus_mask True action yes_action  at buttonfade
-            imagebutton idle "GUI/button_no.png" hover "GUI/button_no_hover.png" focus_mask True action no_action  at buttonfade
+            imagebutton idle "GUI/button_yes.png" hover "GUI/button_yes_hover.png" action yes_action  at buttonfade
+            imagebutton idle "GUI/button_no.png" hover "GUI/button_no_hover.png" action no_action  at buttonfade
 
     # Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -666,7 +668,7 @@ screen princess_endings:
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade  
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade  
         
 screen cyril_endings:
     tag menu
@@ -690,6 +692,11 @@ screen cyril_endings:
             text "Queen's Hero"
         else:
             text "LOCKED"
+            
+        if (persistent.ImaginaryQueen):
+            text "Imaginary Queen"
+        else:
+            text "LOCKED"
 
     hbox:
         xalign 0.5
@@ -702,7 +709,7 @@ screen cyril_endings:
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade 
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade 
 
 screen balrung_endings:
     tag menu
@@ -733,7 +740,7 @@ screen balrung_endings:
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade 
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade 
 
 screen niir_endings:
     tag menu
@@ -765,7 +772,7 @@ screen niir_endings:
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" focus_mask True action Return() at buttonfade 
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade 
 
 ##############################################################################
 # Quick Menu

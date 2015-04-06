@@ -59,6 +59,9 @@ init -1:
     image bg storage = "bg/closet.jpg"
     image bg sunset = "bg/sunset.jpg"
     image bg woods = "bg/woods.jpg"
+    image cg1 = "bg/dragon cg.png"
+    image cg2 = "bg/dragon cg2.png" 
+    image logo = "gui/logo.png"
 
     #
     # VISUAL EFFECTS
@@ -88,7 +91,8 @@ init -1:
     image side princess smile = "sprites/princess smile.png"
     image side princess surprised = "sprites/princess surprised.png"
     image side princess tsk = "sprites/princess tsk.png"
-    
+    image side princess smile eyes closed = "sprites/princess smile eyes closed.png"
+
 
     # Automatically import all sprites in the 'sprites' subdirectory 
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images    
@@ -164,8 +168,8 @@ init -1:
     transform basicfade:
         on show:
             linear 0.5 alpha 1.0
-        on hide:
-            linear 0.5 alpha 0.0
+#        on hide:
+#            linear 0.5 alpha 0.0
 #        on replace:
 #            linear 0.5 alpha 1.0
         on replaced:

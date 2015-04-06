@@ -2,9 +2,9 @@ label day2:
     play music cyril_theme    
     scene bg bedroom dusk with fade
     "Is that knocking?! Who could be brazen enough to wake me up so early?!"
-    p "Niir! I am in no mood for your games! Begone!"
+    p shout "Niir! I am in no mood for your games! Begone!"
     c "Please, Princess, it is I, Cyril, and I only wanted to-"
-    p "Moronious?! This had better be important!"
+    p surprised "Moronious?! This had better be important!"
     show cyril hat neutral at center with moveinleft
     c "Good.  Good.  I'm glad that you opened up."
     show cyril hat concerned blush at basicfade
@@ -12,10 +12,10 @@ label day2:
     c "But some information has come to my attention."
     show cyril hat concerned blush eyes closed at basicfade
     c "You were {b}banished{/b}, Princess!"
-    p "I am well aware of that.  So what are you bothering me for?"
+    p shocked "I am well aware of that.  So what are you bothering me for?"
     show cyril hat surprised at basicfade
     c "It's just- you were {b}banished{/b}, Princess!"
-    p "If you're going to waste my time like a stuttering fool Moronious, I suggest you begone!"
+    p tsk "If you're going to waste my time like a stuttering fool Moronious, I suggest you begone!"
     show cyril hat smile at basicfade
     c "Well, it wouldn't be the first time that you've commanded me to begone."
     show cyril hat concerned at basicfade
@@ -23,11 +23,11 @@ label day2:
     c "I'm sure that the kingdom is just overreacting.  Playing a joke perhaps? Like Niir?"
     show cyril hat concerned eyes closed at basicfade
     c "There is no way they would actually b-b-banish you!"
-    p "Oh, they did banish me.  And that's why I'm here, to get justice."
-    p "And {b}you{/b} will be part of those plans."
+    p neutral "Oh, they did banish me.  And that's why I'm here, to get justice."
+    p smile "And {b}you{/b} will be part of those plans."
     show cyril hat surprised at basicfade
     c "Erm-ahem!  Yes.  I don't think that is a good idea- it is already dangerous enough to have a disgraced Princess-"
-    p "You don't {b}want{/b} me here?"
+    p angry "You don't {b}want{/b} me here?"
     "Who does he think he is?  I'm not the one at fault here!  I'd like to {b}see{/b} him try to kick me out!"
     show cyril hat concerned blush at basicfade
     c "No! I didn't say that."
@@ -35,21 +35,21 @@ label day2:
     c "I'm just {i}concerned{/i} Princess."
     show cyril hat concerned eyes closed at basicfade
     c "If you have serious allegations before you then ah-"
-    p "You're ashamed of me being in your presence, then?"
+    p surprised "You're ashamed of me being in your presence, then?"
     show cyril hat concerned blush at basicfade
     c "No!  I love you being in my presence."
     show cyril hat concerned blush eyes closed at basicfade
     c "{i}I do{/i}.  It's just..."
     show cyril hat concerned at basicfade
     c "I'm afraid for you and the errr... connotations that are attached to that."
-    p "I can handle myself Moronious."
-    p "And when I put things right you will see that for yourself."
+    p angry "I can handle myself Moronious."
+    p laugh "And when I put things right you will see that for yourself."
     show cyril hat neutral at basicfade
     c "As long as I'm not seen as {i}aiding and abetting{/i}."
-    p "If you are not willing to make sacrifices for your future Queen, then what good are you?"
+    p angry "If you are not willing to make sacrifices for your future Queen, then what good are you?"
     show cyril hat concerned blush at basicfade
     c "I am, I am.  Forgive me your Highness."
-    p "I forgive you, you foolish mage.  Just don't doubt me again."
+    p neutral "I forgive you, you foolish mage.  Just don't doubt me again."
     p "Oh, and one more thing."
     show cyril hat surprised at basicfade
     c "Yes, Highness?"
@@ -61,21 +61,21 @@ label day2:
     show niir neutral at right with moveinright
     show niir smirk at basicfade
     n "You were banisshhed? Your position musst be desssperate, then."
-    p "How long have you been eavesdropping?!"
+    p surprised "How long have you been eavesdropping?!"
     show niir mischief at basicfade
     n "Long enough to hear you sssnorrrring. Mossst unladylike."
-    p "Moronious!"
+    p shout "Moronious!"
     show cyril hat neutral at midleft with moveinleft
     show cyril hat surprised at basicfade
     c "Yes, Princess? Oh! What's {b}he{/b} doing here?!"
-    p "That was my question. I would have thought that a capable mage would have this room warded against unwanted intrusions."
+    p tsk "That was my question. I would have thought that a capable mage would have this room warded against unwanted intrusions."
     show niir neutral at basicfade
     n "If you think Cccyril is capable--"
     show cyril hat concerned at basicfade
     c "I did! It was! But- oh, the spell's locus...I had it tied to me, not the room! What a dreadful oversight."
     show cyril hat concerned blush at basicfade
     c "I am terribly, terribly sorry, Princess! I shudder to think what these terrible dragons might have tried to do if I had not fixed the ward."
-    p "Yes, well, it should have been fixed in the first place!"
+    p shout "Yes, well, it should have been fixed in the first place!"
     show niir frown at basicfade
     n "Disssapointing. I had ssso many plansss..."
     show cyril hat angry at basicfade
@@ -87,30 +87,30 @@ label day2:
     c "I've also added a spell on your person, that creates an anti-dragon barrier. I don't know why I didn't do this in the first place, it must have slipped my mind."
     show niir neutral at basicfade
     n "Like ssso many other thingsss."
-    p "So dragons cannot touch me now? What would happen if they tried?"
+    p surprised "So dragons cannot touch me now? What would happen if they tried?"
     show cyril hat smile at basicfade
     c "They can only touch you if you reach out to touch them first. As for what would happen... ahem! Let's just say they would regret such an action!"
-    p "Hmm. What a powerful spell. Would you like to test it, Niir?"
+    p smile "Hmm. What a powerful spell. Would you like to test it, Niir?"
     show niir angry at basicfade
     n "I have tesssted that ssspell before. I have no desssire to experrrience it again."
-    p "I see. Thank you, Moronious; you may go."
+    p smile eyes closed "I see. Thank you, Moronious; you may go."
     show cyril hat concerned blush at basicfade
     c "P-princess, I don't think it's wise to be alone with this, this..."
-    p "Do you not trust your own spell? Or is it {b}I{/b} you do not trust?"
+    p angry "Do you not trust your own spell? Or is it {b}I{/b} you do not trust?"
     show cyril hat concerned blush eyes closed at basicfade
     c "No...I trust you, just- please, be careful!"
     hide cyril at midleft with moveoutleft
     
-    p "Do you have business with me, dragon?"
+    p angry "Do you have business with me, dragon?"
     show niir smile at basicfade
     n "Yesss, Balrung wished to ssspeak with you."
-    p "Well, where is he? Why doesn't he just come knock on my door?"
+    p tsk "Well, where is he? Why doesn't he just come knock on my door?"
     show niir determined at basicfade
     n "I think he jussst likesss to send me on errandsss."
-    p "So, you weren't really watching me sleep for hours...?"
+    p surprised "So, you weren't really watching me sleep for hours...?"
     show niir mischief at basicfade
     n "I'll let you wonderrr about that one."
-    p "Hmph. I won't be losing sleep over it. But, as long as you're here..."
+    p angry "Hmph. I won't be losing sleep over it. But, as long as you're here..."
     show niir smirk at basicfade
     n "Yesss?"
     p "Join me for dinner tonight. In the kitchen."
@@ -125,10 +125,10 @@ label day2:
     play music balrung_theme        
     scene bg dungeon with fade
     show balrung neutral at center, basicfade
-    p "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
+    p tsk "Balrung! I don't appreciate being summoned to meet with {b}you{/b}! Next time you will come and meet with me!"
     show balrung smile at basicfade
     b "My apologies, my lady, I didn't think it appropriate to disturb a lady in her bedchamber so early in the morning."
-    p "But you thought it appropriate to send the lascivious Niir to my bedchamber?!"
+    p angry "But you thought it appropriate to send the lascivious Niir to my bedchamber?!"
     show balrung smirk at basicfade
     b "I did not send him. I merely mentioned that I hoped I would get a chance to talk with you today, and he departed."
     if (asked_scepter == "Balrung"):
@@ -143,31 +143,31 @@ label day2:
     p "A temporary state of affairs, I assure you."
     show balrung determined at basicfade
     b "Believe me, Princess, when I say that I understand completely. I know all too well how it feels to make one lapse in judgement, and have inordinate punishment dealt to you."
-    p "You... understand?"
+    p surprised "You... understand?"
     show balrung angry at basicfade
     b "Those who fear power are often overly vindictive against those who use it."
-    p "Vindictive, yes. Have you met my sister, Magnolia?"
+    p angry "Vindictive, yes. Have you met my sister, Magnolia?"
     show balrung determined at basicfade
     b "No, but I knew someone quite like her, once. Afraid of my power."
-    p "Self-righteous."
+    p angry "Self-righteous."
     show balrung angry at basicfade
     b "Ambitious."
-    p "Narcissistic."
+    p angry "Narcissistic."
     show balrung determined at basicfade
     b "Self-sacrificing."
-    p "Knows what's best for everyone else."
+    p angry "Knows what's best for everyone else."
     show balrung neutral at basicfade
     b "Yes, precisely. So if you are in need of allies here, I hope you will seek me out, and perhaps we can aid each other."
     p "But you could only aid me if you were freed."
     show balrung smile at basicfade
     b "Well, I would certainly have much greater power as a free dragon. But I am willing to do what little I can for you, in this form, as well."
-    p "I shall consider your offer, dragon."
+    p neutral "I shall consider your offer, dragon."
     show balrung smirk at basicfade
     b "Please do."
-    p "But first, I have a simple request of you."
+    p smile "But first, I have a simple request of you."
     show balrung neutral at basicfade
     b "Yes?"
-    p "Come to the kitchen this evening and dine with me."
+    p smile "Come to the kitchen this evening and dine with me."
     show balrung smile at basicfade
     b "I'd be honored, Highness."
     scene black with fade
@@ -181,17 +181,17 @@ label dinner_party:
     show cyril neutral hat at left, basicfade
     with fade
     
-    p "Good, you are all here. That proves you can fulfill a simple request."
+    p neutral "Good, you are all here. That proves you can fulfill a simple request."
     show balrung smirk at basicfade
     b "It has been a long time since I attended a dinner party."
     show niir frown at basicfade
     n "I hope the food issss better than usssual."
-    p "Yes, a dinner party requires food. Moronious? Isn't that your job?"
+    p surprised "Yes, a dinner party requires food. Moronious? Isn't that your job?"
     show cyril hat surprised at basicfade
     c "R-right! But, surely you, you don't want to eat with these...creatures?"
     show niir smile at basicfade
     n "She sssssummoned usss here.  Sssso clearly sshe doesss."
-    p "Yes, yes.  What that Niir dragon said.  I need all of you present."
+    p friendly "Yes, yes.  What that Niir dragon said.  I need all of you present."
     show cyril hat concerned at basicfade
     c "I just thought that when you requested dinner-"
     show balrung smile at basicfade
@@ -201,15 +201,15 @@ label dinner_party:
     show cyril hat concerned blush at basicfade
     c "That wasn’t- it wasn’t entirely like that.  You must believe me, Princess!"
     show cyril neutral hat at left
-    p "I don’t care what you thought.  Your future Queen hasn’t the time to consider such things.  What a waste. "
-    p "No, I thought it would be nice for us to...{i}talk{/i} together about matters of the kingdom."
-    p "{b}Food{/b}, Moronious!"
+    p smile "I don’t care what you thought.  Your future Queen hasn’t the time to consider such things.  What a waste. "
+    p smile "No, I thought it would be nice for us to...{i}talk{/i} together about matters of the kingdom."
+    p shout "{b}Food{/b}, Moronious!"
     show cyril hat neutral at basicfade
     c "Right on it!  I apologize your majesty."
     show cyril hat angry at basicfade
     c "{font=fonts/ankecallig-fg.ttf}Vittus Cottura{/font}!"
     show cyril hat concerned with magic_flash
-    p "Honestly, not {b}that{/b} again Moronious.  Is that all you know how to summon?"
+    p shocked "Honestly, not {b}that{/b} again Moronious.  Is that all you know how to summon?"
     show cyril hat concerned at basicfade
     c "I’ll try something else then."
     show niir concerned at basicfade
@@ -236,23 +236,24 @@ label dinner_party:
     n "Rrrrabbit!"
     show cyril hat angry at basicfade
     c "Enough complaining, both of you."
-    p "Yes, anyway, I brought you all here together in order to discuss something."
-    p "It has come to my attention that all of you now know about my purported banishment." 
+    p smile "Yes, anyway, I brought you all here together in order to discuss something."
+    p  smile"It has come to my attention that all of you now know about my purported banishment." 
     show cyril hat surprised at basicfade
     c "Purported?"
-    p "Quiet, Moronious!  As I was saying... you all know the true reason why I am here.  And so, you all must realize by now that I have been cheated out of my destiny by my own blood."
+    p shout "Quiet, Moronious!  As I was saying... you all know the true reason why I am here."  
+    p angry "And so, you all must realize by now that I have been cheated out of my destiny by my own blood."
     show balrung smile at basicfade
     b "Destiny is an unfaithful mistress..."
     show niir mischief at basicfade
     n "Desssstiny, you ssssay?"
-    p "I'm sure you all realize that if you were to align with my sister, you would be no friend of [k_name].  So it would be wise of all of you to work out where your allegiance lies."
+    p angry "I'm sure you all realize that if you were to align with my sister, you would be no friend of [k_name].  So it would be wise of all of you to work out where your allegiance lies."
     show niir determined at basicfade
     n "Dragonsss have no allegiancccce." 
     show balrung smirk at basicfade
     b "What advantages would an ally of yours gain, I wonder? And what would your sister do with this prison?"
     show cyril hat surprised at basicfade
     c "No, no, no, no, no, no.  We cannot be talking about this, Princess.  These are political matters.  This is not up for discussion over dinner."
-    p "Oh please, mage.  I think we’re all adults here.  Surely we can discuss the future of the kingdom together without any..."
+    p surprised "Oh please, mage.  I think we’re all adults here.  Surely we can discuss the future of the kingdom together without any..."
     show niir mischief at basicfade
     n "Or we could dissscusss other forbidden topicsssss..."
     show niir frown at basicfade
@@ -262,7 +263,7 @@ label dinner_party:
     c "I warn you, speaking of things like this never go well.  "
     show cyril hat surprised at basicfade
     c "My, word might even get out that we’re {i}conspiring{/i}!  Conspiring, Princess!  I think it would be best if we leave this alone for the present moment."
-    p "Charges of conspiracy only matter if we lose. No one charges Queens with conspiracy!"
+    p angry "Charges of conspiracy only matter if we lose. No one charges Queens with conspiracy!"
     show cyril hat concerned eyes closed at basicfade
     c "It’s not the charge itself.  It’s the principle.  I would rather not take part in such a discussion."
     show balrung determined at basicfade
@@ -292,7 +293,7 @@ label dinner_party:
     c "And no, I will not jump for it.  I will not sink to such standards."
     show balrung smirk at basicfade
     b "Princess, it looks like you and I might need to discuss matters on our own, later, away from the squabbling children."
-    p "Perhaps. For now, I shall simply enjoy the evening's entertainment."
+    p smile "Perhaps. For now, I shall simply enjoy the evening's entertainment."
     show niir mischief at basicfade
     n "How about you fetch?  Insssstead of jumping."
     show cyril angry at basicfade
@@ -315,46 +316,46 @@ label dinner_party:
             p "She's been trying to convince the United Council to sign new legislation forbidding dragons from holding titles." 
             show balrung smirk at basicfade
             b "Are there many dragons attempting to hold titles?"
-            p "Oh, yes, it's quite the craze to have a dragon consort. "
+            p smile "Oh, yes, it's quite the craze to have a dragon consort."
             p "Princess Dianthus from two kingdoms over wanted to make hers King-Consort, but the United Council hasn't acquiesed yet."
             show balrung determined at basicfade
             b "And what do you think they should do?"
-            p "Human, dragon, I don't really care, as long as I'm the Queen!"
+            p shout "Human, dragon, I don't really care, as long as I'm the Queen!"
             show balrung smile at basicfade
             b "Interesting."            
             show cyril hat concerned at left with moveinleft
             
         "Flirt with Niir":
             $ niir_affection += 1
-            p "Now that we have gotten rid of that {i}inconvenience{/i}, we can get back to business."
-            p "Personally, I've enjoyed your antics, Niir; you are quite the asset to have on hand."
+            p friendly "Now that we have gotten rid of that {i}inconvenience{/i}, we can get back to business."
+            p smile "Personally, I've enjoyed your antics, Niir; you are quite the asset to have on hand."
             show niir smirk at basicfade
             n "I would like to have my handsss on your-"
             show balrung smile at basicfade
             b "You were asking for that one, Princess."
-            p "Of course I was. And Niir was kind enough to deliver."
+            p smile "Of course I was. And Niir was kind enough to deliver."
             show niir frown at basicfade
             n "Kind?! You'rrrre suppossssed to be outraged!"
-            p "Why would I be outraged when you said exactly what I predicted? That wouldn't be logical, would it?"
+            p smile eyes closed "Why would I be outraged when you said exactly what I predicted? That wouldn't be logical, would it?"
             show balrung smile eyes closed at basicfade
             b "Oh ho ho! Careful with this one, Niir."
             show niir neutral at basicfade
             n "Perhapssss I should try harder to sssurprise you."
             "That's exactly what I'm hoping for..."
-            p "You can try, but I don’t believe it will be possible."
+            p smile"You can try, but I don’t believe it will be possible."
             show niir determined at basicfade
             n "Nexxxxt time, Princessss."
             show cyril hat concerned at left with moveinleft
 
-        "Help Cyril":
+        "Help Moronious":
             $ cyril_affection += 1
             scene bg stairs night with fade
             show cyril neutral at center, basicfade
             p "Wait a moment, Moronious.  I’ll get that hat of yours."
-            p "We wouldn’t want you to trip down the stairs doing so.  Actually, I’m not so sure that wasn’t what Niir had in mind."
+            p surprised "We wouldn’t want you to trip down the stairs doing so.  Actually, I’m not so sure that wasn’t what Niir had in mind."
             show cyril concerned blush at basicfade
             c "Oh, thank you.  I’m most honored.  But I could not have you handling my hat yourself."
-            p "And why not?  Is your hat too precious for mere royalty to touch?"
+            p angry "And why not?  Is your hat too precious for mere royalty to touch?"
             show cyril smile blush at basicfade
             c "Oh no.  That wasn’t what I meant at all.  It’s just, well, hats are a rather personal thing and I’m not sure if it would be strange suggesting-"
             p "Don’t be ridiculous, Moronious.  It’s only a hat."
@@ -363,7 +364,7 @@ label dinner_party:
             p "There it is."
             show cyril hat smile blush at basicfade
             c "I am most grateful."
-            p "Do stop smiling like a nitwit.  Your desperate plea for pitying is starting to disgust me."
+            p tsk "Do stop smiling like a nitwit.  Your desperate plea for pitying is starting to disgust me."
             show cyril hat neutral
             show cyril hat concerned blush at basicfade
             c "Oh, of course.  I wouldn’t dream of disgusting you."
@@ -382,10 +383,10 @@ label dinner_party:
     n "At leasssst the cccchef provided usss with entertainment."
     show cyril hat angry at basicfade
     c "Nobody was impressed by that, Niir."
-    p "I found it amusing. But now, we should get back to eating this horrid concoction that Moronious conjured."
+    p smile"I found it amusing. But now, we should get back to eating this horrid concoction that Moronious conjured."
     show niir frown at basicfade
     n "Disssgusting."
     show cyril hat concerned blush at basicfade
     c "It is perfectly healthy and nutritious!"
-    p "The things a princess must put up with for the future of her kingdom..."
+    p neutral "The things a princess must put up with for the future of her kingdom..."
     return

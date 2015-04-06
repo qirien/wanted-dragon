@@ -17,7 +17,7 @@ label credits:
     show text "{color=fae5cc}Sounds\n\nBy Freesound.org users wjl, Kodack, ihitokage, 211redman112, Mixedupmoviestuff, D W, kbnevel, DJ Chronos, homejrande{/font}"
     $ renpy.pause(2.0)
 
-    show text "{color=fae5cc}Testing\n\nWes Landaker\n{/font}" #TODO: add testers here
+    show text "{color=fae5cc}Testing\n\nWes Landaker\nXavier M{/font}" 
     $ renpy.pause(2.0)
 
     show expression "epilogue" + " zoomin" at top with fade
