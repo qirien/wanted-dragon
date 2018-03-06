@@ -271,8 +271,8 @@ screen language_select:
         style_group "mm"
         ypos 100
         xpos 830        
-        textbutton "English" action Language(None)
-        textbutton "Spanish" action Language("spanish")
+        textbutton "English" action [ Language(None), Hide("language_select") ]
+        textbutton "Spanish" action [Language("spanish"), Hide("language_select") ]
         
         
 init -2:
