@@ -235,7 +235,13 @@ screen main_menu():
     # The background of the main menu.
     window:
         style "mm_root"
-
+    
+    vbox:
+        style_group "mm"
+        ypos 30
+        xpos 830
+        textbutton ("Language") action ShowTransient("language_select") at buttonfade 
+        
     # The main menu buttons.
     vbox:
         style_group "mm"
@@ -256,28 +262,33 @@ screen main_menu():
         imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png" action ShowMenu("princess_endings") at buttonfade    
 
         imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png" action Quit(confirm=False) at buttonfade
-            
-#        textbutton _("Start Game") action Start()
-#        textbutton _("Load Game") action ShowMenu("load")
-#        textbutton _("Preferences") action ShowMenu("preferences")
-#        textbutton _("Help") action Help()
-#        textbutton _("Quit") action Quit(confirm=False)
     
     on "show" action Stop ("sound")
     
+    
+screen language_select:
+    vbox:
+        style_group "mm"
+        ypos 100
+        xpos 830        
+        textbutton "English" action Language(None)
+        textbutton "Spanish" action Language("spanish")
+        
+        
 init -2:
 
     # Make all the main menu buttons be the same size.
     style mm_button:
         size_group "mm"
-#        background None
+        background None
 
-#    style mm_button_text:
-#        hover_color "#400000"
-#        idle_color "#ffc180"
-#        xalign 0.5
-#        font "fonts/Anderson Thunderbirds Are GO!.ttf"
-#        size 50
+    style mm_button_text:
+        idle_color "#400000"
+        hover_color "#ffc180"
+        selected_color "ffc180"
+        xalign 0.5
+        font "fonts/Anderson Thunderbirds Are GO!.ttf"
+        size 50
 
 
 ##############################################################################

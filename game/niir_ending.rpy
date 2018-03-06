@@ -79,10 +79,10 @@ label niir_asleep_epilogue:
     show niir frown
     p angry "If I have to go one more day without my-"
     hide niir with moveoutbottom
-    n "{i}zzz{/i}."
+    n "{i}Zzzzz{/i}."
     p shout "Niir!  NIIR!  I will not stand for this, Niir.  You must serve your Queen!"
     p tsk "You owe me for this, dragon."
-    scene cg2 with fade
+    scene cg2 with veryslowfade
     $ renpy.pause()
     
     $persistent.NeverTooLate = True
