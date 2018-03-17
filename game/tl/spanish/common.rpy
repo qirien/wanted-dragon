@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2018-03-07 16:13
+﻿# TODO: Translation updated at 2018-03-17 13:46
 
 translate spanish strings:
 
@@ -30,7 +30,7 @@ translate spanish strings:
     old "{#weekday}Sunday"
     new "{#weekday}Domingo"
 
-    # 00action_file.rpy:37
+      # 00action_file.rpy:37
     old "{#weekday_short}Mon"
     new "{#weekday_short}Lun"
 
@@ -326,12 +326,8 @@ translate spanish strings:
     old "This program contains free software under a number of licenses, including the MIT License and GNU Lesser General Public License. A complete list of software, including links to full source code, can be found {a=https://www.renpy.org/l/license}here{/a}."
     new "Este programa se encuentra bajo varias licencias de software libre, entre ellas la Licencia MIT o la Licencia Pública General Reducida de GNU. En el siguiente enlace se puede encontrar una lista completa del software, incluyendo enlaces al código fuente. {a=https://www.renpy.org/l/license}here{/a}."
 
-    # 00preferences.rpy:475
-    old "Clipboard voicing enabled. Press 'shift+C' to disable."
-    new "Voz para el portapapeles habilitada. Pulsa “shift+C” para deshabilitar."
-
     # 00preferences.rpy:477
-    old "Self-voicing would say \"[renpy.display.tts.last]\""[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
+    old "Self-voicing would say \"[renpy.display.tts.last]\"[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
     new "La voz automática diría \"[renpy.display.tts.last]\". Pulsa “alt+shift+V” para desactivarlo."
 
     # 00preferences.rpy:479
