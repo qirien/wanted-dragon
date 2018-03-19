@@ -1,7 +1,5 @@
 ﻿# TODO: Translation updated at 2018-03-07 16:13
 
-translate spanish strings:
-
     # 00action_file.rpy:26
     old "{#weekday}Monday"
     new "{#weekday}Lunes"
@@ -331,7 +329,7 @@ translate spanish strings:
     new "Voz para el portapapeles habilitada. Pulsa “shift+C” para deshabilitar."
 
     # 00preferences.rpy:477
-    old "Self-voicing would say \"[renpy.display.tts.last]\""[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
+    old "Self-voicing would say \"[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
     new "La voz automática diría \"[renpy.display.tts.last]\". Pulsa “alt+shift+V” para desactivarlo."
 
     # 00preferences.rpy:479
