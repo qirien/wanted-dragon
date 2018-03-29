@@ -28,7 +28,7 @@ translate spanish balrung_epilogue_b1a9fab9:
 translate spanish balrung_epilogue_2e3998f1:
 
     # p laugh eyes closed "I only wish Magnolia could have seen it, too, and quivered in terror while you threatened to devour her whole... that would have been so nice."
-    p laugh eyes closed "Ojalá Magnolia lo hubiera visto. Se habría muerto de miedo mientras amenazabas con destruir todo su... Habría sido precioso."
+    p laugh eyes closed "Ojalá Magnolia lo hubiera visto. Se habría muerto de miedo mientras amenazabas con devorarla... Habría sido precioso."
 
 # game/balrung_ending.rpy:17
 translate spanish balrung_epilogue_fae65d9e:
