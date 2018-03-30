@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2018-03-07 16:06
+﻿# TODO: Translation updated at 2018-03-07 16:13
 
 # game/intro.rpy:18
 translate spanish intro_33eff9d2:
@@ -1081,7 +1081,7 @@ translate spanish broughtfood_8d3500a8:
 translate spanish broughtfood_c6b199b7:
 
     # p angry "Yes, yes, I said \"that will be all\"!"
-    p angry "Sí, sí, le he dicho que ¡\"puede retirarse\"!""
+    p angry "Sí, sí, le he dicho que ¡\"puede retirarse\"!"
 
 # game/intro.rpy:407
 translate spanish broughtfood_489a66ab:
