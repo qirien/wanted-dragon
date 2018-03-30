@@ -1,52 +1,52 @@
-﻿# TODO: Translation updated at 2018-03-06 21:17
+﻿# TODO: Translation updated at 2018-03-07 16:06
 
 translate spanish strings:
 
     # screens.rpy:314
     old "Return"
-    new ""
+    new "Volver"
 
     # screens.rpy:315
     old "Preferences"
-    new ""
+    new "Ajustes"
 
     # screens.rpy:316
     old "Save Game"
-    new ""
+    new "Guardar partida"
 
     # screens.rpy:317
     old "Load Game"
-    new ""
+    new "Cargar partida"
 
     # screens.rpy:318
     old "Main Menu"
-    new ""
+    new "Menú"
 
     # screens.rpy:319
     old "Help"
-    new ""
+    new "Ayuda"
 
     # screens.rpy:320
     old "Quit"
-    new ""
+    new "Salir"
 
     # screens.rpy:344
     old "Empty Slot."
-    new ""
+    new "Ranura vacía"
 
     # screens.rpy:495
     old "Window"
-    new ""
+    new "Ventana"
 
     # screens.rpy:496
     old "Fullscreen"
-    new ""
+    new "Pantalla completa"
 
     # screens.rpy:499
     old "Seen Messages"
-    new ""
+    new "Mensajes vistos"
 
     # screens.rpy:500
     old "All Messages"
-    new ""
+    new "Todos los mensajes"
 
