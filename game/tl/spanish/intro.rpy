@@ -1,4 +1,4 @@
-﻿# TODO: Translation updated at 2018-03-07 16:13
+﻿# TODO: Translation updated at 2018-03-06 21:17
 
 # game/intro.rpy:18
 translate spanish intro_33eff9d2:
@@ -1285,7 +1285,7 @@ translate spanish strings:
 
     # intro.rpy:90
     old "Tell the truth."
-    new "Decirle la verdad."
+    new "Decir la verdad."
 
     # intro.rpy:135
     old "Call for the mage."
@@ -1293,7 +1293,7 @@ translate spanish strings:
 
     # intro.rpy:135
     old "Explore on your own."
-    new "Explorar por mi cuenta."
+    new "Explorar por tu cuenta."
 
     # intro.rpy:222
     old "Allude to your purpose in veiled terms."
@@ -1308,8 +1308,8 @@ translate spanish strings:
     new "Hablar con Niir."
 
     # intro.rpy:256
-    old "Address Balrung."
-    new "Hablar con Balrung."
+    old "Adress Balrung."
+    new "Habla conBalrung."
 
     # intro.rpy:256
     old "Address Moronious."
