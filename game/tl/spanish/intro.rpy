@@ -1316,18 +1316,17 @@ translate spanish strings:
     new "Hablar con Moronious."
 
     # intro.rpy:270
-    old "\"I shall consider your... offer, Niir.\""I shall consider your... offer, Niir.\""
+    old "\"I shall consider your... offer, Niir.\""
     new "\"Consideraré su oferta, Niir.\""
 
     # intro.rpy:270
-    old "\"Not interested.\""Not interested.\""
+    old "\"Not interested.\""
     new "\"No me interesa.\""
 
     # intro.rpy:394
-    old "\"Bring food to my room!\""Bring food to my room!\""
+    old "\"Bring food to my room!\""
     new "\"¡Tráigame la comida a mis aposentos!\""
 
     # intro.rpy:394
-    old "\"I suppose I could join you...\""I suppose I could join you...\""
+    old "\"I suppose I could join you...\""
     new "\"Creo que podría acompañarle...\""
-

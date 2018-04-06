@@ -1484,8 +1484,7 @@ translate spanish cyril6_8d86ed6c:
 translate spanish cyril6_f3256acd:
 
     # p smile "And now look at that. There is dust all over you."
-    p smile "Fíjese.
- Está lleno de polvo."
+    p smile "Fíjese.  Está lleno de polvo."
 
 # game/day6.rpy:401
 translate spanish cyril6_14c63ccf:
