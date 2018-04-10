@@ -1309,7 +1309,7 @@ translate spanish strings:
 
     # intro.rpy:256
     old "Adress Balrung."
-    new "Habla conBalrung."
+    new "Habla con Balrung."
 
     # intro.rpy:256
     old "Address Moronious."
