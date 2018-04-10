@@ -8,11 +8,11 @@ label cyril_dark_epilogue:
     show cyril concerned at center, basicfade
     p "I have a job for you."
     c "No, no, no, no.  {i}It can’t be.{/i}  You shouldn't be here, your Highness."
-    p smile "That's \"your Majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me." 
+    p smile "That's \"your Majesty\" now, thanks to you. I didn't think you had it in you to kill Magnolia, but you surprised me."
     p smile "Pity my father had to get in the way, of course, but... well, that's in the past."
     show cyril angry at basicfade
-    c "Well, I would do {i}anything{/i} for you, your majesty."  
-    c "After killing that dragon, I don’t know why I spent so long not exacting a thorough comeuppance on those deserving it."  
+    c "Well, I would do {i}anything{/i} for you, your majesty."
+    c "After killing that dragon, I don’t know why I spent so long not exacting a thorough comeuppance on those deserving it."
     c "Your family were doing you a great disservice.  They did deserve it."
     p "Yes, there are many more that deserve justice. In fact, I have decided to allow you to work off some of your sentence by exacting that justice."
     p smile "You've proven yourself capable of greater things. There is a dragon, in a neighboring kingdom, who has amassed too much power. You know the kind?"
@@ -20,7 +20,7 @@ label cyril_dark_epilogue:
     c "I do. "
     p tsk "Then ensure he doesn't cause any more trouble."
     show cyril angry at basicfade
-    c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around."  
+    c "It would be my pleasure, your Majesty.  No longer will there be any dragons causing chaos as long as I am around."
     c "I was wrong.  Imprisoning them was wrong.  They only deserve death."
     c "That is the only way."
     p smile "Good, good. You've come a long way since the stuttering, bumbling half-mage you used to be. I'm proud of you, Cyril."
@@ -29,14 +29,14 @@ label cyril_dark_epilogue:
     c "I owe it all to you."
     "And I was going to make sure he paid me back for my generosity."
     "{i}With blood{/i}."
-    
+
     $persistent.DarkQueen = True
     scene black with veryslowfade
     return
-      
+
 # Queen's Hero
 label cyril_scepter_epilogue:
-    # since you can only get this ending if affection points are high and telling Cyril to go study gives you more points, it’s safe to say he’s away studying...  
+    # since you can only get this ending if affection points are high and telling Cyril to go study gives you more points, it’s safe to say he’s away studying...
     p_write "To Cyril Merlonious,"
     p_write "The Academy of Mages, House of Master Grivvorn\n"
     p_write "I hope that half-wit you're studying under realizes your potential."
@@ -70,7 +70,7 @@ label cyril_scepter_epilogue:
     p friendly "There, was that really so hard? Of course you may accompany me. And, have one of these cinnamon cakes; they're delicious."
     c hat smile blush "Thank you, your Majesty."
     "I would make this mage worthy of a Queen yet."
-    
+
     $persistent.QueensHero = True
     scene black with veryslowfade
     return
@@ -80,7 +80,7 @@ label cyril_dragon_epilogue:
     scene bg woods with fade
     c "Stop, stop, {b}stop{/b}! Your Highness!"
     p surprised "Oh, are you still here, Cyril? I'll land and you may depart. You have served me well."
-    show cyril hat concerned at center, basicfade   
+    show cyril hat concerned at center, basicfade
     c "Where are you going anyway?  The kingdom is back {b}that way{/b}!  We’re going too far from where you are to rule.  We must go back!"
     p shout "Why rule a tiny kingdom when I can rule the entire skies?! I've never seen what's beyond the Seven Kingdoms."
     hide cyril hat concerned
@@ -121,7 +121,7 @@ label cyril_dragon_epilogue:
     p laugh "Ha! Try, then! Here I go!"
     c "Ah, yes.  Not so fast.  DRACONIS TRANSFORMA!"
     hide cyril with magic_flash
-    "I was almost ready to take off when his transformation caught my eye." 
+    "I was almost ready to take off when his transformation caught my eye."
     "In a flash of light, a blue, nervous-looking dragon appeared where Cyril had been."
     p shout "...Could you have done this at any time?! Why didn't you just transform me into a dragon in the first place?!"
     c "I didn’t-I didn’t think you’d {b}want{/b} to be a dragon!"
@@ -132,7 +132,7 @@ label cyril_dragon_epilogue:
     c "Wait for me, my dragon Princess!"
     "I launched a ball of flame in his direction."
     c "I mean, my dragon Queen!"
-    
+
     $persistent.DragonQueen = True
     scene black with veryslowfade
     return
@@ -146,7 +146,7 @@ label cyril_insane_epilogue:
     c "Of course I'm well aware that you're completely dead, and therefore I'm imagining you."
     show cyril hat eyes closed smile at center, basicfade
     c "But I'd like you to meet my own imaginary Queen."
-    show cyril hat smile at center, basicfade 
+    show cyril hat smile at center, basicfade
     c "I saved her, you know and then I helped make her Queen.  Although I'm quite certain that wasn't real either."
     c "But anyway, she's my beloved, even if I did dream her up while alone... in that castle... with the dragons."
     c "You put me there, remember?  Though I do not blame you for my {i}state{/i}."
@@ -158,25 +158,25 @@ label cyril_insane_epilogue:
     "And no matter how much I threatened injury, it hadn't changed."
     "Perhaps I should have just fed him to the dragons and been done with it."
     "But at least I had the scepter to myself, and an insane mage to do my bidding."
-    show cyril hat smile at center, basicfade 
+    show cyril hat smile at center, basicfade
     c "Ah, milady.  Your majesty.  Meet my old master of magic, Dyconis."
     p smile "I see now why Dyconis kept you locked away."
     "I suppose I'm partly to blame for this, so I should be understanding to some degree."
     "No, that's not me."
-    p tsk "I'm done with you mage.  You are hereby reinstated to the Castle of the Banished."
-    show cyril hat concerned at center, basicfade 
+    p tsk "I'm done with you mage.  You are hereby reinstated to [castle_name!t]."
+    show cyril hat concerned at center, basicfade
     p angry "Please disappear from my sight immediately."
-    show cyril hat concerned blush at center, basicfade 
+    show cyril hat concerned blush at center, basicfade
     c "Thank you, sweet apparition.  For returning me to my life of normalcy. It was nice while it-"
     p tsk "And I'll be keeping the scepter."
     p shout "Now {b}BEGONE{/b}!"
-    show cyril hat smile blush at center, basicfade 
+    show cyril hat smile blush at center, basicfade
     c "Right away your majesty."
     hide cyril hat smile blush at basicfade with moveoutleft
     p "..."
     p angry "Fool."
-    
-    
+
+
     $persistent.ImaginaryQueen = True
     scene black with veryslowfade
     return

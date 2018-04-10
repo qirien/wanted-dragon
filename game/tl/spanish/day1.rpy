@@ -928,3 +928,11 @@ translate spanish strings:
     old "Search for it on your own"
     new "Buscarlo tú misma."
 
+# TODO: Translation updated at 2018-04-10 09:57
+
+# game/day1.rpy:122
+translate spanish library1_797ee911:
+
+    # book "Though it has not been located in centuries, this powerful artifact is rumored to reside in [castle_name!t].\n"
+    book ""
+

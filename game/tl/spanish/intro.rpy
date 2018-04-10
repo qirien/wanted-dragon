@@ -1346,3 +1346,11 @@ translate spanish ignore_d5636d72:
     # c "Well, back to that spell again. {font=fonts/ankecallig-fg.ttf}Luxius Conremo!{/font} - I'll never get it! Now where did I keep that spellbook. It was around here somewhere! "
     c "Bueno, entonces, ¿cómo era ese hechizo? {font=fonts/ankecallig-fg.ttf}¡Luxius Conremous!{/font} ¡No lo voy a conseguir nunca!"
     c "No sé dónde habré dejado mi libro de hechizos. ¡Estaba por aquí!"
+# TODO: Translation updated at 2018-04-10 09:57
+
+# game/intro.rpy:83
+translate spanish truth_61ab8b86:
+
+    # c "So, this is [castle_name!t]. It hasn't been visited in quite some time. Or cleaned actually. Hehehe. "
+    c ""
+

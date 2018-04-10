@@ -32,10 +32,10 @@ label day1:
     b "There are many arcane tomes in the library that might describe such things. I have not read them, as they would be of little use to dragons."
     p neutral "Then I will seek out the library."
     jump library1
-    
-    
+
+
 label library1:
-    play music cyril_theme    
+    play music cyril_theme
     scene bg library with fade
     show cyril hat concerned at center, basicfade
     "It appears the library is already occupied..."
@@ -119,7 +119,7 @@ label library1:
     "This one is quite curious.  This part here."
     stop sound fadeout 1.0
     book "{size=50}The Scepter of Lavendorm{/size}"
-    book "Though it has not been located in centuries, this powerful artifact is rumored to reside in [castle_name].\n"
+    book "Though it has not been located in centuries, this powerful artifact is rumored to reside in [castle_name!t].\n"
     book "Some claim it has the power to break enchantments, while others point to its use by royal families as a symbol of authority, and perhaps protection from assassination.\n"
     book "Ancient texts describe it as being encrusted with emeralds and emanating a palpable magical aura."
     nvl clear
@@ -127,7 +127,7 @@ label library1:
     p smile "Well, I may as well find out more about it."
     p smile "The Scepter of Lavendorm."
     p smile "Hmmm..."
-    
+
     menu:
         "Ask Moronious about it.":
             $ asked_scepter = "Cyril"
@@ -137,7 +137,7 @@ label library1:
             jump sharebalrung
         "Search for it on your own":
             jump explore1
-       
+
 label sharebalrung:
     play music evil_theme
     $ balrung_affection += 1
@@ -147,7 +147,7 @@ label sharebalrung:
     show balrung smirk at basicfade
     b "Back so soon?"
     p "Yes, I've found something that might help. What do you know of the Scepter of Lavendorm?"
-    
+
 label balrung_scepter:
     show balrung determined at basicfade
     b "No one has been able to find it. It is presumed lost, and, as its powers are unknown, no one lately has looked very hard."
@@ -162,15 +162,15 @@ label balrung_scepter:
     b "The feeling is not constant or consistent; but if I detect it again I shall inform you."
     p friendly "Very good, Balrung."
     return
-       
+
 label sharecyril:
-    play music evil_theme    
+    play music evil_theme
     $ cyril_affection += 1
     p friendly "Oh, Moronious~."
     p smile "That foolish mage has to be around here somewhere."
     scene bg corridor with fade
     p "Where {i}are{/i} you, foolish mage?"
-    show cyril hat neutral at center with flash 
+    show cyril hat neutral at center with flash
     play sound "sfx/lightning.ogg"
     show cyril hat surprised at basicfade
     c "You called, your Highness?"
@@ -214,9 +214,9 @@ label sharecyril:
     p shout "Now find me that scepter!"
     show cyril hat concerned blush at basicfade
     c "I will try to recall for you just where it was.  Don't worry, my maj- your Highness."
-    
+
     return
-    
+
 label explore1:
     play music evil_theme
     scene bg corridor with fade

@@ -1048,4 +1048,3 @@ translate spanish strings:
     # 00preferences.rpy:502
     old "Self-voicing would say \"[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
     new ""
-
