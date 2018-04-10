@@ -707,7 +707,8 @@ translate spanish dragon_chat_ffd5d0f5:
 translate spanish dragon_chat_158e1388:
 
     # b "Forty years, by human reckoning. And even though that is but a short time to a long-lived dragon, since we are imprisoned within human form we feel every second of our captivity keenly."
-    b "40 años, según mi estimación como humano. Y aunque eso no suponga nada en la larga vida de un dragón, al estar encerrado en la forma de un humano, sentimos cada segundo de la cautividad intensamente."
+    b "40 años, según mi estimación como humano."
+    b "Y aunque eso no suponga nada en la larga vida de un dragón, al estar encerrado en la forma de un humano, sentimos cada segundo de la cautividad intensamente."
 
 # game/intro.rpy:294
 translate spanish dragon_chat_2441c2b8:
