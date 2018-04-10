@@ -1982,7 +1982,7 @@ translate spanish strings:
 
     # day3.rpy:161
     old "Ignore him."
-    new ""
+    new "Ignorarle."
 
     # day3.rpy:270
     old "\"I will join you.\""
@@ -2003,4 +2003,3 @@ translate spanish strings:
     # day3.rpy:323
     old "\"I like the 'vanquish' part.\""
     new ""
-

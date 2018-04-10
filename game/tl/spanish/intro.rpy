@@ -365,7 +365,7 @@ translate spanish ignore_aacecf1e:
 translate spanish ignore_babb4f9f:
 
     # c "Well, back to that spell again. Luxius Conremo!- I'll never get it! Now where did I keep that spellbook. It was around here somewhere! "
-    c "Bueno, entonces, ¿cómo era ese hechizo? ¡Luxius Conremous! ¡No lo voy a conseguir nunca! No sé dónde habré dejado mi libro de hechizos. ¡Estaba por aquí! "
+    c "Bueno, entonces, ¿cómo era ese hechizo? {font=fonts/ankecallig-fg.ttf}¡Luxius Conremous!{/font} ¡No lo voy a conseguir nunca! No sé dónde habré dejado mi libro de hechizos. ¡Estaba por aquí! "
 
 # game/intro.rpy:158
 translate spanish ignore_af513ca4:
@@ -1330,3 +1330,18 @@ translate spanish strings:
     # intro.rpy:394
     old "\"I suppose I could join you...\""
     new "\"Creo que podría acompañarle...\""
+# TODO: Translation updated at 2018-04-10 09:15
+
+translate spanish strings:
+
+    # intro.rpy:256
+    old "Address Balrung."
+    new ""
+# TODO: Translation updated at 2018-04-10 09:25
+
+# game/intro.rpy:156
+translate spanish ignore_d5636d72:
+
+    # c "Well, back to that spell again. {font=fonts/ankecallig-fg.ttf}Luxius Conremo!{/font} - I'll never get it! Now where did I keep that spellbook. It was around here somewhere! "
+    c "Bueno, entonces, ¿cómo era ese hechizo? {font=fonts/ankecallig-fg.ttf}¡Luxius Conremous!{/font} ¡No lo voy a conseguir nunca!"
+    c "No sé dónde habré dejado mi libro de hechizos. ¡Estaba por aquí!"
