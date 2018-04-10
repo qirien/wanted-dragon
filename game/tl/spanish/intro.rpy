@@ -1309,7 +1309,7 @@ translate spanish strings:
 
     # intro.rpy:256
     old "Adress Balrung."
-    new "Habla con Balrung."
+    new "Hablar con Balrung."
 
     # intro.rpy:256
     old "Address Moronious."
@@ -1336,7 +1336,7 @@ translate spanish strings:
 
     # intro.rpy:256
     old "Address Balrung."
-    new ""
+    new "Hablar con Balrung."
 # TODO: Translation updated at 2018-04-10 09:25
 
 # game/intro.rpy:156
