@@ -1352,5 +1352,5 @@ translate spanish ignore_d5636d72:
 translate spanish truth_61ab8b86:
 
     # c "So, this is [castle_name!t]. It hasn't been visited in quite some time. Or cleaned actually. Hehehe. "
-    c ""
+    c "Así que este es [castle_name!t]. No se ha visitado en mucho tiempo. Ni limpiado. Je, je, je."
 
