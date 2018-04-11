@@ -691,7 +691,7 @@ translate spanish cyril_insane_epilogue_eaf4e0a4:
 translate spanish cyril_insane_epilogue_fea34a9e:
 
     # p tsk "I'm done with you mage. You are hereby reinstated to the [castle_name!t]."
-    p tsk ""
+    p tsk "He acabado con usted, mago. Será reincorporado en [castle_name!t]."
 
 # TODO: Translation updated at 2018-04-10 10:02
 
@@ -699,5 +699,5 @@ translate spanish cyril_insane_epilogue_fea34a9e:
 translate spanish cyril_insane_epilogue_1bd723c5:
 
     # p tsk "I'm done with you mage. You are hereby reinstated to [castle_name!t]."
-    p tsk ""
+    p tsk "He acabado con usted, mago. Será reincorporado en [castle_name!t]."
 

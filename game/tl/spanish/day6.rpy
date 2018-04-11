@@ -1922,11 +1922,11 @@ translate spanish strings:
 translate spanish day6_44e9b284:
 
     # p angry "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name!t]."
-    p angry ""
+    p angry "Ajjj, otra vez ese olor a moho. Debo estar {b}todavía{/b} en [castle_name!t]."
 
 # game/day6.rpy:176
 translate spanish balrung6_08818970:
 
     # "It was one of the few whose ingredients were commonplace enough to be found in and around [castle_name!t]."
-    ""
+    "Era de las pocas pociones con ingredientes fáciles de encontrar alrededor de [castle_name!t]."
 

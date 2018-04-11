@@ -819,55 +819,55 @@ translate spanish strings:
 
     # 00action_file.rpy:344
     old "Save slot %s: [text]"
-    new ""
+    new "Guardar en ranura %s: [text]"
 
     # 00action_file.rpy:417
     old "Load slot %s: [text]"
-    new ""
+    new "Cargar ranura %s: [text]"
 
     # 00action_file.rpy:459
     old "Delete slot [text]"
-    new ""
+    new "Eliminar ranura [text]"
 
     # 00action_file.rpy:539
     old "File page auto"
-    new ""
+    new "Página del archivo auto"
 
     # 00action_file.rpy:541
     old "File page quick"
-    new ""
+    new "Página del archivo rápida"
 
     # 00action_file.rpy:543
     old "File page [text]"
-    new ""
+    new "Página del archivo [text]"
 
     # 00action_file.rpy:733
     old "Next file page."
-    new ""
+    new "Siguiente página del archivo."
 
     # 00action_file.rpy:797
     old "Previous file page."
-    new ""
+    new "Anterior página del archivo"
 
     # 00action_file.rpy:876
     old "Quick save."
-    new ""
+    new "Guardado rápido."
 
     # 00action_file.rpy:895
     old "Quick load."
-    new ""
+    new "Cargado rápido."
 
     # 00action_other.rpy:344
     old "Language [text]"
-    new ""
+    new "Idioma [text]"
 
     # 00library.rpy:150
     old "bar"
-    new ""
+    new "barra"
 
     # 00library.rpy:151
     old "selected"
-    new ""
+    new "seleccionado"
 
     # 00library.rpy:152
     old "viewport"
@@ -875,176 +875,176 @@ translate spanish strings:
 
     # 00library.rpy:153
     old "horizontal scroll"
-    new ""
+    new "desplazamiento horizontal"
 
     # 00library.rpy:154
     old "vertical scroll"
-    new ""
+    new "desplazamiento vertical"
 
     # 00library.rpy:155
     old "activate"
-    new ""
+    new "activar"
 
     # 00library.rpy:156
     old "deactivate"
-    new ""
+    new "desactivar"
 
     # 00library.rpy:157
     old "increase"
-    new ""
+    new "aumentar"
 
     # 00library.rpy:158
     old "decrease"
-    new ""
+    new "disminuir"
 
     # 00preferences.rpy:207
     old "display"
-    new ""
+    new "visualización"
 
     # 00preferences.rpy:219
     old "transitions"
-    new ""
+    new "transiciones"
 
     # 00preferences.rpy:228
     old "skip transitions"
-    new ""
+    new "saltar transiciones"
 
     # 00preferences.rpy:230
     old "video sprites"
-    new ""
+    new "imágenes de vídeo"
 
     # 00preferences.rpy:239
     old "show empty window"
-    new ""
+    new "mostrar ventana vacía"
 
     # 00preferences.rpy:248
     old "text speed"
-    new ""
+    new "velocidad del texto"
 
     # 00preferences.rpy:256
     old "joystick"
-    new ""
+    new "joystick"
 
     # 00preferences.rpy:256
     old "joystick..."
-    new ""
+    new "joystick..."
 
     # 00preferences.rpy:263
     old "skip"
-    new ""
+    new "saltar"
 
     # 00preferences.rpy:266
     old "skip unseen [text]"
-    new ""
+    new "saltar [text] no visto"
 
     # 00preferences.rpy:271
     old "skip unseen text"
-    new ""
+    new "saltar texto no visto"
 
     # 00preferences.rpy:273
     old "begin skipping"
-    new ""
+    new "comenzar a saltar"
 
     # 00preferences.rpy:277
     old "after choices"
-    new ""
+    new "elecciones posteriores"
 
     # 00preferences.rpy:284
     old "skip after choices"
-    new ""
+    new "saltar elecciones posteriores"
 
     # 00preferences.rpy:286
     old "auto-forward time"
-    new ""
+    new "tiempo de reproducción automática"
 
     # 00preferences.rpy:300
     old "auto-forward"
-    new ""
+    new "reproducción automática"
 
     # 00preferences.rpy:307
     old "Auto forward"
-    new ""
+    new "Reproducción automática"
 
     # 00preferences.rpy:310
     old "auto-forward after click"
-    new ""
+    new "Reproducción automática al hacer clic"
 
     # 00preferences.rpy:319
     old "automatic move"
-    new ""
+    new "movimiento automático"
 
     # 00preferences.rpy:328
     old "wait for voice"
-    new ""
+    new "esperar a la voz"
 
     # 00preferences.rpy:337
     old "voice sustain"
-    new ""
+    new "soporte de voz"
 
     # 00preferences.rpy:346
     old "self voicing"
-    new ""
+    new "voz automática"
 
     # 00preferences.rpy:355
     old "clipboard voicing"
-    new ""
+    new "voz del portapapeles"
 
     # 00preferences.rpy:364
     old "debug voicing"
-    new ""
+    new "depurar voz"
 
     # 00preferences.rpy:373
     old "emphasize audio"
-    new ""
+    new "enfatizar audio"
 
     # 00preferences.rpy:382
     old "rollback side"
-    new ""
+    new "reducción del margen"
 
     # 00preferences.rpy:392
     old "gl powersave"
-    new ""
+    new "gl powersave"
 
     # 00preferences.rpy:398
     old "gl framerate"
-    new ""
+    new "gl framerate"
 
     # 00preferences.rpy:401
     old "gl tearing"
-    new ""
+    new "gl tearing"
 
     # 00preferences.rpy:413
     old "music volume"
-    new ""
+    new "volumen de la música"
 
     # 00preferences.rpy:414
     old "sound volume"
-    new ""
+    new "volumen del sonido"
 
     # 00preferences.rpy:415
     old "voice volume"
-    new ""
+    new "volumen de la voz"
 
     # 00preferences.rpy:416
     old "mute music"
-    new ""
+    new "silenciar la música"
 
     # 00preferences.rpy:417
     old "mute sound"
-    new ""
+    new "silenciar el sonido"
 
     # 00preferences.rpy:418
     old "mute voice"
-    new ""
+    new "silenciar la voz"
 
     # 00preferences.rpy:419
     old "mute all"
-    new ""
+    new "silenciar todos"
 
     # 00preferences.rpy:500
     old "Clipboard voicing enabled. Press 'shift+C' to disable."
-    new ""
+    new "Voz del portapapeles activada. Pulsa 'shift+C' para desactivar."
 
     # 00preferences.rpy:502
     old "Self-voicing would say \"[renpy.display.tts.last]\". Press 'alt+shift+V' to disable."
-    new ""
+    new "La voz automática diría \"[renpy.display.tts.last]\". Pulsa 'alt+shift+V' para desactivar."

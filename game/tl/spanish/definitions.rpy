@@ -4,5 +4,5 @@ translate spanish strings:
 
     # definitions.rpy:12
     old "the Castle of the Banished"
-    new ""
+    new "el Castillo de los Desterrados"
 

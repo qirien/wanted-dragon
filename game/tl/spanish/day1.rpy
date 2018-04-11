@@ -934,5 +934,5 @@ translate spanish strings:
 translate spanish library1_797ee911:
 
     # book "Though it has not been located in centuries, this powerful artifact is rumored to reside in [castle_name!t].\n"
-    book ""
+    book "Desaparecido durante siglos, se cree que este poderoso utensilio se encuentra en [castle_name!t].\n"
 
