@@ -80,7 +80,7 @@ label truth:
     show cyril hat neutral at center
     with moveinright
     show cyril hat smile blush at basicfade
-    c "So, this is [castle_name].  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  "
+    c "So, this is [castle_name!t].  It hasn't been visited in quite some time.  Or cleaned actually.  Hehehe.  "
     c "I didn't expect company so I hadn't thought about cleaning.  I suppose I had better get to that.  I do not have any bath salts either, but I am pretty good with heating spells for the water."
     p angry "Yes, yes. Now, what can you tell me about the other... residents of this place?"
     show cyril hat concerned at basicfade

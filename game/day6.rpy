@@ -4,12 +4,12 @@
 
 label day6:
     # She goes around eavesdropping to find out how well her plans have been working.
-    play music niir_theme    
+    play music niir_theme
     scene bg bedroom dusk with fade
-    p angry "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name]."
+    p angry "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name!t]."
     p "But I believe I'm finally making some progress. Although... they could be deceiving me."
     p shout "Unfortunately, all my spies are back at the palace. I shall just have to do a little information gathering on my own!"
-    
+
     if (route == "Niir"):
         "I snuck down to the dungeon to spy on the dragons."
         scene bg dungeon with fade
@@ -109,7 +109,7 @@ label day6:
         "I’ll just have to make sure he has plenty of reasons to stay here."
         scene black with fade
         jump cyril6
-        
+
     elif (route == "Balrung"):
         "I snuck down to the dungeons to spy on the dragons."
         scene bg dungeon
@@ -153,7 +153,7 @@ label day6:
         "After a few moments of quiet, I entered the dungeon."
         jump balrung6
     return
-        
+
 # She does something nice for Balrung.
 label balrung6:
     $ balrung_affection += 1
@@ -173,7 +173,7 @@ label balrung6:
     b "Princess, the brilliance of your presence is gift enough to soften this stone heart of mine. What more could I ask?"
     p friendly "How about a Hibernation Libation?"
     "I handed him a flask containing the gloopy, dark green potion I had made."
-    "It was one of the few whose ingredients were commonplace enough to be found in and around the Castle [castle_name]."
+    "It was one of the few whose ingredients were commonplace enough to be found in and around [castle_name!t]."
     show balrung smile blush at basicfade
     b "I...I'm touched. How did you know I had insomnia?"
     p laugh "Oh! I assumed you would use it on Niir when you wanted some peace and quiet. Or on that fool mage. I know you're not foolish enough to use it on me." #TODO: we sort of foreshadowed him using this and then never did anything with it...
@@ -230,19 +230,19 @@ label balrung6:
     c "...Y-you don't even know! You two can't fathom what true l-love is!"
     hide cyril at midleft with moveoutleft
     show balrung determined at center with move
-    
+
     show balrung angry at basicfade
     b "I'm afraid it may not be possible to convince him, Chrysandra."
     p "Don't give up, yet. Perhaps we just need to give him some time..."
     show balrung neutral at basicfade
     b "Perhaps..."
     return
-    
+
 label niir6:
     play music cyril_theme
     scene bg library with fade
     show cyril hat neutral at center, basicfade
-    
+
     p shout "Moronious, are you competent enough to pull a rabbit out of your hat?"
     c "Interesting request.  Hmmm, parlor magic.  I do remember some of that from my earlier days... What was it again?  Explodus Rabititious?  No.  That can’t be right..."
     p neutral "..."
@@ -323,7 +323,7 @@ label niir6:
     n "Why don’t {b}you{/b} cook it?"
     p tsk "Me? Cook?! That’s servants’ work."
     n "I’m no sssservant."
-    p angry "Or just eat it raw, or hide in Moronious’ bed for him to find later, or drop it out a window and see if it bounces. I don’t care." 
+    p angry "Or just eat it raw, or hide in Moronious’ bed for him to find later, or drop it out a window and see if it bounces. I don’t care."
     p angry "Though, if you don’t appreciate your little gift, I may not feel inclined to express future generosity."
     hide niir at center with moveoutright
     p shout "Niir? Where you going?! Niir!"
@@ -357,11 +357,11 @@ label niir6:
             n "Princesssss..."
             scene black with fade
     return
-    
+
 label cyril6:
     play music princess_theme
     scene bg hall with fade
-    show cyril green neutral at center, basicfade 
+    show cyril green neutral at center, basicfade
 
     c "Niir!  Get back here you {i}dragon!{/i}  I’m not playing games this time!  I’m all green now.  Niir just stay in one place so I can- so I can...!"
     "He reached into the pocket of his robes, but his hands came out empty."
@@ -379,7 +379,7 @@ label cyril6:
     p shout "That’s your concern, not mine. Stay here. That is an {b}order{/b}!"
 
     scene bg library with fade
-    p smile "I know I saw something around here... ah-hah! \"Perfect Potion Pranks\", just the sort of book every mage library needs!" 
+    p smile "I know I saw something around here... ah-hah! \"Perfect Potion Pranks\", just the sort of book every mage library needs!"
     p friendly "I’ll need something without too many complicated ingredients."
 
     scene bg kitchen with fade
@@ -405,8 +405,8 @@ label cyril6:
     "I don't know why Moronious hasn't tried some form of payback before, especially when it isn't difficult to do."
     "But I guess I have to do everything around here."
     "Everything nefarious anyway."
-    
-    
+
+
 
     scene bg hall with fade
     show cyril green neutral at center, basicfade
@@ -439,7 +439,7 @@ label cyril6:
     n "I’ll find your sssstupid ssspellbook if you get this sssspell off of me!"
     hide niir at midright with moveoutleft
 
-    p laugh eyes closed "Aha ha ha ha ha ha! Did you enjoy that as much as I did, Cyril?" 
+    p laugh eyes closed "Aha ha ha ha ha ha! Did you enjoy that as much as I did, Cyril?"
     c "That was quite dev- wait.  Cyril?  You called me Cyril!"
     p smile "Of course I did. That’s your name, isn’t it?"
     c "Ah, yes you’re right, my-your Highness.  That is correct.  I am Cyril - to you - which I couldn’t be happier about.  So what did you do exactly?"
@@ -458,7 +458,7 @@ label cyril6:
     c "Yes, very true.  I do think that is the least he can do after all this trouble."
     n "Pleassse?!  You mussst be jo-oh!   "
     extend "Pleassssse.  Pleassssse."
-    c "Here it is! {font=fonts/ankecallig-fg.ttf}Dermis Claro{/font}!" 
+    c "Here it is! {font=fonts/ankecallig-fg.ttf}Dermis Claro{/font}!"
     show cyril angry with magic_flash
     n "That doessssn’t help me, ussseless mage."
     p smile "Perhaps you should kneel."
@@ -470,9 +470,9 @@ label cyril6:
     show cyril angry
     show niir angry at midright
     with magic_flash
-    
+
     n "I will not forget thissss."
-    c "I do believe you have learned your lesson, Niir."  
+    c "I do believe you have learned your lesson, Niir."
     c "And there will be no more of that stealing books business, or turning people green, or making them slip, or sneaking something under the door when they are sleeping.  No more of that."
     n "Ssssay what you like. I’ll do as I pleasssse."
     hide niir at midright with moveoutleft

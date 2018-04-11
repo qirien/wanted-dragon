@@ -1916,3 +1916,17 @@ translate spanish strings:
     old "Go and see."
     new "Ve a mirar."
 
+# TODO: Translation updated at 2018-04-10 09:57
+
+# game/day6.rpy:9
+translate spanish day6_44e9b284:
+
+    # p angry "Ugggh, that moldy smell again. I must {b}still{/b} be in [castle_name!t]."
+    p angry ""
+
+# game/day6.rpy:176
+translate spanish balrung6_08818970:
+
+    # "It was one of the few whose ingredients were commonplace enough to be found in and around [castle_name!t]."
+    ""
+

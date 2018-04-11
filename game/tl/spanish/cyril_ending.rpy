@@ -685,3 +685,19 @@ translate spanish cyril_insane_epilogue_eaf4e0a4:
     # p angry "Fool."
     p angry "Idiota."
 
+# TODO: Translation updated at 2018-04-10 09:57
+
+# game/cyril_ending.rpy:166
+translate spanish cyril_insane_epilogue_fea34a9e:
+
+    # p tsk "I'm done with you mage. You are hereby reinstated to the [castle_name!t]."
+    p tsk ""
+
+# TODO: Translation updated at 2018-04-10 10:02
+
+# game/cyril_ending.rpy:166
+translate spanish cyril_insane_epilogue_1bd723c5:
+
+    # p tsk "I'm done with you mage. You are hereby reinstated to [castle_name!t]."
+    p tsk ""
+
