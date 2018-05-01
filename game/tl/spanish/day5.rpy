@@ -2230,7 +2230,7 @@ translate spanish strings:
 
     # day5.rpy:24
     old "\"Maybe you're right...\""
-    new "\"Quizás tenga razón...""
+    new "\"Quizás tenga razón...\""
 
     # day5.rpy:89
     old "\"Prove that I can trust you.\""
@@ -2279,4 +2279,3 @@ translate spanish strings:
     # day5.rpy:349
     old "Offer to show him some thigh."
     new "Ser sugerente con él."
-
