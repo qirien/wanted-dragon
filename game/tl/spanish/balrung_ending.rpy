@@ -100,37 +100,37 @@ translate spanish balrung_epilogue_a6ec5c7d:
 translate spanish balrung_epilogue_9c5f10bd:
 
     # b "Nigh, how wonderful!"
-    b "Cercana, ¡qué bonita eres!"
+    b "Acérquese, ¡es soberana!"
 
 # game/balrung_ending.rpy:42
 translate spanish balrung_epilogue_b13994da:
 
     # b "Lost, tragic course!"
-    b "Perdida, ¡trágico rumbo!"
+    b "Aunque es, sí, incluso, osada."
 
 # game/balrung_ending.rpy:43
 translate spanish balrung_epilogue_c6f85f30:
 
     # b "Soft tresses, silken neck, quick kisses,"
-    b "Mechones suaves, cuello de seda, rápidos besos,"
+    b "Adorable entidad, dedos suaves, sensuales senos."
 
 # game/balrung_ending.rpy:44
 translate spanish balrung_epilogue_ca60317d:
 
     # b "Savory yon nuptial love vexes,"
-    b "Aquel sabroso amor nupcial que me encandila,"
+    b "Santa adoración, Novaria,"
 
 # game/balrung_ending.rpy:45
 translate spanish balrung_epilogue_79466296:
 
     # b "Sibilant treasure rhapsodically enchants,"
-    b "Me encantan con rapsodia sus tesoros sibilantes,"
+    b "Al latir, rindes siempre el largo orgullo,"
 
 # game/balrung_ending.rpy:46
 translate spanish balrung_epilogue_b49f8f27:
 
     # b "Sing, glorious sovereign!"
-    b "¡Cante, gloriosa soberana!"
+    b "Óigame, entone: ¡éxtasis soberano!"
 
 # game/balrung_ending.rpy:47
 translate spanish balrung_epilogue_81e5564b:
@@ -138,7 +138,7 @@ translate spanish balrung_epilogue_81e5564b:
     # nvl clear    
     # p "...I don't sing."
     nvl clear    
-    p "Yo no canto."
+    p "Yo no sé entonar."
 
 # game/balrung_ending.rpy:49
 translate spanish balrung_epilogue_57c8104e:

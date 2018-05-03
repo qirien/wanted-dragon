@@ -1252,13 +1252,13 @@ translate spanish balrung3_c7d68d37:
 translate spanish balrung3_b8ea6eea:
 
     # book "roar, writhe;"
-    book "sonidos, suspiros;"
+    book "Sonidos, suspiros;"
 
 # game/day3.rpy:301
 translate spanish balrung3_a5175e0c:
 
     # book "thy yearning groweth."
-    book "surcar remolinos suaves."
+    book "Surcar remolinos suaves."
 
 # game/day3.rpy:302
 translate spanish balrung3_a98138a1:
@@ -1270,13 +1270,13 @@ translate spanish balrung3_a98138a1:
 translate spanish balrung3_8a0a694a:
 
     # book "two sinuous serpents"
-    book "sendas serpientes sagaces,"
+    book "Sendas serpientes sagaces,"
 
 # game/day3.rpy:304
 translate spanish balrung3_c0daff7d:
 
     # book "soar rapturous."
-    book "seguid descubriendo horizontes."
+    book "Seguid descubriendo horizontes."
 
 # game/day3.rpy:305
 translate spanish balrung3_76b2fe88:
@@ -1312,7 +1312,7 @@ translate spanish balrung3_cb688a52:
 translate spanish balrung3_b3ea3d24:
 
     # book "Kneeling never."
-    book "olvidar rudos sometimientos."
+    book "Olvidar rudos sometimientos."
 
 # game/day3.rpy:315
 translate spanish balrung3_4888af71:
@@ -1324,13 +1324,13 @@ translate spanish balrung3_4888af71:
 translate spanish balrung3_2dfc3fcf:
 
     # book "Like circling glorious summits-"
-    book "sí, ideales satisfactorios"
+    book "Sí, ideales satisfactorios"
 
 # game/day3.rpy:317
 translate spanish balrung3_3f488883:
 
     # book "Soaring, graceful, limber-"
-    book "surcando olas serenas."
+    book "Surcando olas serenas."
 
 # game/day3.rpy:318
 translate spanish balrung3_dc0d2d73:
