@@ -41,13 +41,13 @@ screen say(who, what, side_image=None, two_window=False):
                     style "say_vbox"
 
                 text what id "what"
-                
+
             if who:
                 window:
                     style "say_who_window"
                     xpos 250
                     ypos -110
-    
+
                     text who:
                         id "who"
 
@@ -166,7 +166,7 @@ screen nvl(dialogue, items=None):
                                 text what id what_id font "fonts/Kristi.ttf" size 40
 
                         else:
-                            text what id what_id 
+                            text what id what_id
 
                 # Display a menu, if given.
                 if items:
@@ -191,10 +191,10 @@ screen nvl(dialogue, items=None):
     #add SideImage() xalign 0.0 yalign 1.0
 
     #use quick_menu
-    
+
 screen book_screen:
     default side_image = None
-    
+
     if (book_flipped):
         add im.Flip("bg/book.jpg", horizontal = True)
     else:
@@ -235,13 +235,13 @@ screen main_menu():
     # The background of the main menu.
     window:
         style "mm_root"
-    
+
     vbox:
         style_group "mm"
         ypos 30
         xpos 830
-        textbutton ("Language") action ShowTransient("language_select") at buttonfade 
-        
+        textbutton _("Language") action ShowTransient("language_select") at buttonfade
+
     # The main menu buttons.
     vbox:
         style_group "mm"
@@ -250,31 +250,31 @@ screen main_menu():
 #        textbutton ("Start") action Start() at buttonfade
 #        textbutton ("Load") action ShowMenu("main_load") at buttonfade
 #        textbutton ("Preferences") action ShowMenu("preferences") at buttonfade
-#        textbutton ("Extras") action ShowMenu("extras") at buttonfade  
+#        textbutton ("Extras") action ShowMenu("extras") at buttonfade
 #        textbutton ("Quit") action Quit(confirm=False) at buttonfade
 
         imagebutton idle "GUI/button_start.png" hover "GUI/button_start_hover.png" action Start() at buttonfade
-        
+
         imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" action ShowMenu("main_load") at buttonfade
 
         imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" action ShowMenu("main_preferences") at buttonfade
 
-        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png" action ShowMenu("princess_endings") at buttonfade    
+        imagebutton idle "GUI/button_extras.png" hover "GUI/button_extras_hover.png" action ShowMenu("princess_endings") at buttonfade
 
         imagebutton idle "GUI/button_quit.png" hover "GUI/button_quit_hover.png" action Quit(confirm=False) at buttonfade
-    
+
     on "show" action Stop ("sound")
-    
-    
+
+
 screen language_select:
     vbox:
         style_group "mm"
         ypos 100
-        xpos 830        
-        textbutton "English" action [ Language(None), Hide("language_select") ]
-        textbutton "Spanish" action [Language("spanish"), Hide("language_select") ]
-        
-        
+        xpos 830
+        textbutton _("English") action [ Language(None), Hide("language_select") ]
+        textbutton _("Spanish") action [Language("spanish"), Hide("language_select") ]
+
+
 init -2:
 
     # Make all the main menu buttons be the same size.
@@ -337,7 +337,7 @@ init -2:
 # a single screen, file_picker. We then use the file_picker screen
 # from simple load and save screens.
 
-   
+
 screen load_save_slot:
     #tag menu
     #modal True
@@ -348,7 +348,7 @@ screen load_save_slot:
 
     add FileScreenshot(number) xpos 1 ypos 1
     text file_text xalign .5 yalign 0.1 size 16 color "#000000"
-                    
+
 screen save:
 
     # This ensures that any other menu screen is replaced.
@@ -360,23 +360,23 @@ screen save:
         idle "GUI/idle.png"
         hover "GUI/save_slots.png"
         insensitive "GUI/idle.png"
-            
+
         hotspot (451, 140, 138, 104) at slotfade clicked FileAction(1):
             use load_save_slot(number=1)
         hotspot (608, 140, 138, 104) at slotfade clicked FileAction(2):
             use load_save_slot(number=2)
         hotspot (451, 263, 138, 104) at slotfade clicked FileAction(3):
-            use load_save_slot(number=3)     
+            use load_save_slot(number=3)
         hotspot (608, 263, 138, 104) at slotfade clicked FileAction(4):
-            use load_save_slot(number=4)      
-      
-      
+            use load_save_slot(number=4)
+
+
 
     imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 195 action ShowMenu("load") at buttonfade
 
     imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 action ShowMenu("preferences") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade
 
     imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
@@ -397,23 +397,23 @@ screen load:
         idle "GUI/idle.png"
         hover "GUI/load_slots.png"
         insensitive "GUI/idle.png"
-            
+
         hotspot (451, 140, 138, 104) at slotfade clicked FileAction(1):
             use load_save_slot(number=1)
         hotspot (608, 140, 138, 104) at slotfade clicked FileAction(2):
             use load_save_slot(number=2)
         hotspot (451, 263, 138, 104) at slotfade clicked FileAction(3):
-            use load_save_slot(number=3)     
+            use load_save_slot(number=3)
         hotspot (608, 263, 138, 104) at slotfade clicked FileAction(4):
-            use load_save_slot(number=4)      
-      
-      
+            use load_save_slot(number=4)
+
+
 
     imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
     imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 action ShowMenu("preferences") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade
 
     imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
@@ -433,23 +433,23 @@ screen main_load:
         idle "GUI/idle.png"
         hover "GUI/load_slots.png"
         insensitive "GUI/idle.png"
-            
+
         hotspot (451, 140, 138, 104) at slotfade clicked FileLoad(1):
             use load_save_slot(number=1)
         hotspot (608, 140, 138, 104) at slotfade clicked FileLoad (2):
             use load_save_slot(number=2)
         hotspot (451, 263, 138, 104) at slotfade clicked FileLoad (3):
-            use load_save_slot(number=3)     
+            use load_save_slot(number=3)
         hotspot (608, 263, 138, 104) at slotfade clicked FileLoad (4):
-            use load_save_slot(number=4)      
-      
-      
+            use load_save_slot(number=4)
+
+
 
     imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
     imagebutton idle "GUI/button_preferences.png" hover "GUI/button_preferences_hover.png" xpos 80 ypos 243 action ShowMenu("main_preferences") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action Return() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action Return() at buttonfade
 
     imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
@@ -470,7 +470,7 @@ init -2 python:
     config.thumbnail_width = 136
     config.thumbnail_height = 102
     config.quit_action = Quit(confirm=False)
-    
+
 ##############################################################################
 # Preferences
 #
@@ -505,26 +505,26 @@ screen preferences():
         style_group "prefs"
 
         bar value Preference("auto-forward time")
-        
-        
+
+
     vbox:
         xpos 550
         ypos 315
-        style_group "prefs"        
+        style_group "prefs"
         bar value Preference("sound volume")
-        
-        
+
+
     vbox:
         xpos 550
         ypos 355
-        style_group "prefs"        
+        style_group "prefs"
         bar value Preference("music volume")
 
     imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
     imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 245 action ShowMenu("load") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action MainMenu() at buttonfade
 
     imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
@@ -557,26 +557,26 @@ screen main_preferences():
         style_group "prefs"
 
         bar value Preference("text speed")
-        
-        
+
+
     vbox:
         xpos 550
         ypos 315
-        style_group "prefs"        
+        style_group "prefs"
         bar value Preference("sound volume")
-        
-        
+
+
     vbox:
         xpos 550
         ypos 355
-        style_group "prefs"        
+        style_group "prefs"
         bar value Preference("music volume")
 
     imagebutton idle "GUI/button_save.png" hover "GUI/button_save_hover.png" xpos 80 ypos 195 action ShowMenu("save") at buttonfade
 
     imagebutton idle "GUI/button_load.png" hover "GUI/button_load_hover.png" xpos 80 ypos 245 action ShowMenu("main_load") at buttonfade
 
-    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action Return() at buttonfade    
+    imagebutton idle "GUI/button_main.png" hover "GUI/button_main_hover.png" xpos 80 ypos 295 action Return() at buttonfade
 
     imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" xpos 80 ypos 345 action Return() at buttonfade
 
@@ -658,106 +658,106 @@ screen princess_endings:
     tag menu
     add "GUI/sun.png"
     add "GUI/extras.png"
-    
+
     vbox:
         xalign 0.5
         yalign 0.3
         if (persistent.PrincessInPrison):
-            text "Princess in Prison"
+            text _("Princess in Prison")
         else:
-            text "LOCKED"
-     
-        
+            text _("LOCKED")
+
+
     hbox:
         xalign 0.5
         yalign 0.75
-        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
-        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
-        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
-        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2
 
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade  
-        
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade
+
 screen cyril_endings:
     tag menu
     add "GUI/sun.png"
     add "GUI/extras.png"
-    
+
     vbox:
         xalign 0.5
         yalign 0.3
         if (persistent.DarkQueen):
-            text "Dark Queen"
+            text _("Dark Queen")
         else:
-            text "LOCKED"
-        
+            text _("LOCKED")
+
         if (persistent.DragonQueen):
-            text "Dragon Queen"
+            text _("Dragon Queen")
         else:
-            text "LOCKED"     
+            text _("LOCKED")
 
         if (persistent.QueensHero):
-            text "Queen's Hero"
+            text _("Queen's Hero")
         else:
-            text "LOCKED"
-            
+            text _("LOCKED")
+
         if (persistent.ImaginaryQueen):
-            text "Imaginary Queen"
+            text _("Imaginary Queen")
         else:
-            text "LOCKED"
+            text _("LOCKED")
 
     hbox:
         xalign 0.5
         yalign 0.75
-        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
-        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
-        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
-        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2
 
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade 
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade
 
 screen balrung_endings:
     tag menu
     add "GUI/sun.png"
     add "GUI/extras.png"
-    
+
     vbox:
         xalign 0.5
         yalign 0.3
         if (persistent.QueensGambit):
-            text "Queen's Gambit"
+            text _("Queen's Gambit")
         else:
-            text "LOCKED"
-            
+            text _("LOCKED")
+
         if (persistent.RevengeNeverEnds):
-            text "Revenge Never Ends"
+            text _("Revenge Never Ends")
         else:
-            text "LOCKED"     
-        
+            text _("LOCKED")
+
     hbox:
         xalign 0.5
         yalign 0.75
-        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
-        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
-        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
-        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2
 
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade 
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade
 
 screen niir_endings:
     tag menu
     add "GUI/sun.png"
     add "GUI/extras.png"
-    
+
     vbox:
         xalign 0.5
         yalign 0.3
@@ -771,19 +771,19 @@ screen niir_endings:
         else:
             text "LOCKED"
 
-        
+
     hbox:
         xalign 0.5
         yalign 0.75
-        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2        
-        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2       
-        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2         
-        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2       
+        imagebutton idle "GUI/button_princess_idle.png" hover "GUI/button_princess_hover.png" selected_idle "GUI/button_princess.png" selected_hover "GUI/button_princess_hover.png" focus_mask True action ShowMenu("princess_endings") at buttonfade2
+        imagebutton idle "GUI/button_cyril_idle.png" hover "GUI/button_cyril_hover.png" selected_idle "GUI/button_cyril.png" selected_hover "GUI/button_cyril_hover.png" focus_mask True action ShowMenu("cyril_endings") at buttonfade2
+        imagebutton idle "GUI/button_balrung_idle.png" hover "GUI/button_balrung_hover.png" selected_idle "GUI/button_balrung.png" selected_hover "GUI/button_balrung_hover.png" focus_mask True action ShowMenu("balrung_endings") at buttonfade2
+        imagebutton idle "GUI/button_niir_idle.png" hover "GUI/button_niir_hover.png" selected_idle "GUI/button_niir.png" selected_hover "GUI/button_niir_hover.png" focus_mask True action ShowMenu("niir_endings") at buttonfade2
 
     hbox:
         yalign 0.99
         xalign 0.98
-        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade 
+        imagebutton idle "GUI/button_return.png" hover "GUI/button_return_hover.png" action Return() at buttonfade
 
 ##############################################################################
 # Quick Menu
@@ -823,4 +823,3 @@ init -2:
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
         insensitive_color "#4448"
-

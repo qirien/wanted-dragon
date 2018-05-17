@@ -50,3 +50,51 @@ translate spanish strings:
     old "All Messages"
     new "Todos los mensajes"
 
+# TODO: Translation updated at 2018-05-17 11:07
+
+translate spanish strings:
+
+    # screens.rpy:243
+    old "Language"
+    new ""
+
+    # screens.rpy:274
+    old "English"
+    new ""
+
+    # screens.rpy:275
+    old "Spanish"
+    new ""
+
+    # screens.rpy:666
+    old "Princess in Prison"
+    new ""
+
+    # screens.rpy:668
+    old "LOCKED"
+    new ""
+
+    # screens.rpy:693
+    old "Dark Queen"
+    new ""
+
+    # screens.rpy:698
+    old "Dragon Queen"
+    new ""
+
+    # screens.rpy:703
+    old "Queen's Hero"
+    new ""
+
+    # screens.rpy:708
+    old "Imaginary Queen"
+    new ""
+
+    # screens.rpy:734
+    old "Queen's Gambit"
+    new ""
+
+    # screens.rpy:739
+    old "Revenge Never Ends"
+    new ""
+
