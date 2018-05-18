@@ -56,45 +56,45 @@ translate spanish strings:
 
     # screens.rpy:243
     old "Language"
-    new ""
+    new "Idioma"
 
     # screens.rpy:274
     old "English"
-    new ""
+    new "Inglés"
 
     # screens.rpy:275
     old "Spanish"
-    new ""
+    new "Español"
 
     # screens.rpy:666
     old "Princess in Prison"
-    new ""
+    new "Princesa en prisión"
 
     # screens.rpy:668
     old "LOCKED"
-    new ""
+    new "BLOQUEADO"
 
     # screens.rpy:693
     old "Dark Queen"
-    new ""
+    new "Reina oscura"
 
     # screens.rpy:698
     old "Dragon Queen"
-    new ""
+    new "Reina dragón"
 
     # screens.rpy:703
     old "Queen's Hero"
-    new ""
+    new "El héroe de la reina"
 
     # screens.rpy:708
     old "Imaginary Queen"
-    new ""
+    new "Reina imaginaria"
 
     # screens.rpy:734
     old "Queen's Gambit"
-    new ""
+    new "La táctica de la Reina"
 
     # screens.rpy:739
     old "Revenge Never Ends"
-    new ""
+    new "La venganza nunca termina"
 
