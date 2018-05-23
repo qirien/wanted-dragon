@@ -271,9 +271,17 @@ screen language_select:
         style_group "mm"
         ypos 100
         xpos 830
-        textbutton _("English") action [ Language(None), Hide("language_select") ]
-        textbutton _("Spanish") action [Language("spanish"), Hide("language_select") ]
+        textbutton _("English") style "lang_button" action [ Language(None), Hide("language_select") ]
+        textbutton _("Spanish") style "lang_button" action [Language("spanish"), Hide("language_select") ]
 
+style lang_button:
+    xalign 1.0
+
+style lang_button_text is prefs_button_text:
+    size 30
+    idle_color "#400000"
+    hover_color "#ffc180"
+    selected_color "ffc180"
 
 init -2:
 
