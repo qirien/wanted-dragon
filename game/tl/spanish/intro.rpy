@@ -1022,7 +1022,7 @@ translate spanish dragon_chat_a69d940a:
 translate spanish dragon_chat_e4b8fb42:
 
     # "Is that lightning?"
-    "¿Eso es un trueno?"
+    "¿Eso ha sido un trueno?"
 
 # game/intro.rpy:383
 translate spanish dragon_chat_f44f6b13:
@@ -1298,11 +1298,11 @@ translate spanish strings:
 
     # intro.rpy:222
     old "Allude to your purpose in veiled terms."
-    new "Hablar de tu propósito en términos generales."
+    new "Hablar brevemente de tu propósito."
 
     # intro.rpy:222
     old "Pretend you are just checking on things."
-    new "Pretender que solo estás supervisando las cosas."
+    new "Fingir que estás supervisando las cosas."
 
     # intro.rpy:256
     old "Address Niir."
@@ -1314,7 +1314,7 @@ translate spanish strings:
 
     # intro.rpy:256
     old "Address Moronious."
-    new "Hablar con Moronious."
+    new "Hablar con Memonious."
 
     # intro.rpy:270
     old "\"I shall consider your... offer, Niir.\""

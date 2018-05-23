@@ -178,7 +178,7 @@ translate spanish library1_2a4b6460:
 translate spanish library1_cf0bc9d1:
 
     # p shocked "{i}15 Erotic Tales by Twilight{/i}."
-    p shocked "{i}15 Cuentos Eróticos, de Crepúsculo{/i}."
+    p shocked "{i}15 Cuentos Eróticos de Crepúsculo{/i}."
 
 # game/day1.rpy:57
 translate spanish library1_d2c848ec:
@@ -376,7 +376,7 @@ translate spanish library1_efe53a8c:
 translate spanish library1_5d2161a1:
 
     # c "Great! Now if I can be of any-"
-    c "¡Lárguese! Si puedo ayudarle..."
+    c "¡Genial! Si puedo ayudarle..."
 
 # game/day1.rpy:109
 translate spanish library1_978a9aa4:
@@ -606,7 +606,7 @@ translate spanish sharecyril_27d1fe82:
 translate spanish sharecyril_0f928cfc:
 
     # p "And this mentor of yours that put you in charge, he must have been centuries old. Did he ever see it?"
-    p "Su maestro, el que le puso al cargo, tenía varios cientos de años. ¿Alguna vez lo vio?"
+    p "Su maestro, el que le puso a cargo, tenía varios cientos de años. ¿Alguna vez lo vio?"
 
 # game/day1.rpy:193
 translate spanish sharecyril_a235670d:
