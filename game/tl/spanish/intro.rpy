@@ -509,7 +509,7 @@ translate spanish meet_dragons_be5c33dc:
 translate spanish meet_dragons_1253699d:
 
     # c "Oh, no you don't! This is royalty. The royal Princess [p_name]! And I will not have you looking at her like that Niir."
-    c "¡Eh, no! ¡De ninguna manera! Esta es la realeza. ¡Es la princesa [p_name]! No voy a dejar que la mires de ese modo, Niir."
+    c "¡Eh, no! ¡De ninguna manera! Es de la realeza. ¡Es la Princesa [p_name]! No voy a dejar que la mires de ese modo, Niir."
 
 # game/intro.rpy:221
 translate spanish meet_dragons_595a55d1:
@@ -623,7 +623,7 @@ translate spanish dragon_chat_ac3ab2ea:
 translate spanish dragon_chat_4bb16220:
 
     # n "How about you, are you interesssted in fun? Perhapsss playing a little game?"
-    n "¿Y a usted? ¿Le interesa pasarlo bien? ¿Quiere jugar a un jueguecito?"
+    n "¿Y a usssted? ¿Le interesssa passsarlo bien? ¿Quiere jugar a un jueguecito?"
 
 # game/intro.rpy:262
 translate spanish dragon_chat_e4e2589d:
@@ -914,7 +914,7 @@ translate spanish dragon_chat_1f2fa8fc:
 translate spanish dragon_chat_7903d4f6:
 
     # c "I am loyal. I did not have to take up post here."
-    c "Soy leal. No tenía porque haber aceptado este puesto."
+    c "Soy leal. No tenía por qué haber aceptado este puesto."
 
 # game/intro.rpy:358
 translate spanish dragon_chat_d3e4cf95:
@@ -1094,7 +1094,7 @@ translate spanish broughtfood_489a66ab:
 translate spanish joinmage_81c940a1:
 
     # c "Ah, yes, Princess. So glad of you to join me."
-    c "Ah, Princesa. Qué bien que se haya unido a mí."
+    c "Ah, Princesa. Qué bien que haya decidido venir conmigo."
 
 # game/intro.rpy:419
 translate spanish joinmage_c43e116d:

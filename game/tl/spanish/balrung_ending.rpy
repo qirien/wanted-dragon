@@ -16,7 +16,7 @@ translate spanish balrung_epilogue_3d979f89:
 translate spanish balrung_epilogue_9de6a5be:
 
     # p friendly "I think half the courtiers soiled themselves when you transformed into dragon form at our wedding."
-    p friendly "Creo que la mitad de los cortesanos se lo hicieron encima cuando te transformaste en dragón en nuestra boda."
+    p friendly "Creo que la mitad de los cortesanos se lo hicieron encima cuando usted se transformó en dragón en nuestra boda."
 
 # game/balrung_ending.rpy:14
 translate spanish balrung_epilogue_b1a9fab9:
@@ -28,7 +28,7 @@ translate spanish balrung_epilogue_b1a9fab9:
 translate spanish balrung_epilogue_2e3998f1:
 
     # p laugh eyes closed "I only wish Magnolia could have seen it, too, and quivered in terror while you threatened to devour her whole... that would have been so nice."
-    p laugh eyes closed "Ojalá Magnolia lo hubiera visto. Se habría muerto de miedo mientras amenazabas con devorarla... Habría sido precioso."
+    p laugh eyes closed "Ojalá Magnolia lo hubiera visto. Se habría muerto de miedo mientras amenazaba con devorarla... Habría sido precioso."
 
 # game/balrung_ending.rpy:17
 translate spanish balrung_epilogue_fae65d9e:
@@ -58,7 +58,7 @@ translate spanish balrung_epilogue_3f601eb1:
 translate spanish balrung_epilogue_f90bc2bf:
 
     # b "If I tell you, it'll spoil all the fun you could have unraveling it for yourself."
-    b "Si se lo digo, no será tan divertido como si lo descubriera usted misma."
+    b "Si se lo digo, no será tan divertido como si lo descubre usted misma."
 
 # game/balrung_ending.rpy:24
 translate spanish balrung_epilogue_26dc0a56:
@@ -124,7 +124,7 @@ translate spanish balrung_epilogue_ca60317d:
 translate spanish balrung_epilogue_79466296:
 
     # b "Sibilant treasure rhapsodically enchants,"
-    b "Al latir, rindes siempre el largo orgullo,"
+    b "Al latir, rinde el largo orgullo."
 
 # game/balrung_ending.rpy:46
 translate spanish balrung_epilogue_b49f8f27:

@@ -52,7 +52,8 @@ translate spanish alone4_d7d1cf51:
 translate spanish alone4_af37994b:
 
     # p "Hmm, {i}Theory of Alchemy{/i}, sounds dull. {i}Fifty Five-Minute Potions{/i}? If they only take five minutes they can't be very good. {i}Puissant Potions for Pleasure and Profit{/i}, now {b}that{/b} sounds interesting!"
-    p "Mmmm... {i}La teoría de la alquimia{/i}, ¡qué aburrido! ¿{i}50 pociones para hacer en cinco minutos{/i}? Si se hacen en cinco minutos no pueden ser muy eficaces. {i}Pociones Potentes para el Placer y el Provecho{/i}, {b}esta{/b} sí que es interesante."
+    p "Mmm... {i}La teoría de la alquimia{/i}, ¡qué aburrido! ¿{i}50 pociones para hacer en cinco minutos{/i}? Si se hacen en cinco minutos no pueden ser muy eficaces."
+    p "{i}Pociones Potentes para el Placer y el Provecho{/i}, {b}esta{/b} sí que es interesante."
 
 # game/day4.rpy:24
 translate spanish alone4_59c173fc:
@@ -616,7 +617,7 @@ translate spanish niir4_55d1fe0e:
 translate spanish niir4_8f37a467:
 
     # b "Niir, isn't it worth {b}trying{/b} to regain your freedom? Surely there's some way you could show some semblance of love, or at least affection."
-    b "Niir, ¿no cree que vale la pena {b}intentarlo{/b} para recuperar su libertad? Seguro que existe una forma de mostrarme amor o, al menos, afecto."
+    b "Niir, ¿no crees que vale la pena {b}intentarlo{/b} para recuperar tu libertad? Seguro que existe una forma de mostrar amor o, al menos, afecto."
 
 # game/day4.rpy:219
 translate spanish niir4_f9cd8ac9:
@@ -640,7 +641,7 @@ translate spanish niir4_d4769d24:
 translate spanish niir4_c702b425:
 
     # b "Remember, you need to appear in love, not in lust... Perhaps you should practice a passionate, yet chaste embrace."
-    b "Recuerde que tiene que parecer que me ama, no que me desea... Le vendría bien practicar. Puede intentar abrazarme de manera apasionada, pero decente."
+    b "Recuerda que tiene que parecer que la amas, no que la deseas... Te vendría bien practicar. Puedes intentar abrazarla de manera apasionada, pero decente."
 
 # game/day4.rpy:228
 translate spanish niir4_197beff1:
@@ -688,7 +689,7 @@ translate spanish niir4_f4a9e2b1:
 translate spanish niir4_51232475:
 
     # b "Yes... that may work. Not the sonnets; you can amuse each other and laugh together."
-    b "Sí..., podría funcionar. No los sonetos. Pero podrían divertirse juntos."
+    b "Sí..., podría funcionar. No los sonetos. Pero podríais divertiros juntos."
 
 # game/day4.rpy:244
 translate spanish niir4_eb3edae2:
@@ -706,7 +707,7 @@ translate spanish niir4_bb99a4fb:
 translate spanish niir4_fa1db23a:
 
     # n "Don’t lisssten to that crussty old dragon."
-    n "No escuche al mago essse."
+    n "No escuche a ese viejo y malhumorado dragón."
 
 # game/day4.rpy:251
 translate spanish niir4_9e6f11b9:
@@ -730,7 +731,7 @@ translate spanish niir4_830d48c0:
 translate spanish niir4_95dd6d47:
 
     # n "I don’t need a hobby, Princessss. Essspecially not one of those."
-    n "No necesito un hobby, princessssa. Y menosss uno hobby de esosss."
+    n "No necesito un hobby, princessssa. Y menosss un hobby de esosss."
 
 # game/day4.rpy:258
 translate spanish niir4_f7012f0c:

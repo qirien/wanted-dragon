@@ -792,7 +792,7 @@ translate spanish explore1_df541c8e:
 translate spanish explore1_f502deb6:
 
     # n "You mussst. Pretty young thing like you. {i}Alone{/i}. In the casssstle."
-    n "Debería. Una preciosssidad como usted. {i}Sssola{/i} En el cassstillo."
+    n "Debería. Una preciosssidad como usted. {i}Sssola{/i}. En el cassstillo."
 
 # game/day1.rpy:247
 translate spanish explore1_d8f51ee5:

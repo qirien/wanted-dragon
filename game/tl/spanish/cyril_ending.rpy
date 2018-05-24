@@ -28,7 +28,7 @@ translate spanish cyril_dark_epilogue_40de5718:
 translate spanish cyril_dark_epilogue_eabacfa3:
 
     # c "Well, I would do {i}anything{/i} for you, your majesty."
-    c "Sabe que yo haría {i}cualquier cosa{/i} por usted, su majestad."
+    c "Sabe que yo haría {i}cualquier cosa{/i} por usted, Su Majestad."
 
 # game/cyril_ending.rpy:15
 translate spanish cyril_dark_epilogue_53573c27:
@@ -70,7 +70,7 @@ translate spanish cyril_dark_epilogue_5c4e4894:
 translate spanish cyril_dark_epilogue_3fa0a06c:
 
     # c "It would be my pleasure, your Majesty. No longer will there be any dragons causing chaos as long as I am around."
-    c "Será un placer, su majestad. Ya no habrá más dragones que provoquen caos mientras yo esté al mando."
+    c "Será un placer, Su Majestad. Ya no habrá más dragones que provoquen caos mientras yo esté al mando."
 
 # game/cyril_ending.rpy:24
 translate spanish cyril_dark_epilogue_7aa91dca:
@@ -214,7 +214,7 @@ translate spanish cyril_scepter_epilogue_e75c34e2:
 translate spanish cyril_scepter_epilogue_74cd4c34:
 
     # c "Oh, yes. Yes your majesty."
-    c "Sí. Sí, su majestad."
+    c "Sí. Sí, Su Majestad."
 
 # game/cyril_ending.rpy:59
 translate spanish cyril_scepter_epilogue_6f68ede6:
@@ -268,7 +268,7 @@ translate spanish cyril_scepter_epilogue_e9d7b144:
 translate spanish cyril_scepter_epilogue_9d9ab1fa:
 
     # c hat smile eyes closed blush "Ah, your majesty, would you do me the honor of going to the ball... that’s in your honor. But it would be {i}my{/i} honor to-"
-    c hat smile eyes closed blush "Claro, su majestad, me haría el honor de ir al baile... que se celebra en su honor. Pero sería {i}mi{/i} honor..."
+    c hat smile eyes closed blush "Claro, Su Majestad, me haría el honor de ir al baile... que se celebra en su honor. Pero sería {i}mi{/i} honor..."
 
 # game/cyril_ending.rpy:68
 translate spanish cyril_scepter_epilogue_eda5d664:
@@ -292,7 +292,7 @@ translate spanish cyril_scepter_epilogue_a36e3481:
 translate spanish cyril_scepter_epilogue_acd82721:
 
     # c hat smile blush "Thank you, your Majesty."
-    c hat smile blush "Gracias, su majestad."
+    c hat smile blush "Gracias, Su Majestad."
 
 # game/cyril_ending.rpy:72
 translate spanish cyril_scepter_epilogue_85098089:

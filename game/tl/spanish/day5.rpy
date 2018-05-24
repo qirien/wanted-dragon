@@ -250,7 +250,7 @@ translate spanish day5_d764c82d:
 translate spanish day5_d2e4e5a4:
 
     # p angry "Why not? Isn't that supposed to be the great thing about love? It's blind, knows no boundaries, is all you need, etc, etc?"
-    p angry "¿Por qué no? ¿No se supone que esa es la grandeza del amor? Es ciego, no conoce límites, es todo lo que una necesita, etc, etc."
+    p angry "¿Por qué no? ¿No se supone que esa es la grandeza del amor? Es ciego, no conoce límites, es todo lo que una necesita, etc., etc."
 
 # game/day5.rpy:79
 translate spanish day5_40f2886b:
@@ -876,7 +876,7 @@ translate spanish balrung5_c3bc99b0:
 translate spanish balrung5_9b56bf39:
 
     # b "For a long time I feared you were right, mage, but perhaps I just hadn't met the right woman."
-    b "Durante mucho tuve miedo de que tuvieras razón, mago, pero puede que no hubiera encontrado a la mujer perfecta."
+    b "Durante mucho tiempo tuve miedo de que tuvieras razón, mago, pero puede que no hubiera encontrado a la mujer perfecta."
 
 # game/day5.rpy:268
 translate spanish balrung5_ac1fde4a:
@@ -1704,7 +1704,7 @@ translate spanish trustfall_00f0f7b0:
 translate spanish trustfall_617a6841:
 
     # n "What will that prove?"
-    n "¿Y essso que prueba?"
+    n "¿Y essso qué prueba?"
 
 # game/day5.rpy:492
 translate spanish trustfall_22871e99:
@@ -2178,7 +2178,7 @@ translate spanish cyril5_55871db0:
 translate spanish cyril5_2b323bcd:
 
     # p smile "Well, we wouldn't want that. I suppose I'd better leave you alone for now, even though there's so many other things I'd like to show you."
-    p smile "Bueno, no queremos eso. Supongo que será mejor que le deje solo por ahora, aunque haya muchas más cosas que quiero enseñarle."
+    p smile "Bueno, no queremos eso. Supongo que será mejor que le deje solo por ahora, aunque hay muchas más cosas que quiero enseñarle."
 
 # game/day5.rpy:611
 translate spanish cyril5_e9662adb_1:

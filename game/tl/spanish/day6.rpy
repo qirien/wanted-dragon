@@ -184,7 +184,7 @@ translate spanish day6_31daf81b:
 translate spanish day6_3d83fb11:
 
     # "Give up his post? That would ruin everything I’ve been working for! No one else would be so eager to please and gullible."
-    "¿Dejar su trabajo? Eso arruinaría todo por lo que he estado trabajando. No hay nadie tan inocente ni tan dispuesto a complacer."
+    "¿Dejar su trabajo? Eso arruinaría todo por lo que he estado trabajando. No hay nadie tan inocente ni tan dispuesto a complacerme."
 
 # game/day6.rpy:60
 translate spanish day6_2e647e77:
@@ -214,7 +214,7 @@ translate spanish day6_ca66cb61:
 translate spanish day6_af382a23:
 
     # c "To Dyconis."
-    c "Atado a Dycons."
+    c "Atado a Dyconis."
 
 # game/day6.rpy:65
 translate spanish day6_8187f0ab:
@@ -656,7 +656,7 @@ translate spanish balrung6_a1a323b7:
 translate spanish balrung6_0130e21a:
 
     # p smile "You will, I'm sure. For now, let us play another game together. I expect you'll have arranged for Moronious to drop by later, so he can witness our 'true love'?"
-    p smile "Todavía no. De momento, vamos a echar otra partida. Espero que haya organizado todo para que baje Memonious y pueda ver nuestro «amor verdadero»."
+    p smile "Todavía no. De momento, vamos a echar otra partida. Espero que haya organizado todo para que baje Memonious y pueda ver nuestro \"amor verdadero\"."
 
 # game/day6.rpy:187
 translate spanish balrung6_7dd67d13:
@@ -944,7 +944,7 @@ translate spanish niir6_cb7b034a:
 translate spanish niir6_d2de135b:
 
     # c "Stay put for just one moment. "
-    c "Un momento, no se muevan. "
+    c "Un momento, no se mueva. "
 
 # game/day6.rpy:266
 translate spanish niir6_12c7f5d6:
@@ -1406,7 +1406,7 @@ translate spanish cyril6_86c40c7f:
 translate spanish cyril6_9e417a19:
 
     # c "Oh no. That wasn’t what I was intending at all. I was just-if anything were to happen to you over my own foolishness, your Highness, I would never be able to forgive myself."
-    c "Oh, no. No era mi intención, en absoluto. Solo quería... Si le pasara algo por culpa de mis estupideces, su Alteza, no me lo perdonaría nunca."
+    c "Oh, no. No era mi intención, en absoluto. Solo quería... Si le pasara algo por culpa de mis estupideces, Su Alteza, no me lo perdonaría nunca."
 
 # game/day6.rpy:379
 translate spanish cyril6_c2d1f29a:
@@ -1442,7 +1442,7 @@ translate spanish cyril6_55cd1e8c:
 translate spanish cyril6_30a39b31:
 
     # p "Niir, meet me in the hall in twenty minutes. I have something I want to show you that you will find VERY interesting."
-    p "Niir, nos vemos en el vestíbulo dentro de veinte minutos. Quiero enseñarte algo que te va a parecer MUY interesante."
+    p "Niir, nos vemos en el vestíbulo dentro de veinte minutos. Quiero enseñarle algo que le va a parecer MUY interesante."
 
 # game/day6.rpy:392
 translate spanish cyril6_024b49a6:
@@ -1604,7 +1604,7 @@ translate spanish cyril6_0e895063:
 translate spanish cyril6_2c553c52:
 
     # n "End it! End it now!"
-    n "¡Para! ¡Detén esssto!"
+    n "¡Pare! ¡Detenga esssto!"
 
 # game/day6.rpy:433
 translate spanish cyril6_2939bf34:
@@ -1670,7 +1670,7 @@ translate spanish cyril6_c8ba0dc9:
 translate spanish cyril6_78883280:
 
     # c "Ah, yes you’re right, my-your Highness. That is correct. I am Cyril - to you - which I couldn’t be happier about. So what did you do exactly?"
-    c "Ah, sí, es cierto, mi..., su alteza. Es así. Soy Cyril, para usted, y eso me complace mucho. Entonces, ¿qué es lo que ha hecho exactamente?"
+    c "Ah, sí, es cierto, mi..., Su Alteza. Es así. Soy Cyril, para usted, y eso me complace mucho. Entonces, ¿qué es lo que ha hecho exactamente?"
 
 # game/day6.rpy:446
 translate spanish cyril6_c97dcffd:
@@ -1682,7 +1682,7 @@ translate spanish cyril6_c97dcffd:
 translate spanish cyril6_9dd817d8:
 
     # c "Ah, that must have been some magic indeed. I think someone, somewhere must be punishing that misbehaving dragon for his misdeeds."
-    c "Ha tenido que ser magia, no hay duda. Creo que alguien, en algún lado, que intenta castigar a este dragón travieso por sus fechorías."
+    c "Ha tenido que ser magia, no hay duda. Creo que alguien, en algún lado, intenta castigar a este dragón travieso por sus fechorías."
 
 # game/day6.rpy:448
 translate spanish cyril6_0a87a474:
@@ -1736,7 +1736,7 @@ translate spanish cyril6_165dbddc:
 translate spanish cyril6_3d47d6f2:
 
     # p friendly "Cyril! He didn’t beg. He should at least say \"please\"."
-    p friendly "¡Cyril! No me ha suplicado. Al menos debería decir \"por favor\"."
+    p friendly "¡Cyril! No le ha suplicado. Al menos debería decir \"por favor\"."
 
 # game/day6.rpy:458
 translate spanish cyril6_b0fc6bd6:
@@ -1838,7 +1838,7 @@ translate spanish cyril6_9db320a9:
 translate spanish cyril6_dc724e05:
 
     # p laugh "You mean entertaining! Perhaps he’ll at least think twice before bothering people."
-    p laugh "Querrás decir divertido. Al menos quizás se lo piense dos veces antes de volver a molestar a alguien."
+    p laugh "Querrá decir divertido. Al menos quizás se lo piense dos veces antes de volver a molestar a alguien."
 
 # game/day6.rpy:482
 translate spanish cyril6_678a9442:
@@ -1856,7 +1856,7 @@ translate spanish cyril6_93cc075e:
 translate spanish cyril6_15e717a9:
 
     # c "Minions? Oh. Yes. Of course. How could I have deluded myself into thinking anything but... I am honored to be anything to you, even a minion, your Highness."
-    c "¿Secuaces? Ah. Sí. Claro. ¿Cómo he podido ser tan crédulo para pensar otra cosa? Es un honor ser cualquier cosa para usted, incluso su secuaz, su Alteza."
+    c "¿Secuaces? Ah. Sí. Claro. ¿Cómo he podido ser tan crédulo para pensar otra cosa? Es un honor ser cualquier cosa para usted, incluso su secuaz, Su Alteza."
 
 # game/day6.rpy:485
 translate spanish cyril6_7de1b1bc:

@@ -148,7 +148,7 @@ translate spanish niir_free_epilogue_f103eccb:
 translate spanish niir_free_epilogue_a5bef955:
 
     # n "Sssso, how many people have you sssentenced to the dungeons thisss passt month?"
-    n "Bueno, ¿y a cuánta gente has sssentenciado a las mazmorras este messss?"
+    n "Bueno, ¿y a cuánta gente ha sssentenciado a las mazmorras este messss?"
 
 # game/niir_ending.rpy:44
 translate spanish niir_free_epilogue_ccbc0d51:

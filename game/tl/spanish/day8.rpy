@@ -100,7 +100,7 @@ translate spanish niir8_fc821b6e:
 translate spanish niir8_d8a2ffde:
 
     # n "Nothing you could make for her, that’s for sssssure."
-    n "Nada que tu le puedasss hacer, essso ssseguro."
+    n "Nada que tú le puedasss hacer, essso ssseguro."
 
 # game/day8.rpy:45
 translate spanish niir8_8f892d7a:
@@ -1426,7 +1426,7 @@ translate spanish cyril8_223e162d:
 translate spanish cyril8_a53047ff:
 
     # "When we got to the dungeon, Balrung and Niir were nowhere to be seen."
-    "Cuando llegamos a la mazmorra, Balrung no estaban a la vista."
+    "Cuando llegamos a la mazmorra, Balrung y Niir no estaban a la vista."
 
 # game/day8.rpy:375
 translate spanish cyril8_404e43ef:
@@ -1450,7 +1450,7 @@ translate spanish cyril8_15b44ec2:
 translate spanish cyril8_c0b75d5e:
 
     # "The ground trembled, and a giant shadow emerged from the corner of the room. No, not a shadow-- a dragon. {b}Two{/b} dragons."
-    "El suelo tembló y una sombre gigante salió de la esquina de la habitación. No, una sombra no... Un dragón. {b}Dos{/b} dragones."
+    "El suelo tembló y una sombra gigante salió de la esquina de la habitación. No, una sombra no... Un dragón. {b}Dos{/b} dragones."
 
 # game/day8.rpy:381
 translate spanish cyril8_73d63f81:
@@ -1504,7 +1504,7 @@ translate spanish cyril8_e7812ea7:
 translate spanish cyril8_57eeb497:
 
     # "As they talked, I scanned the room. Balrung had used it earlier to break the spell, but I didn't see it in his hands- er, talons. But traces of Cyril's spell still lingered and led me to it."
-    "Mientras hablaban, examiné la habitación. Balrung lo había usado antes para romper el hechizo, pero no lo veía en sus manos..., bueno, garras. Pero el hechizo de Cyril aún seguía teniendo efecto y el rastro me lo mostraba."
+    "Mientras hablaban, examiné el cuarto. Balrung lo había usado para romper el hechizo, pero no lo veía en sus manos, bueno, garras. Pero el hechizo de Cyril aún tenía efecto y el rastro me lo mostraba."
 
 # game/day8.rpy:395
 translate spanish cyril8_93766e19:
@@ -1522,13 +1522,13 @@ translate spanish cyril8_22fa6503:
 translate spanish cyril8_b0dc13f9:
 
     # b "I put it there for you to find, Princess. I've already used the scepter for what I needed. And now I've passed it on to you. I know you'll put it to much better use than this fool."
-    b "Lo puse ahí para que usted lo encontrara, Princesa. Ya he usado el cetro para lo que necesitaba. Y ahora se lo cedo a usted. Sé que le dará mucho más uso que este idiota."
+    b "Lo puse ahí para que usted lo encontrara, Princesa. Ya he usado el cetro para lo que lo necesitaba. Y ahora se lo cedo a usted. Sé que le dará mucho más uso que este idiota."
 
 # game/day8.rpy:400
 translate spanish cyril8_b475e235:
 
     # c "No, don't! It's too powerful; you can't control it without magical training! It could kill you, {i}kill{/i} you, Princess!"
-    c "¡No, no lo haga! Es demasiado poderoso, ¡no podrá controlarlo sin conocimientos mágicos! Podría matarla. ¡{i}Matarla{/i}, Princesa."
+    c "¡No, no lo haga! Es demasiado poderoso, ¡no podrá controlarlo sin conocimientos mágicos! Podría matarla. ¡{i}Matarla{/i}, Princesa!"
 
 # game/day8.rpy:403
 translate spanish cyril8_d4d40505:
@@ -1552,7 +1552,7 @@ translate spanish cyril8_4798665b:
 translate spanish cyril8_9d00f267:
 
     # c "You were the one making the mistake. And now you will reap the consequences of such a mistake."
-    c "Usted fue el que cometió el error. Y ahora sufrirá las consecuencias de dicho error."
+    c "Tú fuiste el que cometió el error. Y ahora sufrirás las consecuencias de dicho error."
 
 # game/day8.rpy:410
 translate spanish cyril8_8469507c:
@@ -1672,7 +1672,8 @@ translate spanish cyril8_842d125e:
 translate spanish cyril8_7c11b7d5:
 
     # b "Ho, ho ho ho. I spent years practicing with that artifact, using it carefully for minutes at a time so Merlonious wouldn't detect anything! You think to use it on {b}me{/b} after holding it for mere moments?"
-    b "Oh, jo, jo. Pasé años practicando con ese artefacto, lo usaba de forma cuidadosa durante pocos minutos al día para que Merlonious no pudiera detectarlo. ¿Pensaba que podría usarlo contra {b}mí{/b} con tan solo haberlo sujetado unos momentos?"
+    b "Oh, jo, jo. Pasé años practicando con ese artefacto. Lo usaba de forma cuidadosa durante unos pocos minutos al día para que Merlonious no lo notara."
+    b "¿Pensaba que podría usarlo contra {b}mí{/b} con tan solo sujetarlo un rato?"
 
 # game/day8.rpy:447
 translate spanish cyril8_cb35348a:
@@ -2206,7 +2207,7 @@ translate spanish balrung8_14d03769:
 translate spanish balrung8_b81434b3:
 
     # p smile "I- I have to start brewing this potion. Find me the rest of these ingredients, and meet me in the kitchen."
-    p smile "Tengo que empezar a elaborar la poción. Encuentre el resto de los ingredientes y nos vemos en la concina."
+    p smile "Tengo que empezar a elaborar la poción. Encuentre el resto de los ingredientes y nos vemos en la cocina."
 
 # game/day8.rpy:608
 translate spanish balrung8_68cd9cd5:

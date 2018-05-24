@@ -70,7 +70,7 @@ translate spanish day7_7de6b873:
 translate spanish day7_af2e7332:
 
     # k_write "Your Father"
-    k_write "Tu padre"
+    k_write "Padre"
 
 # game/day7.rpy:18
 translate spanish day7_fd965f8f:
@@ -114,7 +114,7 @@ translate spanish day7_d19d1979:
 translate spanish day7_f504210c:
 
     # p "Well. She will find out just how clever a Queen needs to be! I have my own plans! I'll need to work a bit faster if the coronation is in two days, however."
-    p "Bueno. ¡Se enterará de lo lista que tiene que ser una Reina! ¡Tengo mis propios planes! Sin embargo, tengo que darme prisa si la coronación es dentro de dos días!"
+    p "Bueno. ¡Se enterará de lo lista que tiene que ser una Reina! ¡Tengo mis propios planes! Sin embargo, tengo que darme prisa si la coronación es dentro de dos días."
 
 # game/day7.rpy:27
 translate spanish day7_1506ae09:
@@ -396,7 +396,7 @@ translate spanish cyril7_50f91c8c:
 translate spanish cyril7_dbb47bf0:
 
     # c "So, Princess. I had something I wanted to discuss with you."
-    c "Entonces, Princesa. Me gustaría hablar con usted sobre un asunto."
+    c "Esto, Princesa. Me gustaría hablar con usted sobre un asunto."
 
 # game/day7.rpy:126
 translate spanish cyril7_378ea31e:
@@ -540,7 +540,7 @@ translate spanish cyril7_06608aeb:
 translate spanish cyril7_17abf24e:
 
     # c "Well, yes. It was rather perposterous come to think of it."
-    c "Bueno, sí. Resultaba ser un poco absurdo incluso pensarlo"
+    c "Bueno, sí. Resultaba ser un poco absurdo incluso pensarlo."
 
 # game/day7.rpy:164
 translate spanish cyril7_69b80659:
@@ -1140,7 +1140,7 @@ translate spanish niir7_ac615aad:
 translate spanish niir7_5bf015f6:
 
     # p smile "We could try blunt head trauma, but if it didn't work then he certainly wouldn't let you go. What sort of spells does he have keeping you here?"
-    p smile "Podríamos intentar causándole un trauma cerebral, pero si no funciona, seguro que no le dejará marchar. ¿Qué clase de hechizo le está reteniendo aquí?"
+    p smile "Podríamos intentar causarle un trauma cerebral, pero si no funciona, seguro que no le dejará marchar. ¿Qué clase de hechizo le está reteniendo aquí?"
 
 # game/day7.rpy:295
 translate spanish niir7_560413c3:
@@ -1164,7 +1164,7 @@ translate spanish niir7_97c5fd17:
 translate spanish niir7_813fa529:
 
     # n "Are you sssugessting you’ll hide me?"
-    n "¿Essstá sugeriendo que puede esssconderme?"
+    n "¿Essstá sugiriendo que puede esssconderme?"
 
 # game/day7.rpy:299
 translate spanish niir7_dc8b8797:

@@ -592,7 +592,7 @@ translate spanish cyril3_9c73c592:
 translate spanish cyril3_55222678:
 
     # c "Oh! I'm sorry Princess. I didn't mean to intrude!"
-    c "¡Ah! Lo siento Princesa. ¡No pretendía entrometerme."
+    c "¡Ah! Lo siento Princesa. No pretendía entrometerme."
 
 # game/day3.rpy:151
 translate spanish cyril3_aa7ca88b:
@@ -826,7 +826,7 @@ translate spanish cyril3_49b99903:
 translate spanish cyril3_d9a63647:
 
     # p friendly "Well, what can we do to make you {i}more{/i} miserable then?"
-    p friendly "Bueno, ¿qué podemos hacer para que estés {i}más{/i} deprimido?"
+    p friendly "Bueno, ¿qué podemos hacer para que esté {i}más{/i} deprimido?"
 
 # game/day3.rpy:192
 translate spanish cyril3_17776db5:
@@ -1637,7 +1637,7 @@ translate spanish niir3_6fad8bd2:
 translate spanish niir3_577be324:
 
     # p surprised "I’m not sure you can handle all that, particularly the last requirement. Though, if you could..."
-    p surprised "Estoy segura de que no podrá hacer todo eso y, menos, la última parte. Aunque, si pudieras..."
+    p surprised "Estoy segura de que no podrá hacer todo eso y, menos, la última parte. Aunque, si pudiera..."
 
 # game/day3.rpy:416
 translate spanish niir3_d55fad5f:
@@ -1799,7 +1799,7 @@ translate spanish niir3_2680f476:
 translate spanish niir3_32eacf91:
 
     # p laugh "Let me guess; all the princesses you’ve met were the demure, gentle type that pretend they wouldn’t hurt a fly, but actually scheme behind their sister’s back to steal away their kingdom?"
-    p laugh "Déjeme adivinar. ¿Todas las princesas que ha conocido eran tímidas y dulces, sin apariencia de haberle hecho daño a una moca pero que traicionan a su hermana para robarle su reino?"
+    p laugh "Déjeme adivinar. ¿Todas las princesas que ha conocido eran tímidas y dulces, sin apariencia de haberle hecho daño a una mosca pero que traicionan a su hermana para robarle su reino?"
 
 # game/day3.rpy:465
 translate spanish niir3_1d3328d8:
@@ -1925,7 +1925,7 @@ translate spanish niir3_b20a3e0b:
 translate spanish niir3_e27c89a9:
 
     # n "Sssee you around, Princesss."
-    n "Nosssvemossss, Princesssa."
+    n "Nosss vemossss, Princesssa."
 
 # game/day3.rpy:502
 translate spanish niir3_66a6c984:
