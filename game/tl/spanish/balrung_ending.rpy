@@ -174,7 +174,7 @@ translate spanish balrung_revenge_epilogue_a95db2d4:
 translate spanish balrung_revenge_epilogue_4785f9bf:
 
     # m_write "I'm sorry you missed my coronation. You would have loved the little cinnamon cakes they served."
-    m_write "Siento se perdiera mi coronación. Le habrían encantado los pequeños pasteles de canela que había preparados."
+    m_write "Siento que te perdieras mi coronación. Te habrían encantado los pequeños pasteles de canela que había preparados."
 
 # game/balrung_ending.rpy:66
 translate spanish balrung_revenge_epilogue_dc26fcaf:
@@ -186,7 +186,7 @@ translate spanish balrung_revenge_epilogue_dc26fcaf:
 translate spanish balrung_revenge_epilogue_e6feae91:
 
     # m_write "But it's not too late to come for my wedding!"
-    m_write "¡No es demasiado tarde para que llegue a mi boda!"
+    m_write "¡No es demasiado tarde para que llegues a mi boda!"
 
 # game/balrung_ending.rpy:68
 translate spanish balrung_revenge_epilogue_417ecf46:
@@ -206,13 +206,13 @@ translate spanish balrung_revenge_epilogue_cc9187a3:
 translate spanish balrung_revenge_epilogue_f330e136:
 
     # m_write "I'm sure you'd like him."
-    m_write "Estoy segura de que os gustará."
+    m_write "Estoy segura de que te gustará."
 
 # game/balrung_ending.rpy:72
 translate spanish balrung_revenge_epilogue_0ae6dab1:
 
     # m_write "Come home, Chrysandra, won't you?"
-    m_write "Vuelva a casa, Chrysandra."
+    m_write "Vuelve a casa, Chrysandra."
 
 # game/balrung_ending.rpy:73
 translate spanish balrung_revenge_epilogue_90a394d6:
