@@ -267,12 +267,13 @@ screen main_menu():
 
 
 screen language_select:
+    modal True
     vbox:
         style_group "mm"
         ypos 100
         xpos 830
         textbutton _("English") style "lang_button" action [ Language(None), Hide("language_select") ]
-        textbutton _("Spanish") style "lang_button" action [Language("spanish"), Hide("language_select") ]
+        textbutton _("Spanish") style "lang_button" action [ Language("spanish"), Hide("language_select") ]
 
 style lang_button:
     xalign 1.0
@@ -770,14 +771,14 @@ screen niir_endings:
         xalign 0.5
         yalign 0.3
         if (persistent.DefinitelyTrueLove):
-            text "Definitely True Love"
+            text _("Definitely True Love")
         else:
-            text "LOCKED"
+            text _("LOCKED")
 
         if (persistent.NeverTooLate):
-            text "Never Too Late"
+            text _("Never Too Late")
         else:
-            text "LOCKED"
+            text _("LOCKED")
 
 
     hbox:

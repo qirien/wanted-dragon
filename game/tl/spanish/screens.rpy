@@ -98,3 +98,15 @@ translate spanish strings:
     old "Revenge Never Ends"
     new "La venganza nunca termina"
 
+# TODO: Translation updated at 2018-06-02 21:48
+
+translate spanish strings:
+
+    # screens.rpy:774
+    old "Definitely True Love"
+    new ""
+
+    # screens.rpy:779
+    old "Never Too Late"
+    new ""
+
