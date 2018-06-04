@@ -104,9 +104,9 @@ translate spanish strings:
 
     # screens.rpy:774
     old "Definitely True Love"
-    new ""
+    new "Amor verdadero, sin duda"
 
     # screens.rpy:779
     old "Never Too Late"
-    new ""
+    new "Nunca es tarde"
 
