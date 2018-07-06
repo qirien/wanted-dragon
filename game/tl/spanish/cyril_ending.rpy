@@ -10,7 +10,7 @@ translate spanish cyril_dark_epilogue_8cf6531f:
 translate spanish cyril_dark_epilogue_fde1bfa3:
 
     # c "No, no, no, no. {i}It can’t be.{/i} You shouldn't be here, your Highness."
-    c "No, no, no, no. {i]No puede ser.{/i} Usted no debería estar aquí, Su Alteza."
+    c "No, no, no, no. {i}No puede ser.{/i} Usted no debería estar aquí, Su Alteza."
 
 # game/cyril_ending.rpy:11
 translate spanish cyril_dark_epilogue_385cfc5b:
@@ -700,4 +700,3 @@ translate spanish cyril_insane_epilogue_1bd723c5:
 
     # p tsk "I'm done with you mage. You are hereby reinstated to [castle_name!t]."
     p tsk "He acabado con usted, mago. Será reincorporado en [castle_name!t]."
-

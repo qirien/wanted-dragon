@@ -264,7 +264,7 @@ label balrung3:
         p angry "You are beginning to seem useless to me."
     else:
         p "Do you know anything about the Scepter of Lavendorm?"
-        call balrung_scepter
+        call balrung_scepter from _call_balrung_scepter
     show balrung neutral at basicfade
     b "Well, as I cannot offer you a scepter at the moment, perhaps you would stay and talk with me for a bit? Your company would be much appreciated."
     menu:

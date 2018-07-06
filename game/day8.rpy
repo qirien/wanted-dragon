@@ -181,7 +181,7 @@ label niir8:
         n "Direct me to your casssstle."
         p shout "Onward!"
         stop sound fadeout 2.0
-        call credits
+        call credits from _call_credits_3
         jump niir_free_epilogue
     else:
         c "As I thought! The only thing between you is lies and plots!"
@@ -291,7 +291,7 @@ label niir8:
                 n "Sssorry, Princessss...we were ssso clossse! But at leassst we can keep each other company."
                 p shout "Shut up, you imbecile!  I can’t believe I ever agreed to help you!"
                 n "...Sssso much for \"love\"..."  
-                call credits
+                call credits from _call_credits_4
                 jump imprisoned_epilogue
 
             "Kiss me.":
@@ -347,7 +347,7 @@ label niir8:
         "It was easier than I expected.  Stopping my sister’s coronation was probably not going to be quite so easy."
         "But I {b}would{/b} be Queen. No matter what!"
 
-        call credits
+        call credits from _call_credits_5
         jump niir_asleep_epilogue
 
 
@@ -428,7 +428,7 @@ label cyril8:
             "It was...adorable. Yes, perhaps now he was worthy to aid me."
             p smile "Yes...Cyril, I think it's time for you and I to stop a coronation. When my father sees the power we possess, he will certainly change his mind."
 
-            call credits
+            call credits from _call_credits_6
             if (cyril_insanity >= INSANE):
                 jump cyril_insane_epilogue
             else:
@@ -488,7 +488,7 @@ label cyril8:
             show cyril concerned eyes closed at basicfade
             c "There is... nothing else for me here."
 
-            call credits
+            call credits from _call_credits_7
             if (cyril_insanity >= INSANE):
                 jump cyril_dark_epilogue
             else:
@@ -543,7 +543,7 @@ label cyril8:
             scene cg1 with fade
             $ renpy.pause()
             stop sound fadeout 2.0
-            call credits
+            call credits from _call_credits_8
             jump cyril_dragon_epilogue
 
     return
@@ -745,5 +745,5 @@ label balrung8:
             show cyril hat concerned eyes closed at basicfade
             c "I'm so sorry! It's for your own good...."
 
-            call credits
+            call credits from _call_credits_9
             jump imprisoned_epilogue

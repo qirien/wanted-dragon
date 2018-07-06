@@ -35,18 +35,18 @@ label day7:
             jump mage_insane
     
         p "If I had time, I'd read all these books and uncover all their secrets. But instead..."
-        call cyril7
+        call cyril7 from _call_cyril7
         
     elif (route == "Balrung"):
         scene bg stairs day with fade
         p "If I had time, I'd search it day and night for secrets. But instead..."       
-        call balrung7
+        call balrung7 from _call_balrung7
         
     elif (route == "Niir"):
         scene bg stairs day with fade
         p "If I had time, I'd search it day and night for secrets. But instead..."    
         
-        call niir7
+        call niir7 from _call_niir7
         
     return
 
@@ -82,9 +82,9 @@ label mage_insane:
     p angry "Oh for the love of..."
     menu:
         "Kiss him.":
-            call mage_insane_kiss
+            call mage_insane_kiss from _call_mage_insane_kiss
         "Step on his toes.":
-            call mage_insane_step
+            call mage_insane_step from _call_mage_insane_step
             
     return
             

@@ -136,7 +136,7 @@ label balrung_ending:
             p laugh eyes closed "Mwah ha ha ha ha!"            
             b "Bwah ha ha ha!"
             stop sound fadeout 2.0
-            call credits
+            call credits from _call_credits
             jump balrung_epilogue
         "Make him an advisor.":
             p surprised "While I admire your patient ruthlessness, you are not fit to be my King. You may be an advisor."
@@ -154,7 +154,7 @@ label balrung_ending:
     if (cyril_dead):
         "Leaving several shiny red scales behind."
         p laugh eyes closed "With these, I can make as many Potions of Persuasion as I want! I'll become Queen all on my own! Mwah ha ha ha ha!"
-        call credits
+        call credits from _call_credits_1
         jump balrung_revenge_epilogue
     else:
         p "..."
@@ -165,7 +165,7 @@ label balrung_ending:
         p smile "Shall we attack that evil dragon?"
         c "We shall!"
         play sound "sfx/electricity.ogg"
-        call credits
+        call credits from _call_credits_2
         jump balrung_revenge_epilogue
                    
 # Princess in Prison

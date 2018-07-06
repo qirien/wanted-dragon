@@ -348,9 +348,9 @@ label niir5:
     p "I see how it is."
     menu trust_niir:
         "Do a trust fall.":
-            call trustfall
+            call trustfall from _call_trustfall
         "Offer to show him some thigh.":
-            call somethigh 
+            call somethigh from _call_somethigh 
             
     p neutral "Now, Moronious usually spends his time in the library. So if we are in the hall near the library, professing our love to each other, he will hear us."
     show niir angry at basicfade
