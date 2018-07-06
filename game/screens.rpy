@@ -273,7 +273,7 @@ screen language_select:
         ypos 100
         xpos 830
         textbutton _("English") style "lang_button" action [ Language(None), Hide("language_select") ]
-        textbutton _("Spanish") style "lang_button" action [ Language("spanish"), Hide("language_select") ]
+        textbutton _("Español") style "lang_button" action [ Language("spanish"), Hide("language_select") ]
 
 style lang_button:
     xalign 1.0
@@ -496,17 +496,25 @@ screen preferences():
 
     # Put the navigation columns in a three-wide grid.
 
-    vbox:
+    hbox:
+        style_group "prefs"
         xpos 600
         ypos 145
-        style_group "prefs"
+        vbox:
 
-        textbutton _("Window") action Preference("display", "window") at buttonfade
-        textbutton _("Fullscreen") action Preference("display", "fullscreen") at buttonfade
+            textbutton _("Window") action Preference("display", "window") at buttonfade
+            textbutton _("Fullscreen") action Preference("display", "fullscreen") at buttonfade
 
+            textbutton _("Seen Messages") action Preference("skip", "seen") at buttonfade
+            textbutton _("All Messages") action Preference("skip", "all") at buttonfade
 
-        textbutton _("Seen Messages") action Preference("skip", "seen") at buttonfade
-        textbutton _("All Messages") action Preference("skip", "all") at buttonfade
+        vbox:
+            null width 20
+        vbox:
+            xalign 1.0
+            label "Language"
+            textbutton _("English") action Language(None)
+            textbutton _("Español") action Language("spanish")
 
     vbox:
         xpos 550
@@ -620,6 +628,10 @@ init -2:
         left_bar "GUI/bar.png"
         right_bar "GUI/bar.png"
         thumb "GUI/thumbnail.png"
+
+    style prefs_label_text:
+        size 25
+        color "#400000"
 
 
 

@@ -60,7 +60,7 @@ translate spanish strings:
 
     # screens.rpy:274
     old "English"
-    new "Inglés"
+    new "English"
 
     # screens.rpy:275
     old "Spanish"
@@ -109,4 +109,3 @@ translate spanish strings:
     # screens.rpy:779
     old "Never Too Late"
     new ""
-

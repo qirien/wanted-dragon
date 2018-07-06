@@ -13,7 +13,7 @@ init -1 python hide:
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
 
-    config.developer = True
+    config.developer = False
 
     ## These control the width and height of the screen.
 
@@ -28,7 +28,7 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "WANTED Dragon"
-    config.version = "0.1"
+    config.version = "2.0"
 
 
     #########################################
@@ -293,7 +293,7 @@ init -1 python hide:
     _window_during_transitions = True
 
     style.say_label.font="fonts/Anderson Thunderbirds Are GO!.ttf"
-    style.say_label.bold=False 
+    style.say_label.bold=False
     style.say_label.size=60
     style.say_who_window.background = Frame("GUI/namebox.png", 0, 0)
     style.say_who_window.left_padding = 50
@@ -305,4 +305,3 @@ init -1 python hide:
     style.say_label.xalign=0.6
     style.say_dialogue.outlines=[(0, "#000000"),(0, "#000000")]
     style.say_thought.outlines=[(0, "#000000"),(0, "#000000")]
-
