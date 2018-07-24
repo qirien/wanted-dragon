@@ -94,23 +94,23 @@ init -1:
     image side princess smile eyes closed = "sprites/princess smile eyes closed.png"
 
 
+    define config.automatic_images = None
     # Automatically import all sprites in the 'sprites' subdirectory
     # Thanks JinzouTamashii, http://www.renpy.org/wiki/renpy/doc/cookbook/Automatically_Defining_Images
 init python:
-    import os
-    for fname in os.listdir(config.gamedir + '/sprites'):
-        if fname.endswith(('.jpg', '.png')):
-            tag = fname[:-4]
-            fname =  'sprites/' + fname
-            renpy.image(tag, im.FactorScale(fname, .667))
+    for fname in renpy.list_files():
+        if fname.startswith('sprites/'):
+            if fname.endswith(('.jpg', '.png')):
+                name = fname.replace('sprites/','').replace('/', ' ').replace('.png','')
+                renpy.image(name, im.FactorScale(fname, .667))
 
-            # add green cyril images
-            if (tag.startswith("cyril")):
-                renpy.image(tag + " green", im.FactorScale(im.MatrixColor(fname, im.matrix.desaturate() * im.matrix.tint(0.7, 1.0, 0.7)), .667))
+                # add green cyril images
+                if (name.startswith("cyril")):
+                    renpy.image(name + " green", im.FactorScale(im.MatrixColor(fname, im.matrix.desaturate() * im.matrix.tint(0.7, 1.0, 0.7)), .667))
 
-            # add zoomin images at original size
-            tag += " zoomin"
-            renpy.image(tag, fname)
+                # add zoomin images at original size
+                name += " zoomin"
+                renpy.image(name, fname)
 
     #
     # POSITIONS
